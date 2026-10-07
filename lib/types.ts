@@ -47,5 +47,5 @@ export interface Profile {
   isSubscribed?: boolean;
   subscriptionExpiry?: string | null;
   plan?: string;
-  trialUsage?: Record<string, number>;
+  trialCount?: number;
 }

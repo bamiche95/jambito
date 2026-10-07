@@ -1,19 +1,14 @@
 import { NextResponse } from "next/server";
 import { requireUser } from "@/lib/serverAuth";
-import {
-  consumeTrial,
-  getRemaining,
-  isSubscribed,
-} from "@/lib/users";
-import { EXAMS } from "@/lib/catalog";
+import { consumeTrial, getRemaining, isSubscribed } from "@/lib/users";
 
 export const dynamic = "force-dynamic";
 
 /**
- * Server-side trial quota (40 questions per exam).
+ * Global server-side trial quota (40 questions across the whole app).
  *
- * GET  /api/trial          -> { subscribed, remaining, role, email }
- * POST /api/trial          -> body { exam } -> { allowed, remaining, subscribed, used }
+ * GET  /api/trial  -> { subscribed, trialUsed, trialRemaining, role, email }
+ * POST /api/trial  -> { allowed, subscribed, used, remaining }
  */
 export async function GET(request) {
   const auth = await requireUser(request);
@@ -31,7 +26,8 @@ export async function GET(request) {
     email: user.email ?? decoded.email ?? null,
     role: user.role ?? "user",
     subscribed: isSubscribed(user),
-    remaining: getRemaining(user),
+    trialUsed: user.trialCount ?? 0,
+    trialRemaining: getRemaining(user),
   });
 }
 
@@ -44,21 +40,10 @@ export async function POST(request) {
     );
   }
 
-  const body = await request.json().catch(() => ({}));
-  const exam = String(body?.exam ?? "").toUpperCase();
-
-  if (!EXAMS.includes(exam)) {
-    return NextResponse.json(
-      { success: false, message: "Invalid exam" },
-      { status: 400 }
-    );
-  }
-
   const result = await consumeTrial({
     uid: auth.decoded.uid,
     email: auth.decoded.email,
-    exam,
   });
 
-  return NextResponse.json({ success: true, exam, ...result });
+  return NextResponse.json({ success: true, ...result });
 }

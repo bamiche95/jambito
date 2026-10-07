@@ -2,9 +2,10 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { Loader2, WifiOff, AlertTriangle } from "lucide-react";
+import { Loader2, WifiOff, AlertTriangle, Lock } from "lucide-react";
 import CbtPractice from "./CbtPractice";
 import PaywallModal from "./PaywallModal";
+import AuthModal from "@/components/auth/AuthModal";
 import { useAuth } from "@/lib/auth";
 import {
   questionKey,
@@ -29,45 +30,31 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   const yearName = year ?? "2023";
   const storageKey = questionKey(examName, subjectName, yearName);
 
-  const { user, getIdToken, loading: authLoading } = useAuth();
+  const {
+    user,
+    loading: authLoading,
+    isSubscribed,
+    trialRemaining,
+    refreshStatus,
+    getIdToken,
+  } = useAuth();
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
-  const [locked, setLocked] = useState(false);
+  // Locked when the global trial is exhausted and the user isn't subscribed.
+  const locked = !isSubscribed && trialRemaining <= 0;
   const [showPaywall, setShowPaywall] = useState(false);
+  const [showAuth, setShowAuth] = useState(false);
   const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
-  const [subscribed, setSubscribed] = useState(false);
-  const [remaining, setRemaining] = useState<number | null>(null);
 
   useEffect(() => {
     getBookmarkIds().then((ids) => setBookmarks(new Set(ids.map(String))));
   }, []);
 
   useEffect(() => {
-    if (authLoading) return;
-    let cancelled = false;
-    getIdToken()
-      .then((token) => {
-        if (!token) return null;
-        return fetch("/api/trial", {
-          headers: { Authorization: `Bearer ${token}` },
-        }).then((r) => r.json());
-      })
-      .then((json) => {
-        if (cancelled || !json?.success) return;
-        setSubscribed(json.subscribed);
-        setRemaining(json.remaining?.[examName] ?? null);
-        if (json.subscribed) setLocked(false);
-      })
-      .catch(() => undefined);
-    return () => {
-      cancelled = true;
-    };
-  }, [authLoading, getIdToken, examName, user?.uid]);
-
-  useEffect(() => {
+    if (authLoading || !user) return;
     let cancelled = false;
 
     async function fetchFresh() {
@@ -107,7 +94,6 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
     async function load() {
       setLoading(true);
       setError(null);
-
       const cached = await getCachedQuestions(storageKey);
       if (cached?.questions?.length) {
         setQuestions(cached.questions);
@@ -117,7 +103,6 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
         if (fresh) setOffline(false);
         return;
       }
-
       const fresh = await fetchFresh();
       if (!fresh && !cancelled) {
         setError(
@@ -131,10 +116,10 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
     return () => {
       cancelled = true;
     };
-  }, [storageKey, examName, subjectName, yearName]);
+  }, [authLoading, user, storageKey, examName, subjectName, yearName]);
 
   const handleAnswer = useCallback(async () => {
-    if (subscribed) return;
+    if (isSubscribed) return;
     const token = await getIdToken();
     if (!token) return;
     try {
@@ -144,24 +129,15 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify({ exam: examName }),
       });
       const json = await res.json();
       if (!json.success) return;
-      if (json.subscribed) {
-        setSubscribed(true);
-        setLocked(false);
-      } else {
-        setRemaining(json.remaining ?? null);
-        if (json.allowed === false) {
-          setLocked(true);
-          setShowPaywall(true);
-        }
-      }
+      if (json.allowed === false) setShowPaywall(true);
+      refreshStatus();
     } catch {
-      // ignore — the next answer will re-check
+      // ignore
     }
-  }, [subscribed, getIdToken, examName]);
+  }, [isSubscribed, getIdToken, refreshStatus]);
 
   const handleSubmit = useCallback(
     async (score: number, total: number) => {
@@ -191,6 +167,41 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
 
   const title = `${examName} ${titleCase(subjectName)} ${yearName} Past Questions`;
 
+  if (authLoading) {
+    return (
+      <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 flex flex-col items-center gap-3 text-slate-500">
+        <Loader2 className="w-8 h-8 animate-spin" />
+        <p>Preparing your practice session…</p>
+      </main>
+    );
+  }
+
+  if (!user) {
+    return (
+      <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20">
+        <div className="max-w-md mx-auto text-center px-6">
+          <Lock className="w-10 h-10 mx-auto mb-4 text-slate-400" />
+          <h2 className="text-xl font-bold text-slate-900">Sign in to practice</h2>
+          <p className="text-slate-500 mt-2">
+            You need an account to start your free 40-question trial. Sign in
+            with Google or email to continue.
+          </p>
+          <button
+            onClick={() => setShowAuth(true)}
+            className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
+          >
+            Continue with Google or Email
+          </button>
+        </div>
+        <AuthModal
+          open={showAuth}
+          onClose={() => setShowAuth(false)}
+          onSuccess={() => setShowAuth(false)}
+        />
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10">
       {loading ? (
@@ -219,11 +230,11 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
               </div>
             </div>
           )}
-          {!subscribed && remaining !== null && remaining > 0 && (
+          {!isSubscribed && trialRemaining > 0 && (
             <div className="max-w-4xl mx-auto px-4 mb-4">
               <div className="text-sm text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-4 py-2 rounded-lg">
-                Free trial: <strong>{remaining}</strong> question
-                {remaining === 1 ? "" : "s"} left for {examName}.
+                Free trial: <strong>{trialRemaining}</strong> question
+                {trialRemaining === 1 ? "" : "s"} left.
               </div>
             </div>
           )}
@@ -236,6 +247,8 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
             onSubmit={handleSubmit}
             bookmarks={bookmarks}
             onToggleBookmark={handleToggleBookmark}
+            canRetake={isSubscribed || trialRemaining > 0}
+            onSubscribe={() => setShowPaywall(true)}
           />
         </>
       )}
@@ -243,11 +256,9 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
       <PaywallModal
         open={showPaywall}
         onClose={() => setShowPaywall(false)}
-        exam={examName}
         onSubscribed={() => {
-          setSubscribed(true);
-          setLocked(false);
           setShowPaywall(false);
+          refreshStatus();
         }}
       />
     </main>

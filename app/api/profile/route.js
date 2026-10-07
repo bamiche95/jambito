@@ -28,7 +28,7 @@ export async function GET(request) {
       isSubscribed: isSubscribed(user),
       subscriptionExpiry: user.subscriptionExpiry ?? null,
       plan: user.plan ?? null,
-      trialUsage: user.trialUsage ?? {},
+      trialCount: user.trialCount ?? 0,
     },
     remaining: getRemaining(user),
   });

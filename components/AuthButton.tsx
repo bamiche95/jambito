@@ -13,7 +13,7 @@ export default function AuthButton() {
     return <div className="w-20 h-9 rounded-lg bg-slate-100 animate-pulse" />;
   }
 
-  if (user && !user.isAnonymous) {
+  if (user) {
     return (
       <Link
         href="/profile"

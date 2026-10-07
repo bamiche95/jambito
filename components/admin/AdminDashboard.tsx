@@ -12,7 +12,7 @@ interface AdminUser {
   isSubscribed: boolean;
   subscriptionExpiry: string | null;
   plan: string | null;
-  trialUsage: Record<string, number>;
+  trialCount: number;
   createdAt: string | null;
 }
 
@@ -114,7 +114,7 @@ export default function AdminDashboard() {
           <span>User</span>
           <span>Role</span>
           <span>Subscription</span>
-          <span>Trial used (JAMB / WAEC / POSTUTME)</span>
+          <span>Trial used (of 40)</span>
         </div>
 
         {users.map((u, i) => (
@@ -160,8 +160,7 @@ export default function AdminDashboard() {
 
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-xs text-slate-500">
-                {u.trialUsage?.JAMB ?? 0} / {u.trialUsage?.WAEC ?? 0} /{" "}
-                {u.trialUsage?.POSTUTME ?? 0}
+                {u.trialCount ?? 0} / 40
               </span>
               <div className="flex gap-1 ml-auto">
                 {u.isSubscribed ? (

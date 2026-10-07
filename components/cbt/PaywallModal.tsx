@@ -17,17 +17,15 @@ import AuthModal from "@/components/auth/AuthModal";
 interface PaywallModalProps {
   open: boolean;
   onClose: () => void;
-  exam: string;
   onSubscribed?: () => void;
 }
 
 export default function PaywallModal({
   open,
   onClose,
-  exam,
   onSubscribed,
 }: PaywallModalProps) {
-  const { user, isGuest, getIdToken, signInWithGoogle } = useAuth();
+  const { user, getIdToken, refreshStatus } = useAuth();
   const [plan, setPlan] = useState<string>("monthly");
   const [paying, setPaying] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
@@ -75,6 +73,7 @@ export default function PaywallModal({
       });
       const json = await res.json();
       if (json.success && json.subscribed) {
+        await refreshStatus();
         onSubscribed?.();
       } else {
         setError(
@@ -108,36 +107,22 @@ export default function PaywallModal({
               Unlock Full Access
             </h2>
             <p className="text-sm text-slate-500 mt-1">
-              You&apos;ve used your {exam} free trial. Subscribe to keep
+              You&apos;ve used your 40 free questions. Subscribe to keep
               practicing.
             </p>
           </div>
 
-          {!user || isGuest ? (
-            <div className="space-y-3">
-              <p className="text-sm text-slate-600 dark:text-slate-300 text-center">
+          {!user ? (
+            <div className="space-y-3 text-center">
+              <p className="text-sm text-slate-600 dark:text-slate-300">
                 Sign in to save your progress and subscribe.
               </p>
-              <button
-                onClick={async () => {
-                  setError(null);
-                  try {
-                    await signInWithGoogle();
-                  } catch {
-                    setError("Google sign-in failed. Please try again.");
-                  }
-                }}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-lg border border-slate-300 font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition"
-              >
-                Continue with Google
-              </button>
               <button
                 onClick={() => setShowAuth(true)}
                 className="w-full py-3 rounded-lg bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-semibold hover:opacity-90 transition"
               >
-                Sign up with email
+                Sign in / Create account
               </button>
-              {error && <p className="text-sm text-red-600">{error}</p>}
             </div>
           ) : (
             <>

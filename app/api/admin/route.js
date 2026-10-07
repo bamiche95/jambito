@@ -37,7 +37,7 @@ export async function GET(request) {
       isSubscribed: u.isSubscribed ?? false,
       subscriptionExpiry: u.subscriptionExpiry ?? null,
       plan: u.plan ?? null,
-      trialUsage: u.trialUsage ?? {},
+      trialCount: u.trialCount ?? 0,
       createdAt: u.createdAt ?? null,
     })),
   });
@@ -86,7 +86,7 @@ export async function POST(request) {
     case "resetTrial": {
       await users.updateOne(
         { _id: uid },
-        { $set: { trialUsage: {}, updatedAt: now } }
+        { $set: { trialCount: 0, updatedAt: now } }
       );
       break;
     }

@@ -14,19 +14,19 @@ import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  signInAnonymously,
-  linkWithPopup,
-  linkWithCredential,
-  EmailAuthProvider,
   signOut as fbSignOut,
   type User,
 } from "firebase/auth";
 import { auth } from "./firebase";
+import { TRIAL_LIMIT } from "./plans";
 
 interface AuthContextValue {
   user: User | null;
   loading: boolean;
-  isGuest: boolean;
+  isSubscribed: boolean;
+  trialUsed: number;
+  trialRemaining: number;
+  refreshStatus: () => Promise<void>;
   signInWithGoogle: () => Promise<User>;
   signInWithEmail: (email: string, password: string) => Promise<User>;
   signUpWithEmail: (email: string, password: string) => Promise<User>;
@@ -39,6 +39,9 @@ const AuthContext = createContext<AuthContextValue | null>(null);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [trialUsed, setTrialUsed] = useState(0);
+  const [trialRemaining, setTrialRemaining] = useState(TRIAL_LIMIT);
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => {
@@ -48,29 +51,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return unsub;
   }, []);
 
-  // Ensure every visitor has a guest (anonymous) identity — the "device
-  // signature" — without any permission prompt.
+  // Fetch global subscription + trial status whenever the user changes.
   useEffect(() => {
-    if (loading || user) return;
-    signInAnonymously(auth).catch(() => undefined);
+    if (loading || !user) return;
+    let cancelled = false;
+    user
+      .getIdToken(true)
+      .then((token) =>
+        fetch("/api/trial", { headers: { Authorization: `Bearer ${token}` } })
+      )
+      .then((r) => r.json())
+      .then((json) => {
+        if (cancelled || !json?.success) return;
+        setIsSubscribed(json.subscribed);
+        setTrialUsed(json.trialUsed ?? 0);
+        setTrialRemaining(json.trialRemaining ?? 0);
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
   }, [loading, user]);
 
   const signInWithGoogle = useCallback(async () => {
     const provider = new GoogleAuthProvider();
-    const current = auth.currentUser;
-    if (current && current.isAnonymous) {
-      try {
-        const result = await linkWithPopup(current, provider);
-        return result.user;
-      } catch (error) {
-        const code = (error as { code?: string })?.code;
-        if (code === "auth/credential-already-in-use") {
-          const result = await signInWithPopup(auth, provider);
-          return result.user;
-        }
-        throw error;
-      }
-    }
     const result = await signInWithPopup(auth, provider);
     return result.user;
   }, []);
@@ -85,27 +89,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signUpWithEmail = useCallback(
     async (email: string, password: string) => {
-      const current = auth.currentUser;
-      const credential = EmailAuthProvider.credential(email, password);
-
-      if (current && current.isAnonymous) {
-        try {
-          const result = await linkWithCredential(current, credential);
-          return result.user;
-        } catch (error) {
-          const code = (error as { code?: string })?.code;
-          if (code === "auth/credential-already-in-use") {
-            const result = await signInWithEmailAndPassword(
-              auth,
-              email,
-              password
-            );
-            return result.user;
-          }
-          throw error;
-        }
-      }
-
       const result = await createUserWithEmailAndPassword(auth, email, password);
       return result.user;
     },
@@ -114,7 +97,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signOut = useCallback(async () => {
     await fbSignOut(auth);
-    await signInAnonymously(auth).catch(() => undefined);
+    setIsSubscribed(false);
+    setTrialUsed(0);
+    setTrialRemaining(TRIAL_LIMIT);
   }, []);
 
   const getIdToken = useCallback(async () => {
@@ -123,12 +108,33 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return u.getIdToken(true);
   }, []);
 
+  const refreshStatus = useCallback(async () => {
+    const token = await getIdToken();
+    if (!token) return;
+    try {
+      const res = await fetch("/api/trial", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const json = await res.json();
+      if (json.success) {
+        setIsSubscribed(json.subscribed);
+        setTrialUsed(json.trialUsed ?? 0);
+        setTrialRemaining(json.trialRemaining ?? 0);
+      }
+    } catch {
+      // ignore — refreshed on next interaction
+    }
+  }, [getIdToken]);
+
   return (
     <AuthContext.Provider
       value={{
         user,
         loading,
-        isGuest: Boolean(user?.isAnonymous),
+        isSubscribed,
+        trialUsed,
+        trialRemaining,
+        refreshStatus,
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,

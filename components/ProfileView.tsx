@@ -70,11 +70,10 @@ export default function ProfileView() {
         <div>
           <h1 className="text-3xl font-bold text-slate-900">My Profile</h1>
           <p className="text-slate-500 mt-2">
-            {user?.email ?? user?.displayName ?? "Guest"} ·{" "}
-            {user?.isAnonymous ? "Guest account" : "Signed in"}
+            {user?.email ?? user?.displayName ?? "Account"}
           </p>
         </div>
-        {user && !user.isAnonymous && (
+        {user && (
           <button
             onClick={() => signOut()}
             className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 transition"
@@ -112,9 +111,7 @@ export default function ProfileView() {
           ) : (
             <div className="space-y-3">
               <p className="text-sm text-slate-500">
-                {user?.isAnonymous
-                  ? "You're on the free trial (guest)."
-                  : "No active subscription."}
+                You&apos;re on the free trial.
               </p>
               <Link
                 href="/cbt"

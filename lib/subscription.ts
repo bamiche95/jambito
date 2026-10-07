@@ -1,7 +1,7 @@
-import { TRIAL_LIMIT_PER_EXAM } from "./plans";
+import { TRIAL_LIMIT } from "./plans";
 import type { Profile } from "./types";
 
-export { TRIAL_LIMIT_PER_EXAM };
+export { TRIAL_LIMIT };
 
 /**
  * Pure subscription helpers (no browser APIs, no server APIs).

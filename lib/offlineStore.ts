@@ -94,7 +94,13 @@ export async function hasCachedQuestions(key: string): Promise<boolean> {
 export async function saveAttempt(record: AttemptRecord): Promise<void> {
   const db = getDB();
   if (!db) return;
-  await (await db).put("attempts", record);
+  // The `attempts` store uses out-of-line keys (no key generator), so we must
+  // supply a unique key for every attempt.
+  const id =
+    typeof crypto !== "undefined" && "randomUUID" in crypto
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  await (await db).put("attempts", record, id);
 }
 
 export async function getAttempts(): Promise<AttemptRecord[]> {
