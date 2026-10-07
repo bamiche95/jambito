@@ -86,6 +86,29 @@ export function titleCase(value: string): string {
   return String(value ?? "").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+/** Friendly display labels for the known exam boards (falls back to the raw value). */
+const EXAM_LABELS: Record<string, string> = {
+  JAMB: "UTME (JAMB)",
+  WAEC: "WASSCE (WAEC)",
+  POSTUTME: "POST-UTME",
+  GST: "GST",
+};
+
+export function examLabel(name: string): string {
+  const key = String(name ?? "").trim().toUpperCase();
+  return EXAM_LABELS[key] ?? key;
+}
+
+/** Builds the CBT practice URL for a given exam / subject / year. */
+export function buildCbtHref(exam: string, subject: string, year: string): string {
+  const params = new URLSearchParams({
+    exam: examNameToSlug(exam),
+    subject: slugify(subject),
+    year: String(year),
+  });
+  return `/cbt?${params.toString()}`;
+}
+
 export interface Combo {
   exam: string;
   subject: string;
