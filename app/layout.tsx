@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import RegisterSW from "@/components/RegisterSW";
 import { AuthProvider } from "@/lib/auth";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,6 +21,7 @@ const APP_DESCRIPTION =
   "Offline-first past questions practice for Nigerian students preparing for JAMB, WAEC and POST UTME exams.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   applicationName: APP_NAME,
   title: {
     default: APP_TITLE,
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     siteName: APP_NAME,
     title: APP_TITLE,
     description: APP_DESCRIPTION,
-    url: process.env.NEXT_PUBLIC_SITE_URL,
+    url: SITE_URL,
   },
   twitter: {
     card: "summary",

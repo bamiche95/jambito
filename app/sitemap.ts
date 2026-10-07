@@ -4,9 +4,7 @@ import {
   examNameToSlug,
   slugify,
 } from "@/lib/catalog";
-
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://jambito.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
