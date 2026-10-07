@@ -40,9 +40,12 @@ export interface AttemptRecord {
 }
 
 export interface Profile {
+  uid?: string;
   name?: string;
   email?: string;
+  role?: "user" | "admin";
   isSubscribed?: boolean;
   subscriptionExpiry?: string | null;
   plan?: string;
+  trialUsage?: Record<string, number>;
 }

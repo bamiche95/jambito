@@ -1,41 +1,35 @@
 import { NextResponse } from "next/server";
-import { getSubscription } from "@/lib/payments";
+import { requireUser } from "@/lib/serverAuth";
+import { getRemaining, isSubscribed } from "@/lib/users";
 
 export const dynamic = "force-dynamic";
 
 /**
- * Returns subscription status for a given email. Used by the profile page to
- * reflect the result of a successful payment.
+ * Returns the signed-in user's profile + subscription status + trial usage.
+ * Protected by a Firebase ID token.
  */
 export async function GET(request) {
-  const { searchParams } = new URL(request.url);
-  const email = searchParams.get("email");
-
-  if (!email) {
+  const auth = await requireUser(request);
+  if (!auth) {
     return NextResponse.json(
-      { success: false, message: "Missing email query param" },
-      { status: 400 }
+      { success: false, message: "Unauthorized" },
+      { status: 401 }
     );
   }
 
-  try {
-    const user = await getSubscription(email.toLowerCase().trim());
-    return NextResponse.json({
-      success: true,
-      profile: user
-        ? {
-            email: user.email,
-            isSubscribed: user.isSubscribed ?? false,
-            subscriptionExpiry: user.subscriptionExpiry ?? null,
-            plan: user.plan ?? null,
-          }
-        : { email, isSubscribed: false, subscriptionExpiry: null, plan: null },
-    });
-  } catch (error) {
-    console.error("GET /api/profile error:", error);
-    return NextResponse.json(
-      { success: false, message: "Internal Server Error" },
-      { status: 500 }
-    );
-  }
+  const { decoded, user } = auth;
+  return NextResponse.json({
+    success: true,
+    profile: {
+      uid: decoded.uid,
+      email: user.email ?? decoded.email ?? null,
+      name: user.name ?? decoded.name ?? null,
+      role: user.role ?? "user",
+      isSubscribed: isSubscribed(user),
+      subscriptionExpiry: user.subscriptionExpiry ?? null,
+      plan: user.plan ?? null,
+      trialUsage: user.trialUsage ?? {},
+    },
+    remaining: getRemaining(user),
+  });
 }

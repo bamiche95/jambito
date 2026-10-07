@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GraduationCap } from "lucide-react";
+import AuthButton from "@/components/AuthButton";
 
 export default function SiteHeader() {
   return (
@@ -15,14 +16,10 @@ export default function SiteHeader() {
           <Link href="/" className="hover:text-slate-900 dark:hover:text-white">Home</Link>
           <Link href="/cbt" className="hover:text-slate-900 dark:hover:text-white">Practice</Link>
           <Link href="/contact" className="hover:text-slate-900 dark:hover:text-white">Contact</Link>
-          <Link
-            href="/profile"
-            className="px-4 py-2 rounded-lg bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:opacity-90 transition"
-          >
-            My Profile
-          </Link>
+          <AuthButton />
         </nav>
       </div>
     </header>
   );
 }
+

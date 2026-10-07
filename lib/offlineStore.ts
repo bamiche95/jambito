@@ -22,10 +22,6 @@ interface JambitoDB extends DBSchema {
     value: AttemptRecord;
     indexes: { "by-date": string };
   };
-  trials: {
-    key: string;
-    value: { key: string; used: number };
-  };
   bookmarks: {
     key: string;
     value: { id: string | number; savedAt: string };
@@ -45,9 +41,6 @@ function getDB(): Promise<IDBPDatabase<JambitoDB>> | null {
         if (!db.objectStoreNames.contains("attempts")) {
           const store = db.createObjectStore("attempts");
           store.createIndex("by-date", "date");
-        }
-        if (!db.objectStoreNames.contains("trials")) {
-          db.createObjectStore("trials");
         }
         if (!db.objectStoreNames.contains("bookmarks")) {
           db.createObjectStore("bookmarks");
@@ -109,33 +102,6 @@ export async function getAttempts(): Promise<AttemptRecord[]> {
   if (!db) return [];
   const all = await (await db).getAll("attempts");
   return all.sort((a, b) => (a.date < b.date ? 1 : -1));
-}
-
-// ---------------------------------------------------------------------------
-// Trial quotas (freemium)
-// ---------------------------------------------------------------------------
-
-export async function getTrialUsed(key: string): Promise<number> {
-  const db = getDB();
-  if (!db) return 0;
-  const value = await (await db).get("trials", key);
-  return value?.used ?? 0;
-}
-
-export async function incrementTrial(key: string): Promise<number> {
-  const db = getDB();
-  if (!db) return 0;
-  const d = await db;
-  const current = (await d.get("trials", key))?.used ?? 0;
-  const next = current + 1;
-  await d.put("trials", { key, used: next });
-  return next;
-}
-
-export async function resetTrials(): Promise<void> {
-  const db = getDB();
-  if (!db) return;
-  await (await db).clear("trials");
 }
 
 // ---------------------------------------------------------------------------

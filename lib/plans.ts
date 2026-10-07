@@ -5,7 +5,7 @@
  * server-side route handlers without pulling in browser-only modules.
  */
 
-export const FREE_TRIAL_LIMIT = 5;
+export const TRIAL_LIMIT_PER_EXAM = 40;
 
 export interface Plan {
   id: "weekly" | "monthly" | "quarterly" | "yearly";

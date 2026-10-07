@@ -13,6 +13,8 @@
   "dependencies": {
     "@serwist/next": "^9.5.13",
     "clsx": "^2.1.1",
+    "firebase": "^12.19.0",
+    "firebase-admin": "^14.5.0",
     "idb": "^8.0.4",
     "lucide-react": "^1.52.0",
     "mongodb": "^7.7.0",

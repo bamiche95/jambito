@@ -43,3 +43,7 @@ next-env.d.ts
 # Serwist service worker build output
 public/sw*
 public/swe-worker*
+
+# Firebase admin service account (secret — never commit)
+*-firebase-adminsdk-*.json
+firebase-adminsdk*.json

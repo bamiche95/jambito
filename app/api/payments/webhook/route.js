@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import {
-  verifyPaystackSignature,
-  upsertSubscription,
-} from "@/lib/payments";
+import { verifyPaystackSignature } from "@/lib/payments";
+import { upsertSubscription } from "@/lib/users";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +9,8 @@ export const dynamic = "force-dynamic";
  *
  * Verifies the request using the `x-paystack-signature` header (HMAC-SHA512 of
  * the raw body with PAYSTACK_SECRET_KEY), then upgrades the user's
- * subscription on a successful `charge.success` event.
+ * subscription on a successful `charge.success` event. The user is identified
+ * by the Firebase `uid` passed through in the transaction metadata.
  */
 export async function POST(request) {
   const rawBody = await request.text();
@@ -34,17 +33,17 @@ export async function POST(request) {
     );
   }
 
-  // Only act on successful charges.
   if (event?.event === "charge.success") {
     const data = event.data ?? {};
+    const uid = data.metadata?.uid;
     const email = data.customer?.email;
     const reference = data.reference;
     const amount = data.amount;
     const plan = data.metadata?.plan ?? "monthly";
 
-    if (email) {
+    if (uid) {
       try {
-        await upsertSubscription({ email, plan, reference, amount });
+        await upsertSubscription({ uid, email, plan, reference, amount });
       } catch (error) {
         console.error("Failed to persist subscription:", error);
         return NextResponse.json(
@@ -55,6 +54,5 @@ export async function POST(request) {
     }
   }
 
-  // Always acknowledge receipt so Paystack does not retry indefinitely.
   return NextResponse.json({ success: true, received: true });
 }

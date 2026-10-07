@@ -1,36 +1,49 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
-import {
-  initializePaystackTransaction,
-} from "@/lib/payments";
+import { initializePaystackTransaction } from "@/lib/payments";
+import { requireUser } from "@/lib/serverAuth";
 import { planPriceKobo } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
 /**
- * Creates a Paystack transaction and returns the checkout authorization URL.
- * Body: { email, plan?: "weekly" | "monthly" | "quarterly" | "yearly" }
+ * Creates a Paystack transaction for the signed-in user.
+ * Body: { plan?: "weekly" | "monthly" | "quarterly" | "yearly" }
  */
 export async function POST(request) {
+  const auth = await requireUser(request);
+  if (!auth) {
+    return NextResponse.json(
+      { success: false, message: "You must be signed in to pay." },
+      { status: 401 }
+    );
+  }
+
+  const body = await request.json().catch(() => ({}));
+  const plan = body?.plan ?? "monthly";
+  const email = auth.decoded.email || auth.user.email || body?.email;
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return NextResponse.json(
+      {
+        success: false,
+        message:
+          "A valid email is required to pay. Please sign in with Google or email first.",
+      },
+      { status: 400 }
+    );
+  }
+
+  const amount = planPriceKobo(plan);
+  const reference = `JMB-${Date.now()}-${randomUUID().slice(0, 8)}`;
+
   try {
-    const body = await request.json();
-    const { email, plan = "monthly" } = body ?? {};
-
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      return NextResponse.json(
-        { success: false, message: "A valid email address is required" },
-        { status: 400 }
-      );
-    }
-
-    const amount = planPriceKobo(plan);
-    const reference = `JMB-${Date.now()}-${randomUUID().slice(0, 8)}`;
-
     const result = await initializePaystackTransaction({
       email,
       amount,
       reference,
       plan,
+      uid: auth.decoded.uid,
     });
 
     if (result?.status) {

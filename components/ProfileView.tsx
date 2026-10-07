@@ -9,42 +9,52 @@ import {
   Bookmark,
   Target,
   TrendingUp,
+  LogOut,
 } from "lucide-react";
+import { useAuth } from "@/lib/auth";
 import { getAttempts, getBookmarkIds } from "@/lib/offlineStore";
 import { isSubscriptionActive } from "@/lib/subscription";
 import type { AttemptRecord, Profile } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export default function ProfileView() {
-  const [email] = useState<string | null>(() =>
-    typeof localStorage !== "undefined"
-      ? localStorage.getItem("jambito_pro_email")
-      : null
-  );
+  const { user, getIdToken, loading: authLoading, signOut } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [attempts, setAttempts] = useState<AttemptRecord[]>([]);
   const [bookmarkCount, setBookmarkCount] = useState(0);
-  const [loading, setLoading] = useState<boolean>(() => Boolean(email));
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getAttempts().then(setAttempts);
     getBookmarkIds().then((ids) => setBookmarkCount(ids.length));
+  }, []);
 
-    if (email) {
-      fetch(`/api/profile?email=${encodeURIComponent(email)}`)
+  useEffect(() => {
+    if (authLoading) return;
+    let cancelled = false;
+
+    getIdToken().then((token) => {
+      if (!token) {
+        if (!cancelled) setLoading(false);
+        return;
+      }
+      fetch("/api/profile", {
+        headers: { Authorization: `Bearer ${token}` },
+      })
         .then((r) => r.json())
         .then((json) => {
-          if (json.success) {
-            setProfile(json.profile);
-            if (json.profile?.isSubscribed) {
-              localStorage.setItem("jambito_subscribed", "1");
-            }
-          }
+          if (!cancelled && json.success) setProfile(json.profile);
         })
         .catch(() => undefined)
-        .finally(() => setLoading(false));
-    }
-  }, [email]);
+        .finally(() => {
+          if (!cancelled) setLoading(false);
+        });
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [authLoading, getIdToken, user?.uid]);
 
   const active = isSubscriptionActive(profile);
   const avg =
@@ -56,13 +66,25 @@ export default function ProfileView() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-10 w-full">
-      <h1 className="text-3xl font-bold text-slate-900">My Profile</h1>
-      <p className="text-slate-500 mt-2">
-        Your subscription, practice history and bookmarks.
-      </p>
+      <div className="flex items-start justify-between">
+        <div>
+          <h1 className="text-3xl font-bold text-slate-900">My Profile</h1>
+          <p className="text-slate-500 mt-2">
+            {user?.email ?? user?.displayName ?? "Guest"} ·{" "}
+            {user?.isAnonymous ? "Guest account" : "Signed in"}
+          </p>
+        </div>
+        {user && !user.isAnonymous && (
+          <button
+            onClick={() => signOut()}
+            className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-slate-200 text-slate-600 hover:bg-slate-50 transition"
+          >
+            <LogOut className="w-4 h-4" /> Sign out
+          </button>
+        )}
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-        {/* Subscription card */}
         <div className="md:col-span-1 bg-white rounded-xl border border-slate-200 p-6">
           <h2 className="font-semibold text-slate-900 mb-4">Subscription</h2>
           {loading ? (
@@ -90,9 +112,9 @@ export default function ProfileView() {
           ) : (
             <div className="space-y-3">
               <p className="text-sm text-slate-500">
-                {email
-                  ? `No active subscription for ${email}.`
-                  : "You're on the free trial."}
+                {user?.isAnonymous
+                  ? "You're on the free trial (guest)."
+                  : "No active subscription."}
               </p>
               <Link
                 href="/cbt"
@@ -104,7 +126,6 @@ export default function ProfileView() {
           )}
         </div>
 
-        {/* Stats */}
         <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
           <StatCard
             icon={Target}
@@ -124,7 +145,6 @@ export default function ProfileView() {
         </div>
       </div>
 
-      {/* Attempt history */}
       <section className="mt-10">
         <h2 className="text-xl font-semibold text-slate-900 mb-4">
           Practice history
