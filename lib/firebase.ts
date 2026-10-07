@@ -21,8 +21,35 @@ const firebaseConfig = {
 let app: FirebaseApp | null = null;
 let authInstance: Auth | null = null;
 
+/**
+ * `NEXT_PUBLIC_*` values are inlined at BUILD time. If they are missing from the
+ * build environment (e.g. not set on Vercel for Production/Preview), the config
+ * below is compiled to `undefined` and the client SDK later throws the cryptic
+ * `auth/invalid-api-key`. Surface an actionable error instead.
+ */
+const REQUIRED_CONFIG_KEYS: (keyof typeof firebaseConfig)[] = [
+  "apiKey",
+  "authDomain",
+  "projectId",
+  "appId",
+];
+
+function assertFirebaseConfig(): void {
+  const missing = REQUIRED_CONFIG_KEYS.filter((key) => !firebaseConfig[key]);
+  if (missing.length > 0) {
+    throw new Error(
+      `Firebase is not configured — missing build-time env var(s): ${missing
+        .map((key) => `NEXT_PUBLIC_FIREBASE_${key.replace(/[A-Z]/g, (c) => `_${c}`).toUpperCase()}`)
+        .join(", ")}. NEXT_PUBLIC_* values are inlined at build time, so set them in every ` +
+        "environment you deploy to (e.g. Vercel → Project → Settings → Environment Variables, " +
+        "for Production and Preview) and redeploy."
+    );
+  }
+}
+
 export function getFirebaseApp(): FirebaseApp {
   if (app) return app;
+  assertFirebaseConfig();
   app = getApps().length ? getApp() : initializeApp(firebaseConfig);
   return app;
 }
