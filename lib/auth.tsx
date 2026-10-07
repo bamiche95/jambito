@@ -17,7 +17,7 @@ import {
   signOut as fbSignOut,
   type User,
 } from "firebase/auth";
-import { auth } from "./firebase";
+import { getFirebaseAuth } from "./firebase";
 import { TRIAL_LIMIT } from "./plans";
 
 interface AuthContextValue {
@@ -44,7 +44,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [trialRemaining, setTrialRemaining] = useState(TRIAL_LIMIT);
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (u) => {
+    const unsub = onAuthStateChanged(getFirebaseAuth(), (u) => {
       setUser(u);
       setLoading(false);
     });
@@ -75,13 +75,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signInWithGoogle = useCallback(async () => {
     const provider = new GoogleAuthProvider();
-    const result = await signInWithPopup(auth, provider);
+    const result = await signInWithPopup(getFirebaseAuth(), provider);
     return result.user;
   }, []);
 
   const signInWithEmail = useCallback(
     async (email: string, password: string) => {
-      const result = await signInWithEmailAndPassword(auth, email, password);
+      const result = await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
       return result.user;
     },
     []
@@ -89,21 +89,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signUpWithEmail = useCallback(
     async (email: string, password: string) => {
-      const result = await createUserWithEmailAndPassword(auth, email, password);
+      const result = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
       return result.user;
     },
     []
   );
 
   const signOut = useCallback(async () => {
-    await fbSignOut(auth);
+    await fbSignOut(getFirebaseAuth());
     setIsSubscribed(false);
     setTrialUsed(0);
     setTrialRemaining(TRIAL_LIMIT);
   }, []);
 
   const getIdToken = useCallback(async () => {
-    const u = auth.currentUser;
+    const u = getFirebaseAuth().currentUser;
     if (!u) return null;
     return u.getIdToken(true);
   }, []);

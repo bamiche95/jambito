@@ -1,5 +1,5 @@
 import { initializeApp, getApps, getApp, type FirebaseApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, type Auth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,10 +10,26 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-function getFirebaseApp(): FirebaseApp {
-  if (getApps().length) return getApp();
-  return initializeApp(firebaseConfig);
+/**
+ * Firebase client SDK is initialised lazily (on first use) rather than at
+ * module load. This module is pulled in by the `AuthProvider` client component
+ * which is rendered on the server during static generation (e.g. `/`). Calling
+ * `initializeApp`/`getAuth` at the top level would run during that prerender and
+ * throw `auth/invalid-api-key` whenever the NEXT_PUBLIC_FIREBASE_* build-time
+ * env vars are missing (CI/Vercel). Deferring it keeps prerendering safe.
+ */
+let app: FirebaseApp | null = null;
+let authInstance: Auth | null = null;
+
+export function getFirebaseApp(): FirebaseApp {
+  if (app) return app;
+  app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+  return app;
 }
 
-export const app = getFirebaseApp();
-export const auth = getAuth(app);
+export function getFirebaseAuth(): Auth {
+  if (authInstance) return authInstance;
+  authInstance = getAuth(getFirebaseApp());
+  return authInstance;
+}
+
