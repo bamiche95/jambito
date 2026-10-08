@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 import { getAttempts, getBookmarkIds } from "@/lib/offlineStore";
+import { DEFAULT_PLAN, planLabel } from "@/lib/plans";
 import { isSubscriptionActive } from "@/lib/subscription";
 import {
   ACCOUNT_STATUS_LABELS,
@@ -122,7 +123,7 @@ export default function ProfileView() {
             <p>{accountStatusMessage(status)}</p>
             {status === "deactivated" && (
               <Link href="/cbt" className="inline-block font-semibold underline">
-                Subscribe to restore access
+                Pay ₦{DEFAULT_PLAN.priceNaira.toLocaleString()} to restore access
               </Link>
             )}
             {profile?.role === "admin" && (
@@ -140,7 +141,7 @@ export default function ProfileView() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="md:col-span-1 bg-white rounded-xl border border-slate-200 p-6">
-          <h2 className="font-semibold text-slate-900 mb-4">Subscription</h2>
+          <h2 className="font-semibold text-slate-900 mb-4">Your access</h2>
           {loading ? (
             <div className="flex items-center gap-2 text-slate-500 text-sm">
               <Loader2 className="w-4 h-4 animate-spin" /> Checking…
@@ -163,7 +164,7 @@ export default function ProfileView() {
               <p className="text-sm text-slate-500">
                 Plan:{" "}
                 <span className="font-medium text-slate-700">
-                  {profile?.plan ?? "Monthly"}
+                  {planLabel(profile?.plan)}
                 </span>
               </p>
               <p className="text-sm text-slate-500 flex items-center gap-1">
@@ -182,7 +183,7 @@ export default function ProfileView() {
                 href="/cbt"
                 className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition"
               >
-                Upgrade now
+                Get 12 months of access
               </Link>
             </div>
           )}

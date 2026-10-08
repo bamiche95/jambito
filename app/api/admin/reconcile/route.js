@@ -16,7 +16,13 @@ import {
 } from "@/lib/adminUsers";
 import { getUsersCollection } from "@/lib/users";
 import { getAccountStatus } from "@/lib/accountStatus";
-import { planById, planByPriceKobo, planDurationDays } from "@/lib/plans";
+import {
+  planById,
+  planByPriceKobo,
+  planLabel,
+  PLAN_ID,
+  resolvePlanId,
+} from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
@@ -142,16 +148,19 @@ export async function POST(request) {
  * an ungranted payment (visible and re-runnable) rather than silent access.
  */
 async function applyReconciliation({ tx, reference, body, actor, paystack }) {
+  // Which plan was paid for is a hint, never a gate: there is one offer, so a
+  // missing or unrecognised plan id still resolves to it.
   const plan =
     planById(tx.metadata?.plan)?.id ??
     planById(body.plan)?.id ??
     planByPriceKobo(tx.amount)?.id ??
-    "monthly";
+    resolvePlanId(body.plan) ??
+    PLAN_ID;
   const requestedDays = Number(body.days);
   const days =
     Number.isFinite(requestedDays) && requestedDays > 0
       ? Math.floor(requestedDays)
-      : planDurationDays(plan);
+      : null;
 
   const resolved = await resolveAccount({ tx, requestedUid: body.uid });
   if (!resolved.ok) {
@@ -247,7 +256,11 @@ async function applyReconciliation({ tx, reference, body, actor, paystack }) {
         payment: serializePayment(await findPayment(reference)),
         user: serializeUser(await getAdminUser(uid)),
         granted: result.granted,
-        message: `Granted ${result.granted.durationDays} days of ${plan} access for ${reference}.`,
+        message: `Granted ${planLabel(plan)} for ${reference} — access runs to ${new Date(
+          result.granted.expiry
+        )
+          .toISOString()
+          .slice(0, 10)}.`,
       },
       { headers: NO_STORE }
     );

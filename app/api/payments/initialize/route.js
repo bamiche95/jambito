@@ -2,8 +2,9 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { initializePaystackTransaction } from "@/lib/payments";
 import { requirePaymentUser } from "@/lib/serverAuth";
-import { planById, planPriceKobo } from "@/lib/plans";
+import { planPriceKobo, resolvePlanId } from "@/lib/plans";
 import { recordPayment } from "@/lib/paymentsStore";
+import { isSubscribed } from "@/lib/users";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +12,11 @@ const NO_STORE = { "Cache-Control": "no-store" };
 
 /**
  * Creates a Paystack transaction for the signed-in user.
- * Body: { plan?: "weekly" | "monthly" | "quarterly" | "yearly" }
+ * Body: { plan?: "yearly" }
+ *
+ * There is one offer — ₦1,500 for 12 months. Nothing recurs and nothing is
+ * charged to a card automatically, so the only way to pay twice is to press the
+ * button twice; this endpoint refuses that while a paid window is still running.
  *
  * Deactivated accounts are allowed through on purpose: paying is how they get
  * back in. Blocked/deleted accounts are refused with an `account_*` code.
@@ -25,11 +30,34 @@ export async function POST(request) {
     );
   }
 
+  // Already paid up: refuse the charge instead of quietly taking a second
+  // ₦1,500 for time the student already owns. Only active accounts are refused
+  // — a deactivated account pays its way back in, which is the documented
+  // reactivation path, whichever window it happens to be on.
+  if (auth.status === "active" && isSubscribed(auth.user)) {
+    const expiry = auth.user?.subscriptionExpiry
+      ? new Date(auth.user.subscriptionExpiry)
+      : null;
+    return NextResponse.json(
+      {
+        success: false,
+        code: "already_subscribed",
+        message: expiry
+          ? `Your access is already paid for until ${expiry
+              .toISOString()
+              .slice(0, 10)}. Nothing was charged.`
+          : "Your access is already paid for. Nothing was charged.",
+        subscriptionExpiry: expiry ? expiry.toISOString() : null,
+      },
+      { status: 409, headers: NO_STORE }
+    );
+  }
+
   const body = await request.json().catch(() => ({}));
-  const plan = body?.plan ?? "monthly";
+  const plan = resolvePlanId(body?.plan);
   const email = auth.decoded.email || auth.user.email || body?.email;
 
-  if (!planById(plan)) {
+  if (!plan) {
     return NextResponse.json(
       { success: false, message: "Unknown plan" },
       { status: 400, headers: NO_STORE }

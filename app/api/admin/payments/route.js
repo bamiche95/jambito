@@ -15,7 +15,7 @@ import {
   serializeUser,
   writeAudit,
 } from "@/lib/adminUsers";
-import { planById, planDurationDays } from "@/lib/plans";
+import { PLAN_ID, planLabel, resolvePlanId } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
@@ -97,12 +97,15 @@ export async function POST(request) {
     email: auth.decoded.email ?? auth.user?.email ?? null,
   };
 
-  const plan = planById(body.plan)?.id ?? null;
+  // There is one offer, so an unrecognised (or absent) plan id is still stored
+  // as it: the ledger is a record of what someone bought, and the dashboard
+  // renders planLabel(plan) for every row.
+  const plan = resolvePlanId(body.plan) ?? PLAN_ID;
   const requestedDays = Number(body.days);
   const days =
     Number.isFinite(requestedDays) && requestedDays > 0
       ? Math.floor(requestedDays)
-      : planDurationDays(plan ?? body.plan);
+      : null;
   const amountNaira = Number(body.amountNaira);
   const amountKobo = Number.isFinite(amountNaira)
     ? Math.round(amountNaira * 100)
@@ -116,7 +119,7 @@ export async function POST(request) {
       uid,
       email: user.email ?? null,
       amountKobo,
-      plan: plan ?? body.plan ?? null,
+      plan,
       source: "manual",
       status: "success",
       channel: body.channel ?? "bank_transfer",
@@ -144,7 +147,7 @@ export async function POST(request) {
     if (wantsGrant) {
       const result = await grantSubscription({
         uid,
-        plan: plan ?? body.plan,
+        plan,
         days,
         mode: body.mode === "set" ? "set" : "extend",
         reference,
@@ -173,7 +176,7 @@ export async function POST(request) {
         reference,
         created,
         amountKobo,
-        plan: plan ?? body.plan ?? null,
+        plan,
         days,
         granted: wantsGrant,
         bankReference: body.bankReference ?? null,
@@ -188,7 +191,11 @@ export async function POST(request) {
         user: serializeUser(await getAdminUser(uid)),
         granted,
         message: wantsGrant
-          ? `Recorded ₦${(amountKobo / 100).toLocaleString()} and granted ${days} days.`
+          ? `Recorded ₦${(amountKobo / 100).toLocaleString()} and granted ${planLabel(
+              plan
+            )} — access runs to ${new Date(granted.expiry)
+              .toISOString()
+              .slice(0, 10)}.`
           : `Recorded ₦${(amountKobo / 100).toLocaleString()} without granting access.`,
       },
       { headers: NO_STORE }

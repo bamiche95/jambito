@@ -8,7 +8,7 @@ import {
   accountStatusMessage,
 } from "@/lib/accountStatus";
 import type { AccountStatus } from "@/lib/accountStatus";
-import { PLANS, planDurationDays } from "@/lib/plans";
+import { PLANS, PLAN_ID, planDurationDays, planLabel, resolvePlanId } from "@/lib/plans";
 import {
   adminGet,
   adminPost,
@@ -126,9 +126,12 @@ export function SubscriptionActions({
   disabled: boolean;
   onAction: ActionRunner;
 }) {
-  const [plan, setPlan] = useState(user.plan ?? "monthly");
+  // There is one plan, so this field is really just "how long". `resolvePlanId`
+  // maps a legacy id still on an old record onto the current offer so the
+  // select always shows a real option instead of a blank.
+  const [plan, setPlan] = useState<string>(resolvePlanId(user.plan) ?? PLAN_ID);
   const [days, setDays] = useState(
-    String(planDurationDays(user.plan ?? "monthly"))
+    String(planDurationDays(resolvePlanId(user.plan) ?? PLAN_ID))
   );
   const [mode, setMode] = useState<"extend" | "set">("extend");
   const [confirmRevoke, setConfirmRevoke] = useState(false);
@@ -446,7 +449,11 @@ export function ReconcileBox({
           <Row label="Customer email" value={paystack.email ?? "—"} />
           <Row
             label="Plan"
-            value={paystack.plan ?? paystack.inferredPlan ?? "unknown (defaults to monthly)"}
+            value={
+              paystack.plan || paystack.inferredPlan
+                ? planLabel(paystack.plan ?? paystack.inferredPlan)
+                : "unknown — treated as Annual Access"
+            }
           />
           <Row
             label="Ledger row"

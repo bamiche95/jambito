@@ -9,7 +9,7 @@ import {
   formatDateTime,
   formatNaira,
 } from "@/lib/adminClient";
-import { PLANS, planDurationDays } from "@/lib/plans";
+import { DEFAULT_PLAN, PLANS, PLAN_ID, planDurationDays, resolvePlanId } from "@/lib/plans";
 import type {
   AdminActionPayload,
   AdminUser,
@@ -276,8 +276,10 @@ function ManualGrantForm({
   const [matches, setMatches] = useState<AdminUser[]>([]);
   const [searching, setSearching] = useState(false);
   const [selected, setSelected] = useState<AdminUser | null>(null);
-  const [plan, setPlan] = useState("monthly");
-  const [days, setDays] = useState(String(planDurationDays("monthly")));
+  // One plan, so this really just sets the default window length. Legacy ids on
+  // an old record map onto the offer so the select never renders blank.
+  const [plan, setPlan] = useState<string>(PLAN_ID);
+  const [days, setDays] = useState(String(planDurationDays(PLAN_ID)));
   const [mode, setMode] = useState<"extend" | "set">("extend");
   const [amount, setAmount] = useState("");
   const [reference, setReference] = useState("");
@@ -383,8 +385,9 @@ function ManualGrantForm({
                   onClick={() => {
                     setSelected(u);
                     if (u.plan) {
-                      setPlan(u.plan);
-                      setDays(String(planDurationDays(u.plan)));
+                      const planId = resolvePlanId(u.plan) ?? PLAN_ID;
+                      setPlan(planId);
+                      setDays(String(planDurationDays(planId)));
                     }
                   }}
                   className="w-full text-left px-3 py-2 text-sm hover:bg-slate-50"
@@ -438,7 +441,7 @@ function ManualGrantForm({
             min={0}
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder={String(PLANS.find((p) => p.id === plan)?.priceNaira ?? 0)}
+            placeholder={String(DEFAULT_PLAN.priceNaira)}
             className="block mt-1 w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm"
           />
         </label>

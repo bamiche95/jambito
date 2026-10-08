@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     q: "How many free questions can I practice?",
-    a: "You can attempt 5 free questions per subject and year without signing up or paying. After that, choose any affordable plan to keep practicing.",
+    a: "You can attempt 40 questions free once you sign in, across any subject and year. After that, one ₦1,500 payment unlocks unlimited questions for 12 months.",
   },
   {
     q: "Does CBT-Practice work offline?",
@@ -18,8 +18,12 @@ const faqs = [
     a: "JAMB (UTME), WAEC (SSCE), and POST UTME past questions across popular subjects like Physics, Chemistry, Biology, Mathematics, English and more.",
   },
   {
+    q: "What does the ₦1,500 cover, and does it renew?",
+    a: "₦1,500 is a one-off payment for 12 months of unlimited access to every exam board, subject and year. It does not renew and nothing is ever charged to your card automatically — you simply pay again when the year is up.",
+  },
+  {
     q: "How do I pay?",
-    a: "We accept Paystack (cards, bank, USSD), OPay and direct bank transfer. Your subscription activates automatically after a successful payment.",
+    a: "We accept Paystack (cards, bank, USSD), OPay and direct bank transfer. Your access activates automatically after a successful payment.",
   },
   {
     q: "Can I install CBT-Practice on my phone?",

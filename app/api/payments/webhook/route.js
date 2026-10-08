@@ -6,7 +6,7 @@ import {
   recordPayment,
   updatePayment,
 } from "@/lib/paymentsStore";
-import { planById, planByPriceKobo } from "@/lib/plans";
+import { planById, planByPriceKobo, PLAN_ID } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
 
@@ -27,6 +27,12 @@ function received(extra = {}) {
  * Every grant is keyed on `data.reference` and the ledger's unique index, so
  * Paystack's retries (and a reconcile performed by hand later) can never grant
  * the same payment twice.
+ *
+ * Note the deliberate asymmetry with /api/payments/initialize: that endpoint
+ * refuses to start a second charge while a paid window is running, but this one
+ * always credits a `charge.success` that actually happened. Once money has left
+ * the customer's account, refusing to honour it would be theft by omission —
+ * the reference is the dedupe key, and the window simply extends.
  */
 export async function POST(request) {
   const rawBody = await request.text();
@@ -56,11 +62,12 @@ export async function POST(request) {
   const channel = data.channel ?? null;
   const uid = data.metadata?.uid ?? null;
   // Metadata is what initialize() set; the amount is the only fallback when a
-  // payment was created outside the app (dashboard invoice, etc).
+  // payment was created outside the app (dashboard invoice, etc). Both collapse
+  // onto the single offer when they don't name it.
   const plan =
     (planById(data.metadata?.plan)?.id ?? null) ??
     planByPriceKobo(amount)?.id ??
-    "monthly";
+    PLAN_ID;
 
   try {
     if (event?.event === "charge.success") {

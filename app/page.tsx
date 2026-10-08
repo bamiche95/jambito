@@ -16,7 +16,7 @@ import ExamPicker from "@/components/practice/ExamPicker";
 export const metadata = {
   title: "CBT-Practice — JAMB, WAEC & POST UTME Past Questions Practice",
   description:
-    "Practice real JAMB, WAEC and POST UTME past questions offline with instant answers and explanations. Try 5 questions free.",
+    "Practice real JAMB, WAEC and POST UTME past questions offline with instant answers and explanations. Try 40 questions free, then ₦1,500 for a full year.",
 };
 
 const benefits = [
@@ -86,8 +86,8 @@ export default function Home() {
           Pick your exam board
         </h2>
         <p className="text-slate-500 mt-2">
-          Choose a board, then a year and a subject. Free trials available — no
-          sign-up required.
+          Choose a board, then a year and a subject. Sign in for 40 free
+          questions — no payment needed.
         </p>
 
         <ExamPicker />
@@ -113,35 +113,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Pricing */}
+      {/* Pricing — one offer, so one card. */}
       <section id="pricing" className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">
-          Simple, affordable pricing
+          One payment. A full year.
         </h2>
         <p className="text-slate-500 text-center mt-2">
-          Start with 5 free questions per subject/year. Upgrade when you&apos;re ready.
+          ₦1,500 once unlocks every exam board, subject and year for 12 months.
+          Nothing renews and nothing is charged automatically.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div className="max-w-md mx-auto mt-10">
           {PLANS.map((plan) => (
             <div
               key={plan.id}
-              className={
-                plan.popular
-                  ? "relative bg-slate-900 text-white rounded-2xl p-6 ring-2 ring-blue-500"
-                  : "bg-white rounded-2xl border border-slate-200 p-6"
-              }
+              className="relative bg-slate-900 text-white rounded-2xl p-6 ring-2 ring-blue-500"
             >
-              {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-blue-600 text-white text-xs font-bold rounded-full">
-                  Most popular
-                </span>
-              )}
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-blue-600 text-white text-xs font-bold rounded-full">
+                Pay once
+              </span>
               <h3 className="font-semibold">{plan.name}</h3>
               <p className="mt-3">
                 <span className="text-3xl font-extrabold">
                   ₦{plan.priceNaira.toLocaleString()}
                 </span>
-                <span className="text-sm opacity-70"> / {plan.interval}</span>
+                <span className="text-sm opacity-70"> for 12 months</span>
               </p>
               <p className="text-sm mt-2 opacity-70">{plan.description}</p>
               <ul className="mt-4 space-y-2 text-sm">
@@ -154,13 +149,9 @@ export default function Home() {
               </ul>
               <Link
                 href="/cbt"
-                className={
-                  plan.popular
-                    ? "block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 font-semibold transition"
-                    : "block text-center mt-6 py-2.5 rounded-lg bg-slate-900 text-white hover:opacity-90 font-semibold transition"
-                }
+                className="block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 font-semibold transition"
               >
-                Get started
+                Start practicing
               </Link>
             </div>
           ))}

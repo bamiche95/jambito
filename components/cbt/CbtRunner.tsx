@@ -27,7 +27,7 @@ import {
   toggleBookmark,
 } from "@/lib/offlineStore";
 import { examSlugToName, deslugify, titleCase } from "@/lib/catalog";
-import { TRIAL_LIMIT, TRIAL_PREVIEW_SECONDS } from "@/lib/plans";
+import { DEFAULT_PLAN, TRIAL_LIMIT, TRIAL_PREVIEW_SECONDS } from "@/lib/plans";
 import {
   ACCOUNT_STATUS_LABELS,
   accountStatusFromCode,
@@ -382,13 +382,14 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
             You&apos;ve reached your {TRIAL_LIMIT}-question free trial limit
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mt-2">
-            Subscribe to get Unlimited access to Past questions and answers.
+            Unlock 12 months of unlimited access to past questions and answers
+            with a single ₦{DEFAULT_PLAN.priceNaira.toLocaleString()} payment.
           </p>
           <button
             onClick={() => setShowPaywall(true)}
             className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
           >
-            Subscribe for unlimited access
+            Unlock 12 months of access
           </button>
           <Link
             href="/"
@@ -498,7 +499,7 @@ function AccountLockedPanel({
           onClick={onSubscribe}
           className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
         >
-          Subscribe to restore access
+          Pay ₦{DEFAULT_PLAN.priceNaira.toLocaleString()} to restore access
         </button>
       )}
       <Link
