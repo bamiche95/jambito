@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import {
@@ -11,7 +11,7 @@ import {
   CheckCircle2,
   XCircle,
 } from "lucide-react";
-import type { PracticeQuestion } from "@/lib/types";
+import type { PracticeQuestion, PracticeSession } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { DEFAULT_PLAN, TRIAL_LIMIT } from "@/lib/plans";
 
@@ -35,11 +35,23 @@ interface CbtPracticeProps {
   /** Called once when the user answers a question for the first time. */
   onAnswer?: (questionId: PracticeQuestion["id"]) => void;
   /** Called when the test is submitted with the final score. */
-  onSubmit?: (score: number, total: number) => void;
+  onSubmit?: (score: number, total: number, sessionId: string) => void | Promise<void>;
+  sessionKey?: string;
+  exam?: string;
+  subject?: string;
+  year?: string;
+  initialSession?: PracticeSession | null;
+  onSessionUpdate?: (session: PracticeSession) => void | Promise<void>;
   bookmarks?: Set<string>;
   onToggleBookmark?: (questionId: PracticeQuestion["id"]) => void;
   canRetake?: boolean;
   onSubscribe?: () => void;
+}
+
+function createSessionId(): string {
+  return typeof crypto !== "undefined" && "randomUUID" in crypto
+    ? crypto.randomUUID()
+    : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 
 export default function CbtPractice({
@@ -50,16 +62,30 @@ export default function CbtPractice({
   previewSeconds = 0,
   onAnswer,
   onSubmit,
+  sessionKey = "",
+  exam = "",
+  subject = "",
+  year = "",
+  initialSession = null,
+  onSessionUpdate,
   bookmarks,
   onToggleBookmark,
   canRetake = false,
   onSubscribe,
 }: CbtPracticeProps) {
-  const [selectedAnswers, setSelectedAnswers] = useState<{
-    [key: string]: string;
-  }>({});
-  const [timeLeft, setTimeLeft] = useState(durationMinutes * 60);
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>(
+    () => initialSession?.answers ?? {}
+  );
+  const selectedAnswersRef = useRef(selectedAnswers);
+  const [timeLeft, setTimeLeft] = useState(
+    () => initialSession?.remainingSeconds ?? durationMinutes * 60
+  );
+  const timeLeftRef = useRef(timeLeft);
+  const scrollYRef = useRef(initialSession?.scrollY ?? 0);
+  const sessionIdRef = useRef(initialSession?.id ?? createSessionId());
+  const submittedRef = useRef(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [pageVisible, setPageVisible] = useState(true);
   // True once the paywall overlay covers the set (trial exhausted).
   const [previewDone, setPreviewDone] = useState(false);
   // Restart the preview window whenever the set becomes locked (React's
@@ -80,22 +106,21 @@ export default function CbtPractice({
 
   const covered = locked && (previewSeconds <= 0 || previewDone);
 
-  // Countdown timer with auto-submit on expiration. Paused while covered so a
-  // locked session can't silently run out of time behind the overlay.
   useEffect(() => {
-    if (isSubmitted || covered || timeLeft <= 0) return;
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          setIsSubmitted(true);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [isSubmitted, covered, timeLeft]);
+    if (!initialSession?.scrollY) return;
+    const frame = requestAnimationFrame(() => {
+      window.scrollTo({ top: initialSession.scrollY, behavior: "instant" });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [initialSession]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      scrollYRef.current = window.scrollY;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -107,10 +132,61 @@ export default function CbtPractice({
 
   const answeredCount = Object.keys(selectedAnswers).length;
 
-  const handleSelectOption = (questionId: PracticeQuestion["id"], key: string) => {
+  const persistProgress = useCallback(
+    (
+      answers = selectedAnswersRef.current,
+      remainingSeconds = timeLeftRef.current
+    ) => {
+      if (submittedRef.current || locked || !sessionKey || !onSessionUpdate) return;
+      const session: PracticeSession = {
+        id: sessionIdRef.current,
+        key: sessionKey,
+        exam,
+        subject,
+        year,
+        answers,
+        remainingSeconds,
+        durationSeconds:
+          initialSession?.durationSeconds ?? durationMinutes * 60,
+        scrollY: typeof window === "undefined" ? scrollYRef.current : window.scrollY,
+        updatedAt: new Date().toISOString(),
+      };
+      void onSessionUpdate(session);
+    },
+    [
+      durationMinutes,
+      exam,
+      initialSession?.durationSeconds,
+      locked,
+      onSessionUpdate,
+      sessionKey,
+      subject,
+      year,
+    ]
+  );
+
+  useEffect(() => {
+    const updateVisibility = () => {
+      const visible = document.visibilityState === "visible";
+      setPageVisible(visible);
+      if (!visible) persistProgress();
+    };
+    updateVisibility();
+    document.addEventListener("visibilitychange", updateVisibility);
+    return () => document.removeEventListener("visibilitychange", updateVisibility);
+  }, [persistProgress]);
+
+  const handleSelectOption = (
+    questionId: PracticeQuestion["id"],
+    key: string
+  ) => {
     if (isSubmitted || locked) return;
-    const wasUnanswered = !selectedAnswers[questionId as string];
-    setSelectedAnswers((prev) => ({ ...prev, [questionId]: key }));
+    const id = String(questionId);
+    const wasUnanswered = !selectedAnswersRef.current[id];
+    const nextAnswers = { ...selectedAnswersRef.current, [id]: key };
+    selectedAnswersRef.current = nextAnswers;
+    setSelectedAnswers(nextAnswers);
+    persistProgress(nextAnswers);
     if (wasUnanswered) onAnswer?.(questionId);
   };
 
@@ -129,17 +205,55 @@ export default function CbtPractice({
     return score;
   }, [questions, selectedAnswers]);
 
-  const handleSubmit = () => {
-    if (isSubmitted) return;
+  const completeTest = useCallback(() => {
+    if (submittedRef.current) return;
+    submittedRef.current = true;
     setIsSubmitted(true);
-    onSubmit?.(calculateScore(), questions.length);
-  };
+    void onSubmit?.(calculateScore(), questions.length, sessionIdRef.current);
+  }, [calculateScore, onSubmit, questions.length]);
+
+  const handleSubmit = () => completeTest();
 
   const resetTest = () => {
+    submittedRef.current = false;
+    selectedAnswersRef.current = {};
+    const resetTime = durationMinutes * 60;
+    timeLeftRef.current = resetTime;
+    sessionIdRef.current = createSessionId();
     setSelectedAnswers({});
-    setTimeLeft(durationMinutes * 60);
+    setTimeLeft(resetTime);
     setIsSubmitted(false);
+    persistProgress({}, resetTime);
   };
+
+  useEffect(() => {
+    if (isSubmitted || covered || !pageVisible || timeLeftRef.current <= 0) return;
+    let secondsSinceSave = 0;
+    const timer = setInterval(() => {
+      const nextTime = Math.max(0, timeLeftRef.current - 1);
+      timeLeftRef.current = nextTime;
+      setTimeLeft(nextTime);
+      secondsSinceSave++;
+      if (nextTime === 0) {
+        clearInterval(timer);
+      } else if (secondsSinceSave >= 5) {
+        secondsSinceSave = 0;
+        persistProgress(selectedAnswersRef.current, nextTime);
+      }
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [covered, isSubmitted, pageVisible, persistProgress]);
+
+  useEffect(() => {
+    if (timeLeft === 0 && !isSubmitted) completeTest();
+  }, [completeTest, isSubmitted, timeLeft]);
+
+  useEffect(
+    () => () => {
+      persistProgress();
+    },
+    [persistProgress]
+  );
 
   if (!questions || questions.length === 0) {
     return <div className="p-6 text-center">No questions provided.</div>;

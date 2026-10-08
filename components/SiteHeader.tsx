@@ -28,7 +28,7 @@ export default function SiteHeader() {
           <Link href="/" className="hover:text-slate-900 dark:hover:text-white">
             Home
           </Link>
-          <Link href="/cbt" className="hover:text-slate-900 dark:hover:text-white">
+          <Link href="/practice" className="hover:text-slate-900 dark:hover:text-white">
             Practice
           </Link>
           <Link

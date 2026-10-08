@@ -35,23 +35,32 @@ export default function FaqAccordion() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="divide-y divide-slate-200 rounded-xl border border-slate-200 overflow-hidden">
+    <div className="divide-y divide-slate-200">
       {faqs.map((faq, i) => (
-        <div key={i} className="bg-white">
+        <div key={faq.q}>
           <button
+            type="button"
+            aria-expanded={open === i}
+            aria-controls={`faq-answer-${i}`}
             onClick={() => setOpen(open === i ? null : i)}
-            className="w-full flex items-center justify-between px-5 py-4 text-left"
+            className="flex min-h-14 w-full items-center justify-between gap-4 py-4 text-left transition-colors hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-500"
           >
-            <span className="font-medium text-slate-800">{faq.q}</span>
+            <span className="font-medium leading-5 text-slate-800">{faq.q}</span>
             <ChevronDown
               className={cn(
-                "w-5 h-5 text-slate-400 transition-transform",
+                "h-5 w-5 shrink-0 text-slate-400 transition-transform",
                 open === i && "rotate-180"
               )}
+              aria-hidden
             />
           </button>
           {open === i && (
-            <p className="px-5 pb-4 text-sm text-slate-600">{faq.a}</p>
+            <p
+              id={`faq-answer-${i}`}
+              className="pb-4 pr-8 text-sm leading-6 text-slate-600"
+            >
+              {faq.a}
+            </p>
           )}
         </div>
       ))}

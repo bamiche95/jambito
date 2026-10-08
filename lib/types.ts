@@ -61,6 +61,23 @@ export interface AttemptRecord {
   total: number;
   percentage: number;
   date: string;
+  /** Idempotency key shared with the completed practice session. */
+  sessionId?: string;
+}
+
+export interface PracticeSession {
+  /** Unique across retakes of the same exam set. */
+  id: string;
+  /** Canonical exam/subject/year key used to resume the matching set. */
+  key: string;
+  exam: string;
+  subject: string;
+  year: string;
+  answers: Record<string, string>;
+  remainingSeconds: number;
+  durationSeconds: number;
+  scrollY: number;
+  updatedAt: string;
 }
 
 export interface Profile {

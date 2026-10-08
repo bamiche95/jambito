@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { Serwist } from "@serwist/window";
+import { wireInstallListeners } from "@/lib/pwa-install";
 
 /**
  * Registers the Serwist service worker (built by `serwist build`).
@@ -11,6 +12,7 @@ import { Serwist } from "@serwist/window";
 export default function RegisterSW() {
   useEffect(() => {
     if (typeof window === "undefined") return;
+    wireInstallListeners(window);
     if (!("serviceWorker" in navigator)) return;
 
     const serwist = new Serwist("/sw.js", {

@@ -1,5 +1,5 @@
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
-import type { AttemptRecord, QuestionsPayload } from "./types";
+import type { AttemptRecord, PracticeSession, QuestionsPayload } from "./types";
 
 /**
  * Client-side IndexedDB persistence for offline-first question caching,
@@ -10,7 +10,7 @@ import type { AttemptRecord, QuestionsPayload } from "./types";
  */
 
 const DB_NAME = "jambito-offline";
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 interface JambitoDB extends DBSchema {
   questions: {
@@ -21,6 +21,10 @@ interface JambitoDB extends DBSchema {
     key: string;
     value: AttemptRecord;
     indexes: { "by-date": string };
+  };
+  sessions: {
+    key: string;
+    value: PracticeSession;
   };
   bookmarks: {
     key: string;
@@ -41,6 +45,9 @@ function getDB(): Promise<IDBPDatabase<JambitoDB>> | null {
         if (!db.objectStoreNames.contains("attempts")) {
           const store = db.createObjectStore("attempts");
           store.createIndex("by-date", "date");
+        }
+        if (!db.objectStoreNames.contains("sessions")) {
+          db.createObjectStore("sessions");
         }
         if (!db.objectStoreNames.contains("bookmarks")) {
           db.createObjectStore("bookmarks");
@@ -118,12 +125,12 @@ export async function clearAllCachedQuestions(): Promise<void> {
 export async function saveAttempt(record: AttemptRecord): Promise<void> {
   const db = getDB();
   if (!db) return;
-  // The `attempts` store uses out-of-line keys (no key generator), so we must
-  // supply a unique key for every attempt.
+  // Reusing a session id makes completion writes idempotent across retries.
   const id =
-    typeof crypto !== "undefined" && "randomUUID" in crypto
+    record.sessionId ??
+    (typeof crypto !== "undefined" && "randomUUID" in crypto
       ? crypto.randomUUID()
-      : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+      : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
   await (await db).put("attempts", record, id);
 }
 
@@ -132,6 +139,35 @@ export async function getAttempts(): Promise<AttemptRecord[]> {
   if (!db) return [];
   const all = await (await db).getAll("attempts");
   return all.sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export async function savePracticeSession(
+  session: PracticeSession
+): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).put("sessions", session, session.key);
+}
+
+export async function getPracticeSession(
+  key: string
+): Promise<PracticeSession | null> {
+  const db = getDB();
+  if (!db) return null;
+  return (await (await db).get("sessions", key)) ?? null;
+}
+
+export async function getPracticeSessions(): Promise<PracticeSession[]> {
+  const db = getDB();
+  if (!db) return [];
+  const sessions = await (await db).getAll("sessions");
+  return sessions.sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
+}
+
+export async function deletePracticeSession(key: string): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).delete("sessions", key);
 }
 
 // ---------------------------------------------------------------------------

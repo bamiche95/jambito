@@ -21,6 +21,9 @@ import {
   deleteCachedQuestions,
   clearAllCachedQuestions,
   saveAttempt,
+  getPracticeSession,
+  savePracticeSession,
+  deletePracticeSession,
   getBookmarkIds,
   getEntitlement,
   isEntitlementLocked,
@@ -34,7 +37,7 @@ import {
   accountStatusMessage,
   type AccountStatus,
 } from "@/lib/accountStatus";
-import type { PracticeQuestion } from "@/lib/types";
+import type { PracticeQuestion, PracticeSession } from "@/lib/types";
 
 interface CbtRunnerProps {
   exam?: string;
@@ -61,6 +64,9 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   } = useAuth();
 
   const [questions, setQuestions] = useState<PracticeQuestion[]>([]);
+  const [savedSession, setSavedSession] = useState<PracticeSession | null>(null);
+  const [sessionLoadedKey, setSessionLoadedKey] = useState<string | null>(null);
+  const sessionLoading = sessionLoadedKey !== storageKey;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
@@ -94,6 +100,24 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   // the server confirmed it, so a blind default can never unlock paid content.
   const locked =
     !isSubscribed && (teaserOnly || (entitlementKnown && remaining <= 0));
+
+  useEffect(() => {
+    let cancelled = false;
+    getPracticeSession(storageKey)
+      .then((session) => {
+        if (cancelled) return;
+        setSavedSession(session);
+        setSessionLoadedKey(storageKey);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setSavedSession(null);
+        setSessionLoadedKey(storageKey);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [storageKey]);
 
   useEffect(() => {
     getBookmarkIds().then((ids) => setBookmarks(new Set(ids.map(String))));
@@ -297,7 +321,7 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   }, [isSubscribed, getIdToken, refreshStatus, trialRemaining]);
 
   const handleSubmit = useCallback(
-    async (score: number, total: number) => {
+    async (score: number, total: number, sessionId: string) => {
       await saveAttempt({
         key: storageKey,
         exam: examName,
@@ -307,10 +331,17 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
         total,
         percentage: total ? Math.round((score / total) * 100) : 0,
         date: new Date().toISOString(),
+        sessionId,
       });
+      await deletePracticeSession(storageKey);
+      setSavedSession(null);
     },
     [storageKey, examName, subjectName, yearName]
   );
+
+  const handleSessionUpdate = useCallback((session: PracticeSession) => {
+    return savePracticeSession(session).catch(() => undefined);
+  }, []);
 
   const handleToggleBookmark = useCallback(async (id: string | number) => {
     const nowBookmarked = await toggleBookmark(id);
@@ -365,7 +396,7 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
 
   return (
     <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10">
-      {loading ? (
+      {loading || sessionLoading ? (
         <div className="flex flex-col items-center justify-center py-20 text-slate-500 gap-3">
           <Loader2 className="w-8 h-8 animate-spin" />
           <p>Loading questions…</p>
@@ -436,9 +467,16 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
             </div>
           )}
           <CbtPractice
+            key={storageKey}
             title={title}
             questions={questions}
             durationMinutes={Math.max(1, Math.min(30, Math.ceil(questions.length * 2)))}
+            sessionKey={storageKey}
+            exam={examName}
+            subject={subjectName}
+            year={yearName}
+            initialSession={locked ? null : savedSession}
+            onSessionUpdate={handleSessionUpdate}
             locked={locked}
             previewSeconds={TRIAL_PREVIEW_SECONDS}
             onAnswer={handleAnswer}
