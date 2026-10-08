@@ -64,10 +64,9 @@ const PROBE_TOKEN = [
  */
 async function checkTokenVerification() {
   try {
-    const app = await import("firebase-admin/app");
+    const { getAdminApp } = await import("@/lib/firebaseAdmin");
     const auth = await import("firebase-admin/auth");
-    const adminApp = app.getApps().length ? app.getApp() : app.initializeApp();
-    await auth.getAuth(adminApp).verifyIdToken(PROBE_TOKEN);
+    await auth.getAuth(getAdminApp()).verifyIdToken(PROBE_TOKEN);
     return "unexpected: probe token verified";
   } catch (error) {
     return `${error?.code || error?.name || "error"}: ${error?.message || error}`;
@@ -95,6 +94,16 @@ export async function GET() {
     hasGoogleCredPath: Boolean(process.env.GOOGLE_APPLICATION_CREDENTIALS),
     vercelEnv: process.env.VERCEL_ENV ?? null,
     vercelRegion: process.env.VERCEL_REGION ?? null,
+    // Which (public) source supplies the project ID when no service account is
+    // available - see lib/firebaseAdmin.ts.
+    projectIdSources: {
+      FIREBASE_PROJECT_ID: Boolean(process.env.FIREBASE_PROJECT_ID),
+      GOOGLE_CLOUD_PROJECT: Boolean(process.env.GOOGLE_CLOUD_PROJECT),
+      GCLOUD_PROJECT: Boolean(process.env.GCLOUD_PROJECT),
+      NEXT_PUBLIC_FIREBASE_PROJECT_ID: Boolean(
+        process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID
+      ),
+    },
   };
 
   const imports = Object.fromEntries([
@@ -104,14 +113,15 @@ export async function GET() {
     await check("@/lib/users", () => import("@/lib/users")),
   ]);
 
-  // Credential smoke test: can the Admin SDK initialise with what is configured?
+  // Credential smoke test through the app's own initialiser (not a bare
+  // initializeApp()), so this measures what the API routes really use.
   let adminInit = "FAILED: import error";
   try {
     const app = await import("firebase-admin/app");
     const auth = await import("firebase-admin/auth");
-    const adminApp = app.getApps().length ? app.getApp() : app.initializeApp();
-    auth.getAuth(adminApp);
-    adminInit = "ok";
+    const { getAdminApp } = await import("@/lib/firebaseAdmin");
+    auth.getAuth(getAdminApp());
+    adminInit = `ok (apps: ${app.getApps().length})`;
   } catch (error) {
     adminInit = `FAILED: ${error?.message || error}`;
   }
@@ -128,7 +138,7 @@ export async function GET() {
 
   const ok =
     Object.values(imports).every((value) => value === "ok") &&
-    adminInit === "ok" &&
+    adminInit.startsWith("ok") &&
     mongo === "ok" &&
     credentialsOk;
 
