@@ -52,7 +52,11 @@ export async function verifyIdToken(
   if (!token) return null;
   try {
     return await getAuth(getAdminApp()).verifyIdToken(token);
-  } catch {
+  } catch (error) {
+    // Never fail silently: a missing/misconfigured credential turns the whole
+    // server-side trial gate into a no-op while callers only ever see
+    // "unauthorized", which is invisible in production.
+    console.error("[firebaseAdmin] verifyIdToken failed:", error);
     return null;
   }
 }

@@ -36,6 +36,45 @@ async function checkMongo() {
 }
 
 /**
+ * Well-formed but unsigned JWT with a bogus `kid`, used to drive the real
+ * verifier one step past decoding. A malformed string would fail at decode and
+ * hide whether the Admin SDK actually has credentials + a project ID, which is
+ * what `verifyIdToken()` needs even before it checks a signature.
+ */
+const PROBE_TOKEN = [
+  Buffer.from(JSON.stringify({ alg: "RS256", kid: "health-probe", typ: "JWT" })).toString(
+    "base64url"
+  ),
+  Buffer.from(
+    JSON.stringify({
+      iss: "https://securetoken.google.com/health-probe",
+      aud: "health-probe",
+      sub: "probe",
+      iat: Math.floor(Date.now() / 1000),
+      exp: Math.floor(Date.now() / 1000) + 3600,
+    })
+  ).toString("base64url"),
+  "AAAA",
+].join(".");
+
+/**
+ * Reports the verifier's own error. Healthy production looks like an
+ * invalid-token/audience complaint; a credential problem instead reports
+ * "Must initialize app with a cert credential or set your Firebase project ID".
+ */
+async function checkTokenVerification() {
+  try {
+    const app = await import("firebase-admin/app");
+    const auth = await import("firebase-admin/auth");
+    const adminApp = app.getApps().length ? app.getApp() : app.initializeApp();
+    await auth.getAuth(adminApp).verifyIdToken(PROBE_TOKEN);
+    return "unexpected: probe token verified";
+  } catch (error) {
+    return `${error?.code || error?.name || "error"}: ${error?.message || error}`;
+  }
+}
+
+/**
  * NOTE: no separate jwks-rsa/jose probe is needed here — loading
  * `firebase-admin/auth` already executes jwks-rsa's top-level `require("jose")`,
  * so an "ok" for that entry proves jose resolves to a CommonJS build in the
@@ -78,14 +117,23 @@ export async function GET() {
   }
 
   const mongo = await checkMongo();
+  const tokenVerify = await checkTokenVerification();
+
+  // A healthy verifier complains about the probe token itself; only a
+  // credential/config problem means the trial gate cannot work at all, so
+  // those fail the health check.
+  const credentialsOk = !/project ID|cert credential|default credentials/i.test(
+    tokenVerify
+  );
 
   const ok =
     Object.values(imports).every((value) => value === "ok") &&
     adminInit === "ok" &&
-    mongo === "ok";
+    mongo === "ok" &&
+    credentialsOk;
 
   return NextResponse.json(
-    { ok, imports, adminInit, mongo, ...info },
+    { ok, imports, adminInit, mongo, tokenVerify, ...info },
     { status: ok ? 200 : 500 }
   );
 }
