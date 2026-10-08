@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useSyncExternalStore, useState } from "react";
+import { createPortal } from "react-dom";
 import { X, Mail, Lock } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 
@@ -29,6 +30,20 @@ function errorMessage(error: unknown): string {
     default:
       return "Something went wrong. Please try again.";
   }
+}
+
+const emptySubscribe = () => () => {};
+
+/**
+ * `false` during the server render and the hydration render, `true` afterwards.
+ * Keeps `createPortal` (which needs `document`) out of the server render.
+ */
+function useHydrated() {
+  return useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false,
+  );
 }
 
 function GoogleIcon() {
@@ -66,8 +81,14 @@ export default function AuthModal({
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const hydrated = useHydrated();
 
-  if (!open) return null;
+  // The overlay is portaled to <body> so an ancestor with `backdrop-filter`,
+  // `transform`, etc. (e.g. the sticky, backdrop-blurred SiteHeader) can't
+  // become the containing block for `position: fixed`. Without the portal the
+  // overlay is measured against that ancestor and the card gets pinned to the
+  // top of the page instead of centered in the viewport.
+  if (!open || !hydrated) return null;
 
   async function handleGoogle() {
     setBusy(true);
@@ -101,8 +122,8 @@ export default function AuthModal({
     }
   }
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  return createPortal(
+    <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl">
         <button
           onClick={onClose}
@@ -207,6 +228,7 @@ export default function AuthModal({
           </p>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
