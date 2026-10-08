@@ -22,6 +22,27 @@ export interface QuestionsPagination {
   total_pages?: number;
 }
 
+/**
+ * A trial-exhausted visitor's preview question. The server strips the answer
+ * key, so `correctAnswer` and `explanation` are genuinely absent — never render
+ * or grade a teaser as if it were a full question.
+ */
+export interface TeaserQuestion
+  extends Omit<Question, "correctAnswer" | "explanation"> {
+  /** Never sent for a teaser: typed as `undefined` so callers must check. */
+  correctAnswer?: undefined;
+  explanation?: undefined;
+}
+
+/** Any question the CBT views can render (full question or locked teaser). */
+export type PracticeQuestion = Question | TeaserQuestion;
+
+export interface TeaserPayload {
+  questions: TeaserQuestion[];
+  pagination?: QuestionsPagination | null;
+  source?: "cache" | "api";
+}
+
 export interface QuestionsPayload {
   questions: Question[];
   pagination?: QuestionsPagination | null;

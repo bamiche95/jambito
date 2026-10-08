@@ -7,6 +7,12 @@
 
 export const TRIAL_LIMIT = 40;
 
+/**
+ * Seconds a trial-exhausted visitor may read a question set before the paywall
+ * overlay covers it (see components/cbt/CbtPractice.tsx).
+ */
+export const TRIAL_PREVIEW_SECONDS = 5;
+
 export interface Plan {
   id: "weekly" | "monthly" | "quarterly" | "yearly";
   name: string;

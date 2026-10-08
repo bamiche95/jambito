@@ -87,6 +87,16 @@ export async function hasCachedQuestions(key: string): Promise<boolean> {
   return Boolean(value?.questions?.length);
 }
 
+/**
+ * Drops a cached question set. Used when the server answers 402 (trial
+ * exhausted) so a previously cached full set can't be replayed offline.
+ */
+export async function deleteCachedQuestions(key: string): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).delete("questions", key);
+}
+
 // ---------------------------------------------------------------------------
 // Attempts (practice history)
 // ---------------------------------------------------------------------------
@@ -139,4 +149,58 @@ export async function getBookmarkIds(): Promise<(string | number)[]> {
   if (!db) return [];
   const all = await (await db).getAll("bookmarks");
   return all.map((b) => b.id);
+}
+
+// ---------------------------------------------------------------------------
+// Last-known entitlement (lets the UI fail closed while offline)
+// ---------------------------------------------------------------------------
+
+const ENTITLEMENT_KEY = "jambito:entitlement";
+
+/** The most recent trial/subscription status the server confirmed. */
+export interface Entitlement {
+  uid: string;
+  isSubscribed: boolean;
+  trialRemaining: number;
+  checkedAt: string;
+}
+
+export function saveEntitlement(entitlement: Entitlement): void {
+  if (typeof localStorage === "undefined") return;
+  try {
+    localStorage.setItem(ENTITLEMENT_KEY, JSON.stringify(entitlement));
+  } catch {
+    // Storage disabled — the server stays the source of truth.
+  }
+}
+
+/** Returns the stored status, but only for the account it belongs to. */
+export function getEntitlement(uid?: string | null): Entitlement | null {
+  if (typeof localStorage === "undefined" || !uid) return null;
+  try {
+    const raw = localStorage.getItem(ENTITLEMENT_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Entitlement;
+    return parsed?.uid === uid ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+export function clearEntitlement(): void {
+  if (typeof localStorage === "undefined") return;
+  try {
+    localStorage.removeItem(ENTITLEMENT_KEY);
+  } catch {
+    // ignore
+  }
+}
+
+/** True when the last server check said this account is out of free questions. */
+export function isEntitlementLocked(
+  entitlement: Entitlement | null
+): boolean {
+  return Boolean(
+    entitlement && !entitlement.isSubscribed && entitlement.trialRemaining <= 0
+  );
 }
