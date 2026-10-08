@@ -5,7 +5,7 @@ import ProfileView from "@/components/ProfileView";
 
 export const metadata: Metadata = {
   title: "My Profile",
-  description: "View your Jambito subscription status, practice history and bookmarks.",
+  description: "View your CBT-Practice subscription status, practice history and bookmarks.",
 };
 
 export default function ProfilePage() {

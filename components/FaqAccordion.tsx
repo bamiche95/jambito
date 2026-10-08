@@ -10,7 +10,7 @@ const faqs = [
     a: "You can attempt 5 free questions per subject and year without signing up or paying. After that, choose any affordable plan to keep practicing.",
   },
   {
-    q: "Does Jambito work offline?",
+    q: "Does CBT-Practice work offline?",
     a: "Yes. Once you load a subject set, the questions and explanations are saved on your device, so you can keep practicing without an internet connection.",
   },
   {
@@ -22,8 +22,8 @@ const faqs = [
     a: "We accept Paystack (cards, bank, USSD), OPay and direct bank transfer. Your subscription activates automatically after a successful payment.",
   },
   {
-    q: "Can I install Jambito on my phone?",
-    a: "Yes — Jambito is a Progressive Web App. Use the install prompt or your browser menu to add it to your home screen.",
+    q: "Can I install CBT-Practice on my phone?",
+    a: "Yes — CBT-Practice is a Progressive Web App. Use the install prompt or your browser menu to add it to your home screen.",
   },
 ];
 

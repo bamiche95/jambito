@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const APP_NAME = "Jambito";
-const APP_TITLE = "Jambito — JAMB, WAEC & POST UTME Practice";
+const APP_NAME = "CBT-Practice";
+const APP_TITLE = "CBT-Practice — JAMB, WAEC & POST UTME Practice";
 const APP_DESCRIPTION =
   "Offline-first past questions practice for Nigerian students preparing for JAMB, WAEC and POST UTME exams.";
 

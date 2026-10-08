@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { exam } = await params;
   const label = examLabel(examSlugToName(exam));
   const title = `${label} Past Questions — Choose a Year`;
-  const description = `Browse ${label} past questions by year and practice online with answers and detailed explanations on Jambito.`;
+  const description = `Browse ${label} past questions by year and practice online with answers and detailed explanations on CBT-Practice.`;
   return {
     title,
     description,

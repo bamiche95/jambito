@@ -4,7 +4,7 @@ import CbtRunner from "@/components/cbt/CbtRunner";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "CBT Practice | Jambito",
+  title: "CBT Practice",
   description:
     "Practice JAMB, WAEC and POST UTME past questions with a full CBT engine — timer, question palette and instant explanations.",
 };

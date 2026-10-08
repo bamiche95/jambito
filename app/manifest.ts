@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Jambito — JAMB, WAEC & POST UTME Practice",
-    short_name: "Jambito",
+    name: "CBT-Practice — JAMB, WAEC & POST UTME Practice",
+    short_name: "CBT-Practice",
     description:
       "Offline-first past questions practice for Nigerian students preparing for JAMB, WAEC and POST UTME.",
     start_url: "/",

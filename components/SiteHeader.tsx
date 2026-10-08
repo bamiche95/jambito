@@ -10,7 +10,7 @@ export default function SiteHeader() {
           <span className="w-8 h-8 rounded-lg bg-slate-900 dark:bg-blue-600 flex items-center justify-center">
             <GraduationCap className="w-5 h-5 text-white" />
           </span>
-          Jambito
+          CBT-Practice
         </Link>
         <nav className="flex items-center gap-5 text-sm font-medium text-slate-600 dark:text-slate-300">
           <Link href="/" className="hover:text-slate-900 dark:hover:text-white">Home</Link>

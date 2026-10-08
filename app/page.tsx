@@ -14,7 +14,7 @@ import { PLANS } from "@/lib/plans";
 import ExamPicker from "@/components/practice/ExamPicker";
 
 export const metadata = {
-  title: "Jambito — JAMB, WAEC & POST UTME Past Questions Practice",
+  title: "CBT-Practice — JAMB, WAEC & POST UTME Past Questions Practice",
   description:
     "Practice real JAMB, WAEC and POST UTME past questions offline with instant answers and explanations. Try 5 questions free.",
 };
@@ -97,7 +97,7 @@ export default function Home() {
       <section className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-6xl mx-auto px-4 py-16">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">
-            Why students choose Jambito
+            Why students choose CBT-Practice
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {benefits.map((b) => (
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="bg-slate-900 text-white">
         <div className="max-w-3xl mx-auto px-4 py-16 text-center">
           <h2 className="text-2xl md:text-3xl font-bold">
-            Take Jambito everywhere you go
+            Take CBT-Practice everywhere you go
           </h2>
           <p className="text-slate-300 mt-3">
             Install it on your phone or laptop and keep practicing even with no

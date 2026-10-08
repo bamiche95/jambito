@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { exam, subject, year } = await params;
   const { examName, displaySubject } = slugMeta(exam, subject);
   const title = `${examName} ${displaySubject} ${year} Past Questions and Answers`;
-  const description = `Free ${examName} ${displaySubject} ${year} past questions with answers and detailed explanations. Practice online or offline with Jambito.`;
+  const description = `Free ${examName} ${displaySubject} ${year} past questions with answers and detailed explanations. Practice online or offline with CBT-Practice.`;
   return {
     title,
     description,

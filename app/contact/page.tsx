@@ -7,7 +7,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get help with Jambito — contact support or browse frequently asked questions.",
+    "Get help with CBT-Practice — contact support or browse frequently asked questions.",
 };
 
 export default function ContactPage() {
