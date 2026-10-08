@@ -5,13 +5,19 @@
   "engines": {
     "node": "24.x"
   },
+  "overrides": {
+    "jwks-rsa": {
+      "jose": "4.15.9"
+    }
+  },
   "scripts": {
     "dev": "concurrently -p none \"serwist build serwist.config.mjs --watch\" \"next dev\"",
     "dev:next": "next dev",
     "build": "next build && serwist build serwist.config.mjs",
     "serwist": "serwist build serwist.config.mjs",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "verify:deps": "node --no-experimental-require-module scripts/verify-server-deps.mjs"
   },
   "dependencies": {
     "@serwist/next": "^9.5.13",

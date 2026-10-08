@@ -35,11 +35,22 @@ async function checkMongo() {
   }
 }
 
+/**
+ * NOTE: no separate jwks-rsa/jose probe is needed here — loading
+ * `firebase-admin/auth` already executes jwks-rsa's top-level `require("jose")`,
+ * so an "ok" for that entry proves jose resolves to a CommonJS build in the
+ * deployed function (jose is pinned to 4.15.9 via `overrides` in package.json;
+ * jose 5/6 are ESM-only and fail with ERR_REQUIRE_ESM under such loaders).
+ */
+
 export async function GET() {
   const info = {
     node: process.version,
     platform: process.platform,
     arch: process.arch,
+    // false => the runtime cannot `require()` ESM at all, which is why the
+    // CJS-only jose@4 pin below is required (jose@6 is ESM-only).
+    requireEsm: process.features?.require_module ?? null,
     hasMongoUri: Boolean(process.env.MONGODB_URI),
     hasServiceAccount: Boolean(process.env.FIREBASE_SERVICE_ACCOUNT),
     hasGoogleCredPath: Boolean(process.env.GOOGLE_APPLICATION_CREDENTIALS),
