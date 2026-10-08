@@ -18,8 +18,18 @@ import {
   type User,
 } from "firebase/auth";
 import { getFirebaseAuth } from "./firebase";
-import { clearEntitlement, getEntitlement, saveEntitlement } from "./offlineStore";
+import {
+  clearEntitlement,
+  clearAllCachedQuestions,
+  getEntitlement,
+  saveEntitlement,
+} from "./offlineStore";
 import { TRIAL_LIMIT } from "./plans";
+import {
+  accountStatusFromCode,
+  normalizeAccountStatus,
+  type AccountStatus,
+} from "./accountStatus";
 
 interface AuthContextValue {
   user: User | null;
@@ -34,6 +44,17 @@ interface AuthContextValue {
    * because of them — the API remains the source of truth.
    */
   entitlementKnown: boolean;
+  /**
+   * Account lifecycle state as last confirmed by the server. Anything other
+   * than "active" means every content endpoint answers 403, so the UI shows a
+   * notice instead of a paywall. Defaults to "active" while unknown: the
+   * server is still the one that decides.
+   */
+  accountState: AccountStatus;
+  /** True while the server says this account may not use the product. */
+  accountLocked: boolean;
+  role: "admin" | "user";
+  isAdmin: boolean;
   refreshStatus: () => Promise<void>;
   signInWithGoogle: () => Promise<User>;
   signInWithEmail: (email: string, password: string) => Promise<User>;
@@ -51,6 +72,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [trialUsed, setTrialUsed] = useState(0);
   const [trialRemaining, setTrialRemaining] = useState(TRIAL_LIMIT);
   const [entitlementKnown, setEntitlementKnown] = useState(false);
+  const [accountState, setAccountState] = useState<AccountStatus>("active");
+  const [role, setRole] = useState<"admin" | "user">("user");
 
   // The account the status above belongs to. Reset during render (React's
   // "adjust state when props change" pattern) so account B never inherits
@@ -60,6 +83,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   if (statusUid !== uid) {
     setStatusUid(uid);
     setEntitlementKnown(false);
+    setAccountState("active");
+    setRole("user");
     if (!uid) {
       setIsSubscribed(false);
       setTrialUsed(0);
@@ -74,6 +99,58 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
     return unsub;
   }, []);
+
+  /**
+   * Applies an `/api/trial` answer to the context.
+   *
+   * A failure carrying an `account_*` code is a verdict, not an outage: the
+   * account is locked, so the cached questions (which still hold the full
+   * answer key) are wiped and the entitlement cache is dropped. Everything
+   * else — a 503, a network error — is ignored so the last known status keeps
+   * gating the UI and a broken dependency is never mistaken for a lockout.
+   */
+  const applyStatus = useCallback(
+    async (
+      json: {
+        success?: boolean;
+        status?: unknown;
+        role?: unknown;
+        subscribed?: unknown;
+        trialUsed?: number;
+        trialRemaining?: number;
+        code?: unknown;
+      } | null,
+      accountUid: string | null
+    ) => {
+      if (!json?.success) {
+        const status = accountStatusFromCode(json?.code);
+        if (!status) return;
+        setAccountState(status);
+        setIsSubscribed(false);
+        setTrialRemaining(0);
+        setTrialUsed(TRIAL_LIMIT);
+        setEntitlementKnown(true);
+        clearEntitlement();
+        await clearAllCachedQuestions();
+        return;
+      }
+      setAccountState(normalizeAccountStatus(json.status));
+      setRole(json.role === "admin" ? "admin" : "user");
+      setIsSubscribed(Boolean(json.subscribed));
+      setTrialUsed(json.trialUsed ?? 0);
+      setTrialRemaining(json.trialRemaining ?? 0);
+      setEntitlementKnown(true);
+      if (accountUid) {
+        saveEntitlement({
+          uid: accountUid,
+          isSubscribed: Boolean(json.subscribed),
+          trialRemaining: json.trialRemaining ?? 0,
+          checkedAt: new Date().toISOString(),
+        });
+      }
+    },
+    []
+  );
 
   // Fetch global subscription + trial status whenever the user changes.
   useEffect(() => {
@@ -99,23 +176,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       })
       .then((r) => r.json())
       .then((json) => {
-        if (cancelled || !json?.success) return;
-        setIsSubscribed(json.subscribed);
-        setTrialUsed(json.trialUsed ?? 0);
-        setTrialRemaining(json.trialRemaining ?? 0);
-        setEntitlementKnown(true);
-        saveEntitlement({
-          uid: accountUid,
-          isSubscribed: Boolean(json.subscribed),
-          trialRemaining: json.trialRemaining ?? 0,
-          checkedAt: new Date().toISOString(),
-        });
+        if (cancelled) return;
+        return applyStatus(json, accountUid);
       })
       .catch(() => undefined);
     return () => {
       cancelled = true;
     };
-  }, [loading, user]);
+  }, [loading, user, applyStatus]);
 
   const signInWithGoogle = useCallback(async () => {
     const provider = new GoogleAuthProvider();
@@ -146,6 +214,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setTrialUsed(0);
     setTrialRemaining(TRIAL_LIMIT);
     setEntitlementKnown(false);
+    setAccountState("active");
+    setRole("user");
   }, []);
 
   const getIdToken = useCallback(async () => {
@@ -157,30 +227,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const refreshStatus = useCallback(async () => {
     const token = await getIdToken();
     if (!token) return;
+    const currentUid = getFirebaseAuth().currentUser?.uid ?? null;
     try {
       const res = await fetch("/api/trial", {
         headers: { Authorization: `Bearer ${token}` },
       });
-      const json = await res.json();
-      if (json.success) {
-        setIsSubscribed(json.subscribed);
-        setTrialUsed(json.trialUsed ?? 0);
-        setTrialRemaining(json.trialRemaining ?? 0);
-        setEntitlementKnown(true);
-        const currentUid = getFirebaseAuth().currentUser?.uid;
-        if (currentUid) {
-          saveEntitlement({
-            uid: currentUid,
-            isSubscribed: Boolean(json.subscribed),
-            trialRemaining: json.trialRemaining ?? 0,
-            checkedAt: new Date().toISOString(),
-          });
-        }
-      }
+      await applyStatus(await res.json(), currentUid);
     } catch {
       // offline — the last known status keeps gating the UI
     }
-  }, [getIdToken]);
+  }, [getIdToken, applyStatus]);
 
   return (
     <AuthContext.Provider
@@ -191,6 +247,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         trialUsed,
         trialRemaining,
         entitlementKnown,
+        accountState,
+        accountLocked: accountState !== "active",
+        role,
+        isAdmin: role === "admin",
         refreshStatus,
         signInWithGoogle,
         signInWithEmail,

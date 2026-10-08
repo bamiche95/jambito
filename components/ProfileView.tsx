@@ -10,15 +10,29 @@ import {
   Target,
   TrendingUp,
   LogOut,
+  AlertTriangle,
+  ShieldOff,
+  PauseCircle,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 import { getAttempts, getBookmarkIds } from "@/lib/offlineStore";
 import { isSubscriptionActive } from "@/lib/subscription";
+import {
+  ACCOUNT_STATUS_LABELS,
+  accountStatusMessage,
+  type AccountStatus,
+} from "@/lib/accountStatus";
 import type { AttemptRecord, Profile } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export default function ProfileView() {
-  const { user, getIdToken, loading: authLoading, signOut } = useAuth();
+  const {
+    user,
+    getIdToken,
+    loading: authLoading,
+    signOut,
+    accountState,
+  } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [attempts, setAttempts] = useState<AttemptRecord[]>([]);
   const [bookmarkCount, setBookmarkCount] = useState(0);
@@ -57,6 +71,10 @@ export default function ProfileView() {
   }, [authLoading, getIdToken, user?.uid]);
 
   const active = isSubscriptionActive(profile);
+  // The profile endpoint 403s for a deleted tombstone, so the server-confirmed
+  // state from /api/trial is the fallback that still explains the lockout.
+  const status: AccountStatus = profile?.status ?? accountState;
+  const locked = status !== "active";
   const avg =
     attempts.length > 0
       ? Math.round(
@@ -83,12 +101,59 @@ export default function ProfileView() {
         )}
       </div>
 
+      {locked && (
+        <div
+          className={cn(
+            "mt-6 flex items-start gap-3 rounded-xl border p-4 text-sm",
+            status === "blocked" || status === "deleted"
+              ? "border-red-200 bg-red-50 text-red-800"
+              : "border-amber-200 bg-amber-50 text-amber-800"
+          )}
+        >
+          {status === "deactivated" ? (
+            <PauseCircle className="w-5 h-5 shrink-0 mt-0.5" />
+          ) : (
+            <ShieldOff className="w-5 h-5 shrink-0 mt-0.5" />
+          )}
+          <div className="space-y-1">
+            <p className="font-semibold">
+              Account {ACCOUNT_STATUS_LABELS[status].toLowerCase()}
+            </p>
+            <p>{accountStatusMessage(status)}</p>
+            {status === "deactivated" && (
+              <Link href="/cbt" className="inline-block font-semibold underline">
+                Subscribe to restore access
+              </Link>
+            )}
+            {profile?.role === "admin" && (
+              <p className="pt-1">
+                Admin access is unaffected —{" "}
+                <Link href="/admin" className="font-semibold underline">
+                  open the dashboard
+                </Link>
+                .
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <div className="md:col-span-1 bg-white rounded-xl border border-slate-200 p-6">
           <h2 className="font-semibold text-slate-900 mb-4">Subscription</h2>
           {loading ? (
             <div className="flex items-center gap-2 text-slate-500 text-sm">
               <Loader2 className="w-4 h-4 animate-spin" /> Checking…
+            </div>
+          ) : locked ? (
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-amber-600 font-semibold">
+                <AlertTriangle className="w-5 h-5" />
+                {ACCOUNT_STATUS_LABELS[status]}
+              </div>
+              <p className="text-sm text-slate-500">
+                Access is paused. Contact support to resolve it.
+              </p>
             </div>
           ) : active ? (
             <div className="space-y-2">

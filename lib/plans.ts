@@ -99,3 +99,14 @@ export function planDurationDays(planId?: string | null): number {
 export function planPriceKobo(planId?: string | null): number {
   return planById(planId)?.priceKobo ?? PLANS[1].priceKobo;
 }
+
+/**
+ * Reverse lookup by amount, used when reconciling a Paystack transaction whose
+ * metadata is missing: the charge amount is the only hint left about which plan
+ * the customer paid for.
+ */
+export function planByPriceKobo(amountKobo?: number | null): Plan | undefined {
+  const amount = Number(amountKobo);
+  if (!Number.isFinite(amount)) return undefined;
+  return PLANS.find((p) => p.priceKobo === amount);
+}

@@ -1,16 +1,32 @@
 import { NextResponse } from "next/server";
 import { verifyPaystackSignature } from "@/lib/payments";
 import { upsertSubscription } from "@/lib/users";
+import {
+  markPaymentGranted,
+  recordPayment,
+  updatePayment,
+} from "@/lib/paymentsStore";
+import { planById, planByPriceKobo } from "@/lib/plans";
 
 export const dynamic = "force-dynamic";
+
+/** Paystack only stops retrying once it reads a 2xx. */
+function received(extra = {}) {
+  return NextResponse.json({ success: true, received: true, ...extra });
+}
 
 /**
  * Paystack webhook receiver.
  *
  * Verifies the request using the `x-paystack-signature` header (HMAC-SHA512 of
- * the raw body with PAYSTACK_SECRET_KEY), then upgrades the user's
- * subscription on a successful `charge.success` event. The user is identified
- * by the Firebase `uid` passed through in the transaction metadata.
+ * the raw body with PAYSTACK_SECRET_KEY), then writes the charge into the
+ * payments ledger and upgrades the user's subscription on `charge.success`.
+ * The user is identified by the Firebase `uid` passed through the transaction
+ * metadata (`/api/payments/initialize`).
+ *
+ * Every grant is keyed on `data.reference` and the ledger's unique index, so
+ * Paystack's retries (and a reconcile performed by hand later) can never grant
+ * the same payment twice.
  */
 export async function POST(request) {
   const rawBody = await request.text();
@@ -33,26 +49,108 @@ export async function POST(request) {
     );
   }
 
-  if (event?.event === "charge.success") {
-    const data = event.data ?? {};
-    const uid = data.metadata?.uid;
-    const email = data.customer?.email;
-    const reference = data.reference;
-    const amount = data.amount;
-    const plan = data.metadata?.plan ?? "monthly";
+  const data = event?.data ?? {};
+  const reference = data.reference ?? null;
+  const email = data.customer?.email ?? null;
+  const amount = data.amount ?? 0;
+  const channel = data.channel ?? null;
+  const uid = data.metadata?.uid ?? null;
+  // Metadata is what initialize() set; the amount is the only fallback when a
+  // payment was created outside the app (dashboard invoice, etc).
+  const plan =
+    (planById(data.metadata?.plan)?.id ?? null) ??
+    planByPriceKobo(amount)?.id ??
+    "monthly";
 
-    if (uid) {
-      try {
-        await upsertSubscription({ uid, email, plan, reference, amount });
-      } catch (error) {
-        console.error("Failed to persist subscription:", error);
-        return NextResponse.json(
-          { success: false, message: "Failed to update subscription" },
-          { status: 500 }
-        );
+  try {
+    if (event?.event === "charge.success") {
+      if (!reference) {
+        console.warn("charge.success without a reference — nothing to record");
+        return received({ ignored: "missing reference" });
       }
+
+      const { payment, created } = await recordPayment({
+        reference,
+        uid,
+        email,
+        amountKobo: amount,
+        plan,
+        source: "paystack",
+        status: "success",
+        channel,
+      });
+
+      // Replay: this exact payment already granted access.
+      if (payment?.granted) {
+        return received({ duplicate: true, reference });
+      }
+
+      if (!created) {
+        // Row created by initialize() as "pending" — settle it now.
+        await updatePayment(reference, {
+          status: "success",
+          amountKobo: amount,
+          channel,
+          plan,
+        });
+      }
+
+      if (!uid) {
+        // No account to credit. The row stays ungranted so the dashboard's
+        // reconcile flow can attach it by email/uid afterwards.
+        console.warn(
+          `charge.success ${reference} has no uid in metadata — left for reconciliation`
+        );
+        return received({ needsReconciliation: true, reference });
+      }
+
+      const granted = await upsertSubscription({
+        uid,
+        email,
+        plan,
+        reference,
+        amount,
+        channel,
+      });
+      await markPaymentGranted(reference, {
+        grantedDays: granted.durationDays,
+        grantedBy: "paystack-webhook",
+      });
+
+      return received({ reference, expiry: granted.expiry, stackedFrom: granted.stackedFrom });
     }
+
+    if (event?.event === "charge.failed" && reference) {
+      // Recorded (never granted) so the dashboard shows failed attempts next to
+      // the successful ones instead of them vanishing into the logs.
+      const { payment } = await recordPayment({
+        reference,
+        uid,
+        email,
+        amountKobo: amount,
+        plan,
+        source: "paystack",
+        status: "failed",
+        channel,
+        note: data.gateway_response ?? null,
+      });
+      if (payment?.status !== "failed" && !payment?.granted) {
+        await updatePayment(reference, {
+          status: "failed",
+          note: data.gateway_response ?? null,
+        });
+      }
+      return received({ reference, failed: true });
+    }
+  } catch (error) {
+    // Answers 500 on purpose: Paystack retries, and losing a payment must never
+    // look like a successful delivery.
+    console.error(`Paystack webhook (${event?.event}) failed:`, error);
+    return NextResponse.json(
+      { success: false, message: "Failed to process webhook" },
+      { status: 500 }
+    );
   }
 
-  return NextResponse.json({ success: true, received: true });
+  return received({ ignored: event?.event ?? "unknown" });
 }

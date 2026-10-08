@@ -3,6 +3,8 @@
  * and referenced by the server data layer for documentation purposes.
  */
 
+import type { AccountStatus } from "./accountStatus";
+
 export interface Question {
   id: string | number;
   question: string;
@@ -66,8 +68,170 @@ export interface Profile {
   name?: string;
   email?: string;
   role?: "user" | "admin";
+  /** Account lifecycle state; anything but "active" means content is refused. */
+  status?: AccountStatus;
   isSubscribed?: boolean;
   subscriptionExpiry?: string | null;
   plan?: string;
   trialCount?: number;
+}
+
+// ---------------------------------------------------------------------------
+// Admin dashboard
+// ---------------------------------------------------------------------------
+
+/** A user row exactly as /api/admin returns it (already PII-trimmed). */
+export interface AdminUser {
+  uid: string;
+  email: string | null;
+  role: "user" | "admin";
+  status: AccountStatus;
+  isSubscribed: boolean;
+  subscriptionExpiry: string | null;
+  plan: string | null;
+  trialCount: number;
+  trialRemaining: number;
+  reference: string | null;
+  amount: number;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+export interface AdminStats {
+  total: number;
+  active: number;
+  deactivated: number;
+  blocked: number;
+  deleted: number;
+  admins: number;
+  subscribed: number;
+  trialExhausted: number;
+}
+
+export interface AdminUsersPayload {
+  users: AdminUser[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+  stats: AdminStats;
+}
+
+/** What a Firebase-side user management call managed to do. */
+export interface FirebaseActionResult {
+  ok: boolean;
+  skipped: boolean;
+  message: string;
+}
+
+export interface GrantResult {
+  plan: string;
+  durationDays: number;
+  mode: "set" | "extend";
+  expiry: string;
+  stackedFrom: string | null;
+}
+
+export interface AdminActionPayload {
+  user?: AdminUser;
+  granted?: GrantResult | null;
+  firebase?: FirebaseActionResult | null;
+  payment?: PaymentRecord | null;
+}
+
+/** One row of the payments ledger. */
+export interface PaymentRecord {
+  id: string | null;
+  reference: string;
+  uid: string | null;
+  email: string | null;
+  amountKobo: number;
+  amountNaira: number;
+  plan: string | null;
+  source: "paystack" | "manual" | null;
+  status: "success" | "pending" | "failed" | null;
+  channel: string | null;
+  note: string | null;
+  bankReference: string | null;
+  createdBy: string | null;
+  granted: boolean;
+  grantedDays: number | null;
+  grantedAt: string | null;
+  createdAt: string | null;
+  updatedAt: string | null;
+}
+
+export interface PaymentStats {
+  total: number;
+  granted: number;
+  failed: number;
+}
+
+export interface PaymentsPayload {
+  payments: PaymentRecord[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+  stats: PaymentStats;
+}
+
+/** Paystack's own record of a charge, as relayed by /api/admin/reconcile. */
+export interface PaystackSummary {
+  httpStatus: number;
+  verified: boolean;
+  message: string | null;
+  status: string | null;
+  amountKobo: number | null;
+  amountNaira: number | null;
+  currency: string | null;
+  channel: string | null;
+  paidAt: string | null;
+  email: string | null;
+  uid: string | null;
+  plan: string | null;
+  inferredPlan: string | null;
+  reference: string | null;
+  gatewayResponse: string | null;
+}
+
+export interface ReconcilePayload {
+  applied?: boolean;
+  alreadyGranted?: boolean;
+  paystack?: PaystackSummary;
+  payment?: PaymentRecord | null;
+  user?: AdminUser;
+  granted?: GrantResult | null;
+}
+
+/** The subset of a user document captured in the audit trail. */
+export interface AuditSnapshot {
+  status: AccountStatus;
+  role: "user" | "admin";
+  isSubscribed: boolean;
+  subscriptionExpiry: string | null;
+  plan: string | null;
+  trialCount: number;
+}
+
+export interface AuditEntry {
+  id: string;
+  actorUid: string | null;
+  actorEmail: string | null;
+  action: string;
+  targetUid: string | null;
+  targetEmail: string | null;
+  before: AuditSnapshot | null;
+  after: AuditSnapshot | null;
+  details: Record<string, unknown> | null;
+  firebase: string | null;
+  createdAt: string | null;
+}
+
+export interface AuditPayload {
+  entries: AuditEntry[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
 }

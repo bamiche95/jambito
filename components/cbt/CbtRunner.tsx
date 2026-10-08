@@ -2,7 +2,14 @@
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { Loader2, WifiOff, AlertTriangle, Lock } from "lucide-react";
+import {
+  Loader2,
+  WifiOff,
+  AlertTriangle,
+  Lock,
+  ShieldOff,
+  PauseCircle,
+} from "lucide-react";
 import CbtPractice from "./CbtPractice";
 import PaywallModal from "./PaywallModal";
 import AuthModal from "@/components/auth/AuthModal";
@@ -12,6 +19,7 @@ import {
   saveQuestions,
   getCachedQuestions,
   deleteCachedQuestions,
+  clearAllCachedQuestions,
   saveAttempt,
   getBookmarkIds,
   getEntitlement,
@@ -20,6 +28,12 @@ import {
 } from "@/lib/offlineStore";
 import { examSlugToName, deslugify, titleCase } from "@/lib/catalog";
 import { TRIAL_LIMIT, TRIAL_PREVIEW_SECONDS } from "@/lib/plans";
+import {
+  ACCOUNT_STATUS_LABELS,
+  accountStatusFromCode,
+  accountStatusMessage,
+  type AccountStatus,
+} from "@/lib/accountStatus";
 import type { PracticeQuestion } from "@/lib/types";
 
 interface CbtRunnerProps {
@@ -40,6 +54,8 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
     isSubscribed,
     trialRemaining,
     entitlementKnown,
+    accountState,
+    accountLocked,
     refreshStatus,
     getIdToken,
   } = useAuth();
@@ -50,6 +66,10 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   const [offline, setOffline] = useState(false);
   // The API answered 402: this account's trial is spent (authoritative).
   const [teaserOnly, setTeaserOnly] = useState(false);
+  // The API answered 403 with an `account_*` code: this account is locked out.
+  // The auth context carries the same verdict, but the response is what the
+  // user just triggered, so the notice appears immediately.
+  const [accountNotice, setAccountNotice] = useState<AccountStatus | null>(null);
   // Non-blocking notice shown when the quota couldn't be verified.
   const [quotaWarning, setQuotaWarning] = useState<string | null>(null);
   const [showPaywall, setShowPaywall] = useState(false);
@@ -132,6 +152,22 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
           return false;
         }
 
+        // Blocked / deactivated / deleted account: the server refuses all
+        // content. Never fall back to the cached set here — it was downloaded
+        // while the account still had access and includes the answer key.
+        const accountStatus = accountStatusFromCode(json?.code);
+        if (accountStatus) {
+          if (!cancelled) {
+            setQuestions([]);
+            setError(null);
+            setTeaserOnly(false);
+            setAccountNotice(accountStatus);
+          }
+          await clearAllCachedQuestions();
+          refreshStatus();
+          return false;
+        }
+
         if (json?.success && json.data?.questions?.length) {
           await saveQuestions(storageKey, {
             questions: json.data.questions,
@@ -165,6 +201,14 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
       setLoading(true);
       setError(null);
       setTeaserOnly(false);
+
+      // The account is locked (status confirmed by /api/trial). Don't even look
+      // at the cache: it holds full sets that are no longer allowed.
+      if (accountLocked) {
+        setQuestions([]);
+        if (!cancelled) setLoading(false);
+        return;
+      }
 
       // Last status the server confirmed for this account. Cached responses
       // can't be re-verified offline, so they are only replayed while that
@@ -208,6 +252,7 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
     getIdToken,
     refreshStatus,
     reloadKey,
+    accountLocked,
   ]);
 
   const handleAnswer = useCallback(async () => {
@@ -278,6 +323,10 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
   }, []);
 
   const title = `${examName} ${titleCase(subjectName)} ${yearName} Past Questions`;
+  // A locked account is never a paywall: the trial/paywall branches below would
+  // be actively misleading, so this state is resolved first.
+  const lockedOut: AccountStatus | null =
+    accountNotice ?? (accountLocked ? accountState : null);
 
   if (authLoading) {
     return (
@@ -321,6 +370,11 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
           <Loader2 className="w-8 h-8 animate-spin" />
           <p>Loading questions…</p>
         </div>
+      ) : lockedOut ? (
+        <AccountLockedPanel
+          status={lockedOut}
+          onSubscribe={() => setShowPaywall(true)}
+        />
       ) : locked && !questions.length ? (
         <div className="max-w-md mx-auto text-center py-20 px-6">
           <Lock className="w-10 h-10 mx-auto mb-4 text-amber-500" />
@@ -407,5 +461,52 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
         }}
       />
     </main>
+  );
+}
+
+/**
+ * Shown instead of the question set (and instead of the paywall) when the
+ * server reports the account is blocked, deactivated or deleted.
+ *
+ * Deactivated accounts get a route back in because paying is what reactivates
+ * them; blocked and deleted accounts do not, and must never be offered a
+ * purchase that the payment endpoint will refuse.
+ */
+function AccountLockedPanel({
+  status,
+  onSubscribe,
+}: {
+  status: AccountStatus;
+  onSubscribe: () => void;
+}) {
+  const deactivated = status === "deactivated";
+  return (
+    <div className="max-w-md mx-auto text-center py-20 px-6">
+      {deactivated ? (
+        <PauseCircle className="w-10 h-10 mx-auto mb-4 text-amber-500" />
+      ) : (
+        <ShieldOff className="w-10 h-10 mx-auto mb-4 text-red-500" />
+      )}
+      <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+        Account {ACCOUNT_STATUS_LABELS[status].toLowerCase()}
+      </h2>
+      <p className="text-slate-500 dark:text-slate-400 mt-2">
+        {accountStatusMessage(status)}
+      </p>
+      {deactivated && (
+        <button
+          onClick={onSubscribe}
+          className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
+        >
+          Subscribe to restore access
+        </button>
+      )}
+      <Link
+        href="/"
+        className="inline-block mt-4 text-blue-600 font-medium underline"
+      >
+        Back to home
+      </Link>
+    </div>
   );
 }

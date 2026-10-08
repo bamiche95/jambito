@@ -97,6 +97,20 @@ export async function deleteCachedQuestions(key: string): Promise<void> {
   await (await db).delete("questions", key);
 }
 
+/**
+ * Drops EVERY cached question set.
+ *
+ * Called when the server reports the account is blocked/deactivated: the sets
+ * were cached while the account still had access, and `/api/questions` is
+ * NetworkFirst, so without this the whole answer library would keep working
+ * offline from IndexedDB after the lockout.
+ */
+export async function clearAllCachedQuestions(): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).clear("questions");
+}
+
 // ---------------------------------------------------------------------------
 // Attempts (practice history)
 // ---------------------------------------------------------------------------
