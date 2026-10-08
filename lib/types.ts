@@ -23,9 +23,10 @@ export interface QuestionsPagination {
 }
 
 /**
- * A trial-exhausted visitor's preview question. The server strips the answer
- * key, so `correctAnswer` and `explanation` are genuinely absent — never render
- * or grade a teaser as if it were a full question.
+ * A question sent to a trial-exhausted visitor for the locked preview. The
+ * server strips the answer key, so `correctAnswer` and `explanation` are
+ * genuinely absent — never render or grade a teaser as if it were a full
+ * question.
  */
 export interface TeaserQuestion
   extends Omit<Question, "correctAnswer" | "explanation"> {

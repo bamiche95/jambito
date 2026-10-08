@@ -82,8 +82,9 @@ export async function GET(request) {
 
 /**
  * Question content is paid: signed-in callers only, and a trial-exhausted
- * account gets one answer-key-stripped teaser question (HTTP 402) instead of
- * the full set. Responses are per-user decisions, so they are never cached.
+ * account gets the same set with every answer key stripped (HTTP 402) instead
+ * of the graded set. Responses are per-user decisions, so they are never
+ * cached.
  */
 export async function POST(request) {
   const auth = await requireApiUser(request);
@@ -118,7 +119,10 @@ export async function POST(request) {
     const entitled = isSubscribed(auth.user) || getRemaining(auth.user) > 0;
 
     if (!entitled) {
-      const questions = (data?.questions ?? []).slice(0, 1).map(toTeaser);
+      // The whole set is sent (answer keys stripped) so the locked preview is
+      // the real question list, not a stub — the client covers it after a few
+      // seconds (TRIAL_PREVIEW_SECONDS).
+      const questions = (data?.questions ?? []).map(toTeaser);
       return NextResponse.json(
         {
           success: false,

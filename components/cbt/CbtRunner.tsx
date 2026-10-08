@@ -106,8 +106,8 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
         });
         const json = await res.json().catch(() => null);
 
-        // Trial spent: the API answers 402 with a single teaser question (no
-        // answer key) instead of the full set.
+        // Trial spent: the API answers 402 with the same set minus every answer
+        // key, so the locked preview shows the real list before it is covered.
         if (res.status === 402 && json?.code === "trial_exhausted") {
           if (!cancelled) {
             const teaser = json.teaser?.questions ?? [];
