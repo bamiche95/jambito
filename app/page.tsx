@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
-import InstallPrompt, { InstallHint } from "@/components/InstallPrompt";
+import InstallPwaBanner, { InstallHint } from "@/components/InstallPwaBanner";
 import { PLANS } from "@/lib/plans";
 import ExamPicker from "@/components/practice/ExamPicker";
 
@@ -63,19 +63,19 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
             <Link
               href="/cbt"
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition"
+              className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.98] rounded-lg font-semibold transition"
             >
               <Play className="w-5 h-5" /> Start Practicing Free
             </Link>
             <a
               href="#subjects"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-slate-200 border border-slate-600 hover:bg-slate-800 transition"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-slate-200 border border-slate-600 hover:bg-slate-800 active:scale-[0.98] transition"
             >
               Browse Past Questions <ArrowRight className="w-4 h-4" />
             </a>
           </div>
-          <div className="mt-8">
-            <InstallPrompt />
+          <div className="mt-8 flex justify-center">
+            <InstallPwaBanner />
           </div>
         </div>
       </section>
@@ -149,7 +149,7 @@ export default function Home() {
               </ul>
               <Link
                 href="/cbt"
-                className="block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 font-semibold transition"
+                className="block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 active:scale-[0.98] font-semibold transition"
               >
                 Start practicing
               </Link>
@@ -169,7 +169,7 @@ export default function Home() {
             network.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3">
-            <InstallPrompt />
+            <InstallPwaBanner />
             <InstallHint />
           </div>
         </div>

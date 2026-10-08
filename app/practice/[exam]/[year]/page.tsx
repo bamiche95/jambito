@@ -81,7 +81,7 @@ export default async function ExamYearSubjectsPage({ params }: PageProps) {
             <Link
               key={subject}
               href={buildCbtHref(examName, subject, year)}
-              className="group flex items-center justify-between gap-3 rounded-xl border border-slate-800 bg-slate-900 p-5 hover:border-blue-500 hover:bg-slate-800 transition"
+              className="group flex items-center justify-between gap-3 rounded-xl border border-slate-800 bg-slate-900 p-5 hover:border-blue-500 hover:bg-slate-800 active:scale-[0.98] transition"
             >
               <span className="flex items-center gap-3">
                 <BookOpen className="w-5 h-5 text-blue-400 shrink-0" />

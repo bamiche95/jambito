@@ -56,7 +56,7 @@ export default function ExamPicker() {
         <Link
           key={exam}
           href={`/practice/${examNameToSlug(exam)}`}
-          className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5 transition"
+          className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition"
         >
           <div className="flex items-center gap-3">
             <span className="w-11 h-11 rounded-xl bg-slate-900 group-hover:bg-blue-600 flex items-center justify-center transition">

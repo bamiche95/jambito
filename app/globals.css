@@ -22,3 +22,84 @@ body {
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/*
+ * Native app feel — phones only.
+ *
+ * Scoped to `max-width: 767px` on purpose:
+ * - Desktop keeps normal text selection and elastic scrolling, where both are
+ *   useful rather than "un-native".
+ * - `user-select: none` is a blunt instrument, so inputs and contenteditable
+ *   opt back in below, and the admin dashboard (which lives on wide screens)
+ *   is never affected at all — staff copy uids and emails out of it.
+ * - `overscroll-behavior-y: none` suppresses the rubber-band/pull-to-refresh
+ *   gesture that makes an installed web app feel like a web page.
+ */
+@media (max-width: 767px) {
+  html {
+    /* Kills the 300ms double-tap-to-zoom delay on taps. */
+    touch-action: manipulation;
+  }
+
+  body {
+    -webkit-user-select: none;
+    user-select: none;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  textarea,
+  select,
+  [contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+}
+
+/**
+ * Space reserved at the bottom of every page for the fixed tab bar
+ * (components/BottomNav.tsx), including the iOS home-indicator inset.
+ *
+ * Declared with `@utility` so it lives in Tailwind's utilities layer and the
+ * usual breakpoint/variant overriding (`md:pb-0`) still wins.
+ */
+@utility pb-nav {
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+}
+
+/* Bottom-sheet motion for the install drawer (components/InstallPwaBanner.tsx).
+   Kept in CSS rather than a `@theme` animation so the keyframes travel with
+   the utility that uses them; both call sites add `motion-reduce:animate-none`. */
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/** Slide-up used by the mobile bottom sheets. */
+@utility animate-sheet-in {
+  animation: sheet-up 0.24s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+/** Fade used by the dimmed backdrop behind a mobile bottom sheet. */
+@utility animate-backdrop-in {
+  animation: backdrop-in 0.18s ease-out;
+}
+
+/** Inner padding for the tab bar itself, clearing the home-indicator inset. */
+@utility pb-safe {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+}
+

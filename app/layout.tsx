@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import RegisterSW from "@/components/RegisterSW";
+import BottomNav from "@/components/BottomNav";
 import { AuthProvider } from "@/lib/auth";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -51,6 +52,10 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#0f172a",
+  // Required for `env(safe-area-inset-*)` to resolve on iOS: without
+  // `viewport-fit=cover` the safe-area values are always 0 and the fixed tab
+  // bar would sit under the home indicator.
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -61,7 +66,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <RegisterSW />
-        <AuthProvider>{children}</AuthProvider>
+        <AuthProvider>
+          {/* `pb-nav` reserves room for the fixed tab bar on phones; the
+              wrapper keeps the pages' own `flex-1` layout intact. */}
+          <div className="flex flex-1 flex-col pb-nav md:pb-0">{children}</div>
+          <BottomNav />
+        </AuthProvider>
       </body>
     </html>
   );

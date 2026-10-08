@@ -101,7 +101,7 @@ export default async function QuestionSetPage({ params }: PageProps) {
           </p>
           <Link
             href={`/cbt?exam=${encodeURIComponent(examName)}&subject=${encodeURIComponent(subjectName)}&year=${encodeURIComponent(year)}`}
-            className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition"
+            className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 active:scale-[0.98] rounded-lg font-semibold transition"
           >
             <Play className="w-4 h-4" /> Practice this set
           </Link>
@@ -151,7 +151,7 @@ export default async function QuestionSetPage({ params }: PageProps) {
         <div className="text-center pt-4">
           <Link
             href={`/cbt?exam=${encodeURIComponent(examName)}&subject=${encodeURIComponent(subjectName)}&year=${encodeURIComponent(year)}`}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg font-semibold hover:opacity-90 transition"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 rounded-lg font-semibold hover:opacity-90 active:scale-[0.98] transition"
           >
             <Play className="w-4 h-4" /> Start CBT Practice
           </Link>
