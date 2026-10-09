@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import RegisterSW from "@/components/RegisterSW";
 import BottomNav from "@/components/BottomNav";
 import { AuthProvider } from "@/lib/auth";
+import { PricingProvider } from "@/lib/pricing";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -68,10 +69,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         <RegisterSW />
         <AuthProvider>
-          {/* `pb-nav` reserves room for the fixed tab bar on phones; the
-              wrapper keeps the pages' own `flex-1` layout intact. */}
-          <div className="flex flex-1 flex-col pb-nav md:pb-0">{children}</div>
-          <BottomNav />
+          <PricingProvider>
+            {/* `pb-nav` reserves room for the fixed tab bar on phones; the
+                wrapper keeps the pages' own `flex-1` layout intact. */}
+            <div className="flex flex-1 flex-col pb-nav md:pb-0">{children}</div>
+            <BottomNav />
+          </PricingProvider>
         </AuthProvider>
       </body>
     </html>

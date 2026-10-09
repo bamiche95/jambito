@@ -18,7 +18,8 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
 import { getAttempts, getBookmarkIds } from "@/lib/offlineStore";
-import { DEFAULT_PLAN, planLabel } from "@/lib/plans";
+import { usePricing } from "@/lib/pricing";
+import { planLabel } from "@/lib/plans";
 import { isSubscriptionActive } from "@/lib/subscription";
 import {
   ACCOUNT_STATUS_LABELS,
@@ -36,6 +37,7 @@ export default function ProfileView() {
     signOut,
     accountState,
   } = useAuth();
+  const { plan } = usePricing();
   const [profile, setProfile] = useState<Profile | null>(null);
   const [attempts, setAttempts] = useState<AttemptRecord[]>([]);
   const [bookmarkCount, setBookmarkCount] = useState(0);
@@ -163,7 +165,7 @@ export default function ProfileView() {
                   href="/cbt"
                   className="inline-flex min-h-10 items-center font-semibold underline underline-offset-4"
                 >
-                  Pay ₦{DEFAULT_PLAN.priceNaira.toLocaleString()} to restore access
+                  Pay ₦{plan.priceNaira.toLocaleString()} to restore access
                 </Link>
               )}
               {profile?.role === "admin" && (

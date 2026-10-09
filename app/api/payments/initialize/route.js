@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import { randomUUID } from "crypto";
 import { initializePaystackTransaction } from "@/lib/payments";
 import { requirePaymentUser } from "@/lib/serverAuth";
-import { planPriceKobo, resolvePlanId } from "@/lib/plans";
+import { resolvePlanId } from "@/lib/plans";
+import { getPlanPriceKobo } from "@/lib/pricingStore";
 import { recordPayment } from "@/lib/paymentsStore";
 import { isSubscribed } from "@/lib/users";
 
@@ -14,7 +15,9 @@ const NO_STORE = { "Cache-Control": "no-store" };
  * Creates a Paystack transaction for the signed-in user.
  * Body: { plan?: "yearly" }
  *
- * There is one offer — ₦1,500 for 12 months. Nothing recurs and nothing is
+ * There is one offer: one payment for 12 months of access. The amount is read
+ * from the admin-editable price at this moment — the request body is never
+ * trusted for a figure, only for the plan id. Nothing recurs and nothing is
  * charged to a card automatically, so the only way to pay twice is to press the
  * button twice; this endpoint refuses that while a paid window is still running.
  *
@@ -31,7 +34,7 @@ export async function POST(request) {
   }
 
   // Already paid up: refuse the charge instead of quietly taking a second
-  // ₦1,500 for time the student already owns. Only active accounts are refused
+  // payment for time the student already owns. Only active accounts are refused
   // — a deactivated account pays its way back in, which is the documented
   // reactivation path, whichever window it happens to be on.
   if (auth.status === "active" && isSubscribed(auth.user)) {
@@ -75,7 +78,9 @@ export async function POST(request) {
     );
   }
 
-  const amount = planPriceKobo(plan);
+  // The current price, re-read on every checkout so an admin edit applies to
+  // the next payment rather than the next deploy.
+  const amount = await getPlanPriceKobo(plan);
   const reference = `JMB-${Date.now()}-${randomUUID().slice(0, 8)}`;
 
   try {
@@ -105,7 +110,13 @@ export async function POST(request) {
       });
 
       return NextResponse.json(
-        { success: true, data: result.data, reference },
+        {
+          success: true,
+          data: result.data,
+          reference,
+          amount,
+          amountNaira: amount / 100,
+        },
         { headers: NO_STORE }
       );
     }

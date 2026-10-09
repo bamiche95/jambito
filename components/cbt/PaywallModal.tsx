@@ -12,7 +12,8 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
-import { DEFAULT_PLAN, TRIAL_LIMIT } from "@/lib/plans";
+import { usePricing } from "@/lib/pricing";
+import { TRIAL_LIMIT } from "@/lib/plans";
 import { paymentGate } from "@/lib/subscription";
 import { cn } from "@/lib/utils";
 import AuthModal from "@/components/auth/AuthModal";
@@ -26,10 +27,13 @@ interface PaywallModalProps {
 /**
  * The only place in the app that starts a payment.
  *
- * One offer: ₦1,500 paid once for 12 months of unlimited access. Nothing renews
+ * One offer: a single payment for 12 months of unlimited access. Nothing renews
  * on its own, so while a paid window is still running there is no button to
  * press — `paymentGate` reports "active" and the price is replaced with a
  * confirmation. A second checkout is refused server-side too.
+ *
+ * The price shown here comes from usePricing() so it matches what the server
+ * will charge; it is never used to compute an amount, only to quote one.
  */
 export default function PaywallModal({
   open,
@@ -38,6 +42,8 @@ export default function PaywallModal({
 }: PaywallModalProps) {
   const { user, isSubscribed, entitlementKnown, getIdToken, refreshStatus } =
     useAuth();
+  // Hook order: read the price before the `!open` early return below.
+  const { plan } = usePricing();
   const [paying, setPaying] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -45,7 +51,6 @@ export default function PaywallModal({
 
   if (!open) return null;
 
-  const plan = DEFAULT_PLAN;
   const email = user?.email ?? "";
   const gate = paymentGate({
     signedIn: Boolean(user),

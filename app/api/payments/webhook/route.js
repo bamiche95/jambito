@@ -6,7 +6,8 @@ import {
   recordPayment,
   updatePayment,
 } from "@/lib/paymentsStore";
-import { planById, planByPriceKobo, PLAN_ID } from "@/lib/plans";
+import { planById, PLAN_ID } from "@/lib/plans";
+import { planByAmountKobo } from "@/lib/pricingStore";
 
 export const dynamic = "force-dynamic";
 
@@ -63,11 +64,11 @@ export async function POST(request) {
   const uid = data.metadata?.uid ?? null;
   // Metadata is what initialize() set; the amount is the only fallback when a
   // payment was created outside the app (dashboard invoice, etc). Both collapse
-  // onto the single offer when they don't name it.
-  const plan =
-    (planById(data.metadata?.plan)?.id ?? null) ??
-    planByPriceKobo(amount)?.id ??
-    PLAN_ID;
+  // onto the single offer when they don't name it — and the amount is matched
+  // against the configured price as well as the built-in default, so a charge
+  // made before a price change still names its plan.
+  const inferred = await planByAmountKobo(amount);
+  const plan = planById(data.metadata?.plan)?.id ?? inferred?.id ?? PLAN_ID;
 
   try {
     if (event?.event === "charge.success") {

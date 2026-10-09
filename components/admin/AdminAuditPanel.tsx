@@ -22,6 +22,7 @@ const ACTION_LABELS: Record<string, string> = {
   "user.setRole": "Role changed",
   "payment.recordManual": "Manual payment recorded",
   "payment.reconcile": "Payment reconciled",
+  setPricing: "Subscription price changed",
 };
 
 /**
@@ -213,6 +214,12 @@ function describe(entry: AuditEntry): string {
       return `Reconciled ${formatNaira((num("amountKobo") ?? 0) / 100)} at Paystack (status ${
         str("paystackStatus") ?? "?"
       }) and granted ${num("days") ?? "?"} days.`;
+    case "setPricing": {
+      const note = str("note");
+      return `Price ${formatNaira(num("fromNaira") ?? 0)} → ${formatNaira(
+        num("toNaira") ?? 0
+      )}${note ? ` · ${note}` : ""}.`;
+    }
     default:
       return entry.action;
   }

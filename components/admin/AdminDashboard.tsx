@@ -8,6 +8,7 @@ import {
   RefreshCw,
   Users,
   CreditCard,
+  Tags,
   ScrollText,
   ChevronLeft,
   ChevronRight,
@@ -21,11 +22,12 @@ import { cn } from "@/lib/utils";
 import { NoticeBar, RoleBadge, StatusBadge, SubscriptionBadge } from "./AdminUi";
 import AdminUserDetail from "./AdminUserDetail";
 import AdminPaymentsPanel from "./AdminPaymentsPanel";
+import AdminPricingPanel from "./AdminPricingPanel";
 import AdminAuditPanel from "./AdminAuditPanel";
 
 const PAGE_LIMIT = 25;
 
-type Tab = "users" | "payments" | "audit";
+type Tab = "users" | "payments" | "pricing" | "audit";
 type Notice = { kind: "ok" | "error" | "info"; text: string };
 
 /**
@@ -166,6 +168,7 @@ export default function AdminDashboard() {
           [
             { id: "users", label: "Users", icon: Users },
             { id: "payments", label: "Payments", icon: CreditCard },
+            { id: "pricing", label: "Pricing", icon: Tags },
             { id: "audit", label: "Audit log", icon: ScrollText },
           ] as const
         ).map(({ id, label, icon: Icon }) => (
@@ -273,6 +276,10 @@ export default function AdminDashboard() {
       )}
 
       {tab === "audit" && <AdminAuditPanel token={token} />}
+
+      {tab === "pricing" && (
+        <AdminPricingPanel token={token} onNotice={announce} />
+      )}
     </main>
   );
 }

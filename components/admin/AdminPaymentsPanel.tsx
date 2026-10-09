@@ -9,7 +9,8 @@ import {
   formatDateTime,
   formatNaira,
 } from "@/lib/adminClient";
-import { DEFAULT_PLAN, PLANS, PLAN_ID, planDurationDays, resolvePlanId } from "@/lib/plans";
+import { PLANS, PLAN_ID, planDurationDays, resolvePlanId } from "@/lib/plans";
+import { usePricing } from "@/lib/pricing";
 import type {
   AdminActionPayload,
   AdminUser,
@@ -279,6 +280,9 @@ function ManualGrantForm({
   // One plan, so this really just sets the default window length. Legacy ids on
   // an old record map onto the offer so the select never renders blank.
   const [plan, setPlan] = useState<string>(PLAN_ID);
+  // The live price, used only as the amount placeholder: what a student pays
+  // today is the best guess at what was transferred.
+  const { plan: livePlan } = usePricing();
   const [days, setDays] = useState(String(planDurationDays(PLAN_ID)));
   const [mode, setMode] = useState<"extend" | "set">("extend");
   const [amount, setAmount] = useState("");
@@ -441,7 +445,7 @@ function ManualGrantForm({
             min={0}
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder={String(DEFAULT_PLAN.priceNaira)}
+            placeholder={String(livePlan.priceNaira)}
             className="block mt-1 w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm"
           />
         </label>

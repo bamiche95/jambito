@@ -13,7 +13,8 @@ import {
 } from "lucide-react";
 import type { PracticeQuestion, PracticeSession } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { DEFAULT_PLAN, TRIAL_LIMIT } from "@/lib/plans";
+import { usePricing } from "@/lib/pricing";
+import { TRIAL_LIMIT } from "@/lib/plans";
 
 export type { PracticeQuestion };
 
@@ -73,6 +74,7 @@ export default function CbtPractice({
   canRetake = false,
   onSubscribe,
 }: CbtPracticeProps) {
+  const { plan } = usePricing();
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>(
     () => initialSession?.answers ?? {}
   );
@@ -468,8 +470,8 @@ export default function CbtPractice({
               </h2>
               <p className="text-sm text-slate-600 dark:text-slate-300">
                 Unlock 12 months of unlimited access to past questions and
-                answers with a single ₦
-                {DEFAULT_PLAN.priceNaira.toLocaleString()} payment.
+                answers with a single ₦{plan.priceNaira.toLocaleString()}{" "}
+                payment.
               </p>
               <button
                 onClick={onSubscribe}

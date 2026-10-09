@@ -18,11 +18,11 @@ import { getUsersCollection } from "@/lib/users";
 import { getAccountStatus } from "@/lib/accountStatus";
 import {
   planById,
-  planByPriceKobo,
   planLabel,
   PLAN_ID,
   resolvePlanId,
 } from "@/lib/plans";
+import { planByAmountKobo } from "@/lib/pricingStore";
 
 export const dynamic = "force-dynamic";
 
@@ -60,7 +60,7 @@ export async function GET(request) {
       {
         success: true,
         reference,
-        paystack: summarize(verify),
+        paystack: await summarize(verify),
         payment: serializePayment(payment),
       },
       { headers: NO_STORE }
@@ -112,7 +112,7 @@ export async function POST(request) {
     );
   }
 
-  const paystack = summarize(verify);
+  const paystack = await summarize(verify);
   if (!verify.verified) {
     return NextResponse.json(
       {
@@ -150,10 +150,11 @@ export async function POST(request) {
 async function applyReconciliation({ tx, reference, body, actor, paystack }) {
   // Which plan was paid for is a hint, never a gate: there is one offer, so a
   // missing or unrecognised plan id still resolves to it.
+  const inferred = await planByAmountKobo(tx.amount);
   const plan =
     planById(tx.metadata?.plan)?.id ??
     planById(body.plan)?.id ??
-    planByPriceKobo(tx.amount)?.id ??
+    inferred?.id ??
     resolvePlanId(body.plan) ??
     PLAN_ID;
   const requestedDays = Number(body.days);
@@ -335,10 +336,18 @@ function grantable(user) {
   return { ok: true, uid: user._id, user };
 }
 
-/** Paystack's answer, trimmed to what the dashboard shows. */
-function summarize(verify) {
+/**
+ * Paystack's answer, trimmed to what the dashboard shows.
+ *
+ * Async because naming a transaction whose metadata has no plan needs the
+ * configured price, and that lives in the database.
+ */
+async function summarize(verify) {
   const tx = verify.transaction ?? {};
   const metadataPlan = planById(tx.metadata?.plan)?.id ?? null;
+  const inferredPlan = metadataPlan
+    ? null
+    : (await planByAmountKobo(tx.amount))?.id ?? null;
   return {
     httpStatus: verify.httpStatus,
     verified: verify.verified,
@@ -352,7 +361,7 @@ function summarize(verify) {
     email: tx.customer?.email ?? null,
     uid: tx.metadata?.uid ?? null,
     plan: metadataPlan,
-    inferredPlan: metadataPlan ? null : (planByPriceKobo(tx.amount)?.id ?? null),
+    inferredPlan,
     reference: tx.reference ?? null,
     gatewayResponse: tx.gateway_response ?? null,
   };

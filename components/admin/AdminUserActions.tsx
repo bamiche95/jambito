@@ -9,6 +9,7 @@ import {
 } from "@/lib/accountStatus";
 import type { AccountStatus } from "@/lib/accountStatus";
 import { PLANS, PLAN_ID, planDurationDays, planLabel, resolvePlanId } from "@/lib/plans";
+import { usePricing } from "@/lib/pricing";
 import {
   adminGet,
   adminPost,
@@ -130,6 +131,8 @@ export function SubscriptionActions({
   // maps a legacy id still on an old record onto the current offer so the
   // select always shows a real option instead of a blank.
   const [plan, setPlan] = useState<string>(resolvePlanId(user.plan) ?? PLAN_ID);
+  // The live price, which may differ from the constant — an admin can change it.
+  const { plan: livePlan } = usePricing();
   const [days, setDays] = useState(
     String(planDurationDays(resolvePlanId(user.plan) ?? PLAN_ID))
   );
@@ -154,7 +157,8 @@ export function SubscriptionActions({
           >
             {PLANS.map((p) => (
               <option key={p.id} value={p.id}>
-                {p.name} · {formatNaira(p.priceNaira)}
+                {p.name} ·{" "}
+                {formatNaira(p.id === livePlan.id ? livePlan.priceNaira : p.priceNaira)}
               </option>
             ))}
           </select>

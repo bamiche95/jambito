@@ -252,3 +252,37 @@ export interface AuditPayload {
   limit: number;
   hasMore: boolean;
 }
+
+/**
+ * The live price of the single offer — a subset of the plan definition, because
+ * only these five fields are ever sent to the browser.
+ *
+ * Display data only: the amount that will actually be charged is decided
+ * server-side by /api/payments/initialize, which reads the same stored price.
+ */
+export interface Pricing {
+  planId: string;
+  planName: string;
+  priceNaira: number;
+  /** Exact amount in kobo, as Paystack expects. */
+  priceKobo: number;
+  durationDays: number;
+}
+
+export interface PricingPayload {
+  success: boolean;
+  pricing: Pricing;
+}
+
+/** GET /api/admin/pricing — the live price plus where it came from. */
+export interface AdminPricingPayload {
+  success: boolean;
+  pricing: Pricing & {
+    /** `db` = an admin override is stored; `default` = the built-in figure. */
+    source: "db" | "default";
+    updatedAt: string | null;
+    updatedBy: { uid: string | null; email: string | null } | null;
+  };
+  /** The built-in figure, so the panel can offer it as the reset value. */
+  defaults: { priceNaira: number; priceKobo: number };
+}
