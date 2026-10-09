@@ -160,7 +160,7 @@ export default async function Home() {
               ))}
             </ul>
             <Link
-              href="/cbt"
+              href="/practice"
               className="block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 active:scale-[0.98] font-semibold transition"
             >
               Start practicing
