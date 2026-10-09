@@ -12,6 +12,32 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/*
+ * Brand palette for the marketing surfaces (home hero, header, footer).
+ *
+ * Declared as Tailwind v4 theme tokens so the components can write `bg-navy`,
+ * `text-brand-orange`, `border-brand-emerald` etc. instead of repeating hex
+ * literals in a dozen files. Only the landing page and its chrome use these —
+ * the app screens, CBT runner and admin dashboard keep their existing slate
+ * palette on purpose, so a brand change can never disturb practising or
+ * billing screens.
+ */
+@theme {
+  /* Warm off-white page backgrounds. */
+  --color-cream: #faf8f5;
+  --color-cream-deep: #fffdf9;
+
+  /* Deep navy used by the footer, the wave above it and the dark CTAs. */
+  --color-navy: #0b1e48;
+  --color-navy-deep: #0d255e;
+
+  /* Primary accents. */
+  --color-brand-blue: #2563eb;
+  --color-brand-orange: #ff5722;
+  --color-brand-orange-soft: #f97316;
+  --color-brand-emerald: #10b981;
+}
+
 html {
   scroll-behavior: smooth;
 }

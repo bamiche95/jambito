@@ -31,11 +31,15 @@ import { cn } from "@/lib/utils";
  * `beforeinstallprompt`, which meant iOS (where that event does not exist) and
  * every browser that never fires it saw a dead end. This renders a device
  * "feature row" instead, and opens a native-feeling bottom sheet: tap-to-install
- * when the browser supports it, otherwise explicit Share / menu steps. Both call
- * sites on the home page sit on dark sections, hence the translucent styling.
+ * when the browser supports it, otherwise explicit Share / menu steps.
  *
- * It is mounted twice on the home page, so all shared state lives in
- * `lib/pwa-install.ts` rather than in this component.
+ * `variant` picks the trigger's palette only: `dark` for the translucent
+ * treatment on dark sections, `light` for the white pill on the cream landing
+ * hero. The shared state and the sheet below are identical either way, and the
+ * install logic itself lives in `lib/pwa-install.ts`.
+ *
+ * It is mounted twice on the home page (hero + install CTA), so all shared
+ * state lives in `lib/pwa-install.ts` rather than in this component.
  */
 
 function useInstall(): InstallSnapshot {
@@ -55,11 +59,16 @@ const subscribeNever = () => () => {};
 const readIsIos = () => isIos(navigator.userAgent, navigator.maxTouchPoints > 0);
 const readIsIosOnServer = () => false;
 
-export default function InstallPwaBanner() {
+export default function InstallPwaBanner({
+  variant = "dark",
+}: {
+  variant?: "dark" | "light";
+}) {
   const install = useInstall();
   const [requested, setRequested] = useState(false);
   const ios = useSyncExternalStore(subscribeNever, readIsIos, readIsIosOnServer);
   const titleId = useId();
+  const light = variant === "light";
 
   // Opening is a request, not a state: once the app is installed the sheet is
   // closed by derivation instead of by an effect that writes state.
@@ -75,7 +84,12 @@ export default function InstallPwaBanner() {
 
   if (install.installed) {
     return (
-      <p className="inline-flex items-center gap-2 text-sm text-emerald-400">
+      <p
+        className={cn(
+          "inline-flex items-center gap-2 text-sm",
+          light ? "text-emerald-700" : "text-emerald-400"
+        )}
+      >
         <Check className="h-4 w-4" aria-hidden />
         Installed — open CBT-Practice from your home screen.
       </p>
@@ -93,25 +107,45 @@ export default function InstallPwaBanner() {
         type="button"
         onClick={() => setRequested(true)}
         className={cn(
-          "group inline-flex w-full max-w-md items-center gap-3 rounded-2xl border border-white/15 px-4 py-3 text-left text-white backdrop-blur transition-transform duration-150 active:scale-[0.98] md:w-auto",
+          "group inline-flex w-full max-w-md items-center gap-3 rounded-2xl border px-4 py-3 text-left backdrop-blur transition-transform duration-150 active:scale-[0.98] md:w-auto",
+          light
+            ? "border-slate-200 bg-white text-slate-900 shadow-sm"
+            : "border-white/15 text-white",
           install.dismissed
-            ? "bg-white/5 opacity-80"
-            : "bg-white/10 md:hover:bg-white/15"
+            ? light
+              ? "opacity-80"
+              : "bg-white/5 opacity-80"
+            : light
+              ? "md:hover:border-slate-300"
+              : "bg-white/10 md:hover:bg-white/15"
         )}
       >
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/15">
+        <span
+          className={cn(
+            "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl",
+            light ? "bg-blue-50 text-brand-blue" : "bg-white/15"
+          )}
+        >
           <Smartphone className="h-5 w-5" aria-hidden />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-sm font-semibold">Install the app</span>
           {!install.dismissed && (
-            <span className="block text-xs text-white/70">
+            <span
+              className={cn(
+                "block text-xs",
+                light ? "text-slate-500" : "text-white/70"
+              )}
+            >
               Full screen · works offline · no store needed
             </span>
           )}
         </span>
         <ChevronRight
-          className="h-4 w-4 shrink-0 text-white/60 transition-transform group-active:translate-x-0.5"
+          className={cn(
+            "h-4 w-4 shrink-0 transition-transform group-active:translate-x-0.5",
+            light ? "text-slate-400" : "text-white/60"
+          )}
           aria-hidden
         />
       </button>
@@ -327,10 +361,18 @@ function InstallDrawer({
   );
 }
 
-/** Quiet one-liner for places that only want to mention offline support. */
-export function InstallHint() {
+/**
+ * Quiet one-liner for places that only want to mention offline support.
+ * `variant` matches InstallPwaBanner so the two sit together consistently.
+ */
+export function InstallHint({ variant = "dark" }: { variant?: "dark" | "light" }) {
   return (
-    <div className="inline-flex items-center gap-2 text-sm text-slate-400">
+    <div
+      className={cn(
+        "inline-flex items-center gap-2 text-sm",
+        variant === "light" ? "text-slate-500" : "text-slate-400"
+      )}
+    >
       <Smartphone className="w-4 h-4" />
       Works offline — add to home screen for the best experience.
     </div>

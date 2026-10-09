@@ -10,6 +10,16 @@ interface AuthModalProps {
   onClose: () => void;
   onSuccess?: () => void;
   message?: string;
+  /**
+   * Which tab the card opens on. This only seeds the initial value of the
+   * `mode` state below — the Google and email handlers are untouched, and the
+   * "Sign in / Create an account" switch at the bottom still flips freely.
+   *
+   * Callers that render separate Log In and Register buttons pass this to land
+   * on the right tab, and key the element so changing buttons remounts the card
+   * and re-seeds the state instead of inheriting the previous tab.
+   */
+  initialMode?: "signin" | "signup";
 }
 
 function errorMessage(error: unknown): string {
@@ -74,9 +84,10 @@ export default function AuthModal({
   onClose,
   onSuccess,
   message,
+  initialMode = "signup",
 }: AuthModalProps) {
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth();
-  const [mode, setMode] = useState<"signin" | "signup">("signup");
+  const [mode, setMode] = useState<"signin" | "signup">(initialMode);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);

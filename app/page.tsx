@@ -1,15 +1,9 @@
 import Link from "next/link";
-import {
-  Play,
-  WifiOff,
-  BookOpen,
-  Timer,
-  CheckCircle2,
-  ArrowRight,
-} from "lucide-react";
+import { WifiOff, BookOpen, Timer, CheckCircle2 } from "lucide-react";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import InstallPwaBanner, { InstallHint } from "@/components/InstallPwaBanner";
+import Hero from "@/components/home/Hero";
 import { getPlan } from "@/lib/pricingStore";
 import ExamPicker from "@/components/practice/ExamPicker";
 
@@ -59,48 +53,19 @@ const benefits = [
 export default async function Home() {
   const plan = await getPlan();
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-1 flex-col bg-cream">
       <SiteHeader />
 
-      {/* Hero */}
-      <section className="bg-slate-900 text-white">
-        <div className="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-          <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-blue-600/20 text-blue-300 rounded-full">
-            Built for Nigerian students
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mt-5 leading-tight">
-            Pass JAMB, WAEC &amp; POST UTME with confidence
-          </h1>
-          <p className="text-lg text-slate-300 mt-5 max-w-2xl mx-auto">
-            Practice thousands of real past questions with a full CBT engine,
-            instant explanations and 100% offline access.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
-            <Link
-              href="/cbt"
-              className="inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.98] rounded-lg font-semibold transition"
-            >
-              <Play className="w-5 h-5" /> Start Practicing Free
-            </Link>
-            <a
-              href="#subjects"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-slate-200 border border-slate-600 hover:bg-slate-800 active:scale-[0.98] transition"
-            >
-              Browse Past Questions <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
-          <div className="mt-8 flex justify-center">
-            <InstallPwaBanner />
-          </div>
-        </div>
-      </section>
+      {/* Hero. Purely presentational — the live price is read below and shown
+          in the pricing card. */}
+      <Hero />
 
       {/* Exam board picker */}
-      <section id="subjects" className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
+      <section id="subjects" className="mx-auto max-w-6xl px-4 py-14 sm:py-16">
+        <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">
           Pick your exam board
         </h2>
-        <p className="text-slate-500 mt-2">
+        <p className="mt-2 text-slate-600">
           Choose a board, then a year and a subject. Sign in for 40 free
           questions — no payment needed.
         </p>
@@ -109,38 +74,41 @@ export default async function Home() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 py-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">
+      <section className="border-y border-slate-200/80 bg-cream-deep">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-16">
+          <h2 className="text-center text-2xl font-bold text-slate-900 md:text-3xl">
             Why students choose CBT-Practice
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b) => (
               <div
                 key={b.title}
-                className="bg-white rounded-xl border border-slate-200 p-6"
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
               >
-                <b.icon className="w-8 h-8 text-blue-600 mb-4" />
+                <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-brand-blue">
+                  <b.icon className="h-6 w-6" aria-hidden />
+                </span>
                 <h3 className="font-semibold text-slate-900">{b.title}</h3>
-                <p className="text-sm text-slate-500 mt-2">{b.text}</p>
+                <p className="mt-2 text-sm text-slate-500">{b.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      {/* Pricing — one offer, so one card. */}
-      <section id="pricing" className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">
+      {/* Pricing — one offer, so one card. The figure is read from the database
+          above, so an admin edit shows up here without a deploy. */}
+      <section id="pricing" className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-center text-2xl font-bold text-slate-900 md:text-3xl">
           One payment. A full year.
         </h2>
-        <p className="text-slate-500 text-center mt-2">
+        <p className="mt-2 text-center text-slate-600">
           ₦{plan.priceNaira.toLocaleString()} once unlocks every exam board,
           subject and year for 12 months. Nothing renews and nothing is charged
           automatically.
         </p>
-        <div className="max-w-md mx-auto mt-10">
-          <div className="relative bg-slate-900 text-white rounded-2xl p-6 ring-2 ring-blue-500">
-            <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-blue-600 text-white text-xs font-bold rounded-full">
+        <div className="mx-auto mt-10 max-w-md">
+          <div className="relative rounded-2xl bg-linear-to-br from-blue-700 via-blue-600 to-indigo-700 p-6 text-white shadow-xl ring-4 ring-blue-500/20">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-orange px-3 py-0.5 text-xs font-bold text-white shadow-sm">
               Pay once
             </span>
             <h3 className="font-semibold">{plan.name}</h3>
@@ -148,20 +116,23 @@ export default async function Home() {
               <span className="text-3xl font-extrabold">
                 ₦{plan.priceNaira.toLocaleString()}
               </span>
-              <span className="text-sm opacity-70"> for 12 months</span>
+              <span className="text-sm text-white/80"> for 12 months</span>
             </p>
-            <p className="text-sm mt-2 opacity-70">{plan.description}</p>
+            <p className="mt-2 text-sm text-white/80">{plan.description}</p>
             <ul className="mt-4 space-y-2 text-sm">
               {plan.features.map((f) => (
                 <li key={f} className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0 text-blue-500" />
+                  <CheckCircle2
+                    className="mt-0.5 h-4 w-4 shrink-0 text-emerald-300"
+                    aria-hidden
+                  />
                   {f}
                 </li>
               ))}
             </ul>
             <Link
               href="/practice"
-              className="block text-center mt-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 active:scale-[0.98] font-semibold transition"
+              className="mt-6 block rounded-full bg-brand-orange py-3 text-center font-bold shadow-md shadow-black/20 transition hover:bg-[#E64A19] active:scale-[0.98]"
             >
               Start practicing
             </Link>
@@ -169,19 +140,20 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Install CTA */}
-      <section className="bg-slate-900 text-white">
-        <div className="max-w-3xl mx-auto px-4 py-16 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold">
+      {/* Install CTA — light, so the footer wave below has something to cut
+          into. Both install affordances are in their light variant. */}
+      <section className="mx-auto max-w-6xl px-4 pb-16">
+        <div className="rounded-3xl border border-slate-200 bg-cream-deep px-4 py-14 text-center shadow-sm">
+          <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">
             Take CBT-Practice everywhere you go
           </h2>
-          <p className="text-slate-300 mt-3">
+          <p className="mx-auto mt-3 max-w-xl text-slate-600">
             Install it on your phone or laptop and keep practicing even with no
             network.
           </p>
           <div className="mt-6 flex flex-col items-center gap-3">
-            <InstallPwaBanner />
-            <InstallHint />
+            <InstallPwaBanner variant="light" />
+            <InstallHint variant="light" />
           </div>
         </div>
       </section>
