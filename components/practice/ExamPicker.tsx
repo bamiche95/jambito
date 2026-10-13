@@ -112,20 +112,18 @@ function MathGlyphs() {
  * static catalog if the API is unreachable, so the section always renders (and
  * the home page stays statically prerendered).
  *
- * `boardGrid` keeps its original meaning — the compact 2-up grid used on
- * /practice. Without it (the landing page) the cards become a snap-scrolling
- * row on phones, which the design calls for, and a 2/3-up grid from `sm` up.
+ * Cards always sit in a fixed grid — 2-up on phones, 3-up from `sm` — so every
+ * board fits the viewport width and the section never produces a horizontal
+ * scrollbar, on the landing page or on /practice.
  */
-export default function ExamPicker({ boardGrid = false }: { boardGrid?: boolean }) {
+export default function ExamPicker() {
   const [exams, setExams] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
-  /* Cards and skeletons share these, so the loading state never reflows the
-     page when the real boards arrive. */
-  const gridClass = boardGrid
-    ? "mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5"
-    : "mt-8 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-3 [scrollbar-width:none] sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3 [&::-webkit-scrollbar]:hidden";
-  const cardClass = boardGrid ? "" : "w-[17rem] shrink-0 snap-start sm:w-auto";
+  /* Cards and skeletons share this, so the loading state never reflows the page
+     when the real boards arrive. The grid is fixed (columns never exceed the
+     viewport), which is what keeps the section inside the screen width. */
+  const gridClass = "mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5";
 
   useEffect(() => {
     let cancelled = false;
@@ -155,7 +153,7 @@ export default function ExamPicker({ boardGrid = false }: { boardGrid?: boolean 
         {Array.from({ length: 3 }).map((_, i) => (
           <div
             key={i}
-            className={`h-36 animate-pulse rounded-2xl border border-slate-200 bg-slate-50 ${cardClass}`}
+            className="h-36 animate-pulse rounded-2xl border border-slate-200 bg-slate-50"
           />
         ))}
       </div>
@@ -172,17 +170,9 @@ export default function ExamPicker({ boardGrid = false }: { boardGrid?: boolean 
           <Link
             key={exam}
             href={`/practice/${examNameToSlug(exam)}`}
-            className={`group relative flex flex-col justify-between rounded-2xl border-2 bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:scale-[0.98] sm:p-6 ${accent.border} ${cardClass} ${
-              boardGrid ? "min-h-36 p-4 sm:p-5" : ""
-            }`}
+            className={`group relative flex min-h-36 flex-col justify-between rounded-2xl border-2 bg-white p-4 transition hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:scale-[0.98] sm:p-5 ${accent.border}`}
           >
-            <div
-              className={`flex items-center gap-3 ${
-                boardGrid
-                  ? "flex-col items-start sm:flex-row sm:items-center"
-                  : ""
-              }`}
-            >
+            <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
               <span
                 className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${accent.tile}`}
               >
@@ -202,9 +192,7 @@ export default function ExamPicker({ boardGrid = false }: { boardGrid?: boolean 
               </div>
             </div>
             <span
-              className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold ${accent.cta} ${
-                boardGrid ? "sm:mt-6" : ""
-              }`}
+              className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold sm:mt-6 ${accent.cta}`}
             >
               Choose year{" "}
               <ArrowRight

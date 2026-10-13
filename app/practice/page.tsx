@@ -35,7 +35,7 @@ export default function PracticeHomePage() {
           <p className="mt-1 text-sm text-slate-500">
             Your unfinished sessions stay available in History.
           </p>
-          <ExamPicker boardGrid />
+          <ExamPicker />
         </section>
       </main>
       <SiteFooter />
