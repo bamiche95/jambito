@@ -23,5 +23,5 @@ export const HERO_IMAGE = {
   src: "/images/students_hero.png",
   alt: "Nigerian students studying together with laptops and tablets",
   width: 1376,
-  height: 768,
+  height: 920,
 } as const;
