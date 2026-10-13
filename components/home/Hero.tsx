@@ -81,8 +81,8 @@ export default function Hero() {
         <div className="relative lg:col-span-6">
           <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
             {/* Branded panel behind the artwork. It reserves the visual space
-                even while the image loads — relevant because the artwork is
-                currently a remote placeholder (see components/home/heroImage.ts). */}
+                even while the image loads (the source is a local file in
+                public/images — see components/home/heroImage.ts). */}
             <div
               aria-hidden
               className="absolute inset-x-2 bottom-4 top-6 rounded-[2.5rem] bg-linear-to-br from-orange-100/80 via-amber-50 to-blue-100/80"
