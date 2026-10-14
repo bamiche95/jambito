@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import RegisterSW from "@/components/RegisterSW";
 import BottomNav from "@/components/BottomNav";
+import MetaPixel from "@/components/MetaPixel";
+import MetaPixelPageViews from "@/components/MetaPixelPageViews";
 import { AuthProvider } from "@/lib/auth";
 import { PricingProvider } from "@/lib/pricing";
 import { SITE_URL } from "@/lib/site";
@@ -67,6 +69,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+        {/* Meta Pixel: the base code goes into the document <head> and reports
+            the first PageView; the tracker island reports the client-side
+            navigations the head script cannot see. Both render nothing when the
+            pixel is switched off. */}
+        <MetaPixel />
+        <MetaPixelPageViews />
         <RegisterSW />
         <AuthProvider>
           <PricingProvider>

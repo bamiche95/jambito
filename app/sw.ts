@@ -41,6 +41,26 @@ const privateApiNetworkOnly: RuntimeCaching[] = [
   },
 ];
 
+// Pixels and other third-party beacons must never come from a cache.
+//
+// The default `cross-origin` rule is NetworkFirst with a 1h expiration, and it
+// matches every cross-origin GET — which includes both halves of the Meta Pixel:
+// `connect.facebook.net/en_US/fbevents.js` and the `/tr/` event beacons. Caching
+// them is wrong twice over. `fbevents.js` is updated in place by Meta without
+// the URL changing, so a cached copy can go stale and silently stop sending
+// events; and the beacons are one-shot URLs whose responses mean nothing, so a
+// cache replay would fill the cache with dead entries while the event never
+// actually reached Meta.
+const thirdPartyBeaconNetworkOnly: RuntimeCaching[] = [
+  {
+    matcher: ({ url }) =>
+      url.hostname === "connect.facebook.net" ||
+      url.hostname.endsWith(".facebook.com"),
+    method: "GET",
+    handler: new NetworkOnly(),
+  },
+];
+
 // Network-first for the question API (true offline access is handled client-side
 // via IndexedDB — see lib/offlineStore.ts).
 const questionApiCache: RuntimeCaching[] = [
@@ -66,7 +86,12 @@ const serwist = new Serwist({
   skipWaiting: true,
   clientsClaim: true,
   navigationPreload: true,
-  runtimeCaching: [...privateApiNetworkOnly, ...questionApiCache, ...defaultCache],
+  runtimeCaching: [
+    ...thirdPartyBeaconNetworkOnly,
+    ...privateApiNetworkOnly,
+    ...questionApiCache,
+    ...defaultCache,
+  ],
 });
 
 serwist.addEventListeners();
