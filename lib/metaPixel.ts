@@ -12,7 +12,7 @@
  * production dataset). Remember that NEXT_PUBLIC_* is inlined at BUILD time:
  * change it in Vercel and redeploy, or the old value stays in the bundle.
  */
-const DEFAULT_META_PIXEL_ID = "1070001296037676";
+const DEFAULT_META_PIXEL_ID = "442195429851512";
 
 export const META_PIXEL_ID =
   typeof process.env.NEXT_PUBLIC_META_PIXEL_ID === "string"
