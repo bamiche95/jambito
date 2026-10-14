@@ -57,7 +57,7 @@ export default function Hero() {
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/cbt"
+              href="/practice"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-6 py-3.5 text-base font-bold text-white shadow-md shadow-brand-blue/25 transition hover:bg-blue-700 active:scale-[0.98]"
             >
               Start Practicing Free 🚀

@@ -162,7 +162,7 @@ export default function ProfileView() {
               <p>{accountStatusMessage(status)}</p>
               {status === "deactivated" && (
                 <Link
-                  href="/cbt"
+                  href="/practice"
                   className="inline-flex min-h-10 items-center font-semibold underline underline-offset-4"
                 >
                   Pay ₦{plan.priceNaira.toLocaleString()} to restore access
@@ -255,7 +255,7 @@ export default function ProfileView() {
                   12 months.
                 </p>
                 <Link
-                  href="/cbt"
+                  href="/practice"
                   className="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/25 sm:w-auto"
                 >
                   Get 12 months
@@ -311,7 +311,7 @@ export default function ProfileView() {
                 Your completed sessions and scores will appear here.
               </p>
               <Link
-                href="/cbt"
+                href="/practice"
                 className="mt-4 inline-flex min-h-11 items-center justify-center rounded-lg bg-slate-900 px-4 text-sm font-semibold text-white transition-colors hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-500/25"
               >
                 Start practicing
