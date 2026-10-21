@@ -29,11 +29,16 @@ declare const self: ServiceWorkerGlobalScope;
 // whatever is in the database at the moment a payment starts, so an offline or
 // slow-network read that fell back to a 24h-old figure would quote the student
 // one amount and charge them another.
+//
+// /api/contact is here because its GET is not a resource at all — it mints a
+// signed, short-lived timing token (see lib/contactGuard.js). The default
+// `apis` rule would happily replay a 24h-old token, which is both expired and
+// the exact opposite of what the anti-bot check needs.
 const privateApiNetworkOnly: RuntimeCaching[] = [
   {
     matcher: ({ url, sameOrigin }) =>
       sameOrigin &&
-      /^\/api\/(?:trial|profile|payments|pricing|admin)(?:\/|$)/.test(
+      /^\/api\/(?:trial|profile|payments|pricing|admin|contact|welcome)(?:\/|$)/.test(
         url.pathname
       ),
     method: "GET",

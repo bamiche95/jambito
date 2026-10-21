@@ -76,6 +76,20 @@ const INDEXES = [
     keys: { action: 1, createdAt: -1 },
     options: { name: "action_createdAt_desc" },
   },
+  // Contact-form rate limits (lib/contactGuard.js). The lazy `ensureIndexes()`
+  // there creates the same two indexes on the first submission; `at_ttl` is what
+  // keeps the collection from growing forever. A capped collection would be
+  // wrong here: TTL also has to expire entries that are no longer counted.
+  {
+    collection: "contactThrottle",
+    keys: { key: 1, at: -1 },
+    options: { name: "key_at" },
+  },
+  {
+    collection: "contactThrottle",
+    keys: { at: 1 },
+    options: { name: "at_ttl", expireAfterSeconds: 24 * 60 * 60 },
+  },
 ];
 
 async function main() {
@@ -111,7 +125,7 @@ async function main() {
 
   if (!dryRun) {
     console.log("\nIndexes per collection:");
-    for (const collection of ["users", "payments", "adminAudit"]) {
+    for (const collection of ["users", "payments", "adminAudit", "contactThrottle"]) {
       const names = (await db.collection(collection).indexes())
         .map((i) => i.name)
         .filter((n) => n !== "_id_");

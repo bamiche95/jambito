@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ["firebase-admin"],
+  // Loaded with plain `require()` at runtime instead of being bundled: both
+  // packages ship Node-only transports/crypto and are happier resolving their
+  // own internals from node_modules. `nodemailer` backs the contact + welcome
+  // mail, `firebase-admin` backs token verification.
+  serverExternalPackages: ["firebase-admin", "nodemailer"],
   turbopack: {
     rules: {
       "*.css": {

@@ -14,6 +14,7 @@ import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  getAdditionalUserInfo,
   signOut as fbSignOut,
   type User,
 } from "firebase/auth";
@@ -64,6 +65,26 @@ interface AuthContextValue {
 }
 
 const AuthContext = createContext<AuthContextValue | null>(null);
+
+/**
+ * Sends the one-off welcome mail for a brand-new account.
+ *
+ * Fire-and-forget on purpose: a slow or unavailable mailbox must never delay
+ * sign-up or show an error in the auth modal. `/api/welcome` claims the send
+ * atomically (see app/api/welcome/route.js), so a duplicate call is harmless.
+ */
+function sendWelcomeEmail(account: User) {
+  void account
+    .getIdToken()
+    .then((token) =>
+      fetch("/api/welcome", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+      })
+    )
+    .catch(() => undefined);
+}
+
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -188,6 +209,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signInWithGoogle = useCallback(async () => {
     const provider = new GoogleAuthProvider();
     const result = await signInWithPopup(getFirebaseAuth(), provider);
+    if (getAdditionalUserInfo(result)?.isNewUser) sendWelcomeEmail(result.user);
     return result.user;
   }, []);
 
@@ -202,6 +224,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const signUpWithEmail = useCallback(
     async (email: string, password: string) => {
       const result = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
+      sendWelcomeEmail(result.user);
       return result.user;
     },
     []

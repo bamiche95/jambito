@@ -38,6 +38,19 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
+    title: "Messages you send us",
+    body: [
+      "When you use the contact form we receive the name, email address and message you type, and the message is delivered to our support inbox at contact@cbtpractice.ng. We keep it only as long as we need it to answer you.",
+      "To keep the form free of spam, the server stores a one-way hash of your IP address and email address for up to 24 hours and issues a short-lived signed token to the page. The hashes cannot be turned back into your address; they exist only to block repeated automated submissions.",
+    ],
+  },
+  {
+    title: "Account emails",
+    body: [
+      "We send one welcome email when you create an account. We do not send marketing email, and we never sell or share your address with advertisers.",
+    ],
+  },
+  {
     title: "Payments",
     body: [
       "Card and bank payments are processed by Paystack. Paystack receives the payment details needed to complete the transaction; CBT-Practice never sees or stores your card number or CVV. We store only the payment reference, the amount and whether the payment succeeded, so we can grant and support your access.",

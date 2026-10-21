@@ -77,6 +77,12 @@ check("jose resolves to a CommonJS build under jwks-rsa", () => {
   return resolved.split("node_modules/").pop();
 });
 
+check("require('nodemailer')  [/api/contact, /api/welcome]", () => {
+  const nodemailer = require("nodemailer");
+  assert.strictEqual(typeof nodemailer.createTransport, "function");
+  return "createTransport is exported";
+});
+
 const failed = results.filter((ok) => !ok).length;
 console.log(`\n${results.length - failed}/${results.length} checks passed`);
 process.exitCode = failed ? 1 : 0;
