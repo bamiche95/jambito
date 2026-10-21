@@ -81,6 +81,29 @@ async function checkTokenVerification() {
  * jose 5/6 are ESM-only and fail with ERR_REQUIRE_ESM under such loaders).
  */
 
+/**
+ * Non-secret mail settings, so a deployment can be checked from outside
+ * without sending a message or exposing the password. Deliberately does NOT
+ * gate `ok` below: sign-in, practice and payments all work with mail
+ * unconfigured, and a health check that fails for that would be misleading.
+ */
+async function checkMail() {
+  try {
+    const { getMailConfig } = await import("@/lib/mailer");
+    const config = getMailConfig();
+    return {
+      configured: config.configured,
+      host: config.host,
+      port: config.port,
+      secure: config.secure,
+      from: config.fromEmail,
+      contactInbox: process.env.CONTACT_TO_EMAIL || config.fromEmail,
+    };
+  } catch (error) {
+    return { configured: false, error: error?.message || String(error) };
+  }
+}
+
 export async function GET() {
   const info = {
     node: process.version,
@@ -128,6 +151,7 @@ export async function GET() {
 
   const mongo = await checkMongo();
   const tokenVerify = await checkTokenVerification();
+  const mail = await checkMail();
 
   // A healthy verifier complains about the probe token itself; only a
   // credential/config problem means the trial gate cannot work at all, so
@@ -143,7 +167,7 @@ export async function GET() {
     credentialsOk;
 
   return NextResponse.json(
-    { ok, imports, adminInit, mongo, tokenVerify, ...info },
+    { ok, imports, adminInit, mongo, tokenVerify, mail, ...info },
     { status: ok ? 200 : 500 }
   );
 }
