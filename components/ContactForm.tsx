@@ -87,7 +87,7 @@ export default function ContactForm() {
           <Send className="w-4 h-4" /> Send message
         </button>
         <a
-          href="https://wa.me/2348000000000?text=Hi%20Jambito%2C%20I%20need%20help"
+          href="https://wa.me/447572376272?text=Hi%20CBT-Practice%2C%20I%20need%20help"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-5 py-3 font-semibold text-emerald-800 transition-colors hover:bg-emerald-100 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-500/20"
