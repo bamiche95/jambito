@@ -1,8 +1,10 @@
 import type {
   AdminActionPayload,
+  AdminEmailsPayload,
   AdminPricingPayload,
   AdminUsersPayload,
   AuditPayload,
+  EmailActionPayload,
   PaymentRecord,
   PaymentsPayload,
   PricingPayload,
@@ -144,9 +146,11 @@ export function formatRelativeDays(value?: string | null): string {
 
 export type {
   AdminActionPayload,
+  AdminEmailsPayload,
   AdminPricingPayload,
   AdminUsersPayload,
   AuditPayload,
+  EmailActionPayload,
   PaymentRecord,
   PaymentsPayload,
   PricingPayload,

@@ -10,6 +10,7 @@ import {
   CreditCard,
   Tags,
   ScrollText,
+  Mail,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -24,10 +25,11 @@ import AdminUserDetail from "./AdminUserDetail";
 import AdminPaymentsPanel from "./AdminPaymentsPanel";
 import AdminPricingPanel from "./AdminPricingPanel";
 import AdminAuditPanel from "./AdminAuditPanel";
+import AdminEmailsPanel from "./AdminEmailsPanel";
 
 const PAGE_LIMIT = 25;
 
-type Tab = "users" | "payments" | "pricing" | "audit";
+type Tab = "users" | "payments" | "pricing" | "emails" | "audit";
 type Notice = { kind: "ok" | "error" | "info"; text: string };
 
 /**
@@ -169,6 +171,7 @@ export default function AdminDashboard() {
             { id: "users", label: "Users", icon: Users },
             { id: "payments", label: "Payments", icon: CreditCard },
             { id: "pricing", label: "Pricing", icon: Tags },
+            { id: "emails", label: "Emails", icon: Mail },
             { id: "audit", label: "Audit log", icon: ScrollText },
           ] as const
         ).map(({ id, label, icon: Icon }) => (
@@ -279,6 +282,10 @@ export default function AdminDashboard() {
 
       {tab === "pricing" && (
         <AdminPricingPanel token={token} onNotice={announce} />
+      )}
+
+      {tab === "emails" && (
+        <AdminEmailsPanel token={token} onNotice={announce} />
       )}
     </main>
   );

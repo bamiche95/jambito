@@ -11,7 +11,7 @@ import {
   Target,
 } from "lucide-react";
 import { examLabel, titleCase } from "@/lib/catalog";
-import { getAttempts } from "@/lib/offlineStore";
+import { loadAttempts } from "@/lib/practiceRepo";
 import type { AttemptRecord } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -77,12 +77,17 @@ export default function StatsView() {
 
   useEffect(() => {
     let cancelled = false;
-    getAttempts()
-      .then((records) => {
-        if (!cancelled) setAttempts(records);
-      })
+    loadAttempts({
+      onUpdate: (records) => {
+        if (!cancelled) {
+          setAttempts(records);
+          // Cached figures are on screen; the network refresh follows silently.
+          setLoading(false);
+        }
+      },
+    })
       .catch(() => {
-        if (!cancelled) setAttempts([]);
+        // Keep the cached figures; the page never blanks out on a failed sync.
       })
       .finally(() => {
         if (!cancelled) setLoading(false);

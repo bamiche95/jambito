@@ -10,7 +10,38 @@ import type { AttemptRecord, PracticeSession, QuestionsPayload } from "./types";
  */
 
 const DB_NAME = "jambito-offline";
-const DB_VERSION = 2;
+// v3 adds `syncQueue`, the durable outbox for practice writes made offline.
+const DB_VERSION = 3;
+
+/**
+ * A practice write waiting to reach the server.
+ *
+ * Stored in IndexedDB (not memory) so closing the tab offline does not lose a
+ * finished session. `uid` scopes each item to the account that created it, so a
+ * shared device never uploads one student's history into another's account.
+ */
+export type PracticeSyncItem =
+  | {
+      id: string;
+      uid: string;
+      type: "attempt";
+      payload: AttemptRecord;
+      at: number;
+    }
+  | {
+      id: string;
+      uid: string;
+      type: "session";
+      payload: PracticeSession;
+      at: number;
+    }
+  | {
+      id: string;
+      uid: string;
+      type: "session-delete";
+      key: string;
+      at: number;
+    };
 
 interface JambitoDB extends DBSchema {
   questions: {
@@ -29,6 +60,11 @@ interface JambitoDB extends DBSchema {
   bookmarks: {
     key: string;
     value: { id: string | number; savedAt: string };
+  };
+  syncQueue: {
+    key: string;
+    value: PracticeSyncItem;
+    indexes: { "by-at": number };
   };
 }
 
@@ -51,6 +87,10 @@ function getDB(): Promise<IDBPDatabase<JambitoDB>> | null {
         }
         if (!db.objectStoreNames.contains("bookmarks")) {
           db.createObjectStore("bookmarks");
+        }
+        if (!db.objectStoreNames.contains("syncQueue")) {
+          const store = db.createObjectStore("syncQueue");
+          store.createIndex("by-at", "at");
         }
       },
     });
@@ -139,6 +179,39 @@ export async function getAttempts(): Promise<AttemptRecord[]> {
   if (!db) return [];
   const all = await (await db).getAll("attempts");
   return all.sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export interface CachedAttemptEntry {
+  /** The IndexedDB key (the attempt's `sessionId`, historically random). */
+  id: string;
+  record: AttemptRecord;
+}
+
+/**
+ * Attempts with their storage keys.
+ *
+ * Needed once, for the migration: records saved before server-side practice
+ * existed were keyed by a random UUID, while the server derives a stable
+ * `key|date` id. Reading the keys lets `lib/practiceRepo.ts` rewrite those rows
+ * under the stable id instead of importing them a second time.
+ */
+export async function getAttemptEntries(): Promise<CachedAttemptEntry[]> {
+  const db = getDB();
+  if (!db) return [];
+  const d = await db;
+  const keys = await d.getAllKeys("attempts");
+  const entries: CachedAttemptEntry[] = [];
+  for (const key of keys) {
+    const record = await d.get("attempts", key);
+    if (record) entries.push({ id: String(key), record });
+  }
+  return entries;
+}
+
+export async function deleteAttempt(id: string): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).delete("attempts", id);
 }
 
 export async function savePracticeSession(
@@ -253,4 +326,45 @@ export function isEntitlementLocked(
   return Boolean(
     entitlement && !entitlement.isSubscribed && entitlement.trialRemaining <= 0
   );
+}
+
+// ---------------------------------------------------------------------------
+// Practice sync outbox
+// ---------------------------------------------------------------------------
+
+/**
+ * Queues a practice write. Re-queueing the same id replaces the previous entry
+ * (attempt ids are deterministic, session ids are the set key), so a burst of
+ * autosaves leaves one pending write instead of dozens.
+ */
+export async function enqueuePracticeSync(item: PracticeSyncItem): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).put("syncQueue", item, item.id);
+}
+
+/** Pending writes for one account, oldest first. */
+export async function getPracticeSyncQueue(
+  uid: string
+): Promise<PracticeSyncItem[]> {
+  const db = getDB();
+  if (!db) return [];
+  const all = await (await db).getAll("syncQueue");
+  return all
+    .filter((item) => item.uid === uid)
+    .sort((a, b) => a.at - b.at);
+}
+
+export async function deletePracticeSync(id: string): Promise<void> {
+  const db = getDB();
+  if (!db) return;
+  await (await db).delete("syncQueue", id);
+}
+
+/** Number of writes still waiting to reach the server (0 when fully synced). */
+export async function countPracticeSync(uid: string): Promise<number> {
+  const db = getDB();
+  if (!db) return 0;
+  const all = await (await db).getAll("syncQueue");
+  return all.filter((item) => item.uid === uid).length;
 }

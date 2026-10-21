@@ -151,6 +151,9 @@ export default function CbtPractice({
         durationSeconds:
           initialSession?.durationSeconds ?? durationMinutes * 60,
         scrollY: typeof window === "undefined" ? scrollYRef.current : window.scrollY,
+        // Lets History and the reminder emails say "12 of 40 answered" rather
+        // than only counting the answers that happen to be stored.
+        total: questions.length || initialSession?.total,
         updatedAt: new Date().toISOString(),
       };
       void onSessionUpdate(session);
@@ -159,8 +162,10 @@ export default function CbtPractice({
       durationMinutes,
       exam,
       initialSession?.durationSeconds,
+      initialSession?.total,
       locked,
       onSessionUpdate,
+      questions.length,
       sessionKey,
       subject,
       year,

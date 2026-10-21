@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
 import { verifyPaystackSignature } from "@/lib/payments";
 import { upsertSubscription } from "@/lib/users";
 import {
@@ -8,8 +8,11 @@ import {
 } from "@/lib/paymentsStore";
 import { planById, PLAN_ID } from "@/lib/plans";
 import { planByAmountKobo } from "@/lib/pricingStore";
+import { sendCampaignToUser } from "@/lib/emailEngine";
 
 export const dynamic = "force-dynamic";
+// The thank-you below runs in `after()`, i.e. after Paystack gets its 2xx.
+export const maxDuration = 30;
 
 /** Paystack only stops retrying once it reads a 2xx. */
 function received(extra = {}) {
@@ -123,6 +126,23 @@ export async function POST(request) {
       await markPaymentGranted(reference, {
         grantedDays: granted.durationDays,
         grantedBy: "paystack-webhook",
+      });
+
+      // Thank-you email, sent AFTER the 2xx: Paystack must never wait on SMTP,
+      // and a mail failure must not turn a verified payment into a 500 (which
+      // would make Paystack retry a charge that was already granted).
+      const thankYouFor = uid;
+      after(async () => {
+        try {
+          const result = await sendCampaignToUser("subscriber_thanks", thankYouFor);
+          if (!result.ok) {
+            console.log(
+              `subscriber thank-you skipped for ${thankYouFor}: ${result.reason}`
+            );
+          }
+        } catch (error) {
+          console.error("subscriber thank-you failed:", error);
+        }
       });
 
       return received({ reference, expiry: granted.expiry, stackedFrom: granted.stackedFrom });

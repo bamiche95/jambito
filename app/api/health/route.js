@@ -98,6 +98,14 @@ async function checkMail() {
       secure: config.secure,
       from: config.fromEmail,
       contactInbox: process.env.CONTACT_TO_EMAIL || config.fromEmail,
+      // Progress emails need both a working mailbox and an unsubscribe secret;
+      // without them the campaign runner refuses to send anything.
+      campaigns: {
+        cronSecret: Boolean(process.env.CRON_SECRET),
+        unsubscribeSecret: Boolean(
+          process.env.EMAIL_UNSUBSCRIBE_SECRET || process.env.CRON_SECRET
+        ),
+      },
     };
   } catch (error) {
     return { configured: false, error: error?.message || String(error) };

@@ -63,6 +63,12 @@ export interface AttemptRecord {
   date: string;
   /** Idempotency key shared with the completed practice session. */
   sessionId?: string;
+  /**
+   * The account this cached row belongs to. Set client-side only; the server
+   * derives ownership from the authenticated uid. Rows without it predate
+   * server-side history and belong to whoever first signs in on this device.
+   */
+  uid?: string;
 }
 
 export interface PracticeSession {
@@ -77,7 +83,52 @@ export interface PracticeSession {
   remainingSeconds: number;
   durationSeconds: number;
   scrollY: number;
+  /**
+   * Questions in the set, when known. Optional because sessions saved before
+   * the server migration did not record it.
+   */
+  total?: number;
+  /** Cache owner; see the note on `AttemptRecord.uid`. */
+  uid?: string;
   updatedAt: string;
+}
+
+/** One row of the denormalised `users.practice.bySubject` rollup. */
+export interface PracticeSubjectSummary {
+  exam: string;
+  subject: string;
+  sessions: number;
+  score: number;
+  total: number;
+}
+
+/** A paused set, as summarised on the user doc (no answer map). */
+export interface PracticeInProgressSummary {
+  key: string;
+  exam: string;
+  subject: string;
+  year: string;
+  answered: number;
+  total: number | null;
+  remainingSeconds: number;
+  updatedAt: string;
+}
+
+/**
+ * The server-side aggregate behind History, Stats and the progress emails.
+ *
+ * Recomputed by `lib/practice.js` on every write, so it can be read on its own
+ * without touching the attempts collection or any answer map.
+ */
+export interface PracticeSummary {
+  completedSessions: number;
+  totalQuestions: number;
+  totalScore: number;
+  averagePercentage: number | null;
+  lastCompletedAt: string | null;
+  bySubject: PracticeSubjectSummary[];
+  inProgress: PracticeInProgressSummary[];
+  lastActivityAt: string | null;
 }
 
 export interface Profile {
@@ -91,6 +142,8 @@ export interface Profile {
   subscriptionExpiry?: string | null;
   plan?: string;
   trialCount?: number;
+  /** Aggregate practice figures, when the account has any activity. */
+  practice?: PracticeSummary | null;
 }
 
 // ---------------------------------------------------------------------------
@@ -285,4 +338,109 @@ export interface AdminPricingPayload {
   };
   /** The built-in figure, so the panel can offer it as the reset value. */
   defaults: { priceNaira: number; priceKobo: number };
+}
+
+// ---------------------------------------------------------------------------
+// Automated email campaigns
+// ---------------------------------------------------------------------------
+
+/** The part of a campaign an admin can edit. */
+export interface EmailCampaignContent {
+  subject: string;
+  heading: string;
+  body: string;
+  ctaLabel: string;
+  ctaPath: string;
+  enabled: boolean;
+  delayDays: number;
+}
+
+export interface AdminEmailCampaign extends EmailCampaignContent {
+  id: string;
+  name: string;
+  summary: string;
+  when: string;
+  /** Minimum days between two campaign emails to the same student. */
+  cooldownDays: number;
+  defaults: EmailCampaignContent;
+  updatedAt: string | null;
+  updatedBy: { uid: string | null; email: string | null } | null;
+  stats: {
+    sent: number;
+    failed: number;
+    sending: number;
+    lastSentAt: string | null;
+  };
+}
+
+export interface AdminEmailSettings {
+  paused: boolean;
+  dailyCap: number;
+  lastRunAt: string | null;
+  lastRunSummary: EmailRunSummary | null;
+  updatedAt: string | null;
+  updatedBy: { uid: string | null; email: string | null } | null;
+}
+
+export interface AdminEmailSend {
+  id: string;
+  campaignId: string;
+  email: string;
+  status: string;
+  sentAt: string | null;
+  createdAt: string | null;
+  error: string | null;
+}
+
+export interface EmailRunCampaignResult {
+  id: string;
+  name: string;
+  enabled: boolean;
+  audience: number;
+  sent: number;
+  failed: number;
+  skipped: number;
+  reason: string | null;
+  recipients: string[];
+}
+
+/** What a run (or a dry run) did, also stored as `settings.lastRunSummary`. */
+export interface EmailRunSummary {
+  startedAt: string;
+  finishedAt: string | null;
+  dryRun: boolean;
+  sent: number;
+  failed: number;
+  skipped: number;
+  campaigns: EmailRunCampaignResult[];
+  stoppedReason: string | null;
+}
+
+export interface AdminEmailsPayload {
+  success: boolean;
+  settings: AdminEmailSettings;
+  campaigns: AdminEmailCampaign[];
+  recent: AdminEmailSend[];
+  counts: { unsubscribed: number; sentToday: number };
+  mailConfigured: boolean;
+  unsubscribeConfigured: boolean;
+  variables: { token: string; description: string }[];
+  siteUrl: string;
+}
+
+/** A rendered campaign, for the preview iframe. */
+export interface EmailPreview {
+  subject: string;
+  text: string;
+  html: string;
+}
+
+export interface EmailActionPayload {
+  success: boolean;
+  message?: string;
+  campaign?: AdminEmailCampaign;
+  settings?: AdminEmailSettings;
+  preview?: EmailPreview;
+  summary?: EmailRunSummary;
+  dryRun?: boolean;
 }

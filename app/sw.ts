@@ -34,11 +34,15 @@ declare const self: ServiceWorkerGlobalScope;
 // signed, short-lived timing token (see lib/contactGuard.js). The default
 // `apis` rule would happily replay a 24h-old token, which is both expired and
 // the exact opposite of what the anti-bot check needs.
+//
+// /api/practice and /api/cron are here for the same "never from a cache" reason:
+// practice holds one account's scores and answers, and a cron trigger replayed
+// from a cache would report a run that never happened.
 const privateApiNetworkOnly: RuntimeCaching[] = [
   {
     matcher: ({ url, sameOrigin }) =>
       sameOrigin &&
-      /^\/api\/(?:trial|profile|payments|pricing|admin|contact|welcome)(?:\/|$)/.test(
+      /^\/api\/(?:trial|profile|payments|pricing|admin|contact|welcome|practice|cron)(?:\/|$)/.test(
         url.pathname
       ),
     method: "GET",

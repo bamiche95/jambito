@@ -20,16 +20,17 @@ import {
   getCachedQuestions,
   deleteCachedQuestions,
   clearAllCachedQuestions,
-  saveAttempt,
-  getPracticeSession,
-  savePracticeSession,
-  deletePracticeSession,
   getBookmarkIds,
   getEntitlement,
   isEntitlementLocked,
   toggleBookmark,
 } from "@/lib/offlineStore";
 import { examSlugToName, deslugify, titleCase } from "@/lib/catalog";
+import {
+  loadPracticeSession,
+  persistPracticeSession,
+  recordAttempt,
+} from "@/lib/practiceRepo";
 import { usePricing } from "@/lib/pricing";
 import { TRIAL_LIMIT, TRIAL_PREVIEW_SECONDS } from "@/lib/plans";
 import {
@@ -106,7 +107,7 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
 
   useEffect(() => {
     let cancelled = false;
-    getPracticeSession(storageKey)
+    loadPracticeSession(storageKey)
       .then((session) => {
         if (cancelled) return;
         setSavedSession(session);
@@ -325,7 +326,9 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
 
   const handleSubmit = useCallback(
     async (score: number, total: number, sessionId: string) => {
-      await saveAttempt({
+      // Persists locally and queues the server write; the session is deleted on
+      // both sides by the repo.
+      await recordAttempt({
         key: storageKey,
         exam: examName,
         subject: subjectName,
@@ -336,14 +339,13 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
         date: new Date().toISOString(),
         sessionId,
       });
-      await deletePracticeSession(storageKey);
       setSavedSession(null);
     },
     [storageKey, examName, subjectName, yearName]
   );
 
   const handleSessionUpdate = useCallback((session: PracticeSession) => {
-    return savePracticeSession(session).catch(() => undefined);
+    return persistPracticeSession(session).catch(() => undefined);
   }, []);
 
   const handleToggleBookmark = useCallback(async (id: string | number) => {

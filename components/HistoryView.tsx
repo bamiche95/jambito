@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { BookOpen, CheckCircle2, Clock3, Play, RotateCcw } from "lucide-react";
 import { buildCbtHref, examLabel, titleCase } from "@/lib/catalog";
-import { getAttempts, getPracticeSessions } from "@/lib/offlineStore";
+import { loadAttempts, loadPracticeSessions } from "@/lib/practiceRepo";
 import type { AttemptRecord, PracticeSession } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -33,16 +33,27 @@ export default function HistoryView() {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([getAttempts(), getPracticeSessions()])
-      .then(([nextAttempts, nextSessions]) => {
-        if (cancelled) return;
-        setAttempts(nextAttempts);
-        setSessions(nextSessions);
-      })
+    // The repo emits the cached list first (instant paint) and the merged list
+    // after the network refresh, so both calls update state through onUpdate.
+    Promise.all([
+      loadAttempts({
+        onUpdate: (rows) => {
+          if (!cancelled) {
+            setAttempts(rows);
+            // The cache answer is enough to leave the skeleton behind; the
+            // network refresh replaces it in place if anything changed.
+            setLoading(false);
+          }
+        },
+      }),
+      loadPracticeSessions({
+        onUpdate: (rows) => {
+          if (!cancelled) setSessions(rows);
+        },
+      }),
+    ])
       .catch(() => {
-        if (cancelled) return;
-        setAttempts([]);
-        setSessions([]);
+        // Keep whatever the cache already painted rather than blanking History.
       })
       .finally(() => {
         if (!cancelled) setLoading(false);

@@ -13,10 +13,12 @@ export const metadata: Metadata = {
  * Plain-language privacy summary.
  *
  * Written against what the code actually does rather than from a template:
- * Firebase Auth holds the account, practice data is cached on the device so the
- * app works offline (IndexedDB), and card payments are handled by Paystack, so
- * no card details ever reach this app. Each section points at something a
- * student can act on — the profile page, the contact form.
+ * Firebase Auth holds the account, practice records (scores, paused sessions and
+ * the answers needed to resume them) are stored against the account in MongoDB
+ * and cached on the device so the app still works offline, and card payments are
+ * handled by Paystack, so no card details ever reach this app. Each section
+ * points at something a student can act on — the profile page, the unsubscribe
+ * link, the contact form.
  *
  * The note at the top is deliberate: this is not a lawyer-reviewed policy, and
  * saying so is better than implying a review that has not happened.
@@ -31,10 +33,10 @@ const SECTIONS: { title: string; body: string[] }[] = [
     ],
   },
   {
-    title: "Practice data stays on your device",
+    title: "Your practice history",
     body: [
-      "Question sets, your answers and your explanations are cached in your browser's local storage on your device. That cache is what lets the app keep working with no network. Clearing your browser data, or uninstalling the app, removes it.",
-      "Practice sessions you save show up under History, and summary figures under Stats, so they are available on any device you sign in from.",
+      "Your answers, paused sessions, scores and practice history are saved to your account in our database. That is what makes History and Stats the same on every device you sign in from, and what lets you resume a paused set on a different phone.",
+      "The app also keeps a copy in your browser's local storage (IndexedDB). That cache is what lets the app keep working with no network; anything you do offline is uploaded the next time you connect. Clearing your browser data removes the copy on that device, not the copy on your account.",
     ],
   },
   {
@@ -47,7 +49,8 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "Account emails",
     body: [
-      "We send one welcome email when you create an account. We do not send marketing email, and we never sell or share your address with advertisers.",
+      "We send a welcome email when you create an account, and occasional progress emails about your own practice — for example when you have used up your free questions, when you have an unfinished practice set waiting, or when you have signed up but not started yet.",
+      "Those progress emails are about your account, not advertising, and every one of them includes an unsubscribe link. We never sell or share your address with advertisers.",
     ],
   },
   {
@@ -66,7 +69,8 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "Your choices",
     body: [
-      "You can ask us to delete your account and the data attached to it at any time. Send the request from the email address on the account so we can verify it.",
+      "You can ask us to delete your account and the data attached to it at any time. Send the request from the email address on the account so we can verify it. Deleting an account also deletes its practice history and any paused sessions.",
+      "You can unsubscribe from progress emails from the link in any of them without losing access to your account.",
     ],
   },
 ];

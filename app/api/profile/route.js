@@ -36,6 +36,20 @@ export async function GET(request) {
         subscriptionExpiry: user.subscriptionExpiry ?? null,
         plan: user.plan ?? null,
         trialCount: user.trialCount ?? 0,
+        // Server-side aggregate: shown even when this device's cache is empty,
+        // and the figure the progress emails are selected from.
+        practice: user.practice
+          ? {
+              completedSessions: user.practice.completedSessions ?? 0,
+              totalQuestions: user.practice.totalQuestions ?? 0,
+              totalScore: user.practice.totalScore ?? 0,
+              averagePercentage: user.practice.averagePercentage ?? null,
+              lastCompletedAt: user.practice.lastCompletedAt ?? null,
+              bySubject: (user.practice.bySubject ?? []).slice(0, 20),
+              inProgress: (user.practice.inProgress ?? []).slice(0, 5),
+              lastActivityAt: user.practice.lastActivityAt ?? null,
+            }
+          : null,
       },
       remaining: getRemaining(user),
     },

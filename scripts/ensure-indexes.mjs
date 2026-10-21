@@ -76,6 +76,52 @@ const INDEXES = [
     keys: { action: 1, createdAt: -1 },
     options: { name: "action_createdAt_desc" },
   },
+  // Practice records (lib/practice.js). The deterministic `_id` already makes
+  // writes idempotent; these indexes are for the list queries, and
+  // `uid_date_desc` is what History and the email audience read.
+  {
+    collection: "practiceAttempts",
+    keys: { uid: 1, date: -1 },
+    options: { name: "uid_date_desc" },
+  },
+  {
+    collection: "practiceAttempts",
+    keys: { uid: 1, key: 1 },
+    options: { name: "uid_key" },
+  },
+  {
+    collection: "practiceSessions",
+    keys: { uid: 1, updatedAt: -1 },
+    options: { name: "uid_updatedAt_desc" },
+  },
+  // Email campaigns (lib/emailStore.js). `campaign_dedupe_unique` is the one
+  // that matters: the insert of a claim is what prevents a retried cron run from
+  // delivering the same email twice.
+  {
+    collection: "emailLog",
+    keys: { campaignId: 1, dedupeKey: 1 },
+    options: { name: "campaign_dedupe_unique", unique: true },
+  },
+  {
+    collection: "emailLog",
+    keys: { campaignId: 1, sentAt: -1 },
+    options: { name: "campaign_sentAt" },
+  },
+  {
+    collection: "emailLog",
+    keys: { sentAt: -1 },
+    options: { name: "sentAt_desc" },
+  },
+  {
+    collection: "emailLog",
+    keys: { uid: 1, sentAt: -1 },
+    options: { name: "uid_sentAt" },
+  },
+  {
+    collection: "emailCampaigns",
+    keys: { updatedAt: -1 },
+    options: { name: "updatedAt_desc" },
+  },
   // Contact-form rate limits (lib/contactGuard.js). The lazy `ensureIndexes()`
   // there creates the same two indexes on the first submission; `at_ttl` is what
   // keeps the collection from growing forever. A capped collection would be
@@ -125,7 +171,16 @@ async function main() {
 
   if (!dryRun) {
     console.log("\nIndexes per collection:");
-    for (const collection of ["users", "payments", "adminAudit", "contactThrottle"]) {
+    for (const collection of [
+      "users",
+      "payments",
+      "adminAudit",
+      "contactThrottle",
+      "practiceAttempts",
+      "practiceSessions",
+      "emailLog",
+      "emailCampaigns",
+    ]) {
       const names = (await db.collection(collection).indexes())
         .map((i) => i.name)
         .filter((n) => n !== "_id_");

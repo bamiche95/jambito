@@ -17,7 +17,8 @@ import {
   ChartNoAxesColumnIncreasing,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
-import { getAttempts, getBookmarkIds } from "@/lib/offlineStore";
+import { getBookmarkIds } from "@/lib/offlineStore";
+import { loadAttempts } from "@/lib/practiceRepo";
 import { usePricing } from "@/lib/pricing";
 import { planLabel } from "@/lib/plans";
 import { isSubscriptionActive } from "@/lib/subscription";
@@ -44,9 +45,9 @@ export default function ProfileView() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getAttempts().then(setAttempts);
+    loadAttempts({ onUpdate: setAttempts }).catch(() => undefined);
     getBookmarkIds().then((ids) => setBookmarkCount(ids.length));
-  }, []);
+  }, [user?.uid]);
 
   useEffect(() => {
     if (authLoading) return;
@@ -80,14 +81,18 @@ export default function ProfileView() {
   // state from /api/trial is the fallback that still explains the lockout.
   const status: AccountStatus = profile?.status ?? accountState;
   const locked = status !== "active";
-  const attemptedQuestions = attempts.reduce((sum, attempt) => sum + attempt.total, 0);
-  const avg = attemptedQuestions
-    ? Math.round(
-        (attempts.reduce((sum, attempt) => sum + attempt.score, 0) /
-          attemptedQuestions) *
-          100
-      )
-    : 0;
+  const attemptedQuestions =
+    profile?.practice?.totalQuestions ??
+    attempts.reduce((sum, attempt) => sum + attempt.total, 0);
+  const avg =
+    profile?.practice?.averagePercentage ??
+    (attemptedQuestions
+      ? Math.round(
+          (attempts.reduce((sum, attempt) => sum + attempt.score, 0) /
+            attemptedQuestions) *
+            100
+        )
+      : 0);
 
   return (
     <main className="flex-1">

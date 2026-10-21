@@ -26,6 +26,7 @@ import {
   saveEntitlement,
 } from "./offlineStore";
 import { TRIAL_LIMIT } from "./plans";
+import { setPracticeAuthProvider } from "./practiceRepo";
 import {
   accountStatusFromCode,
   normalizeAccountStatus,
@@ -246,6 +247,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!u) return null;
     return u.getIdToken(true);
   }, []);
+
+  /**
+   * Practice history follows the account, not the device.
+   *
+   * `lib/practiceRepo.ts` uses this to import a device-only backlog once and to
+   * drain its outbox. The cached (non-forced) token is used for those writes:
+   * forcing a refresh on every autosave flush would cost a network round-trip
+   * for no benefit.
+   */
+  useEffect(() => {
+    if (!user) {
+      setPracticeAuthProvider(null);
+      return;
+    }
+    setPracticeAuthProvider({
+      uid: user.uid,
+      getIdToken: () => user.getIdToken(),
+    });
+  }, [user]);
 
   const refreshStatus = useCallback(async () => {
     const token = await getIdToken();
