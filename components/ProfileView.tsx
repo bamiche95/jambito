@@ -256,14 +256,13 @@ export default function ProfileView() {
             ) : (
               <div className="flex min-h-24 flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
                 <p className="max-w-xs text-sm leading-6 text-slate-600">
-                  You&apos;re on the free trial. Unlock every subject and year for
-                  12 months.
+                  You&apos;re on the free trial. Unlock every subject and year.
                 </p>
                 <Link
                   href="/practice"
                   className="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-blue-600 px-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-500/25 sm:w-auto"
                 >
-                  Get 12 months
+                  Get unlimited access for ₦{plan.priceNaira.toLocaleString()}
                 </Link>
               </div>
             )}
