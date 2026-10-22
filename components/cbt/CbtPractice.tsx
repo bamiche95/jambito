@@ -321,7 +321,7 @@ export default function CbtPractice({
             onClick={onSubscribe}
             className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition"
           >
-            Unlock 12 months of access
+           Unlock unlimited access to past questions and answers
           </button>
         </div>
       )}
@@ -351,7 +351,7 @@ export default function CbtPractice({
                 onClick={onSubscribe}
                 className="flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
               >
-                <Lock className="w-4 h-4" /> Unlock 12 months of access
+                <Lock className="w-4 h-4" /> Unlock unlimited access to past questions and answers
               </button>
             )}
           </div>
@@ -474,7 +474,7 @@ export default function CbtPractice({
                 You&apos;ve reached your {TRIAL_LIMIT}-question free trial limit
               </h2>
               <p className="text-sm text-slate-600 dark:text-slate-300">
-                Unlock 12 months of unlimited access to past questions and
+                Unlock unlimited access to past questions and
                 answers with a single ₦{plan.priceNaira.toLocaleString()}{" "}
                 payment.
               </p>
@@ -482,7 +482,7 @@ export default function CbtPractice({
                 onClick={onSubscribe}
                 className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
               >
-                Unlock 12 months of access
+                Unlock unlimited access to past questions and answers
               </button>
               <Link
                 href="/"

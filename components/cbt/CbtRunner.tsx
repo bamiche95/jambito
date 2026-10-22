@@ -418,14 +418,14 @@ export default function CbtRunner({ exam, subject, year }: CbtRunnerProps) {
             You&apos;ve reached your {TRIAL_LIMIT}-question free trial limit
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mt-2">
-            Unlock 12 months of unlimited access to past questions and answers
+            Unlock unlimited access to past questions and answers
             with a single ₦{plan.priceNaira.toLocaleString()} payment.
           </p>
           <button
             onClick={() => setShowPaywall(true)}
             className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition"
           >
-            Unlock 12 months of access
+            Unlock unlimited access to past questions and answers
           </button>
           <Link
             href="/"
