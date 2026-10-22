@@ -131,12 +131,11 @@ export default function PaywallModal({
               <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400" />
             </div>
             <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
-              Unlock 12 months of access
+              Unlock unlimited Past Questions and Answers
             </h2>
-            <p className="text-sm text-slate-500 mt-1">
+            <p className="text-sm text-slate-700 mt-1">
               You&apos;ve used your {TRIAL_LIMIT} free questions. One payment of
-              ₦{plan.priceNaira.toLocaleString()} unlocks every board, subject and
-              year for 12 months.
+              ₦{plan.priceNaira.toLocaleString()} unlocks every board.
             </p>
           </div>
 
@@ -168,11 +167,10 @@ export default function PaywallModal({
                   <span className="text-3xl font-extrabold text-slate-900 dark:text-white">
                     ₦{plan.priceNaira.toLocaleString()}
                   </span>
-                  <span className="text-sm text-slate-500"> for 12 months</span>
+                  <span className="text-sm text-slate-500"> for unlimited access</span>
                 </p>
-                <p className="text-xs text-slate-500 mt-1">
-                  One payment, no renewal. Unlimited access to every board,
-                  subject and year for {plan.durationYears * 12} months.
+                <p className="text-sm text-slate-700 mt-1">
+                  One payment, no renewal. Unlimited access to every board.
                 </p>
                 <ul className="mt-3 space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
                   {plan.features.slice(0, 4).map((f) => (
@@ -185,7 +183,7 @@ export default function PaywallModal({
               </div>
 
               {email && (
-                <p className="text-xs text-slate-500 text-center">
+                <p className="text-sm text-slate-700 text-center">
                   Receipts go to <span className="font-medium">{email}</span>
                 </p>
               )}
@@ -202,7 +200,7 @@ export default function PaywallModal({
                     Your access is already active
                   </p>
                   <p className="text-xs text-green-700 dark:text-green-400">
-                    Nothing to pay — you still have the rest of your 12 months.
+                    Nothing to pay — you have an unlimited access.
                   </p>
                   <button
                     onClick={() => {
@@ -239,7 +237,7 @@ export default function PaywallModal({
                     <Landmark className="w-4 h-4 mt-0.5 shrink-0" />
                     <span>
                       <span className="font-medium">Contact Support now</span>{" "}
-                      email <span className="font-mono">support@cbtpractice.com</span>{" "}
+                      email <span className="font-mono">support@cbtpractice.ng</span>{" "}
                    or simply message us on WhatsApp
                     </span>
                   </div>
