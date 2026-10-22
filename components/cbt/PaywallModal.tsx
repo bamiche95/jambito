@@ -229,7 +229,7 @@ export default function PaywallModal({
                 </button>
               )}
 
-              <div>
+              <div className="rounded-xl border border-slate-200 dark:border-slate-700 p-4 space-y-3 text-sm">
                 <p>Having trouble paying? Chat with us instantly     <a
                     href="https://wa.me/447572376272?text=Hi%20CBTPractice%2C%20I%20just%20made%20a%20transfer%20for%20a%20year%20of%20access"
                     target="_blank"
