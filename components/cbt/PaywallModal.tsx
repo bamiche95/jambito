@@ -237,7 +237,7 @@ export default function PaywallModal({
                     <Landmark className="w-4 h-4 mt-0.5 shrink-0" />
                     <span>
                       <span className="font-medium">Contact Support now</span>{" "}
-                      email <span className="font-mono">support@cbtpractice.ng</span>{" "}
+                      email <span className="font-mono">contact@cbtpractice.ng</span>{" "}
                    or simply message us on WhatsApp
                     </span>
                   </div>
