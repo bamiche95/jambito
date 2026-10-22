@@ -229,6 +229,15 @@ export default function PaywallModal({
                 </button>
               )}
 
+              <div>
+                <p>Having trouble paying? Chat with us instantly     <a
+                    href="https://wa.me/447572376272?text=Hi%20CBTPractice%2C%20I%20just%20made%20a%20transfer%20for%20a%20year%20of%20access"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-green-600 font-medium"
+                  > on WhatsApp </a> for quick assistance.</p>
+              </div>
+{/* 
               {gate !== "active" && (
                 <div className="rounded-xl border border-slate-200 dark:border-slate-700 p-4 space-y-3 text-sm">
                   <p className="font-semibold text-slate-700 dark:text-slate-200">
@@ -238,12 +247,12 @@ export default function PaywallModal({
                     <Landmark className="w-4 h-4 mt-0.5 shrink-0" />
                     <span>
                       <span className="font-medium">Bank Transfer / OPay:</span>{" "}
-                      Transfer to <span className="font-mono">0123456789</span>{" "}
-                      (Jambito Ltd, GTBank) and send proof via WhatsApp.
+                      Transfer to <span className="font-mono">8110594681</span>{" "}
+                      (CBTPractice Ltd, GTBank) and send proof via WhatsApp.
                     </span>
                   </div>
                   <a
-                    href="https://wa.me/2348000000000?text=Hi%20Jambito%2C%20I%20just%20made%20a%20transfer%20for%20a%20year%20of%20access"
+                    href="https://wa.me/447572376272?text=Hi%20CBTPractice%2C%20I%20just%20made%20a%20transfer%20for%20a%20year%20of%20access"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-green-600 font-medium"
@@ -252,8 +261,8 @@ export default function PaywallModal({
                     Send proof on WhatsApp
                   </a>
                 </div>
-              )}
-
+              )}  
+*/}
               <button
                 onClick={handleRefresh}
                 disabled={refreshing}
