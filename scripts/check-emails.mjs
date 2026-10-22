@@ -43,7 +43,7 @@ const client = new MongoClient(uri, { serverSelectionTimeoutMS: 10_000 });
 await client.connect();
 const db = client.db(DB_NAME);
 
-const [settings, campaigns, stats, unsubscribed, recent, indexes] =
+const [settings, campaigns, stats, unsubscribed, recent, indexes, templates, broadcasts] =
   await Promise.all([
     db.collection("settings").findOne({ _id: "emailSettings" }),
     db.collection("emailCampaigns").find({}).toArray(),
@@ -62,6 +62,14 @@ const [settings, campaigns, stats, unsubscribed, recent, indexes] =
     db.collection("users").countDocuments({ emailUnsubscribedAt: { $exists: true } }),
     db.collection("emailLog").find({}).sort({ createdAt: -1 }).limit(5).toArray(),
     db.collection("emailLog").indexes(),
+    db.collection("emailTemplates").countDocuments({}),
+    db
+      .collection("emailBroadcasts")
+      .find({})
+      .sort({ createdAt: -1 })
+      .limit(5)
+      .project({ subject: 1, status: 1, counts: 1, createdAt: 1 })
+      .toArray(),
   ]);
 
 const unsubscribeSecret = process.env.EMAIL_UNSUBSCRIBE_SECRET || process.env.CRON_SECRET;
@@ -119,6 +127,22 @@ console.log("  (a campaign with no document uses the defaults in lib/emailCampai
 
 console.log("");
 console.log(`Unsubscribed accounts: ${unsubscribed}`);
+
+console.log("");
+console.log("One-off emails");
+console.log(`  saved templates          ${templates}`);
+if (broadcasts.length === 0) {
+  console.log("  (no broadcasts yet)");
+} else {
+  for (const broadcast of broadcasts) {
+    const counts = broadcast.counts ?? {};
+    console.log(
+      `  ${when(broadcast.createdAt)}  ${String(broadcast.status).padEnd(7)}  ` +
+        `${counts.sent ?? 0}/${counts.total ?? 0} delivered` +
+        (broadcast.subject ? `  ${broadcast.subject}` : "")
+    );
+  }
+}
 
 console.log("");
 console.log("Last 5 log entries");

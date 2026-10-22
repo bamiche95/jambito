@@ -10,6 +10,9 @@ import type {
   EmailPreview,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import AdminEmailContentFields, {
+  emailFieldClass,
+} from "./AdminEmailContentFields";
 
 type Notice = { kind: "ok" | "error" | "info"; text: string };
 
@@ -92,8 +95,7 @@ export default function AdminEmailEditor({
     onPreview(res.data.preview, campaign.name);
   }
 
-  const inputClass =
-    "w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
+  const inputClass = emailFieldClass;
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-slate-900/50 p-4 sm:p-8">
@@ -116,95 +118,28 @@ export default function AdminEmailEditor({
         </div>
 
         <div className="space-y-4 p-5">
-          <label className="block">
-            <span className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Subject line
-              <span className="font-normal normal-case text-slate-400">
-                {form.subject.length}/140
-              </span>
-            </span>
-            <input
-              value={form.subject}
-              maxLength={140}
-              onChange={(event) => update("subject", event.target.value)}
-              className={cn(inputClass, "mt-1")}
-            />
-          </label>
-
-          <label className="block">
-            <span className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Heading
-              <span className="font-normal normal-case text-slate-400">
-                {form.heading.length}/120
-              </span>
-            </span>
-            <input
-              value={form.heading}
-              maxLength={120}
-              onChange={(event) => update("heading", event.target.value)}
-              className={cn(inputClass, "mt-1")}
-            />
-          </label>
-
-          <label className="block">
-            <span className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-slate-500">
-              Body
-              <span className="font-normal normal-case text-slate-400">
-                {form.body.length}/4000
-              </span>
-            </span>
-            <textarea
-              value={form.body}
-              maxLength={4000}
-              rows={10}
-              onChange={(event) => update("body", event.target.value)}
-              className={cn(inputClass, "mt-1 resize-y leading-6")}
-            />
-            <span className="mt-1 block text-xs text-slate-400">
-              Plain text. Leave a blank line between paragraphs; every blank line
-              becomes a new paragraph in the email.
-            </span>
-          </label>
-
-          <div className="grid gap-4 sm:grid-cols-3">
-            <label className="block">
-              <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Button label
-              </span>
-              <input
-                value={form.ctaLabel}
-                maxLength={40}
-                onChange={(event) => update("ctaLabel", event.target.value)}
-                className={cn(inputClass, "mt-1")}
-              />
-            </label>
-            <label className="block">
-              <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Button link
-              </span>
-              <input
-                value={form.ctaPath}
-                maxLength={200}
-                onChange={(event) => update("ctaPath", event.target.value)}
-                className={cn(inputClass, "mt-1")}
-              />
-            </label>
-            <label className="block">
-              <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                Wait (days)
-              </span>
-              <input
-                type="number"
-                min={0}
-                max={30}
-                value={form.delayDays}
-                onChange={(event) =>
-                  update("delayDays", Number(event.target.value))
-                }
-                className={cn(inputClass, "mt-1")}
-              />
-            </label>
-          </div>
+          <AdminEmailContentFields
+            form={form}
+            onChange={update}
+            variables={variables}
+            trailing={
+              <label className="block">
+                <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Wait (days)
+                </span>
+                <input
+                  type="number"
+                  min={0}
+                  max={30}
+                  value={form.delayDays}
+                  onChange={(event) =>
+                    update("delayDays", Number(event.target.value))
+                  }
+                  className={cn(inputClass, "mt-1")}
+                />
+              </label>
+            }
+          />
 
           <label className="flex items-start gap-2 rounded-lg border border-slate-200 bg-slate-50 p-3">
             <input
@@ -220,22 +155,6 @@ export default function AdminEmailEditor({
               switching it on.
             </span>
           </label>
-
-          <details className="rounded-lg border border-slate-200 p-3">
-            <summary className="cursor-pointer text-sm font-medium text-slate-700">
-              Placeholders ({variables.length})
-            </summary>
-            <dl className="mt-2 space-y-1.5">
-              {variables.map((variable) => (
-                <div key={variable.token} className="flex gap-3 text-xs">
-                  <dt className="w-32 shrink-0 font-mono text-slate-700">
-                    {variable.token}
-                  </dt>
-                  <dd className="text-slate-500">{variable.description}</dd>
-                </div>
-              ))}
-            </dl>
-          </details>
 
           {error && (
             <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">

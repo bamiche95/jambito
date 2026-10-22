@@ -2,9 +2,11 @@ import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/serverAuth";
 import { writeAudit } from "@/lib/adminUsers";
 import { SITE_URL } from "@/lib/site";
+import { getUserByUid } from "@/lib/users";
 import { getContactInbox, isMailConfigured, sendMail } from "@/lib/mailer";
 import {
   EMAIL_CAMPAIGN_DEFINITIONS,
+  EMAIL_TEMPLATE_NAME_LIMIT,
   EMAIL_VARIABLES,
   getCampaignDefinition,
   normalizeCampaignDoc,
@@ -12,36 +14,54 @@ import {
   validateCampaignContent,
 } from "@/lib/emailCampaigns";
 import {
+  EMAIL_BROADCAST_MAX_RECIPIENTS,
   countSentSince,
   countUnsubscribedUsers,
+  createEmailBroadcast,
+  deleteEmailTemplate,
+  getEmailBroadcast,
   getEmailCampaignDocs,
   getEmailCampaignStats,
   getEmailSettings,
+  listEmailBroadcasts,
+  listEmailRecipients,
+  listEmailTemplates,
   listRecentEmailSends,
+  resolveBroadcastRecipients,
   saveEmailCampaignDoc,
   saveEmailSettings,
+  saveEmailTemplate,
 } from "@/lib/emailStore";
-import { runEmailCampaigns } from "@/lib/emailEngine";
-import { renderCampaignEmail } from "@/lib/emailTemplates";
+import { runEmailCampaigns, sendBroadcastBatch } from "@/lib/emailEngine";
+import { renderBroadcastEmail, renderCampaignEmail } from "@/lib/emailTemplates";
 import { isUnsubscribeConfigured, unsubscribeUrl } from "@/lib/emailTokens";
 
 export const dynamic = "force-dynamic";
-// "Run now" sends inside the request; the engine stops itself well before this.
+// "Run now" and "Send" mail inside the request; the engines stop well before this.
 export const maxDuration = 60;
 
 /**
- * Admin control for the automated progress emails.
+ * Admin control for the automated progress emails and one-off broadcasts.
  *
- * GET  -> campaign copy, per-campaign send counts, recent sends and settings.
+ * GET  -> campaign copy, per-campaign send counts, recent sends, settings,
+ *         saved templates and recent broadcasts. `?recipients=1&search=&page=`
+ *         returns the composer's recipient picker instead.
  * POST -> one of:
  *   { action: "save",     id, content }        update copy / enable a campaign
  *   { action: "preview",  id, content? }        render without sending
  *   { action: "test",     id }                  one message to the admin's own address
  *   { action: "run",      id?, dryRun?, limit? } run one campaign, or all enabled ones
  *   { action: "settings", paused?, dailyCap? }  global pause switch / daily cap
+ *   { action: "broadcast_preview", content, uids? } render a one-off for one recipient
+ *   { action: "broadcast_test",    content }        one message to the admin's address
+ *   { action: "broadcast_send",    content?, uids?, confirm, broadcastId? }
+ *                                                send (or continue) a broadcast
+ *   { action: "template_save",     id?, name, content }
+ *   { action: "template_delete",   id }
  *
  * A test can only go to the signed-in admin. Accepting an arbitrary recipient
  * would turn the dashboard into an open relay for any compromised admin token.
+ * A real broadcast only accepts uids, never an address, for the same reason.
  */
 
 const NO_STORE = { "Cache-Control": "no-store" };
@@ -67,15 +87,40 @@ function actorOf(auth) {
   };
 }
 
+/** The five editable columns a broadcast or a template owns. */
+function broadcastContent(value) {
+  return {
+    subject: value.subject,
+    heading: value.heading,
+    body: value.body,
+    ctaLabel: value.ctaLabel,
+    ctaPath: value.ctaPath,
+  };
+}
+
 export async function GET(request) {
   const auth = await requireAdmin(request);
   if (!auth) return forbidden();
 
+  const { searchParams } = new URL(request.url);
+
   try {
+    if (searchParams.get("recipients") === "1") {
+      const picker = await listEmailRecipients({
+        search: searchParams.get("search") ?? "",
+        page: searchParams.get("page") ?? 1,
+        limit: searchParams.get("limit") ?? 25,
+      });
+      return NextResponse.json(
+        { success: true, ...picker },
+        { headers: NO_STORE }
+      );
+    }
+
     const startOfDay = new Date();
     startOfDay.setHours(0, 0, 0, 0);
 
-    const [settings, docs, stats, recent, unsubscribed, sentToday] =
+    const [settings, docs, stats, recent, unsubscribed, sentToday, templates, broadcasts] =
       await Promise.all([
         getEmailSettings(),
         getEmailCampaignDocs(),
@@ -83,6 +128,8 @@ export async function GET(request) {
         listRecentEmailSends(25),
         countUnsubscribedUsers(),
         countSentSince(startOfDay),
+        listEmailTemplates(),
+        listEmailBroadcasts(10),
       ]);
 
     const campaigns = EMAIL_CAMPAIGN_DEFINITIONS.map((definition) => {
@@ -109,6 +156,14 @@ export async function GET(request) {
         unsubscribeConfigured: isUnsubscribeConfigured(),
         variables: EMAIL_VARIABLES,
         siteUrl: SITE_URL,
+        templates,
+        broadcasts,
+        broadcastLimits: {
+          maxRecipients: EMAIL_BROADCAST_MAX_RECIPIENTS,
+          // Headroom today, so the composer can warn before a send rather than
+          // after the daily cap stops the batch.
+          remainingToday: Math.max(0, settings.dailyCap - sentToday),
+        },
       },
       { headers: NO_STORE }
     );
@@ -284,6 +339,244 @@ export async function POST(request) {
             ? "Automated emails are paused."
             : "Automated emails are active.",
         },
+        { headers: NO_STORE }
+      );
+    }
+
+    if (action === "broadcast_preview") {
+      const validated = validateCampaignContent(body.content);
+      if (!validated.ok) return fail(400, "invalid_content", validated.message);
+
+      // Previewing against a real account shows the {{name}} the recipient will
+      // actually see; without one, the sample account is used.
+      const firstUid = Array.isArray(body.uids) ? String(body.uids[0] ?? "") : "";
+      const recipient = firstUid ? await getUserByUid(firstUid) : null;
+      const previewUser = recipient?.email ? recipient : sampleCampaignUser();
+
+      const preview = renderBroadcastEmail({
+        content: broadcastContent(validated.value),
+        user: previewUser,
+        siteUrl: SITE_URL,
+        contactEmail: getContactInbox(),
+        unsubscribeUrl: unsubscribeUrl(
+          SITE_URL,
+          recipient?._id ? String(recipient._id) : "sample-uid"
+        ),
+      });
+      return NextResponse.json(
+        { success: true, preview },
+        { headers: NO_STORE }
+      );
+    }
+
+    if (action === "broadcast_test") {
+      if (!isMailConfigured()) {
+        return fail(
+          503,
+          "not_configured",
+          "Mail is not configured on this deployment (set SMTP_USER and SMTP_PASSWORD)."
+        );
+      }
+      const to = String(auth.decoded.email ?? auth.user?.email ?? "").trim();
+      if (!to) return fail(400, "no_email", "Your admin account has no email address.");
+
+      const validated = validateCampaignContent(body.content);
+      if (!validated.ok) return fail(400, "invalid_content", validated.message);
+
+      const template = renderBroadcastEmail({
+        content: broadcastContent(validated.value),
+        user: { ...sampleCampaignUser(), email: to, name: to.split("@")[0] },
+        siteUrl: SITE_URL,
+        contactEmail: getContactInbox(),
+        // A sample id, so clicking Unsubscribe in a test cannot opt the admin out.
+        unsubscribeUrl: unsubscribeUrl(SITE_URL, "sample-uid"),
+      });
+      await sendMail({
+        to,
+        subject: `[Test] ${template.subject}`,
+        text: template.text,
+        html: template.html,
+      });
+      await writeAudit({
+        actor,
+        action: "testEmailBroadcast",
+        details: { to, subject: template.subject },
+      });
+      return NextResponse.json(
+        { success: true, message: `Test email sent to ${to}.` },
+        { headers: NO_STORE }
+      );
+    }
+
+    if (action === "broadcast_send") {
+      if (body.confirm !== true) {
+        return fail(400, "confirm_required", "Confirm the recipient list before sending.");
+      }
+      if (!isMailConfigured()) {
+        return fail(
+          503,
+          "not_configured",
+          "Mail is not configured on this deployment (set SMTP_USER and SMTP_PASSWORD)."
+        );
+      }
+      if (!isUnsubscribeConfigured()) {
+        return fail(
+          409,
+          "unsubscribe_unconfigured",
+          "Sending is blocked: EMAIL_UNSUBSCRIBE_SECRET is not set, so the email would have no working opt-out link."
+        );
+      }
+
+      const settings = await getEmailSettings();
+      if (settings.paused) {
+        return fail(
+          409,
+          "paused",
+          "Automated emails are paused. Resume sending in the header before composing a broadcast."
+        );
+      }
+
+      let target = null;
+
+      if (body.broadcastId) {
+        // "Send remaining": the copy and audience are already frozen on the doc.
+        target = await getEmailBroadcast(String(body.broadcastId));
+        if (!target) {
+          return fail(404, "unknown_broadcast", "That broadcast no longer exists.");
+        }
+      } else {
+        const validated = validateCampaignContent(body.content);
+        if (!validated.ok) return fail(400, "invalid_content", validated.message);
+
+        const requested = Array.isArray(body.uids)
+          ? [
+              ...new Set(
+                body.uids.map((uid) => String(uid ?? "")).filter(Boolean)
+              ),
+            ]
+          : [];
+        if (!requested.length) {
+          return fail(400, "no_recipients", "Choose at least one recipient.");
+        }
+        if (requested.length > EMAIL_BROADCAST_MAX_RECIPIENTS) {
+          return fail(
+            400,
+            "too_many_recipients",
+            `A broadcast goes to at most ${EMAIL_BROADCAST_MAX_RECIPIENTS} recipients at a time.`
+          );
+        }
+
+        const recipients = await resolveBroadcastRecipients(requested);
+        if (!recipients.some((recipient) => recipient.status === "pending")) {
+          return fail(
+            400,
+            "no_recipients",
+            "None of the selected accounts can receive email (no address, deleted, or opted out)."
+          );
+        }
+
+        const created = await createEmailBroadcast({
+          content: broadcastContent(validated.value),
+          recipients,
+          actor,
+        });
+        target = created.doc;
+      }
+
+      const summary = await sendBroadcastBatch(String(target._id), {
+        limit: Number(body.limit ?? EMAIL_BROADCAST_MAX_RECIPIENTS),
+      });
+
+      await writeAudit({
+        actor,
+        action: "sendEmailBroadcast",
+        details: {
+          broadcastId: String(target._id),
+          subject: target.subject,
+          recipients: target.recipients.length,
+          sent: summary.sent,
+          failed: summary.failed,
+          skipped: summary.skipped,
+          remaining: summary.remaining,
+          stoppedReason: summary.stoppedReason,
+        },
+      });
+
+      const parts = [`Sent ${summary.sent} email(s)`];
+      if (summary.failed) parts.push(`${summary.failed} failed`);
+      if (summary.skipped) parts.push(`${summary.skipped} skipped`);
+      if (summary.remaining) parts.push(`${summary.remaining} still to send`);
+      const reason = summary.stoppedReason
+        ? ` (stopped: ${summary.stoppedReason.replace(/_/g, " ")})`
+        : "";
+
+      return NextResponse.json(
+        {
+          success: true,
+          broadcastId: String(target._id),
+          summary,
+          message: `${parts.join(", ")}${reason}.`,
+        },
+        { headers: NO_STORE }
+      );
+    }
+
+    if (action === "template_save") {
+      const name = String(body.name ?? "").trim();
+      if (!name) return fail(400, "missing_name", "Give the template a name before saving.");
+      if (name.length > EMAIL_TEMPLATE_NAME_LIMIT) {
+        return fail(
+          400,
+          "name_too_long",
+          `A template name cannot be longer than ${EMAIL_TEMPLATE_NAME_LIMIT} characters.`
+        );
+      }
+
+      const validated = validateCampaignContent(body.content);
+      if (!validated.ok) return fail(400, "invalid_content", validated.message);
+
+      const saved = await saveEmailTemplate({
+        id,
+        name,
+        content: broadcastContent(validated.value),
+        actor,
+      });
+      if (!saved.ok) {
+        return fail(
+          saved.code === "template_limit" ? 409 : 404,
+          saved.code ?? "template_error",
+          saved.message
+        );
+      }
+
+      await writeAudit({
+        actor,
+        action: id ? "updateEmailTemplate" : "createEmailTemplate",
+        details: { templateId: saved.template.id, name },
+      });
+      return NextResponse.json(
+        {
+          success: true,
+          template: saved.template,
+          message: `Template "${name}" saved.`,
+        },
+        { headers: NO_STORE }
+      );
+    }
+
+    if (action === "template_delete") {
+      if (!id) return fail(400, "missing_template", "Choose a template to delete.");
+      const deleted = await deleteEmailTemplate(id);
+      if (!deleted.ok) {
+        return fail(404, deleted.code ?? "unknown_template", deleted.message);
+      }
+      await writeAudit({
+        actor,
+        action: "deleteEmailTemplate",
+        details: { templateId: id, name: deleted.name },
+      });
+      return NextResponse.json(
+        { success: true, message: `Template "${deleted.name}" deleted.` },
         { headers: NO_STORE }
       );
     }

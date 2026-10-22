@@ -96,6 +96,32 @@ Rollout order used for this app: enable `never_started` first, then
 `trial_complete`, then `subscriber_thanks`, then `unfinished_set`, checking the
 dry run and a test send before each.
 
+## One-off emails
+
+**Admin -> Emails -> Compose email** sends a single email to hand-picked
+accounts (no segments): search by email or uid, tick the accounts, write the copy
+(or start from a saved template / a campaign's copy), preview it, send a test to
+yourself, then confirm the send.
+
+How it stays safe:
+
+- The composer only ever sends **uids**. The API looks every address up itself,
+  so a compromised admin token cannot turn the dashboard into an open relay.
+- At most 100 recipients per broadcast, one message every half second, and the
+  same 45-second budget as a campaign run. A batch that stops early leaves the
+  rest pending; **Send remaining** continues it.
+- The global pause switch blocks broadcasts, and the daily cap is shared with the
+  campaigns. Preview and "Send test to me" still work while paused.
+- Each delivery is claimed in `emailLog` under `broadcast:<broadcastId>` before
+  it is sent, so a retry (or a double click) can never mail the same person
+  twice. Opted-out and address-less accounts are recorded as `skipped`.
+- The unsubscribe link is mandatory: sending is refused when
+  `EMAIL_UNSUBSCRIBE_SECRET` is missing.
+- Templates (`emailTemplates`, capped at 50) store copy only, never recipients.
+  A send freezes its copy and audience on the `emailBroadcasts` document, so
+  editing or deleting a template later cannot change an email that is still
+  going out.
+
 ## Useful commands
 
 ```bash

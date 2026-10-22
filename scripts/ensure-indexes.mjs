@@ -122,6 +122,17 @@ const INDEXES = [
     keys: { updatedAt: -1 },
     options: { name: "updatedAt_desc" },
   },
+  // One-off broadcasts and saved templates (lib/emailStore.js).
+  {
+    collection: "emailTemplates",
+    keys: { updatedAt: -1 },
+    options: { name: "updatedAt_desc" },
+  },
+  {
+    collection: "emailBroadcasts",
+    keys: { createdAt: -1 },
+    options: { name: "createdAt_desc" },
+  },
   // Contact-form rate limits (lib/contactGuard.js). The lazy `ensureIndexes()`
   // there creates the same two indexes on the first submission; `at_ttl` is what
   // keeps the collection from growing forever. A capped collection would be
@@ -180,6 +191,8 @@ async function main() {
       "practiceSessions",
       "emailLog",
       "emailCampaigns",
+      "emailTemplates",
+      "emailBroadcasts",
     ]) {
       const names = (await db.collection(collection).indexes())
         .map((i) => i.name)

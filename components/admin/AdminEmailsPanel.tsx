@@ -6,6 +6,7 @@ import {
   Eye,
   Loader2,
   Mail,
+  MailPlus,
   PauseCircle,
   PlayCircle,
   Send,
@@ -14,14 +15,19 @@ import {
 import { adminGet, adminPost, formatDateTime } from "@/lib/adminClient";
 import type {
   AdminEmailCampaign,
+  AdminEmailTemplate,
   AdminEmailsPayload,
   EmailActionPayload,
   EmailPreview,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { NoticeBar } from "./AdminUi";
+import AdminBroadcastList from "./AdminBroadcastList";
 import AdminCampaignCard from "./AdminCampaignCard";
+import AdminEmailComposer from "./AdminEmailComposer";
 import AdminEmailEditor from "./AdminEmailEditor";
+import AdminEmailTemplateEditor from "./AdminEmailTemplateEditor";
+import AdminEmailTemplatesCard from "./AdminEmailTemplatesCard";
 
 type Notice = { kind: "ok" | "error" | "info"; text: string };
 
@@ -53,6 +59,16 @@ export default function AdminEmailsPanel({
   const [dryRun, setDryRun] = useState<NonNullable<
     EmailActionPayload["summary"]
   > | null>(null);
+  const [composer, setComposer] = useState<{
+    templateId: string | null;
+    campaignId: string | null;
+    nonce: number;
+  } | null>(null);
+  const [templateDraft, setTemplateDraft] = useState<{
+    template: AdminEmailTemplate | null;
+    nonce: number;
+  } | null>(null);
+  const [deletingTemplate, setDeletingTemplate] = useState<string | null>(null);
 
   const load = useCallback(async () => {
     if (!token) return;
@@ -182,6 +198,20 @@ export default function AdminEmailsPanel({
     setPreview({ preview: res.data.preview, name: campaign.name });
   }
 
+  async function deleteTemplate(template: AdminEmailTemplate) {
+    setDeletingTemplate(template.id);
+    const result = await post(
+      { action: "template_delete", id: template.id },
+      `template-delete:${template.id}`
+    );
+    setDeletingTemplate(null);
+    if (result) await load();
+  }
+
+  function openComposer(templateId: string | null, campaignId: string | null) {
+    setComposer({ templateId, campaignId, nonce: Date.now() });
+  }
+
   const lastRun = data?.settings.lastRunSummary ?? null;
   const ready = Boolean(data?.mailConfigured && data?.unsubscribeConfigured);
   const smallButton =
@@ -220,24 +250,33 @@ export default function AdminEmailsPanel({
               an unsubscribe link.
             </p>
           </div>
-          <button
-            type="button"
-            onClick={() => setPaused(!data.settings.paused)}
-            disabled={busy === "pause"}
-            className={cn(
-              "flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition",
-              data.settings.paused
-                ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                : "border border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100"
-            )}
-          >
-            {data.settings.paused ? (
-              <PlayCircle className="h-4 w-4" />
-            ) : (
-              <PauseCircle className="h-4 w-4" />
-            )}
-            {data.settings.paused ? "Resume all emails" : "Pause all emails"}
-          </button>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              onClick={() => openComposer(null, null)}
+              className="flex items-center gap-2 rounded-lg bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+            >
+              <MailPlus className="h-4 w-4" /> Compose email
+            </button>
+            <button
+              type="button"
+              onClick={() => setPaused(!data.settings.paused)}
+              disabled={busy === "pause"}
+              className={cn(
+                "flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition",
+                data.settings.paused
+                  ? "bg-emerald-600 text-white hover:bg-emerald-700"
+                  : "border border-amber-300 bg-amber-50 text-amber-800 hover:bg-amber-100"
+              )}
+            >
+              {data.settings.paused ? (
+                <PlayCircle className="h-4 w-4" />
+              ) : (
+                <PauseCircle className="h-4 w-4" />
+              )}
+              {data.settings.paused ? "Resume all emails" : "Pause all emails"}
+            </button>
+          </div>
         </div>
 
         <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
@@ -344,6 +383,15 @@ export default function AdminEmailsPanel({
           </p>
         )}
       </div>
+
+      <AdminEmailTemplatesCard
+        templates={data.templates}
+        deletingId={deletingTemplate}
+        onNew={() => setTemplateDraft({ template: null, nonce: Date.now() })}
+        onCompose={(template) => openComposer(template.id, null)}
+        onEdit={(template) => setTemplateDraft({ template, nonce: Date.now() })}
+        onDelete={deleteTemplate}
+      />
 
       <div className="grid gap-4 lg:grid-cols-2">
         {data.campaigns.map((campaign) => (
@@ -452,6 +500,76 @@ export default function AdminEmailsPanel({
           </div>
         )}
       </div>
+
+      <div className="rounded-xl border border-slate-200 bg-white p-5">
+        <div className="flex flex-wrap items-start justify-between gap-2">
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              One-off emails
+            </h3>
+            <p className="mt-0.5 text-xs text-slate-500">
+              The last 10 broadcasts. Every recipient is recorded once, so a retry
+              can never deliver a duplicate.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => openComposer(null, null)}
+            className={smallButton}
+          >
+            <MailPlus className="h-3.5 w-3.5" /> Compose
+          </button>
+        </div>
+        <div className="mt-3">
+          <AdminBroadcastList broadcasts={data.broadcasts} />
+        </div>
+      </div>
+
+      {templateDraft && (
+        <AdminEmailTemplateEditor
+          key={`template-${templateDraft.nonce}`}
+          token={token}
+          template={templateDraft.template}
+          variables={data.variables}
+          onClose={() => setTemplateDraft(null)}
+          onNotice={onNotice}
+          onSaved={() => {
+            setTemplateDraft(null);
+            void load();
+          }}
+          onDeleted={() => {
+            setTemplateDraft(null);
+            void load();
+          }}
+          onPreview={(nextPreview, name) =>
+            setPreview({ preview: nextPreview, name })
+          }
+        />
+      )}
+
+      {composer && (
+        <AdminEmailComposer
+          key={`composer-${composer.nonce}`}
+          token={token}
+          variables={data.variables}
+          templates={data.templates}
+          campaigns={data.campaigns}
+          mailConfigured={data.mailConfigured}
+          unsubscribeConfigured={data.unsubscribeConfigured}
+          paused={data.settings.paused}
+          maxRecipients={data.broadcastLimits.maxRecipients}
+          remainingToday={data.broadcastLimits.remainingToday}
+          initialTemplateId={composer.templateId}
+          initialCampaignId={composer.campaignId}
+          onClose={() => setComposer(null)}
+          onNotice={onNotice}
+          onSent={() => void load()}
+          onPreview={(nextPreview, name) =>
+            setPreview({ preview: nextPreview, name })
+          }
+          onTemplatesChanged={() => void load()}
+        />
+      )}
 
       {editing && (
         <AdminEmailEditor

@@ -345,12 +345,7 @@ export interface AdminPricingPayload {
 // ---------------------------------------------------------------------------
 
 /** The part of a campaign an admin can edit. */
-export interface EmailCampaignContent {
-  subject: string;
-  heading: string;
-  body: string;
-  ctaLabel: string;
-  ctaPath: string;
+export interface EmailCampaignContent extends EmailBroadcastContent {
   enabled: boolean;
   delayDays: number;
 }
@@ -426,6 +421,13 @@ export interface AdminEmailsPayload {
   unsubscribeConfigured: boolean;
   variables: { token: string; description: string }[];
   siteUrl: string;
+  templates: AdminEmailTemplate[];
+  broadcasts: AdminEmailBroadcast[];
+  broadcastLimits: {
+    maxRecipients: number;
+    /** Daily-cap headroom, so the composer can warn before a send. */
+    remainingToday: number;
+  };
 }
 
 /** A rendered campaign, for the preview iframe. */
@@ -443,4 +445,77 @@ export interface EmailActionPayload {
   preview?: EmailPreview;
   summary?: EmailRunSummary;
   dryRun?: boolean;
+}
+
+// ---------------------------------------------------------------------------
+// One-off broadcasts and saved templates
+// ---------------------------------------------------------------------------
+
+/** The editable copy of a broadcast or a saved template (no campaign rules). */
+export interface EmailBroadcastContent {
+  subject: string;
+  heading: string;
+  body: string;
+  ctaLabel: string;
+  ctaPath: string;
+}
+
+/** A saved, reusable template: copy-on-use, never mutated by a send. */
+export interface AdminEmailTemplate extends EmailBroadcastContent {
+  id: string;
+  name: string;
+  updatedAt: string | null;
+  updatedBy: { uid: string | null; email: string | null } | null;
+}
+
+/** One row of the composer's recipient picker. */
+export interface AdminEmailRecipient {
+  uid: string;
+  email: string;
+  status: AccountStatus;
+  isSubscribed: boolean;
+  unsubscribed: boolean;
+}
+
+export interface AdminEmailRecipientsPayload {
+  success: boolean;
+  recipients: AdminEmailRecipient[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+}
+
+/** A broadcast in the admin panel's history list. */
+export interface AdminEmailBroadcast {
+  id: string;
+  subject: string;
+  status: "sending" | "sent" | "partial";
+  recipients: number;
+  sent: number;
+  failed: number;
+  skipped: number;
+  pending: number;
+  createdAt: string | null;
+  finishedAt: string | null;
+  createdBy: { uid: string | null; email: string | null } | null;
+}
+
+/** What one broadcast batch managed to deliver. */
+export interface EmailBroadcastSummary {
+  sent: number;
+  failed: number;
+  skipped: number;
+  /** Recipients still to attempt (pending plus retryable failures). */
+  remaining: number;
+  stoppedReason: string | null;
+}
+
+export interface EmailBroadcastPayload {
+  success: boolean;
+  message?: string;
+  broadcastId?: string;
+  summary?: EmailBroadcastSummary;
+  preview?: EmailPreview;
+  template?: AdminEmailTemplate;
 }
