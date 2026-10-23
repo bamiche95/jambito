@@ -1,15 +1,20 @@
 import Link from "next/link";
 import { GraduationCap } from "lucide-react";
 import AuthButton from "@/components/AuthButton";
+import MobileMenu from "@/components/MobileMenu";
 
 /**
  * App header.
  *
- * Wide screens carry the full marketing navigation: the logo, the five
- * destinations the landing page advertises, and the account buttons. On phones
- * only the logo and the account buttons fit — five links next to them on a
- * 360px screen is what made the app read as a website — so the destinations
- * live in the fixed tab bar (components/BottomNav.tsx) instead.
+ * Wide screens carry the full marketing navigation: the logo, the six
+ * destinations the site advertises, and the account buttons. Phones cannot fit
+ * a link row next to the logo and two account pills, so the destinations live
+ * in the phone drawer (components/MobileMenu.tsx) and the fixed tab bar
+ * (components/BottomNav.tsx) instead.
+ *
+ * The wordmark is hidden below `sm` for the same reason: at 360px the account
+ * pills and the menu button alone take most of the row, and a truncated
+ * "CBT-Prac…" reads worse than the blue graduation-cap tile on its own.
  *
  * Restyled for the edtech brand: blue logo tile, navy/orange wordmark, cream
  * sticky bar. The `dark:` overrides were dropped here on purpose so the brand
@@ -26,7 +31,10 @@ export default function SiteHeader() {
           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-blue shadow-sm md:h-9 md:w-9">
             <GraduationCap className="h-5 w-5 text-white" aria-hidden />
           </span>
-          <span className="truncate tracking-tight">
+          {/* Phones hide the wordmark, so the tile needs its own accessible
+              name there or the home link would have none. */}
+          <span className="sr-only sm:hidden">CBT-Practice</span>
+          <span className="hidden min-w-0 truncate tracking-tight sm:block">
             <span className="text-navy">CBT-</span>
             <span className="text-brand-orange-soft">Practice</span>
           </span>
@@ -55,7 +63,12 @@ export default function SiteHeader() {
           </Link>
         </nav>
 
-        <AuthButton />
+        {/* The account pills and the drawer button travel together so the
+            desktop row keeps its old spacing (the button is `md:hidden`). */}
+        <div className="flex shrink-0 items-center gap-2">
+          <AuthButton />
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );
