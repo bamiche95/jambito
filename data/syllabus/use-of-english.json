@@ -1,0 +1,264 @@
+{
+    "subject": "Use of English",
+    "exam": "JAMB",
+    "sections": [
+        {
+            "sectionTitle": "Section A: Comprehension and Summary",
+            "topics": [
+                {
+                    "id": 1,
+                    "title": "Comprehension and Summary",
+                    "subtopics": [
+                        {
+                            "content": "(a) Description",
+                            "objective": "(i) Identify main points and topic sentences in passages; (ii) determine implied meanings; (iii) identify the grammatical functions of words, phrases, clauses and figurative or idiomatic expressions; and (iv) deduce or infer the writers' intentions, including mood, attitude to the subject matter and opinion."
+                        },
+                        {
+                            "content": "(b) Narration",
+                            "objective": "(i) Identify main points and topic sentences in passages; (ii) determine implied meanings; (iii) identify the grammatical functions of words, phrases, clauses and figurative or idiomatic expressions; and (iv) deduce or infer the writers' intentions, including mood, attitude to the subject matter and opinion."
+                        },
+                        {
+                            "content": "(c) Exposition",
+                            "objective": "(i) Identify main points and topic sentences in passages; (ii) determine implied meanings; (iii) identify the grammatical functions of words, phrases, clauses and figurative or idiomatic expressions; and (iv) deduce or infer the writers' intentions, including mood, attitude to the subject matter and opinion."
+                        },
+                        {
+                            "content": "(d) Argumentation and persuasion",
+                            "objective": "(i) Identify main points and topic sentences in passages; (ii) determine implied meanings; (iii) identify the grammatical functions of words, phrases, clauses and figurative or idiomatic expressions; and (iv) deduce or infer the writers' intentions, including mood, attitude to the subject matter and opinion."
+                        },
+                        {
+                            "content": "(i) Three passages, one of which will be a cloze test, each reflecting various disciplines and approximately 200 words long",
+                            "objective": "Demonstrate comprehension of passages drawn from various disciplines."
+                        },
+                        {
+                            "content": "(ii)(a) Comprehension of the whole or part of each passage",
+                            "objective": "Understand the whole passage or specified parts of a passage."
+                        },
+                        {
+                            "content": "(ii)(b) Comprehension of words, phrases, clauses, sentences, figures of speech and idioms as used in passages",
+                            "objective": "Identify the meanings and functions of words, phrases, clauses, sentences, figures of speech and idioms in context."
+                        },
+                        {
+                            "content": "(ii)(c) Coherence and logical reasoning, including deductions and inferences",
+                            "objective": "Determine implied meanings and make logical deductions and inferences from passages."
+                        },
+                        {
+                            "content": "(ii)(d) Approved reading text",
+                            "objective": "Demonstrate comprehension of the approved reading text."
+                        },
+                        {
+                            "content": "(ii)(e) Synthesis of ideas from passages",
+                            "objective": "Combine distinct or separate pieces of information to form a complete whole in the form of a summary."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Section B: Lexis and Structure",
+            "topics": [
+                {
+                    "id": 2,
+                    "title": "Lexis and Structure",
+                    "subtopics": [
+                        {
+                            "content": "(a) Synonyms",
+                            "objective": "(i) Identify words and expressions in their ordinary, figurative and idiomatic contexts; and (ii) determine similar meanings of words."
+                        },
+                        {
+                            "content": "(b) Antonyms",
+                            "objective": "(i) Identify words and expressions in their ordinary, figurative and idiomatic contexts; and (ii) determine opposite meanings of words."
+                        },
+                        {
+                            "content": "(c) Clause and sentence patterns",
+                            "objective": "(i) Identify various grammatical patterns in use; and (ii) interpret information conveyed in sentences."
+                        },
+                        {
+                            "content": "(d) Word classes and their functions",
+                            "objective": "Identify words and expressions in their ordinary, figurative and idiomatic contexts and identify their grammatical functions."
+                        },
+                        {
+                            "content": "(e) Mood, tense, aspect, number, agreement or concord, degree (positive, comparative and superlative), and question tags",
+                            "objective": "Identify and apply various grammatical patterns correctly and interpret information conveyed in sentences."
+                        },
+                        {
+                            "content": "(f) Mechanics",
+                            "objective": "Differentiate between correct and incorrect spellings and apply the conventions of written English."
+                        },
+                        {
+                            "content": "(g) Ordinary usage, figurative usage and idiomatic usage",
+                            "objective": "Identify words and expressions in their ordinary, figurative and idiomatic contexts."
+                        },
+                        {
+                            "content": "Note: Idioms to be tested are those that are formal and expressed in Standard British English (SBE).",
+                            "objective": "Interpret idioms in accordance with formal Standard British English usage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Section C: Oral Forms",
+            "topics": [
+                {
+                    "id": 3,
+                    "title": "Vowels",
+                    "subtopics": [
+                        {
+                            "content": "(a) Vowels: monophthongs, diphthongs and triphthongs",
+                            "objective": "(i) Make distinctions among vowel types; and (iii) identify correct pronunciation of individual words and articulation of connected speech."
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Consonants",
+                    "subtopics": [
+                        {
+                            "content": "(b) Consonants, including consonant clusters",
+                            "objective": "(ii) Differentiate among consonant types; and (iii) identify correct pronunciation of individual words and articulation of connected speech."
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Rhymes",
+                    "subtopics": [
+                        {
+                            "content": "(c) Rhymes, including homophones",
+                            "objective": "(iii) Identify correct pronunciation of individual words and articulation of connected speech."
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Word Stress",
+                    "subtopics": [
+                        {
+                            "content": "(d) Word stress: monosyllabic and polysyllabic words",
+                            "objective": "(iii) Identify correct pronunciation of individual words and articulation of connected speech."
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Emphatic Stress",
+                    "subtopics": [
+                        {
+                            "content": "(e) Emphatic stress in connected speech",
+                            "objective": "(iii) Identify correct pronunciation of individual words and articulation of connected speech."
+                        },
+                        {
+                            "content": "Note: Emphatic stress involves the placement of stress on words in an utterance for the purpose of emphasis.",
+                            "objective": "Recognise the placement of stress on words in an utterance for emphasis."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Section D: Structure of the Examination",
+            "topics": [
+                {
+                    "id": 8,
+                    "title": "Comprehension and Summary Question Distribution",
+                    "subtopics": [
+                        {
+                            "content": "(a) One comprehension passage – 5 questions",
+                            "objective": "Answer questions testing comprehension of a passage."
+                        },
+                        {
+                            "content": "(b) One summary passage – 5 questions",
+                            "objective": "Synthesize information from a passage and identify its main ideas."
+                        },
+                        {
+                            "content": "(c) One cloze passage – 10 questions",
+                            "objective": "Use context and language knowledge to complete a passage accurately."
+                        },
+                        {
+                            "content": "(d) One reading text – 5 questions",
+                            "objective": "Demonstrate understanding of the prescribed reading text."
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "title": "Lexis and Structure Question Distribution",
+                    "subtopics": [
+                        {
+                            "content": "(a) Sentence interpretation – 5 questions",
+                            "objective": "Interpret information conveyed in sentences."
+                        },
+                        {
+                            "content": "(b) Antonyms – 5 questions",
+                            "objective": "Determine opposite meanings of words."
+                        },
+                        {
+                            "content": "(c) Synonyms – 5 questions",
+                            "objective": "Determine similar meanings of words."
+                        },
+                        {
+                            "content": "(d) Basic grammar – 10 questions",
+                            "objective": "Identify and apply grammatical rules and patterns correctly."
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "title": "Oral Forms Question Distribution",
+                    "subtopics": [
+                        {
+                            "content": "(a) Vowels – 2 questions",
+                            "objective": "Make distinctions among vowel types."
+                        },
+                        {
+                            "content": "(b) Consonants – 2 questions",
+                            "objective": "Differentiate among consonant types."
+                        },
+                        {
+                            "content": "(c) Rhymes – 2 questions",
+                            "objective": "Recognise rhymes and homophones."
+                        },
+                        {
+                            "content": "(d) Word stress – 2 questions",
+                            "objective": "Identify correct word stress in monosyllabic and polysyllabic words."
+                        },
+                        {
+                            "content": "(e) Emphatic stress – 2 questions",
+                            "objective": "Recognise emphatic stress in connected speech."
+                        },
+                        {
+                            "content": "Total examination questions: 60",
+                            "objective": "The examination consists of 60 questions across Comprehension and Summary, Lexis and Structure, and Oral Forms."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "generalObjectives": [
+        "Communicate effectively in both written and spoken English.",
+        "Use English Language for learning at the tertiary level."
+    ],
+    "recommendedTexts": [
+        "Adedimeji, M. A. (2021). Doses of Grammar. Patigi: Ahman Pategi University Press.",
+        "Attah, M. O. (2013). Practice in Spoken English for Intermediate and Advanced Learners. Maiduguri: University of Maiduguri Press.",
+        "Bamgbose, A. (2002). English Lexis and Structure for Senior Secondary Schools and Colleges (Revised Edition). Ibadan: Heinemann.",
+        "Banjo, A., Adeniran, A., Akano, A. and Onoga, U. (2004). New Oxford Secondary English Course Book Six for Senior Secondary Schools. Ibadan: University Press Plc.",
+        "Caesar, O. J. (2003). Essential Oral English for Schools and Colleges. Lagos: Tonad Publishers Limited.",
+        "Jones, D. (2011). Cambridge English Pronouncing Dictionary. Cambridge: Cambridge University Press.",
+        "Egbe, D. I. (1996). Mastering English Usage and Communication Skills. Lagos: Tisons.",
+        "Elugbe, B. (2000). Oral English for Schools and Colleges. Ibadan: Heinemann.",
+        "Grant, N. J. H., Nnamonu, S. and Jowitt, D. (1998). Senior English Project 3 (New Edition). Harlow: Longman.",
+        "Idowu, O. O., Sogbesan, T. S., Adofo, A. K., Burgess, D. F. and Burgess, L. J. (1998). Round-up English: A Complete Guide. Lagos: Longman.",
+        "Idris, U. (2001). Oral English at Your Fingertips for Schools and Colleges. Lagos: M. Youngbrain Publishers.",
+        "Igiligi, E. C. and Ogenyi, S. O. (2010). Grammar and Composition in the G.S.M. Age. Enugu: Joe Hills Production Services.",
+        "Jauro, L. B. (2013). Oral English for Schools and Colleges: A Teaching and Learning Approach. Yola: Paraclete Publishers.",
+        "Nnamonu, S. and Jowitt, D. (1989). Common Errors in English. Lagos: Longman.",
+        "Obinna, M. F. (2001). University Matriculation Use of English (Fourth Edition). Port Harcourt: Sunray Books Limited.",
+        "Ogunsanwo, O., Duruaku, A. B. C., Ezechukwu, J. and Nwachukwu, U. I. (2005). Countdown English Language (Revised Edition). Ibadan: Evans Brothers.",
+        "Olatoye, S. (2006). The Silent Teacher. Ado-Ekiti: Segun and Sons Enterprises.",
+        "Oluikpe, B. O. A., Nnaemeka, B. A., Obah, T. Y., Otagburuagu, E. J., Onuigbo, S. and Ogbonna, E. A. (1998). Intensive English for Senior Secondary School 3. Onitsha: Africana First Publishers.",
+        "Tomori, S. H. O. (2000). Objective Tests for School Certificate English: Practice in Lexis, Structure and Idiom (Reprinted Edition). Ibadan: Heinemann.",
+        "Ukwuegbu, C., Okoro, O., Idris, A. U., Okebukola, F. O. and Owokade, C. O. (2002). Catch-up English for SSCE/UME. Ibadan: Heinemann."
+    ]
+}

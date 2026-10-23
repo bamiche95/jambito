@@ -1,0 +1,790 @@
+
+{
+  "subject": "Christian Religious Studies",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Christian Religious Studies",
+          "subtopics": [
+            {
+              "content": "Knowledge and understanding of the tenets of the Christian faith as contained in the Bible.",
+              "objective": "Acquire knowledge and understanding of the tenets of the Christian faith as contained in the Bible."
+            },
+            {
+              "content": "Biblical teachings and themes.",
+              "objective": "Interpret biblical teachings and themes."
+            },
+            {
+              "content": "Application of biblical teachings and tenets to life in society.",
+              "objective": "Apply biblical teachings and tenets to life in society."
+            },
+            {
+              "content": "Evaluation of the application of biblical teachings and tenets to life in society.",
+              "objective": "Evaluate the level of application of biblical teachings and tenets to life in society."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section A: Themes from Creation to the Division of the Kingdom",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Sovereignty of God",
+          "subtopics": [
+            {
+              "content": "God as Creator and Controller of the Universe (Genesis 1 and 2; Amos 9:5-6; Isaiah 45:5-12; Psalm 19:1-6; Jeremiah 18:1-16; Romans 8:28).",
+              "objective": "Define the term sovereignty; analyse God's process of creation; interpret the sequence of creation; identify man's role in advancing God's purpose in creation; recognize God's sovereignty in the affairs of individuals and nations."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Covenant",
+          "subtopics": [
+            {
+              "content": "The flood and God's covenant with Noah (Genesis 6:1-22; 7:1-24; 9:1-17).",
+              "objective": "Explain the concept of covenant; examine the importance and implications of covenants; distinguish between God's covenants with Noah, Abraham and Israel; distinguish between the old and new covenants."
+            },
+            {
+              "content": "God's covenant with Abraham (Genesis 11:31-32; 12:1-9; 17:1-21; 21:1-13; 25:19-26).",
+              "objective": "Explain the concept of covenant; examine the importance and implications of covenants; distinguish between God's covenants with Noah, Abraham and Israel; distinguish between the old and new covenants."
+            },
+            {
+              "content": "God's covenant with Israel (Exodus 19; 20; 24:1-11; Deuteronomy 28:1-19).",
+              "objective": "Explain the concept of covenant; examine the importance and implications of covenants; distinguish between God's covenants with Noah, Abraham and Israel; distinguish between the old and new covenants."
+            },
+            {
+              "content": "The New Covenant (Jeremiah 31:31-34; Ezekiel 36:25-28).",
+              "objective": "Explain the concept of covenant; examine the importance and implications of covenants; distinguish between God's covenants with Noah, Abraham and Israel; distinguish between the old and new covenants."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Leadership Qualities",
+          "subtopics": [
+            {
+              "content": "Joseph's leadership experience (Genesis 37:1-28; 41:1-57; 45:1-15).",
+              "objective": "Examine the circumstances that gave rise to the leadership of Joseph, Moses, Joshua and the Judges; identify the major talents of these leaders; assess God's role in their works; analyse their achievements."
+            },
+            {
+              "content": "Moses' leadership experience (Exodus 1; 2; 3; 4:1-17; 5; 12; Numbers 13:1-20; 14:1-19).",
+              "objective": "Examine the circumstances that gave rise to the leadership of Joseph, Moses, Joshua and the Judges; identify the major talents of these leaders; assess God's role in their works; analyse their achievements."
+            },
+            {
+              "content": "Joshua's leadership experience (Numbers 13:21-33; 27:15-23; Joshua 1:1-15; 6; 7; 24:1-31).",
+              "objective": "Examine the circumstances that gave rise to the leadership of Joseph, Moses, Joshua and the Judges; identify the major talents of these leaders; assess God's role in their works; analyse their achievements."
+            },
+            {
+              "content": "Leadership of the Judges: Deborah (Judges 4:1-24), Gideon (Judges 6:11-40) and Samson (Judges 13:1-7, 21-25; 16:4-31).",
+              "objective": "Examine the circumstances that gave rise to the leadership of Joseph, Moses, Joshua and the Judges; identify the major talents of these leaders; assess God's role in their works; analyse their achievements."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Divine Providence, Guidance and Protection",
+          "subtopics": [
+            {
+              "content": "Divine guidance (Exodus 13:17-22; Joshua 8:1-22; Hebrews 1:1; Matthew 11:27-30).",
+              "objective": "Identify the different ways God guided and protected the people of Israel; specify how God provided for His people; identify occasions when God provided for Israel; recognize that God still provides for people today."
+            },
+            {
+              "content": "Divine protection (Exodus 14:10-31; Daniel 6:16-23; Psalm 91).",
+              "objective": "Identify the different ways God guided and protected the people of Israel; specify how God provided for His people; identify occasions when God provided for Israel; recognize that God still provides for people today."
+            },
+            {
+              "content": "Divine provision (Exodus 16:1-21; 17:1-7; 13:20-22; 1 Kings 17:1-16; Numbers 20:1-13).",
+              "objective": "Identify the different ways God guided and protected the people of Israel; specify how God provided for His people; identify occasions when God provided for Israel; recognize that God still provides for people today."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Parental Responsibility",
+          "subtopics": [
+            {
+              "content": "Eli and Samuel and their parental responsibilities (1 Samuel 2:11-36; 3:2-18; 4:10-22; 8:15).",
+              "objective": "Determine the extent to which Eli, Samuel and David were responsible for the shortcomings of their children."
+            },
+            {
+              "content": "David and his children (2 Samuel 13; 15:1-29; 18; 19:1-8).",
+              "objective": "Determine the extent to which Eli, Samuel and David were responsible for the shortcomings of their children."
+            },
+            {
+              "content": "Asa and parental responsibility (1 Kings 15:9-15; 22:41-44; Deuteronomy 6:4-9; Proverbs 4:1-10; 13:1; 22:6; 23:13-14; 31:10-31).",
+              "objective": "Describe how Asa pleased God."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Obedience and Disobedience",
+          "subtopics": [
+            {
+              "content": "Obedience and its rewards: Abraham (Genesis 22:1-19), the Three Hebrew Youths (Daniel 3:1-30) and David (1 Samuel 30:1-20).",
+              "objective": "Determine why Abraham, the Three Hebrew Youths and David obeyed God; identify the rewards for obedience."
+            },
+            {
+              "content": "Disobedience and its consequences: Adam (Genesis 2:15-25; 3), the collection of manna (Exodus 16:22-30) and the golden calf (Exodus 32).",
+              "objective": "Compare the disobedience of Adam, the people of Israel, Moses and Saul; indicate the reasons for their disobedience; identify the consequences of disobedience."
+            },
+            {
+              "content": "Moses' disobedience (Numbers 20:7-12; Deuteronomy 34:1-6).",
+              "objective": "Compare the disobedience of Adam, the people of Israel, Moses and Saul; indicate the reasons for their disobedience; identify the consequences of disobedience."
+            },
+            {
+              "content": "Saul's disobedience (1 Samuel 10:1-16; 15:1-25; 16:14-23; 31:1-13).",
+              "objective": "Compare the disobedience of Adam, the people of Israel, Moses and Saul; indicate the reasons for their disobedience; identify the consequences of disobedience."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "A Man after God's Own Heart",
+          "subtopics": [
+            {
+              "content": "The early life of David (1 Samuel 16:1-13; 17; 18:17-30; 22:1-5; 24:1-23; 2 Samuel 2:1-7; 3:1-39).",
+              "objective": "Identify David's anointing experience; specify how David submitted to God's will; examine the situations that led to David's sin and repentance; identify the consequences of David's sin; identify why God forgave David."
+            },
+            {
+              "content": "David's submission to the will of God (1 Samuel 26:1-25; 2 Samuel 12:15-25).",
+              "objective": "Identify David's anointing experience; specify how David submitted to God's will; examine the situations that led to David's sin and repentance; identify the consequences of David's sin; identify why God forgave David."
+            },
+            {
+              "content": "David's repentance and forgiveness (2 Samuel 11; 12:1-15; Psalm 51).",
+              "objective": "Identify David's anointing experience; specify how David submitted to God's will; examine the situations that led to David's sin and repentance; identify the consequences of David's sin; identify why God forgave David."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Decision-Making",
+          "subtopics": [
+            {
+              "content": "Reliance on a medium by Saul (1 Samuel 28:3-25).",
+              "objective": "Identify the source of Solomon's wisdom; compare the different ways Saul and Solomon made decisions; analyse decisions made by Saul, Solomon and Rehoboam; assess the consequences of Solomon and Rehoboam's unwise decisions."
+            },
+            {
+              "content": "The wisdom of Solomon (1 Kings 3:3-28; 4:29-34; 5:1-12; 8:1-53).",
+              "objective": "Identify the source of Solomon's wisdom; compare the different ways Saul and Solomon made decisions; analyse decisions made by Saul, Solomon and Rehoboam; assess the consequences of Solomon and Rehoboam's unwise decisions."
+            },
+            {
+              "content": "The unwise policies of Solomon and Rehoboam (1 Kings 9:15-23; 11:1-40; 12:1-20).",
+              "objective": "Identify the source of Solomon's wisdom; compare the different ways Saul and Solomon made decisions; analyse decisions made by Saul, Solomon and Rehoboam; assess the consequences of Solomon and Rehoboam's unwise decisions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Themes from the Division of the Kingdom to the Return from Exile and the Prophets",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Greed and Its Effects",
+          "subtopics": [
+            {
+              "content": "Ahab's greed (1 Kings 21:1-29; 22:1-40; 2 Kings 9:30-37).",
+              "objective": "Deduce the meaning of greed; distinguish between Ahab's and Gehazi's greed; analyse the consequences of their greed."
+            },
+            {
+              "content": "Gehazi's greed (2 Kings 5:1-27; compare Joshua 7).",
+              "objective": "Deduce the meaning of greed; distinguish between Ahab's and Gehazi's greed; analyse the consequences of their greed."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Supremacy of God",
+          "subtopics": [
+            {
+              "content": "Religious tension and the power of God on Mount Carmel (1 Kings 16:29-34; 17:1-7; 18; 19:1-18).",
+              "objective": "Assess the religious situation in Israel during the time of Elijah and Ahab; identify the characters involved in the contest on Mount Carmel; differentiate between the power of God and that of Baal."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Religious Reforms in Judah",
+          "subtopics": [
+            {
+              "content": "Cleansing of the Temple (2 Kings 22).",
+              "objective": "Analyse Josiah's religious reforms; determine the reasons for the renewal of the covenant; assess the significance of the reforms."
+            },
+            {
+              "content": "Renewal of the covenant (2 Kings 23:1-30).",
+              "objective": "Analyse Josiah's religious reforms; determine the reasons for the renewal of the covenant; assess the significance of the reforms."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Concern for Judah",
+          "subtopics": [
+            {
+              "content": "The fall of Jerusalem (2 Kings 24; 25:1-17).",
+              "objective": "Identify the reasons for the fall of Jerusalem; examine the condition of Judah during the exile; analyse the people's response to the calls of Nehemiah and Ezra to rebuild Jerusalem; distinguish between Nehemiah's and Ezra's responses to opposition from their enemies."
+            },
+            {
+              "content": "The condition of Judah (Nehemiah 1:1-11; Ezra 1:1-11).",
+              "objective": "Identify the reasons for the fall of Jerusalem; examine the condition of Judah during the exile; analyse the people's response to the calls of Nehemiah and Ezra to rebuild Jerusalem; distinguish between Nehemiah's and Ezra's responses to opposition from their enemies."
+            },
+            {
+              "content": "The response to the state of Judah (Nehemiah 2; 4:1-23; Ezra 3:4; 5; 6; 7).",
+              "objective": "Identify the reasons for the fall of Jerusalem; examine the condition of Judah during the exile; analyse the people's response to the calls of Nehemiah and Ezra to rebuild Jerusalem; distinguish between Nehemiah's and Ezra's responses to opposition from their enemies."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Faith, Courage and Protection",
+          "subtopics": [
+            {
+              "content": "The experiences of Daniel, Shadrach, Meshach and Abednego (Daniel 3:1-30; 6:1-28).",
+              "objective": "Analyse the stories of Shadrach, Meshach, Abednego and Daniel; determine the occasions when the four men demonstrated faith; analyse the effects of their faith on the Babylonians; identify qualities of faith demonstrated by the four men that are worthy of emulation."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "God's Message to Nineveh",
+          "subtopics": [
+            {
+              "content": "Jonah and his message to Nineveh (Jonah 1; 2; 3; 4).",
+              "objective": "Analyse the story of Jonah's call; describe the consequences of Jonah's disobedience; assess the effect of Jonah's message on the Ninevites; emulate the example of the Ninevites."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Social Justice, True Religion and Divine Love",
+          "subtopics": [
+            {
+              "content": "Social justice and true religion (Amos 2:6-8; 4; 5:1-25; 6:1-14; 7:10-17; 8:4-14; compare James 1:19-27).",
+              "objective": "Determine what true religion is; identify the social ills that led to the call for social justice in Amos' time; identify the punishment for evil deeds."
+            },
+            {
+              "content": "Divine love and human response (Hosea 1; 2; 3; 4; 6:1-11; 14).",
+              "objective": "Examine the condition in Israel during Hosea's time; analyse Hosea's portrayal of divine love and human response."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Holiness and Divine Call",
+          "subtopics": [
+            {
+              "content": "The calls of Isaiah (Isaiah 6:1-13), Ezekiel (Ezekiel 2; 3:1-11) and Jeremiah (Jeremiah 1:4-10).",
+              "objective": "Analyse Isaiah's vision of God's holiness; distinguish the calls of Isaiah, Ezekiel and Jeremiah; compare the assignments given to these prophets; determine the need for God's people to be holy."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Punishment and Hope",
+          "subtopics": [
+            {
+              "content": "Punishment and hope (Jeremiah 3:11-18; 32:26-35; Ezekiel 18; 37:1-14; Isaiah 61; Jeremiah 4:5-8).",
+              "objective": "Describe the situations that led to the punishment of Israel; identify the conditions for hope; determine the benefits of restoration."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Themes from the Four Gospels and the Acts of the Apostles",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Birth and Early Life of Jesus",
+          "subtopics": [
+            {
+              "content": "John the forerunner of Jesus (Luke 1:5-25, 57-66; 3:1-20; 7:18-35; Mark 1:1-8; 6:14-29; Matthew 3:1-12; 11:2-19; John 1:6-8, 19-37; 3:22-36).",
+              "objective": "Compare the stories of the births of John and Jesus; assess the importance of John as the forerunner of Jesus."
+            },
+            {
+              "content": "The birth and boyhood of Jesus (Matthew 1:18-25; 2; Luke 1:26-45; 2).",
+              "objective": "Compare the stories of the births of John and Jesus; describe the boyhood of Jesus."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Baptism and Temptation of Jesus",
+          "subtopics": [
+            {
+              "content": "The baptism and temptation of Jesus (Matthew 3:13-17; 4:1-11; Mark 1:9-13; Luke 3:21-22; 4:1-13).",
+              "objective": "Determine the meaning and purpose of the baptism of Jesus; enumerate the temptations of Jesus; examine the significance of the temptations; describe how Jesus overcame them."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Discipleship",
+          "subtopics": [
+            {
+              "content": "The call of the first disciples (Matthew 4:18-22; 9:9-13; Mark 1:16-20; 2:13-17; Luke 5:1-11, 27-32).",
+              "objective": "Identify the first disciples called by Jesus; determine the demands of discipleship."
+            },
+            {
+              "content": "The demands of discipleship (Matthew 8:19-22; Luke 9:57-63; 14:25-33).",
+              "objective": "Identify the first disciples called by Jesus; determine the demands of discipleship."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Miracles",
+          "subtopics": [
+            {
+              "content": "Nature miracles: stilling the storm (Matthew 8:23-27; Mark 4:35-41; Luke 8:22-25); feeding the five thousand (Matthew 14:13-24; Mark 6:30-44; Luke 9:10-17; John 6:1-13); walking on the sea (Matthew 14:22-26; Mark 6:45-52; John 6:16-21); changing water to wine (John 2:1-11).",
+              "objective": "Classify the different miracles of Jesus; indicate the occasion of each miracle; examine the significance of each miracle."
+            },
+            {
+              "content": "Miracles of resuscitation: raising Lazarus (John 11:1-45); raising Jairus' daughter (Luke 8:41-42, 49-56; Mark 5:21-43); raising the widow's son at Nain (Luke 7:11-17).",
+              "objective": "Classify the different miracles of Jesus; indicate the occasion of each miracle; examine the significance of each miracle."
+            },
+            {
+              "content": "Healing miracles: the lepers (Matthew 8:1-4; Mark 1:40-45; Luke 5:12-16; 17:11-19); the paralytic at the pool (John 5:1-17); the centurion's servant (Matthew 8:5-13; Luke 7:1-10); the blind (John 9:1-12; Mark 10:46-52; Luke 18:35-43).",
+              "objective": "Classify the different miracles of Jesus; indicate the occasion of each miracle; examine the significance of each miracle."
+            },
+            {
+              "content": "Exorcisms: the Gerasene or Gadarene demoniac (Matthew 8:28-34; Mark 5:1-20; Luke 8:26-39) and the epileptic boy (Mark 9:14-29; Luke 9:37-43a; Matthew 17:14-21).",
+              "objective": "Classify the different miracles of Jesus; indicate the occasion of each miracle; examine the significance of each miracle."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "The Parables",
+          "subtopics": [
+            {
+              "content": "Parables of the Kingdom: the sower (Matthew 13:1-23; Mark 4:1-20), the weeds (Matthew 13:24-30, 36-43), the drag-net (Matthew 13:47-50) and the wedding garment (Matthew 22:1-14).",
+              "objective": "Define a parable; classify the different parables of Jesus; identify the occasion of each parable; interpret their meanings; give reasons why Jesus taught in parables."
+            },
+            {
+              "content": "Parables about God's love (Matthew 18:12-14; Luke 15:1-32).",
+              "objective": "Define a parable; classify the different parables of Jesus; identify the occasion of each parable; interpret their meanings; give reasons why Jesus taught in parables."
+            },
+            {
+              "content": "Parables about love for one another (Luke 10:25-37; 16:19-31).",
+              "objective": "Define a parable; classify the different parables of Jesus; identify the occasion of each parable; interpret their meanings; give reasons why Jesus taught in parables."
+            },
+            {
+              "content": "The parable about wealth: the rich fool (Luke 12:13-21).",
+              "objective": "Define a parable; classify the different parables of Jesus; identify the occasion of each parable; interpret their meanings; give reasons why Jesus taught in parables."
+            },
+            {
+              "content": "Parables on prayer (Luke 18:2-14).",
+              "objective": "Define a parable; classify the different parables of Jesus; identify the occasion of each parable; interpret their meanings; give reasons why Jesus taught in parables."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Sermon on the Mount",
+          "subtopics": [
+            {
+              "content": "Teachings in the Sermon on the Mount (Matthew 5; 6; Luke 6:17-26).",
+              "objective": "Analyse the teachings in the Sermon on the Mount; identify the demands of the Kingdom; determine the consequences of placing worldly possessions above heavenly treasures; associate the rewards for obedience with the Sermon on the Mount."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Mission of the Disciples",
+          "subtopics": [
+            {
+              "content": "The mission of the twelve (Matthew 10:5-15; Mark 6:7-13; Luke 9:1-16).",
+              "objective": "Distinguish between the mission of the twelve and that of the seventy; specify the instructions given to the disciples; assess the outcomes of the missions."
+            },
+            {
+              "content": "The mission of the seventy (Luke 10:1-24).",
+              "objective": "Distinguish between the mission of the twelve and that of the seventy; specify the instructions given to the disciples; assess the outcomes of the missions."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "The Great Confession",
+          "subtopics": [
+            {
+              "content": "Peter's confession (Matthew 16:13-20; Mark 8:27-30; Luke 9:18-22).",
+              "objective": "Analyse Peter's confession; identify the occasion of the Great Confession; examine its significance."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "The Transfiguration",
+          "subtopics": [
+            {
+              "content": "The Transfiguration of Jesus (Matthew 17:1-13; Mark 9:2-13; Luke 9:28-36).",
+              "objective": "Trace the events leading to the Transfiguration; identify the personalities involved; determine the significance of the Transfiguration to the disciples."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "The Triumphal Entry and the Cleansing of the Temple",
+          "subtopics": [
+            {
+              "content": "The Triumphal Entry and the cleansing of the Temple (Matthew 21:1-17; Mark 11:1-19; Luke 19:29-48).",
+              "objective": "Recount the Triumphal Entry and the cleansing of the Temple; determine their significance; examine how the cleansing of the Temple caused hostility towards Jesus."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "The Last Supper",
+          "subtopics": [
+            {
+              "content": "The Last Supper (Matthew 26:17-30; Mark 14:10-26; Luke 22:7-23; John 13:2-38).",
+              "objective": "Trace the story of the Last Supper; evaluate its significance."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "The Trials and Death of Jesus",
+          "subtopics": [
+            {
+              "content": "Jesus' trial before the High Priest (Matthew 26:36-75; Mark 14:53-72; Luke 22:66-71).",
+              "objective": "Analyse the different trials of Jesus; describe His crucifixion and burial; deduce the lessons of His death; recount Jesus' statements on the cross."
+            },
+            {
+              "content": "Jesus' trial before Pilate (Matthew 27:11-26; Mark 15:1-15; Luke 23:1-5, 13-25; John 18:28-40; 19:1-16).",
+              "objective": "Analyse the different trials of Jesus; describe His crucifixion and burial; deduce the lessons of His death; recount Jesus' statements on the cross."
+            },
+            {
+              "content": "Jesus' trial before Herod (Luke 23:6-12).",
+              "objective": "Analyse the different trials of Jesus; describe His crucifixion and burial; deduce the lessons of His death; recount Jesus' statements on the cross."
+            },
+            {
+              "content": "The crucifixion and burial of Jesus (Matthew 27:32-66; Luke 23:26-56; Mark 15:16-47; John 19:17-42).",
+              "objective": "Analyse the different trials of Jesus; describe His crucifixion and burial; deduce the lessons of His death; recount Jesus' statements on the cross."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Resurrection, Appearances and Ascension of Jesus",
+          "subtopics": [
+            {
+              "content": "The resurrection, appearances and ascension of Jesus (Matthew 28:1-20; Mark 16:1-20; Luke 24:1-53; John 20:1-31; Acts 1:1-11).",
+              "objective": "Trace the stories of the resurrection, appearances and ascension of Jesus; compare the personalities involved; analyse the relevance of the resurrection, appearances and ascension."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Jesus' Teachings about Himself",
+          "subtopics": [
+            {
+              "content": "Jesus as the Bread of Life and the Living Water (John 4:7-15; 6:25-58).",
+              "objective": "Analyse Jesus' different teachings about Himself; deduce the reasons for these teachings; interpret the symbols Jesus used about Himself."
+            },
+            {
+              "content": "Jesus as the Light of the World (John 1:4-8; 3:19-21; 8:12; 9:1-5; 12:35-36; 1 John 1:5-7).",
+              "objective": "Analyse Jesus' different teachings about Himself; deduce the reasons for these teachings; interpret the symbols Jesus used about Himself."
+            },
+            {
+              "content": "Jesus as the Door, the Lamb and the Good Shepherd (John 1:29-34; 10:1-18).",
+              "objective": "Analyse Jesus' different teachings about Himself; deduce the reasons for these teachings; interpret the symbols Jesus used about Himself."
+            },
+            {
+              "content": "Jesus as the True Vine (John 15:1-11).",
+              "objective": "Analyse Jesus' different teachings about Himself; deduce the reasons for these teachings; interpret the symbols Jesus used about Himself."
+            },
+            {
+              "content": "Jesus as the Resurrection (John 11:25).",
+              "objective": "Analyse Jesus' different teachings about Himself; deduce the reasons for these teachings; interpret the symbols Jesus used about Himself."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Love",
+          "subtopics": [
+            {
+              "content": "God's love for humanity (John 3:16-18).",
+              "objective": "Describe God's love for humanity; identify various types of love; specify ways to love one another; evaluate the significance of love."
+            },
+            {
+              "content": "Love for one another (John 13:34-35; 15:12-13; 1 Corinthians 13; 1 John 4:7-21).",
+              "objective": "Describe God's love for humanity; identify various types of love; specify ways to love one another; evaluate the significance of love."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Fellowship in the Early Church",
+          "subtopics": [
+            {
+              "content": "Communal living in the Early Church (Acts 1:15-26; 2:41-47; 4:32-37).",
+              "objective": "Identify the reasons for communal living in the Early Church; identify the problems of communal living and their solutions; examine how communal living helped the growth of the Early Church."
+            },
+            {
+              "content": "Problems of communal living and their solutions (Acts 5:1-11; 6:1-6).",
+              "objective": "Identify the reasons for communal living in the Early Church; identify the problems of communal living and their solutions; examine how communal living helped the growth of the Early Church."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "The Holy Spirit and the Mission of the Church",
+          "subtopics": [
+            {
+              "content": "The Pentecost (Acts 1:8; 2:1-41).",
+              "objective": "Trace the story of Pentecost; identify the signs associated with the coming of the Holy Spirit; examine the significance of the Pentecost experience; analyse the mission of the Church."
+            },
+            {
+              "content": "The mission of the Church (Acts 8:4-40).",
+              "objective": "Analyse the mission of the Church."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Opposition to the Gospel Message",
+          "subtopics": [
+            {
+              "content": "The arrest and imprisonment of Peter and John (Acts 3; 4:1-22; 5:17-42; 12:1-24).",
+              "objective": "Trace the story of the arrest and imprisonment of Peter and John; evaluate the importance of persecution to the growth of the Church."
+            },
+            {
+              "content": "The martyrdom of Stephen (Acts 6:8-15; 7).",
+              "objective": "Trace the events that led to Stephen's martyrdom; evaluate the importance of persecution to the growth of the Church."
+            },
+            {
+              "content": "Persecution by Saul (Acts 8:1-3; 9:1-2; compare Galatians 1:11-17).",
+              "objective": "Describe Saul's role in the persecution of the Church; evaluate the importance of persecution to the growth of the Church."
+            },
+            {
+              "content": "Persecution of Paul (Acts 16:11-40; 19:23-41; 21:27-36; compare 2 Corinthians 11:23-33).",
+              "objective": "Account for the persecution of Paul."
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Mission to the Gentiles",
+          "subtopics": [
+            {
+              "content": "Conversion of Saul (Acts 9:1-30; 22:4-21; 26:9-18).",
+              "objective": "Compare the conversions of Saul and Cornelius; analyse Paul's commissioning and mission; examine the main decisions at the Council of Jerusalem; identify the personalities involved; examine the relevance of the Council's decisions; assess Paul's role in the mission to the Gentiles."
+            },
+            {
+              "content": "Conversion of Cornelius (Acts 10:1-48).",
+              "objective": "Compare the conversions of Saul and Cornelius; analyse Paul's commissioning and mission; examine the main decisions at the Council of Jerusalem; identify the personalities involved; examine the relevance of the Council's decisions; assess Paul's role in the mission to the Gentiles."
+            },
+            {
+              "content": "The commissioning and mission of Paul (Acts 13; 14:1-20).",
+              "objective": "Analyse Paul's commissioning and mission; assess Paul's role in the mission to the Gentiles."
+            },
+            {
+              "content": "The Council of Jerusalem (Acts 15:1-35; Galatians 2:1-21).",
+              "objective": "Examine the main decisions at the Council of Jerusalem; identify the personalities involved; examine the relevance of the Council's decisions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Themes from Selected Epistles",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Justification by Faith",
+          "subtopics": [
+            {
+              "content": "Justification by faith (Romans 3:21-24; 5:1-11; 10:1-13; Galatians 2:16-21).",
+              "objective": "Interpret the phrase justification by faith; identify the basic conditions for justification; determine the fruits of justification."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Law and Grace",
+          "subtopics": [
+            {
+              "content": "The law and grace (Romans 4:13-25; 5:18-21; Galatians 3:10-14, 19-29; Romans 3:24).",
+              "objective": "Examine the purpose and significance of the law and grace; identify the place of the Law among the Jews."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "New Life in Christ",
+          "subtopics": [
+            {
+              "content": "New life in Christ (Romans 6:1-4, 12-14; Colossians 3:1-17; Galatians 5:16-26; 2 Corinthians 5:16-19; 1 Thessalonians 4:1-8; Romans 12).",
+              "objective": "Describe the characteristics of the old life; analyse the new life in Christ; identify the conditions of the new life; examine its benefits."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Christians as Joint Heirs with Christ",
+          "subtopics": [
+            {
+              "content": "Christians as joint heirs with Christ (Galatians 3:23-29; 4:1-7).",
+              "objective": "Describe how Christians are joint heirs with Christ; recognize that males and females are all children of God; indicate the benefits of being joint heirs with Christ."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Humility",
+          "subtopics": [
+            {
+              "content": "Humility (Philippians 2:1-11; 1 Peter 5:5-11; James 4:10; Matthew 23:12).",
+              "objective": "Determine the meaning of humility; identify the requirements of humility; identify the rewards of humility."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Forgiveness",
+          "subtopics": [
+            {
+              "content": "Forgiveness (Philemon; 2 Corinthians 2:5-11; Matthew 7:14-15).",
+              "objective": "Analyse Paul's teaching on forgiveness; assess the benefits of forgiveness; recognize the need to forgive others."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Spiritual Gifts",
+          "subtopics": [
+            {
+              "content": "Spiritual gifts (1 Corinthians 12; Romans 12:3-18; 1 Corinthians 14).",
+              "objective": "Identify the different spiritual gifts; analyse the benefits of spiritual gifts to individuals and the Church; differentiate between spiritual gifts and talents."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Christian Giving",
+          "subtopics": [
+            {
+              "content": "Christian giving (Philippians 4:14-20; 2 Corinthians 8:1-5; 9; compare Matthew 6:2-4).",
+              "objective": "Interpret the concept of Christian giving; relate Paul's teachings on Christian giving; identify the importance of Christian giving."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Civic Responsibility",
+          "subtopics": [
+            {
+              "content": "Civic responsibility (Romans 13; 1 Timothy 2:1-4; 1 Peter 2:13-17).",
+              "objective": "Identify the need for obedience to authority; specify the requirements of good citizenship."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Dignity of Labour",
+          "subtopics": [
+            {
+              "content": "Dignity of labour (Matthew 20:1-16; 2 Thessalonians 3:6-15; Colossians 3:23-25).",
+              "objective": "Interpret the concept of dignity of labour; analyse the benefits of labour; recognize that no particular kind of work leads to loss of personal dignity."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "The Second Coming of Christ",
+          "subtopics": [
+            {
+              "content": "Signs of the Second Coming of Christ (1 Thessalonians 4:13-18; 2 Thessalonians 2:1-12).",
+              "objective": "Identify the signs of the Second Coming of Christ; specify preparations for His coming; indicate what will happen during His Second Coming; examine the importance of His coming."
+            },
+            {
+              "content": "Preparation for Christ's coming (Matthew 25:31-46; 1 Thessalonians 5:1-11; 2 Peter 3:1-13).",
+              "objective": "Identify the signs of the Second Coming of Christ; specify preparations for His coming; indicate what will happen during His Second Coming; examine the importance of His coming."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Impartiality",
+          "subtopics": [
+            {
+              "content": "Impartiality (James 2:1-13; Acts 10:34-35; Matthew 7:1-5; Luke 6:31).",
+              "objective": "Interpret the concept of impartiality; identify causes of partiality; examine the consequences of partiality."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Effective Prayer",
+          "subtopics": [
+            {
+              "content": "Effective prayer (James 1:2-8; 4:1-3; 5:13-18; compare Matthew 6:5-13).",
+              "objective": "Identify the requirements of effective prayer; distinguish between effective and ineffective prayer; identify the importance of prayer; identify types of prayer."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Christian Living in the Community",
+          "subtopics": [
+            {
+              "content": "Interpersonal relationships among Christians (1 Peter 5:1-4; Romans 12:3-21; 2 Peter 1:3-11; Hebrews 13:1-21).",
+              "objective": "Determine the nature of interpersonal relationships among Christians; analyse Christian living among non-Christians; relate Christian attitudes to persecution; determine relationships within the Christian family; examine the importance of maintaining good relationships."
+            },
+            {
+              "content": "Christians living among non-Christians (1 Peter 2:3-25; Romans 15:1-2).",
+              "objective": "Analyse Christian living among non-Christians; examine the importance of maintaining good relationships."
+            },
+            {
+              "content": "Christian attitudes to persecution (1 Peter 1:5-9; 4:1-19; 3:13-22).",
+              "objective": "Relate Christian attitudes to persecution; examine the importance of maintaining good relationships."
+            },
+            {
+              "content": "Relationships in the Christian family (Ephesians 6:1-9; Colossians 3:18-21; 1 Peter 3:1-7).",
+              "objective": "Determine relationships within the Christian family; examine the importance of maintaining good relationships."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Corruption",
+          "subtopics": [
+            {
+              "content": "Corruption (1 Timothy 6:6-11; 2 Timothy 3:8; 2 Peter 1:4-11; James 5:1-6).",
+              "objective": "Define corruption; identify its causes; determine its effects and consequences; identify ways of curbing corruption."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Sexual Immorality",
+          "subtopics": [
+            {
+              "content": "Prostitution (1 Corinthians 6:16-20; Proverbs 7:10-27; 23:27-28).",
+              "objective": "Identify what constitutes sexual immorality; determine its causes; examine its effects and consequences; identify ways of curbing sexual immorality."
+            },
+            {
+              "content": "Adultery and fornication (Hebrews 13:4; Ephesians 5:3-10; Matthew 5:28-32; Deuteronomy 22:22; Leviticus 20:10).",
+              "objective": "Identify what constitutes sexual immorality; determine its causes; examine its effects and consequences; identify ways of curbing sexual immorality."
+            },
+            {
+              "content": "Homosexuality (Romans 1:24-32; Leviticus 18:21-30; 20:13).",
+              "objective": "Identify what constitutes sexual immorality; determine its causes; examine its effects and consequences; identify ways of curbing sexual immorality."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

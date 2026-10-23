@@ -1,0 +1,448 @@
+
+{
+  "subject": "Hausa",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Harshe (Language)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Ƙa’idojin Rubutu (Orthography)",
+          "subtopics": [
+            {
+              "content": "Alphabetization, spelling, rules of word merger and division, punctuation and paragraphing in line with standard Hausa.",
+              "objective": "Recognize the basic Hausa orthographical rules; apply the Hausa orthographical rules; identify linguistic errors such as grammatical errors, wrong choice of words and wrong spelling."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Auna Fahimta (Comprehension)",
+          "subtopics": [
+            {
+              "content": "Contextual questions from short unseen passages of about 200 words.",
+              "objective": "Read written Hausa texts; comprehend Hausa text in a given context; interpret various meanings and functions of words in a given text; acquire sufficient vocabulary; recognize central issues in a given text; draw conclusions based on available evidence in a given text."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tsarin Rubutun Insha’i (Composition Techniques)",
+          "subtopics": [
+            {
+              "content": "Argumentative, descriptive, dialogue, expository, narrative and letter writing.",
+              "objective": "Acquire the knowledge and techniques of composition writing in Hausa; recognize the different segments of composition in Hausa; recognize the different types of Hausa composition."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Fassara (Translation)",
+          "subtopics": [
+            {
+              "content": "Types of translation (Ire-iren fassara); rules of translation (Ƙa’idojin fassara); problems of translation (Matsalolin fassara); techniques of translation (Dabarun fassara).",
+              "objective": "Translate proverbial and idiomatic expressions and new words from English to Hausa; recognize the different types of translation; understand the basic techniques of translating proverbial and idiomatic expressions and new words into Hausa; identify the problems of translation into Hausa."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Tsarin Sauti (Phonology)",
+          "subtopics": [
+            {
+              "content": "Consonants: production and classification in terms of phonation, place and manner of articulation.",
+              "objective": "Analyse the process of sound production and combination of sounds to form meaningful words in Hausa; distinguish between the phonetic attributes of sounds."
+            },
+            {
+              "content": "Vowels: production and classification in terms of position of tongue and lips; monophthongs and diphthongs.",
+              "objective": "Appraise the importance of vowels in determining meaning; distinguish between the phonetic attributes of sounds."
+            },
+            {
+              "content": "Tone, including high, low and falling tones.",
+              "objective": "Analyse the process of sound production and combination of sounds to form meaningful words in Hausa; distinguish between the phonetic attributes of sounds."
+            },
+            {
+              "content": "Syllable structure and types, including open and closed syllables, light and heavy syllables, and word categories such as monosyllabic and disyllabic words.",
+              "objective": "Recognize the number of syllables and their types in a word."
+            },
+            {
+              "content": "Vowel length, including long and short vowels.",
+              "objective": "Appraise the importance of vowels in determining meaning; distinguish between the phonetic attributes of sounds."
+            },
+            {
+              "content": "Phonological processes, including assimilatory processes such as palatalization, labialization and vowel harmony, and non-assimilatory processes such as insertion and deletion.",
+              "objective": "Analyse phonological processes in Hausa."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Ƙirar Kalma (Morphology)",
+          "subtopics": [
+            {
+              "content": "Roots and stems of Hausa words.",
+              "objective": "Explain the roots and stems of Hausa words."
+            },
+            {
+              "content": "Affixation, including prefixes, infixes and suffixes, and their derivational and inflectional functions.",
+              "objective": "Explain the inflectional process in Hausa word formation; explain the derivational process of word formation in Hausa; differentiate between the two morphological processes."
+            },
+            {
+              "content": "Gender and number inflections.",
+              "objective": "Explain the inflectional process in Hausa word formation; differentiate between inflectional and derivational morphological processes."
+            },
+            {
+              "content": "Derivation of nouns and adjectives from verbs, and adjectives and verbs from nouns.",
+              "objective": "Explain the derivational process of word formation in Hausa; differentiate between the two morphological processes."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Ginin Jumla (Syntax)",
+          "subtopics": [
+            {
+              "content": "Word classes, including nouns, pronouns, verbs, adverbs, adjectives, prepositions, conjunctions, interjections and ideophones.",
+              "objective": "Analyse the processes governing word combination to form phrases, clauses and sentences in Hausa; detect linguistic errors in grammar; construct grammatical sentences for effective communication."
+            },
+            {
+              "content": "Grammatical categories, including tense and aspect (general and relative past, general and relative continuous, first and second future, habitual); mood (subjunctive and negative); gender (masculine, feminine and neuter); and number (singular and plural).",
+              "objective": "Use appropriate tenses in spoken and written Hausa; use appropriate gender and number in spoken and written Hausa; detect linguistic errors in grammar."
+            },
+            {
+              "content": "Sentence structure, including verbal sentences; nominal phrase plus verbal phrase and their components; non-verbal sentences consisting of nominal phrase plus stabilizer, nominal phrase plus complement plus stabilizer, and nominal phrases plus continuous frame (yana/yake) with or without da plus nominal phrase.",
+              "objective": "Analyse the processes governing word combination to form phrases, clauses and sentences in Hausa; recognize ideas or thoughts in written form; construct grammatical sentences for effective communication; distinguish between nominal and verbal phrases."
+            },
+            {
+              "content": "Sentence types, including simple, compound and complex sentences.",
+              "objective": "Distinguish between types of sentence structure; distinguish between types of sentences; construct grammatical sentences for effective communication."
+            },
+            {
+              "content": "Clauses, including relative and subjunctive clauses, and their functions as main and subordinate clauses.",
+              "objective": "Compare types of clauses; analyse the processes governing word combination to form phrases, clauses and sentences in Hausa."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Ma’ana (Semantics)",
+          "subtopics": [
+            {
+              "content": "Lexical aspects of word meaning, including ambiguity, synonyms and antonyms.",
+              "objective": "Analyse the mechanisms of generating meanings in Hausa; build vocabulary; recognize the various meanings and functions of sentences in communication."
+            },
+            {
+              "content": "Figures of speech and specialized meanings of words and phrases, including idioms and proverbs.",
+              "objective": "Analyse the mechanisms of generating meanings in Hausa; use words and sentences suitable for a particular purpose; construct meaningful sentences for effective communication."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Al’adu (Culture)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Rayuwar Hausawa (Hausa Customs)",
+          "subtopics": [
+            {
+              "content": "Birth (haihuwa): conception, pregnancy, childbirth, breastfeeding, customs during the first week after birth, bathing, ɓanti, weaning, circumcision and adolescence.",
+              "objective": "Explain the customs associated with conception through adolescence; explain the influence of modern times on childbirth and related customs."
+            },
+            {
+              "content": "Marriage (aure): types of marriage, courtship, engagement, marriage solemnization, wedding celebrations, married life, divorce and widowhood.",
+              "objective": "Explain customs from courtship through widowhood; explain the influence of modern times on marriage."
+            },
+            {
+              "content": "Death (mutuwa): announcement of death, washing of the deceased, funeral prayers, burial, mourning, charity, widowhood and inheritance.",
+              "objective": "Explain customs and practices associated with death, mourning and inheritance; explain the influence of modern times on death-related customs."
+            },
+            {
+              "content": "The influence of modern times on Hausa customs and ways of life.",
+              "objective": "Identify and explain the different forms of modern influence on Hausa customs."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Zamantakewa (Social Institutions)",
+          "subtopics": [
+            {
+              "content": "Family structure, the gandu system, relationships between co-wives, kinship, slavery and agolanci.",
+              "objective": "Explain the structure of relationships and interactions within the family; explain the importance of social relationships among the Hausa."
+            },
+            {
+              "content": "Neighbourly relationships (maƙwabtaka).",
+              "objective": "Explain the importance of social relationships and interactions among the Hausa."
+            },
+            {
+              "content": "Communal labour and cooperative work, including aikin gandu and aikin gayya.",
+              "objective": "Explain the importance of social relationships and communal cooperation among the Hausa."
+            },
+            {
+              "content": "Friendship and alliances (abota da ƙawance).",
+              "objective": "Explain the structure and importance of social relationships among the Hausa."
+            },
+            {
+              "content": "Greetings and hospitality (gaisuwa da karamci).",
+              "objective": "Explain the importance of social relationships and interactions among the Hausa."
+            },
+            {
+              "content": "The influence of modern times on social relationships and institutions.",
+              "objective": "Identify the different forms of modern influence on Hausa social customs."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Sana’o’in Gargajiya (Traditional Occupations)",
+          "subtopics": [
+            {
+              "content": "Types of traditional occupations, including farming, blacksmithing, tanning, trading, traditional barbering, carving, hunting, leatherwork, weaving, hairdressing, dyeing, butchery and fafar ƙorai, among others.",
+              "objective": "Identify traditional occupations; identify the characteristics and practices of people engaged in these occupations; distinguish occupations associated with men and women."
+            },
+            {
+              "content": "Characteristics of traditional occupations, including methods of inheritance, tools and equipment, stages of production, and their importance.",
+              "objective": "Identify the methods by which occupations are inherited; describe the tools and equipment used; explain the importance of traditional occupations."
+            },
+            {
+              "content": "Products and benefits of traditional occupations.",
+              "objective": "Identify products made through traditional occupations; describe their uses and benefits."
+            },
+            {
+              "content": "Traditional occupational titles and ranks.",
+              "objective": "Identify traditional occupational titles and explain their significance."
+            },
+            {
+              "content": "Occupations associated with gender, including domestic service and wage labour, hairdressing and barbering.",
+              "objective": "Distinguish occupations associated with men and women; describe traditional occupational practices."
+            },
+            {
+              "content": "The influence of modern times on traditional occupations.",
+              "objective": "Identify and explain the influence of modern times on traditional occupations."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Kayayyakin Buƙatun Rayuwa (Material Culture)",
+          "subtopics": [
+            {
+              "content": "Household necessities, including clothing and household utensils.",
+              "objective": "Identify Hausa material culture and household necessities; explain their uses and importance."
+            },
+            {
+              "content": "Other material necessities, including buildings and food preparation.",
+              "objective": "Identify material necessities used by the Hausa and explain their uses."
+            },
+            {
+              "content": "The influence of modern times on material culture and everyday necessities.",
+              "objective": "Identify and explain the influence of modern times on Hausa material culture."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Bukukuwa da Wasanni (Hausa Festivities and Recreational Activities)",
+          "subtopics": [
+            {
+              "content": "Religious festivities, including Eid celebrations, takutaha (sallar gani), cikaciki and saukar karatu.",
+              "objective": "Identify Hausa festivities and recreational activities; explain their importance and how they are conducted; describe ways to preserve them; explain the influence of modern times on festivities."
+            },
+            {
+              "content": "Traditional festivities, including kalankuwa, buɗar dawa and the pumpkin-eating festival.",
+              "objective": "Identify traditional festivities; explain their importance and how they are conducted; describe ways to preserve them."
+            },
+            {
+              "content": "Occupational festivities and activities, including fishing festivals, dambe, kokawa, hunting games, blacksmiths’ games and hawan ƙaho.",
+              "objective": "Identify occupational festivities and recreational activities; explain their importance, methods of performance and preservation."
+            },
+            {
+              "content": "Entertainment activities, including horse riding (sukuwa).",
+              "objective": "Identify recreational activities and explain their importance and methods of performance."
+            },
+            {
+              "content": "Children’s games, including shalle, kulli-kurciya, a-sharuwan-tsuntsaye, gaɗa and carafke.",
+              "objective": "Identify children’s games; explain how they are played and their importance; describe ways to preserve them."
+            },
+            {
+              "content": "The influence of modern times on Hausa festivities and recreational activities.",
+              "objective": "Explain the influence of modern times on festivities and games."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Camfe-camfe da Bauta (Traditional Beliefs and Worship)",
+          "subtopics": [
+            {
+              "content": "Traditional beliefs and superstitions, including kangida, camfi, kambun baka and maita.",
+              "objective": "Identify different traditional beliefs and the methods through which they are practised; explain their perceived benefits and disadvantages; explain the influence of modern times on them."
+            },
+            {
+              "content": "Traditional worship, including bori and tsafi.",
+              "objective": "Identify traditional forms of worship and their practices; explain their perceived benefits and disadvantages."
+            },
+            {
+              "content": "The influence of modern times on traditional beliefs and worship.",
+              "objective": "Explain the influence of modern times on traditional beliefs and worship."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Sarautun Gargajiya (Traditional Authority)",
+          "subtopics": [
+            {
+              "content": "Traditional authorities, including rulers, hakimai, dagatai and ward heads.",
+              "objective": "Identify traditional offices and ranks; describe the hierarchy of offices; identify the duties and importance of each office."
+            },
+            {
+              "content": "Royal servants and officials, including shantali, jakadiya and baraya.",
+              "objective": "Identify traditional offices and ranks; explain the duties and importance of each position."
+            },
+            {
+              "content": "Positions associated with religion, including imam and judge (alƙali).",
+              "objective": "Identify religiously associated offices; explain their duties and importance."
+            },
+            {
+              "content": "The duties and responsibilities of traditional authorities and officials.",
+              "objective": "Identify the duties and importance of each traditional office."
+            },
+            {
+              "content": "The influence of modern times on traditional authority.",
+              "objective": "Explain the influence of modern times on traditional offices and authority."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Magungunan Gargajiya (Traditional Medicine)",
+          "subtopics": [
+            {
+              "content": "Types of traditional medicine, including traditional preparations such as sassaƙe-sassaƙe, sawyoyi, na gari and na ruwa.",
+              "objective": "Classify the different types of traditional medicine."
+            },
+            {
+              "content": "Religious or spiritual remedies, including amulets (layu), written charms (rubutu), ɗibbu and divination (duba).",
+              "objective": "Classify traditional and religious forms of medicine and remedies."
+            },
+            {
+              "content": "Methods of administering traditional medicine, including drinking, rubbing, surace, fumigation or perfuming, inhaling, chewing, sucking, tying, sticking and hanging.",
+              "objective": "Describe the different methods of using traditional medicine."
+            },
+            {
+              "content": "Dosage and measurement in the use of traditional medicine.",
+              "objective": "Explain the procedures for measuring and administering traditional medicine."
+            },
+            {
+              "content": "Functions of traditional medicine, including prevention and treatment.",
+              "objective": "Explain the purposes and uses of traditional medicine."
+            },
+            {
+              "content": "The influence of modern times on traditional medicine.",
+              "objective": "Explain the influence of modern times on traditional medicine."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Adabi (Literature)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Adabin Baka (Oral Literature): Zuben Baka (Narratives)",
+          "subtopics": [
+            {
+              "content": "Oral narratives, including tatsuniya, almara, hikaya, ƙissa, historical narratives and other forms of oral storytelling.",
+              "objective": "Identify and distinguish the types of oral narratives; use appropriate vocabulary when discussing a story."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Adabin Baka (Oral Literature): Maganganun Azanci (Folk Sayings)",
+          "subtopics": [
+            {
+              "content": "Folk sayings and verbal art, including take, kirari, habaici, zambo, karin magana, kacici-kacici, salon magana and adon magana.",
+              "objective": "Identify the forms of folk sayings and explain how they are used; memorize and use appropriate expressions associated with folk sayings."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Adabin Baka (Oral Literature): Waƙoƙi na Baka (Oral Songs)",
+          "subtopics": [
+            {
+              "content": "Types of oral songs, including court songs, communal songs, men's songs, love songs and other categories.",
+              "objective": "Identify the different types of oral songs; identify the people who perform the different types of songs."
+            },
+            {
+              "content": "The theme, style, form, structure, performer, musical instruments and subject of oral songs.",
+              "objective": "Distinguish the form, theme, style, structure and instruments used in oral songs; identify the performers and subjects of the songs."
+            },
+            {
+              "content": "Work songs, including songs for grinding, pounding, threshing and hawking.",
+              "objective": "Identify the types of work songs and the people who perform them."
+            },
+            {
+              "content": "Children’s songs for boys and girls, wedding songs and dandali songs.",
+              "objective": "Identify and distinguish the forms of children’s songs and other specified oral songs."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Adabin Baka (Oral Literature): Wasannin Kwaikwayo na Gargajiya (Traditional Drama)",
+          "subtopics": [
+            {
+              "content": "Traditional children's drama, including langa, wasan ’yartsana, tashe, wasan gauta, dokin kara and other forms.",
+              "objective": "Identify the forms of traditional drama; explain how traditional dramatic performances are conducted; explain their importance; distinguish children's drama from adult drama."
+            },
+            {
+              "content": "Methods of performing traditional children's drama and its importance.",
+              "objective": "Explain the methods of conducting traditional drama and identify its importance."
+            },
+            {
+              "content": "Traditional adult drama, including ’yan kama, kalankuwa, hoto, wowwo and tashe.",
+              "objective": "Identify the forms of traditional adult drama; explain how they are performed and their importance; distinguish adult drama from children's drama."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Rubutaccen Adabi (Written Literature): Zube (Prose)",
+          "subtopics": [
+            {
+              "content": "Prescribed prose text: Maraya by I. A. Mahe.",
+              "objective": "Analyse the form, structure, theme, style and characters in the prescribed prose text; understand and observe Hausa writing conventions; understand word and sentence meanings to comprehend the story; identify important messages in the story and draw conclusions about it."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Rubutaccen Adabi (Written Literature): Waƙa (Poetry)",
+          "subtopics": [
+            {
+              "content": "Prescribed poetry text: Waƙoƙin Wayar Da Kai Don Manazarta Hausa Na Ɗaya by A. Anwar.",
+              "objective": "Understand and analyse the theme, style, form and structure of the prescribed poem; observe writing conventions, particularly those of poetry; interpret word and sentence meanings; relate the use of words and sentences to the message of the poem; identify important messages and draw conclusions about the poem."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Rubutaccen Adabi (Written Literature): Wasan Kwaikwayo (Drama)",
+          "subtopics": [
+            {
+              "content": "Prescribed drama text: Malam Zalimu by A. H. Gidan Dabino.",
+              "objective": "Analyse the setting, theme, style, characters, form and structure of the prescribed play; understand the importance of writing conventions in conveying meaning; understand word meanings to comprehend the play; identify important messages in the play and draw conclusions about them."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

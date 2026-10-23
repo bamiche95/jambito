@@ -1,0 +1,501 @@
+
+{
+  "subject": "Music",
+  "exam": "JAMB",
+  "generalObjectives": [
+    "Appreciate and discuss the foundations of Music fairly and critically.",
+    "Identify the features of the music of different periods through written and aural analysis.",
+    "Investigate Western and African music theory, history, peoples, forms and medium of performance, including instrumentation.",
+    "Recognise the influence of socio-cultural and technological factors, including computer software applications, on the lives and music of musicians.",
+    "Acquire a sound musical basis for further learning at the tertiary level."
+  ],
+  "sections": [
+    {
+      "sectionTitle": "Section A: Rudiments of Music",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Staff",
+          "subtopics": [
+            "Great staff.",
+            "Ledger lines and spaces.",
+            "Open score (vocal score).",
+            "G clef (treble), C clef (alto, tenor, etc.) and F clef (bass)."
+          ],
+          "objectives": [
+            "Identify all the components of the staff and their uses."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Music Notes and Rests",
+          "subtopics": [
+            "Music notes and rests.",
+            "Corresponding values of notes and rests."
+          ],
+          "objectives": [
+            "Determine the relative duration of different notes and rests and their applications."
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Time Signature",
+          "subtopics": [
+            "Simple time signatures.",
+            "Compound time signatures.",
+            "Correct grouping of notes.",
+            "Barring of unbarred passages."
+          ],
+          "objectives": [
+            "Interpret varied rhythmic patterns.",
+            "Group and bar unbarred passages correctly."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Key Signatures and Scales",
+          "subtopics": [
+            "Technical names of the various degrees of the scale.",
+            "Diatonic major scales.",
+            "Diatonic minor scales: natural, harmonic and melodic.",
+            "Chromatic scales.",
+            "Determination of the key of a piece of music with or without a key signature, not exceeding two sharps and two flats."
+          ],
+          "objectives": [
+            "Ascertain the names of the various degrees of diatonic scales and keys.",
+            "Identify simple scale passages with or without a key signature.",
+            "Differentiate between diatonic and chromatic scales."
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Keyboard Setting, Enharmonic Equivalents and Accidentals",
+          "subtopics": [
+            "Keyboard setting.",
+            "Enharmonic equivalents.",
+            "Accidentals."
+          ],
+          "objectives": [
+            "Identify the names of the white and black keys and their relationships, for example, C-sharp and B-double-sharp.",
+            "State the functions of accidentals."
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Intervals",
+          "subtopics": [
+            "Recognition of diatonic and chromatic intervals.",
+            "Inversions of intervals.",
+            "Perfect unison, perfect fourth, perfect fifth and perfect octave.",
+            "Major and minor seconds, thirds, sixths and sevenths.",
+            "Diminished fifth and augmented fourth.",
+            "Melodic and harmonic intervals."
+          ],
+          "objectives": [
+            "Determine different qualities of melodic and harmonic intervals and their inversions."
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Musical Terms, Signs and Abbreviations",
+          "subtopics": [
+            "Definitions of simple musical terms.",
+            "Musical signs.",
+            "Musical abbreviations."
+          ],
+          "objectives": [
+            "Interpret simple musical terms, signs and abbreviations."
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Transcription and Transposition",
+          "subtopics": [
+            "Transcription of music from staff notation into tonic solfa notation and vice versa.",
+            "Transposition using the treble (G) and bass (F) staves, not exceeding two sharps and two flats."
+          ],
+          "objectives": [
+            "Read music in a given notation, both staff and solfa notation.",
+            "Rewrite a music passage on a given stave.",
+            "Transcribe from staff notation to solfa notation."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Elementary Harmony",
+      "topics": [
+        {
+          "id": 9,
+          "title": "Triads and Their Inversions",
+          "subtopics": [
+            "Triads and their inversions in major and minor keys, not exceeding two sharps and two flats.",
+            "Primary triads in major keys.",
+            "Secondary triads in major keys.",
+            "Chord indications: major triads represented by capital Roman numerals, such as I.",
+            "Minor triads represented by small Roman numerals, such as ii.",
+            "Diminished triads represented by small Roman numerals with a degree sign, such as vii°.",
+            "Augmented triads represented by capital Roman numerals with a plus sign, such as III+.",
+            "In major scales, major triads are I, IV and V; minor triads are ii, iii and vi; the diminished triad is vii°.",
+            "In harmonic minor scales, minor triads are i and iv; major triads are V and VI; diminished triads are ii° and vii°; the augmented triad is III+.",
+            "Primary triads are I, IV and V in major scales, and i, iv and V in harmonic minor scales."
+          ],
+          "objectives": [
+            "Identify triads and their inversions in major and minor keys.",
+            "Compare types of triads.",
+            "Determine the uses of triads."
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Basic Chord Progressions and Dominant Seventh Chord",
+          "subtopics": [
+            "Basic chord progressions in four-part vocal style (SATB) in major keys, not exceeding two sharps and two flats.",
+            "Dominant seventh chord in root position only."
+          ],
+          "objectives": [
+            "Determine basic chord progressions in a musical passage.",
+            "Recognise the dominant seventh chord."
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Kinds of Motion",
+          "subtopics": [
+            "Parallel motion.",
+            "Similar motion.",
+            "Contrary motion.",
+            "Oblique motion."
+          ],
+          "objectives": [
+            "Identify the various kinds of motion in a musical passage.",
+            "Differentiate between the various kinds of motion."
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Cadences",
+          "subtopics": [
+            "Cadences in major keys, not exceeding two sharps and two flats.",
+            "Perfect or full-close cadence.",
+            "Imperfect, half-close or semi cadence.",
+            "Plagal or Amen cadence.",
+            "Interrupted, deceptive, evaded or surprise cadence."
+          ],
+          "objectives": [
+            "Identify the various types of cadences in a musical score.",
+            "Analyse the types of cadences and their resolutions."
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Non-Harmonic Tones and Non-Chord Tones",
+          "subtopics": [
+            "Identification and application of non-harmonic tones and non-chord tones.",
+            "Neighbouring tones or auxiliary notes.",
+            "Passing tones or notes."
+          ],
+          "objectives": [
+            "Relate harmonic or non-harmonic tones to the chords with which they are associated."
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Modulation",
+          "subtopics": [
+            "Simple diatonic modulations using a single melodic line.",
+            "Modulation from any given major key, not exceeding two sharps and two flats, to closely related keys.",
+            "Dominant and subdominant keys."
+          ],
+          "objectives": [
+            "Determine the key of a given melody and its modulation."
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Elementary Composition",
+          "subtopics": [
+            "Setting words to a written melody.",
+            "Recognition of suitable answers to given musical phrases.",
+            "Two-part free counterpoint."
+          ],
+          "objectives": [
+            "Identify suitable melodies for given words and compatible, balanced or contrasting phrases.",
+            "Identify the basic rules of two-part writing and counterpoint."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: History and Literature of African Music",
+      "topics": [
+        {
+          "id": 16,
+          "title": "Nigerian Folksongs: Types, Forms and Characteristics",
+          "subtopics": [
+            "Types of folksongs: cradle songs, folk tales, games, war songs, satirical songs, dirges or funeral songs, historical songs, praise songs and work songs.",
+            "Forms: call and response, strophic, through-composed and antiphony.",
+            "Vocal styles: recitative, yodelling, ululation, incantation, heaving, whistling and nasalisation.",
+            "Scales and modes: tritonic, tetratonic, pentatonic and hexatonic.",
+            "Metre and rhythm: metric and non-metric, polymetric, cross-rhythm, syncopation, hemiola and polyrhythm."
+          ],
+          "objectives": [
+            "Identify various folksongs and their types.",
+            "Define and compare their forms and features.",
+            "Mention characteristic features of vocal, scale and rhythmic styles in African music."
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Nigerian Traditional Music, Festivals, Dances and Other Arts",
+          "subtopics": [
+            "Features and forms of Nigerian traditional music and other arts.",
+            "Festivals: Osun, Ifa, Ogun, Ekpo, Ofala, Iri ji (New Yam Festival), Ovia Osese, Mmanwu (Masquerade), Ila-Oso, Argungu Fishing Festival, Eyo or Adamu Orisa and Gelede.",
+            "Dances and other arts: social, ritual and ceremonial forms.",
+            "Examples: Masquerade, Koroso, Atilogwu, Ikperikpe (war dance), Egedeege, Kwaghir, Agbon, Nkwa Umuagbogho, Bata, Bori, Swange, Dundun, Kokoma, Abigbo and Okonko."
+          ],
+          "objectives": [
+            "Analyse the features and forms of Nigerian traditional music and the arts.",
+            "Differentiate between types of festivals and dances and identify their origins.",
+            "Identify the relationship between music, dance and drama in African festivals."
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Nigerian Traditional Musical Instruments",
+          "subtopics": [
+            "Classification of Nigerian traditional musical instruments.",
+            "Aerophones: kakaki, algaita, sarewa, pedete, obati, farai, kaho, imar, mongom, taluk, damalgo, oja, opi, pipilo, udu, nnuk, ofiom, akpele, ekutu, teremagbe, ayeta-ode and odikakora.",
+            "Chordophones: goge, kukuma, komo, kwamsa, kuntigi, lasha, molo, garaya, gurmi, une, ubo-akwara and goje.",
+            "Idiophones: kundung, karawa, shantu, oyo, ichaka, ogene, aja, ekpili, ekwe, udu, ikoro, ngedegwu, okpokoro, ekere, mgbiligba, alo, ubo-aka, sekere, agogo, agidigbo, alọ, oma, aro, ukuse and eromwon.",
+            "Membranophones: ganga, tambari, taushi, banga, balle, kuntuku, kalangu, gangan-noma, tandu, igba, nsing, ban yogume, emoba, ipese, igbin, bata, bembe, gudugudu, kanango, dundun and gangan."
+          ],
+          "objectives": [
+            "Identify the characteristic features of the classes of musical instruments.",
+            "Classify instruments into their categories.",
+            "Trace the origins of the instruments."
+          ]
+        },
+        {
+          "id": 19,
+          "title": "African Traditional Musicians",
+          "subtopics": [
+            "Lives and music of Nigerian traditional musicians.",
+            "Northern Nigerian musicians: Sani Sabulu, Sani Dan Indo, Hassan Wayam, Barmani Coge, Danlami Nasarawa, Garba Super, Dankwairo, Aminu Mai Asharalle, Shehu Ajilo, Dan Maraya Jos, Dan Alalo, Mamman Shata and Haruna Uji.",
+            "Eastern Nigerian musicians: Ezigbo Obiligbo, Seven-Seven, Morocco Maduka, Okechukwu Nwatu, Mike Ejeagha and Afam Ogbuotobo.",
+            "Western Nigerian musicians: Kokoro (the blind minstrel), Anikura, Tunde Alao, Olanrewaju Adepoju, Ademola Onibonokuta, Elemure Ogunyemi and Comfort Omoge.",
+            "Other African traditional musicians: Vinoko Akpalu, Daniel Amponsah (Koo Nimo), Efua Basa and Kwaa Mensah."
+          ],
+          "objectives": [
+            "Identify the different groups to which the musicians belong.",
+            "Trace their biographies.",
+            "Mention their musical styles.",
+            "Assess their contributions to the music industry."
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Evolution and Development of African Popular Music",
+          "subtopics": [
+            "Highlife.",
+            "Juju.",
+            "Afro-beat.",
+            "Fuji.",
+            "Apala.",
+            "Reggae.",
+            "Makossa.",
+            "Ikwokirikwo.",
+            "Okukuseku.",
+            "Ekassa.",
+            "Akuko na egwu.",
+            "Awurebe.",
+            "Waka.",
+            "Hiplife.",
+            "Hip-hop."
+          ],
+          "objectives": [
+            "Differentiate one musical genre from another.",
+            "Examine the influence of the genres on society."
+          ]
+        },
+        {
+          "id": 21,
+          "title": "African Popular Musicians",
+          "subtopics": [
+            "Nigerian popular musicians: Bongos Ikwe, Oliver De Coque, Nelly Uchendu, Osita Osadebe, Bright Chimezie, Bobby Benson, Victor Uwaifo, Sonny Okosun, Fela Anikulapo Kuti, I. K. Dairo, Victor Olaiya, Ebenezer Obey, Sunny Ade, Fatai Rolling Dollar, Bala Miller, Alhaji Uba Rawa, Zaaki Adzee, 2Face, Rude Boy (Paul Okoye), Mr. P (Peter Okoye), Djnee, Paul Play Dairo, Eedris Abdulkareem, D'Banj, Sunny Neji, Lagbaja, Zule Zoo, Daddy Showkey, Majek Fashek, Ras Kimono, Jeremiah Gyang, Flavour, Olamide, M.I, Iyanya, Wizkid, Davido, Omawunmi, Lara George, Sola Allynson, Ara, Asa, Onyeka Onwenu, Christy Essien-Igbokwe and Nasir Hausawa.",
+            "Other African popular musicians: Manu Dibango, E. T. Mensah, Jerry Hansen, Kofi Olomide, Awilo Longomba, Papa Wemba, Salif Keita, Angelique Kidjo, Lucky Dube, Yvonne Chaka Chaka, Brenda Fassie and Sarkodie."
+          ],
+          "objectives": [
+            "Relate musicians to the music they perform.",
+            "Trace their biographies.",
+            "Examine their types of music.",
+            "Assess their contributions to the development of music."
+          ]
+        },
+        {
+          "id": 22,
+          "title": "African Art Musicians",
+          "subtopics": [
+            "Nigerian art musicians: W. W. C. Echezona, Laz Ekwueme, Sam Akpabot, Ikoli Harcourt Whyte, Joshua Uzoigwe, Mosun Omibiyi-Obidike, Tunji Vidal, Ademola Adegbite, Yemi Olaniyan, Ayo Bankole, Akin Euba, Sam Ojukwu, A. K. Achinivu, Bode Omojola, Felix Nwuba, Christopher Oyesiku, Dayo Dedeke, Adams Fiberesima, Dan Agu, Chris Onyeji, Godwin Sadoh, Meki Nzewi, Solomon Ikibe, Idolor E. G., Femi Adedeji and Anthony Mereni.",
+            "Other African art musicians: Joseph S. Maison, N. Z. Nayo, J. H. Kwabena Nketia, Gymah Labi, Philip Gbeho, Ephraim Amu, C. K. Adom, A. A. Mensah, C. W. K. Mereku, A. A. Agordoh, J. O. Ofosu and S. G. Boateng."
+          ],
+          "objectives": [
+            "Relate art composers to their compositions.",
+            "Trace their biographies.",
+            "Examine their types of compositions.",
+            "Assess their contributions to the development of art music education in Nigeria."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: History and Literature of Western Music",
+      "topics": [
+        {
+          "id": 23,
+          "title": "Historical Development of Western Music",
+          "subtopics": [
+            "Medieval or Middle Ages: 800–1400.",
+            "Renaissance period: 1400–1600.",
+            "Baroque period: 1600–1750.",
+            "Classical period: 1750–1820.",
+            "Romantic period: 1820–1900.",
+            "20th century: 1900–1999."
+          ],
+          "objectives": [
+            "Identify the various periods and their dates from the Medieval period to the 20th century.",
+            "Trace the stages of the development of Western musical practice from the Medieval period to the end of the 20th century."
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Western Music Composers",
+          "subtopics": [
+            "Giovanni Pierluigi da Palestrina.",
+            "Claudio Monteverdi.",
+            "Henry Purcell.",
+            "J. S. Bach.",
+            "G. F. Handel.",
+            "W. A. Mozart.",
+            "Franz Joseph Haydn.",
+            "Ludwig van Beethoven.",
+            "Franz Schubert.",
+            "Frédéric Chopin.",
+            "Igor Stravinsky.",
+            "Arnold Schoenberg.",
+            "Zoltán Kodály.",
+            "Claude Debussy."
+          ],
+          "objectives": [
+            "Identify the composers.",
+            "Assess their contributions."
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Music Forms and Media",
+          "subtopics": [
+            "Musical forms: binary, ternary, rondo, sonata allegro, dance suite, canon, free fantasia and theme and variation.",
+            "Orchestral and band instruments and their classifications.",
+            "The human voice: types, ranges and qualities.",
+            "Keyboard instruments: organ, piano and electronic keyboard.",
+            "Other instruments: ukulele, banjo, guitar, mandolin, harp, accordion, xylophone and marimba.",
+            "Computer music technology and software: Finale, Sibelius, Cubase, Reason and Sound Forge Nero.",
+            "Tuning fork and pitch pipe.",
+            "Introduction to artificial intelligence in music technology: meaning, evolutionary trend and historical background.",
+            "Types and applications of AI tools in music composition.",
+            "AI-powered music generators."
+          ],
+          "objectives": [
+            "Identify the general forms and various types of instruments in Western music.",
+            "Relate music to modern technology.",
+            "Assess the contributions of artificial intelligence to music."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Comparative Music Studies",
+      "topics": [
+        {
+          "id": 26,
+          "title": "Black Musicians in the Diaspora",
+          "subtopics": [
+            "Overview of Black musicians, including composers and performers, in the diaspora.",
+            "Mighty Sparrow, James Brown, Bob Marley, Michael Jackson, Stevie Wonder, Lionel Richie, R. Kelly, Lauryn Hill, Kirk Franklin, Tupac Shakur, Shabba Ranks, Quincy Jones, Boyz II Men, Sean Paul, Janet Jackson, Whitney Houston, Beyoncé, Brandy, Usher, Kevin Lyttle, Bobby Brown, MC Hammer, LL Cool J, Dr. Dre, Snoop Dogg, Mary J. Blige, Jay-Z, Chris Brown, Bruno Mars, Ne-Yo, Rihanna, Louis Armstrong, Jimmy Cliff and Diana Ross."
+          ],
+          "objectives": [
+            "Identify musicians in the diaspora by their names and works.",
+            "Assess their individual musical influences on global society."
+          ]
+        },
+        {
+          "id": 27,
+          "title": "Musical Genres and Their Origins",
+          "subtopics": [
+            "African-American spirituals.",
+            "Gospel music.",
+            "Jazz.",
+            "Rhythm and blues.",
+            "Soul.",
+            "Calypso.",
+            "Rock and roll.",
+            "Reggae.",
+            "Afro-beat.",
+            "Tango.",
+            "Rap.",
+            "Cha-cha-cha.",
+            "Bolero.",
+            "Twist.",
+            "Hip-hop."
+          ],
+          "objectives": [
+            "Identify the various forms of musical genres.",
+            "Trace the origins of the musical genres."
+          ]
+        },
+        {
+          "id": 28,
+          "title": "Nationalism in Nigerian Music",
+          "subtopics": [
+            "The spirit of nationalism in Nigerian music.",
+            "One Love — Onyeka Onwenu.",
+            "Which Way Nigeria? — Sonny Okosun.",
+            "First National Anthem, Nigeria We Hail Thee — Frances Brenda (1960–1978), as listed in the source.",
+            "Second National Anthem, Arise, O Compatriots — Ben Odiase (1978–2025), as listed in the source.",
+            "Current National Anthem, Nigeria We Hail Thee — Frances Brenda (2025 to date), as listed in the source.",
+            "Nigeria for All — Sunny Ade.",
+            "Nigeria Go Survive — Veno Marioghae."
+          ],
+          "objectives": [
+            "Identify nationalist composers by their names and works.",
+            "Identify features and materials used by nationalist composers to create, project and sustain cultural and patriotic awareness.",
+            "Assess their roles in Nigerian nationalism."
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTexts": [
+    "Adesipe, A. E. (2025). Essential Music for Senior Secondary Schools with Introduction to Artificial Intelligence. Tonad Publishers, Mowe Ibafo, Ogun State, Nigeria. Also available on Amazon Kindle Direct Publishing.",
+    "Adesipe, A. E. (2025). Artificial Intelligence in African Music and Instrumental Technology. Amazon Kindle Direct Publishing.",
+    "Adesipe, A. E. (2024). History of Nigerian Folksongs. ADLEK Printing Press, Ilorin, Kwara State, Nigeria. Also available at https://selar.co/hy5796 and https://selar.com/jf4f24.",
+    "Adesipe, A. E. (2024). Nigerian Festivals and Traditional Instruments. Amazon Kindle Direct Publishing. Also available at https://selar.com/580b72.",
+    "Adesipe, A. E. (2025). African Music and Instrumental Technology. Amazon Kindle Direct Publishing.",
+    "Akpabot, S. E. (1986). Foundation of Traditional Music. Ibadan: Spectrum Books, Nigeria.",
+    "Agu, C. C. (1999). Forms and Analysis of African Music. Enugu: New Generation Books, Nigeria.",
+    "Echezona, W. W. C. (1981). Nigerian Musical Instruments. Enugu: Apollo Publishing Ltd., Nigeria.",
+    "Ekwueme, Lucy U. (2007). Songs for Happy Little People. Lagos: West African Book Publisher Limited.",
+    "Hosier. (1961). Instruments of the Orchestra. Oxford: Oxford University Press.",
+    "Kamien, Roger. (2008). Music: An Appreciation. New York: McGraw Hill Book Company.",
+    "Kennedy, M. (1985). The Concise Oxford Dictionary of Music (Third Edition). London: Oxford University Press.",
+    "Kitson, C. H. (1978). Elementary Harmony Book 2. London: Oxford University Press.",
+    "Kofoworola, Z. O. and Lateef, Y. (1987). Hausa Performing Arts and Music. Lagos: Nigeria Magazine.",
+    "Mensah, A. A. (Undated). Folksongs for Schools. Accra.",
+    "Mensah, I. T. (1990). Understanding Music, Books 1–3. Otuamic Publications.",
+    "Nketia, J. H. K. (1973). African Music in Ghana, Folksongs of Ghana. University Press, Accra, Ghana.",
+    "Osunniyi, J. A. (1994). An Easy Way to Learning Music. Lagos: Jac-Ola Printing Press, Nigeria.",
+    "Robert Manford et al. (1990). Music for Senior Secondary Schools. H. Gangaram, Bombay.",
+    "Vidal, A. O. (2012). Selected Topics on Nigerian Music. Ile-Ife: Imef African Music Publishers, Nigeria."
+  ]
+}

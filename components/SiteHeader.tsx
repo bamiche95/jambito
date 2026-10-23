@@ -32,7 +32,7 @@ export default function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+        <nav className="hidden items-center gap-4 text-[13px] font-semibold text-slate-700 md:flex lg:gap-6 lg:text-sm">
           <Link href="/" className="transition hover:text-brand-blue">
             Home
           </Link>
@@ -42,11 +42,15 @@ export default function SiteHeader() {
           <Link href="/practice" className="transition hover:text-brand-blue">
             Exam Boards
           </Link>
+          {/* The SEO-first syllabus tree: subject outlines for every exam board. */}
+          <Link href="/syllabus" className="transition hover:text-brand-blue">
+            Syllabus
+          </Link>
           {/* Anchor into the live price card on the landing page. */}
           <Link href="/#pricing" className="transition hover:text-brand-blue">
             Pricing
           </Link>
-          <Link href="/contact" className="transition hover:text-brand-blue">
+          <Link href="/contact" className="hidden transition hover:text-brand-blue lg:inline">
             Contact
           </Link>
         </nav>

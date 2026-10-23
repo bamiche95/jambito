@@ -1,0 +1,427 @@
+
+{
+  "subject": "Biology",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Biology",
+          "subtopics": [
+            {
+              "content": "The aim of the Unified Tertiary Matriculation Examination (UTME) syllabus in Biology is to prepare candidates for the Board's examination.",
+              "objective": "Demonstrate sufficient knowledge of the concepts of diversity, interdependence and unity of life; account for continuity of life through reorganization, inheritance and evolution; apply biological principles and concepts to everyday life, especially matters affecting living things, individuals, society, the environment, community health and the economy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "A: Variety of Organisms",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Living Organisms",
+          "subtopics": [
+            {
+              "content": "Characteristics of living organisms; cell structure and functions of cell components; levels of organization: cell, exemplified by Euglena and Paramecium; tissue, exemplified by epithelial tissues and Hydra; organ, exemplified by onion bulb; systems, including reproductive, digestive and excretory systems; and organisms, exemplified by Chlamydomonas.",
+              "objective": "Differentiate between the characteristics of living and non-living things; identify structures of plant and animal cells; analyse the functions of plant and animal cell components; compare and contrast plant and animal cell structures; trace the levels of organization of living organisms in logical sequence across cells, tissues, organs, systems and organisms."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Evolution and Classification of Organisms",
+          "subtopics": [
+            {
+              "content": "Monera (prokaryotes), including bacteria and blue-green algae; Protista (protozoans and protophyta), including Amoeba, Euglena and Paramecium; Fungi, including mushroom and Rhizopus.",
+              "objective": "Analyse the external features and characteristics of the listed organisms; use these characteristics to demonstrate increasing structural complexity; trace their life histories and use these to demonstrate gradual transitions from aquatic to terrestrial life."
+            },
+            {
+              "content": "Plantae: Thallophyta, exemplified by Spirogyra; Bryophyta, including mosses and liverworts such as Brachymenium and Marchantia; Pteridophyta, including ferns such as Dryopteris; Spermatophyta, comprising Gymnospermae and Angiospermae; gymnosperms, including cycads and conifers; angiosperms, including monocots such as maize and dicots such as waterleaf; classification of plants according to life-cycle duration.",
+              "objective": "Trace the evolution of listed plants; analyse their external features and characteristics; demonstrate increasing structural complexity; trace life histories and the transition from aquatic to terrestrial life; classify plants according to their life-cycle duration as annuals, biennials and perennials."
+            },
+            {
+              "content": "Animalia: invertebrates, including coelenterates such as Hydra; Platyhelminthes such as Taenia; Nematoda (roundworms); Annelida such as earthworms; Arthropoda such as mosquitoes, cockroaches, houseflies, bees and butterflies; Mollusca such as snails. Multicellular vertebrates: Pisces, including cartilaginous and bony fish; Amphibia, including toads and frogs; Reptilia, including lizards, snakes and turtles; Aves (birds); Mammalia (mammals).",
+              "objective": "Trace the advancement of invertebrate animals; determine the economic importance of studied insects; assess their environmental value; classify plants according to life-cycle duration; trace the advancement of multicellular animals; determine their economic importance."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Structural, Functional and Behavioural Adaptations of Organisms",
+          "subtopics": [
+            {
+              "content": "Adaptive colouration and its functions; behavioural adaptations in social animals; structural adaptations in organisms.",
+              "objective": "Describe how structures, functions and behaviours adapt organisms to their environments and ways of life; categorize countershading in fish, toads and snakes, and warning colouration in mushrooms; differentiate castes in social insects such as termites and explain their colony functions; explain basking in lizards, territorial behaviour and responses to unfavourable conditions, including hibernation and aestivation."
+            },
+            {
+              "content": "Adaptations for obtaining food, including bird beaks and legs and insect mouthparts, especially those of mosquitoes, butterflies and moths; protection and defence, including stick insects, praying mantises and toads; securing mates, including colouration of male and female Agama lizards and feather displays in birds; regulation of body temperature through skin, feathers and hairs; water conservation, including spines in plants and scales in mammals.",
+              "objective": "Explain adaptations for feeding, protection, defence, securing mates, temperature regulation and water conservation; relate each adaptation to the organism's environment and way of life."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "B: Form and Functions",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Internal Structure of a Flowering Plant and a Mammal",
+          "subtopics": [
+            {
+              "content": "Internal structure of flowering plant organs: root, stem and leaf. Supporting tissues in plants, including collenchyma, sclerenchyma, xylem and phloem fibres, and their distribution in roots, stems and leaves.",
+              "objective": "Identify transverse sections of plant organs; relate organ structure to function; identify supporting tissues; describe the distribution of supporting tissues in roots, stems and leaves."
+            },
+            {
+              "content": "Internal structure of a mammal; arrangement of internal organs; digestive, reproductive and excretory organs.",
+              "objective": "Examine the arrangement of mammalian internal organs; describe the appearance and positions of digestive, reproductive and excretory organs."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Nutrition",
+          "subtopics": [
+            {
+              "content": "Modes of nutrition: autotrophic and heterotrophic. Types of nutrition, including holozoic nutrition in sheep and humans; parasitic nutrition in roundworms, tapeworms and Loranthus; saprophytic nutrition in Rhizopus and mushrooms; and carnivorous nutrition in sundew and bladderwort.",
+              "objective": "Compare autotrophic and heterotrophic nutrition; provide examples from flowering and non-flowering plants; differentiate holozoic, parasitic, saprophytic and carnivorous nutrition; determine the nutritional value of the organisms studied."
+            },
+            {
+              "content": "Plant nutrition: photosynthesis and chemosynthesis; light and dark reactions of photosynthesis; the roles of light, carbon(IV) oxide and chlorophyll; starch testing as evidence of photosynthesis; mineral requirements, including macronutrients and micronutrients; deficiency symptoms of nitrogen, phosphorus and potassium.",
+              "objective": "Compare photosynthesis and chemosynthesis; differentiate light and dark reactions; determine the necessity of light, carbon(IV) oxide and chlorophyll in photosynthesis; detect starch in leaves as evidence of photosynthesis; identify plant macronutrients and micronutrients; recognize nitrogen, phosphorus and potassium deficiency symptoms."
+            },
+            {
+              "content": "Animal nutrition: classes of food substances, including carbohydrates, proteins, fats and oils, vitamins, mineral salts and water; food tests for starch, reducing sugars, proteins, oils and fats; sources and nutritional values of food; deficiency diseases, including scurvy, rickets and kwashiorkor; balanced diet.",
+              "objective": "Identify sources of different food classes; determine the nutritional value of food; relate the importance of each food class to its deficiency diseases; explain the importance of a balanced diet; identify food types from experimental results."
+            },
+            {
+              "content": "Mammalian teeth: structure, types and functions; comparison of human, sheep and dog dental formulae.",
+              "objective": "Describe the structure of a typical mammalian tooth; differentiate types of mammalian teeth and relate their structures to their functions; compare the dental formulae of humans, sheep and dogs."
+            },
+            {
+              "content": "Mammalian alimentary canal and accessory organs, including the liver, pancreas and gall bladder; ingestion, digestion, absorption and assimilation; digestive enzymes and their functions.",
+              "objective": "Relate the structures of the alimentary canal and accessory organs to their functions; identify the general characteristics of digestive enzymes; associate enzymes with digestion of carbohydrates, proteins and fats; determine the end products of digestion of these food classes."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Transport",
+          "subtopics": [
+            {
+              "content": "Need for transportation in organisms; transported materials, including excretory products, gases, manufactured food, digested food, nutrients, water and hormones; relationship between increasing size and complexity and the need for transport systems.",
+              "objective": "Determine the relationship between increased size and complexity and the development of transport systems in plants and animals; identify sources of transported materials and the forms in which they are transported."
+            },
+            {
+              "content": "Mammalian circulatory system: heart, arteries, veins and capillaries; functions of the hepatic portal vein, pulmonary vein and artery, aorta, renal artery and renal vein.",
+              "objective": "Describe the general circulatory system; compare the specific functions of the hepatic portal vein, pulmonary vein and artery, aorta, renal artery and renal vein."
+            },
+            {
+              "content": "Plant vascular system: phloem and xylem; their roles in transportation.",
+              "objective": "Identify organs of the plant vascular system; explain the specific functions of phloem and xylem."
+            },
+            {
+              "content": "Transport media and mechanisms, including cytoplasm, cell sap, body fluid, blood and lymph; composition and functions of blood and lymph; diffusion, osmosis, plasmolysis and turgidity; open circulatory systems in animals; transpiration pull, root pressure and active transport in plants.",
+              "objective": "Identify transport media; state the composition and functions of blood and lymph; describe diffusion, osmosis, plasmolysis and turgidity; compare mechanisms of open circulation in animals with transpiration pull, root pressure and active transport in plants."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Respiration",
+          "subtopics": [
+            {
+              "content": "Respiratory organs and surfaces; gaseous exchange in plants and animals; aerobic and anaerobic respiration; glycolysis and the Krebs cycle, with reference to ATP production; gaseous exchange and heat energy production during respiration.",
+              "objective": "Explain the significance of respiration; outline the chemical processes involved in glycolysis and the Krebs cycle with reference to ATP production; deduce gaseous exchange, respiratory products and heat production from experimental setups."
+            },
+            {
+              "content": "Respiratory surfaces and organs, including body surface, gills, tracheae, lungs, stomata and lenticels; opening and closing of stomata; respiratory mechanisms in plants and animals; role of oxygen in energy liberation; effects of insufficient oxygen supply to muscles.",
+              "objective": "Describe respiratory organs and surfaces and identify organisms in which they occur; explain the mechanism of stomatal opening and closing; determine respiratory mechanisms in plants and animals; examine the role of oxygen in energy release; explain the effects of insufficient oxygen supply to muscles."
+            },
+            {
+              "content": "Fermentation using yeast cells and sugar solution; economic importance of yeasts.",
+              "objective": "Demonstrate fermentation using yeast cells and sugar solution; state the economic importance of yeasts."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Excretion",
+          "subtopics": [
+            {
+              "content": "Excretory structures: contractile vacuole, flame cell, nephridium, Malpighian tubule, kidney, stoma and lenticel; excretory mechanisms involving kidneys, lungs and skin; excretory products of plants, including carbon(IV) oxide, oxygen, tannins, resins, gums, mucilage and alkaloids.",
+              "objective": "Define excretion and state its significance; relate the characteristics of excretory structures to their functions; relate kidney structure to excretory and osmoregulatory functions; identify the functions and excretory products of lungs and skin; deduce the economic importance of plant excretory products."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Support and Movement",
+          "subtopics": [
+            {
+              "content": "Plant movements: tropic, tactic, nastic and sleep movements; responses to light, water, gravity and touch; regions of growth in roots and shoots; role of auxins in tropism; supporting tissues, including collenchyma, sclerenchyma, xylem and phloem fibres.",
+              "objective": "Determine the need for support and movement in organisms; identify supporting tissues in plants and describe their distribution in roots, stems and leaves; relate plant responses to light, water, gravity and touch; identify growth regions in roots and shoots and explain the role of auxins in tropism."
+            },
+            {
+              "content": "Supporting tissues in animals, including chitin, cartilage and bone; exoskeleton and endoskeleton; structure and general layout of the mammalian skeleton; types of joints; supportive, locomotive, protective and respiratory functions of the skeleton.",
+              "objective": "Relate the location of chitin, cartilage and bone to their supporting functions; relate mammalian skeleton structure to support, locomotion and respiration; differentiate types of joints using examples; explain the protective, supportive, locomotive and respiratory roles of the skeleton in animal wellbeing."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Reproduction",
+          "subtopics": [
+            {
+              "content": "Asexual reproduction: fission in Paramecium; budding in yeast; natural and artificial vegetative propagation.",
+              "objective": "Differentiate between asexual and sexual reproduction; apply natural vegetative propagation in crop production and multiplication; explain the application of grafting, budding and layering in agriculture."
+            },
+            {
+              "content": "Sexual reproduction in flowering plants: floral parts and their functions; pollination and fertilization; products of sexual reproduction; cross-pollination; placentation and development of simple, aggregate, multiple and succulent fruits.",
+              "objective": "Relate flower parts to their functions and reproduction; state the advantages of cross-pollination; deduce types of placentation associated with the development of simple, aggregate, multiple and succulent fruits."
+            },
+            {
+              "content": "Reproduction in mammals: structures and functions of male and female reproductive organs; fertilization and development through fusion of gametes; effects of maternal health, nutrition and indiscriminate drug use on embryonic development up to birth; modern methods of regulating reproduction, including in vitro fertilization and birth control.",
+              "objective": "Differentiate male and female reproductive organs; relate their structures and functions to offspring production; describe fertilization as fusion of gametes; explain the effects of maternal health, nutrition and indiscriminate drug use on embryonic development; explain modern reproductive methods, including in vitro fertilization and birth control."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Growth",
+          "subtopics": [
+            {
+              "content": "Meaning of growth; seed germination and conditions necessary for germination; epigeal and hypogeal germination.",
+              "objective": "Apply knowledge of germination conditions to plant growth; differentiate between epigeal and hypogeal germination."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Coordination and Control",
+          "subtopics": [
+            {
+              "content": "Nervous coordination: components, structure and functions of the central nervous system; components and functions of the peripheral nervous system; transmission of nerve impulses; reflex actions.",
+              "objective": "Apply knowledge of the structure and functions of the central nervous system to coordination of body functions; illustrate reflex actions such as blinking and the knee jerk; differentiate reflex and voluntary actions and conditioned reflexes such as salivation, riding a bicycle and swimming."
+            },
+            {
+              "content": "Sense organs: skin for touch, nose for smell, tongue for taste, eye for sight and ear for hearing; their structures, functions, detection of stimuli and correction of defects.",
+              "objective": "Relate each sense organ to its function; apply knowledge of sense-organ structure and function to detecting and correcting defects."
+            },
+            {
+              "content": "Hormonal control in animals: pituitary, thyroid, parathyroid, adrenal glands, pancreas and gonads; plant hormones (phytohormones), including auxins, gibberellins, cytokinins and ethylene.",
+              "objective": "State the locations of endocrine glands in animals; relate hormones produced by each gland to their functions; examine the effects of phytohormones on growth, tropism, flowering, fruit ripening and leaf abscission."
+            },
+            {
+              "content": "Homeostasis: regulation of body temperature; regulation of salt and water balance.",
+              "objective": "Relate hormone functions to homeostasis; explain the regulation of body temperature, salts and water."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "C: Ecology",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Factors Affecting the Distribution of Organisms",
+          "subtopics": [
+            {
+              "content": "Abiotic factors: temperature, rainfall, relative humidity, wind speed and direction, altitude, salinity, turbidity, pH and edaphic (soil) conditions.",
+              "objective": "Relate abiotic factors to the distribution of organisms; use appropriate equipment, including a Secchi disc, thermometer and rain gauge, to measure environmental factors."
+            },
+            {
+              "content": "Biotic factors and the effects of plant, animal and especially human activities on organism distribution.",
+              "objective": "Describe how the activities of plants and animals, particularly humans, affect the distribution of organisms."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Symbiotic Interactions of Plants and Animals",
+          "subtopics": [
+            {
+              "content": "Symbiotic and ecological interactions: parasitism, saprophytism, commensalism, mutualism, amensalism, competition, predation and cooperation.",
+              "objective": "Provide appropriate examples of symbiosis, parasitism, saprophytism, commensalism, mutualism, amensalism, competition, predation and cooperation among organisms."
+            },
+            {
+              "content": "Energy flow in ecosystems: food chains, food webs and trophic levels; distribution of organisms in particular habitats.",
+              "objective": "Explain the distribution of organisms using food chains and food webs; define food chains and food webs."
+            },
+            {
+              "content": "Nutrient cycles in nature: carbon cycle, water cycle and nitrogen cycle; balance of atmospheric oxygen and carbon(IV) oxide; global warming; roles of bacteria and leguminous plants in nitrogen cycling.",
+              "objective": "Describe the carbon cycle and its significance; explain the balance of atmospheric oxygen and carbon(IV) oxide and the relationship with global warming; assess the effects of the water cycle on other nutrient cycles; relate the roles of bacteria and leguminous plants to nitrogen cycling."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Natural Habitats",
+          "subtopics": [
+            {
+              "content": "Aquatic habitats, including ponds, streams, lakes, seashores and mangrove swamps; terrestrial and arboreal habitats, including treetops, abandoned farmland, dry grassy savanna fields, burrows and holes.",
+              "objective": "Associate plants and animals with each habitat; relate adaptive features to the habitats in which organisms live."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Local Nigerian Biomes",
+          "subtopics": [
+            {
+              "content": "Tropical rainforest; Guinea savanna, including southern and northern regions; Sudan savanna; desert; highlands of montane forests and grasslands of the Obudu, Jos and Mambilla Plateaus.",
+              "objective": "Locate the listed biomes in Nigeria; apply knowledge of their features to determine the characteristics of different Nigerian regions."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "The Ecology of Populations",
+          "subtopics": [
+            {
+              "content": "Population density and overcrowding; rapid changes in human population; density calculated as the number of organisms per unit area.",
+              "objective": "Determine reasons for rapid changes in human population and the consequences of overcrowding; calculate population density as the number of organisms per unit area."
+            },
+            {
+              "content": "Adaptations for survival; factors causing competition; intraspecific and interspecific competition; niche differentiation; relationships between competition and succession.",
+              "objective": "Relate population increases, disease, food shortages and lack of space to intraspecific and interspecific competition; determine how niche differentiation reduces intraspecific competition; relate competition to succession."
+            },
+            {
+              "content": "Factors affecting population size: biotic factors, including food, pests, disease, predation, competition and reproductive ability; abiotic factors, including temperature, space, light, rainfall, topography, pressure and pH.",
+              "objective": "Deduce the effects of biotic and abiotic factors on population size; determine interactions between biotic and abiotic factors, such as drought or water scarcity causing food shortages and lack of space increasing disease rates."
+            },
+            {
+              "content": "Ecological succession: primary and secondary succession; sequence of succession leading to a stable climax community.",
+              "objective": "Trace the sequence of ecological succession to the climax stage of stability in plant populations."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Soil",
+          "subtopics": [
+            {
+              "content": "Characteristics of sandy, loamy and clayey soils; soil structure, porosity, capillarity and humus content; soil components, including inorganic matter, organic matter, soil organisms, soil air and soil water.",
+              "objective": "Identify physical properties of different soil types using measurements of particle size, porosity and water retention; determine experimentally the amounts of air, water and humus and the capillarity of different soils; relate soil characteristics, types and components to healthy plant growth."
+            },
+            {
+              "content": "Soil fertility: loss, renewal and maintenance; causes of fertility loss, including loss of inorganic matter, compaction, leaching, topsoil erosion and repeated cropping with one variety; conservation and fertility-enhancing practices, including contour ridging, terracing, mulching, polycropping, strip cropping, organic and inorganic fertilizers, crop rotation and shifting cultivation.",
+              "objective": "Relate soil-management practices to soil fertility; explain how inorganic matter loss, compaction, leaching, erosion and repeated monocropping reduce fertility; apply soil-conservation and fertility-maintenance methods."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Humans and the Environment",
+          "subtopics": [
+            {
+              "content": "Common and endemic diseases and easily transmissible diseases and syndromes, including poliomyelitis, cholera, tuberculosis and sexually transmitted diseases such as gonorrhoea, syphilis and AIDS. Other diseases include malaria, meningitis, dracunculiasis, schistosomiasis, onchocerciasis and typhoid fever.",
+              "objective": "Identify ecological conditions favouring the spread of common, endemic and potentially epidemic diseases; relate the biology of disease vectors or causative agents to disease spread and control; use knowledge of causative organisms, transmission modes and symptoms to explain prevention, treatment and control; apply inoculation and vaccination principles to disease prevention."
+            },
+            {
+              "content": "Drug abuse, drug addiction, commonly abused drugs and prevention of drug abuse.",
+              "objective": "Define drug abuse and addiction; list commonly abused drugs; state the effects of drug abuse on human health; explain methods of preventing drug abuse."
+            },
+            {
+              "content": "Pollution and its control: sources, types, effects and control methods for air, water and soil pollution; sanitation and sewage; solid-waste disposal, community health and personal hygiene.",
+              "objective": "Categorize pollution into air, water and soil pollution; relate common pollutants to human health and environmental degradation; determine methods of controlling pollutants; explain the importance of sanitation, solid-waste and sewage disposal, community health and personal hygiene."
+            },
+            {
+              "content": "Roles of national and international health agencies, including the World Health Organization (WHO), United Nations Children's Fund (UNICEF), International Red Cross Society (IRCS), and ministries of health and environment.",
+              "objective": "Assess the roles and functions of national and international health agencies in health promotion and disease control."
+            },
+            {
+              "content": "Conservation of renewable and non-renewable natural resources; environmental protection for present and future generations; prevention of desertification; national and international conservation bodies, including Nigerian Conservation Foundation (NCF), Federal Ministry of Environment, Nigeria National Parks, World Wide Fund for Nature (WWF), International Union for Conservation of Nature (IUCN) and United Nations Environment Programme (UNEP).",
+              "objective": "Apply methods of conserving renewable and non-renewable resources; outline the benefits of conservation and prevention of desertification; identify national and international conservation bodies and describe their activities."
+            },
+            {
+              "content": "Game reserves and national parks in Nigeria: their locations and importance.",
+              "objective": "Identify and state the locations and importance of game reserves and national parks in Nigeria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "D: Heredity and Variations",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Variation in Population",
+          "subtopics": [
+            {
+              "content": "Morphological variation in physical appearance: size, including height and weight; colour, including skin, eyes, hair, animal coats, scales and feathers; fingerprints.",
+              "objective": "Differentiate continuous and discontinuous variation with examples; relate environmental conditions, habitat and genetic constitution to variation; measure heights and weights of pupils of the same age group; plot frequency-distribution graphs of heights and weights; observe and record colour patterns in plants and animals; apply fingerprint classification in identity detection."
+            },
+            {
+              "content": "Physiological variation: ability to roll the tongue, ability to taste phenylthiocarbamide (PTC), and blood groups; applications of discontinuous variation in crime detection, blood transfusion and determination of paternity.",
+              "objective": "Identify specific examples of physiological variation in humans; categorize people according to physiological variation; apply knowledge of blood groups to blood transfusion and paternity determination; use discontinuous variation in crime detection."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Heredity",
+          "subtopics": [
+            {
+              "content": "Inheritance of characters in organisms; heritable and non-heritable characters; chromosomes as the basis of heredity; chromosome structure; transmission of hereditary characters from parents to offspring.",
+              "objective": "Determine heritable and non-heritable characters with examples; illustrate the simple structure of DNA; explain how hereditary characters are transmitted from parents to offspring."
+            },
+            {
+              "content": "Segregation of genes during meiosis and recombination of genes at fertilization; probability in genetics and sex determination; analysis of cross-breeding experiments.",
+              "objective": "Illustrate gene segregation during meiosis and gene recombination at fertilization; deduce that genes segregate during gamete formation and recombine randomly at fertilization; analyse data from cross-breeding experiments."
+            },
+            {
+              "content": "Applications of heredity in agriculture and medicine; advantages and disadvantages of outbreeding and inbreeding; genetically modified organisms (GMOs), gene therapy and biosafety; marriage counselling with reference to blood grouping, sickle-cell anaemia and Rhesus factors.",
+              "objective": "Apply heredity principles to produce new crop varieties and livestock through crossbreeding; deduce advantages and disadvantages of outbreeding and inbreeding; analyse basic issues relating to GMOs, gene therapy and biosafety; apply heredity knowledge in marriage counselling, particularly regarding blood groups, sickle-cell anaemia and Rhesus factors."
+            },
+            {
+              "content": "Sex-linked characters, including baldness, haemophilia and colour blindness; recombinant DNA materials used to produce medical products such as insulin, interferon and enzymes.",
+              "objective": "Identify sex-linked characters; describe the significance of recombinant DNA in producing important medical products such as insulin, interferon and enzymes."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Biotechnology",
+          "subtopics": [
+            {
+              "content": "Definition and applications of biotechnology in agriculture, medicine, pharmaceuticals and the food industry.",
+              "objective": "Define biotechnology; list applications of biotechnology in agriculture, medicine, pharmaceuticals and the food industry."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "E: Evolution",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Theories of Evolution",
+          "subtopics": [
+            {
+              "content": "Lamarck's theory of evolution; Darwin's theory of evolution; organic evolution.",
+              "objective": "Explain organic evolution as the sum total of adaptive changes occurring over long periods, resulting in diversity of forms, structures and functions among organisms; explain the contributions of Lamarck and Darwin to evolutionary theory."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Evidence of Evolution",
+          "subtopics": [
+            {
+              "content": "Evidence for organic evolution, including fossil records, comparative anatomy, physiology and embryology; evolutionary trends in plants and animals; modern evolutionary evidence from genetic studies and the role of mutation.",
+              "objective": "State evidence supporting organic evolution; describe evidence from fossils, comparative anatomy, physiology and embryology; trace evolutionary trends in plants and animals; state evidence supporting modern evolutionary theories, including genetic studies and mutation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

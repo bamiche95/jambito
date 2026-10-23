@@ -1,0 +1,950 @@
+
+{
+  "subject": "Commerce",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Commerce",
+          "subtopics": [
+            {
+              "content": "Basic knowledge of Commerce.",
+              "objective": "Acquire the basic knowledge of Commerce."
+            },
+            {
+              "content": "Relationship between Commerce and other related fields.",
+              "objective": "Examine the relationship between Commerce and other related fields."
+            },
+            {
+              "content": "Principles of Commerce in the Nigerian economy.",
+              "objective": "Apply the principles of Commerce in the Nigerian economy."
+            },
+            {
+              "content": "Dynamic and positive changes in commercial activities.",
+              "objective": "Appreciate dynamic and positive changes in commercial activities."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 1: Commerce",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Commerce",
+          "subtopics": [
+            {
+              "content": "Meaning of e-commerce and e-business.",
+              "objective": "Identify the functions of e-commerce and e-business."
+            },
+            {
+              "content": "Meaning and scope of Commerce.",
+              "objective": "Differentiate between Commerce and other related subjects."
+            },
+            {
+              "content": "Characteristics of Commerce.",
+              "objective": "Describe the characteristics of Commerce."
+            },
+            {
+              "content": "Functions of Commerce.",
+              "objective": "Identify the functions of Commerce."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 2: Occupation",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Occupation",
+          "subtopics": [
+            {
+              "content": "Meaning and importance of occupation.",
+              "objective": "State the importance of occupation."
+            },
+            {
+              "content": "Types of occupation: industrial, commercial and services.",
+              "objective": "Compare the different types of occupation."
+            },
+            {
+              "content": "Factors that determine the choice of occupation.",
+              "objective": "Identify the factors determining the choice of occupation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 3: Production",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Factors of Production",
+          "subtopics": [
+            {
+              "content": "Factors of production: land, labour, capital and entrepreneur.",
+              "objective": "Identify the factors of production and their rewards."
+            },
+            {
+              "content": "Characteristics and rewards of land, labour, capital and entrepreneur.",
+              "objective": "Identify the factors of production and their rewards."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Division of Labour and Specialization",
+          "subtopics": [
+            {
+              "content": "Meaning and principles of division of labour and specialization.",
+              "objective": "Distinguish between division of labour and specialization."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Types of Production",
+          "subtopics": [
+            {
+              "content": "Primary, secondary and tertiary production.",
+              "objective": "Classify the types of production."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Production, Specialization and Exchange",
+          "subtopics": [
+            {
+              "content": "Relationship between production, specialization and exchange.",
+              "objective": "State the relationship between production, specialization and exchange."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 4: Trade",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Home Trade: Retail Trade",
+          "subtopics": [
+            {
+              "content": "Types of retail trade.",
+              "objective": "Compare the various types of retail trade."
+            },
+            {
+              "content": "Functions of retailers.",
+              "objective": "Identify the functions of retailers."
+            },
+            {
+              "content": "Factors to be considered when setting up a retail trade.",
+              "objective": "Highlight the factors to consider when setting up retail trade."
+            },
+            {
+              "content": "Trends in retailing, including branding, self-service, vending machines, luncheon vouchers and fuel vouchers.",
+              "objective": "Classify modern retailing practices."
+            },
+            {
+              "content": "Advantages and disadvantages of retailers.",
+              "objective": "Identify the advantages and disadvantages of retail business."
+            },
+            {
+              "content": "Reasons for the success or failure of retail trade.",
+              "objective": "Explain the success or failure of retail trade."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Home Trade: Wholesale Trade",
+          "subtopics": [
+            {
+              "content": "Types of wholesalers, including merchant, agent and general wholesalers.",
+              "objective": "Classify the types of wholesalers."
+            },
+            {
+              "content": "Channels of distribution.",
+              "objective": "Identify the channels of distribution."
+            },
+            {
+              "content": "Functions of wholesalers.",
+              "objective": "Discuss the functions of wholesalers."
+            },
+            {
+              "content": "Advantages and disadvantages of wholesalers and middlemen.",
+              "objective": "Outline the merits and demerits of the middleman."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Foreign Trade",
+          "subtopics": [
+            {
+              "content": "Types of foreign trade.",
+              "objective": "Compare the various types of foreign trade."
+            },
+            {
+              "content": "Basic issues in foreign trade, including balance of trade, balance of payments and counter trade.",
+              "objective": "Analyse the basic issues in foreign trade."
+            },
+            {
+              "content": "Procedures and documents used in export, import and entrepôt trade.",
+              "objective": "Explain the procedures and documents used in foreign trade."
+            },
+            {
+              "content": "Barriers to international trade.",
+              "objective": "Identify the barriers to international trade."
+            },
+            {
+              "content": "Tariffs and reasons for their imposition.",
+              "objective": "State the various tariffs and the reasons for their imposition."
+            },
+            {
+              "content": "Tools for trade restriction and export promotion.",
+              "objective": "Identify the tools for trade restriction and export promotion."
+            },
+            {
+              "content": "Roles of the Customs and Excise Authority, Ports Authority and other government agencies in foreign trade.",
+              "objective": "Appraise the roles of government agencies in foreign trade."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 5: Purchase and Sale of Goods",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Procedures and Documentation",
+          "subtopics": [
+            {
+              "content": "Documents and procedures used in purchasing and selling goods, including enquiry, quotation, order, invoice, proforma invoice, statement of accounts, indent, consular invoice, bill of lading, certificate of origin and consignment note.",
+              "objective": "Examine the procedures and documents used in the purchase and sale of goods."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Terms of Trade",
+          "subtopics": [
+            {
+              "content": "Trade discount, quantity discount, cash discount, warranties, C.O.D., C.I.F., F.O.B. and E.O.E.",
+              "objective": "Determine the terms of trade."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Terms of Payment",
+          "subtopics": [
+            {
+              "content": "Cash payment, including spot and prompt payment.",
+              "objective": "Distinguish between cash and credit forms of payment."
+            },
+            {
+              "content": "Credit: meaning, types, functions, merits and demerits.",
+              "objective": "Explain the meaning and types of credit and analyse the merits and demerits of credit transactions."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Means of Payment",
+          "subtopics": [
+            {
+              "content": "Legal tender, including bank notes and coins; cheques; standing orders; bank drafts; stamps; postal orders; money orders; bills of exchange; promissory notes; mail transfers; traveller's cheques; telegraphic transfers; electronic payments and recharge cards.",
+              "objective": "Identify the various means of payment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 6: Aids-to-Trade",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Advertising",
+          "subtopics": [
+            {
+              "content": "Meaning and roles of advertising.",
+              "objective": "Explain the meaning and role of advertising."
+            },
+            {
+              "content": "Types, media and methods of advertising.",
+              "objective": "Identify the different types of advertising, its media and methods."
+            },
+            {
+              "content": "Advantages and disadvantages of advertising.",
+              "objective": "Analyse the advantages and disadvantages of advertising."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Banking",
+          "subtopics": [
+            {
+              "content": "Types of banks.",
+              "objective": "Categorize the different types of banks."
+            },
+            {
+              "content": "Services rendered by banks.",
+              "objective": "Assess the services rendered by banks."
+            },
+            {
+              "content": "Challenges facing banks.",
+              "objective": "Identify the challenges facing banks."
+            },
+            {
+              "content": "Electronic banking (e-banking).",
+              "objective": "Explain e-banking."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Communication",
+          "subtopics": [
+            {
+              "content": "Communication process and procedures.",
+              "objective": "Assess the different stages in the communication process."
+            },
+            {
+              "content": "Types of communication.",
+              "objective": "Analyse the types of communication."
+            },
+            {
+              "content": "Trends in communication, including courier services and GSM.",
+              "objective": "Appraise the contributions of courier services, GSM and related developments to businesses."
+            },
+            {
+              "content": "Merits and demerits of communication.",
+              "objective": "State the merits and demerits of communication."
+            },
+            {
+              "content": "Barriers to communication.",
+              "objective": "Outline the barriers to communication."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Insurance",
+          "subtopics": [
+            {
+              "content": "Types of insurance.",
+              "objective": "Describe the types of insurance."
+            },
+            {
+              "content": "Principles of insurance.",
+              "objective": "Apply the principles of insurance to life situations."
+            },
+            {
+              "content": "Terms used in insurance.",
+              "objective": "Explain the terms used in insurance."
+            },
+            {
+              "content": "Importance of insurance.",
+              "objective": "State the importance of insurance."
+            },
+            {
+              "content": "Types of risk in insurance.",
+              "objective": "Identify the different types of risk in insurance."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Tourism",
+          "subtopics": [
+            {
+              "content": "Meaning and forms of tourism.",
+              "objective": "Explain the meaning and forms of tourism."
+            },
+            {
+              "content": "Importance of tourism.",
+              "objective": "Examine the importance of tourism."
+            },
+            {
+              "content": "Agencies that promote tourism in Nigeria.",
+              "objective": "Identify the agencies that promote tourism in Nigeria."
+            },
+            {
+              "content": "Challenges facing tourism in Nigeria.",
+              "objective": "Analyse the challenges facing tourism in Nigeria."
+            },
+            {
+              "content": "Tourist centres in Nigeria.",
+              "objective": "Identify the various tourist centres in Nigeria."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Transportation",
+          "subtopics": [
+            {
+              "content": "Modes of transportation.",
+              "objective": "Appraise the relevance of the various modes of transportation."
+            },
+            {
+              "content": "Importance of transportation.",
+              "objective": "List the importance of transportation."
+            },
+            {
+              "content": "Advantages and disadvantages of transportation.",
+              "objective": "Discuss the advantages and disadvantages of transportation."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Warehousing",
+          "subtopics": [
+            {
+              "content": "Importance of warehousing.",
+              "objective": "Highlight the importance of warehousing."
+            },
+            {
+              "content": "Types and functions of warehouses.",
+              "objective": "Appraise the contributions of warehouses to businesses."
+            },
+            {
+              "content": "Factors to be considered when siting a warehouse.",
+              "objective": "Evaluate the factors that determine the siting of warehouses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 7: Business Units",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Forms and Features of Business Units",
+          "subtopics": [
+            {
+              "content": "Forms and features of sole proprietorships, partnerships, limited liability companies, public corporations and cooperative societies.",
+              "objective": "Identify the forms and features of business units."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Registration of Businesses",
+          "subtopics": [
+            {
+              "content": "Procedures for registering businesses.",
+              "objective": "Analyse the procedures for registering businesses."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Choice of Business Units",
+          "subtopics": [
+            {
+              "content": "Factors determining the choice of business units.",
+              "objective": "Examine the factors that determine the choice of business units."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Dissolution and Liquidation",
+          "subtopics": [
+            {
+              "content": "Dissolution and liquidation of businesses.",
+              "objective": "Differentiate between dissolution and liquidation of a business."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Merits and Demerits of Business Units",
+          "subtopics": [
+            {
+              "content": "Advantages and disadvantages of different business units.",
+              "objective": "State the merits and demerits of business units."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Government Ownership of Public Enterprises",
+          "subtopics": [
+            {
+              "content": "Reasons for government ownership of public enterprises.",
+              "objective": "State the reasons for government ownership of public enterprises."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 8: Financing Business",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Sources of Business Finance",
+          "subtopics": [
+            {
+              "content": "Sources of finance, including personal savings, sale of shares and bonds, loans, debentures, mortgages, bank overdrafts, ploughing back of profits, credit purchases and leasing.",
+              "objective": "Identify the various ways of financing a business."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Types of Capital",
+          "subtopics": [
+            {
+              "content": "Share capital, capital owned, authorized capital, issued capital, called-up capital, paid-up capital, liquid capital, working capital and owners' equity.",
+              "objective": "Discuss the different types of capital."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Calculation of Capital, Profits and Turnover",
+          "subtopics": [
+            {
+              "content": "Calculation of different forms of capital, gross profit, net profit and turnover.",
+              "objective": "Compute the different forms of capital, profits and turnover."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Problems of Sourcing Finance",
+          "subtopics": [
+            {
+              "content": "Problems associated with sourcing finance for businesses.",
+              "objective": "Appraise the problems associated with sourcing finances for business."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Bureau de Change",
+          "subtopics": [
+            {
+              "content": "Role of Bureau de change in an economy.",
+              "objective": "Assess the role of Bureau de change in an economy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 9: Trade Associations",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Trade and Manufacturers' Associations",
+          "subtopics": [
+            {
+              "content": "Objectives and functions of trade and manufacturers' associations, including Cocoa Farmers' Association, Garri Sellers' Association and Poultry Farmers' Association.",
+              "objective": "Discuss the objectives and functions of trade and manufacturers' associations."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Chambers of Commerce",
+          "subtopics": [
+            {
+              "content": "Objectives and functions of Chambers of Commerce.",
+              "objective": "List the objectives and functions of Chambers of Commerce."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Business Combinations and Mergers",
+          "subtopics": [
+            {
+              "content": "Forms of business combination and merger.",
+              "objective": "Explain the different forms of business combination and merger."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 10: Money",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Evolution of Money",
+          "subtopics": [
+            {
+              "content": "Origin and evolution of money.",
+              "objective": "Discuss the origin of money."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Forms and Qualities of Money",
+          "subtopics": [
+            {
+              "content": "Forms and qualities of money.",
+              "objective": "Analyse the forms and qualities of money."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Functions of Money",
+          "subtopics": [
+            {
+              "content": "Functions of money.",
+              "objective": "Appraise the functions of money."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 11: Stock Exchange",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Importance and Functions of the Stock Exchange",
+          "subtopics": [
+            {
+              "content": "Importance and functions of the Stock Exchange.",
+              "objective": "State the importance and functions of the Stock Exchange."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Types of Securities",
+          "subtopics": [
+            {
+              "content": "Stocks, shares, bonds, debentures and other securities traded on the Stock Exchange.",
+              "objective": "Identify the different securities traded on the Stock Exchange."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Stock Exchange Transactions and Speculations",
+          "subtopics": [
+            {
+              "content": "Procedures for transactions and speculations on the Stock Exchange.",
+              "objective": "Analyse the procedures for transactions and speculations on the Stock Exchange."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Second-Tier Securities Market",
+          "subtopics": [
+            {
+              "content": "Listing requirements, types of companies eligible for the market, advantages and operating regulations of the Second-Tier Securities Market.",
+              "objective": "Appraise the advantages and operating regulations of the market."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 12: Elements of Business Management",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Functions of Management",
+          "subtopics": [
+            {
+              "content": "Planning, organizing, staffing, coordinating, motivating, communicating and controlling.",
+              "objective": "Appraise the functions of management."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Principles of Management",
+          "subtopics": [
+            {
+              "content": "Principles of management, including span of control, unity of command and delegation of authority.",
+              "objective": "Analyse the principles of management."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Organizational Structure",
+          "subtopics": [
+            {
+              "content": "Line, line-and-staff, functional, matrix and committee organizational structures.",
+              "objective": "Identify organizational structures."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Functional Areas of Business",
+          "subtopics": [
+            {
+              "content": "Production, marketing, finance and personnel.",
+              "objective": "Assess the functional areas of business."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Business Resources",
+          "subtopics": [
+            {
+              "content": "Man, money, materials, machines and opportunities or goodwill as business resources.",
+              "objective": "Examine business resources."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 13: Elements of Marketing",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Importance and Functions of Marketing",
+          "subtopics": [
+            {
+              "content": "Importance and functions of marketing.",
+              "objective": "Highlight the importance and functions of marketing."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Marketing Concept",
+          "subtopics": [
+            {
+              "content": "Consumer orientation, customer satisfaction and integrated marketing.",
+              "objective": "Discuss the marketing concept."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Marketing Mix",
+          "subtopics": [
+            {
+              "content": "Product, price, place and promotion.",
+              "objective": "Assess the elements of the marketing mix."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Market Segmentation",
+          "subtopics": [
+            {
+              "content": "Meaning and principles of market segmentation.",
+              "objective": "Explain market segmentation."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Public Relations and Customer Service",
+          "subtopics": [
+            {
+              "content": "Public relations and customer service in business.",
+              "objective": "Examine public relations and customer service."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "E-marketing",
+          "subtopics": [
+            {
+              "content": "Electronic marketing and its application in business.",
+              "objective": "Explain e-marketing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 14: Legal Aspects of Business",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Simple Contract",
+          "subtopics": [
+            {
+              "content": "Meaning and validity of a simple contract.",
+              "objective": "Analyse the elements and validity of a simple contract."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Agency and Business Legislation",
+          "subtopics": [
+            {
+              "content": "Agency, the Sale of Goods Act and the Hire Purchase Act.",
+              "objective": "Examine agency, the Sale of Goods Act and the Hire Purchase Act."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Contract of Employment",
+          "subtopics": [
+            {
+              "content": "Contracts of employment and the rights and obligations of employers and employees.",
+              "objective": "Assess the rights and obligations of employers and employees."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Government Regulation of Business",
+          "subtopics": [
+            {
+              "content": "Government regulation of business, including business registration, patents, trademarks and copyrights.",
+              "objective": "Distinguish between patents, trademarks and copyrights."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Consumer Protection",
+          "subtopics": [
+            {
+              "content": "Consumer protection through government legislation and agencies, including the Standards Organisation, Trade Descriptions Act, Consumer Protection Council, NAFDAC, NDLEA, and Customs and Excise.",
+              "objective": "Identify the functions of consumerism."
+            },
+            {
+              "content": "Consumer protection legislation and regulatory agencies responsible for safe goods and drugs.",
+              "objective": "Assess the relevance of regulatory agencies and acts in the provision of safe goods and drugs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 15: Commodity Exchange",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning of Commodity Exchange",
+          "subtopics": [
+            {
+              "content": "Meaning of commodity exchange.",
+              "objective": "Explain the meaning of commodity exchange."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Types of Tradable Commodities",
+          "subtopics": [
+            {
+              "content": "Agricultural produce, solid minerals, oil and gas.",
+              "objective": "Highlight the types of tradable commodities."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Requirements for Trading",
+          "subtopics": [
+            {
+              "content": "Grading systems, warehousing, clearing systems and standardization.",
+              "objective": "List the requirements for trading."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Methods of Trading",
+          "subtopics": [
+            {
+              "content": "Open outcry and electronic trading mechanisms.",
+              "objective": "Discuss the methods of trading."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Benefits of Commodity Exchange",
+          "subtopics": [
+            {
+              "content": "Benefits of commodity exchange.",
+              "objective": "Enumerate the benefits of commodity exchange."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Constraints to Commodity Trading",
+          "subtopics": [
+            {
+              "content": "Constraints and challenges affecting commodity trading.",
+              "objective": "Analyse the constraints to commodity trading."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 16: Business Environment and Social Responsibility",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Business Environment",
+          "subtopics": [
+            {
+              "content": "Legal, political, economic, social, cultural and technological environments.",
+              "objective": "Discuss the types of business environment."
+            },
+            {
+              "content": "The role of the social environment in providing safe products.",
+              "objective": "Assess the role of the social environment in the provision of safe products."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Social Responsibility",
+          "subtopics": [
+            {
+              "content": "Safe products, philanthropy and societal considerations in business.",
+              "objective": "Assess the role of social considerations in the provision of safe products."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pollution and Business",
+          "subtopics": [
+            {
+              "content": "Types of pollution, including water, air and land pollution, and their implications for businesses.",
+              "objective": "Identify the different types of pollution and their implications for businesses."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

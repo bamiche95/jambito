@@ -1,0 +1,290 @@
+
+{
+  "subject": "Yorùbá",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension",
+          "subtopics": [
+            {
+              "content": "(i) Prose",
+              "objective": "(i) Identify central issues in a passage and draw appropriate conclusions; (ii) determine basic assumptions and express ideas; and (iii) identify the meanings and functions of given phrases and sentences."
+            },
+            {
+              "content": "(ii) Verse",
+              "objective": "(i) Identify central issues in a passage and draw appropriate conclusions; (ii) determine basic assumptions and express ideas; and (iii) identify the meanings and functions of given phrases and sentences."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Essay Writing",
+          "subtopics": [
+            {
+              "content": "(i) Argumentative essay",
+              "objective": "(i) Identify different types of essay; and (ii) apply different types of techniques associated with each type."
+            },
+            {
+              "content": "(ii) Descriptive essay",
+              "objective": "(i) Identify different types of essay; and (ii) apply different types of techniques associated with each type."
+            },
+            {
+              "content": "(iii) Narrative essay",
+              "objective": "(i) Identify different types of essay; and (ii) apply different types of techniques associated with each type."
+            },
+            {
+              "content": "(iv) Letter writing (formal and informal) etc.",
+              "objective": "(i) Identify different types of essay; and (ii) apply different types of techniques associated with each type."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Sound System",
+          "subtopics": [
+            {
+              "content": "(i) Production of sounds (consonants and vowels)",
+              "objective": "(i) Identify organs of speech, speech sounds and parameters for describing each speech sound; (iia) determine their correct usages; and (iib) detect linguistic errors (pronunciations and wrong usages)."
+            },
+            {
+              "content": "(ii) Tones and tone change",
+              "objective": "(i) Identify organs of speech, speech sounds and parameters for describing each speech sound; (iia) determine their correct usages; (iib) detect linguistic errors (pronunciations and wrong usages); and (iv) demonstrate knowledge of the basic principles underlying the relationship between sounds."
+            },
+            {
+              "content": "(iii) Syllable structure",
+              "objective": "(iii) Determine the syllable components of words."
+            },
+            {
+              "content": "(iv) Sound processes: co-vowel occurrence, elision, deletion, etc.",
+              "objective": "(iv) Demonstrate knowledge of the basic principles underlying the relationship between sounds."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Grammar",
+          "subtopics": [
+            {
+              "content": "(i) Morphology – word formation",
+              "objective": "(i) Demonstrate good knowledge of word derivation."
+            },
+            {
+              "content": "(ii) Loan-word integration",
+              "objective": "(ii) Demonstrate knowledge of word adoption."
+            },
+            {
+              "content": "(iii) Word classes – nouns, verbs, adjectives, adverbs, pronouns, conjunctions, prepositions, etc.",
+              "objective": "(iii) Identify the appropriate class a word belongs to."
+            },
+            {
+              "content": "(iv) Phrases and clauses – types and functions",
+              "objective": "(iv) Demonstrate knowledge and understanding of Yorùbá syntax."
+            },
+            {
+              "content": "(v) Sentences – types, structures and functions",
+              "objective": "(v) Identify the types, structures and functions of sentences."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Current Orthography",
+          "subtopics": [
+            {
+              "content": "Current Yorùbá orthography",
+              "objective": "Candidates should be able to present ideas in acceptable written form."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Translation",
+          "subtopics": [
+            {
+              "content": "Translation of sentences and ideas",
+              "objective": "Interpret sentences and ideas in accordance with acceptable principles."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature",
+      "topics": [
+        {
+          "id": 7,
+          "title": "Oral Literature – Prose (Ìtàn Àròsọ)",
+          "subtopics": [
+            {
+              "content": "Babálọlá, A. (2023). Àkójọpọ̀ Àlọ́ Ìjàpá (Apá Kejì). Ìbàdàn: University Press Plc.",
+              "objective": "(i) Identify central issues, problems and the component parts of ideas presented in the work of art; (ii) draw moral lessons from the text; (iii) identify the figurative and idiomatic expressions in the text; and (iv) draw appropriate conclusions."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Oral Literature – Drama (Eré Oníṣe)",
+          "subtopics": [
+            {
+              "content": "Ògúnníran, L. (2022). Ẹ̀égún Aláré. Ìbàdàn: Golden Pen Publishers.",
+              "objective": "(i) Identify the type of drama; (ii) extract the narrative techniques in the drama; (iii) identify the figurative and idiomatic expressions in the drama; (iv) identify the central theme of the work; and (v) interpret the work in accordance with acceptable principles of society."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Written Literature – Prose (Ìtàn Àròsọ)",
+          "subtopics": [
+            {
+              "content": "Ìṣọ̀lá, A. (2023). Ògún Ọmọdé. Ìbàdàn: University Press Plc.",
+              "objective": "(i) Demonstrate good knowledge of ideas in the work of art; (ii) draw moral lessons from the text; (iii) identify the narrative techniques in the text; and (iv) identify the figurative and idiomatic expressions in the text."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Written Literature – Poetry (Ewì)",
+          "subtopics": [
+            {
+              "content": "Adéwọlé, O. (2023). Èdè Abínibí àti Àwọn Àròfọ̀ Miìrán. Ìbàdàn: University Press Plc. Prescribed pages for 2026: pp. 1–50.",
+              "objective": "(i) Deduce the import of written works of art and genres; and (ii) identify the figurative and idiomatic expressions in the poem."
+            },
+            {
+              "content": "Adéwọlé, O. (2023). Èdè Abínibí àti Àwọn Àròfọ̀ Miìrán. Ìbàdàn: University Press Plc. Prescribed pages for 2027: pp. 51–83.",
+              "objective": "(i) Deduce the import of written works of art and genres; and (ii) identify the figurative and idiomatic expressions in the poem."
+            },
+            {
+              "content": "Adéwọlé, O. (2023). Èdè Abínibí àti Àwọn Àròfọ̀ Miìrán. Ìbàdàn: University Press Plc. Prescribed pages for 2028: pp. 84–116.",
+              "objective": "(i) Deduce the import of written works of art and genres; and (ii) identify the figurative and idiomatic expressions in the poem."
+            },
+            {
+              "content": "Adéwọlé, O. (2023). Èdè Abínibí àti Àwọn Àròfọ̀ Miìrán. Ìbàdàn: University Press Plc. Prescribed pages for 2029: pp. 117–152.",
+              "objective": "(i) Deduce the import of written works of art and genres; and (ii) identify the figurative and idiomatic expressions in the poem."
+            },
+            {
+              "content": "Adéwọlé, O. (2023). Èdè Abínibí àti Àwọn Àròfọ̀ Miìrán. Ìbàdàn: University Press Plc. Prescribed pages for 2030: pp. 153–216.",
+              "objective": "(i) Deduce the import of written works of art and genres; and (ii) identify the figurative and idiomatic expressions in the poem."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Written Literature – Drama (Eré Onítàn)",
+          "subtopics": [
+            {
+              "content": "Fádíyà, O. (2023). Òtẹ̀ Oyè. Ìbàdàn: Genius Books Publishers.",
+              "objective": "(i) Identify the central theme of the work; (ii) interpret the work in accordance with acceptable principles of society; (iii) identify types of drama; (iv) identify the figurative and idiomatic expressions in the drama; and (v) extract the narrative techniques in the drama."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture",
+      "topics": [
+        {
+          "id": 12,
+          "title": "Beliefs and Worldview (Èrò àti Ìgbàgbọ́)",
+          "subtopics": [
+            {
+              "content": "Olódùmarè, àkúdàáyà, ẹ̀mẹ̀rẹ̀, àjẹ́, àwọn irúnmọlẹ̀, etc.",
+              "objective": "Distinguish traditional practices and acceptable ways of life from modern and common-sense beliefs."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Social Organisation and Town Security (Ètò Ìṣẹ̀lú àti Ààbò Ìlú)",
+          "subtopics": [
+            {
+              "content": "Ẹgbẹ́ àti ọ̀gbà, oyè jíjẹ àti àwọn ìjòyè, ogun jíjà, etc.",
+              "objective": "Assess the functions and roles of individuals, chieftains and groups in ensuring peace, stability and continuity of society."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Funeral Practices and Inheritance (Ètò Ìsìnkú àti Ògún Pínpín)",
+          "subtopics": [
+            {
+              "content": "Òkú àgbà, òkú ọ̀fọ̀, òkú òòṣà, ìtúfọ̀, ilẹ̀ òkú gbígbẹ́, ìdì igi, mọ̀lẹ́bí, bàbá ìsìnkú, etc.",
+              "objective": "(i) Distinguish between traditional practices; and (ii) relate them to funerals and inheritance."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Yorùbá Numerals (Òǹkà Yorùbá)",
+          "subtopics": [
+            {
+              "content": "Counting from one to twenty thousand (1–20,000).",
+              "objective": "(i) Count in Yorùbá numerals; and (ii) apply addition, deduction and division methods in Yorùbá."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Marriage and Naming Ceremonies (Ètò Ìgbéyàwó àti Ìsọmọlórúkọ)",
+          "subtopics": [
+            {
+              "content": "All matters relating to marriage and naming ceremonies.",
+              "objective": "Relate social activities and events to appropriate situations."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Healthcare Practices (Ètò Ìwòsàn)",
+          "subtopics": [
+            {
+              "content": "Care of patients, care of pregnant women and childbirth practices (ìtọ́jú aláìsàn, ìtọ́jú àti ìgbẹ̀bí aboyún), etc.",
+              "objective": "Demonstrate knowledge of the best way of using appropriate healthcare practices."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Recreational Games (Eré Ìdárayá)",
+          "subtopics": [
+            {
+              "content": "(i) Moonlight games – àlọ́, bojúbojú, etc.",
+              "objective": "(i) Identify types of Yorùbá traditional games; (ii) identify rules and regulations guiding each game; and (iii) mention values derived from each game."
+            },
+            {
+              "content": "(ii) Daytime games – ìjàkadì, ayò, ọ̀kọ̀tó, àrìn, etc.",
+              "objective": "(i) Identify types of Yorùbá traditional games; (ii) identify rules and regulations guiding each game; and (iii) mention values derived from each game."
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Traditional Occupations and Yorùbá Foods (Iṣẹ́ Abínibí àti Oúnjẹ Ilẹ̀ Yorùbá)",
+          "subtopics": [
+            {
+              "content": "(i) Traditional occupations – farming, weaving, drumming, etc. (iṣẹ́-àgbẹ̀, aṣọ híhun, ìlù lílu).",
+              "objective": "(i) Demonstrate adequate knowledge of the various traditional professions; and (ii) compare various traditional professions."
+            },
+            {
+              "content": "(ii) Foods – àbàrà, iyán, ẹ̀wà, etc.",
+              "objective": "(iii) Demonstrate knowledge of preparing each type of Yorùbá food; and (iv) mention the nutritional values of each food."
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Home Education (Ẹ̀kọ́ Ilé)",
+          "subtopics": [
+            {
+              "content": "Ìwà ọmọlúàbí and its benefits.",
+              "objective": "Identify acceptable patterns of behaviour and attitude that conform with societal norms and values."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

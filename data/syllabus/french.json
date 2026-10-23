@@ -1,0 +1,248 @@
+{
+  "subject": "French",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Written Comprehension in French",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Written Comprehension in French",
+          "subtopics": [
+            {
+              "content": "Text 1 and Text 2 covering topics of general and emerging interest, such as love, life, death, politics, marriage, health, communication, child trafficking, cultism, travel, corruption, money-laundering, and other contemporary issues.",
+              "objective": "Deduce answers to questions on the content, intent, and style of the proposed texts (Text 1 and Text 2), and apply reasoning skills."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Principles Governing the Structure and Use of Written French",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Identification of Basic Form Classes",
+          "subtopics": [
+            {
+              "content": "Nouns: simple and compound nouns; singular and plural forms; masculine and feminine forms.",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Pronouns: personal, impersonal, demonstrative, possessive, and relative pronouns.",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Verbs: reflexive and non-reflexive verbs, their moods, and tenses.",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Adjectives: qualifying, possessive, interrogative, demonstrative, indefinite (e.g., nul), numeral (e.g., dix), and ordinal adjectives (e.g., dixième).",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Adverbs: common forms ending in -ment (e.g., lentement); adverbial expressions formed with a preposition and noun (e.g., par avion, à cheval, en voiture, par bateau); special forms (e.g., bien, vite, mal, mieux, le mieux, pire, le pis, ne…que); adverbs of manner (e.g., debout, facilement); purpose (e.g., pour + infinitive, afin de + infinitive); cause and consequence (e.g., pour + perfect infinitive, à cause de + noun); concession (e.g., malgré + noun); place (e.g., y, en, ici, là, là-haut, partout); and time (e.g., hier, aujourd’hui, avant-hier, après, demain, la veille, le matin, dans un mois).",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Prepositions: simple prepositions (e.g., à, de, avec, avant, sur, dans) and compound prepositions (e.g., à côté de, au milieu de).",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Conjunctions: coordinating conjunctions (e.g., mais, ou, et, donc, car, cependant, ne…ni) and subordinating conjunctions (e.g., afin que, quoique, à condition que, pour que, parce que).",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Articles: definite, indefinite, and partitive articles.",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Contraction of articles and prepositions, such as à + le = au and à + les = aux.",
+              "objective": "Identify the basic structures of written French, use the principles governing written French to determine acceptability and transform one form or class into another, and apply the structures to convey diverse messages."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Assessment of Vocabulary Span",
+          "subtopics": [
+            {
+              "content": "Words used in contemporary contexts, including their meanings, usage, opposites, and synonyms.",
+              "objective": "Identify the meanings of words, identify meaningful constructed sentences, and apply communicative skills."
+            },
+            {
+              "content": "Faux amis (false friends), such as librairie/library, rester/to rest, and blesser/to bless.",
+              "objective": "Identify the meanings of words, identify meaningful constructed sentences, and apply communicative skills."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Importance of Word Order",
+          "subtopics": [
+            {
+              "content": "Word order in affirmative sentences.",
+              "objective": "Identify meaningful constructed sentences and apply the principles governing the structure and use of written French."
+            },
+            {
+              "content": "Word order in interrogative sentences.",
+              "objective": "Identify meaningful constructed sentences and apply the principles governing the structure and use of written French."
+            },
+            {
+              "content": "Word order in imperative sentences.",
+              "objective": "Identify meaningful constructed sentences and apply the principles governing the structure and use of written French."
+            },
+            {
+              "content": "Word order in the formation of the passive voice.",
+              "objective": "Identify meaningful constructed sentences and apply the principles governing the structure and use of written French."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Identification and Application of Basic Processes in Language Structure",
+          "subtopics": [
+            {
+              "content": "Conjugation of verbs in all tenses except l’imparfait du subjonctif, le passé composé du subjonctif, and le plus-que-parfait du subjonctif.",
+              "objective": "Identify the basic structures of written French, use structural principles to determine acceptability, transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Negation, including ne…pas, ne…plus, ne…rien, nul ne, ne…ni…ni, ne…personne, personne…ne, aucun…ne, and rien ne…",
+              "objective": "Identify the basic structures of written French, use structural principles to determine acceptability, transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Agreement, including examples such as les beaux arts, il les a vues, and les photos.",
+              "objective": "Identify the basic structures of written French, use structural principles to determine acceptability, transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Pluralisation, including cheval/chevaux, beau/beaux, and belle/belles.",
+              "objective": "Identify the basic structures of written French, use structural principles to determine acceptability, transform one form or class into another, and apply the structures to convey diverse messages."
+            },
+            {
+              "content": "Derivation: from adjective to adverb (e.g., lent → lentement); from adjective to adjective (e.g., un → premier); from adjective to noun (e.g., bon → bonté, riche → richesse); and from one degree of comparison to another using plus…que, moins…que, and aussi…que (e.g., plus grand que). Special comparative and superlative forms include bon, meilleur, le meilleur, la meilleure, mauvais, pire, and le pire.",
+              "objective": "Identify the basic structures of written French, use structural principles to determine acceptability, transform one form or class into another, and apply the structures to convey diverse messages."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Use of French in Set Expressions",
+          "subtopics": [
+            {
+              "content": "Proverbs, such as tel père, tel fils and petit à petit l’oiseau fait son nid.",
+              "objective": "Complete common French proverbs and idioms, deduce their meanings, and make appropriate use of these special terms."
+            },
+            {
+              "content": "Idioms, such as avoir une faim de loup, crier sur le toit, and mourir de peur.",
+              "objective": "Complete common French proverbs and idioms, deduce their meanings, and make appropriate use of these special terms."
+            },
+            {
+              "content": "Conventional expressions used in common speech, such as enchanté, c’est dommage, c’est formidable, and stationnement interdit.",
+              "objective": "Complete common French proverbs and idioms, deduce their meanings, and make appropriate use of these special terms."
+            },
+            {
+              "content": "Common figures of speech, including metaphor (e.g., Mon père est un lion), simile (e.g., Elle est maigre comme un clou), and hyperbole (e.g., Il avait tellement faim qu’il a mangé toute une vache).",
+              "objective": "Deduce the meanings of common expressions and figures of speech and make appropriate use of these special terms in French."
+            },
+            {
+              "content": "Speech acts, including proposer, conseiller, regretter, admirer, espérer, interroger, reprocher, and s’accorder.",
+              "objective": "Complete common French proverbs and idioms, deduce their meanings, and make appropriate use of these special terms."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Workings of French Sounds",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Sound Discrimination",
+          "subtopics": [
+            {
+              "content": "Discrimination between similar French sounds, such as tout/tu and fais/fée.",
+              "objective": "Discriminate between French sounds, deduce meanings from sound combinations, and use sound discrimination to enhance effective communication."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Letter-Sound Correspondence",
+          "subtopics": [
+            {
+              "content": "Correspondence between letters or letter combinations and sounds, such as ai pronounced /e/ and eau pronounced /o/.",
+              "objective": "Discriminate between French sounds, deduce meanings from sound combinations, and use sound discrimination to enhance effective communication."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Syllabification",
+          "subtopics": [
+            {
+              "content": "Division of words into syllables, such as con/tente/ment.",
+              "objective": "Assess sound groupings in terms of syllabification, liaison, e-caduc, pauses, intonation, and other relevant features to enhance effective communication."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Liaison",
+          "subtopics": [
+            {
+              "content": "The linking of sounds between words, such as trois animaux and des enfants.",
+              "objective": "Assess sound groupings in terms of syllabification, liaison, e-caduc, pauses, intonation, and other relevant features to enhance effective communication."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Sense Groups in Reading",
+          "subtopics": [
+            {
+              "content": "Identification of sense groups and pauses in spoken or read French, as illustrated by J’ai mal à la tête. J’ai mal/pas à la tête/mais au dos. Comment vas-tu, Carol? Comment vas-tu demain?",
+              "objective": "Assess sound groupings in terms of syllabification, liaison, e-caduc, pauses, intonation, and other relevant features to enhance effective communication."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Identification of Sounds to Determine Similarity",
+          "subtopics": [
+            {
+              "content": "Identification and comparison of similar or contrasting sounds in words, such as maison/saison, dents/don, and fond/fonde.",
+              "objective": "Discriminate between French sounds, deduce meanings from sound combinations, use sound discrimination to enhance effective communication, and assess sound groupings in terms of syllabification, liaison, e-caduc, pauses, and intonation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Culture and Civilization",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Characteristics of Francophone Africa and France",
+          "subtopics": [
+            {
+              "content": "Characteristics, aspects, similarities, and differences of the educational systems of Francophone Africa and France, with reference to Nigeria where possible.",
+              "objective": "Identify specific cultural features of Francophone Africa and France, compare them with those of Nigeria where possible, and apply reasoning skills."
+            },
+            {
+              "content": "Socio-economic life in Francophone Africa and France, including greetings, dressing, food, leisure, marriage, festivals, art, and professions, with reference to Nigeria where possible.",
+              "objective": "Identify specific cultural features of Francophone Africa and France, compare them with those of Nigeria where possible, and apply reasoning skills."
+            },
+            {
+              "content": "Political organization in Francophone Africa and France, including its characteristics and relevant similarities and differences with Nigeria where possible.",
+              "objective": "Identify specific cultural and political features of Francophone Africa and France, compare them with those of Nigeria where possible, and apply reasoning skills."
+            },
+            {
+              "content": "Cultural life in Francophone Africa and France, including greetings, dressing, food, leisure, marriage, festivals, art, and professions, with reference to Nigeria where possible.",
+              "objective": "Identify specific cultural features of Francophone Africa and France, compare them with those of Nigeria where possible, and apply reasoning skills."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

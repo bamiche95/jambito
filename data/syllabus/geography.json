@@ -1,0 +1,539 @@
+
+{
+  "subject": "Geography",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section I: Practical Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Maps",
+          "subtopics": [
+            {
+              "content": "Different types of maps and their uses.",
+              "objective": "Define and identify different types of maps and explain their uses."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Scale and Measurement",
+          "subtopics": [
+            {
+              "content": "Scale and measurement of distances and areas; reduction and enlargement of maps; directions, bearings and gradients with reference to topographical maps.",
+              "objective": "Apply different types of scale to distance and area measurement; convert between scales; apply knowledge of scale to gradients, map reduction and enlargement; apply knowledge of directions and bearings to geographical features."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Map Reading and Interpretation",
+          "subtopics": [
+            {
+              "content": "Reading and interpreting topographical maps; drawing cross profiles; recognizing intervisibility; recognizing and describing physical and human features and their relationships as depicted on topographical maps.",
+              "objective": "Illustrate the relief of an area through profile drawing; interpret physical and human features from topographical maps; recognize relationships between physical and human features."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Interpretation of Statistical Data, Maps and Diagrams",
+          "subtopics": [
+            {
+              "content": "Quantitative information represented through statistical data, maps and diagrams.",
+              "objective": "Compute quantitative information from statistical data, diagrams and maps; interpret statistical data, diagrams and maps."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Elementary Surveying",
+          "subtopics": [
+            {
+              "content": "Chain and prismatic surveying; open and closed traverse; procedures, problems, advantages and disadvantages of surveying techniques.",
+              "objective": "Analyse the principles and procedures of each surveying technique; compare the advantages and disadvantages of chain and prismatic surveying and open and closed traverse."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Geographic Information System (GIS)",
+          "subtopics": [
+            {
+              "content": "GIS components, techniques, data sources and applications.",
+              "objective": "Understand GIS and its uses; understand its basic concepts and components."
+            },
+            {
+              "content": "Expressing locations using latitudes, longitudes, postcodes and other location references.",
+              "objective": "Express geographical locations through the use of latitudes, longitudes, postcodes and other location references."
+            },
+            {
+              "content": "Land surveying, remote sensing, map digitizing and map scanning as sources of geographical data.",
+              "objective": "Understand land surveying, remote sensing, map digitizing and map scanning as sources of geographical data."
+            },
+            {
+              "content": "Applications of GIS in defence, agriculture, rural development and other fields.",
+              "objective": "Explain areas of GIS application, including defence, agriculture and rural development."
+            },
+            {
+              "content": "Problems associated with GIS in Nigeria.",
+              "objective": "Identify problems associated with GIS in Nigeria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section II: Physical Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Earth as a Planet",
+          "subtopics": [
+            {
+              "content": "The Earth in the solar system; rotation and revolution of the Earth.",
+              "objective": "Identify the relative positions of the planets in the solar system; explain the effects of the Earth's rotation and revolution."
+            },
+            {
+              "content": "The shape and size of the Earth.",
+              "objective": "Provide evidence supporting the shape and size of the Earth."
+            },
+            {
+              "content": "Latitudes, distances, longitudes and time.",
+              "objective": "Differentiate between latitudes and longitudes; relate lines of latitude to distance calculation; relate lines of longitude to time calculation."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Earth's Crust",
+          "subtopics": [
+            {
+              "content": "The internal and external structure of the Earth and relationships among the Earth's spheres.",
+              "objective": "Compare the internal and external components of the Earth; understand relationships among the atmosphere, biosphere and hydrosphere in terms of energy balance and the water cycle."
+            },
+            {
+              "content": "Types, characteristics, modes of formation and uses of rocks.",
+              "objective": "Differentiate between major types of rocks and their characteristics; analyse rock formation processes and resulting features; identify the uses of rocks."
+            },
+            {
+              "content": "Earth movements and tectonic forces, including tensional and compressional forces.",
+              "objective": "Differentiate between tensional and compressional forces and identify the landforms resulting from them."
+            },
+            {
+              "content": "Major landforms, including mountains, plateaus, plains, coastal landforms, karst topography and desert landforms.",
+              "objective": "Identify and describe the major landforms."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Volcanism and Earthquakes",
+          "subtopics": [
+            {
+              "content": "Landforms associated with volcanic activities.",
+              "objective": "Explain the processes of volcanic eruptions and describe the landforms associated with volcanic activity."
+            },
+            {
+              "content": "Landforms formed from igneous rocks.",
+              "objective": "Describe landforms associated with volcanic eruptions and igneous rocks."
+            },
+            {
+              "content": "Origin and types of volcanoes.",
+              "objective": "Explain the processes of volcanic eruptions; describe the different landforms associated with volcanic activity."
+            },
+            {
+              "content": "Examples of major volcanic eruptions and earthquakes around the world.",
+              "objective": "Give examples of major volcanic eruptions and earthquakes in the world; explain the processes of volcanic eruptions and earthquakes."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Denudation Processes in the Tropics",
+          "subtopics": [
+            {
+              "content": "Weathering as a denudation process.",
+              "objective": "Identify the agents of denudation, including water, wind and waves; identify landforms associated with each process and agent."
+            },
+            {
+              "content": "Erosion and its agents.",
+              "objective": "Identify the agents of denudation and the landforms associated with each process and agent."
+            },
+            {
+              "content": "Mass movement.",
+              "objective": "Identify landforms associated with denudation processes and their agents."
+            },
+            {
+              "content": "Deposition and resulting landforms.",
+              "objective": "Identify landforms associated with each denudation process and agent."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Water Bodies",
+          "subtopics": [
+            {
+              "content": "Oceans and seas: world distribution, salinity and uses.",
+              "objective": "Locate oceans and seas on the globe; examine their characteristics and uses."
+            },
+            {
+              "content": "Ocean currents: types, distribution, causes and effects.",
+              "objective": "Classify the types of ocean currents; account for their distribution; evaluate their causes and effects."
+            },
+            {
+              "content": "Lakes: types, distribution and uses.",
+              "objective": "Identify the types and locations of lakes; describe their characteristics and uses."
+            },
+            {
+              "content": "The action of running water and the stages of a river course.",
+              "objective": "Identify landforms associated with the different stages of a river course."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Weather and Climate",
+          "subtopics": [
+            {
+              "content": "Concepts of weather and climate.",
+              "objective": "Differentiate between weather and climate."
+            },
+            {
+              "content": "Elements of weather and climate.",
+              "objective": "Identify the elements of weather and climate."
+            },
+            {
+              "content": "Factors controlling weather and climate, including pressure, air masses, altitude, continentality and winds.",
+              "objective": "Identify and explain the factors controlling weather and climate."
+            },
+            {
+              "content": "Classification of climate using the Greek and Köppen systems.",
+              "objective": "Compare the Greek and Köppen climate classifications."
+            },
+            {
+              "content": "Major climate types according to Köppen, including their characteristics and distribution.",
+              "objective": "Identify the major climate types according to Köppen and describe their characteristics and distribution."
+            },
+            {
+              "content": "Measurement and recording of weather parameters and the instruments used.",
+              "objective": "Relate weather instruments to their uses."
+            },
+            {
+              "content": "The basic science of climate change, including its definition, causes, effects and remedies.",
+              "objective": "Define climate change; understand its causes and effects; identify possible remedies."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Vegetation",
+          "subtopics": [
+            {
+              "content": "Factors controlling the growth of plants.",
+              "objective": "Identify and explain the factors controlling plant growth."
+            },
+            {
+              "content": "The concept of vegetation, including plant communities and succession.",
+              "objective": "Analyse the processes involved in vegetation development."
+            },
+            {
+              "content": "Major types of vegetation, their characteristics and distribution.",
+              "objective": "Identify the major vegetation types and describe their characteristics and distribution."
+            },
+            {
+              "content": "Impact of human activities on vegetation.",
+              "objective": "Assess the impact of human activities on vegetation."
+            },
+            {
+              "content": "Importance of vegetation.",
+              "objective": "Identify and explain the importance of vegetation."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Soils",
+          "subtopics": [
+            {
+              "content": "Definition and properties of soil.",
+              "objective": "Classify soils and describe their properties."
+            },
+            {
+              "content": "Factors and processes of soil formation.",
+              "objective": "Identify the factors responsible for soil formation."
+            },
+            {
+              "content": "Soil profiles and horizons, including their types and characteristics.",
+              "objective": "Differentiate between soil horizons and describe their characteristics."
+            },
+            {
+              "content": "Major tropical soil types, their characteristics, distribution and uses.",
+              "objective": "Compare major tropical soil types and their uses; account for the distribution and uses of soils."
+            },
+            {
+              "content": "Impact of human activities on soils.",
+              "objective": "Assess the impact of human activities on soils."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Environmental Resources",
+          "subtopics": [
+            {
+              "content": "Types of environmental resources, including atmospheric, land, soil, vegetation and mineral resources.",
+              "objective": "Interpret the concept of environmental resources; relate environmental resources to their uses."
+            },
+            {
+              "content": "Renewable and non-renewable resources.",
+              "objective": "Differentiate between renewable and non-renewable resources."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Environmental Interaction",
+          "subtopics": [
+            {
+              "content": "Components of the land ecosystem.",
+              "objective": "Identify the components of the land ecosystem."
+            },
+            {
+              "content": "Environmental balance and human interaction.",
+              "objective": "Establish relationships within the ecosystem; interpret the concept of environmental balance."
+            },
+            {
+              "content": "Effects of human activities on the land ecosystem.",
+              "objective": "Analyse the effects of human activities on the land ecosystem."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Environmental Hazards",
+          "subtopics": [
+            {
+              "content": "Natural hazards, including droughts, earthquakes, volcanic eruptions and flooding.",
+              "objective": "Identify natural hazards and their causes; locate major areas where environmental hazards are common and explain their effects."
+            },
+            {
+              "content": "Human-induced hazards, including soil erosion, deforestation, pollution, flooding and desertification.",
+              "objective": "Relate human-induced hazards to their causes; locate areas where hazards are common and describe their effects."
+            },
+            {
+              "content": "Effects, prevention and control of environmental hazards.",
+              "objective": "Recommend possible methods for preventing and controlling environmental hazards."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Environmental Conservation",
+          "subtopics": [
+            {
+              "content": "Need for and importance of environmental conservation.",
+              "objective": "Explain the need for and importance of environmental conservation with examples."
+            },
+            {
+              "content": "Resources available for environmental conservation.",
+              "objective": "Identify the resources available for conservation."
+            },
+            {
+              "content": "Methods of environmental conservation.",
+              "objective": "Discuss the different methods of environmental conservation."
+            },
+            {
+              "content": "Problems and difficulties associated with environmental conservation.",
+              "objective": "Explain the need for conservation and discuss issues affecting environmental conservation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section III: Human Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Population",
+          "subtopics": [
+            {
+              "content": "World population with particular reference to the Amazon Basin, northeastern USA, India, Japan and the west coast of Southern Africa.",
+              "objective": "Define different population concepts; identify population characteristics; determine the factors and patterns of population distribution."
+            },
+            {
+              "content": "Population characteristics, including birth and death rates and age-sex structure.",
+              "objective": "Identify population characteristics, including growth rates and population structure."
+            },
+            {
+              "content": "Factors and patterns of population distribution.",
+              "objective": "Determine the factors and patterns of population distribution."
+            },
+            {
+              "content": "Factors and problems of population growth.",
+              "objective": "Identify the factors and problems associated with population growth."
+            },
+            {
+              "content": "Types, causes and effects of migration.",
+              "objective": "Relate the types of migration to their causes and effects."
+            },
+            {
+              "content": "Population as a resource.",
+              "objective": "Explain the ways in which population constitutes a resource."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Settlement",
+          "subtopics": [
+            {
+              "content": "Settlement patterns in Western Europe, the USA, the Middle East and West Africa.",
+              "objective": "Differentiate between types of settlement, including rural and urban settlements."
+            },
+            {
+              "content": "Settlement types and patterns: rural and urban, dispersed, nucleated and linear.",
+              "objective": "Differentiate between settlement types; classify settlement patterns and functions."
+            },
+            {
+              "content": "Rural settlement: classification, factors of growth and functions.",
+              "objective": "Classify the patterns and functions of rural settlements."
+            },
+            {
+              "content": "Urban settlement: classification, factors of growth and functions.",
+              "objective": "Classify the patterns and functions of urban settlements."
+            },
+            {
+              "content": "Factors influencing settlement location.",
+              "objective": "Identify the factors influencing settlement location."
+            },
+            {
+              "content": "Problems of urban centres.",
+              "objective": "Identify the problems of urban centres."
+            },
+            {
+              "content": "Interrelationships between rural and urban settlements.",
+              "objective": "Establish the interrelationships between rural and urban settlements."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Selected Economic Activities",
+          "subtopics": [
+            {
+              "content": "Types of economic activities: primary, secondary, tertiary and quaternary.",
+              "objective": "Identify and differentiate between the types of economic activities."
+            },
+            {
+              "content": "Agriculture: types, systems, factors and problems.",
+              "objective": "Assess the importance and problems of agriculture as an economic activity."
+            },
+            {
+              "content": "Manufacturing industries: types, locational factors, distribution, socioeconomic importance and problems of industrialization in tropical Africa.",
+              "objective": "Compare types of manufacturing industries; identify factors of industrial location; examine the socioeconomic importance of manufacturing industries; explain problems of industrialization in tropical Africa."
+            },
+            {
+              "content": "Transportation and communication: types and roles in economic development, with particular reference to tropical Africa.",
+              "objective": "Differentiate between modes of transportation and communication; assess the economic importance of transportation; explain problems of transportation in tropical Africa."
+            },
+            {
+              "content": "World trade: factors and patterns of world trade; major commodities, their origins, routes and destinations.",
+              "objective": "Relate factors to patterns of world trade; classify major trade commodities according to origin, routes and destinations."
+            },
+            {
+              "content": "Tourism: definition, importance, location, problems and solutions.",
+              "objective": "Analyse tourism as an economic activity; identify problems of tourism and possible solutions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section IV: Regional Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Broad Outline of Nigeria",
+          "subtopics": [
+            {
+              "content": "Location, position, size, political divisions into states and peoples of Nigeria.",
+              "objective": "Describe the location, size and political divisions of Nigeria; identify ethnic groups and their distribution."
+            },
+            {
+              "content": "Nigeria's boundaries and neighbouring countries.",
+              "objective": "Identify the boundaries and neighbours of Nigeria."
+            },
+            {
+              "content": "Physical setting of Nigeria, including geology, relief, landforms, climate, drainage, vegetation and soils.",
+              "objective": "Relate the components of Nigeria's physical setting to their effects on human activities."
+            },
+            {
+              "content": "Population of Nigeria: size, distribution, migration types, migration problems and effects.",
+              "objective": "Account for patterns of population distribution; examine types of migration and their problems and effects."
+            },
+            {
+              "content": "Natural resources of Nigeria, including minerals, soils, water and vegetation; their types, distribution, uses and conservation.",
+              "objective": "Identify types of natural resources and their distribution; explain their uses and conservation."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Economic and Human Geography of Nigeria",
+          "subtopics": [
+            {
+              "content": "Agricultural systems in Nigeria, major crops produced and problems of agricultural development.",
+              "objective": "Compare farming systems practised in Nigeria; identify crops produced and problems encountered in agricultural development."
+            },
+            {
+              "content": "Manufacturing industries in Nigeria: location factors, types of products, marketing and associated problems.",
+              "objective": "Identify the types and locations of major manufacturing industries; determine factors of industrial location and problems associated with industries."
+            },
+            {
+              "content": "Transportation and communication: modes and their relative advantages and disadvantages.",
+              "objective": "Establish the relationship between transport and communication; relate their modes to their relative advantages and disadvantages."
+            },
+            {
+              "content": "Regional and international trade: commodities, advantages and disadvantages.",
+              "objective": "Classify major commodities involved in regional and international trade."
+            },
+            {
+              "content": "Tourism in Nigeria: definition, importance, tourist centres, problems and solutions.",
+              "objective": "Identify the importance of tourism and tourist centres; explain tourism problems and possible solutions."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Economic Community of West African States (ECOWAS)",
+          "subtopics": [
+            {
+              "content": "Meaning and objectives of ECOWAS.",
+              "objective": "State the meaning, purpose and objectives of ECOWAS."
+            },
+            {
+              "content": "Member states of ECOWAS and their locations.",
+              "objective": "Identify and locate the member countries of ECOWAS."
+            },
+            {
+              "content": "Purpose and mandate of ECOWAS.",
+              "objective": "Explain the purpose and mandate of the organization."
+            },
+            {
+              "content": "Advantages and disadvantages of ECOWAS.",
+              "objective": "Evaluate the prospects and problems of ECOWAS."
+            },
+            {
+              "content": "Problems of ECOWAS and possible solutions.",
+              "objective": "Evaluate the problems and prospects of ECOWAS and consider possible solutions."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

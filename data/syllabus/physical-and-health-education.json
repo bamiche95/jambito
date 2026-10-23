@@ -1,0 +1,741 @@
+
+{
+  "subject": "Physical and Health Education",
+  "exam": "JAMB",
+  "generalObjectives": [
+    "Acquire basic knowledge and practical skills in motor activities, fitness, body maintenance and self-awareness.",
+    "Acquire basic knowledge required to practise positive health habits and maintenance of health.",
+    "Understand the relationship between human movement and biological, physical and social sciences.",
+    "Appreciate the ecological relationship between humans and their environment with a view to preventing the spread of diseases.",
+    "Stimulate and sustain interest in Physical and Health Education."
+  ],
+  "sections": [
+    {
+      "sectionTitle": "Section A: Foundations and Principles of Physical and Health Education",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Principles, Meaning, Scope and Philosophy of Physical Education",
+          "subtopics": [
+            "Definition, nature, scope and objectives of Physical Education",
+            "Philosophy of the founding fathers of Physical Education: Hetherington, Dudley Sergent, Thomas Wood and John Dewey",
+            "History and development of Physical Education in ancient Greece, including Sparta and Athens, and Rome",
+            "History and development of Physical Education in Nigeria during the pre-colonial, colonial and post-colonial eras",
+            "Origin and development of ancient Greek festivals: Isthmian, Pythian, Nemean and Olympian"
+          ],
+          "objectives": [
+            "State the meaning, nature, objectives and scope of Physical Education.",
+            "Narrate the philosophy of the founding fathers of Physical Education.",
+            "Trace the historical development of Physical Education in ancient Greece, Rome and Nigeria.",
+            "Trace the origin and development of the ancient Greek festivals: Isthmian, Pythian, Nemean and Olympian."
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Philosophy, Objectives and Settings of Health Education",
+          "subtopics": [
+            "Meaning, philosophy and objectives of Health Education",
+            "Home-based Health Education",
+            "School-based Health Education",
+            "Community-based Health Education",
+            "Health facility-based Health Education",
+            "Workplace-based Health Education",
+            "Meaning of Health Promotion"
+          ],
+          "objectives": [
+            "Define Health Education.",
+            "State the philosophy and objectives of Health Education.",
+            "Differentiate between Health Promotion and Health Education."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Human Anatomy and Physiology in Relation to PHE",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Cells, Tissues and Systems of the Human Body",
+          "subtopics": [
+            "Structure and functions of a typical human cell",
+            "Types of cells and tissues: epithelial, connective, muscle and nerve",
+            "Cell division and differentiation: mitosis and meiosis",
+            "Organs and systems of the human body"
+          ],
+          "objectives": [
+            "Identify cell structures and their functions.",
+            "Identify types of cells, tissues, organs and systems in humans.",
+            "Differentiate between mitosis and meiosis.",
+            "Explain cell differentiation.",
+            "List organs and systems in the human body."
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Skeletal System",
+          "subtopics": [
+            "Axial and appendicular skeletons and their functions",
+            "Bones and joints involved in movement",
+            "Structure and types of bone",
+            "Structure and types of joint",
+            "Movements at the joints"
+          ],
+          "objectives": [
+            "Identify the structure of the human skeleton and its functions.",
+            "Identify the types of bones that make up the human skeleton.",
+            "Differentiate between types of joints using appropriate examples.",
+            "Identify the different kinds of movement permitted at joints."
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Muscular System",
+          "subtopics": [
+            "Major muscles of the body and their functions",
+            "Isometric and isotonic contractions"
+          ],
+          "objectives": [
+            "Identify by name and location the major muscles in humans.",
+            "State the functions of major muscles in humans.",
+            "Differentiate between isometric and isotonic contractions."
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Nervous System and Sense Organs",
+          "subtopics": [
+            "Structures and functions of the central nervous system: brain and spinal cord",
+            "Types of nerve: voluntary and involuntary, including simple reflex action",
+            "Skin: tactile or touch sense",
+            "Nose: olfactory or smell sense",
+            "Tongue: taste",
+            "Ear: auditory or hearing sense",
+            "Eye: sight"
+          ],
+          "objectives": [
+            "Identify the structures of the central nervous system.",
+            "Explain the functions of the central nervous system in the body.",
+            "State the types of nerve.",
+            "Describe reflex action with specific examples.",
+            "Describe the structure of the sense organs and their functions."
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Circulatory System",
+          "subtopics": [
+            "Structure and functions of the heart and blood vessels",
+            "Composition and functions of blood",
+            "Types of blood circulation: systemic and pulmonary"
+          ],
+          "objectives": [
+            "Draw and label the heart.",
+            "Compare the specific functions of arteries, veins and capillaries.",
+            "Identify the components of blood.",
+            "State the functions of blood.",
+            "Describe systemic and pulmonary circulation."
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Respiratory System",
+          "subtopics": [
+            "Structure and functions of the respiratory organs: nose, trachea and lungs",
+            "Processes of respiration: inspiration and expiration",
+            "Tissue and cellular respiration"
+          ],
+          "objectives": [
+            "Describe the structure of the respiratory organs and state their functions.",
+            "Explain the processes of inspiration and expiration.",
+            "Explain cellular and tissue respiration."
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Excretory System",
+          "subtopics": [
+            "Structure and functions of the kidney",
+            "Structure and functions of the skin",
+            "Excretory functions of the lungs",
+            "Formation of excretory products: urine, sweat and carbon dioxide"
+          ],
+          "objectives": [
+            "Identify the structure of the kidney and skin.",
+            "State the functions of the kidney, skin and excretory functions of the lungs.",
+            "Explain the processes of formation of urine, sweat and carbon dioxide."
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Somatotypes and Posture",
+          "subtopics": [
+            "Description of endomorph, mesomorph and ectomorph",
+            "Relationship between body types and physical activities",
+            "Definition and characteristics of correct posture",
+            "Types of postural defects: flatfoot, scoliosis, kyphosis and lordosis",
+            "Causes and corrective measures of postural defects"
+          ],
+          "objectives": [
+            "Describe the various body types.",
+            "Relate body types to performance in physical activities.",
+            "Define and state the characteristics of good posture.",
+            "Explain the types of postural defects.",
+            "State the causes of postural defects, such as poor habits, accidents, heredity and disease.",
+            "Explain the role of exercise, nutrition, good habits and medical intervention in correcting postural defects."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Theory and Practice of Sports and Games",
+      "topics": [
+        {
+          "id": 11,
+          "title": "Athletics: Track Events",
+          "subtopics": [
+            "Short-distance races and sprints: 50 m, 100 m, 200 m and 400 m",
+            "Hurdles and relay races",
+            "Sprint starting styles: bullet or bunch, medium and elongated",
+            "Visual and non-visual baton take-over",
+            "Take-over zone in relay races",
+            "Flight over hurdles and spacing in high- and low-hurdle events",
+            "Start, stride and finish in middle-distance races: 800 m and 1,500 m",
+            "Start, stride and finish in long-distance races: 3,000 m, 5,000 m, 10,000 m, marathon and cross-country",
+            "Rules, regulations and officiating"
+          ],
+          "objectives": [
+            "Name the events that make up sprint races.",
+            "Identify starting styles in sprint races.",
+            "Differentiate between visual and non-visual baton take-over.",
+            "Explain the relay take-over zone.",
+            "Explain the different distances and clearance in hurdling.",
+            "Describe the start, stride and finish in middle- and long-distance races.",
+            "Name the events that make up middle- and long-distance races.",
+            "Differentiate the rules, regulations and officiating applicable to each track event."
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Athletics: Field Events",
+          "subtopics": [
+            "Throwing events: discus, javelin and shot put",
+            "Facilities and equipment with specifications for throwing events",
+            "Styles and techniques in throwing events",
+            "Rules, regulations and officiating in throwing events",
+            "Safety measures in throwing events",
+            "Jumping events: high jump, long jump, pole vault and triple jump",
+            "Facilities and equipment with specifications for jumping events",
+            "Styles and techniques in jumping events",
+            "Rules, regulations and officiating in jumping events"
+          ],
+          "objectives": [
+            "Name the events that make up throwing and jumping events.",
+            "Identify various facilities, equipment and specifications.",
+            "Explain the styles and techniques in throwing and jumping events.",
+            "Explain the rules and regulations in throwing and jumping events.",
+            "Discuss safety precautions in throwing events."
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Ball Games: Football and Basketball",
+          "subtopics": [
+            "Skills in football and basketball",
+            "Facilities and equipment in football and basketball",
+            "Rules, regulations and officiating in football and basketball"
+          ],
+          "objectives": [
+            "Describe the skills in football and basketball.",
+            "Identify the facilities and equipment used in football and basketball.",
+            "Identify the officials of football and basketball and their functions.",
+            "Differentiate between the rules and regulations of football and basketball."
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Racket Games: Table Tennis and Badminton",
+          "subtopics": [
+            "Skills in table tennis and badminton",
+            "Specifications of facilities and equipment in table tennis and badminton",
+            "Rules, regulations and officiating in table tennis and badminton"
+          ],
+          "objectives": [
+            "Describe the skills in table tennis and badminton.",
+            "Identify the facilities and equipment used in table tennis and badminton.",
+            "Identify the officials in table tennis and badminton and state their functions.",
+            "Differentiate between the rules and regulations of table tennis and badminton."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Food, Nutrition and Drugs",
+      "topics": [
+        {
+          "id": 15,
+          "title": "Food",
+          "subtopics": [
+            "Classes, sources and importance of food nutrients",
+            "Definition and composition of a balanced diet",
+            "Diet planning for children, adolescents, athletes, pregnant women and older people",
+            "Food preparation, preservation, hygiene and storage"
+          ],
+          "objectives": [
+            "Indicate the sources and importance of the various classes of food nutrients.",
+            "Define a balanced diet and state its importance.",
+            "Draw up and specify dietary requirements for different groups of people.",
+            "Explain methods of food preparation, preservation and storage.",
+            "Explain the principles of food hygiene."
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Nutrition",
+          "subtopics": [
+            "Definition and nutritional values of beverages",
+            "Common nutritional deficiencies and their remedies",
+            "Importance of water in human nutrition"
+          ],
+          "objectives": [
+            "Define nutrition and state the nutritional values of beverages.",
+            "State common nutritional deficiencies and their remedies.",
+            "Highlight the importance of water in human nutrition."
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Drugs",
+          "subtopics": [
+            "Meaning and types of drugs: stimulants, narcotics, hallucinogens, sedatives and ergogenic aids",
+            "Drug use, misuse and abuse",
+            "Causes and prevention of drug misuse and abuse",
+            "Effects of drug misuse, abuse and self-medication on the body"
+          ],
+          "objectives": [
+            "Define drugs and state their types.",
+            "Differentiate between drug misuse and drug abuse.",
+            "State the causes and prevention of drug misuse and abuse.",
+            "Explain the effects of drug misuse, abuse and self-medication on the body."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Physical Fitness and Conditioning Programmes",
+      "topics": [
+        {
+          "id": 18,
+          "title": "Physical Fitness",
+          "subtopics": [
+            "Definition of physical fitness",
+            "Components of physical fitness: health-related and performance or skill-related",
+            "Benefits of physical activity and exercise"
+          ],
+          "objectives": [
+            "Define physical fitness.",
+            "Outline and explain the components of physical fitness.",
+            "Give examples of health-related and performance or skill-related components.",
+            "State the benefits of physical activity and exercise."
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Conditioning Programme",
+          "subtopics": [
+            "Aerobic programme",
+            "Anaerobic programme",
+            "Strength training programme",
+            "Endurance training programme"
+          ],
+          "objectives": [
+            "Differentiate between aerobic and anaerobic programmes.",
+            "Differentiate between strength and endurance training programmes."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section F: Recreation, Leisure and Dance",
+      "topics": [
+        {
+          "id": 20,
+          "title": "Recreation and Leisure",
+          "subtopics": [
+            "Definition and importance of recreation, leisure, work and rest",
+            "Outdoor recreational activities: jogging, swimming, cycling, bird watching, hiking, camping and picnicking",
+            "Indoor recreational activities: watching television, video games, computer games, playing musical instruments, billiards, card games, Ayo and draught",
+            "Differences between recreational activities and competitive sports"
+          ],
+          "objectives": [
+            "Differentiate among recreation, leisure, work and rest.",
+            "State the importance of recreation, leisure, work and rest.",
+            "Mention types of recreation and give examples of each.",
+            "Differentiate between recreational activities and competitive sports.",
+            "State safety measures in recreation."
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Dance",
+          "subtopics": [
+            "Definition and importance of dance",
+            "Traditional dances and dance steps from various parts of Nigeria",
+            "Costumes for various traditional dances in Nigeria"
+          ],
+          "objectives": [
+            "Define dance and state its importance.",
+            "Identify traditional dances from various parts of Nigeria.",
+            "Describe the dance steps for various traditional dances in Nigeria.",
+            "Identify the costumes for various traditional dances."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section G: First Aid and Safety Education",
+      "topics": [
+        {
+          "id": 22,
+          "title": "First Aid",
+          "subtopics": [
+            "Definition of first aid",
+            "Aims and principles of first aid",
+            "Qualities of a first aider",
+            "First aid box and its contents",
+            "Common injuries requiring first aid: cuts, wounds, sprains, strains, dislocations and fractures",
+            "Special conditions requiring first aid: bleeding, burns, scalds, shock and poisoning",
+            "Agencies and bodies involved in first aid: St. John's Ambulance and Red Cross Society"
+          ],
+          "objectives": [
+            "Define first aid.",
+            "State the aims and principles of first aid.",
+            "Outline the qualities of a first aider.",
+            "List the contents of a first aid box and their uses.",
+            "Identify types of common injuries.",
+            "Identify types of common conditions that require first aid.",
+            "Identify agencies involved in first aid services."
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Safety Education",
+          "subtopics": [
+            "Meaning and types of accidents and disasters",
+            "Causes and prevention of accidents and disasters",
+            "Disaster relief activities",
+            "Safety at home, workplace, school and community"
+          ],
+          "objectives": [
+            "Define accidents and disasters.",
+            "Identify types of accidents and disasters.",
+            "State the causes and prevention of accidents and disasters.",
+            "Identify various disaster relief activities.",
+            "Explain safety measures at home, workplace, school and in the community."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section H: National and International Sports Competitions",
+      "topics": [
+        {
+          "id": 24,
+          "title": "Sports Competitions at National Level",
+          "subtopics": [
+            "National sports competitions organized by sports federations and associations",
+            "National sports competitions organized by corporate organizations",
+            "Importance of the National Sports Festival",
+            "Organization and administration of sports competitions"
+          ],
+          "objectives": [
+            "Identify by name sports competitions organized by sports federations, associations and corporate organizations.",
+            "State the importance of the National Sports Festival.",
+            "Highlight the organizational and administrative structures of sports competitions in Nigeria."
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Names and Roles of Institutional Games",
+          "subtopics": [
+            "Nigerian University Games Association (NUGA)",
+            "Nigerian Polytechnic Games (NIPOGA)",
+            "National Colleges of Education Games (NATCEGA)",
+            "National School Sports Games (NSSF)"
+          ],
+          "objectives": [
+            "State the names and roles of the different institutional games."
+          ]
+        },
+        {
+          "id": 26,
+          "title": "International Sports Competitions and Governing Bodies",
+          "subtopics": [
+            "All Africa Games: history and evolution",
+            "Aims of the All Africa Games",
+            "International sports governing bodies: SCSA, IOC, FIFA, IAAF, ISSF, FIBA, ITTF and BWF",
+            "Names and administrative structures of international sports governing bodies"
+          ],
+          "objectives": [
+            "Narrate the history and evolution of the All Africa Games.",
+            "Identify the aims of the All Africa Games.",
+            "Identify international sports governing bodies by name.",
+            "Describe the administrative structure of international governing bodies."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section I: Corrective and Adapted Physical Education Programme",
+      "topics": [
+        {
+          "id": 27,
+          "title": "Disability, Special Needs and Adapted Physical Education",
+          "subtopics": [
+            "Meaning and types of disability and special needs",
+            "Adapted physical activities for people with disabilities and special needs",
+            "Social and emotional problems of people with special needs",
+            "Prevention of disability",
+            "Corrective exercises to rehabilitate people with special needs"
+          ],
+          "objectives": [
+            "Define disability and describe people with special needs.",
+            "Identify types of disability and special needs.",
+            "Identify physical activities for people with disabilities and special needs.",
+            "State the social and emotional problems of people with disabilities.",
+            "State preventive measures for disability.",
+            "State corrective exercises used to rehabilitate people with special needs."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section J: Personal, Community and Environmental Health",
+      "topics": [
+        {
+          "id": 28,
+          "title": "Personal Health",
+          "subtopics": [
+            "Meaning and importance of personal health",
+            "Personal hygiene and care of teeth, mouth, hair, skin, hands and nails",
+            "Methods of promoting and maintaining personal health: exercise, nutrition and regular medical check-ups",
+            "Personal health screening",
+            "Eye defects and their corrections: myopia, hypermetropia and astigmatism",
+            "Auditory defects and their corrections: otitis media and partial deafness",
+            "Dental diseases: dental caries and gingivitis"
+          ],
+          "objectives": [
+            "Define personal health and state its importance.",
+            "Differentiate the care required for various parts of the body.",
+            "State the methods of promoting and maintaining personal health.",
+            "State the outcomes of personal health screening for the eyes, ears and teeth."
+          ]
+        },
+        {
+          "id": 29,
+          "title": "Community Health",
+          "subtopics": [
+            "Community health services and providers: orthodox services and traditional services, including bone setters and birth attendants",
+            "Family health: maternal and child health",
+            "Antenatal care, immunization, oral rehydration therapy, breastfeeding and safe motherhood",
+            "Ageing and death education",
+            "Characteristics of elderly persons",
+            "Ways of relating with elderly persons",
+            "Common causes of death"
+          ],
+          "objectives": [
+            "Differentiate between orthodox and traditional health services.",
+            "Differentiate among various aspects of maternal and child health services.",
+            "Identify the characteristics of elderly persons and state ways of relating with them.",
+            "Identify common causes of death."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section K: Communicable and Non-Communicable Diseases",
+      "topics": [
+        {
+          "id": 30,
+          "title": "Disease: Meaning and Causes",
+          "subtopics": [
+            "Meaning of disease",
+            "Causes of disease"
+          ],
+          "objectives": [
+            "Define disease and state its causes."
+          ]
+        },
+        {
+          "id": 31,
+          "title": "Communicable Diseases",
+          "subtopics": [
+            "Definition and classification of communicable diseases",
+            "Air-borne and respiratory diseases: measles, whooping cough, poliomyelitis, tuberculosis and cerebrospinal meningitis",
+            "Water-borne and food-borne diseases: dysentery, cholera and typhoid fever",
+            "Insect-borne diseases: malaria, yellow fever and trypanosomiasis",
+            "Worm infections: Ascaris lumbricoides, hookworm and Guinea worm",
+            "Animal-borne diseases: rabies and leptospirosis",
+            "Contact diseases: gonorrhoea, syphilis, ringworm, leprosy and Acquired Immune Deficiency Syndrome (AIDS)",
+            "Prevention and control measures: immunization, sterilization and isolation"
+          ],
+          "objectives": [
+            "Define communicable disease and state its classification with examples.",
+            "Highlight prevention and control measures for communicable diseases."
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Environmental Health",
+          "subtopics": [
+            "Housing: characteristics of good housing, including location, ventilation, lighting and sanitation",
+            "Town planning regulations: spacing and overcrowding",
+            "Water supply: importance, sources and methods of purification",
+            "Waste disposal: types, including refuse and sewage, and disposal methods",
+            "Pollution: meaning and types, including air, water, soil and noise pollution",
+            "Prevention and control of pollution",
+            "Pest and vector control: differences, habits, harmful effects, prevention and control"
+          ],
+          "objectives": [
+            "State the characteristics of good housing.",
+            "State town planning regulations.",
+            "State the importance of water supply and list its sources.",
+            "Explain methods of water purification.",
+            "Differentiate between refuse and sewage disposal methods.",
+            "Define pollution and state its types.",
+            "Outline measures for the prevention and control of pollution.",
+            "Differentiate between pests and vectors and state their habits.",
+            "Explain the harmful effects of pests and vectors and highlight their prevention and control measures."
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Non-Communicable Diseases",
+          "subtopics": [
+            "Definition of non-communicable diseases",
+            "Examples: hypertension, sickle cell disease, cancer, epilepsy, ulcer, asthma and diabetes"
+          ],
+          "objectives": [
+            "Define non-communicable diseases with examples.",
+            "Highlight prevention and control measures for non-communicable diseases."
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section L: Family Life and Human Sexuality Education",
+      "topics": [
+        {
+          "id": 34,
+          "title": "Family",
+          "subtopics": [
+            "Definition and types of family",
+            "Nuclear family: monogamous, polygamous, single-parent family and family by adoption",
+            "Extended family",
+            "Characteristics of a happy family"
+          ],
+          "objectives": [
+            "Define the family and explain its types.",
+            "State the characteristics of a happy family."
+          ]
+        },
+        {
+          "id": 35,
+          "title": "Human Sexuality Education",
+          "subtopics": [
+            "Meaning and importance of human sexuality education",
+            "Reproductive health rights: rights relating to number of children, consent to marry, gender equality and privacy"
+          ],
+          "objectives": [
+            "Explain human sexuality and state its importance.",
+            "Highlight reproductive health rights."
+          ]
+        },
+        {
+          "id": 36,
+          "title": "Family Planning",
+          "subtopics": [
+            "Definition and importance of family planning",
+            "Advantages and disadvantages of family planning methods: condom, pills, intrauterine device and abstinence",
+            "Challenges of families in Nigeria: premarital sex, extramarital sex and widowhood",
+            "Agencies promoting healthy family living: schools, NGOs and religious homes"
+          ],
+          "objectives": [
+            "Define family planning and state its importance.",
+            "Identify the various methods of family planning and state their advantages.",
+            "State the challenges facing family life.",
+            "Identify agencies promoting healthy family living."
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendedTexts": [
+    {
+      "author": "Afuekwe, A.I.",
+      "year": 2007,
+      "title": "An Introductory Textbook of Physical Education for Secondary Schools and Colleges",
+      "volume": "1",
+      "publisher": "Sales Point (Nig.) Co."
+    },
+    {
+      "author": "Afuekwe, A.I.",
+      "year": 2009,
+      "title": "Health Topics in the New Curriculum of Physical and Health Education",
+      "volume": "1",
+      "publisher": "Seas Print (Nig.) Co."
+    },
+    {
+      "author": "Nnabueze, U.C.",
+      "year": 2002,
+      "title": "Foundation of Health and Physical Education for Schools",
+      "volume": "II",
+      "location": "Enugu",
+      "publisher": "Okotech Publishers"
+    },
+    {
+      "author": "Ofadeji, A.A.",
+      "year": 2013,
+      "title": "Comprehensive Textbook on Physical and Health Education"
+    },
+    {
+      "author": "Oworu, O.O.",
+      "year": 2004,
+      "title": "Fundamentals of Physical Education",
+      "publisher": "Lucky Odoni (Nig.) Enterprises"
+    },
+    {
+      "authors": [
+        "Oyerinde, O.O.",
+        "Dada, J.O.",
+        "Oloyede, R.O."
+      ],
+      "year": 2021,
+      "title": "A Textbook of Physical and Health Education for Secondary School in Contemporary Nigeria Education System",
+      "edition": "4th Edition",
+      "publisher": "Fabonish Publisher, Positive Press",
+      "location": "Ibadan"
+    },
+    {
+      "authors": [
+        "Oyerinde, O.O.",
+        "Dada, J.O.",
+        "Oloyede, R.O."
+      ],
+      "year": 2021,
+      "title": "All Times Health Education for Individual and College Student",
+      "edition": "4th Edition",
+      "publisher": "Fabonish Publisher, Bayero University Press"
+    },
+    {
+      "authors": [
+        "Puffa, H.A.",
+        "Agbeko, W.W.",
+        "Amui, J.C."
+      ],
+      "year": 2009,
+      "title": "Foundations of Physical Education and Sports",
+      "location": "Winneba, Ghana",
+      "publisher": "Akwu"
+    }
+  ]
+}

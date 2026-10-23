@@ -47,6 +47,9 @@ export const NAV_ITEMS: NavItem[] = [
     isActive: (pathname) =>
       pathname === "/cbt" ||
       pathname.startsWith("/practice") ||
+      // The syllabus tree is a study surface for the same subjects, so it keeps
+      // the Practice tab lit instead of leaving no tab active.
+      pathname.startsWith("/syllabus") ||
       /^\/[^/]+\/[^/]+\/[^/]+$/.test(pathname),
   },
   {

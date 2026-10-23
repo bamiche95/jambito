@@ -1,0 +1,653 @@
+
+{
+  "subject": "Home Economics",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Home Economics Education",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Home Economics",
+          "subtopics": [
+            {
+              "content": "Meaning, scope and importance of Home Economics.",
+              "objective": "Examine the importance of Home Economics to the individual, family, society and nation; determine the scope of Home Economics."
+            },
+            {
+              "content": "Objectives and ideals of Home Economics.",
+              "objective": "Identify the objectives of Home Economics."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Areas and Careers in Home Economics",
+          "subtopics": [
+            {
+              "content": "Home Management: interior decoration, credit management, florist, child care, social welfare care, and related careers.",
+              "objective": "Recommend possible vocations in the different areas of Home Economics; relate Home Economics to each vocation; assess the benefits of each vocation to the individual, society and nation; identify current vocations in Home Economics; identify sources of career information."
+            },
+            {
+              "content": "Foods and Nutrition: catering, dietetics, nutritionist, public health education, and related careers.",
+              "objective": "Recommend possible vocations in the different areas of Home Economics; relate Home Economics to each vocation; assess the benefits of each vocation to the individual, society and nation; identify current vocations in Home Economics; identify sources of career information."
+            },
+            {
+              "content": "Clothing and Textiles: textile designing, fashion designing, modelling, laundry, and related careers.",
+              "objective": "Recommend possible vocations in the different areas of Home Economics; relate Home Economics to each vocation; assess the benefits of each vocation to the individual, society and nation; identify current vocations in Home Economics; identify sources of career information."
+            },
+            {
+              "content": "Family and Child Development: early childhood education, child care, and related careers.",
+              "objective": "Recommend possible vocations in the different areas of Home Economics; relate Home Economics to each vocation; assess the benefits of each vocation to the individual, society and nation; identify current vocations in Home Economics; identify sources of career information."
+            },
+            {
+              "content": "Other areas of Home Economics: teaching, counselling, media and research.",
+              "objective": "Recommend possible vocations in the different areas of Home Economics; relate Home Economics to each vocation; assess the benefits of each vocation to the individual, society and nation; identify current vocations in Home Economics; identify sources of career information."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Interrelationship of Home Economics with Other Subjects",
+          "subtopics": [
+            {
+              "content": "The relationship between Home Economics and Biology, Geography, Chemistry, Physics, Agricultural Science, Fine Arts, Economics, Mathematics, Civic Education, and other subjects.",
+              "objective": "Compare the different areas of study that have a relationship with Home Economics; determine the contributions of these subjects to Home Economics."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Home Management",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Principles of Home Management",
+          "subtopics": [
+            {
+              "content": "Meaning of Home Management.",
+              "objective": "State the meaning of Home Management."
+            },
+            {
+              "content": "Steps involved in the management process.",
+              "objective": "Identify the steps involved in the management process."
+            },
+            {
+              "content": "Decision-making: meaning and process.",
+              "objective": "Determine issues for decision-making in the home."
+            },
+            {
+              "content": "Motivation for Home Management, including goals, values, standards, needs and wants, likes and dislikes.",
+              "objective": "Describe the role of motivators in Home Management."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Resources",
+          "subtopics": [
+            {
+              "content": "Human resources: definition and types.",
+              "objective": "Identify the resources available to the individual and family."
+            },
+            {
+              "content": "Time management: definition and pattern; types of work time; factors influencing the use of time; advantages of time management; steps in time management.",
+              "objective": "Describe the pattern of a work plan; apply the principles of time management to work simplification in the home."
+            },
+            {
+              "content": "Energy management: definition and reasons for managing energy; work simplification, its purpose and application; guidelines for work simplification and time-saving gadgets.",
+              "objective": "Apply the principles of time management and work simplification in the home."
+            },
+            {
+              "content": "Other human resources, including skills, creativity and attitudes.",
+              "objective": "Identify the resources available to the individual and family."
+            },
+            {
+              "content": "Material resources: definition and types.",
+              "objective": "Identify the resources available to the individual and family; state other material resources available to the individual and family."
+            },
+            {
+              "content": "Money management: meaning and types of income; principles of money management; household budgeting and steps in preparing a budget; economic security of the family; bank accounts; traditional savings, building societies and insurance.",
+              "objective": "Identify the sources of income available to an individual and family; determine the means of family saving; give reasons for saving family income; determine the steps involved in family budgeting; analyse the principles of money management."
+            },
+            {
+              "content": "Tools, household properties and community facilities.",
+              "objective": "Suggest alternative resources for Home Management; state other material resources available to the individual and family."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Family Living",
+          "subtopics": [
+            {
+              "content": "Definition and types of family; advantages and disadvantages of family types; functions of the family; the family life cycle.",
+              "objective": "Compare types of family; identify the roles of family members."
+            },
+            {
+              "content": "Family relationships: husband-wife, parent-child, and brother-sister or sibling relationships; factors influencing family relationships.",
+              "objective": "Differentiate between the types of relationships that exist in the family; determine and describe the factors that influence family relationships."
+            },
+            {
+              "content": "Basic personality profiles: meaning of personality; extroversion, introversion, and anxiety/stability.",
+              "objective": "Compare the basic personality profiles, including extroversion and introversion."
+            },
+            {
+              "content": "Adolescents and their problems.",
+              "objective": "Identify the characteristics and problems of adolescents."
+            },
+            {
+              "content": "Family crises.",
+              "objective": "Identify types of family crises and ways of solving them."
+            },
+            {
+              "content": "Conflict and conflict resolution.",
+              "objective": "Identify sources of conflict and solution strategies."
+            },
+            {
+              "content": "Human rights: meaning of human rights and fundamental human rights; rights of women and children; violation of human rights.",
+              "objective": "Identify types of human rights and human rights violations; suggest remedies for breaches of human rights."
+            },
+            {
+              "content": "Communication and the role of ICT in the family.",
+              "objective": "Identify factors that hinder communication in the family; determine factors that enhance communication in the family; identify the advantages and disadvantages of ICT."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Marriage and Reproductive Health",
+          "subtopics": [
+            {
+              "content": "Meanings of marriage and sex education.",
+              "objective": "Differentiate between types of marriages in Nigeria."
+            },
+            {
+              "content": "Boy-girl relationships and courtship; factors to consider when choosing a partner.",
+              "objective": "Analyse the role of courtship and engagement in marriage; compare the advantages and disadvantages of inter-tribal marriages."
+            },
+            {
+              "content": "Preparation for marriage: meaning and purpose of engagement; types of marriage, including Islamic, Christian, court and traditional marriage; family planning.",
+              "objective": "Differentiate between types of marriages in Nigeria; compare the advantages and disadvantages of inter-tribal marriages; analyse the role of courtship and engagement in marriage; identify different ways of planning a family."
+            },
+            {
+              "content": "Reproductive health: consequences of indiscriminate sexual indulgence; sexually transmitted infections and diseases (STIs/STDs and HIV/AIDS); unwanted pregnancy.",
+              "objective": "State the types, causes and prevention of sexually transmitted infections and diseases."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Pregnancy and Childbirth",
+          "subtopics": [
+            {
+              "content": "Menstruation, pregnancy and childbirth; labour and delivery; post-natal care.",
+              "objective": "Describe the process of reproduction from conception to birth; determine the factors that affect pregnancy; differentiate between the stages of labour."
+            },
+            {
+              "content": "Childcare: baby's layette, care of the baby, toilet training, bathing, feeding and weaning.",
+              "objective": "Describe the care an infant needs from birth to five years."
+            },
+            {
+              "content": "Care of toddlers.",
+              "objective": "Describe the care an infant and young child needs from birth to five years."
+            },
+            {
+              "content": "Common ailments in children and immunization.",
+              "objective": "Identify the symptoms of common ailments in children."
+            },
+            {
+              "content": "Child development: meaning and principles; types and stages of development; factors influencing development; good habits and character training; play and play materials.",
+              "objective": "Trace the stages of development in children; mention types of play materials; recommend suitable play materials for children."
+            },
+            {
+              "content": "Parenting: meaning and importance; responsibilities of parents.",
+              "objective": "Identify the responsibilities of parents."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Housing the Family",
+          "subtopics": [
+            {
+              "content": "Houses and homes: types of houses; factors affecting the choice of a house; ways of acquiring a house.",
+              "objective": "Differentiate between a house and a home; identify the factors that influence residential choice."
+            },
+            {
+              "content": "Interior decoration: wall finishing; application of elements and principles of art and design to colours, textures, lines and proportions; flower arrangements.",
+              "objective": "Describe items that beautify living areas; suggest suitable colours, textures and other factors to consider in interior decoration; compare different floral arrangements."
+            },
+            {
+              "content": "Furniture and furnishings in the home: types; factors affecting their choice and positioning.",
+              "objective": "Determine the factors that influence the choice and arrangement of furniture."
+            },
+            {
+              "content": "Ornaments and fixtures: types and care.",
+              "objective": "Identify types of ornaments and fixtures; describe their care."
+            },
+            {
+              "content": "Utilities in the home: water sources, uses and purification; household fuels such as gas, coal, electricity, kerosene, firewood and sawdust; electricity-related terms, generation and safety; communication devices such as phones, GSM, computers and the internet.",
+              "objective": "Identify utilities in the home; appraise the advantages and disadvantages of these utilities in relation to their alternatives."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Home Surfaces",
+          "subtopics": [
+            {
+              "content": "Types and care of surfaces and coverings, including wood, tiles, Formica, concrete, glass, plastics, linoleum, mats, rugs and terrazzo.",
+              "objective": "Identify common surfaces in the home; compare the care of wood, plastic, concrete, rugs, mats and linoleum."
+            },
+            {
+              "content": "Identification, preparation and use of cleaning agents such as water, soap, abrasives and polish.",
+              "objective": "Mention cleaning agents and their uses in the home; identify materials needed for preparing local cleaning agents."
+            },
+            {
+              "content": "Care of home surfaces and coverings: washing, sweeping, dusting, shampooing, buffing, polishing and vacuum cleaning.",
+              "objective": "Identify common surfaces in the home; compare the appropriate care methods for different surfaces and coverings."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Sanitation in the Home",
+          "subtopics": [
+            {
+              "content": "Importance of sanitation.",
+              "objective": "Describe the importance of sanitation."
+            },
+            {
+              "content": "Drainage systems: types and care.",
+              "objective": "Identify types of drainage and types of wastewater."
+            },
+            {
+              "content": "Cleaning of the surroundings.",
+              "objective": "Describe ways of maintaining clean surroundings."
+            },
+            {
+              "content": "Disposal of household refuse.",
+              "objective": "Suggest ways of disposing of household refuse."
+            },
+            {
+              "content": "Household pests and their control.",
+              "objective": "Identify common household pests and their control; identify diseases transmitted by pests."
+            },
+            {
+              "content": "Pollution and health hazards.",
+              "objective": "Describe sources of pollution; mention the health hazards of pollution."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Consumer Education",
+          "subtopics": [
+            {
+              "content": "Meaning and importance of consumer education.",
+              "objective": "Explain the importance of consumer education."
+            },
+            {
+              "content": "Definition and types of markets.",
+              "objective": "Identify the different types of markets."
+            },
+            {
+              "content": "Distributors or consumer agents.",
+              "objective": "Describe the various consumer agents."
+            },
+            {
+              "content": "Sources of consumer information.",
+              "objective": "Identify sources of consumer advice and information."
+            },
+            {
+              "content": "Purchasing practices.",
+              "objective": "Apply the principles of consumer education to wise shopping."
+            },
+            {
+              "content": "Advertising.",
+              "objective": "Identify the types of media used by advertisers; describe their advantages and disadvantages."
+            },
+            {
+              "content": "Consumer rights and responsibilities.",
+              "objective": "Explain the rights and responsibilities of the consumer."
+            },
+            {
+              "content": "Community programmes.",
+              "objective": "Identify community programmes relevant to consumer education."
+            },
+            {
+              "content": "Government agencies and regulatory bodies.",
+              "objective": "Identify the functions of government agencies and regulatory bodies."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Foods and Nutrition",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Foods and Nutrition",
+          "subtopics": [
+            {
+              "content": "Definition of foods and nutrition.",
+              "objective": "Describe food nutrients and their importance."
+            },
+            {
+              "content": "Classification of nutrients, their sources and functions, and deficiency diseases; carbohydrates, minerals, fats and oils, vitamins, proteins and water.",
+              "objective": "Describe carbohydrates, minerals, fats and oils, vitamins, proteins and water; identify the different classes of food."
+            },
+            {
+              "content": "Classification of foods: cereals, fats and oils, milk and milk products, meat, fish, pulses, nuts, fruits and vegetables.",
+              "objective": "Identify the different classes of food; differentiate between the food groups."
+            },
+            {
+              "content": "Food groups: body-building foods, energy-giving foods, protective foods, water and roughage.",
+              "objective": "Differentiate between the food groups."
+            },
+            {
+              "content": "Nutrition and health: relationship between nutrition and health; factors affecting nutrition, including income, seasonal food and food availability.",
+              "objective": "Describe the effect of nutrition on health status; identify factors affecting good nutrition."
+            },
+            {
+              "content": "The digestive system and the process by which large food molecules are broken down.",
+              "objective": "Describe the process by which large food molecules are broken down."
+            },
+            {
+              "content": "Nutrition for special groups, including infants, toddlers, adolescents, manual workers, children aged five to eight years, the elderly, invalids and convalescents; nutritional needs of expectant and lactating mothers and sedentary and manual workers.",
+              "objective": "Recommend the nutritional needs of special groups; determine the reasons for the nutritional needs of expectant and lactating mothers, infants, toddlers, sedentary and manual workers, children aged five to eight years, adolescents, the elderly, invalids and convalescents."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Meal Planning",
+          "subtopics": [
+            {
+              "content": "Principles of meal planning.",
+              "objective": "Identify factors that influence the choice and preparation of food for the family."
+            },
+            {
+              "content": "Dietary needs and meals for special occasions and groups, including weddings, birthdays, anniversaries, vegetarians, invalids, convalescents, people with HIV/AIDS and COVID-19 patients.",
+              "objective": "Plan meals for special occasions and special groups."
+            },
+            {
+              "content": "Preparation and serving of meals.",
+              "objective": "Identify factors that influence the choice and preparation of food for the family."
+            },
+            {
+              "content": "Snacks and beverages: meaning, types and functions.",
+              "objective": "Identify types of snacks and beverages and their functions."
+            },
+            {
+              "content": "Table setting, table manners and hostessing.",
+              "objective": "Compare types of table setting; describe table manners and the qualities of a good host."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Cookers and Cooking",
+          "subtopics": [
+            {
+              "content": "Types, choice and care of cookers, including gas, electric and microwave cookers.",
+              "objective": "Identify types of cookers and explain their choice and care."
+            },
+            {
+              "content": "Reasons for cooking.",
+              "objective": "Enumerate reasons for cooking."
+            },
+            {
+              "content": "Cooking terms.",
+              "objective": "Identify and explain common cooking terms."
+            },
+            {
+              "content": "Methods of cooking: boiling, stewing, baking, steaming and other methods; moist and dry methods; fast and slow methods.",
+              "objective": "Group methods of cooking into moist, dry, fast and slow methods."
+            },
+            {
+              "content": "Methods of heat transfer: conduction, convection and radiation.",
+              "objective": "Determine the method of heat transfer involved in different methods of cooking."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Flours and Uses",
+          "subtopics": [
+            {
+              "content": "Types of flour and their uses.",
+              "objective": "Identify types of flour and their uses."
+            },
+            {
+              "content": "Raising agents, including air, yeast, palm wine and steam.",
+              "objective": "Select appropriate raising agents for basic mixtures."
+            },
+            {
+              "content": "Using flour to produce assorted food items.",
+              "objective": "Use flour to produce assorted food items."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Basic Mixtures",
+          "subtopics": [
+            {
+              "content": "Batters, pastries, cakes and breads: definitions, types, uses and common faults.",
+              "objective": "Differentiate between batters, pastries, cakes and breads; identify their types, uses and common faults."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Scientific Methods in Foods and Nutrition",
+          "subtopics": [
+            {
+              "content": "Measurement units and accuracy.",
+              "objective": "Demonstrate skills in unit measurements."
+            },
+            {
+              "content": "Nutrient tests in food, including tests for proteins, fats and carbohydrates.",
+              "objective": "Detect nutrients in a given food."
+            },
+            {
+              "content": "Recipe development.",
+              "objective": "Develop basic recipes in food preparation."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "The Kitchen",
+          "subtopics": [
+            {
+              "content": "Types of kitchen.",
+              "objective": "Describe types of kitchen."
+            },
+            {
+              "content": "Kitchen arrangement.",
+              "objective": "Describe the arrangement of a kitchen."
+            },
+            {
+              "content": "Kitchen tools and equipment: selection, use and care.",
+              "objective": "Compare large and small kitchen equipment and tools; specify factors to consider when selecting kitchen tools and equipment."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Kitchen Safety and Hygiene",
+          "subtopics": [
+            {
+              "content": "Common accidents in the kitchen, their causes and preventive measures.",
+              "objective": "Identify common kitchen accidents, their causes and preventive measures; suggest ways of making the kitchen a safe place."
+            },
+            {
+              "content": "First aid: definition, components of a first-aid kit, and simple first aid for burns, scalds, cuts, bruises, bleeding, electric shock, poisoning, choking and bites.",
+              "objective": "Specify items that should be included in a first-aid kit; suggest simple first aid for scalds, cuts, bleeding, burns and other common injuries."
+            },
+            {
+              "content": "Kitchen, personal and food hygiene: procedures and roles; food-borne diseases; food sanitation laws.",
+              "objective": "Identify ways in which food is contaminated; differentiate between food poisoning and food infection; identify international and national bodies regulating and monitoring food laws."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Food Storage and Preservation",
+          "subtopics": [
+            {
+              "content": "Meaning and purpose of food preservation; causes of food spoilage; principles and methods of food preservation.",
+              "objective": "Identify agents of food spoilage; describe the principles involved in food preservation and storage; compare the advantages and disadvantages of food preservation methods."
+            },
+            {
+              "content": "Convenience foods: definition, types, guidelines for selection and use.",
+              "objective": "Identify convenience foods; compare the advantages and disadvantages of using convenience foods; identify guidelines for selecting convenience foods."
+            },
+            {
+              "content": "Food additives: types and uses.",
+              "objective": "Identify additives used in foods."
+            },
+            {
+              "content": "Rechauffe dishes: meaning, reasons and types; rules for preparing them.",
+              "objective": "Explain reasons for rechauffe."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Home Gardening",
+          "subtopics": [
+            {
+              "content": "Definition of home gardening.",
+              "objective": "Explain the importance of home gardening."
+            },
+            {
+              "content": "Common gardening tools.",
+              "objective": "Identify gardening tools."
+            },
+            {
+              "content": "Advantages of home gardening.",
+              "objective": "Explain the importance of home gardening."
+            },
+            {
+              "content": "Types of soil; plants and crops suitable for a home garden.",
+              "objective": "Describe the procedures involved in home gardening."
+            },
+            {
+              "content": "Preparation and care of a home garden.",
+              "objective": "Describe the procedures involved in home gardening."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Clothing and Textiles",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Fibres and Fabrics",
+          "subtopics": [
+            {
+              "content": "Origin of fibres and definitions of textile terms, including fibres, fabrics, yarn, staple, filament and blends.",
+              "objective": "Identify the characteristics of fibres."
+            },
+            {
+              "content": "Classification and properties of fibres, including cotton, rayon and silk.",
+              "objective": "Identify the characteristics of fibres."
+            },
+            {
+              "content": "Fabric construction: weaving, bonding, felting and other methods; locally made fabrics such as aso-oke, Okene cloth, Benue cloth, Akwete and Gwado.",
+              "objective": "Differentiate between methods of fabric construction using diagrams; state the uses and importance of locally made fabrics."
+            },
+            {
+              "content": "Fabric finishes: moth-proofing, embossing, durable pleating, flame-proofing and stain-repellent finishes.",
+              "objective": "State reasons for giving finishes to fabrics."
+            },
+            {
+              "content": "Fabric design: tie-and-dye and printing, including screen printing.",
+              "objective": "Identify fabric design methods and distinguish between different methods of decorating fabrics."
+            },
+            {
+              "content": "Textile care labels: meaning and types; recognition of washing, cleaning, ironing and wool symbols.",
+              "objective": "Compare types of labels found on clothing; state the importance of labels on garments."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Sewing Equipment and Garment Construction",
+          "subtopics": [
+            {
+              "content": "Sewing machines, basic tools and equipment: types, uses and care.",
+              "objective": "Identify the types, parts and faults of a sewing machine; identify basic tools and equipment used in garment construction."
+            },
+            {
+              "content": "Basic processes in garment construction: basic stitches, seams, edge finishes and crossway strips.",
+              "objective": "Describe and apply the basic processes involved in garment construction."
+            },
+            {
+              "content": "Style features: collars, yokes, pockets, frills, cuts and belts.",
+              "objective": "Identify style features that enhance the beauty and quality of garments."
+            },
+            {
+              "content": "Arrangement of fullness: darts, tucks, gathering, pleats, smocking and shirring.",
+              "objective": "Describe and apply techniques for arranging fullness in garments."
+            },
+            {
+              "content": "Decorative design: embroidery, needlecraft, tatting, crocheting, knitting, appliqué, patchwork and soft furnishing.",
+              "objective": "Apply decorative designs to fabrics."
+            },
+            {
+              "content": "Simple processes for mending and renovating garments: patching, darning, renovation, batik and tie-and-dye.",
+              "objective": "Apply the knowledge of sewing to mend and renovate garments; compare the processes of making batik, tie-and-dye, screen printing and resist dyeing."
+            },
+            {
+              "content": "Garment construction: figure types, basic body measurements and pattern drafting; embracing body shape; choice of styles for different figures; factors influencing the choice of fabric.",
+              "objective": "Relate body figures to the selection of styles and fabrics; determine factors that affect the choice of clothing; describe relevant terms associated with body figures, measurements, pattern drafting and style selection."
+            },
+            {
+              "content": "Wardrobe planning and maintenance: basic rules and factors affecting wardrobe planning, including weather, occupation and personal features.",
+              "objective": "Identify factors to consider in wardrobe planning."
+            },
+            {
+              "content": "Good grooming, dress sense and accessories: definitions, types and choice of accessories.",
+              "objective": "Describe terms relating to good grooming, dress sense and accessories; determine factors that influence clothing choices."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Laundry and Care of Clothes",
+          "subtopics": [
+            {
+              "content": "Washing and finishing processes: sorting, mending, stain removal, soaking, washing, rinsing, drying, ironing and airing.",
+              "objective": "Arrange in the correct order the processes involved in washing and finishing clothing."
+            },
+            {
+              "content": "Laundry agents: water, detergents, soaps, starches and disinfectants.",
+              "objective": "Describe the role of laundry agents."
+            },
+            {
+              "content": "Dry cleaning: meaning, types and factors to consider when dry cleaning.",
+              "objective": "Describe dry cleaning and state relevant guidelines."
+            },
+            {
+              "content": "Stains: meaning, types, agents and processes of removal.",
+              "objective": "Suggest ways of removing common stains; describe stains and the processes of removing them."
+            },
+            {
+              "content": "Irons and ironing temperatures; guidelines for ironing; good grooming, dress sense, accessories and colour harmony.",
+              "objective": "Describe ironing temperatures; state the guidelines for ironing."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+
+{
+  "subject": "Government",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Part I: Elements of Government",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Definition and Scope of Government",
+          "subtopics": [
+            {
+              "content": "Definition of Government as an institution, its characteristics and functions.",
+              "objective": "Define Government as an institution; state the characteristics of Government; explain the functions of Government."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Basic Concepts of Government",
+          "subtopics": [
+            {
+              "content": "Power, influence, authority, legitimacy and sovereignty.",
+              "objective": "Identify and explain the fundamental concepts in governance."
+            },
+            {
+              "content": "Society, state, nation and nation-state.",
+              "objective": "Identify the fundamental concepts in governance; explain the relationship of the state to Government."
+            },
+            {
+              "content": "Political processes, including political socialization, political participation and political culture.",
+              "objective": "Analyse various political processes; identify and explain the fundamental concepts in governance."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Forms of Government",
+          "subtopics": [
+            {
+              "content": "Monarchy, aristocracy, oligarchy, autocracy, republicanism and democracy, including their definitions, features, merits and demerits.",
+              "objective": "Distinguish between different forms of Government; discuss the features of each form of Government."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Arms of Government",
+          "subtopics": [
+            {
+              "content": "The Legislature: types, structure, functions and powers.",
+              "objective": "Identify the duties and obligations of the various arms of Government and their agencies; relate each arm to its functions; appreciate how the arms interrelate."
+            },
+            {
+              "content": "The Executive: types, functions and powers.",
+              "objective": "Identify the duties and obligations of the various arms of Government and their agencies; relate each arm to its functions; appreciate how the arms interrelate."
+            },
+            {
+              "content": "The Judiciary: functions, powers and components.",
+              "objective": "Identify the duties and obligations of the various arms of Government and their agencies; relate each arm to its functions; appreciate how the arms interrelate."
+            },
+            {
+              "content": "Relationships among the Legislature, Executive and Judiciary.",
+              "objective": "Explain the relationships among the arms of Government and appreciate how they interrelate."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Structures of Governance",
+          "subtopics": [
+            {
+              "content": "Unitary structure: features, reasons for adoption, merits and demerits.",
+              "objective": "Compare the various political structures of governance; understand the reasons for adopting each structure."
+            },
+            {
+              "content": "Federal structure: features, reasons for adoption, merits and demerits.",
+              "objective": "Compare the various political structures of governance; understand the reasons for adopting each structure."
+            },
+            {
+              "content": "Confederal structure: features, reasons for adoption, merits and demerits.",
+              "objective": "Compare the various political structures of governance; understand the reasons for adopting each structure."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Systems of Governance",
+          "subtopics": [
+            {
+              "content": "Presidential, parliamentary and monarchical systems, including their features, merits and demerits.",
+              "objective": "Distinguish between different systems of governance; analyse the features, merits and demerits of each system."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Political Ideologies",
+          "subtopics": [
+            {
+              "content": "Communalism, feudalism, capitalism, socialism, communism, totalitarianism, fascism, Nazism and liberalism.",
+              "objective": "Differentiate between the major political ideologies; contrast their modes of production."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Constitution",
+          "subtopics": [
+            {
+              "content": "Meaning, sources and functions of a constitution.",
+              "objective": "Define a constitution; identify its sources and functions."
+            },
+            {
+              "content": "Types of constitution: written, unwritten, rigid and flexible.",
+              "objective": "Identify the sources and functions of constitutions; compare the nature of different constitutions."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Principles of Democratic Government",
+          "subtopics": [
+            {
+              "content": "Ethics and accountability in public office; separation of powers; checks and balances; individual and collective responsibility; constitutionalism; rule of law; representative government; centralization and decentralization of Government.",
+              "objective": "Identify the principles of democratic Government; determine how these principles are applied."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Processes of Legislation",
+          "subtopics": [
+            {
+              "content": "Legislative enactments, including Acts, Edicts, Bye-laws, delegated legislation and Decrees.",
+              "objective": "Analyse the processes involved in making laws."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Citizenship",
+          "subtopics": [
+            {
+              "content": "Meaning and types of citizenship.",
+              "objective": "Differentiate between the various methods of acquiring citizenship."
+            },
+            {
+              "content": "Citizenship rights.",
+              "objective": "Specify the rights and responsibilities of a citizen."
+            },
+            {
+              "content": "Dual citizenship, renunciation and deprivation of citizenship.",
+              "objective": "Differentiate between the various methods of acquiring citizenship and explain circumstances affecting citizenship."
+            },
+            {
+              "content": "Duties and obligations of citizens.",
+              "objective": "Specify the rights and responsibilities of a citizen."
+            },
+            {
+              "content": "Duties and obligations of the state.",
+              "objective": "Assess the obligations of the state."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "The Electoral Process",
+          "subtopics": [
+            {
+              "content": "Suffrage or franchise: evolution and types.",
+              "objective": "Distinguish between different types of franchise."
+            },
+            {
+              "content": "Elections: types, ingredients of free and fair elections, and pre-election and post-election crises.",
+              "objective": "Distinguish between the different types of franchise; identify and explain the types of electoral systems; analyse the various electoral processes."
+            },
+            {
+              "content": "Electoral systems: types, advantages and disadvantages of each.",
+              "objective": "Identify and explain the types of electoral systems; analyse the various electoral processes."
+            },
+            {
+              "content": "Electoral commissions: functions and problems.",
+              "objective": "Analyse the various electoral processes, including the functions and problems of electoral commissions."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Political Parties and Party Systems",
+          "subtopics": [
+            {
+              "content": "Political parties: definition, organization and functions.",
+              "objective": "Assess the role of political parties; distinguish between types of party systems."
+            },
+            {
+              "content": "Party systems: definition, organization, functions, merits and demerits.",
+              "objective": "Assess the role of political parties; distinguish between types of party systems and their characteristics."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Pressure Groups",
+          "subtopics": [
+            {
+              "content": "Definition, types, functions and modes of operation of pressure groups.",
+              "objective": "Evaluate the functions and methods of operation of pressure groups."
+            },
+            {
+              "content": "Differences between pressure groups and political parties.",
+              "objective": "Distinguish between pressure groups and political parties."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Public Opinion",
+          "subtopics": [
+            {
+              "content": "Meaning, formation and measurement of public opinion.",
+              "objective": "Compare methods of assessing public opinion."
+            },
+            {
+              "content": "Functions and limitations of public opinion.",
+              "objective": "Assess the functions of public opinion; analyse its limitations."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "The Civil Service and Public Service",
+          "subtopics": [
+            {
+              "content": "Civil service: definition, characteristics, functions, structure, control and problems.",
+              "objective": "Analyse the significance of the civil service in governance; distinguish between the civil service and public service."
+            },
+            {
+              "content": "Public service: definition, characteristics, functions, structure, control and problems.",
+              "objective": "Analyse the significance of the public service in governance; distinguish between the civil service and public service."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part II: Political Development in Nigeria",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Pre-Colonial Polities",
+          "subtopics": [
+            {
+              "content": "Pre-jihad Hausa/Fulani emirates, Tiv, Igbo and Yoruba political systems.",
+              "objective": "Appreciate the effectiveness of pre-colonial political systems; compare pre-colonial systems of governance."
+            },
+            {
+              "content": "Structural organization of pre-colonial political systems.",
+              "objective": "Compare pre-colonial systems of governance and understand their structural organization."
+            },
+            {
+              "content": "Functions of the various political institutions in pre-colonial societies.",
+              "objective": "Appreciate the effectiveness of pre-colonial political systems; explain the functions of their political institutions."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Imperialist Penetration",
+          "subtopics": [
+            {
+              "content": "British acquisition of territories through trade, missionary activities, company rule, Crown Colony administration and protectorates.",
+              "objective": "Trace the processes of imperialist penetration; assess the impact of British colonial policies."
+            },
+            {
+              "content": "British colonial administrative policies: direct rule and indirect rule.",
+              "objective": "Trace the processes of imperialist penetration; assess the impact of British colonial policies; distinguish between British and French colonial practices."
+            },
+            {
+              "content": "French colonial administrative policies: assimilation and association.",
+              "objective": "Assess the impact of French colonial policies; distinguish between British and French colonial practices."
+            },
+            {
+              "content": "Economic, political and socio-cultural impacts of British colonial rule.",
+              "objective": "Assess the impact of British colonial policies."
+            },
+            {
+              "content": "Comparison of British and French colonial administration.",
+              "objective": "Compare British and French colonial administration and distinguish between their colonial practices."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Process of Decolonization",
+          "subtopics": [
+            {
+              "content": "Nationalism: meaning and types.",
+              "objective": "Evaluate the process of decolonization."
+            },
+            {
+              "content": "Nationalist movements: emergence, goals and strategies.",
+              "objective": "Evaluate the process of decolonization; assess the roles of nationalist leaders and parties."
+            },
+            {
+              "content": "Nationalist leaders, including Herbert Macaulay, Nnamdi Azikiwe, Obafemi Awolowo, Ahmadu Bello, Ladipo Solanke, Aminu Kano, J. S. Tarka, Tafawa Balewa and others.",
+              "objective": "Assess the roles of nationalist leaders in the struggle for independence."
+            },
+            {
+              "content": "Emergence of nationalist political parties.",
+              "objective": "Evaluate the process of decolonization; assess the roles of nationalist leaders and parties."
+            },
+            {
+              "content": "Influence of external factors, including Pan-Africanism, Back-to-Africa movements and the Second World War.",
+              "objective": "Assess the impact of external forces and ideas on decolonization."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Constitutional Development in Nigeria",
+          "subtopics": [
+            {
+              "content": "Hugh Clifford Constitution of 1922: features, merits and demerits.",
+              "objective": "Compare the various constitutional developments; analyse the merits and demerits of each constitution."
+            },
+            {
+              "content": "Arthur Richards Constitution of 1946: features, merits and demerits.",
+              "objective": "Compare the various constitutional developments; analyse the merits and demerits of each constitution."
+            },
+            {
+              "content": "John Macpherson Constitution of 1951: features, merits and demerits.",
+              "objective": "Compare the various constitutional developments; analyse the merits and demerits of each constitution."
+            },
+            {
+              "content": "Oliver Lyttleton Constitution of 1954: features, merits and demerits.",
+              "objective": "Compare the various constitutional developments; analyse the merits and demerits of each constitution."
+            },
+            {
+              "content": "Independence Constitution of 1960: features, merits and demerits.",
+              "objective": "Compare the various constitutional developments; analyse the merits and demerits of each constitution."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Post-Independence Constitutions",
+          "subtopics": [
+            {
+              "content": "The 1963, 1979, 1989 and 1999 constitutions, as amended, including their characteristics and shortcomings.",
+              "objective": "Assess the workings of the various constitutions; analyse the merits and demerits of Nigeria's post-independence constitutions."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Institutions of Government in Post-Independence Nigeria",
+          "subtopics": [
+            {
+              "content": "The Legislature: structure, functions and workings.",
+              "objective": "Evaluate the operations of the arms of Government and their agencies, including legislative institutions."
+            },
+            {
+              "content": "The Executive: structure, functions and workings.",
+              "objective": "Evaluate the operations of the arms of Government and their agencies, including executive institutions."
+            },
+            {
+              "content": "The Judiciary: structure, functions and workings.",
+              "objective": "Evaluate the operations of the arms of Government and their agencies, including judicial institutions."
+            },
+            {
+              "content": "Government agencies and institutions, including the civil service, Armed Forces, Police and courts.",
+              "objective": "Evaluate the operations of the arms of Government and their agencies."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Public Commissions Established by the 1979 and Subsequent Constitutions",
+          "subtopics": [
+            {
+              "content": "The Civil Service Commission, Public Complaints Commission, electoral commissions, National Boundary Commission, Independent Corrupt Practices and Other Related Offences Commission, Economic and Financial Crimes Commission and other public commissions.",
+              "objective": "Evaluate the operations of public commissions; assess the problems and constraints faced by public commissions."
+            },
+            {
+              "content": "Objectives and functions of public commissions.",
+              "objective": "Evaluate the operations of public commissions and assess their effectiveness."
+            },
+            {
+              "content": "Problems and constraints of public commissions.",
+              "objective": "Assess the problems and constraints faced by public commissions."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Political Parties and Party Politics in Post-Independence Nigeria",
+          "subtopics": [
+            {
+              "content": "Political parties and party politics during the First Republic.",
+              "objective": "Contrast political processes in the different republics; evaluate the ideologies, structure and composition of political parties."
+            },
+            {
+              "content": "Political parties and party politics during the Second Republic.",
+              "objective": "Contrast political processes in the different republics; evaluate the ideologies, structure and composition of political parties."
+            },
+            {
+              "content": "Political parties and party politics during the Third Republic.",
+              "objective": "Contrast political processes in the different republics; evaluate the ideologies, structure and composition of political parties."
+            },
+            {
+              "content": "Political parties and party politics during the Fourth Republic.",
+              "objective": "Contrast political processes in the different republics; evaluate the ideologies, structure and composition of political parties."
+            },
+            {
+              "content": "Evolution, membership spread, structure and organization of political parties across the republics.",
+              "objective": "Evaluate the ideologies, structure and composition of political parties; compare political processes across the republics."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "The Structure and Workings of Nigerian Federalism",
+          "subtopics": [
+            {
+              "content": "Rationale for adopting a federal system in Nigeria.",
+              "objective": "Examine the workings of Nigerian federalism."
+            },
+            {
+              "content": "Tiers of Government and their relationships.",
+              "objective": "Examine the workings of Nigerian federalism and identify its problems."
+            },
+            {
+              "content": "Creation of states in 1963, 1967, 1976, 1987, 1991 and 1996.",
+              "objective": "Examine the workings of Nigerian federalism; identify the historical development of its federal structure."
+            },
+            {
+              "content": "Problems of Nigerian federalism, including census disputes, revenue allocation and conflicts.",
+              "objective": "Identify the problems of Nigerian federalism; evaluate corrective measures."
+            },
+            {
+              "content": "Solutions to problems of federalism, including the Federal Character Principle.",
+              "objective": "Evaluate corrective measures that can address the problems of Nigerian federalism."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Public Corporations and Parastatals",
+          "subtopics": [
+            {
+              "content": "Definition, types, purposes and functions of public corporations and parastatals.",
+              "objective": "Examine the operations of public corporations and parastatals."
+            },
+            {
+              "content": "Finance, control and problems of public corporations and parastatals.",
+              "objective": "Examine the operations and problems of public corporations and parastatals."
+            },
+            {
+              "content": "Deregulation, privatization and commercialization: objectives, features, merits and demerits.",
+              "objective": "Identify the processes involved in privatization and commercialization; assess their economic importance."
+            },
+            {
+              "content": "Comparison between public corporations and parastatals.",
+              "objective": "Examine the operations of public corporations and parastatals and distinguish between them."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Local Government",
+          "subtopics": [
+            {
+              "content": "Local Government administration in Nigeria before 1976.",
+              "objective": "Trace the evolution and structure of Local Government."
+            },
+            {
+              "content": "Features of the 1976 and 1989 Local Government reforms, including structure, functions, finance and intergovernmental relations.",
+              "objective": "Trace the evolution and structure of Local Government; identify the major problems faced by Local Governments."
+            },
+            {
+              "content": "Traditional rulers and Local Governments.",
+              "objective": "Analyse the roles of traditional rulers in the Nigerian Local Government system."
+            },
+            {
+              "content": "Problems of Local Government administration in Nigeria.",
+              "objective": "Identify and analyse the major problems faced by Local Governments."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "The Military in Nigerian Politics",
+          "subtopics": [
+            {
+              "content": "Factors that led to military intervention in Nigerian politics.",
+              "objective": "Evaluate the reasons given for military intervention."
+            },
+            {
+              "content": "Structure of military regimes.",
+              "objective": "Evaluate the operation and organization of military regimes."
+            },
+            {
+              "content": "Political impacts of military rule, including state creation, the National Youth Service Corps (NYSC) and the introduction of a unitary system through Unification Decree No. 34.",
+              "objective": "Assess the achievements of military rule; evaluate its political impacts."
+            },
+            {
+              "content": "Economic and social programmes under military rule, including the Structural Adjustment Programme (SAP), Directorate of Food, Roads and Rural Infrastructure (DFRRI), People's Bank and MAMSER.",
+              "objective": "Assess the achievements of military rule and evaluate its economic and social impacts."
+            },
+            {
+              "content": "Processes of military disengagement from politics.",
+              "objective": "Determine the conditions that necessitated military withdrawal from the political scene."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part III: Foreign Policy and Nigeria's Relationship with the International Community",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Foreign Policy",
+          "subtopics": [
+            {
+              "content": "Definition and purpose of foreign policy; factors determining foreign policy; formulation and implementation.",
+              "objective": "Define foreign policy; identify and explain the factors that determine foreign policy."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Nigeria's Foreign Policy",
+          "subtopics": [
+            {
+              "content": "Nigeria's relations with major powers.",
+              "objective": "Identify the major objectives of Nigeria's foreign policy."
+            },
+            {
+              "content": "Nigeria's relations with developing countries, including the Technical Aid Corps (TAC) and peacekeeping operations.",
+              "objective": "Identify the major objectives of Nigeria's foreign policy and analyse Nigeria's international relationships."
+            },
+            {
+              "content": "Nigeria's policy of non-alignment.",
+              "objective": "Analyse Nigeria's non-aligned posture during the Cold War."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Nigeria's Relations with African Countries",
+          "subtopics": [
+            {
+              "content": "Africa as the centrepiece of Nigeria's foreign policy: guiding principles, implementation and implications.",
+              "objective": "Evaluate Nigeria's role in continental affairs."
+            },
+            {
+              "content": "The New Partnership for Africa's Development (NEPAD): origin, objectives and implications.",
+              "objective": "Assess the role of NEPAD in developing Africa."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Nigeria in International Organizations",
+          "subtopics": [
+            {
+              "content": "Nigeria and the United Nations (UN).",
+              "objective": "Analyse the dynamics of Nigeria's involvement in international organizations; assess their contributions to Nigeria's development."
+            },
+            {
+              "content": "Nigeria and the Commonwealth of Nations.",
+              "objective": "Analyse Nigeria's involvement in international organizations and assess their contributions to Nigeria's development."
+            },
+            {
+              "content": "Nigeria and the Organization of African Unity (OAU).",
+              "objective": "Evaluate Nigeria's involvement in African and international organizations."
+            },
+            {
+              "content": "Nigeria and the African Union (AU).",
+              "objective": "Evaluate Nigeria's role in continental affairs and assess the contributions of international organizations to Nigeria's development."
+            },
+            {
+              "content": "Nigeria and the Economic Community of West African States (ECOWAS).",
+              "objective": "Analyse Nigeria's involvement in international organizations and assess their contributions to Nigeria's development."
+            },
+            {
+              "content": "Nigeria and the Organization of the Petroleum Exporting Countries (OPEC).",
+              "objective": "Analyse Nigeria's involvement in international organizations and assess their contributions to Nigeria's development."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part IV: International Organizations",
+      "topics": [
+        {
+          "id": 1,
+          "title": "International Organizations",
+          "subtopics": [
+            {
+              "content": "The Economic Community of West African States (ECOWAS): origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of ECOWAS; assess its role in world affairs; appreciate its challenges and how they can be overcome."
+            },
+            {
+              "content": "The Organization of African Unity (OAU) and the African Union (AU): origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of the OAU and AU; assess their roles in world affairs; appreciate their challenges and how they can be overcome."
+            },
+            {
+              "content": "The Commonwealth of Nations: origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of the Commonwealth; assess its role in world affairs; appreciate its challenges and how they can be overcome."
+            },
+            {
+              "content": "The Organization of the Petroleum Exporting Countries (OPEC): origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of OPEC; assess its role in world affairs; appreciate its challenges and how they can be overcome."
+            },
+            {
+              "content": "The United Nations Organization (UNO): origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of the United Nations; assess its role in world affairs; appreciate its challenges and how they can be overcome."
+            },
+            {
+              "content": "The African Petroleum Producers Association: origin, objectives, structure, functions, achievements, problems and prospects.",
+              "objective": "Evaluate the operations of the organization; assess its role in world affairs; appreciate its challenges and how they can be overcome."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

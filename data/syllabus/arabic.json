@@ -1,0 +1,356 @@
+{
+  "subject": "Arabic",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Arabic",
+          "subtopics": [
+            {
+              "content": "Comprehension of standard Arabic; translation between English and Arabic; functional application of Arabic grammatical rules; appreciation of Arabic literary texts within their environmental and historical contexts; use of Arabic as a living international language of communication.",
+              "objective": "Answer comprehension questions correctly in standard Arabic; translate simple texts from English to Arabic and vice versa; apply Arabic grammatical rules functionally; appreciate Arabic literary texts in their environmental and historical contexts; use Arabic effectively as a living world language for communication where necessary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section A: Comprehension",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Reading Comprehension",
+          "subtopics": [
+            {
+              "content": "A passage of approximately 70 words, followed by five multiple-choice questions. Passage topics should relate to candidates' experiences, including current affairs, sports, education, politics, economy, health, culture and ethics.",
+              "objective": "Use appropriate words or phrases to express specific thoughts; deduce lessons from a passage; determine its main theme; give an appropriate title; interpret the meanings of particular words."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Translation",
+      "topics": [
+        {
+          "id": 1,
+          "title": "English-to-Arabic and Arabic-to-English Translation",
+          "subtopics": [
+            {
+              "content": "Ten translation questions: five from English into Arabic and five from Arabic into English. Translation into English includes key words and phrases within sentences. Questions should be based on standard Arabic and English usage.",
+              "objective": "Choose appropriate Arabic words or phrases to convey the meanings of English words or phrases; determine appropriate English equivalents for Arabic statements; interpret idiomatic expressions in both languages; transfer ideas from Arabic to English and vice versa; communicate effectively in Arabic and English."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Grammar",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Demonstrative, Relative, Conditional and Interrogative Pronouns",
+          "subtopics": [
+            {
+              "content": "أسماء الإشارة والموصولة والشرط والاستفهام: demonstrative pronouns, relative pronouns, conditional pronouns and interrogative pronouns.",
+              "objective": "Identify the various forms of demonstrative and relative pronouns; recognise and use conditional and interrogative forms appropriately."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Gender: Masculine and Feminine",
+          "subtopics": [
+            {
+              "content": "المذكر والمؤنث: masculine and feminine forms and gender markers in Arabic.",
+              "objective": "Compare gender markers in Arabic and distinguish masculine nouns and forms from feminine nouns and forms."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Characteristics of Nouns",
+          "subtopics": [
+            {
+              "content": "علامات الاسم: characteristics and identifying features of Arabic nouns.",
+              "objective": "Identify the characteristics and identifying features of Arabic nouns."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "The Dual",
+          "subtopics": [
+            {
+              "content": "المثنى: the dual form of Arabic nouns.",
+              "objective": "Differentiate between singular and dual forms of nouns and construct the dual correctly."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Plurals",
+          "subtopics": [
+            {
+              "content": "الجمع: sound masculine plural (جمع المذكر السالم), sound feminine plural (جمع المؤنث السالم) and broken plural (جمع التكسير).",
+              "objective": "Construct plural forms of singular nouns; distinguish between sound masculine, sound feminine and broken plurals; apply the appropriate plural forms in sentences."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "The Construct Phrase",
+          "subtopics": [
+            {
+              "content": "المضاف والمضاف إليه: the construct phrase consisting of a noun in the construct state and its genitive complement.",
+              "objective": "Identify construct phrases, understand their usages and construct them correctly in Arabic sentences."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Separable and Inseparable Pronouns",
+          "subtopics": [
+            {
+              "content": "الضمائر المنفصلة والمتصلة: independent or separable pronouns and attached or inseparable pronouns.",
+              "objective": "Differentiate between separable and inseparable pronouns and use them correctly in Arabic sentences."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Appendants",
+          "subtopics": [
+            {
+              "content": "التوابع: adjective (النعت), conjunction (العطف), permutative or apposition (البدل) and emphasis (التوكيد).",
+              "objective": "Identify and correctly use adjectives, conjunctions, permutatives and emphasis in Arabic sentences."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Prepositions and Particles of the Subjunctive and Jussive",
+          "subtopics": [
+            {
+              "content": "حروف الجر والنصب والجزم: prepositions and particles that govern the subjunctive and jussive forms.",
+              "objective": "Identify and apply appropriate prepositions and particles governing the subjunctive and jussive in given sentences."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Transitive and Intransitive Verbs",
+          "subtopics": [
+            {
+              "content": "الفعل اللازم والفعل المتعدي: intransitive verbs and transitive verbs.",
+              "objective": "Differentiate between transitive and intransitive verbs and use them correctly in sentences."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "The Perfect Verb",
+          "subtopics": [
+            {
+              "content": "الفعل الماضي: the perfect or past-tense verb and its forms.",
+              "objective": "Identify perfect verbs and recognise their different forms in Arabic."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "The Imperfect Verb",
+          "subtopics": [
+            {
+              "content": "الفعل المضارع: the indicative (المرفوع), subjunctive (المنصوب) and jussive (المجزوم) forms of the imperfect verb.",
+              "objective": "Identify imperfect verbs and distinguish their indicative, subjunctive and jussive forms; recognise the grammatical particles and rules governing their use in sentences."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "The Imperative Verb",
+          "subtopics": [
+            {
+              "content": "فعل الأمر: the imperative verb and its forms.",
+              "objective": "Identify imperative verbs, recognise their forms and use them appropriately in Arabic."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Modifiers",
+          "subtopics": [
+            {
+              "content": "النواسخ: Kana and its associates (كان وأخواتها), Inna and its associates (إن وأخواتها), and Zanna and its associates (ظن وأخواتها).",
+              "objective": "Identify the different types of modifiers and apply their grammatical rules correctly in Arabic usage."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Trilateral and Derived Verbs",
+          "subtopics": [
+            {
+              "content": "الفعل الثلاثي المجرد والمزيد فيه: basic triliteral verbs and derived triliteral verbs.",
+              "objective": "Differentiate between basic triliteral verbs and derived verbs; recognise their forms and patterns."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "The Verbal Noun",
+          "subtopics": [
+            {
+              "content": "المصدر: the verbal noun or infinitive and its forms.",
+              "objective": "Identify verbal nouns and recognise their forms and uses in Arabic."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Derivatives",
+          "subtopics": [
+            {
+              "content": "المشتقات: active participle (اسم الفاعل), passive participle (اسم المفعول), comparative and superlative (اسم التفضيل), noun of instrument (اسم الآلة), nouns of time and place (اسما الزمان والمكان), relative adjective (اسم النسبة) and hyperbole noun (اسم المبالغة).",
+              "objective": "Identify the types of Arabic derivatives; recognise their forms, meanings and functions; distinguish between the active participle, passive participle, comparative or superlative, noun of instrument, nouns of time and place, relative adjective and hyperbole noun."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Conditional Sentences",
+          "subtopics": [
+            {
+              "content": "الجملة الشرطية: conditional sentences and their components, including conditional particles and the relationship between the condition and its result.",
+              "objective": "Apply the rules governing conditional sentences; identify, construct and distinguish conditional sentences in ordinary Arabic sentences."
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Numerals",
+          "subtopics": [
+            {
+              "content": "العدد: Arabic numerals from 1 to 1000 and the grammatical rules governing their use.",
+              "objective": "Recognise and count using Arabic numerals from 1 to 1000; identify and apply the grammatical rules and complexities involved in their usage."
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Active and Passive Voice",
+          "subtopics": [
+            {
+              "content": "الفاعل ونائب الفاعل: the doer or grammatical subject of an active verb and the substitute subject in a passive construction.",
+              "objective": "Distinguish between the doer and the substitute subject; identify their forms and use them correctly in Arabic sentences."
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Subject and Predicate",
+          "subtopics": [
+            {
+              "content": "المبتدأ والخبر: the subject and predicate of Arabic nominal sentences.",
+              "objective": "Identify the subject and predicate in nominal sentences and apply the relevant grammatical rules."
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Nouns in the Accusative",
+          "subtopics": [
+            {
+              "content": "منصوبات الأسماء: direct object (المفعول به), adverbs of place and time (المفعول فيه أو الظرف), adverb of circumstance (الحال), the exempted with illa (المستثنى بإلا), specification (التمييز) and the vocative (المنادى).",
+              "objective": "Identify and distinguish the different types of accusative nouns, including direct objects, adverbs of place and time, circumstantial expressions, exceptions, specifications and vocatives; use them correctly in standard Arabic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Composition",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Arabic Composition",
+          "subtopics": [
+            {
+              "content": "Five composition questions on topics relating to candidates' lives and environments, including education, culture, health, politics, economy, sports and current affairs.",
+              "objective": "Use appropriate Arabic words to express specific thoughts; employ correct Arabic idiomatic expressions; communicate effectively and express ideas clearly in Arabic; demonstrate knowledge and use of common Arabic idioms and proverbs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Arabic Literature",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Arabic Literature",
+          "subtopics": [
+            {
+              "content": "مدخل إلى الأدب العربي: definition, divisions and genres of literature; literary periods; definition, types and purposes of poetry; definition and genres of prose.",
+              "objective": "Identify the essence of Arabic literature; distinguish poetry from prose; recognise literary genres and identify the different literary periods."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Pre-Islamic Period (Approximately 500–610 CE)",
+          "subtopics": [
+            {
+              "content": "العصر الجاهلي: Al-Shanfara and his Lamiyyah poem, beginning with «أقيموا بني أمي صدور مطيكم»; Aktham ibn al-Sayfi al-Tamimi and his speech before Khosrow, beginning with «إن أفضل الأشياء...».",
+              "objective": "Identify pre-Islamic Arabic poetic and prose traditions and conventions; recognise the selected authors and their works; analyse their themes, styles and literary characteristics."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "The Islamic Periods (610–1798 CE)",
+          "subtopics": [
+            {
+              "content": "العصور الإسلامية: Al-Hajjaj ibn Yusuf al-Thaqafi and his admonitory sermon, beginning with «أيها الناس قد أصبحتم في...»; Ali ibn Abi Talib and his sermon on sincere commitment to jihad; Abdullah ibn al-Muqaffa and his letter on treating a friend, beginning with «أبذل لصديقك»; Jarir ibn Atiyah and his poem praising Caliph Umar ibn Abd al-Aziz.",
+              "objective": "Identify the selected Islamic-period authors and works; analyse their themes, styles and figurative expressions; describe the aesthetic features and cultural significance of the texts."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "The Modern Period (1798 CE to the Present)",
+          "subtopics": [
+            {
+              "content": "العصر الحديث: Ahmad Shawqi and his poem on knowledge, education and the teacher's responsibility; Jubran Khalil Jubran and his poem Al-Mawkib, beginning with «الخير في الناس مصنوع...»; Abbas Mahmoud al-Aqqad and his book Al-Lughah al-Sha'irah (The Poetic Language).",
+              "objective": "Identify the selected modern Arabic writers and their works; analyse their literary styles, themes and aesthetic features; assess the cultural values and significance of modern Arabic literature."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Arabic Literature in West Africa",
+          "subtopics": [
+            {
+              "content": "الأدب العربي في غرب إفريقيا: Asma bint al-Shaykh Uthman ibn Fodio and her poem «أعيني جودا وابكيا لحبيبتي»; Ali Abd al-Qadir al-Asali and his book «قصة عبث الطفولة»; Muhammad al-Amin Sambou Gassama and his poem on pride in the ancient African continent; Yahya Adam al-Fulani and his book «أهل التكرور».",
+              "objective": "Identify the selected West African Arabic literary figures and their works; assess the successful use of Arabic as a medium for West African novels and drama; analyse literary content and describe major characteristics, themes and plots."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Literary Analysis and Appreciation",
+          "subtopics": [
+            {
+              "content": "Arabic literary texts across the pre-Islamic, Islamic, modern and West African periods, including poetry, prose, sermons, letters and literary books.",
+              "objective": "Identify and analyse figurative expressions in Islamic literature; describe aesthetic features in literary texts; assess their cultural values in modern contexts; compare literary styles, themes, conventions and forms across different periods."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,908 @@
+
+{
+  "subject": "History",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: The Nigeria Area up to 1800",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Land and Peoples of the Nigeria Area",
+          "subtopics": [
+            {
+              "content": "a. Geographical zones and the people.",
+              "objective": "Identify the geographical zones and the people within them."
+            },
+            {
+              "content": "b. The people's relationship with the environment.",
+              "objective": "Establish the relationship between the people and the environment."
+            },
+            {
+              "content": "c. Main physical features and the impact of geography on human activity, e.g., hunting, fishing, farming, etc.",
+              "objective": "Relate the impact of geography on human activity in the specific zones."
+            },
+            {
+              "content": "d. Relations and integration among the peoples of different zones.",
+              "objective": "Comprehend the relationships among the various peoples of the Nigeria area."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Early Centres of Civilization",
+          "subtopics": [
+            {
+              "content": "a. Nok, Daima, Ife, Benin, Igbo Ukwu and Iwo Eleru.",
+              "objective": "Highlight the main features of the early centres of civilization."
+            },
+            {
+              "content": "b. Monuments and shelter systems: Kuyambana, Durbi-ta-Kusheyi, city walls, moats and palaces.",
+              "objective": "Examine the significance of various centres and establish the historical significance of monuments such as caves and rocky formations."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Origins and Formation of States in the Nigeria Area",
+          "subtopics": [
+            {
+              "content": "a. Central Sudan: Kanuri and Hausa states.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin and determine inter-state relations."
+            },
+            {
+              "content": "b. Niger-Benue Valley: Nupe, Jukun, Igala, Idoma, Tiv and Ebira.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin and determine inter-state relations."
+            },
+            {
+              "content": "c. Eastern Forest Belt: Igbo and Ibibio.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin and determine inter-state relations."
+            },
+            {
+              "content": "d. Western Forest Belt: Yoruba and Edo.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin and determine inter-state relations."
+            },
+            {
+              "content": "e. Coastal and Niger-Delta: Efik, Ijo, Itsekiri and Urhobo.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin and determine inter-state relations."
+            },
+            {
+              "content": "i. Factors influencing their origin and migration.",
+              "objective": "Relate the different groups of people occupying the various zones to their traditions of origin."
+            },
+            {
+              "content": "ii. Social and political organizations.",
+              "objective": "Account for their social and political organizations."
+            },
+            {
+              "content": "iii. Inter-state relations, religion, war and peace.",
+              "objective": "Determine inter-state relations and highlight the differences between centralized and non-centralized (acephalous) states."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Economic Activities and Growth of States",
+          "subtopics": [
+            {
+              "content": "a. Agriculture: hunting, farming, fishing, animal husbandry and horticulture.",
+              "objective": "Identify the various economic activities of the people and differentiate their economic activities and specialties."
+            },
+            {
+              "content": "b. Industries: pottery, salt-making, iron-smelting, blacksmithing, leather-working, wood-carving, cloth-making, dyeing and food processing.",
+              "objective": "Identify the various economic activities of the people and differentiate their economic activities and specialties."
+            },
+            {
+              "content": "c. Trade and trade routes: local, regional and long-distance trade, including the trade in slaves and trans-Saharan trade.",
+              "objective": "Relate trade and other economic activities to the growth of the states."
+            },
+            {
+              "content": "d. Expansion of states.",
+              "objective": "Relate economic activities to the growth and expansion of the states."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "External Influences",
+          "subtopics": [
+            {
+              "content": "a. North Africans, Arabs and Tuaregs.",
+              "objective": "Assess the impact of contact with North Africa on the people and states south of the Sahara."
+            },
+            {
+              "content": "i. Introduction, spread and impact of Islam.",
+              "objective": "Assess the impact of contact with North Africa on the people and states south of the Sahara."
+            },
+            {
+              "content": "ii. Trans-Saharan trade.",
+              "objective": "Highlight the role of the Tuaregs in the trans-Saharan trade."
+            },
+            {
+              "content": "b. Europeans: early European trade with the coastal states.",
+              "objective": "Examine the impact of early European contact with the coastal people."
+            },
+            {
+              "content": "ii. The trans-Atlantic slave trade: origin, organization and impact.",
+              "objective": "Trace the origin, organization and impact of the trans-Atlantic slave trade."
+            },
+            {
+              "content": "iii. Impact of early missionary activities in the coastal areas.",
+              "objective": "Outline the impact of early Christian missionary activities in the coastal areas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: The Nigeria Area, 1800–1900",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Sokoto Caliphate",
+          "subtopics": [
+            {
+              "content": "The Sokoto Jihad: causes, course and consequences.",
+              "objective": "Examine the causes and course of the Jihad."
+            },
+            {
+              "content": "a. The causes and the process of the Jihad.",
+              "objective": "Examine the causes and course of the Jihad."
+            },
+            {
+              "content": "b. The establishment and administration of the Caliphate and relations with neighbours.",
+              "objective": "Examine the administrative set-up of the Caliphate and its relations with its neighbours."
+            },
+            {
+              "content": "c. The achievements and impact of the Caliphate.",
+              "objective": "Examine the impact of the Caliphate."
+            },
+            {
+              "content": "d. The collapse of the Caliphate.",
+              "objective": "Trace the internal and external factors that led to the collapse of the Caliphate."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Kanem-Borno",
+          "subtopics": [
+            {
+              "content": "a. The long survival and collapse of the Saifawa dynasty.",
+              "objective": "Highlight the factors responsible for the long survival of the Saifawa dynasty and determine the factors that led to its collapse."
+            },
+            {
+              "content": "b. Borno under the Shehus.",
+              "objective": "Examine Borno under the administration of the Shehus."
+            },
+            {
+              "content": "c. Borno under Rabeh.",
+              "objective": "Assess the role of Rabeh in Borno's history."
+            },
+            {
+              "content": "d. Borno and the Sokoto Caliphate.",
+              "objective": "Examine the historical relationship between Borno and the Sokoto Caliphate."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Yorubaland",
+          "subtopics": [
+            {
+              "content": "a. The fall of the Old Oyo Empire.",
+              "objective": "Examine the causes and implications of the fall of the Old Oyo Empire."
+            },
+            {
+              "content": "b. The Yoruba wars and their impact.",
+              "objective": "Examine the causes and effects of the Yoruba wars."
+            },
+            {
+              "content": "c. The peace treaty of 1886 and its aftermath.",
+              "objective": "Assess the impact of the 1886 peace treaty."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Benin",
+          "subtopics": [
+            {
+              "content": "a. Internal political and cultural development.",
+              "objective": "Examine Benin's internal political and cultural development."
+            },
+            {
+              "content": "b. Relations with neighbours.",
+              "objective": "Examine Benin's relations with its neighbours."
+            },
+            {
+              "content": "c. Relations with the Europeans.",
+              "objective": "Assess Benin's relationship with the Europeans."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Nupe",
+          "subtopics": [
+            {
+              "content": "a. Internal political and cultural development.",
+              "objective": "Examine Nupe's internal political and cultural development."
+            },
+            {
+              "content": "b. Relations with neighbours.",
+              "objective": "Assess Nupe's relations with its neighbours."
+            },
+            {
+              "content": "c. Nupe Imperialism.",
+              "objective": "Highlight the scope and nature of Nupe Imperialism."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Igbo",
+          "subtopics": [
+            {
+              "content": "a. Internal political and cultural development.",
+              "objective": "Examine Igbo internal political and cultural development."
+            },
+            {
+              "content": "b. Relations with neighbours.",
+              "objective": "Assess Igbo relations with their neighbours."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Efik",
+          "subtopics": [
+            {
+              "content": "a. Internal political and cultural development.",
+              "objective": "Examine Efik internal political and cultural development."
+            },
+            {
+              "content": "b. Relations with neighbours.",
+              "objective": "Assess Efik relations with their neighbours."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "European Penetration and Impact",
+          "subtopics": [
+            {
+              "content": "a. European exploration of the interior.",
+              "objective": "Examine the motives for the exploration of the interior."
+            },
+            {
+              "content": "b. The suppression of the trans-Atlantic slave trade.",
+              "objective": "Give reasons for the suppression of the trans-Atlantic slave trade."
+            },
+            {
+              "content": "c. The development of commodity trade and rise of consular authority.",
+              "objective": "Trace the development of commodity trade and account for the rise of consular authority."
+            },
+            {
+              "content": "d. Christian missionary activities.",
+              "objective": "Examine missionary activities in the area."
+            },
+            {
+              "content": "e. The activities of the trading companies.",
+              "objective": "Assess the activities of the European trading companies."
+            },
+            {
+              "content": "f. Impact of European activities on the coast and the hinterland.",
+              "objective": "Examine European activities and their impact on the coast and the hinterland."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "British Conquest of the Nigeria Area",
+          "subtopics": [
+            {
+              "content": "a. The first phase of the British conquest of Nigeria, 1851–1900.",
+              "objective": "Highlight the factors responsible for the bombardment and annexation of Lagos."
+            },
+            {
+              "content": "b. Second phase of the conquest and motives.",
+              "objective": "Determine the reasons for the conquest and the methods used during the second phase."
+            },
+            {
+              "content": "c. Methods of the conquest and its result.",
+              "objective": "Determine the methods used during the conquest and evaluate its results."
+            },
+            {
+              "content": "d. Resistance to and aftermath of the conquest.",
+              "objective": "Examine the various acts of resistance to the conquest and evaluate its aftermath."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Nigeria, 1900–1960",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Establishment of Colonial Rule up to 1914",
+          "subtopics": [
+            {
+              "content": "a. Pacification and occupation of the territories.",
+              "objective": "Outline the various features and methods of British pacification and occupation of the territories."
+            },
+            {
+              "content": "b. Resistance to pacification and occupation: the Ekumeku Movement in Asaba hinterland, 1898–1911, and the Satiru uprising of 1906.",
+              "objective": "Examine resistance to British pacification and occupation."
+            },
+            {
+              "content": "c. Administration of the Protectorates.",
+              "objective": "Examine the administrative set-up of the Protectorates."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Amalgamation of 1914",
+          "subtopics": [
+            {
+              "content": "a. Reasons for the amalgamation.",
+              "objective": "Examine the reasons for the 1914 Amalgamation."
+            },
+            {
+              "content": "b. Effects of the amalgamation.",
+              "objective": "Examine the effects of the 1914 Amalgamation."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Colonial Administration after the Amalgamation",
+          "subtopics": [
+            {
+              "content": "a. Central administration: Legislative and Executive Councils.",
+              "objective": "Relate the composition of the central administrative set-up to its consequences."
+            },
+            {
+              "content": "b. Indirect Rule: reasons, working and effects.",
+              "objective": "Identify the reasons for the introduction and workings of the indirect rule system and assess its effects."
+            },
+            {
+              "content": "c. Local administrative institutions, Native Authorities, Native Courts and Native Treasuries.",
+              "objective": "Examine the local administrative units."
+            },
+            {
+              "content": "d. Resistance to colonial rule: Egba Anti-Tax Agitation of 1918 and the Aba Women's Movement of 1929.",
+              "objective": "Account for the anti-colonial movements and their significance."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "The Colonial Economy",
+          "subtopics": [
+            {
+              "content": "a. Currency, taxation and forced labour.",
+              "objective": "Examine the nature of the economy as it affected society under colonial rule."
+            },
+            {
+              "content": "b. Infrastructure: transportation, post and telecommunications.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            },
+            {
+              "content": "c. Agriculture.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            },
+            {
+              "content": "d. Mining.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            },
+            {
+              "content": "e. Industry.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            },
+            {
+              "content": "f. Commerce.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            },
+            {
+              "content": "g. Banking.",
+              "objective": "Examine the nature of the colonial economy and its effects on society."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Social Development under Colonial Rule",
+          "subtopics": [
+            {
+              "content": "a. Western education.",
+              "objective": "Identify the scope of social development under colonial rule."
+            },
+            {
+              "content": "b. Urbanization and social integration.",
+              "objective": "Examine the impact of urbanization on the people and the level of social integration among them."
+            },
+            {
+              "content": "c. Improvement unions.",
+              "objective": "Identify the scope of social development under colonial rule."
+            },
+            {
+              "content": "d. Health institutions.",
+              "objective": "Identify the scope of social development under colonial rule."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Constitutional Developments, Nationalism and Independence",
+          "subtopics": [
+            {
+              "content": "a. The 1922 Clifford Constitution and the rise of Nigeria's first political party.",
+              "objective": "Highlight the significance of the Clifford Constitution of 1922."
+            },
+            {
+              "content": "b. World War II and the agitation for independence.",
+              "objective": "Examine the effect of World War II on the agitations for independence and constitutional developments."
+            },
+            {
+              "content": "c. The rise of nationalist movements.",
+              "objective": "Trace the emergence of the nationalist movement."
+            },
+            {
+              "content": "d. The Richards Constitution of 1946.",
+              "objective": "Assess the role of the Richards Constitution in constitutional development."
+            },
+            {
+              "content": "e. The Macpherson Constitution of 1951.",
+              "objective": "Assess the role of the Macpherson Constitution in constitutional development."
+            },
+            {
+              "content": "f. Party politics: regionalism, federalism and the minority question.",
+              "objective": "Trace the development of party politics and its impact on regionalism and the minority question."
+            },
+            {
+              "content": "g. Lyttleton Constitution of 1954.",
+              "objective": "Assess the role of the Lyttleton Constitution in constitutional development."
+            },
+            {
+              "content": "h. Constitutional conferences in Lagos in 1957 and London in 1958.",
+              "objective": "Examine the impact of the constitutional conferences on the move towards independence."
+            },
+            {
+              "content": "i. The general elections of 1959 and independence in 1960.",
+              "objective": "Determine the factors that aided the attainment of independence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Nigeria since Independence",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Politics of the First Republic and Military Intervention",
+          "subtopics": [
+            {
+              "content": "a. Struggle for the control of the centre.",
+              "objective": "Give reasons behind the struggle for the control of the centre."
+            },
+            {
+              "content": "b. Issue of revenue allocation.",
+              "objective": "Account for the controversies in revenue allocation."
+            },
+            {
+              "content": "c. The 1962/63 census controversies.",
+              "objective": "Account for the controversies generated by the 1962/63 census."
+            },
+            {
+              "content": "d. The 1963 Republican Constitution.",
+              "objective": "Highlight the key features and significance of the 1963 Constitution."
+            },
+            {
+              "content": "e. Minority agitations.",
+              "objective": "Account for the controversies generated by minority agitations and the quest for the creation of states."
+            },
+            {
+              "content": "f. The Action Group crisis and the general elections of 1964/65.",
+              "objective": "Examine the problems created by the Action Group crisis and the general elections of 1964/65."
+            },
+            {
+              "content": "g. The coup d'état of January 1966 and the counter-coup of July 1966.",
+              "objective": "Analyse the consequences of the 1966 military intervention."
+            },
+            {
+              "content": "h. The Ironsi regime.",
+              "objective": "Analyse the consequences of the 1966 military intervention and examine the Ironsi regime."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Nigerian Civil War",
+          "subtopics": [
+            {
+              "content": "a. Causes.",
+              "objective": "Examine the remote and immediate causes of the war."
+            },
+            {
+              "content": "b. Course.",
+              "objective": "Examine the course of the war."
+            },
+            {
+              "content": "c. Effects.",
+              "objective": "Assess the effects of the war."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "The Gowon Regime",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Gowon regime.",
+              "objective": "Assess the challenges and achievements of the Gowon regime."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "The Murtala/Obasanjo Regime",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Murtala/Obasanjo regime.",
+              "objective": "Assess the challenges and achievements of the Murtala/Obasanjo regime."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "The Second Republic",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Second Republic.",
+              "objective": "Evaluate the challenges and achievements of the Second Republic."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "The Buhari Regime",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Buhari regime.",
+              "objective": "Assess the challenges and achievements of the Buhari regime."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "The Babangida Regime",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Babangida regime.",
+              "objective": "Assess the challenges and achievements of the Babangida regime."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "The Interim National Government (ING)",
+          "subtopics": [
+            {
+              "content": "The role and challenges of the Interim National Government.",
+              "objective": "Examine the role and challenges of the Interim National Government."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "The Abacha Regime",
+          "subtopics": [
+            {
+              "content": "Challenges and achievements of the Abacha regime.",
+              "objective": "Assess the challenges and achievements of the Abacha regime."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Transition to the Fourth Republic",
+          "subtopics": [
+            {
+              "content": "The Abdulsalami regime, key actors in the transition process, and the growth and development of the Fourth Republic.",
+              "objective": "Assess the challenges and achievements of the Abdulsalami regime and examine the role of key actors in the transition process and the growth and development of the Fourth Republic."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Nigeria in International Organizations",
+          "subtopics": [
+            {
+              "content": "a. Economic Community of West African States (ECOWAS).",
+              "objective": "Examine the role of Nigeria in ECOWAS."
+            },
+            {
+              "content": "b. African Union (AU).",
+              "objective": "Assess the role of Nigeria in the AU."
+            },
+            {
+              "content": "c. Commonwealth of Nations.",
+              "objective": "Evaluate the role of Nigeria in the Commonwealth of Nations."
+            },
+            {
+              "content": "d. Organization of Petroleum Exporting Countries (OPEC).",
+              "objective": "Assess the role of Nigeria in OPEC."
+            },
+            {
+              "content": "e. United Nations Organization.",
+              "objective": "Examine the role of Nigeria in the UN."
+            },
+            {
+              "content": "f. Nigeria's role in conflict resolution in the Congo, Chad, Liberia, Sierra Leone, Guinea and the Sudan.",
+              "objective": "Examine the role of Nigeria in conflict resolution in the Congo, Chad, Liberia, Sierra Leone, Guinea and the Sudan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part II: Africa and the Wider World since 1800",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Section A: West and North Africa — Islamic Reform Movements and State Building in West Africa",
+          "subtopics": [
+            {
+              "content": "a. Relationship between Sokoto and other Jihads.",
+              "objective": "Establish the relationship between the Sokoto Jihad and other Jihads in West Africa."
+            },
+            {
+              "content": "b. The Jihads of Seku Ahmadu and Al-Hajj Umar.",
+              "objective": "Compare the achievements of the Jihads of Seku Ahmadu and Al-Hajj Umar."
+            },
+            {
+              "content": "c. The activities of Samori Toure.",
+              "objective": "Examine the activities of Samori Toure of the Madinka Empire."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Sierra Leone, Liberia and Christian Missionary Activities in West Africa",
+          "subtopics": [
+            {
+              "content": "a. The foundation of Sierra Leone and Liberia and the spread of Christianity.",
+              "objective": "Determine the factors that led to the founding of Sierra Leone and Liberia and examine their importance in the spread and impact of Christianity in West Africa."
+            },
+            {
+              "content": "b. The activities and impact of Christian missionaries.",
+              "objective": "Assess the impact of Christian missionary activities in West Africa."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Egypt under Mohammed Ali and Khedive Ismail",
+          "subtopics": [
+            {
+              "content": "a. The rise of Mohammed Ali and his reforms.",
+              "objective": "Determine the factors that aided Mohammed Ali's rise to power and his reforms."
+            },
+            {
+              "content": "b. Mohammed Ali's relations with the Europeans.",
+              "objective": "Establish the relationship between Mohammed Ali's Empire and the Europeans."
+            },
+            {
+              "content": "c. Ismail's fiscal policies.",
+              "objective": "Account for the fiscal policies of Ismail."
+            },
+            {
+              "content": "d. The British occupation of Egypt.",
+              "objective": "Examine the reasons for the British occupation of Egypt."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Section B: Horn of Africa and Southern Africa — Ethiopia in the 19th Century",
+          "subtopics": [
+            {
+              "content": "a. The rise of Theodore II and his attempt at the unification of Ethiopia.",
+              "objective": "Examine the factors that led to the rise of Theodore II as Emperor of Ethiopia and analyse the strategies adopted to achieve Ethiopian unification."
+            },
+            {
+              "content": "b. Menelik II and Ethiopian independence.",
+              "objective": "Assess the role of Menelik II in the maintenance of Ethiopian independence."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "The Mfecane",
+          "subtopics": [
+            {
+              "content": "a. The rise of the Zulu Nation.",
+              "objective": "Trace events in Nguniland before the Mfecane and determine the factors that led to the rapid rise of Shaka."
+            },
+            {
+              "content": "b. Causes, course and consequences of the Mfecane.",
+              "objective": "Examine the causes, course and consequences of the Mfecane."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "The Great Trek",
+          "subtopics": [
+            {
+              "content": "a. The frontier wars.",
+              "objective": "Determine the factors that led to the frontier wars."
+            },
+            {
+              "content": "b. British intervention in Boer-African relations.",
+              "objective": "Account for British intervention in Boer-African relations."
+            },
+            {
+              "content": "c. The Great Trek and its consequences.",
+              "objective": "Describe the nature of the Great Trek and examine its consequences."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Section C: Imperialism, Colonialism and Problems of Nation-Building in Africa — The New Imperialism and European Occupation of Africa",
+          "subtopics": [
+            {
+              "content": "a. The New Imperialism in Africa.",
+              "objective": "Understand the concept of the New Imperialism and assess its justifications."
+            },
+            {
+              "content": "b. European scramble for Africa.",
+              "objective": "Examine the causes of the scramble and the nations involved."
+            },
+            {
+              "content": "c. The Berlin Conference.",
+              "objective": "Account for the significance of the Berlin Conference."
+            },
+            {
+              "content": "d. The occupation and resistance by Africans.",
+              "objective": "Highlight African resistance to the occupation."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Patterns of Colonial Rule in Africa",
+          "subtopics": [
+            {
+              "content": "a. The British.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            },
+            {
+              "content": "b. The French.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            },
+            {
+              "content": "c. The Portuguese.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            },
+            {
+              "content": "d. The Belgians.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            },
+            {
+              "content": "e. The Germans.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            },
+            {
+              "content": "f. The Spanish.",
+              "objective": "Examine and compare the patterns of colonial rule by the various European powers."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "The Politics of Decolonization",
+          "subtopics": [
+            {
+              "content": "a. Colonial policies and African discontent.",
+              "objective": "Examine the policies employed by the colonial rulers and the magnitude of African discontent."
+            },
+            {
+              "content": "b. The impact of the two World Wars.",
+              "objective": "Assess the impact of the First and Second World Wars on African nationalism."
+            },
+            {
+              "content": "c. Nationalist activities and the emergence of political parties and associations.",
+              "objective": "Examine the emergence of nationalist activities, political parties and associations."
+            },
+            {
+              "content": "d. Strategies for attaining independence.",
+              "objective": "Determine the strategies used in the attainment of independence."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Apartheid in South Africa",
+          "subtopics": [
+            {
+              "content": "a. The origin of Apartheid.",
+              "objective": "Trace the origin of Apartheid in South Africa."
+            },
+            {
+              "content": "b. Rise of Afrikaner Nationalism.",
+              "objective": "Give reasons for the rise of Afrikaner Nationalism."
+            },
+            {
+              "content": "c. Enactment of Apartheid laws.",
+              "objective": "Highlight Apartheid laws."
+            },
+            {
+              "content": "d. Internal reactions to Apartheid and the suppression of African nationalist movements.",
+              "objective": "Relate internal reactions to Apartheid to the African struggle for majority rule."
+            },
+            {
+              "content": "e. External reactions to Apartheid, the Frontline States, the Commonwealth of Nations, OAU and the UN.",
+              "objective": "Relate the contributions of African states and international organizations to the fight against Apartheid."
+            },
+            {
+              "content": "f. The dismantling of Apartheid.",
+              "objective": "Identify the steps taken towards the dismantling of Apartheid in South Africa."
+            },
+            {
+              "content": "g. Post-Apartheid developments.",
+              "objective": "Assess post-Apartheid developments in South Africa."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Problems of Nation-Building in Africa",
+          "subtopics": [
+            {
+              "content": "a. Political and economic challenges and constraints.",
+              "objective": "Examine the political and economic problems faced by African countries in nation-building."
+            },
+            {
+              "content": "b. Physical and environmental challenges.",
+              "objective": "Assess the effects of natural disasters on Africa."
+            },
+            {
+              "content": "c. Ethnic and religious pluralism.",
+              "objective": "Determine the role of ethnic and religious problems in Africa."
+            },
+            {
+              "content": "d. Military intervention and political instability.",
+              "objective": "Examine the role and implications of military interventions in African politics."
+            },
+            {
+              "content": "e. Neo-colonialism and underdevelopment.",
+              "objective": "Examine the role and implications of neo-colonialism in Africa."
+            },
+            {
+              "content": "f. Boundary disputes and threat to African unity.",
+              "objective": "Highlight the problems of boundary disputes."
+            },
+            {
+              "content": "g. Civil wars and the refugee problem.",
+              "objective": "Establish the relationship between civil wars and refugee problems in Africa."
+            },
+            {
+              "content": "h. Terrorism.",
+              "objective": "Examine the consequences of terrorism for African states and societies."
+            },
+            {
+              "content": "i. Globalisation.",
+              "objective": "Enumerate the effects of globalisation on African nations."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

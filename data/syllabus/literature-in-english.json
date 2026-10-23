@@ -1,0 +1,474 @@
+
+{
+  "subject": "Literature in English",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section 1: Drama",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Types of Drama",
+          "subtopics": [
+            {
+              "content": "a. Types: Tragedy",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            },
+            {
+              "content": "b. Types: Comedy",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            },
+            {
+              "content": "c. Types: Tragicomedy",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            },
+            {
+              "content": "d. Types: Melodrama",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            },
+            {
+              "content": "e. Types: Farce",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            },
+            {
+              "content": "f. Types: Opera, etc.",
+              "objective": "Identify the various types of drama, analyse their contents, and compare and contrast the features of different types of drama."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Dramatic Techniques",
+          "subtopics": [
+            {
+              "content": "a. Characterisation",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "b. Dialogue",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "c. Flashback",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "d. Mime",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "e. Costume",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "f. Music/Dance",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "g. Décor/Scenery",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "h. Acts/Scenes",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "i. Soliloquy/Aside",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            },
+            {
+              "content": "j. Figures of Speech",
+              "objective": "Demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text, and differentiate between the styles of selected playwrights."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Interpretation of the Prescribed Texts",
+          "subtopics": [
+            {
+              "content": "a. Theme",
+              "objective": "Determine the theme of any prescribed text."
+            },
+            {
+              "content": "b. Plot",
+              "objective": "Identify the plot of the play."
+            },
+            {
+              "content": "c. Socio-political context",
+              "objective": "Apply the lessons of the play to social reality."
+            },
+            {
+              "content": "d. Setting",
+              "objective": "Identify the spatial setting and temporal period of the play."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 2: Prose",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Types of Prose",
+          "subtopics": [
+            {
+              "content": "a. Prose fiction: Fiction — Novel",
+              "objective": "Differentiate between types of novel, identify the category to which each prescribed text belongs, and analyse the components of each type of prose."
+            },
+            {
+              "content": "b. Prose fiction: Fiction — Novella/Novelette",
+              "objective": "Differentiate between types of novel, identify the category to which each prescribed text belongs, and analyse the components of each type of prose."
+            },
+            {
+              "content": "c. Prose fiction: Fiction — Short story",
+              "objective": "Differentiate between types of novel, identify the category to which each prescribed text belongs, and analyse the components of each type of prose."
+            },
+            {
+              "content": "d. Prose fiction: Non-fiction — Biography",
+              "objective": "Identify the category to which each prescribed text belongs and analyse the components of each type of prose."
+            },
+            {
+              "content": "e. Prose fiction: Non-fiction — Autobiography",
+              "objective": "Identify the category to which each prescribed text belongs and analyse the components of each type of prose."
+            },
+            {
+              "content": "f. Prose fiction: Non-fiction — Memoir",
+              "objective": "Identify the category to which each prescribed text belongs and analyse the components of each type of prose."
+            },
+            {
+              "content": "g. Faction: Combination of fact and fiction",
+              "objective": "Identify the balance of facts and fiction in literary faction."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Narrative Techniques/Devices",
+          "subtopics": [
+            {
+              "content": "a. Point of view: Omniscient",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "b. Point of view: First person",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "c. Point of view: Second person",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "d. Point of view: Third person",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "e. Point of view: Stream of consciousness",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "f. Point of view: Epiphany",
+              "objective": "Identify the narrative techniques used in each prescribed text and determine an author's narrative style."
+            },
+            {
+              "content": "g. Characterisation: Round, flat, foil, hero, antihero, villain, heroine, etc.",
+              "objective": "Distinguish between one type of character and another."
+            },
+            {
+              "content": "h. Language",
+              "objective": "Demonstrate understanding of grammar, diction and clarity of expression."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Textual Analysis",
+          "subtopics": [
+            {
+              "content": "a. Theme",
+              "objective": "Determine the thematic preoccupation of the prescribed text."
+            },
+            {
+              "content": "b. Plot",
+              "objective": "Indicate the plot of the novel."
+            },
+            {
+              "content": "c. Setting (Temporal/Spatial)",
+              "objective": "Identify the setting and period or timing of the novel."
+            },
+            {
+              "content": "d. Socio-political context",
+              "objective": "Relate the prescribed text to social reality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 3: Poetry",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Types of Poetry",
+          "subtopics": [
+            {
+              "content": "a. Sonnet",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "b. Ode",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "c. Lyrics",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "d. Elegy",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "e. Ballad",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "f. Panegyric",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "g. Epic",
+              "objective": "Identify different types of poetry and their distinctive features."
+            },
+            {
+              "content": "h. Blank verse, etc.",
+              "objective": "Identify different types of poetry and their distinctive features."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Poetic Devices",
+          "subtopics": [
+            {
+              "content": "a. Imagery",
+              "objective": "Determine the devices used by various poets, show how poetic devices are used for aesthetic effect in each poem, identify figures of speech in the texts, and explain how poetic devices convey messages and meaning."
+            },
+            {
+              "content": "b. Sound (Rhyme/Rhythm, repetition, pun, onomatopoeia, etc.)",
+              "objective": "Determine the devices used by various poets, show how poetic devices are used for aesthetic effect in each poem, identify figures of speech in the texts, and explain how poetic devices convey messages and meaning."
+            },
+            {
+              "content": "c. Diction",
+              "objective": "Determine the devices used by various poets and explain how poetic devices convey messages and meaning."
+            },
+            {
+              "content": "d. Persona",
+              "objective": "Determine the devices used by various poets and explain how poetic devices convey messages and meaning."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Appreciation",
+          "subtopics": [
+            {
+              "content": "a. Thematic preoccupation",
+              "objective": "Deduce the poet's thematic preoccupation from the poem."
+            },
+            {
+              "content": "b. Socio-political relevance",
+              "objective": "Apply the lessons from the poem to social reality."
+            },
+            {
+              "content": "c. Style",
+              "objective": "Appraise poetry as an art with moral values."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 4: General Literary Terms and Principles",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Literary Terms",
+          "subtopics": [
+            {
+              "content": "Foreshadowing, suspense, theatre, monologue, dialogue, soliloquy, symbolism, protagonist, antagonist, figures of speech, satire, stream of consciousness, synecdoche, metonymy, etc., in addition to those listed under the different genres",
+              "objective": "Identify literary terms that are specific to drama, prose and poetry, and identify areas of overlap among all the genres, e.g. verse in drama and poetry, and narration in all the genres."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 5: Literary Appreciation",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Unseen Passages/Extracts from Drama, Prose and Poetry",
+          "subtopics": [
+            {
+              "content": "a. Unseen passages/extracts from drama",
+              "objective": "Identify literary devices used in a given passage or extract, provide an interpretation of the passage or extract, and relate the extract to true-life experiences."
+            },
+            {
+              "content": "b. Unseen passages/extracts from prose",
+              "objective": "Identify literary devices used in a given passage or extract, provide an interpretation of the passage or extract, and relate the extract to true-life experiences."
+            },
+            {
+              "content": "c. Unseen passages/extracts from poetry",
+              "objective": "Identify literary devices used in a given passage or extract, provide an interpretation of the passage or extract, and relate the extract to true-life experiences."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 6: List of Selected African and Non-African Plays, Novels and Poems",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Drama",
+          "subtopics": [
+            {
+              "content": "a. African: Efua Sutherland — Marriage of Anansewa",
+              "objective": "Study and appreciate the prescribed African play, including its themes, plot, characters, dramatic techniques, setting and socio-political context."
+            },
+            {
+              "content": "b. Non-African: William Shakespeare — Antony and Cleopatra",
+              "objective": "Study and appreciate the prescribed non-African play, including its themes, plot, characters, dramatic techniques, setting and socio-political context."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Prose",
+          "subtopics": [
+            {
+              "content": "a. African: Pede Hollist — So the Path Does not Die",
+              "objective": "Study and appreciate the prescribed African novel, including its themes, plot, characters, narrative techniques, setting and socio-political context."
+            },
+            {
+              "content": "b. African: Elma Shaw — Redemption Road",
+              "objective": "Study and appreciate the prescribed African novel, including its themes, plot, characters, narrative techniques, setting and socio-political context."
+            },
+            {
+              "content": "c. Non-African: Susanne Bellefeuille — Path of Lucas: The Journey He Endured",
+              "objective": "Study and appreciate the prescribed non-African prose text, including its themes, plot, characters, narrative techniques, setting and socio-political context."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Poetry",
+          "subtopics": [
+            {
+              "content": "a. African: Gabriel Okara — Once Upon a Time",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "b. African: Elizabeth L. A. Kamara — New Tongue",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "c. African: Wole Soyinka — Night",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "d. African: Niyi Osundare — Not my Business",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "e. African: S. O. H. Afriyie-Vidza — Hearty Garlands",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "f. African: Syl Cheney-Coker — The Breast of the Sea",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "g. Non-African: Lord Byron — She Walks in Beauty",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "h. Non-African: Geoffrey Chaucer — The Nun's Priest's Tale (shortened)",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "i. Non-African: Fleur Adcock — The Telephone Call",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            },
+            {
+              "content": "j. Non-African: Wilfred Wilson Gibson — The Stone",
+              "objective": "Study and appreciate the prescribed poem, including its themes, poetic devices, style, socio-political relevance and moral values."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section 7: Recommended Texts",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Anthologies",
+          "subtopics": [
+            {
+              "content": "1. Obafemi, O. and Agoi (eds.) — Of Shadows and Rainbows: Musings in Times of Covid (An Anthology of Poems, Plays and Short Stories), PEN Nigeria, online",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "2. Hayward, J. (ed.) (1968) — The Penguin Book of English Verse, London: Penguin",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "3. Johnson, R., Ker, D., Maduka, C. and Obafemi, O. (eds.) (1996) — New Poetry from Africa, Ibadan: UP Plc",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "4. Kermode, F. (1964) — Oxford Anthology of English Literature, Vol. II, London: OUP",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "5. Nduke Ofiono and Odoh Diego Okenyodo (eds.) (2021) — Camouflage: Best of Contemporary Writing from Nigeria, an Anthology of New Nigerian Writers, Mace Books Association, new edition",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "6. Parker, E. W. (ed.) (1980) — A Pageant of Longer Poems, London: Longman",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "7. Senanu, K. E. and Vincent, T. (eds.) (1993) — A Selection of African Poetry, Lagos: Longman",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            },
+            {
+              "content": "8. Soyinka, W. (ed.) (1987) — Poems of Black Africa, Ibadan: Heinemann",
+              "objective": "Use recommended anthologies to support the study, interpretation and appreciation of literary works across genres."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Critical Texts",
+          "subtopics": [
+            {
+              "content": "1. Abrams, M. H. (1981) — A Glossary of Literary Terms, 4th Edition, New York: Holt Rinehart and Winston",
+              "objective": "Use critical texts to understand literary terminology, interpret unseen passages and analyse literary techniques across drama, prose and poetry."
+            },
+            {
+              "content": "2. Emeaba, O. E. (1982) — A Dictionary of Literature, Aba: Inteks Press",
+              "objective": "Use critical texts to understand literary terminology, interpret unseen passages and analyse literary techniques across drama, prose and poetry."
+            },
+            {
+              "content": "3. Murphy, M. J. (1972) — Understanding Unseen: An Introduction to English Poetry and English Novel for Overseas Students, George Allen and Unwin Ltd.",
+              "objective": "Use critical texts to understand literary terminology, interpret unseen passages and analyse literary techniques across drama, prose and poetry."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

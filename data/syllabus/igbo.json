@@ -1,0 +1,338 @@
+
+{
+  "subject": "Igbo",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Languages (Asụsụ)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Essay (Edemede)",
+          "subtopics": [
+            {
+              "content": "Basic principles of essay writing: introduction, body and conclusion.",
+              "objective": "Identify the basic principles of essay writing."
+            },
+            {
+              "content": "Basic essay types and their characteristics: Narrative (Akọmakọ); Descriptive and Expository (Nkọwa na Nkọwami); Argumentative (Mgbagha/Arụmarụụka); Speech making (Ekwumekwu); Letter Writing (Edemleta); Dialogue (Mkparịtaụka)."
+              ,
+              "objective": "Differentiate between different essay types; describe the characteristics of essay types; compare different types of essay; criticize other people's essays."
+            },
+            {
+              "content": "Appropriate use of words and expressions in essay writing.",
+              "objective": "Use words and expressions appropriate to a particular topic."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Comprehension (Aghọtaazaa)",
+          "subtopics": [
+            {
+              "content": "One passage of about one hundred and fifty (150) words.",
+              "objective": "Explain the meanings of difficult words; give correct answers; differentiate between figurative and idiomatic expressions from the passage; deduce conclusions based on the passage."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Sounds and Sound Patterns (Ụdaasụsụ na Usoro Ụdaasụsụ)",
+          "subtopics": [
+            {
+              "content": "Vowels and Consonants (Ụdaume na Mgbochiume).",
+              "objective": "Identify vowels, consonants and syllabic nasals; distinguish between the speech sounds of the Igbo language."
+            },
+            {
+              "content": "Sound patterns and processes: syllabic nasals (ụdaimi); semi-vowel (myiriụdaume); nasal homorganic assimilation (ndagba myiriụdaume); syllable structure (nkeji mkpụrụokwu); vowel harmony (ndakọrịta ụdaume); vowel assimilation (olilo ụdaume); vowel elision and consonant elision (ndapụ ụdaume na ndapụ mgbochiume).",
+              "objective": "Identify vowels, consonants and syllabic nasals; distinguish between Igbo speech sounds; recognise semi-vowels ('m' and 'n') and nasal homorganic assimilation; divide words into syllables; identify the vowel groups in Igbo; describe vowel assimilation, vowel elision and consonant elision."
+            },
+            {
+              "content": "Tone and tone marking (Ụdaolu na Akara ụdaolu).",
+              "objective": "Assign tone marks appropriately."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Spelling and Spelling Rules (Nsupe na Iwu Nsupe)",
+          "subtopics": [
+            {
+              "content": "Correct spelling and word division in Igbo.",
+              "objective": "Detect words written correctly in Igbo; determine appropriate word division in Igbo."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Igbo Orthography (Mkpụrụedemede Igbo)",
+          "subtopics": [
+            {
+              "content": "The Igbo writing system and its orthography.",
+              "objective": "Indicate the Igbo orthography; distinguish between Igbo and English orthography."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Dialect and Standard Igbo (Olundị/Olumba na Igbo Izugbe)",
+          "subtopics": [
+            {
+              "content": "Differences between Igbo dialects and Standard Igbo.",
+              "objective": "Differentiate between Standard Igbo and dialects; use Standard Igbo in writing."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Igbo Word Derivation (Usoro Mmụbaokwu n’Igbo)",
+          "subtopics": [
+            {
+              "content": "Processes of word derivation: coinages, loans and loan-blends (mmụbawanye mkpụrụokwu site n’usoro mmepụta, mkpụpụta, mbite na mbiọgwa).",
+              "objective": "Differentiate between loan words and coined words; identify loan words and loan-blends in Igbo; spell Igbo words appropriately."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Grammar (Ụtọasụsụ)",
+          "subtopics": [
+            {
+              "content": "Parts of speech (Nkejiasụsụ): nominals (mkpọaha), verbs (ngwaa), adjectives (nkọwa), adverbs (nkwuwa), affixes (mgbakwunye), enclitics (nsokwunye), and others.",
+              "objective": "Differentiate between grammatical categories; identify parts of speech and their functions; differentiate between types of affixes and their functions."
+            },
+            {
+              "content": "The structure, types and characteristics of morphemes (Ndokọ, ụdị na njirimara mọfịm): free and bound morphemes (nnọọrọonwe na ndabe).",
+              "objective": "Determine the types and characteristics of morphemes."
+            },
+            {
+              "content": "The word (Mkpụrụokwu), the phrase (Nkebiokwu), the clause (Nkebiahịrị), and the sentence (Ahịrịokwu). Clauses include nominal, adverbial and adjectival clauses (kemkpọaha, kenkwuwa na kenkọwa). Sentence types include simple (mfe), compound (ukwu) and complex (mgbagwọ), among others.",
+              "objective": "Identify words, phrases, clauses and sentences, including their types and characteristics."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Translation (Ntụgharị)",
+          "subtopics": [
+            {
+              "content": "Translation between English and Igbo in both directions.",
+              "objective": "Translate English into Igbo and Igbo into English; communicate effectively in Igbo and English."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Agụmagụ)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Literary Devices (Atụmatụokwu)",
+          "subtopics": [
+            {
+              "content": "Literary devices including alliteration (bịambia mgbochiume), assonance (bịambia ụdaume), parallelism (kwunkwugha), metaphor (mbụrụ), simile (myiri), hyperbole (egbeokwu), personification (mmemmadụ), proverbs (ilu), and others.",
+              "objective": "Identify literary devices in passages; interpret literary devices; differentiate between types of literary devices; use Igbo literary devices appropriately."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Oral Literature (Agụmagụ Ọnụ/Agụmagụ Ọdịnala)",
+          "subtopics": [
+            {
+              "content": "Folktales (ifo), myths (nkọmịrịkọ), legends (nkọkịrịkọ), poems (abụ), songs (uri), chants (mbem), riddles (agwụgwa), oral drama (ejije ọnụ), tongue-twisters (okwuntụhị), and others.",
+              "objective": "Create folk stories, chants, riddles and oral drama; analyse various genres of oral literature; present ideas and formulae in accordance with underlying principles; apply the lessons of oral literature to everyday life."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Written Literature: Prose (Agụmagụ Ederede — Iduuazị)",
+          "subtopics": [
+            {
+              "content": "Tony U. Ubesie (1993), Jụọ Obinna. Oxford University Press.",
+              "objective": "Interpret the text; identify the characters; identify figurative and idiomatic expressions in the text; analyse the text; identify the author, publisher and date of publication; draw moral lessons from the text."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Written Literature: Poetry (Agụmagụ Ederede — Abụ)",
+          "subtopics": [
+            {
+              "content": "Inno Ụzọma Nwadike (2014), Akọnuche. Obosi: Pacific Publishers Ltd.",
+              "objective": "Compare the types and themes of the poems; relate the poet's ideas to the contents of the poems; compare figurative and idiomatic expressions in the poems; analyse the structures of the poems; apply acquired knowledge and moral lessons from the poems to daily life."
+            },
+            {
+              "content": "Selected poems: Ọchịchị (pp. 18–19); Onye Ndu (pp. 22–23); Nne Ọma (pp. 29–30); Oke Ọchịchọ (pp. 40–41); Asịla M Na Ọ Dị Mma (pp. 53–54); Ihe Ụwa (pp. 60–61); Jiri Nwayọ (pp. 62–63); Eziokwu (pp. 65–66); Mma (pp. 67–69); Nwanyị (pp. 92–94); Aja Ala (pp. 101–103); Ala Igbo (pp. 108–111); Ndụ M N’ụwa A (pp. 131–132); Ọjị (pp. 150–151); Ụwa Emebighi (pp. 151–154); Amamihe (pp. 168–169); Ndụ Nwaanyị (pp. 178–180); Nna M Ọgọenyi (pp. 181–184); Ụlọakwụkwọ (pp. 192–193); Akwa Nnabuenyi Ugonna Bere (pp. 249–252).",
+              "objective": "Compare the types and themes of the poems; relate the poet's ideas to the contents of the poems; compare figurative and idiomatic expressions in the poems; analyse the structures of the poems; apply acquired knowledge and moral lessons from the poems to daily life."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Written Literature: Drama (Agụmagụ Ederede — Ejije)",
+          "subtopics": [
+            {
+              "content": "J. C. Maduekwe (1979), Otu Mkpịsị Aka. Longman Nigeria (Learn Africa).",
+              "objective": "Identify the type of drama to which the text belongs; determine the themes in the text; identify the storylines and characters; appreciate the language style of the play; appraise the social problems raised by the author; apply acquired knowledge to personal life; identify the moral lessons from the drama text."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Customs and Institutions (Omenala na Ewumewu)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Igbo Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Ekele dị iche iche: greetings for morning, afternoon, evening, meals, visiting the sick, bedtime, work, and other occasions.",
+              "objective": "Describe the customs of the Igbo people; determine the rules and regulations guiding specified aspects of Igbo culture and tradition; describe the importance of aspects of Igbo culture; identify changes resulting from civilization; explore the environment for a better appreciation of Igbo culture."
+            },
+            {
+              "content": "Marriage and divorce (Alụmdi na nwunye, ịgba alụkwaghịm).",
+              "objective": "Describe Igbo marriage and divorce customs; determine the rules and regulations guiding these aspects of Igbo culture; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Childbirth and related customs: childbirth and postnatal care (ọmụmụ na ile ọmụgwọ), presenting a child to the community (ikupụta nwa), circumcision (ibi ugwu), naming (ịgụ aha), trading for a child (ịzụ ahịa nwa), and seeing the king (ịhu eze).",
+              "objective": "Describe these customs; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization; explore the environment to appreciate Igbo culture."
+            },
+            {
+              "content": "Titles and chieftaincy: Nze na Ọzọ, Eze/Obi/Igwe, Iyọm/Lọọlọ.",
+              "objective": "Describe the customs relating to titles and chieftaincy; determine their rules and regulations; explain their cultural importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Ike ekpe, iri ekpe, ịkwa ozu, ịgba mkpe.",
+              "objective": "Describe these customs; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Ụmụnna, ụmụọkpụ/ụmụada, iyomdi, nwadiala.",
+              "objective": "Describe these kinship and community institutions; determine their rules and regulations; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Ọgbọ/ebiri/uke, ọhanaeze, ezinaụlọ.",
+              "objective": "Describe these social institutions; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Arụ na nsọala: tabooed things (ihe nsọ), tabooed animals (anụ nsọ), sacred trees (osisi nsọ), and sacred places (ebe nsọ).",
+              "objective": "Describe these customs and beliefs; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Traditional government: Igwe/Eze, Nze na Ọzọ, ụmụnna, ezinaụlọ, ụmụọkpụ/ụmụada, and age grades (otu ọgbọ).",
+              "objective": "Describe the structures of traditional Igbo government; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Welcoming visitors, presenting kola nut and white chalk (ọji na ịtụ nzu), naming, morning handwashing (ịkwọ aka ụtụtụ), and invoking the ọfọ (ịgọ ọfọ).",
+              "objective": "Describe these customs; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Religious practices: divination (ịgba afa), offering sacrifices (ịchụ aja), invoking spirits (ịgọ mmụọ), and worship (ofufe).",
+              "objective": "Describe Igbo religious practices; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Religious objects: ọfọ, ikenga and okpesi.",
+              "objective": "Describe the uses and cultural significance of religious objects; determine the rules and regulations guiding their use; identify changes resulting from civilization."
+            },
+            {
+              "content": "Beliefs and practices: ịdụ isi/ịṅụ iyi, ịgba ndụ, orikọ, ịlọ ụwa, ọgbanje, nrọ, ihi anụ, ịha/ịchụ mmiri, and others.",
+              "objective": "Describe Igbo beliefs and practices; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Economic activities and wealth: land ownership, ike ala, iri ekpe, elulu, and animal husbandry such as rearing chickens and goats.",
+              "objective": "Describe these economic customs; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Associations and groups: Mmọnwụ, ọkọnkọ, ekpe, ọmabe, odo, dibịa, and others.",
+              "objective": "Describe these associations and groups; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Games and recreation: wrestling (mgba), moonlight games (egwu ọnwa), ikpọ ọga, ịzụ ǹchọ, ịzụ okwe, ịgba/ịchọ oro, and others.",
+              "objective": "Describe Igbo games and recreational customs; determine their rules and regulations; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Traditional Igbo occupations: farming (ọrụ ugbo), fishing (ịkụ azụ), blacksmithing (ịkpụ ụzụ), trading (ịzụ ahịa), carving (ịtụ ihe ọtụtụ), hunting (ịchụ nta), traditional healing (ime dibịa), pottery (ịkpụ ite), and others.",
+              "objective": "Describe traditional Igbo occupations; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization."
+            },
+            {
+              "content": "Festivals and ceremonies: Ọfala, ịbọ ụzọ, ịwa ji/iri ji, igbu ewu ukwu, iru mgbede, ịwa akwa, akwamozu, ịgụ afọ, and others.",
+              "objective": "Describe Igbo festivals and ceremonies; determine the rules and regulations guiding them; explain their importance; identify changes resulting from civilization; explore the environment to appreciate Igbo culture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: General and Current Affairs (Ihe Ndị na-eme Ugbua)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Topical Issues in Igbo Language, Literature and Culture",
+          "subtopics": [
+            {
+              "content": "Topical issues in Igbo language, literature and culture, including Ahịajiọkụ, Odenigbo lectures and Ọhaneze Ndị Igbo.",
+              "objective": "Identify some dates, themes and functions of Ahịajiọkụ, Odenigbo and Ọhaneze Ndị Igbo lectures."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Authors, Publishers, Dates and Places of Publication",
+          "subtopics": [
+            {
+              "content": "Authors, publishers, dates and places of publication of works in Igbo.",
+              "objective": "Identify authors, publishers and dates of publication of various textbooks in Igbo."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Igbo Studies Association (ISA)",
+          "subtopics": [
+            {
+              "content": "The Igbo Studies Association (ISA), its functions and contributions.",
+              "objective": "Become familiar with the functions and contributions of the Igbo Studies Association (ISA)."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Current Issues (Okwuakpụnọnụ)",
+          "subtopics": [
+            {
+              "content": "HIV/AIDS, cancer and coronavirus (Ọrịa Mmịnwụ/Obirinaajaọcha, awa eto and ọrịa koro).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Drug abuse (Ịṅụ Ọgwụ Agharaaghara).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Cultism (Otu Nzuzo).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Rights of women and children (Oruuru Ụmụnwaanyị na Ụmụaka).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Human rights violation and child abuse (Ịnapụ Mmadụ Ikike na Mmetọ Nwata).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Religious conflicts (Nsogbu Ndọkụrịta Ekpemekpe Ụka).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            },
+            {
+              "content": "Kidnapping (Ntọrọ Mmadụ).",
+              "objective": "Become familiar with current issues; examine their effects; suggest remedies to the problems."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

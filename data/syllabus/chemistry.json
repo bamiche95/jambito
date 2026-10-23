@@ -1,0 +1,403 @@
+
+{
+  "subject": "Chemistry",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Chemistry",
+          "subtopics": [
+            {
+              "content": "The aim of the Unified Tertiary Matriculation Examination (UTME) syllabus in Chemistry is to prepare candidates for the Board's examination.",
+              "objective": "Understand the basic principles and concepts in chemistry; interpret scientific data relating to chemistry; deduce relationships between chemistry and other sciences; apply chemistry knowledge to industry and everyday life."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Separation of Mixtures and Purification of Chemical Substances",
+          "subtopics": [
+            {
+              "content": "Elements, compounds and mixtures; chemical and physical changes; pure and impure substances; boiling, density, freezing and melting points; separation processes including evaporation, simple and fractional distillation, sublimation, recrystallization, paper and column chromatography, simple and fractional crystallization, magnetization, decantation, filtration and centrifugation.",
+              "objective": "Distinguish between elements, compounds and mixtures; differentiate between chemical and physical changes; distinguish between pure and impure substances; use boiling and melting points as criteria for purity; identify the properties of mixture components; specify the principles involved in separation methods; apply separation principles in everyday life."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Chemical Combination",
+          "subtopics": [
+            {
+              "content": "Laws of definite, multiple and reciprocal proportions; law of conservation of matter; chemical symbols, formulae and equations and their uses; relative atomic mass based on 12C = 12; mole concept and stoichiometry of reactions.",
+              "objective": "Deduce chemical laws from given expressions, statements or data; perform simple calculations involving formulae, equations, chemical composition and the mole concept; deduce the stoichiometry of chemical reactions."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Kinetic Theory of Matter and Gas Laws",
+          "subtopics": [
+            {
+              "content": "Phenomena supporting the kinetic theory of matter: melting, vaporization, boiling, freezing and condensation, explained in terms of molecular motion and Brownian movement. Boyle's, Charles's, Avogadro's, Gay-Lussac's, Graham's and Dalton's laws of partial pressure; molar volume and atomicity of gases; ideal gas equation PV = nRT; relationship between vapour density and relative molecular mass; ideal and real gases.",
+              "objective": "Apply the theory to distinguish solids, liquids and gases; deduce reasons for changes of state; draw inferences based on molecular motion; deduce gas laws from expressions, statements or data; interpret graphs related to gas laws; perform simple calculations using gas laws, equations and relationships; state factors responsible for deviations of real gases from ideal behaviour."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Atomic Structure and Bonding",
+          "subtopics": [
+            {
+              "content": "Concepts of atoms, molecules and ions; contributions of Dalton, Millikan, Rutherford, Moseley, Thomson and Bohr to atomic theory; atomic structure, four quantum numbers, principles governing electron arrangement in orbitals, electron configuration, atomic number, mass number and isotopes, with examples from elements of atomic numbers 1–20; shapes of s and p orbitals.",
+              "objective": "Distinguish between atoms, molecules and ions; identify the contributions of scientists to atomic theory; deduce the numbers of protons, neutrons and electrons from atomic and mass numbers; apply rules governing electron arrangement; identify common isotopic elements; relate isotopy to mass number; perform simple isotope calculations; differentiate orbital shapes; determine the number of electrons in s and p atomic orbitals."
+            },
+            {
+              "content": "The periodic table and periodicity of elements; recognition of families such as alkali metals, alkaline-earth metals, halogens, noble gases and transition metals; variation in ionization energy, ionic radii, electron affinity, electronegativity, electrical conductivity and thermal conductivity.",
+              "objective": "Relate atomic number to an element's position in the periodic table; relate properties of elements to their groups; explain variations in properties across periods and down groups."
+            },
+            {
+              "content": "Chemical bonding: electrovalency and covalency; electron configurations and tendency to attain noble-gas structures; hydrogen bonding and metallic bonding; coordinate covalent bonds illustrated by [Fe(CN)6]3-, [Fe(CN)6]4-, [Cu(NH3)4]2+ and [Ag(NH3)2]+; van der Waals' forces as a special type of bonding force.",
+              "objective": "Differentiate between types of bonding; deduce bond types from electron configurations; relate the nature of bonding to the properties of compounds."
+            },
+            {
+              "content": "Shapes of simple molecules: linear molecules (H2, O2, Cl2, HCl and CO2), non-linear H2O, tetrahedral CH4 and pyramidal NH3.",
+              "objective": "Differentiate between the shapes of simple molecules."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Nuclear Chemistry",
+          "subtopics": [
+            {
+              "content": "Radioactivity: types, properties and detection of radiations; natural and artificial radioactivity; nuclear stability and radioactive decay; nuclear reactions including nuclear fusion and fission.",
+              "objective": "Distinguish between ordinary chemical and nuclear reactions; differentiate natural and artificial radioactivity; compare properties of nuclear radiations; calculate the half-life of radioactive materials; balance simple nuclear equations; identify applications of radioactivity."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Solubility",
+          "subtopics": [
+            {
+              "content": "Unsaturated, saturated and supersaturated solutions; solubility curves and simple deductions; solubility expressed in moles per dm3 and simple calculations.",
+              "objective": "Distinguish between types of solutions; interpret solubility curves; calculate the amount of solute that dissolves in a given amount of solvent at a specified temperature; deduce that solubility depends on temperature."
+            },
+            {
+              "content": "Solvents for fats, oils, perspiration and paints, and their uses in stain removal.",
+              "objective": "Relate the nature of solvents to their uses."
+            },
+            {
+              "content": "True and false solutions, including suspensions and colloids; properties and examples. Harmattan haze and water paints as suspensions; fog, milk, blood, aerosol sprays, emulsion paints and rubber solution as colloids.",
+              "objective": "Differentiate true solutions, suspensions and colloids; compare the properties of true and false solutions; provide typical examples of suspensions and colloids."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Environmental Pollution",
+          "subtopics": [
+            {
+              "content": "Air: natural gaseous constituents and their proportions, including nitrogen, oxygen, water vapour, carbon(IV) oxide and noble gases such as argon and neon; factors responsible for variations in atmospheric composition; air as a mixture and uses of noble gases.",
+              "objective": "Explain why air exists as a mixture; identify the principle used to separate air components; state reasons for variations in atmospheric composition; specify uses of some constituents of air."
+            },
+            {
+              "content": "Air pollution: pollutants such as H2S, CO, SO2, oxides of nitrogen, chlorofluorocarbons and dust; their sources and effects.",
+              "objective": "Identify types of pollution and pollutants; specify pollutant sources; classify pollutants as biodegradable or non-biodegradable; explain environmental effects and identify pollution-control measures."
+            },
+            {
+              "content": "Water pollution, including sewage and oil pollution.",
+              "objective": "Identify sources and effects of water pollution and measures for controlling it."
+            },
+            {
+              "content": "Soil pollution, including oil spillage and biodegradable and non-biodegradable pollutants.",
+              "objective": "Identify types and sources of soil pollution; classify pollutants; explain their environmental effects and measures for control."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Acids, Bases and Salts",
+          "subtopics": [
+            {
+              "content": "General characteristics, properties and uses of acids, bases and salts; acid-base indicators; basicity of acids; normal, acidic, basic and double salts. An acid as a substance whose aqueous solution furnishes H3O+ ions or which donates protons. Naturally occurring organic acids including ethanoic, citric and tartaric acids; alums as double salts. Preparation of salts by neutralization, precipitation and reaction of acids with metals; oxides and trioxocarbonate(IV) salts.",
+              "objective": "Distinguish properties of acids and bases; identify types of acids and bases; determine the basicity of acids; differentiate acidity and alkalinity using indicators; identify methods of salt preparation; classify different types of salts."
+            },
+            {
+              "content": "Qualitative comparison of conductance in molar solutions of strong and weak acids and bases; relationship between conductance and the amount of ions present.",
+              "objective": "Relate the degree of dissociation to acid and base strength and to conductance."
+            },
+            {
+              "content": "pH and pOH scales; simple calculations; significance of pH in everyday life; buffer solutions.",
+              "objective": "Perform simple pH and pOH calculations; explain the significance of pH in everyday life; state applications of buffer solutions."
+            },
+            {
+              "content": "Acid-base titrations and titration curves.",
+              "objective": "Identify appropriate acid-base indicators; interpret titration curves; perform simple calculations based on the mole concept."
+            },
+            {
+              "content": "Hydrolysis of salts, including NH4Cl, AlCl3, Na2CO3 and CH3COONa.",
+              "objective": "Balance equations for salt hydrolysis; deduce whether the resulting solution is acidic, basic or neutral."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Oxidation and Reduction (Redox)",
+          "subtopics": [
+            {
+              "content": "Oxidation as the addition of oxygen; reduction as the removal of oxygen with the aid of hydrogen; oxidation and reduction in terms of electron transfer; oxidation numbers; changes in oxidation number and the use of oxidation numbers to balance simple equations.",
+              "objective": "Identify different ways of expressing oxidation and reduction; classify reactions as oxidation or reduction; balance redox equations; deduce oxidation numbers; calculate electron transfer in redox reactions; identify redox species and distinguish oxidizing from reducing agents."
+            },
+            {
+              "content": "IUPAC nomenclature of inorganic compounds using oxidation numbers; tests for oxidizing and reducing agents.",
+              "objective": "Apply oxidation numbers when naming inorganic compounds; relate reagents to their oxidizing and reducing abilities."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Electrolysis",
+          "subtopics": [
+            {
+              "content": "Electrolytes and non-electrolytes; Faraday's laws of electrolysis.",
+              "objective": "Distinguish electrolytes from non-electrolytes; perform calculations based on the Faraday as a mole of electrons."
+            },
+            {
+              "content": "Electrolysis of dilute H2SO4, aqueous CuSO4, CuCl2 solution, dilute and concentrated NaCl solutions, and fused NaCl; factors affecting the discharge of ions at electrodes.",
+              "objective": "Identify suitable electrodes for different electrolytes; specify electrode reactions; determine electrode products; identify factors affecting electrolysis products."
+            },
+            {
+              "content": "Uses of electrolysis, including purification of copper and production of aluminium, sodium, oxygen, chlorine and sodium hydroxide.",
+              "objective": "Specify applications of electrolysis and electrolytic processes."
+            },
+            {
+              "content": "Electrochemical cells; electrochemical series: K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag and Au; half-cell reactions and electrode potentials; simple calculations.",
+              "objective": "State the significance of the electrochemical series; identify electrochemical cells; calculate electrode potentials using half-cell reaction equations."
+            },
+            {
+              "content": "Corrosion as an electrolytic process; prevention of iron corrosion by cathodic protection, painting, electroplating and coating with grease or oil.",
+              "objective": "Identify methods of protecting metals against corrosion."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Energy Changes",
+          "subtopics": [
+            {
+              "content": "Energy changes (ΔH) accompanying physical and chemical changes; dissolution of substances in water or reactions with water, including Na, NaOH, K and NH4Cl; endothermic (+ΔH) and exothermic (-ΔH) reactions.",
+              "objective": "Determine the types of heat changes in physical and chemical processes; interpret graphical representations of heat changes."
+            },
+            {
+              "content": "Entropy as an order-disorder phenomenon, illustrated by mixing gases and dissolving salts.",
+              "objective": "Relate the physical state of a substance to its degree of orderliness."
+            },
+            {
+              "content": "Spontaneity of reactions; ΔG° = 0 as a criterion for equilibrium; ΔG greater than zero for non-spontaneity and ΔG less than zero for spontaneity.",
+              "objective": "Determine the conditions for spontaneity; relate ΔH°, ΔS° and ΔG° as driving forces for chemical reactions; solve simple problems using ΔG° = ΔH° - TΔS°."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Rates of Chemical Reaction",
+          "subtopics": [
+            {
+              "content": "Factors affecting reaction rates: temperature, illustrated by reactions between HCl and Na2S2O3 or Mg and HCl; concentration and pressure, illustrated by HCl and Na2S2O3, HCl and marble, and the iodine clock reaction; pressure as a concentration term for gases; surface area, illustrated by powdered and lump marble reacting with HCl; catalysts, illustrated by decomposition of H2O2 or KClO3 in the presence or absence of MnO2.",
+              "objective": "Identify factors affecting reaction rates; determine the effects of temperature; examine the effects of concentration and pressure; describe the effects of surface area; determine suitable catalysts and their effects; identify ways of moderating these effects."
+            },
+            {
+              "content": "Reaction-rate curves; activation energy; qualitative treatment of Arrhenius' law and collision theory; effect of light on reactions such as halogenation of alkanes.",
+              "objective": "Interpret reaction-rate curves; solve simple problems on reaction rates; relate reaction rates to the kinetic theory of matter; explain the significance of activation energy; deduce activation energy (Ea) from reaction-rate curves."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Chemical Equilibria",
+          "subtopics": [
+            {
+              "content": "Reversible reactions and factors governing equilibrium position; dynamic equilibrium; Le Chatelier's principle and its industrial applications; equilibrium constant; examples including the action of steam on iron and N2O4 ⇌ 2NO2. No calculations are required for equilibrium constants.",
+              "objective": "Identify factors affecting the equilibrium position of a reaction; predict the effects of each factor on equilibrium position; specify industrial processes where Le Chatelier's principle is applied; determine the effects of factors on the equilibrium constant."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Non-metals and Their Compounds",
+          "subtopics": [
+            {
+              "content": "Hydrogen: commercial production from water gas and cracking of petroleum fractions; laboratory preparation; properties, uses and tests.",
+              "objective": "Predict reagents for laboratory and industrial preparation of hydrogen; identify its properties, uses and specific tests."
+            },
+            {
+              "content": "Halogens: chlorine as a representative element; laboratory and industrial preparation by electrolysis; properties and uses, including water sterilization, bleaching and manufacture of HCl, plastics and insecticides. Hydrogen chloride and hydrochloric acid: preparation and properties; chlorides and tests for chlorides.",
+              "objective": "Predict reagents for preparing halogens and their compounds; identify and compare their properties and uses; determine specific tests for gases, compounds and Cl-; predict reagents for the preparation, properties and uses of HCl(g) and HCl(aq)."
+            },
+            {
+              "content": "Oxygen: laboratory preparation, properties and uses; commercial production from liquid air; acidic, basic, amphoteric and neutral oxides; ozone as an allotrope and its atmospheric importance.",
+              "objective": "Identify oxygen allotropes; explain the environmental significance of ozone; classify oxides and describe their properties."
+            },
+            {
+              "content": "Water: formation by combustion of hydrogen; composition by volume; use as a solvent; dissolved atmospheric gases and their biological significance; hard and soft water; temporary and permanent hardness and methods of softening; treatment of water for town supply; water of crystallization, efflorescence, deliquescence and hygroscopy, with examples and uses.",
+              "objective": "Identify uses of water; explain the effects of dissolved atmospheric gases; distinguish hard and soft water; determine causes of hardness and methods of removal; describe town water treatment; distinguish efflorescence, deliquescence, hygroscopy and water of crystallization; identify compounds exhibiting these phenomena."
+            },
+            {
+              "content": "Sulphur: uses and allotropes; preparation of allotropes is not required. Preparation, properties and uses of sulphur(IV) oxide; reaction of SO2 with alkalis; trioxosulphate(IV) acid and its salts; action of acids on trioxosulphate(IV) salts; tetraoxosulphate(VI) acid, its commercial preparation by the contact process, properties as a dilute acid, oxidizing and dehydrating agent, and uses; tests for SO4^2-, SO3^2- and SO2.",
+              "objective": "Identify sulphur allotropes and their uses; predict reagents for preparing SO2 and H2S and identify their properties and uses; specify the preparation, properties and uses of H2SO4 and H2SO3; determine specific tests for S2-, SO4^2-, H2S, SO2 and SO3^2-."
+            },
+            {
+              "content": "Hydrogen sulphide: preparation and properties as a weak acid, reducing agent and precipitating agent; tests for S2- and H2S.",
+              "objective": "Predict reagents for the preparation of H2S; identify its properties and uses; determine specific tests for sulphide ions and hydrogen sulphide."
+            },
+            {
+              "content": "Nitrogen: laboratory preparation and production from liquid air. Ammonia: laboratory and industrial preparation by the Haber process; properties and uses; ammonium salts and uses; oxidation of ammonia to nitrogen(IV) oxide and trioxonitrate(V) acid; tests for NH4+, NO2-, and NH3.",
+              "objective": "Specify laboratory and industrial methods of preparing NH3; identify its properties and uses; determine specific tests for NH4+, NH3 and the relevant nitrogen species."
+            },
+            {
+              "content": "Trioxonitrate(V) acid: laboratory preparation from ammonia, properties and uses; trioxonitrate(V) salts, action of heat and uses; tests for NO3- and other oxides of nitrogen.",
+              "objective": "Identify reagents for laboratory preparation of HNO3; describe its properties and uses; determine tests for nitrate ions and nitrogen compounds."
+            },
+            {
+              "content": "Oxides of nitrogen: properties of N2O, NO and NO2; the nitrogen cycle.",
+              "objective": "Specify properties of N2O, NO and NO2; identify appropriate tests for nitrogen oxides and nitrate ions; examine the relevance of the nitrogen cycle to the environment."
+            },
+            {
+              "content": "Carbon: allotropes and their uses and properties; carbon(IV) oxide, laboratory preparation, properties and uses; action of heat on trioxocarbonate(IV) salts; tests for CO3^2-, HCO3- and CO2; carbon(II) oxide, laboratory preparation, properties and effects on blood; sources including charcoal, fires and exhaust fumes; types of coal; products of destructive distillation of wood and coal; coke, gasification, manufacture of synthesis gas and uses.",
+              "objective": "Identify allotropes of carbon; predict reagents for laboratory preparation of CO2 and CO; specify their properties and uses; determine the effects of CO on humans; identify tests for HCO3-, CO3^2- and CO2; identify types of coal and their uses; specify products of destructive distillation of wood and coal; state uses of coke and synthesis gas."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Metals and Their Compounds",
+          "subtopics": [
+            {
+              "content": "General properties of metals.",
+              "objective": "Specify the general properties of metals; determine suitable extraction methods; relate extraction methods to metal properties; compare chemical reactivities; specify metal uses; determine specific tests for metallic ions."
+            },
+            {
+              "content": "Alkali metals, especially sodium. Sodium hydroxide: production by electrolysis of brine; action on aluminium, zinc and lead ions; uses, including precipitation of metallic hydroxides. Sodium trioxocarbonate(IV) and sodium hydrogen trioxocarbonate(IV): production by the Solvay process, properties and uses, including Na2CO3 in glass manufacture. Sodium chloride: occurrence in seawater, uses, economic importance of seawater, recovery of sodium chloride and test for Na+.",
+              "objective": "Describe production of sodium compounds; compare their reactivities; identify their properties and uses; determine specific tests for sodium ions."
+            },
+            {
+              "content": "Alkaline-earth metals, especially calcium; calcium oxide, calcium hydroxide and calcium trioxocarbonate(IV), their properties and uses; preparation of calcium oxide from seashells; chemical composition of cement and setting of mortar; test for Ca2+.",
+              "objective": "Describe the preparation, properties and uses of calcium compounds; specify the chemical composition of cement; explain the setting of mortar; identify tests for calcium ions."
+            },
+            {
+              "content": "Aluminium: purification of bauxite, electrolytic extraction, properties and uses of aluminium and its compounds; test for Al3+.",
+              "objective": "Describe bauxite purification and aluminium extraction; identify properties and uses of aluminium and its compounds; determine specific tests for aluminium ions."
+            },
+            {
+              "content": "Tin: extraction from ores, properties and uses.",
+              "objective": "Specify ores of tin; relate its extraction method to its properties; identify uses of tin."
+            },
+            {
+              "content": "Metals of the first transition series: characteristic electron configurations, oxidation states, complex-ion formation, coloured ions and catalysis.",
+              "objective": "Identify general properties of first-row transition metals; explain their characteristic properties; determine IUPAC names of simple transition-metal complexes."
+            },
+            {
+              "content": "Iron: extraction from sulphide and oxide ores; properties and uses; different forms of iron, their properties and advantages of steel over iron; tests for Fe2+ and Fe3+.",
+              "objective": "Determine suitable methods for iron extraction; specify properties and uses of iron; identify different forms of iron, their compositions, properties and uses; determine tests for Fe2+ and Fe3+."
+            },
+            {
+              "content": "Copper: extraction from sulphide and oxide ores; properties and uses of copper; preparation and uses of copper(II) tetraoxosulphate(VI); test for Cu2+.",
+              "objective": "Identify suitable extraction methods for copper; relate properties of copper and its compounds to their uses; specify the preparation of CuSO4; determine tests for Cu2+."
+            },
+            {
+              "content": "Alloys: steel, stainless steel, brass, bronze, type-metal, duralumin, soft solder, permalloy and alnico; constituents and uses.",
+              "objective": "Specify constituents and uses of the listed alloys; compare the properties and uses of alloys with those of pure metals."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Organic Compounds",
+          "subtopics": [
+            {
+              "content": "Introduction to tetravalency of carbon; general formulae, IUPAC nomenclature and determination of empirical formulae for the classes of organic compounds in the syllabus.",
+              "objective": "Derive names of organic compounds from their general formulae; relate compound names to structures; relate carbon tetravalency to catenation; classify compounds by functional groups; derive empirical and molecular formulae from data; relate structures and functional groups to properties; derive isomers from a given formula and distinguish types of isomerism."
+            },
+            {
+              "content": "Aliphatic hydrocarbons: alkanes, their homologous series and physical properties; substitution reactions and uses of halogenated products; structural isomerism limited to six carbon atoms. Petroleum composition, fractional distillation and major products; cracking, reforming, petrochemicals as starting materials for organic synthesis, petrol quality and octane number.",
+              "objective": "Classify hydrocarbons and distinguish their properties; identify their uses; recognize crude oil as a complex mixture of hydrocarbons; relate petroleum fractions to their properties and uses; relate transformation processes to improved fraction quality."
+            },
+            {
+              "content": "Alkenes: structural and geometric isomerism, addition and polymerization reactions; polythene and synthetic rubber as polymerization products; vulcanization and its uses.",
+              "objective": "Distinguish types of isomerism and polymerization; specify the process of vulcanization; identify chemical tests for alkenes."
+            },
+            {
+              "content": "Alkynes: ethyne production by the action of water on carbides; simple reactions and properties of ethyne.",
+              "objective": "Specify chemical tests for terminal alkynes; distinguish between aliphatic and aromatic hydrocarbons."
+            },
+            {
+              "content": "Aromatic hydrocarbons, especially benzene: structure, properties and uses.",
+              "objective": "Relate benzene's properties to its structure; distinguish aromatic from aliphatic hydrocarbons."
+            },
+            {
+              "content": "Alkanols: primary, secondary and tertiary alkanols; ethanol production by fermentation and from petroleum by-products; local fermentation and distillation examples, including gin from palm wine and other local sources; glycerol as a polyhydric alkanol; reactions of the OH group; oxidation as a distinguishing test among primary, secondary and tertiary alkanols; Lucas test.",
+              "objective": "Compare classes of alkanols; describe processes involved in ethanol production; examine ethanol's importance as an alternative energy source; distinguish the different classes of alkanols."
+            },
+            {
+              "content": "Alkanals and alkanones: chemical tests for distinguishing them.",
+              "objective": "Differentiate between alkanals and alkanones."
+            },
+            {
+              "content": "Alkanoic acids: chemical reactions including neutralization and esterification; ethanedioic (oxalic) acid as a dicarboxylic acid; benzene carboxylic acid as an aromatic acid.",
+              "objective": "Compare different types of alkanoic acids."
+            },
+            {
+              "content": "Alkanoates: formation from alkanoic acids and alkanols; fats and oils as alkanoates; saponification; production of soap and margarine from alkanoates; distinction between detergents and soaps.",
+              "objective": "Identify natural sources of alkanoates; infer products of reactions between alkanoic acids and alkanols; specify methods of producing soap, detergent and margarine; distinguish detergents from soaps."
+            },
+            {
+              "content": "Amines (alkanamines): primary, secondary and tertiary classes.",
+              "objective": "Compare the different classes of alkanamines."
+            },
+            {
+              "content": "Carbohydrates: classification into mono-, di- and polysaccharides; composition; chemical tests for simple sugars; reaction with concentrated tetraoxosulphate(VI) acid; hydrolysis of complex sugars, including cellulose from cotton and starch from cassava; uses of sugar and starch in alcoholic beverages, pharmaceuticals and textiles.",
+              "objective": "Identify natural sources of carbohydrates; compare carbohydrate classes; infer products of hydrolysis and dehydration; determine carbohydrate uses; specify tests for simple sugars."
+            },
+            {
+              "content": "Proteins: primary structures, hydrolysis and tests including Ninhydrin, Biuret, Millon's and xanthoproteic tests; enzymes and their functions.",
+              "objective": "Identify the basic structure of proteins; specify methods and products of hydrolysis; identify the various tests for proteins; describe enzyme functions."
+            },
+            {
+              "content": "Polymers: natural and synthetic rubber; addition and condensation polymerization; methods of preparation, examples and uses; thermoplastic and thermosetting plastics.",
+              "objective": "Distinguish natural and synthetic polymers; differentiate addition from condensation polymerization; classify natural and commercial polymers and identify their uses; distinguish thermoplastics from thermosetting plastics."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Chemistry and Industry",
+          "subtopics": [
+            {
+              "content": "Chemical industries: types, raw materials and relevance; biotechnology.",
+              "objective": "Classify chemical industries by products; identify raw materials used by each industry; distinguish fine chemicals from heavy chemicals; state the relevance of these industries; relate industrial processes to biotechnology."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Astronomical Chemistry",
+          "subtopics": [
+            {
+              "content": "The solar system, planets and satellite; composition of the Earth, including the atmosphere, lithosphere and hydrosphere.",
+              "objective": "State the composition of the solar system; list the planets; identify the segments of the Earth; name Earth's natural satellite; identify the smallest planet, which is also the farthest from the Sun."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1327 @@
+{
+    "subject": "Physics",
+    "exam": "JAMB",
+    "generalObjectives": [
+        "Sustain candidates' interest in physics.",
+        "Develop attitudes relevant to physics that encourage accuracy, precision and objectivity.",
+        "Interpret physical phenomena, laws, definitions, concepts and other theories.",
+        "Demonstrate the ability to solve physics problems correctly using relevant theories and concepts."
+    ],
+    "sections": [
+        {
+            "sectionTitle": "1. Measurements and Units",
+            "topics": [
+                {
+                    "id": 1,
+                    "title": "Measurements and Units",
+                    "subtopics": [
+                        "Fundamental units: length, mass, time, electric charge, temperature, luminous intensity and amount of substance.",
+                        "Derived units: weight, area, volume, force and speed.",
+                        "Measuring instruments: vernier calipers, metre rule, micrometer screw gauge, measuring cylinder, stopwatch and beam balance.",
+                        "Fundamental physical quantities.",
+                        "Derived physical quantities and their units.",
+                        "Combinations of fundamental quantities and determination of their units.",
+                        "Dimensions: definition and simple examples.",
+                        "Limitations of experimental measurements: accuracy of measuring instruments, estimation of errors, significant figures and standard form."
+                    ],
+                    "objectives": [
+                        "Identify the units of length, area and volume.",
+                        "Use different measuring instruments.",
+                        "Determine the lengths, surface areas and volumes of regular and irregular bodies.",
+                        "Identify the unit of mass.",
+                        "Use simple beam balances, such as Buchart's balance and chemical balance.",
+                        "Identify the unit of time.",
+                        "Use different time-measuring devices.",
+                        "Relate fundamental physical quantities to their units.",
+                        "Deduce the units of derived physical quantities.",
+                        "Determine the dimensions of physical quantities.",
+                        "Use dimensions to determine the units of physical quantities.",
+                        "Test the homogeneity of an equation.",
+                        "Determine the accuracy of measuring instruments.",
+                        "Estimate simple errors.",
+                        "Express measurements in standard form."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "2. Scalars, Vectors, Measurement, Position, Distance and Displacement",
+            "topics": [
+                {
+                    "id": 2,
+                    "title": "Scalars and Vectors",
+                    "subtopics": [
+                        "Definition of scalar and vector quantities.",
+                        "Examples of scalar and vector quantities.",
+                        "Relative velocity.",
+                        "Resolution of vectors into two perpendicular directions, including graphical methods of solution."
+                    ],
+                    "objectives": [
+                        "Distinguish between scalar and vector quantities.",
+                        "Give examples of scalar and vector quantities.",
+                        "Determine the resultant of two or more vectors.",
+                        "Determine relative velocity.",
+                        "Resolve vectors into two perpendicular components.",
+                        "Use graphical methods to solve vector problems."
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Measurement, Position, Distance and Displacement",
+                    "subtopics": [
+                        "Concept of displacement.",
+                        "Distinction between distance and displacement.",
+                        "Concept of position and coordinates.",
+                        "Frame of reference."
+                    ],
+                    "objectives": [
+                        "Use strings, metre rules, engineering calipers, vernier calipers and micrometer screw gauges for measurement.",
+                        "Note the degree of accuracy of measurements.",
+                        "Identify distance travelled in a specified direction.",
+                        "Use a compass and protractor to locate points and directions.",
+                        "Use Cartesian coordinate systems to locate positions in the x-y plane.",
+                        "Plot graphs and draw inferences from graphs."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "3. Motion",
+            "topics": [
+                {
+                    "id": 4,
+                    "title": "Motion and Newton's Laws of Motion",
+                    "subtopics": [
+                        "Newton's laws of motion.",
+                        "Inertia, mass and force.",
+                        "Relationship between mass and acceleration.",
+                        "Impulse and momentum.",
+                        "Force-time graphs.",
+                        "Conservation of linear momentum; coefficient of restitution is not required.",
+                        "Types of motion: translational, oscillatory, rotational, spin and random.",
+                        "Relative motion.",
+                        "Causes of motion.",
+                        "Types of force: contact forces and force fields."
+                    ],
+                    "objectives": [
+                        "Identify different types of motion.",
+                        "Solve numerical problems on collinear motion.",
+                        "Identify force as a cause of motion.",
+                        "Identify push and pull as forms of force.",
+                        "Identify electric and magnetic attractions and gravitational pull as forms of field forces.",
+                        "Interpret Newton's laws of motion.",
+                        "Compare inertia, mass and force.",
+                        "Deduce the relationship between mass and acceleration.",
+                        "Interpret the law of conservation of linear momentum and its applications.",
+                        "Interpret the area under a force-time graph.",
+                        "Solve numerical problems involving impulse and momentum."
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Linear Motion",
+                    "subtopics": [
+                        "Speed, velocity and acceleration.",
+                        "Equations of uniformly accelerated motion.",
+                        "Motion under gravity.",
+                        "Distance-time and velocity-time graphs.",
+                        "Instantaneous velocity and acceleration."
+                    ],
+                    "objectives": [
+                        "Differentiate between speed, velocity and acceleration.",
+                        "Deduce equations of uniformly accelerated motion.",
+                        "Solve problems involving motion under gravity.",
+                        "Interpret distance-time and velocity-time graphs.",
+                        "Compute instantaneous velocity and acceleration."
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Projectile Motion",
+                    "subtopics": [
+                        "Calculation of range, maximum height and time of flight from the ground and from a height.",
+                        "Applications of projectile motion."
+                    ],
+                    "objectives": [
+                        "Establish expressions for the range, maximum height and time of flight of projectiles, rockets and missiles.",
+                        "Solve problems involving projectile motion."
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Motion in a Circle",
+                    "subtopics": [
+                        "Angular velocity and angular acceleration.",
+                        "Centripetal and centrifugal forces.",
+                        "Applications of circular motion."
+                    ],
+                    "objectives": [
+                        "Establish expressions for angular velocity, angular acceleration and centripetal force.",
+                        "Solve numerical problems involving motion in a circle."
+                    ]
+                },
+                {
+                    "id": 8,
+                    "title": "Simple Harmonic Motion (SHM)",
+                    "subtopics": [
+                        "Definition and explanation of simple harmonic motion.",
+                        "Examples of systems that execute SHM.",
+                        "Period, frequency and amplitude of SHM.",
+                        "Velocity and acceleration of SHM.",
+                        "Simple treatment of energy changes in SHM.",
+                        "Forced vibration and resonance: simple treatment."
+                    ],
+                    "objectives": [
+                        "Establish the relationship between period and frequency.",
+                        "Analyse energy changes occurring during SHM.",
+                        "Identify different types of forced vibration.",
+                        "Enumerate applications of resonance."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "4. Gravitational Field",
+            "topics": [
+                {
+                    "id": 9,
+                    "title": "Gravitational Field",
+                    "subtopics": [
+                        "Newton's law of universal gravitation.",
+                        "Gravitational potential.",
+                        "Conservative and non-conservative fields.",
+                        "Acceleration due to gravity.",
+                        "Variation of g on the Earth's surface.",
+                        "Distinction between mass and weight.",
+                        "Escape velocity.",
+                        "Parking orbit and weightlessness."
+                    ],
+                    "objectives": [
+                        "Identify the expression for gravitational force between two bodies.",
+                        "Apply Newton's law of universal gravitation.",
+                        "Give examples of conservative and non-conservative fields.",
+                        "Deduce the expression for gravitational field potential.",
+                        "Identify the causes of variation of g on the Earth's surface.",
+                        "Differentiate between mass and weight.",
+                        "Determine escape velocity.",
+                        "Relate the expression for gravitational force between two bodies."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "5. Equilibrium of Forces",
+            "topics": [
+                {
+                    "id": 10,
+                    "title": "Equilibrium of Forces",
+                    "subtopics": [
+                        "Equilibrium of particles.",
+                        "Equilibrium of coplanar forces.",
+                        "Triangles and polygon of forces.",
+                        "Lami's theorem.",
+                        "Principles of moments.",
+                        "Moment of a force.",
+                        "Simple treatment and moment of a couple (torque).",
+                        "Applications of moments.",
+                        "Conditions for equilibrium of rigid bodies under parallel and non-parallel forces.",
+                        "Resolution and composition of forces in two perpendicular directions.",
+                        "Resultant and equilibrant.",
+                        "Centre of gravity and stability.",
+                        "Stable, unstable and neutral equilibrium."
+                    ],
+                    "objectives": [
+                        "Apply the conditions for equilibrium of coplanar forces to solve problems.",
+                        "Use the triangle and polygon laws of forces to solve equilibrium problems.",
+                        "Use Lami's theorem to solve problems.",
+                        "Analyse the principle of moments of a force.",
+                        "Determine the moment of a force and a couple.",
+                        "Describe applications of moments of a force and a couple.",
+                        "Apply the conditions for equilibrium of rigid bodies to solve problems.",
+                        "Resolve forces into two perpendicular directions.",
+                        "Determine the resultant and equilibrant of forces.",
+                        "Differentiate between stable, unstable and neutral equilibrium."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "6. Friction",
+            "topics": [
+                {
+                    "id": 11,
+                    "title": "Friction",
+                    "subtopics": [
+                        "Static and dynamic friction.",
+                        "Coefficient of limiting friction and its determination.",
+                        "Advantages and disadvantages of friction.",
+                        "Reduction of friction.",
+                        "Qualitative treatment of viscosity and terminal velocity.",
+                        "Stokes' law."
+                    ],
+                    "objectives": [
+                        "Differentiate between static and dynamic friction.",
+                        "Determine the coefficient of limiting friction.",
+                        "Compare the advantages and disadvantages of friction.",
+                        "Suggest ways of reducing friction.",
+                        "Analyse factors that affect viscosity and terminal velocity.",
+                        "Apply Stokes' law."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "7. Work, Energy and Power",
+            "topics": [
+                {
+                    "id": 12,
+                    "title": "Work, Energy and Power",
+                    "subtopics": [
+                        "Definitions of work, energy and power.",
+                        "Forms of energy.",
+                        "Conservation of energy.",
+                        "Qualitative treatment of transformations between different forms of energy.",
+                        "Interpretation of area under the force-distance curve."
+                    ],
+                    "objectives": [
+                        "Differentiate between work, energy and power.",
+                        "Compare different forms of energy, giving examples.",
+                        "Apply the principle of conservation of energy.",
+                        "Examine transformations between different forms of energy.",
+                        "Interpret the area under a force-distance curve.",
+                        "Solve numerical problems involving work, energy and power."
+                    ]
+                },
+                {
+                    "id": 13,
+                    "title": "Energy and Society",
+                    "subtopics": [
+                        "Sources of energy.",
+                        "Renewable and non-renewable energy, including coal, crude oil, the Sun and wind.",
+                        "Uses of energy.",
+                        "Energy and development.",
+                        "Energy diversification.",
+                        "Environmental impacts of energy, including global warming, the greenhouse effect and spillage.",
+                        "Energy crises.",
+                        "Conversion of energy.",
+                        "Devices used in energy production.",
+                        "Photovoltaic cells.",
+                        "Work function and the photoelectric effect: the source lists the relation φ = hf.",
+                        "Planck's constant."
+                    ],
+                    "objectives": [
+                        "Itemise sources of energy.",
+                        "Distinguish between renewable and non-renewable energy and give examples.",
+                        "Identify methods of energy transition.",
+                        "Explain the importance of energy in societal development.",
+                        "Analyse the effects of energy use on the environment.",
+                        "Identify the impacts of energy on the environment.",
+                        "Identify energy sources that are environmentally friendly or hazardous.",
+                        "Identify energy uses in the immediate environment.",
+                        "Suggest ways of using energy safely.",
+                        "State different forms of energy conversion.",
+                        "Recognise photovoltaic cells.",
+                        "Understand the work function relation given in the syllabus.",
+                        "Recognise Planck's constant."
+                    ]
+                },
+                {
+                    "id": 14,
+                    "title": "Dams and Energy Production",
+                    "subtopics": [
+                        "Location of dams.",
+                        "Energy production."
+                    ],
+                    "objectives": [
+                        "Identify the role of dams in energy production.",
+                        "Relate dam location to energy production."
+                    ]
+                },
+                {
+                    "id": 15,
+                    "title": "Nuclear Energy",
+                    "subtopics": [
+                        "Nuclear energy."
+                    ],
+                    "objectives": [
+                        "Understand nuclear energy as a source of energy."
+                    ]
+                },
+                {
+                    "id": 16,
+                    "title": "Solar Energy",
+                    "subtopics": [
+                        "Photoelectric effect.",
+                        "Solar collector.",
+                        "Solar panel for energy supply."
+                    ],
+                    "objectives": [
+                        "Understand the photoelectric effect in relation to solar energy.",
+                        "Identify solar collectors.",
+                        "Identify solar panels used for energy supply."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "8. Simple Machines",
+            "topics": [
+                {
+                    "id": 17,
+                    "title": "Simple Machines",
+                    "subtopics": [
+                        "Definition of simple machines.",
+                        "Types of machines.",
+                        "Mechanical advantage, velocity ratio and efficiency of machines."
+                    ],
+                    "objectives": [
+                        "Identify different types of simple machines.",
+                        "Solve problems involving simple machines."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "9. Elasticity",
+            "topics": [
+                {
+                    "id": 18,
+                    "title": "Elasticity: Hooke's Law and Young's Modulus",
+                    "subtopics": [
+                        "Hooke's law and Young's modulus.",
+                        "Elastic limit, yield point and breaking point.",
+                        "Spring balance as a device for measuring force.",
+                        "Work done per unit volume in springs and elastic strings."
+                    ],
+                    "objectives": [
+                        "Interpret force-extension curves.",
+                        "Interpret Hooke's law and Young's modulus of a material.",
+                        "Use a spring balance to measure force.",
+                        "Determine the work done in springs and elastic strings."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "10. Pressure",
+            "topics": [
+                {
+                    "id": 19,
+                    "title": "Atmospheric Pressure",
+                    "subtopics": [
+                        "Definition of atmospheric pressure.",
+                        "SI unit of pressure: pascal (Pa).",
+                        "Measurement of pressure.",
+                        "Simple mercury barometer, aneroid barometer and manometer.",
+                        "Variation of pressure with height.",
+                        "Use of a barometer as an altimeter."
+                    ],
+                    "objectives": [
+                        "Recognise the SI unit of pressure (Pa).",
+                        "Identify pressure-measuring instruments.",
+                        "Relate variations in pressure to height.",
+                        "Use a barometer as an altimeter."
+                    ]
+                },
+                {
+                    "id": 20,
+                    "title": "Pressure in Liquids",
+                    "subtopics": [
+                        "Relationship between pressure, depth and density: P = ρgh.",
+                        "Transmission of pressure in liquids (Pascal's principle).",
+                        "Applications of pressure in liquids."
+                    ],
+                    "objectives": [
+                        "Determine the relationship between pressure, depth and density.",
+                        "Apply the principle of transmission of pressure in liquids to solve problems.",
+                        "Determine and apply the principle of pressure in liquids."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "11. Liquids at Rest",
+            "topics": [
+                {
+                    "id": 21,
+                    "title": "Liquids at Rest",
+                    "subtopics": [
+                        "Determination of the density of solids and liquids.",
+                        "Definition of relative density.",
+                        "Upthrust on a body immersed in a liquid.",
+                        "Archimedes' principle and the law of floatation, including applications such as ships and hydrometers."
+                    ],
+                    "objectives": [
+                        "Distinguish between density and relative density of substances.",
+                        "Determine the upthrust on a body immersed in a liquid.",
+                        "Apply Archimedes' principle and the law of floatation to solve problems."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "12. Temperature and Its Measurement",
+            "topics": [
+                {
+                    "id": 22,
+                    "title": "Temperature and Its Measurement",
+                    "subtopics": [
+                        "Concept of temperature.",
+                        "Thermometric properties.",
+                        "Calibration of thermometers.",
+                        "Temperature scales: Celsius and Kelvin.",
+                        "Types of thermometers.",
+                        "Conversion from one temperature scale to another."
+                    ],
+                    "objectives": [
+                        "Identify thermometric properties of materials used in different thermometers.",
+                        "Calibrate thermometers.",
+                        "Differentiate between temperature scales, including Celsius, Fahrenheit and Kelvin.",
+                        "Compare types of thermometers.",
+                        "Convert from one temperature scale to another."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "13. Quantity of Heat",
+            "topics": [
+                {
+                    "id": 23,
+                    "title": "Quantity of Heat",
+                    "subtopics": [
+                        "Heat as a form of energy.",
+                        "Heat capacity and specific heat capacity of solids and liquids.",
+                        "Determination of heat capacity and specific heat capacity by simple methods, including the method of mixtures, electrical method and Newton's law of cooling."
+                    ],
+                    "objectives": [
+                        "Differentiate between heat capacity and specific heat capacity.",
+                        "Determine heat capacity and specific heat capacity using simple methods.",
+                        "Solve numerical problems involving heat capacity and specific heat capacity."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "14. Change of State",
+            "topics": [
+                {
+                    "id": 24,
+                    "title": "Change of State",
+                    "subtopics": [
+                        "Latent heat.",
+                        "Specific latent heats of fusion and vaporisation.",
+                        "Melting, evaporation and boiling.",
+                        "Influence of pressure and dissolved substances on boiling and melting points.",
+                        "Applications in appliances."
+                    ],
+                    "objectives": [
+                        "Differentiate between latent heat and specific latent heats of fusion and vaporisation.",
+                        "Differentiate between melting, evaporation and boiling.",
+                        "Examine the effects of pressure and dissolved substances on boiling and melting points.",
+                        "Solve numerical problems involving change of state."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "15. Thermal Expansion",
+            "topics": [
+                {
+                    "id": 25,
+                    "title": "Thermal Expansion of Solids",
+                    "subtopics": [
+                        "Definition and determination of linear, volume and area expansivities.",
+                        "Effects and applications, including expansion joints in buildings and railway lines.",
+                        "Relationship between different expansivities."
+                    ],
+                    "objectives": [
+                        "Determine linear and volume expansivities.",
+                        "Assess the effects and applications of thermal expansivity.",
+                        "Determine the relationship between different expansivities."
+                    ]
+                },
+                {
+                    "id": 26,
+                    "title": "Thermal Expansion of Liquids",
+                    "subtopics": [
+                        "Volume expansivity.",
+                        "Real and apparent expansivities.",
+                        "Determination of volume expansivity.",
+                        "Anomalous expansion of water."
+                    ],
+                    "objectives": [
+                        "Determine volume, apparent and real expansivities of liquids.",
+                        "Analyse the anomalous expansion of water."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "16. Gas Laws",
+            "topics": [
+                {
+                    "id": 27,
+                    "title": "Gas Laws",
+                    "subtopics": [
+                        "Boyle's law (isothermal process).",
+                        "Charles's law (isobaric process).",
+                        "Pressure law (volumetric process).",
+                        "Absolute zero of temperature.",
+                        "General gas equation: PV/T = constant.",
+                        "Ideal gas equation, for example PV = nRT.",
+                        "Van der Waals gas equation."
+                    ],
+                    "objectives": [
+                        "Interpret the gas laws.",
+                        "Use the expressions for gas laws to solve numerical problems.",
+                        "Interpret the Van der Waals equation for one mole of a real gas."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "17. Vapours",
+            "topics": [
+                {
+                    "id": 28,
+                    "title": "Vapours",
+                    "subtopics": [
+                        "Unsaturated and saturated vapours.",
+                        "Relationship between saturated vapour pressure (SVP) and boiling.",
+                        "Determination of SVP by the barometer tube method.",
+                        "Formation of dew, mist, fog, cloud and rain.",
+                        "Dew point, humidity and relative humidity.",
+                        "Hygrometry and estimation of atmospheric humidity using wet- and dry-bulb hygrometers."
+                    ],
+                    "objectives": [
+                        "Distinguish between saturated and unsaturated vapours.",
+                        "Relate saturated vapour pressure to boiling point.",
+                        "Determine saturated vapour pressure by the barometer tube method.",
+                        "Differentiate between dew point, humidity and relative humidity.",
+                        "Estimate atmospheric humidity using wet- and dry-bulb hygrometers.",
+                        "Solve numerical problems involving vapours and humidity."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "18. Structure of Matter and Kinetic Theory",
+            "topics": [
+                {
+                    "id": 29,
+                    "title": "Molecular Nature of Matter",
+                    "subtopics": [
+                        "Atoms and molecules.",
+                        "Molecular theory and explanations of Brownian motion, diffusion, surface tension, capillarity, adhesion, cohesion and angles of contact.",
+                        "Law of definite proportions.",
+                        "Examples and applications."
+                    ],
+                    "objectives": [
+                        "Differentiate between atoms and molecules.",
+                        "Use molecular theory to explain Brownian motion, diffusion, surface tension, capillarity, adhesion, cohesion and angle of contact."
+                    ]
+                },
+                {
+                    "id": 30,
+                    "title": "Kinetic Theory",
+                    "subtopics": [
+                        "Assumptions of the kinetic theory.",
+                        "Application of kinetic theory to explain gas pressure, Boyle's law, Charles's law, melting, boiling, vaporisation, changes in temperature and evaporation."
+                    ],
+                    "objectives": [
+                        "Examine the assumptions of kinetic theory.",
+                        "Use kinetic theory to interpret gas pressure, Boyle's law, Charles's law, melting, boiling, vaporisation, changes in temperature and evaporation."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "19. Heat Transfer",
+            "topics": [
+                {
+                    "id": 31,
+                    "title": "Heat Transfer",
+                    "subtopics": [
+                        "Conduction, convection and radiation as modes of heat transfer.",
+                        "Temperature gradient, thermal conductivity and heat flux.",
+                        "Effect of surface nature on energy radiated and absorbed.",
+                        "Conductivities of common materials.",
+                        "Thermos flask and vacuum flask.",
+                        "Land and sea breezes.",
+                        "Combustion engines."
+                    ],
+                    "objectives": [
+                        "Differentiate between conduction, convection and radiation.",
+                        "Solve problems on temperature gradient, thermal conductivity and heat flux.",
+                        "Assess the effect of surface nature on energy radiated and absorbed.",
+                        "Compare the conductivities of common materials.",
+                        "Relate the component parts to the operation of a thermos flask.",
+                        "Differentiate between land and sea breezes.",
+                        "Analyse the operating principles of internal combustion engines, jet engines and rockets.",
+                        "Understand the advantages and disadvantages of electric engines compared with combustion engines."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "20. Waves",
+            "topics": [
+                {
+                    "id": 32,
+                    "title": "Production and Propagation of Waves",
+                    "subtopics": [
+                        "Wave motion.",
+                        "Vibrating systems as sources of waves.",
+                        "Waves as a mode of energy transfer.",
+                        "Distinction between particle motion and wave motion.",
+                        "Relationship between frequency, wavelength and wave velocity: v = fλ.",
+                        "Phase difference, wave number and wave vector.",
+                        "Progressive wave equation."
+                    ],
+                    "objectives": [
+                        "Interpret wave motion.",
+                        "Identify vibrating systems as sources of waves.",
+                        "Explain waves as a mode of energy transfer.",
+                        "Distinguish between particle motion and wave motion.",
+                        "Relate frequency and wavelength to wave velocity.",
+                        "Determine phase difference, wave number and wave vector.",
+                        "Use the progressive wave equation to compute basic wave parameters.",
+                        "Work with examples involving wave equations."
+                    ]
+                },
+                {
+                    "id": 33,
+                    "title": "Classification of Waves",
+                    "subtopics": [
+                        "Mechanical and electromagnetic waves.",
+                        "Longitudinal and transverse waves.",
+                        "Stationary and progressive waves.",
+                        "Examples of waves from springs, ropes, stretched strings and ripple tanks."
+                    ],
+                    "objectives": [
+                        "Differentiate between mechanical and electromagnetic waves.",
+                        "Differentiate between longitudinal and transverse waves.",
+                        "Distinguish between stationary and progressive waves.",
+                        "Identify examples of waves generated from springs, ropes, stretched strings and ripple tanks."
+                    ]
+                },
+                {
+                    "id": 34,
+                    "title": "Characteristics and Properties of Waves",
+                    "subtopics": [
+                        "Reflection, refraction, diffraction and plane polarisation.",
+                        "Superposition of waves, including interference.",
+                        "Beats.",
+                        "Doppler effect: qualitative treatment only."
+                    ],
+                    "objectives": [
+                        "Differentiate between reflection, refraction, diffraction and plane polarisation of waves.",
+                        "Analyse the principle of superposition of waves.",
+                        "Solve numerical problems on waves.",
+                        "Explain beats, beat frequency and their uses.",
+                        "Explain the Doppler effect of sound and its applications."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "21. Propagation of Sound Waves",
+            "topics": [
+                {
+                    "id": 35,
+                    "title": "Propagation of Sound Waves",
+                    "subtopics": [
+                        "Need for a material medium.",
+                        "Speed of sound in solids, liquids and air.",
+                        "Reflection of sound, echoes and reverberation, including applications.",
+                        "Advantages and disadvantages of echoes and reverberation."
+                    ],
+                    "objectives": [
+                        "Determine the need for a material medium in the propagation of sound waves.",
+                        "Compare the speed of sound in solids, liquids and air.",
+                        "Relate the effects of temperature and pressure to the speed of sound in air.",
+                        "Solve problems involving echoes, reverberation and speed of sound.",
+                        "Compare the advantages and disadvantages of echoes."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "22. Characteristics of Sound Waves",
+            "topics": [
+                {
+                    "id": 36,
+                    "title": "Characteristics of Sound Waves",
+                    "subtopics": [
+                        "Noise and musical notes.",
+                        "Quality, pitch, intensity and loudness and their applications to musical instruments.",
+                        "Simple treatment of harmonics and overtones produced by vibrating strings and air columns.",
+                        "Acoustic examples of resonance.",
+                        "Frequency of notes emitted by air columns in closed and open pipes in relation to their lengths."
+                    ],
+                    "objectives": [
+                        "Differentiate between noise and musical notes.",
+                        "Analyse the quality, pitch, intensity and loudness of sound notes.",
+                        "Evaluate the application of sound characteristics in the construction of musical instruments.",
+                        "Identify overtones produced by vibrating strings and air columns.",
+                        "List acoustic examples of resonance.",
+                        "Determine the frequencies of notes emitted by air columns in open and closed pipes in relation to their lengths.",
+                        "Solve problems involving echoes, reverberation and the speed of sound."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "23. Light Energy",
+            "topics": [
+                {
+                    "id": 37,
+                    "title": "Sources and Propagation of Light",
+                    "subtopics": [
+                        "Natural and artificial sources of light.",
+                        "Luminous and non-luminous objects.",
+                        "Speed, frequency and wavelength of light.",
+                        "Formation of shadows and eclipses.",
+                        "The pinhole camera."
+                    ],
+                    "objectives": [
+                        "Compare natural and artificial sources of light.",
+                        "Differentiate between luminous and non-luminous objects.",
+                        "Relate the speed, frequency and wavelength of light.",
+                        "Interpret the formation of shadows and eclipses.",
+                        "Solve problems using the principle of operation of a pinhole camera."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "24. Reflection of Light at Plane and Curved Surfaces",
+            "topics": [
+                {
+                    "id": 38,
+                    "title": "Reflection of Light at Plane and Curved Surfaces",
+                    "subtopics": [
+                        "Laws of reflection.",
+                        "Applications of reflection of light.",
+                        "Formation of images by plane, concave and convex mirrors, including ray diagrams.",
+                        "Mirror formula: 1/f = 1/u + 1/v.",
+                        "Linear and angular magnification."
+                    ],
+                    "objectives": [
+                        "Interpret the laws of reflection.",
+                        "Illustrate the formation of images by plane, concave and convex mirrors.",
+                        "Apply the mirror formula to solve optical problems.",
+                        "Determine linear magnification.",
+                        "Apply the laws of reflection to the operation of periscopes, kaleidoscopes and sextants."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "25. Refraction of Light Through Plane and Curved Surfaces",
+            "topics": [
+                {
+                    "id": 39,
+                    "title": "Refraction of Light and Optical Lenses",
+                    "subtopics": [
+                        "Laws of refraction.",
+                        "Explanation of refraction in terms of the velocity of light in different media.",
+                        "Definition of refractive index.",
+                        "Determination of the refractive index of glass and liquids using Snell's law.",
+                        "Real and apparent depth and lateral displacement.",
+                        "Critical angle and total internal reflection.",
+                        "Glass prisms and the minimum deviation formula.",
+                        "Types of lenses.",
+                        "Lens formula: 1/f = 1/u + 1/v.",
+                        "Newton's formula as stated in the source: F² = ab.",
+                        "Magnification."
+                    ],
+                    "objectives": [
+                        "Interpret the laws of refraction.",
+                        "Determine the refractive index of glass and liquids using Snell's law.",
+                        "Determine the focal length of curved surfaces.",
+                        "Determine refractive index using the principle of real and apparent depth.",
+                        "Determine the conditions necessary for total internal reflection.",
+                        "Examine the uses of periscopes, prisms, binoculars and optical fibres.",
+                        "Apply total internal reflection to explain the formation of mirages.",
+                        "Use the lens formula and ray diagrams to solve optical numerical problems.",
+                        "Determine the magnification of an image.",
+                        "Calculate the refractive index of a glass prism using the minimum deviation formula.",
+                        "Trace rays through an optical prism."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "26. Optical Instruments",
+            "topics": [
+                {
+                    "id": 40,
+                    "title": "Optical Instruments and the Human Eye",
+                    "subtopics": [
+                        "General principles of microscopes, telescopes, projectors, cameras and the human eye; physiological details of the eye are not required.",
+                        "Power of a lens.",
+                        "Angular magnification.",
+                        "Near and far points.",
+                        "Sight defects and their correction."
+                    ],
+                    "objectives": [
+                        "Apply the principles of operation of optical instruments to solve problems.",
+                        "Distinguish between the human eye and cameras.",
+                        "Calculate the power of a lens.",
+                        "Evaluate the angular magnification of optical instruments.",
+                        "Determine the near and far points.",
+                        "Identify sight defects and their corrections."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "27. Dispersion of Light and Colours",
+            "topics": [
+                {
+                    "id": 41,
+                    "title": "Dispersion of Light and Colours",
+                    "subtopics": [
+                        "Dispersion of white light by a triangular prism.",
+                        "Production of a pure spectrum.",
+                        "Colour mixing by addition and subtraction.",
+                        "Colour of objects and colour filters.",
+                        "Rainbow and its formation.",
+                        "Electromagnetic spectrum: description of sources and uses of various types of radiation."
+                    ],
+                    "objectives": [
+                        "Identify primary colours and obtain secondary colours by mixing.",
+                        "Understand the formation of a rainbow.",
+                        "Explain why objects have colours.",
+                        "Analyse colours using colour filters.",
+                        "Analyse the electromagnetic spectrum in relation to wavelengths, sources, detection and uses.",
+                        "Define monochromatic light."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "28. Electrostatics",
+            "topics": [
+                {
+                    "id": 42,
+                    "title": "Electrostatics",
+                    "subtopics": [
+                        "Existence of positive and negative charges in matter.",
+                        "Charging a body by friction, contact and induction.",
+                        "Electroscope.",
+                        "Coulomb's inverse-square law, electric field and potential.",
+                        "Electric field intensity, potential and potential difference.",
+                        "Electric discharge and lightning."
+                    ],
+                    "objectives": [
+                        "Identify electric charges.",
+                        "Examine the uses of an electroscope.",
+                        "Apply Coulomb's inverse-square law to solve problems.",
+                        "Deduce expressions for electric field intensity and potential difference.",
+                        "Identify electric field flux patterns of isolated and interacting charges.",
+                        "Analyse charge distribution on a conductor and its use in lightning conductors.",
+                        "Charge a body by friction, induction and contact."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "29. Capacitors",
+            "topics": [
+                {
+                    "id": 43,
+                    "title": "Capacitors",
+                    "subtopics": [
+                        "Types and functions of capacitors.",
+                        "Parallel-plate capacitors.",
+                        "Capacitance of a capacitor.",
+                        "Relationship between capacitance, plate area, separation of plates and the medium between the plates.",
+                        "Capacitors in series and parallel.",
+                        "Energy stored in a capacitor."
+                    ],
+                    "objectives": [
+                        "Determine the uses of capacitors.",
+                        "Analyse parallel-plate capacitors.",
+                        "Determine the capacitance of a capacitor.",
+                        "Analyse factors that affect capacitance.",
+                        "Solve problems involving arrangements of capacitors.",
+                        "Determine the energy stored in capacitors."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "30. Electric Cells",
+            "topics": [
+                {
+                    "id": 44,
+                    "title": "Electric Cells",
+                    "subtopics": [
+                        "Simple voltaic cell and its defects.",
+                        "Daniell cell and Leclanché cell, wet and dry.",
+                        "Lead-acid accumulator, nickel-iron (NiFe), lithium-ion and mercury-cadmium cells as listed in the source.",
+                        "Maintenance of cells and batteries; detailed chemistry of a cell is not required.",
+                        "Arrangement of cells.",
+                        "Efficiency of a cell."
+                    ],
+                    "objectives": [
+                        "Identify defects of the simple voltaic cell and their corrections.",
+                        "Compare different types of cells, including solar cells.",
+                        "Compare the advantages of lead-acid and nickel-iron accumulators.",
+                        "Solve problems involving series and parallel combinations of cells."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "31. Current Electricity",
+            "topics": [
+                {
+                    "id": 45,
+                    "title": "Current Electricity",
+                    "subtopics": [
+                        "Electromotive force (emf), potential difference (p.d.), current, internal resistance of a cell and lost volts.",
+                        "Ohm's law, resistivity and conductivity.",
+                        "Measurement of resistance.",
+                        "Metre bridge.",
+                        "Resistance in series and parallel and their combinations.",
+                        "Potentiometer method of measuring emf, current and internal resistance of a cell.",
+                        "Electrical networks."
+                    ],
+                    "objectives": [
+                        "Differentiate between emf, potential difference, current and internal resistance of a cell.",
+                        "Apply Ohm's law to solve problems.",
+                        "Use a metre bridge to calculate resistance.",
+                        "Compute effective total resistance for series and parallel arrangements.",
+                        "Determine the resistivity and conductivity of a conductor.",
+                        "Measure emf, current and internal resistance of a cell using a potentiometer.",
+                        "Identify the advantages of a potentiometer.",
+                        "Apply Kirchhoff's laws in electrical networks."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "32. Electrical Energy and Power",
+            "topics": [
+                {
+                    "id": 46,
+                    "title": "Electrical Energy and Power",
+                    "subtopics": [
+                        "Concepts of electrical energy and power.",
+                        "Commercial units of electrical energy and power.",
+                        "Electric power transmission.",
+                        "Heating effects of electric current.",
+                        "Electrical wiring of houses.",
+                        "Use of fuses."
+                    ],
+                    "objectives": [
+                        "Apply expressions for electrical energy and power to solve problems.",
+                        "Analyse how power is transmitted from a power station to consumers.",
+                        "Identify the heating effects of current and their uses.",
+                        "Identify the advantages of parallel arrangements over series arrangements.",
+                        "Determine the fuse rating."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "33. Magnets and Magnetic Fields",
+            "topics": [
+                {
+                    "id": 47,
+                    "title": "Magnets and Magnetic Fields",
+                    "subtopics": [
+                        "Natural and artificial magnets.",
+                        "Magnetic properties of soft iron and steel.",
+                        "Methods of making magnets and demagnetisation.",
+                        "Concept of a magnetic field.",
+                        "Magnetic field of a permanent magnet.",
+                        "Magnetic field around a straight current-carrying conductor, circular wire and solenoid.",
+                        "Properties of the Earth's magnetic field: north and south poles, magnetic meridian, angle of dip and declination.",
+                        "Magnetic flux and flux density.",
+                        "Variation of magnetic field intensity over the Earth's surface.",
+                        "Applications of the Earth's magnetic field in navigation and mineral exploration."
+                    ],
+                    "objectives": [
+                        "Give examples of natural and artificial magnets.",
+                        "Differentiate between the magnetic properties of soft iron and steel.",
+                        "Identify methods of making and demagnetising magnets.",
+                        "Describe how to prevent a magnet from losing its magnetism.",
+                        "Determine the flux pattern of an isolated magnet.",
+                        "Determine the flux pattern when two magnets are placed together pole to pole.",
+                        "Determine the flux of a current-carrying conductor, circular wire and solenoid, including solenoid polarity.",
+                        "Determine the flux pattern of a magnet placed in the Earth's magnetic field.",
+                        "Identify the magnetic elements of the Earth's field.",
+                        "Determine variations in the Earth's magnetic field over its surface.",
+                        "Examine applications of the Earth's magnetic field."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "34. Force on a Current-Carrying Conductor in a Magnetic Field",
+            "topics": [
+                {
+                    "id": 48,
+                    "title": "Force on a Current-Carrying Conductor in a Magnetic Field",
+                    "subtopics": [
+                        "Quantitative treatment of force between two parallel current-carrying conductors.",
+                        "Force on a charge moving in a magnetic field.",
+                        "The direct-current (DC) motor.",
+                        "Electromagnets.",
+                        "Carbon microphone.",
+                        "Moving-coil and moving-iron instruments.",
+                        "Conversion of galvanometers to ammeters and voltmeters using shunts and multipliers.",
+                        "Sensitivity of a galvanometer."
+                    ],
+                    "objectives": [
+                        "Determine the direction of force on a current-carrying conductor using Fleming's left-hand rule.",
+                        "Interpret attractive and repulsive forces between two parallel current-carrying conductors using diagrams.",
+                        "Determine the relationship between force, magnetic field strength, velocity and the angle at which a charge enters the field.",
+                        "Interpret the working of a DC motor.",
+                        "Analyse the principles of electromagnets and give examples of their applications.",
+                        "Compare moving-iron and moving-coil instruments.",
+                        "Convert a galvanometer into an ammeter or voltmeter.",
+                        "Identify factors affecting the sensitivity of a galvanometer."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "35. Electromagnetic Induction",
+            "topics": [
+                {
+                    "id": 49,
+                    "title": "Electromagnetic Induction",
+                    "subtopics": [
+                        "Faraday's laws of electromagnetic induction.",
+                        "Lenz's law as an illustration of conservation of energy.",
+                        "Factors affecting induced emf.",
+                        "AC and DC generators.",
+                        "Transformers.",
+                        "Induction coil."
+                    ],
+                    "objectives": [
+                        "Interpret the laws of electromagnetic induction.",
+                        "Identify factors affecting induced emf.",
+                        "Recognise how Lenz's law illustrates conservation of energy.",
+                        "Interpret the diagrammatic setup of AC generators.",
+                        "Identify types of transformers.",
+                        "Examine the operating principles of transformers.",
+                        "Assess the functions of an induction coil.",
+                        "Draw conclusions from the operating principles of an induction coil."
+                    ]
+                },
+                {
+                    "id": 50,
+                    "title": "Inductance",
+                    "subtopics": [
+                        "Explanation of inductance.",
+                        "Unit of inductance.",
+                        "Energy stored in an inductor: E = 1/2 LI².",
+                        "Applications and uses of inductors."
+                    ],
+                    "objectives": [
+                        "Interpret the inductance of an inductor.",
+                        "Recognise the units of inductance.",
+                        "Calculate effective total inductance in series and parallel arrangements.",
+                        "Deduce the expression for energy stored in an inductor.",
+                        "Examine applications of inductors."
+                    ]
+                },
+                {
+                    "id": 51,
+                    "title": "Eddy Currents",
+                    "subtopics": [
+                        "Reduction of eddy currents.",
+                        "Applications of eddy currents.",
+                        "Effects of eddy currents."
+                    ],
+                    "objectives": [
+                        "Describe methods by which eddy-current losses can be reduced.",
+                        "Determine ways in which eddy currents can be used."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "36. Simple AC Circuits",
+            "topics": [
+                {
+                    "id": 52,
+                    "title": "Simple AC Circuits",
+                    "subtopics": [
+                        "Explanation of AC current and voltage.",
+                        "Peak and RMS values.",
+                        "AC source connected to a resistor.",
+                        "AC source connected to a capacitor and capacitive reactance.",
+                        "AC source connected to an inductor and inductive reactance.",
+                        "R-L-C circuits.",
+                        "Vector diagrams, phase angle and power factor.",
+                        "Resistance and impedance.",
+                        "Effective voltage in R-L-C circuits.",
+                        "Resonance and resonant frequency."
+                    ],
+                    "objectives": [
+                        "Identify AC current and DC voltage, as stated in the source.",
+                        "Differentiate between peak and RMS values of AC.",
+                        "Determine the phase difference between current and voltage.",
+                        "Interpret R-L-C circuits.",
+                        "Analyse vector diagrams.",
+                        "Calculate effective voltage, reactance and impedance.",
+                        "Recognise the conditions under which a circuit is at resonance.",
+                        "Determine the resonant frequency of an R-L-C arrangement.",
+                        "Determine instantaneous power, average power and power factor in AC circuits."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "37. Conduction of Electricity Through Liquids and Gases",
+            "topics": [
+                {
+                    "id": 53,
+                    "title": "Conduction of Electricity Through Liquids",
+                    "subtopics": [
+                        "Electrolytes and non-electrolytes.",
+                        "Concept of electrolysis.",
+                        "Faraday's laws of electrolysis.",
+                        "Applications of electrolysis, including electroplating and calibration of ammeters."
+                    ],
+                    "objectives": [
+                        "Distinguish between electrolytes and non-electrolytes.",
+                        "Analyse the processes of electrolysis.",
+                        "Apply Faraday's laws of electrolysis to solve problems."
+                    ]
+                },
+                {
+                    "id": 54,
+                    "title": "Conduction of Electricity Through Gases",
+                    "subtopics": [
+                        "Discharge through gases: qualitative treatment only.",
+                        "Applications of conduction of electricity through gases."
+                    ],
+                    "objectives": [
+                        "Analyse discharge through gases.",
+                        "Determine applications and uses of conduction of electricity through gases."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "38. Elementary Modern Physics",
+            "topics": [
+                {
+                    "id": 55,
+                    "title": "Elementary Modern Physics",
+                    "subtopics": [
+                        "Bohr's theory, Rutherford's theory and radioactivity.",
+                        "Models of the atom and their limitations.",
+                        "Elementary structure of the atom.",
+                        "Energy levels and spectra.",
+                        "Thermionic and photoelectric emissions.",
+                        "Einstein's equation and stopping potential.",
+                        "Applications of thermionic emission and photoelectric effects.",
+                        "Simple method of producing X-rays.",
+                        "Properties and applications of alpha, beta and gamma rays.",
+                        "Half-life and decay constant.",
+                        "Basic ideas of energy production by fusion and fission.",
+                        "Binding energy, mass defect and Einstein's energy equation: ΔE = Δmc².",
+                        "Wave-particle duality of matter.",
+                        "Electron diffraction.",
+                        "Uncertainty principle."
+                    ],
+                    "objectives": [
+                        "Identify models of the atom and state their limitations.",
+                        "Describe the elementary structure of the atom.",
+                        "Differentiate between atomic energy levels and spectra.",
+                        "Compare thermionic emission and photoelectric emission.",
+                        "Apply Einstein's equation to solve photoelectric-effect problems.",
+                        "Calculate stopping potential.",
+                        "Relate applications to thermionic emission and photoelectric effects.",
+                        "Interpret the process involved in producing X-rays.",
+                        "Identify properties and applications of X-rays.",
+                        "Analyse elementary radioactivity.",
+                        "Distinguish between stable and unstable nuclei.",
+                        "Identify isotopes of an element.",
+                        "Compare the properties of alpha, beta and gamma rays.",
+                        "Relate half-life and decay constant of a radioactive element.",
+                        "Determine binding energy, mass defect and Einstein's energy equation.",
+                        "Analyse wave-particle duality.",
+                        "Solve numerical problems based on the uncertainty principle and wave-particle duality."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "39. Introductory Electronics",
+            "topics": [
+                {
+                    "id": 56,
+                    "title": "Introductory Electronics",
+                    "subtopics": [
+                        "Distinction between metals, semiconductors and insulators; elementary knowledge of band gap is required.",
+                        "Intrinsic and extrinsic semiconductors, including n-type and p-type semiconductors.",
+                        "Uses of semiconductors and diodes in rectification and transistors in amplification.",
+                        "Elementary knowledge of diodes and transistors."
+                    ],
+                    "objectives": [
+                        "Differentiate between conductors, semiconductors and insulators.",
+                        "Distinguish between intrinsic and extrinsic semiconductors.",
+                        "Distinguish between electron and hole carriers.",
+                        "Analyse diodes and transistors.",
+                        "Relate diodes to rectification and transistors to amplification."
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionTitle": "40. Introduction to Fibre Optics and Lasers",
+            "topics": [
+                {
+                    "id": 57,
+                    "title": "Fibre Optics",
+                    "subtopics": [
+                        "Concept of fibre optics.",
+                        "Principle of transmission of light through an optical fibre.",
+                        "Applications of fibre optics in local area networks (LAN), medicine and laser systems, as listed in the source."
+                    ],
+                    "objectives": [
+                        "Explain the concept of fibre optics.",
+                        "Understand the principle of transmission of light through an optical fibre.",
+                        "Apply the principle of fibre optics in LAN, medicine and laser-related applications."
+                    ]
+                },
+                {
+                    "id": 58,
+                    "title": "Lasers",
+                    "subtopics": [
+                        "Meaning of laser.",
+                        "Types of lasers: solid-state, gas, liquid and semiconductor lasers.",
+                        "Applications in scientific research, communication, medicine, military technology and holograms.",
+                        "Dangers involved in using lasers."
+                    ],
+                    "objectives": [
+                        "Understand the meaning of laser.",
+                        "Identify the various types of lasers.",
+                        "Apply knowledge of lasers in scientific research, communication, medicine, military technology and holography.",
+                        "Identify the dangers involved in using lasers."
+                    ]
+                }
+            ]
+        }
+    ],
+    "recommendedTexts": [
+        "Ike, E.E. (2014). Essential Principles of Physics. Jos: ENIC Publishers.",
+        "Ike, E.E. (2014). Numerical Problems and Solutions in Physics. Jos: ENIC Publishers.",
+        "Nelkon, M. (1977). Fundamentals of Physics. Great Britain: Hart Davis Education.",
+        "Nelkon, M. and Parker. (1989). Advanced Level Physics (Sixth Edition). Heinemann.",
+        "Okeke, P.N. and Anyakoha, M.W. (2000). Senior Secondary School Physics. Lagos: Pacific Printers.",
+        "Olumuyiwa, A. and Ogunkoya, O.O. (1992). Comprehensive Certificate Physics. Ibadan: University Press Plc.",
+        "Orokpo, J.A. (2025). Ultimate UTME Preparatory Series Physics. Peridot Publishers and Printing Services Limited, Nasarawa State, Nigeria."
+    ]
+}

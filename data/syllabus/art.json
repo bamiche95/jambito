@@ -1,0 +1,239 @@
+{
+  "subject": "Art",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "General Objectives",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Objectives of Art",
+          "subtopics": [
+            {
+              "content": "Fundamental elements, principles and terminologies of art; historical dimensions of art, with emphasis on Nigerian arts and crafts; artistic techniques, processes, use of materials, and maintenance of tools and equipment; aesthetic awareness of the environment; meaning and functions of art in society.",
+              "objective": "Demonstrate knowledge of the fundamental elements, principles and terminologies of art; show knowledge of the historical dimensions of art, especially Nigerian arts and crafts; demonstrate knowledge of artistic techniques, processes, materials and maintenance of tools and equipment; display aesthetic awareness of the environment and understand the meaning and functions of art in society."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section A: Fundamentals of Art",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Classification of Art",
+          "subtopics": [
+            {
+              "content": "Visual Arts: Fine Arts and Applied Arts; Performing Arts: Music, Dance and Drama; Literary Arts: Poetry, Prose, Recital, etc.",
+              "objective": "Differentiate between the three branches of art: Visual Arts, Performing Arts and Literary Arts."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Elements and Principles of Design",
+          "subtopics": [
+            {
+              "content": "Elements of design: line, colour, shape, form, texture, tone, value, space, etc.",
+              "objective": "Identify the elements of design with the aid of illustrations."
+            },
+            {
+              "content": "Principles of design: balance, rhythm, proportion, harmony, contrast, repetition, dominance, variety, etc.",
+              "objective": "Analyse the principles of design with the aid of illustrations."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Art Terms",
+          "subtopics": [
+            {
+              "content": "Art terms and concepts, including pigments, motif, greenware, armature, silhouette, chiaroscuro, cire-perdue and terracotta.",
+              "objective": "Identify art terms; link each term to its relevant area of art; use art terminology when analysing artworks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Historical and Cultural Dimensions of Art",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Historical Dimensions of Art",
+          "subtopics": [
+            {
+              "content": "Prehistoric Art; Greek Art; Roman Art; Medieval Art, including architecture, surface decorations and calligraphy.",
+              "objective": "Compare the materials, styles and techniques used in the different historical periods; classify periods and styles, with emphasis on architecture, surface decoration and calligraphy."
+            },
+            {
+              "content": "Renaissance Art and artists: Giotto di Bondone, Michelangelo Buonarroti, Leonardo da Vinci and Raphael (Raffaello Santi), etc.",
+              "objective": "Compare Renaissance artists, their works and their styles."
+            },
+            {
+              "content": "Nineteenth- and twentieth-century art movements: Impressionism, Realism, Futurism, Cubism, Bauhaus, Pop Art, Abstract Expressionism and Fauvism.",
+              "objective": "Differentiate between the various art movements; analyse their styles, techniques, innovations and influences."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Traditional African Art",
+          "subtopics": [
+            {
+              "content": "Traditional African art cultures: Egypt, Ashanti, Dogon, Mossi, Fon, Senufo, Bambara, Mende, Kissi, Bamileke and Bakumba.",
+              "objective": "Analyse and compare the styles, techniques, innovations and influences of the different African art traditions; categorise artworks by style, materials and location; analyse their functions, characteristics and locations; trace their origins, locations and styles."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Traditional Nigerian Art",
+          "subtopics": [
+            {
+              "content": "Traditional Nigerian art traditions and centres: Nok, Igbo-Ukwu, Ife, Benin, Esie, Igala, Jukun, Akwanshi and Mbari.",
+              "objective": "Categorise artworks according to style, materials and location; analyse their functions and characteristics; trace their origins, locations and styles."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Nigerian Crafts",
+          "subtopics": [
+            {
+              "content": "Pottery, woodworks, cloth-weaving, carving, leatherworks, metalworks, beadworks, body decoration, mat weaving and cane weaving.",
+              "objective": "Analyse Nigerian crafts in terms of their styles, techniques, materials, functions, characteristics and locations; trace their origins and development."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Development in Contemporary Nigerian Arts and Artists",
+          "subtopics": [
+            {
+              "content": "Art schools and groups: Zaria, Nsukka and the Osogbo group, etc.",
+              "objective": "Determine the influence of Nigerian art schools and groups on the development of art."
+            },
+            {
+              "content": "Nigerian artists and art educators: Aina Onabolu, Ben Enwonwu, S. I. Wangboje, Jimoh Akolo, Dele Jegede, etc.",
+              "objective": "Assess Nigerian artists in terms of their works, specialisations, techniques and styles."
+            },
+            {
+              "content": "Museums, galleries and art centres.",
+              "objective": "Analyse the functions of museums, galleries and art centres; evaluate their impact on the development of art and assess their roles and functions."
+            },
+            {
+              "content": "Art institutions, cultural art centres and national art organisations, including the Nigerian Society for Education through Arts (NSEA), Society for Nigerian Artists (S.N.A.) and National Council for Arts and Culture (N.C.A.C.), etc.",
+              "objective": "Evaluate the contributions of art institutions, cultural art centres and national art organisations to the development of art; assess their roles and functions."
+            },
+            {
+              "content": "Major Nigerian festivals: Argungu Fishing Festival, Eyo, Egungun, Iri-ji (New Yam), Durbar, Igue, Ekpo and Odo, etc.",
+              "objective": "Examine the characteristics of major Nigerian art and cultural festivals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Artistic Skills, Techniques, Processes, Tools and Materials",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Artistic Skills, Techniques and Processes",
+          "subtopics": [
+            {
+              "content": "Two-dimensional art: drawing, painting, graphics and textile design.",
+              "objective": "Demonstrate knowledge of artistic techniques, skills and processes, with emphasis on tone, composition and colour application."
+            },
+            {
+              "content": "Perspective: linear, angular, aerial, parallel, etc.",
+              "objective": "Identify and differentiate between the types of perspective."
+            },
+            {
+              "content": "Perspective terms: foreground, picture plane, eye-level, vanishing point, foreshortening, optical illusion and depth, etc.",
+              "objective": "Understand and apply the rules of perspective and the relevant terminology."
+            },
+            {
+              "content": "Sculpture, ceramics and crafts.",
+              "objective": "Demonstrate knowledge of the techniques, skills and processes used in sculpture, ceramics and crafts."
+            },
+            {
+              "content": "Computer graphics, including CorelDraw.",
+              "objective": "Demonstrate knowledge of computer graphics techniques and processes, including the use of CorelDraw."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Tools, Materials and Equipment",
+          "subtopics": [
+            {
+              "content": "Two-dimensional art tools: brushes, lino cutters, drawing instruments, calligraphic pens, sharpeners, etc.",
+              "objective": "Identify and use basic design tools; maintain art tools properly."
+            },
+            {
+              "content": "Two-dimensional art materials: pencils, charcoal, pastel, crayon, fixative, fabric, dyes, lino, wood blocks, etc.",
+              "objective": "Identify and use appropriate art materials."
+            },
+            {
+              "content": "Two-dimensional art equipment: light table, spray gun, enlarger, computer, etc.",
+              "objective": "Identify, operate and maintain art equipment."
+            },
+            {
+              "content": "Improvisation of tools, materials and equipment for two-dimensional art, including colours, brushes and calligraphic pens.",
+              "objective": "Improvise alternative tools, materials and equipment for two-dimensional art."
+            },
+            {
+              "content": "Improvisation of tools, materials and equipment for three-dimensional art, including spatula, kiln and beater, etc.",
+              "objective": "Improvise alternative tools, materials and equipment for three-dimensional art."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Art Appreciation, Functions of Art and Entrepreneurship",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Art Appreciation",
+          "subtopics": [
+            {
+              "content": "Man-made objects, including architecture and sculpture.",
+              "objective": "Identify and analyse the aesthetic qualities of man-made objects in the Nigerian environment."
+            },
+            {
+              "content": "Natural phenomena, including Zuma Rock and Ikogosi Warm Springs, etc.",
+              "objective": "Identify and analyse the aesthetic qualities of natural phenomena in the Nigerian environment; differentiate between natural and man-made aesthetic phenomena."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Meaning and Functions of Art in Society",
+          "subtopics": [
+            {
+              "content": "Functions of art in society: religious, social, cultural, political, therapeutic and economic needs.",
+              "objective": "Examine the functions of art in society and explain how art can be used to enhance societal values."
+            },
+            {
+              "content": "Functions of art in electronic and print media, including advertisement, education and recreation, etc.",
+              "objective": "Assess the role of art in electronic and print media, including its uses in advertising, education and recreation."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Art Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Job prospects in the Visual Arts: ceramist, curator, textile designer, industrial designer, sculptor, photographer, cartoonist, illustrator, etc.",
+              "objective": "Identify employment and entrepreneurial opportunities in the Visual Arts and recognise the roles of different art-related professions."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

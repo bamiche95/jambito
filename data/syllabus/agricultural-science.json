@@ -1,0 +1,849 @@
+{
+  "subject": "Agricultural Science",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: General Agriculture",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning and Scope of Agriculture",
+          "subtopics": [
+            {
+              "content": "a. Definition of Agriculture",
+              "objective": "Use the definition of Agriculture in modern terms as it relates to production, processing and marketing."
+            },
+            {
+              "content": "b. Branches of Agriculture",
+              "objective": "Differentiate between the various branches of Agriculture."
+            },
+            {
+              "content": "c. Types of Agriculture, i.e. subsistence and commercial",
+              "objective": "Differentiate between the various types of Agriculture, their advantages and disadvantages and their respective problems."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Importance of Agriculture",
+          "subtopics": [
+            {
+              "content": "i. Provision of raw materials for agro-allied industries",
+              "objective": "Relate agricultural benefits to individual farmers and relate agro-allied industries to their respective raw materials."
+            },
+            {
+              "content": "ii. Provision of employment",
+              "objective": "Relate the various contributions of Agriculture to economic development in West Africa."
+            },
+            {
+              "content": "iii. Development of rural areas, etc.",
+              "objective": "Relate the various contributions of Agriculture to economic development in West Africa."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Agricultural Ecology",
+          "subtopics": [
+            {
+              "content": "a. Ecological zones of West Africa",
+              "objective": "Differentiate between the features of the ecological zones in West Africa."
+            },
+            {
+              "content": "b. Agricultural products of each ecological zone",
+              "objective": "Classify agricultural products according to each ecological zone."
+            },
+            {
+              "content": "c. Environmental factors and their effects on crop and livestock production",
+              "objective": "Differentiate abiotic from biotic factors affecting agricultural production."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Agricultural Genetics",
+          "subtopics": [
+            {
+              "content": "a. First and second laws of Mendel",
+              "objective": "Apply the first and second laws of Mendel to genetics."
+            },
+            {
+              "content": "b. Cell division",
+              "objective": "Differentiate between the types of cell division."
+            },
+            {
+              "content": "c. Terminologies, e.g. locus, alleles, genotype, dominance",
+              "objective": "Determine the outcome of genetic crossing involving homozygous and heterozygous traits, and compute simple probability ratios."
+            },
+            {
+              "content": "d. Methods of crop improvement, e.g. introduction, selection, crossing, quarantine, etc.",
+              "objective": "Give reasons for crop improvement; distinguish between methods of crop improvement and their respective advantages and disadvantages."
+            },
+            {
+              "content": "e. Methods of animal improvement, e.g. introduction, breeding, quarantine and selection; breeding systems—inbreeding, line-breeding, crossbreeding, artificial insemination",
+              "objective": "Give reasons for animal improvement; differentiate between methods of animal improvement and their respective advantages and disadvantages."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Farm Inputs",
+          "subtopics": [
+            {
+              "content": "Examples of farm inputs, e.g. planting materials, agrochemicals, etc.",
+              "objective": "Classify different types of farm inputs and their uses."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "History of Agricultural Development in West Africa",
+          "subtopics": [
+            {
+              "content": "a. Agricultural systems, e.g. shifting cultivation, bush fallowing, etc.",
+              "objective": "Compare various agricultural systems."
+            },
+            {
+              "content": "b. Problems of agricultural development, e.g. land tenure systems, inadequate infrastructure, inadequate finance for agriculture, environmental degradation, etc.",
+              "objective": "Identify problems of agricultural development, their effects and propose solutions."
+            },
+            {
+              "content": "c. Establishment of national research institutes, e.g. NCRI, IAR, IAR&T, CRIN, NIFOR, FRIN, RRI, NRCRI, NIHORT, LCRI, and international research institutes, e.g. IITA, ILRI, ICRISAT, WARDA, leading to increased application of science to agricultural development",
+              "objective": "Trace the history of research institutes from past to present and assess their role in agricultural development."
+            },
+            {
+              "content": "d. Agricultural Development Projects (ADPs), e.g. RTEP, FADAMA, etc.",
+              "objective": "Give reasons for the establishment of ADPs."
+            },
+            {
+              "content": "e. National agricultural programmes, such as OFN, NAFPP, NALDA, Green Revolution, NCRPs, NARP, Project Coordinating Unit (PCU), etc.",
+              "objective": "Evaluate the contributions of national agricultural programmes."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Roles of Government and NGOs in Agricultural Development",
+          "subtopics": [
+            {
+              "content": "a. Development of fiscal policies favourable to agricultural production, e.g. import duties and bans on importation",
+              "objective": "Evaluate the effects of government policies on agricultural development."
+            },
+            {
+              "content": "b. Agricultural laws and reforms, e.g. Land Use Act",
+              "objective": "Identify agricultural laws and their effect on agricultural production."
+            },
+            {
+              "content": "c. Government programmes aimed at agricultural development, e.g. subsidies and credit facilities",
+              "objective": "Identify the various agricultural incentives provided by government and assess their effects on agricultural development."
+            },
+            {
+              "content": "d. Provision of infrastructure, e.g. transport and communication systems",
+              "objective": "Compare the various infrastructural facilities provided by government and their uses."
+            },
+            {
+              "content": "e. Contribution of NGOs to agricultural development",
+              "objective": "Examine the roles of NGOs in the development of agriculture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Agronomy",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Rocks and Soil Formation",
+          "subtopics": [
+            {
+              "content": "a. Rock formation",
+              "objective": "Identify the major types of rocks and their formation."
+            },
+            {
+              "content": "b. Factors affecting rock weathering and soil formation",
+              "objective": "Identify major types and properties of soils, and the factors and processes of soil formation."
+            },
+            {
+              "content": "c. Physical properties of soil: soil profile; soil components, texture and structure",
+              "objective": "Differentiate between the horizons in a soil profile; differentiate between soil components; compute the proportion of soil components; analyse soil into its component parts; determine the water-holding capacity of soil."
+            },
+            {
+              "content": "d. Chemical properties of soil: soil acidity and alkalinity; chemical components of soil, e.g. silicate",
+              "objective": "Determine the soil pH."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Soil Water and Soil Conservation",
+          "subtopics": [
+            {
+              "content": "a. Soil water: importance, sources, movement, management and conservation",
+              "objective": "Compare capillary, gravitational and hygroscopic water; determine water-holding capacity, wilting points, and plant-available and unavailable water; identify methods of soil-water management and conservation."
+            },
+            {
+              "content": "b. Soil conservation: meaning and importance; causes, effects, prevention and control of leaching, erosion, continuous cropping, burning and oxidation of organic matter",
+              "objective": "Identify the causes of erosion and leaching and determine control methods."
+            },
+            {
+              "content": "c. Irrigation and drainage methods",
+              "objective": "Classify irrigation and drainage systems; examine their importance and challenges."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Soil Fertility",
+          "subtopics": [
+            {
+              "content": "a. Macro- and micronutrients and their roles in plant nutrition; carbon, water and nitrogen cycles",
+              "objective": "Classify plant nutrients and identify factors affecting their availability."
+            },
+            {
+              "content": "b. The living population of the soil (flora and fauna) and their roles in soil fertility",
+              "objective": "Examine the roles of soil flora and fauna in maintaining soil fertility."
+            },
+            {
+              "content": "c. Maintenance of soil fertility: methods such as cover crops and application of organic manures",
+              "objective": "Compare methods of maintaining soil fertility; differentiate between organic and inorganic fertilizer and their methods of application; determine common fertilizer ratios."
+            },
+            {
+              "content": "d. Nutrient deficiency symptoms, e.g. chlorosis, sickle leaves, stunting and apical necrosis",
+              "objective": "Identify deficiency symptoms and their causes, and suggest remedies."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Land Preparation and Soil Tillage",
+          "subtopics": [
+            {
+              "content": "a. Principles and practices of land preparation and soil tillage",
+              "objective": "Compare methods of land preparation and soil tillage in relation to different groups of crops, including their advantages and disadvantages."
+            },
+            {
+              "content": "b. Factors affecting choice of tillage methods: zero tillage, minimum tillage, etc.",
+              "objective": "Give reasons for the choice of tillage methods."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Plant Forms and Functions",
+          "subtopics": [
+            {
+              "content": "a. Parts of monocot and dicot crop plants and their functions",
+              "objective": "Identify crop plant parts and their functions; distinguish between monocot and dicot crop plants."
+            },
+            {
+              "content": "b. Anatomy and morphology of storage organs of common crop plants",
+              "objective": "Identify various storage organs of crop plants."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Growth, Development and Reproduction",
+          "subtopics": [
+            {
+              "content": "a. Gametogenesis",
+              "objective": "Examine the process of gamete formation."
+            },
+            {
+              "content": "b. Pollination",
+              "objective": "Identify the different types of pollination."
+            },
+            {
+              "content": "c. Fertilization",
+              "objective": "Analyse the process of fertilization."
+            },
+            {
+              "content": "d. Embryo formation and development",
+              "objective": "Trace embryo formation and development to the formation of seeds and fruits."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Plant Propagation Methods",
+          "subtopics": [
+            {
+              "content": "a. Sexual propagation: use of seeds, seed viability, viability test, seed rate and seed germination",
+              "objective": "Classify crops propagated by sexual methods; determine seed viability and seed rate; differentiate between types of seed germination; examine conditions for seed germination."
+            },
+            {
+              "content": "b. Asexual (vegetative) propagation, e.g. cutting, budding, grafting and layering",
+              "objective": "Classify crops into different vegetative propagation methods."
+            },
+            {
+              "content": "c. Nursery and nursery management",
+              "objective": "Determine appropriate nursery sites and types, including their advantages and disadvantages; apply techniques of transplanting seedlings."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Cropping Systems, Planting Patterns and Plant Densities",
+          "subtopics": [
+            {
+              "content": "a. Cropping systems: monocropping, mixed, multiple, inter-, relay-, strip- and rotational cropping",
+              "objective": "Identify and compare cropping systems and apply different systems to solve agricultural problems."
+            },
+            {
+              "content": "b. Planting patterns: broadcasting, row spacing and drilling",
+              "objective": "Differentiate between the various planting patterns."
+            },
+            {
+              "content": "c. Plant densities: single, double and multiple stands",
+              "objective": "Examine types of plant densities and their effects on crop yield; compute plant density per hectare."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Crop Husbandry",
+          "subtopics": [
+            {
+              "content": "General study of common and scientific names, gross morphology, anatomy of storage organs, propagation, husbandry, harvesting, processing, storage, diseases, pests and economic importance of crops",
+              "objective": "Apply propagation, husbandry, harvesting, processing and storage methods to each crop; identify common diseases and pests and their effects on yield; determine the economic importance of crops and relate it to national economic development."
+            },
+            {
+              "content": "Group 1: Cereals, e.g. maize, guinea corn and rice",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of cereals."
+            },
+            {
+              "content": "Group 2: Legumes, e.g. cowpea, groundnut and soybean",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of legumes."
+            },
+            {
+              "content": "Group 3: Tubers, e.g. yam, cassava and sweet potatoes",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of tubers."
+            },
+            {
+              "content": "Group 4: Vegetables and spices, e.g. tomatoes, eggplant, pepper, onions, okra, cabbage and Amaranthus species",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of vegetables and spices."
+            },
+            {
+              "content": "Group 5: Fruits, e.g. citrus, pineapple and pawpaw",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of fruits."
+            },
+            {
+              "content": "Group 6: Beverages, e.g. cocoa, kola and coffee",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of beverage crops."
+            },
+            {
+              "content": "Group 7: Oils, e.g. oil palm, coconut and shea butter",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of oil crops."
+            },
+            {
+              "content": "Group 8: Latex, e.g. para rubber and gum Arabic",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of latex crops."
+            },
+            {
+              "content": "Group 9: Fibres, e.g. jute, cotton and sisal hemp",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of fibre crops."
+            },
+            {
+              "content": "Group 10: Sugars, e.g. sugarcane and beet",
+              "objective": "Apply appropriate crop husbandry and identify the diseases, pests, uses and economic importance of sugar crops."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Pasture and Forage Crops",
+          "subtopics": [
+            {
+              "content": "a. Gross morphology, propagation and husbandry of common pasture grasses and legumes; establishment, maintenance, conservation and uses of pastures and forage crops",
+              "objective": "Classify common pasture grasses and legumes; differentiate pasture and forage crops by common and scientific names; distinguish methods of pasture conservation, e.g. hay- and silage-making."
+            },
+            {
+              "content": "b. Natural grasslands and their distribution in West Africa",
+              "objective": "Relate vegetation zones to their dominant pasture species."
+            },
+            {
+              "content": "c. Range management",
+              "objective": "Determine range types and utilization of range resources in Nigeria."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Floriculture",
+          "subtopics": [
+            {
+              "content": "Identification, establishment, maintenance and uses of ornamental trees, shrubs and flowers",
+              "objective": "Distinguish between common ornamental trees, shrubs and flowers; determine their uses and maintenance."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Weeds",
+          "subtopics": [
+            {
+              "content": "a. Gross morphology, methods of reproduction and dispersal, and effects of weeds",
+              "objective": "Identify weeds by common and scientific names; classify weeds by mode of dispersal; identify characteristic features of weeds."
+            },
+            {
+              "content": "b. Weed control methods: weeding, mulching, cover cropping, tillage, herbicides and trap cropping",
+              "objective": "Apply various weed-control methods."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Crop Diseases",
+          "subtopics": [
+            {
+              "content": "a. Identification of disease-causing organisms in storage and in the field",
+              "objective": "Distinguish between common storage and field disease-causing organisms."
+            },
+            {
+              "content": "b. Diseases caused by fungi, bacteria, nematodes and viruses; symptoms, damage, transmission and control",
+              "objective": "Relate disease-causing organisms to damage, symptoms and modes of spread; apply appropriate control methods."
+            },
+            {
+              "content": "c. Side effects of preventive and control methods, e.g. pollution, poisoning and disruption of ecosystems",
+              "objective": "Relate each control method to its side effects."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Crop Pests",
+          "subtopics": [
+            {
+              "content": "a. Pests of agricultural plants in the field and in storage; types, importance, and principles and methods of prevention and control",
+              "objective": "Identify field and storage pests, assess their economic importance, and relate prevention and control methods to different pests."
+            },
+            {
+              "content": "b. Life cycles of biting insects, e.g. grasshopper; boring insects, e.g. weevils; sucking insects, e.g. aphids and cotton strainer",
+              "objective": "Describe insect life cycles and apply this knowledge to pest prevention and control."
+            },
+            {
+              "content": "c. Common pesticides and their side effects",
+              "objective": "Differentiate between common pesticides and examine their modes of action on pests."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Forest Management (Silviculture)",
+          "subtopics": [
+            {
+              "content": "a. Importance of forests as sources of wood, pulp, fibre and other forest products",
+              "objective": "Relate various forest products to their uses."
+            },
+            {
+              "content": "b. Conservation: regulation, exploitation, regeneration, afforestation, agroforestry and management systems such as taungya, alley and ley",
+              "objective": "Compare different forest conservation methods and apply them appropriately."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Animal Production",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Forms and Classification of Major Farm Animals in West Africa",
+          "subtopics": [
+            {
+              "content": "a. Species, breeds, distribution and uses",
+              "objective": "Classify various breeds of farm animals and identify where they are found."
+            },
+            {
+              "content": "b. External features of cattle, sheep, goats, pigs, rabbits and poultry",
+              "objective": "Identify the uses of different species of farm animals and their characteristic features."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "General Terminologies in Animal Production",
+          "subtopics": [
+            {
+              "content": "Common terms used in animal husbandry, e.g. calving, kidding, castrate, tupping, veal and mutton",
+              "objective": "Distinguish between the various terms used in animal husbandry."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Anatomy and Physiology of Farm Animals",
+          "subtopics": [
+            {
+              "content": "a. Functions of tissues and organs of farm animals",
+              "objective": "Distinguish between the functions of various tissues and organs of farm animals."
+            },
+            {
+              "content": "b. Animal body systems: digestive systems in ruminants and non-ruminants, reproductive, respiratory, urinary (excretory) and nervous systems",
+              "objective": "Compare different body systems in farm animals."
+            },
+            {
+              "content": "c. Effects of environmental changes on physiological development, e.g. climate change, temperature, relative humidity and light",
+              "objective": "Determine the effects of climate change and other environmental changes on farm animals."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Reproduction in Farm Animals",
+          "subtopics": [
+            {
+              "content": "a. Gametogenesis, oestrus cycle, signs and periods of heat, secondary sexual characteristics, gestation periods, parturition and hormones in reproduction",
+              "objective": "Explain reproduction in farm animals and determine the role of hormones in reproduction."
+            },
+            {
+              "content": "b. Development, nourishment and birth of the young; mammary glands and lactation",
+              "objective": "Trace development in farm animals from fertilization to birth and care of the young."
+            },
+            {
+              "content": "c. Egg formation, incubation and hatching in poultry",
+              "objective": "Trace the process of egg formation and incubation in poultry."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Animal Nutrition",
+          "subtopics": [
+            {
+              "content": "a. Feed nutrients and their functions",
+              "objective": "Identify the various feed nutrients, their sources and functions."
+            },
+            {
+              "content": "b. Feeds and feeding: simple ration formulation, balanced ration, pasture and forage crops such as guinea grass, elephant grass, giant star grass, Andropogon species and Calopogonium species; hay and silage preparation; maintenance and production rations",
+              "objective": "Differentiate between types of animal feeds and their formulation; relate types of rations to different classes of livestock."
+            },
+            {
+              "content": "c. Nutrient deficiencies: causes and symptoms of malnutrition and their correction in farm animals",
+              "objective": "Trace symptoms to nutrient deficiencies in farm animals and apply appropriate corrective measures."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Livestock Management",
+          "subtopics": [
+            {
+              "content": "Housing, feeding, sanitation and veterinary care of ruminants, pigs, rabbits and poultry under intensive, semi-intensive and extensive systems, from birth to slaughter",
+              "objective": "Apply different management practices for farm animals."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Animal Health",
+          "subtopics": [
+            {
+              "content": "a. Animal diseases (pathology): environmental predisposing factors, causal organisms, symptoms, transmission and effects; prevention and treatment of diseases caused by viruses, bacteria, fungi and protozoa",
+              "objective": "Identify farm-animal diseases and causal agents; classify diseases by symptoms and transmission; apply appropriate preventive and curative measures."
+            },
+            {
+              "content": "b. Parasites (parasitology): life cycles and economic importance of endoparasites, ectoparasites and disease vectors; prevention and control by dipping, spraying, deworming and sanitation",
+              "objective": "Classify livestock parasites, determine their role in disease transmission, trace parasite life cycles from egg to adult, and apply appropriate prevention and control methods."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Fisheries and Wildlife",
+          "subtopics": [
+            {
+              "content": "a. Fish culture systems and common fish, e.g. tilapia and catfish; extensive systems including inland and deep-sea fishing, lakes and rivers; semi-intensive systems such as dams; intensive systems such as fish ponds; pond establishment and management including fertilization, liming and desilting",
+              "objective": "Identify common fish in West Africa; differentiate fish-farming systems; determine factors to consider in intensive fish farming."
+            },
+            {
+              "content": "b. Fish harvesting and processing: drag nets, hook and line, curing, sun-drying, smoking and fishery regulations",
+              "objective": "Assess advantages and disadvantages of fish harvesting and processing methods; determine appropriate catching and preservation methods; identify fishery regulations in Nigeria."
+            },
+            {
+              "content": "c. Wildlife management: habitat conservation, feeding, domestication, harvesting, processing and wildlife regulations",
+              "objective": "Identify animals found in West African game reserves, give reasons for establishing game reserves, and identify common wildlife regulations."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Bee-keeping (Apiculture)",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of apiculture",
+              "objective": "Relate bee-keeping to economic development."
+            },
+            {
+              "content": "b. Types of bees, e.g. exotic and indigenous bees",
+              "objective": "Differentiate between various types of bees."
+            },
+            {
+              "content": "c. Methods of bee-keeping, e.g. traditional and modern bee-keeping",
+              "objective": "Classify methods of bee-keeping."
+            },
+            {
+              "content": "d. Equipment and safety measures in bee-keeping",
+              "objective": "Identify bee-keeping equipment, their uses and necessary precautionary measures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Agricultural Economics and Extension",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Factors of Agricultural Production",
+          "subtopics": [
+            {
+              "content": "a. Land: types of land ownership in West Africa",
+              "objective": "Understand the meaning and uses of land, identify forms of land ownership, examine their effects on agriculture, and differentiate land features and their effects on land use."
+            },
+            {
+              "content": "b. Labour",
+              "objective": "Differentiate between types and sources of labour and their effects on agricultural production."
+            },
+            {
+              "content": "c. Capital",
+              "objective": "Compare sources of capital and associated problems."
+            },
+            {
+              "content": "d. Management",
+              "objective": "Determine the functions of a farm manager in an agricultural enterprise."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Basic Economic Principles",
+          "subtopics": [
+            {
+              "content": "a. Demand and supply",
+              "objective": "Relate demand to supply in agricultural production and interpret graphical representations of demand and supply."
+            },
+            {
+              "content": "b. Production function: input/input, output/output and input/output relationships; stages of production, diminishing returns, scale of preference and choice",
+              "objective": "Relate input to output and deduce economic concepts from graphical representations."
+            },
+            {
+              "content": "c. Characteristics of agricultural production: small farm holdings, biological limits, climate susceptibility, seasonality and price elasticity of demand and supply",
+              "objective": "Distinguish common features of agricultural production and produce; compute elasticity of demand and supply."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Labour Management",
+          "subtopics": [
+            {
+              "content": "a. Labour relations, including supervision",
+              "objective": "Identify ways of achieving labour efficiency."
+            },
+            {
+              "content": "b. Types of labour, including permanent labour",
+              "objective": "Differentiate between types and sources of labour."
+            },
+            {
+              "content": "c. National labour laws and regulations",
+              "objective": "Apply national labour laws and regulations."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Farm Management",
+          "subtopics": [
+            {
+              "content": "a. Qualities, functions and problems of a farm manager",
+              "objective": "Identify the qualities, functions and problems of a farm manager."
+            },
+            {
+              "content": "b. Records and record-keeping: types and importance, including livestock records and profit-and-loss account books",
+              "objective": "Differentiate between types of farm records and give reasons for keeping farm records."
+            },
+            {
+              "content": "c. Stock evaluation: gross and net profits; appreciation, depreciation and salvage value",
+              "objective": "Determine gross and net margins, appreciation, depreciation and salvage value."
+            },
+            {
+              "content": "d. Agricultural insurance: meaning, importance, types and problems",
+              "objective": "Examine the relevance of agricultural insurance, determine appropriate insurance schemes and identify associated problems."
+            },
+            {
+              "content": "e. Agricultural financing: meaning, importance, types and problems",
+              "objective": "Identify the relevance of agricultural finance and determine problems associated with agricultural finance."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Marketing of Agricultural Produce",
+          "subtopics": [
+            {
+              "content": "a. Importance of marketing",
+              "objective": "Evaluate the importance of agricultural marketing."
+            },
+            {
+              "content": "b. Marketing channels",
+              "objective": "Classify marketing agents and their functions; determine how marketing channels can pose problems for agricultural production."
+            },
+            {
+              "content": "c. Characteristics of agricultural products affecting their marketing",
+              "objective": "Determine the characteristics of agricultural products that affect their marketing."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Agricultural Extension",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance",
+              "objective": "Identify the importance of agricultural extension."
+            },
+            {
+              "content": "b. Roles of Agricultural Development Programmes, universities, research institutes and farmers' organizations (cooperative societies)",
+              "objective": "Analyse the roles of government and non-governmental organizations in agricultural extension education."
+            },
+            {
+              "content": "c. Extension methods, including demonstration plots, visual aids and mass media",
+              "objective": "Differentiate between the various extension methods."
+            },
+            {
+              "content": "d. Problems of agricultural extension in West Africa and possible solutions",
+              "objective": "Examine problems of agricultural extension in West Africa and provide possible solutions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Agricultural Technology",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Farm Surveying and Farmstead Planning",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance",
+              "objective": "Examine the relevance of farm surveying to agriculture."
+            },
+            {
+              "content": "b. Common surveying equipment, their uses and care",
+              "objective": "Classify common surveying equipment and explain their uses and care."
+            },
+            {
+              "content": "c. Common survey methods",
+              "objective": "Differentiate between common survey methods."
+            },
+            {
+              "content": "d. Principles of farmstead planning",
+              "objective": "Apply survey principles to farmstead layout and identify factors to consider in farmstead planning."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Simple Farm Tools",
+          "subtopics": [
+            {
+              "content": "Identification, use and maintenance of simple farm tools",
+              "objective": "Identify, use and maintain simple farm tools, and compare their advantages and disadvantages."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Farm Machinery and Implements",
+          "subtopics": [
+            {
+              "content": "a. Types: machinery, e.g. tractor and milking machine; implements",
+              "objective": "Identify common farm machinery and implements and classify machinery according to their uses."
+            },
+            {
+              "content": "b. Uses and maintenance of farm machinery and implements",
+              "objective": "Operate farm machines and implements and apply appropriate maintenance routines."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Mechanization and Sources of Farm Power",
+          "subtopics": [
+            {
+              "content": "a. Sources of farm power, e.g. animals and machines",
+              "objective": "Compare the advantages and disadvantages of various sources of farm power and their applications."
+            },
+            {
+              "content": "b. Advantages and disadvantages of agricultural mechanization",
+              "objective": "Distinguish between the advantages and disadvantages of mechanization."
+            },
+            {
+              "content": "c. Problems and prospects of mechanized agriculture in West Africa",
+              "objective": "Assess the problems and prospects of mechanized agriculture in West Africa."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Processing and Storage",
+          "subtopics": [
+            {
+              "content": "a. Traditional and modern methods of food processing, e.g. gari, rice and groundnut processing",
+              "objective": "Identify the importance of agricultural processing and differentiate between methods of processing agricultural produce."
+            },
+            {
+              "content": "b. Storage",
+              "objective": "Identify and compare different storage methods and apply appropriate storage methods to different crops."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Introduction to Biotechnology",
+          "subtopics": [
+            {
+              "content": "Basic terms, e.g. tissue culture, anther culture, in vitro fertilization and genetic engineering",
+              "objective": "Use basic terms in biotechnology and explain the importance and applications of biotechnology."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Application of ICT in Agriculture",
+          "subtopics": [
+            {
+              "content": "a. Features of computers",
+              "objective": "Identify the various components of a computer."
+            },
+            {
+              "content": "b. Uses of computers in agriculture: disease and weather forecasting, ration formulation, databases and simulation studies",
+              "objective": "Use computers to enhance agricultural practices."
+            },
+            {
+              "content": "c. Communication gadgets, e.g. mobile phones and the internet",
+              "objective": "Use communication gadgets to improve agricultural production."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Introduction to Agricultural Research and Statistics",
+          "subtopics": [
+            {
+              "content": "a. Basic concepts in planning agricultural experiments, e.g. hypothesis, treatment and control",
+              "objective": "Use basic concepts in agricultural experiments."
+            },
+            {
+              "content": "b. Interpretation of results, e.g. measures of central tendency and experimental errors",
+              "objective": "Draw inferences from experimental results and compute simple measures of central tendency."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

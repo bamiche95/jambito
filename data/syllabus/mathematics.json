@@ -1,0 +1,486 @@
+
+{
+  "subject": "Mathematics",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section I: Number and Numeration",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Number Bases/Modular Arithmetic",
+          "subtopics": [
+            {
+              "content": "a. Operations in different number bases from 2 to 10",
+              "objective": "Perform the four basic operations (multiplication, addition, subtraction and division) in different number bases."
+            },
+            {
+              "content": "b. Conversion from one base to another including fractional parts",
+              "objective": "Convert one base to another."
+            },
+            {
+              "content": "c. Modular arithmetic",
+              "objective": "Perform operations in modular arithmetic."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Fractions, Decimals, Approximations and Percentages",
+          "subtopics": [
+            {
+              "content": "a. Fractions and decimals",
+              "objective": "Perform the basic operations (multiplication, addition, subtraction and division) on fractions and decimals."
+            },
+            {
+              "content": "b. Significant figures",
+              "objective": "Express numbers to a specified number of significant figures."
+            },
+            {
+              "content": "c. Decimal places",
+              "objective": "Express numbers to specified decimal places."
+            },
+            {
+              "content": "d. Percentage errors",
+              "objective": "Calculate percentage error."
+            },
+            {
+              "content": "e. Simple interest",
+              "objective": "Calculate simple interest."
+            },
+            {
+              "content": "f. Profit and loss percent",
+              "objective": "Calculate profit and loss percentages."
+            },
+            {
+              "content": "g. Ratio, proportion and rate",
+              "objective": "Solve problems involving ratio, proportion and rate."
+            },
+            {
+              "content": "h. Shares and value added tax (VAT)",
+              "objective": "Solve problems involving shares and VAT."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Indices, Logarithms and Surds",
+          "subtopics": [
+            {
+              "content": "a. Laws of indices",
+              "objective": "Apply the laws of indices in calculations."
+            },
+            {
+              "content": "b. Equations involving indices",
+              "objective": "Solve equations involving indices."
+            },
+            {
+              "content": "c. Standard form",
+              "objective": "Apply standard form in calculations involving numbers."
+            },
+            {
+              "content": "d. Laws of logarithm",
+              "objective": "Apply the laws of logarithms in calculations."
+            },
+            {
+              "content": "e. Logarithm of any positive number to a given base",
+              "objective": "Solve problems involving logarithms in different bases."
+            },
+            {
+              "content": "f. Change of bases in logarithm and application",
+              "objective": "Solve problems involving logarithms in different bases."
+            },
+            {
+              "content": "g. Relationship between indices and logarithm",
+              "objective": "Establish the relationship between indices and logarithms in solving problems."
+            },
+            {
+              "content": "h. Surds",
+              "objective": "Simplify and rationalize surds, and perform basic operations on surds."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Sets",
+          "subtopics": [
+            {
+              "content": "a. Types of sets",
+              "objective": "Identify types of sets, including empty, universal, complement, subset, finite, infinite and disjoint sets."
+            },
+            {
+              "content": "b. Algebra of sets",
+              "objective": "Solve problems involving the cardinality of sets and solve set problems using symbols."
+            },
+            {
+              "content": "c. Venn diagrams and their applications",
+              "objective": "Use Venn diagrams to solve problems involving not more than three sets."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section II: Algebra",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Polynomials",
+          "subtopics": [
+            {
+              "content": "a. Change of subject of formula",
+              "objective": "Find the subject of the formula of a given equation."
+            },
+            {
+              "content": "b. Addition, subtraction, multiplication and division of polynomials",
+              "objective": "Multiply and divide polynomials of degree not more than three and determine values of defined and undefined expressions."
+            },
+            {
+              "content": "c. Factorization of polynomials of degree not exceeding 3",
+              "objective": "Apply the factor and remainder theorems to factorize a given expression. Factorize by regrouping, difference of two squares, perfect squares and cubic expressions."
+            },
+            {
+              "content": "d. Roots of polynomials not exceeding degree 3",
+              "objective": "Determine the roots of polynomials of degree not exceeding three."
+            },
+            {
+              "content": "e. Factor and remainder theorems",
+              "objective": "Apply factor and remainder theorems to factorize a given expression."
+            },
+            {
+              "content": "f. Simultaneous equations including one linear and one quadratic",
+              "objective": "Solve simultaneous equations involving one linear equation and one quadratic equation."
+            },
+            {
+              "content": "g. Graphs of polynomials of degree not greater than 3",
+              "objective": "Interpret graphs of polynomials, including applications to maximum and minimum values."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Variation",
+          "subtopics": [
+            {
+              "content": "a. Direct variation",
+              "objective": "Solve problems involving direct variation."
+            },
+            {
+              "content": "b. Inverse variation",
+              "objective": "Solve problems involving inverse variation."
+            },
+            {
+              "content": "c. Joint variation",
+              "objective": "Solve problems involving joint variation."
+            },
+            {
+              "content": "d. Partial variation",
+              "objective": "Solve problems involving partial variation."
+            },
+            {
+              "content": "e. Percentage increase and decrease",
+              "objective": "Solve problems on percentage increase and decrease in variation."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Inequalities",
+          "subtopics": [
+            {
+              "content": "a. Analytical and graphical solutions of linear inequalities",
+              "objective": "Solve problems on linear inequalities and interpret graphs of inequalities."
+            },
+            {
+              "content": "b. Quadratic inequalities with integral roots only",
+              "objective": "Solve problems on quadratic inequalities and interpret graphs of inequalities."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Progression",
+          "subtopics": [
+            {
+              "content": "a. nth term of a progression",
+              "objective": "Determine the nth term of a progression."
+            },
+            {
+              "content": "b. Sum of A.P. and G.P.",
+              "objective": "Compute the sum of an arithmetic progression (A.P.) and a geometric progression (G.P.), including the sum to infinity of a given G.P."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Binary Operations",
+          "subtopics": [
+            {
+              "content": "a. Properties of closure, commutativity, associativity and distributivity",
+              "objective": "Solve problems involving closure, commutativity, associativity and distributivity."
+            },
+            {
+              "content": "b. Identity and inverse elements (simple cases only)",
+              "objective": "Solve problems involving identity and inverse elements."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Matrices and Determinants",
+          "subtopics": [
+            {
+              "content": "a. Algebra of matrices not exceeding 3 × 3",
+              "objective": "Perform the basic operations (multiplication, addition, subtraction and division) on matrices."
+            },
+            {
+              "content": "b. Determinants of matrices not exceeding 3 × 3",
+              "objective": "Calculate determinants of matrices."
+            },
+            {
+              "content": "c. Inverses of 2 × 2 matrices",
+              "objective": "Compute inverses of 2 × 2 matrices."
+            },
+            {
+              "content": "Note: Excluding quadratic and higher degree equations.",
+              "objective": "Apply the stated restrictions when solving problems involving matrices and determinants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section III: Geometry and Trigonometry",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Euclidean Geometry",
+          "subtopics": [
+            {
+              "content": "a. Properties of angles and lines",
+              "objective": "Identify various types of lines and angles."
+            },
+            {
+              "content": "b. Polygons: triangles, quadrilaterals and general polygons",
+              "objective": "Solve problems involving polygons."
+            },
+            {
+              "content": "c. Circles: angle properties, cyclic quadrilaterals and intersecting chords",
+              "objective": "Calculate angles using circle theorems."
+            },
+            {
+              "content": "d. Construction",
+              "objective": "Identify construction procedures for special angles, e.g. 30°, 45°, 60°, 75° and 90°."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Mensuration",
+          "subtopics": [
+            {
+              "content": "a. Lengths and areas of plane geometrical figures",
+              "objective": "Calculate the perimeters and areas of triangles, quadrilaterals, circles and composite figures."
+            },
+            {
+              "content": "b. Lengths of arcs and chords of a circle",
+              "objective": "Find the lengths of arcs and chords of a circle."
+            },
+            {
+              "content": "c. Perimeters and areas of sectors and segments of circles",
+              "objective": "Calculate the perimeters and areas of sectors and segments of circles."
+            },
+            {
+              "content": "d. Surface areas and volumes of simple solids and composite figures",
+              "objective": "Calculate total surface areas and volumes of cuboids, cylinders, cones, pyramids, prisms, spheres and composite figures."
+            },
+            {
+              "content": "e. The earth as a sphere: longitudes and latitudes",
+              "objective": "Determine the distance between two points on the earth's surface."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Loci",
+          "subtopics": [
+            {
+              "content": "Locus in 2 dimensions based on geometric principles relating to lines and curves",
+              "objective": "Identify and interpret loci relating to parallel lines, perpendicular bisectors, angle bisectors and circles."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Coordinate Geometry",
+          "subtopics": [
+            {
+              "content": "a. Midpoint and gradient of a line segment",
+              "objective": "Determine the midpoint and gradient of a line segment."
+            },
+            {
+              "content": "b. Distance between two points",
+              "objective": "Find the distance between two points."
+            },
+            {
+              "content": "c. Parallel and perpendicular lines",
+              "objective": "Identify conditions for parallelism and perpendicularity."
+            },
+            {
+              "content": "d. Equations of straight lines",
+              "objective": "Find the equation of a line in the two-point form, point-slope form, slope-intercept form and general form."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Trigonometry",
+          "subtopics": [
+            {
+              "content": "a. Trigonometrical ratios of angles",
+              "objective": "Calculate the sine, cosine and tangent of angles between -360° and 360°."
+            },
+            {
+              "content": "b. Angles of elevation and depression",
+              "objective": "Solve problems involving angles of elevation and depression."
+            },
+            {
+              "content": "c. Bearings",
+              "objective": "Solve problems involving bearings."
+            },
+            {
+              "content": "d. Areas and solutions of triangles",
+              "objective": "Apply trigonometric formulae to find areas of triangles and solve problems involving triangles."
+            },
+            {
+              "content": "e. Graphs of sine and cosine",
+              "objective": "Solve problems involving sine and cosine graphs."
+            },
+            {
+              "content": "f. Sine and cosine formulae",
+              "objective": "Apply sine and cosine formulae to solve trigonometric problems, including problems involving special angles such as 30°, 45°, 60°, 75°, 90°, 105° and 135°."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section IV: Calculus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Differentiation",
+          "subtopics": [
+            {
+              "content": "a. Limit of a function",
+              "objective": "Find the limit of a function."
+            },
+            {
+              "content": "b. Differentiation of explicit algebraic and simple trigonometrical functions: sine, cosine and tangent",
+              "objective": "Differentiate explicit algebraic and simple trigonometrical functions."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Application of Differentiation",
+          "subtopics": [
+            {
+              "content": "a. Rate of change",
+              "objective": "Solve problems involving applications of rate of change."
+            },
+            {
+              "content": "b. Maxima and minima",
+              "objective": "Solve problems involving applications of maxima and minima."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Integration",
+          "subtopics": [
+            {
+              "content": "a. Integration of explicit algebraic and simple trigonometrical functions",
+              "objective": "Solve problems of integration involving algebraic and simple trigonometric functions."
+            },
+            {
+              "content": "b. Area under the curve",
+              "objective": "Calculate the area under the curve in simple cases only."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section V: Statistics",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Representation of Data",
+          "subtopics": [
+            {
+              "content": "a. Frequency distribution",
+              "objective": "Identify and interpret frequency distribution tables."
+            },
+            {
+              "content": "b. Histogram, bar chart and pie chart",
+              "objective": "Interpret information on histograms, bar charts and pie charts."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Measures of Location",
+          "subtopics": [
+            {
+              "content": "a. Mean, mode and median of ungrouped and grouped data (simple cases only)",
+              "objective": "Calculate the mean, mode and median of ungrouped and grouped data in simple cases only."
+            },
+            {
+              "content": "b. Cumulative frequency",
+              "objective": "Use an ogive to find the median, quartiles and percentiles."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Measures of Dispersion",
+          "subtopics": [
+            {
+              "content": "Range, mean deviation, variance and standard deviation",
+              "objective": "Calculate the range, mean deviation, variance and standard deviation of ungrouped and grouped data."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Permutation and Combination",
+          "subtopics": [
+            {
+              "content": "a. Linear and circular arrangements",
+              "objective": "Solve simple problems involving permutation and combination."
+            },
+            {
+              "content": "b. Arrangements involving repeated objects",
+              "objective": "Solve simple problems involving permutation and combination, including arrangements involving repeated objects."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Probability",
+          "subtopics": [
+            {
+              "content": "a. Experimental probability (tossing of coin, throwing of a dice, etc.)",
+              "objective": "Solve simple problems in probability using experimental examples such as tossing a coin and throwing a die."
+            },
+            {
+              "content": "b. Addition and multiplication of probabilities (mutual and independent cases)",
+              "objective": "Solve simple problems in probability, including addition and multiplication of probabilities."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

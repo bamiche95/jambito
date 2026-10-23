@@ -1,0 +1,897 @@
+
+{
+  "subject": "Islamic Religious Studies",
+  "exam": "JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Part I: The Qur’ān and Hadīth",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Revelation of the Glorious Qur’ān",
+          "subtopics": [
+            {
+              "content": "i. Visits of the Prophet (SAW) to Cave Hira",
+              "objective": "Analyse the Prophet’s (SAW) visits to Cave Hira and their purpose."
+            },
+            {
+              "content": "ii. His reaction to the first revelation and its importance",
+              "objective": "Describe the Prophet’s reaction to the first revelation and explain its importance."
+            },
+            {
+              "content": "iii. Different modes of revelation (Q.42:51): inspiration behind the veil, through an angel, etc.",
+              "objective": "Differentiate between the modes of revelation."
+            },
+            {
+              "content": "iv. Piecemeal revelation (Q.17:106; Q.25:32)",
+              "objective": "Explain why the Glorious Qur’ān was revealed piecemeal."
+            },
+            {
+              "content": "v. Names and attributes of the Qur’ān",
+              "objective": "Identify the names and attributes of the Qur’ān."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Preservation of the Glorious Qur’ān",
+          "subtopics": [
+            {
+              "content": "i. Recording, compilation and standardization of the Qur’ān",
+              "objective": "Analyse how the Glorious Qur’ān was recorded, compiled and standardized."
+            },
+            {
+              "content": "ii. Differences between Makkan and Madinan suwar",
+              "objective": "Differentiate between Makkan and Madinan suwar."
+            },
+            {
+              "content": "iii. The role played by the Companions of the Prophet (SAW) in the collection and compilation of the Qur’ān",
+              "objective": "Evaluate the role played by the Companions of the Prophet (SAW) in the collection and compilation of the Qur’ān."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Importance of the Glorious Qur’ān",
+          "subtopics": [
+            {
+              "content": "Importance of the Glorious Qur’ān as a source of guidance in spiritual, moral, economic, political and socio-cultural matters",
+              "objective": "Examine the importance of the Glorious Qur’ān as a source of guidance in spiritual, moral, economic, political and socio-cultural matters."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Divine Authenticity of the Glorious Qur’ān",
+          "subtopics": [
+            {
+              "content": "i. Proof of the divine authenticity of the Glorious Qur’ān (Q.4:82; Q.41:42)",
+              "objective": "Evaluate the proof of the divine authenticity of the Glorious Qur’ān."
+            },
+            {
+              "content": "ii. Uniqueness of the Glorious Qur’ān (Q.39:27; Q.17:88; Q.75:16-19)",
+              "objective": "Evaluate the uniqueness of the Glorious Qur’ān."
+            },
+            {
+              "content": "iii. Divine preservation of the Glorious Qur’ān (Q.15:9)",
+              "objective": "Examine the ways by which the Glorious Qur’ān was preserved."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Tafsīr",
+          "subtopics": [
+            {
+              "content": "i. Historical development of Tafsīr",
+              "objective": "Trace the origin and sources of Tafsīr."
+            },
+            {
+              "content": "ii. Importance of Tafsīr",
+              "objective": "Evaluate the importance of Tafsīr."
+            },
+            {
+              "content": "iii. Types of Tafsīr",
+              "objective": "Compare the types of Tafsīr."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Introduction to Tajwīd",
+          "subtopics": [
+            {
+              "content": "Theory and practice of Tajwīd",
+              "objective": "Examine the meaning and importance of Tajwīd."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Study of the Arabic Text of Selected Suwar and Ayats with Tajwīd I",
+          "subtopics": [
+            {
+              "content": "a. Al-Fātihah (Q.1)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "b. Al-Ādiyāt (Q.100)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "c. Al-Qāri’ah (Q.101)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "d. At-Takāthur (Q.102)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "e. Al-Asr (Q.103)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "f. Al-Humazah (Q.104)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "g. Al-Mā’ūn (Q.107)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "h. Al-Kawthar (Q.108)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "i. Al-Kāfirūn (Q.109)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "j. An-Nasr (Q.110)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "k. Al-Masad (Q.111)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "l. Al-Ikhlās (Q.112)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "m. Al-Falaq (Q.113)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            },
+            {
+              "content": "n. An-Nās (Q.114)",
+              "objective": "Recite the Arabic text with correct Tajwīd, translate the verses, deduce lessons from them and evaluate their teachings."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Study of the Arabic Text of Selected Suwar and Ayats with Tajwīd II",
+          "subtopics": [
+            {
+              "content": "a. Al-A‘lā (Q.87)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "b. Ad-Duhā (Q.93)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "c. Al-Inshirāh (Q.94)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "d. At-Tīn (Q.95)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "e. Al-Alaq (Q.96)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "f. Al-Qadr (Q.97)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "g. Al-Bayyinah (Q.98)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "h. Al-Zalzalah (Q.99)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "i. Ayatul-Kursiyy (Q.2:255)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "j. Āmanar-Rasūl (Q.2:285-286)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            },
+            {
+              "content": "k. Laqad Jā’akum (Q.9:128-129)",
+              "objective": "Recite the Arabic text with correct Tajwīd, deduce lessons from the verses and evaluate their teachings."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Hadīth",
+          "subtopics": [
+            {
+              "content": "a. History of Hadīth literature: collection of Hadīth from the time of the Prophet (SAW) to the period of the six authentic collectors of Hadīth",
+              "objective": "Evaluate the history of Hadīth from the time of the Prophet (SAW) to the period of the six authentic collectors."
+            },
+            {
+              "content": "b. Authentication of Hadīth: Isnād (Asmā’ur-rijāl)",
+              "objective": "Analyse the Isnād."
+            },
+            {
+              "content": "c. Authentication of Hadīth: Matn",
+              "objective": "Analyse the Matn."
+            },
+            {
+              "content": "d. Classification of Hadīth into Sahīh, Hassan and Da‘īf",
+              "objective": "Distinguish between Hadīth Sahīh, Hassan and Da‘īf."
+            },
+            {
+              "content": "e. Relationship between Hadīth and the Glorious Qur’ān: importance of Hadīth",
+              "objective": "Examine the importance of Hadīth."
+            },
+            {
+              "content": "f. Similarities and differences between Hadīth and the Glorious Qur’ān",
+              "objective": "Distinguish between Hadīth and the Glorious Qur’ān."
+            },
+            {
+              "content": "g. The six sound collectors of Hadīth: biographies and their works",
+              "objective": "Evaluate the biographies and works of the six authentic collectors of Hadīth."
+            },
+            {
+              "content": "h. Muwatta and its author: biography of Imam Malik and study of his book",
+              "objective": "Evaluate the biography of Imam Malik and analyse his work."
+            },
+            {
+              "content": "i. Study of the Arabic texts of Hadīth from an-Nawāwī’s collection: 1, 3, 5, 6, 7, 9, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 25, 27, 34 and 41",
+              "objective": "Interpret the selected ahādīth in Arabic and apply their teachings in daily life."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Moral Lessons in the Glorious Qur’ān and Hadīth",
+          "subtopics": [
+            {
+              "content": "a. General moral lessons in the admonition of Sage Luqman to his son (Q.31:12-18)",
+              "objective": "Use the teachings of the verses in daily life."
+            },
+            {
+              "content": "b. Goodness to parents (Q.17:23-24)",
+              "objective": "Apply the teachings of the verses to daily life."
+            },
+            {
+              "content": "c. Honesty (Q.2:42; Q.61:2-3)",
+              "objective": "Demonstrate the teachings of the verses in daily life."
+            },
+            {
+              "content": "d. Prohibition of bribery and corruption (Q.2:188), alcohol and gambling (Q.2:219; Q.5:90-91), stealing and fraud (Q.5:41; Q.83:1-5), smoking, drug abuse and other intoxicants (Q.2:172-173, 195 and 219; Q.4:43; Q.5:3; Q.6:118-121), arrogance (Q.31:18-19) and extravagance (Q.17:26-27; Q.31:18-19)",
+              "objective": "Use the teachings of the verses in daily life."
+            },
+            {
+              "content": "e. Dignity of labour (Q.62:10; Q.78:11). Hadīth from Bukhari and Ibn Majah: “That one of you takes his rope…” and “Never has anyone of you eaten…”",
+              "objective": "Apply the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "f. Behaviour and modesty in dressing (Q.24:27-31; Q.33:59)",
+              "objective": "Demonstrate the teachings of the verses in daily life."
+            },
+            {
+              "content": "g. Adultery and fornication (Q.17:32; Q.24:2), homosexuality (Q.11:77-83) and obscenity (Q.4:14-15). Hadīth: “No one of you should meet a woman privately…” (Bukhari)",
+              "objective": "Apply the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "h. Leadership (Q.2:124) and justice (Q.4:58, 135; Q.5:9). Hadīth: “Take care, everyone of you is a governor concerning his subjects” (al-Bukhari and others)",
+              "objective": "Apply the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "i. Trust and obligations (Q.4:58; Q.5:1) and promises (Q.16:91). Hadīth: “He has (really) no faith… not fulfilled his promise” (Baihaqi)",
+              "objective": "Demonstrate the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "j. Piety (Taqwa) (Q.2:177; Q.3:102; Q.49:13). Hadīth 18 and 35 of an-Nawāwī",
+              "objective": "Apply the teachings of the verses and ahādīth in daily life."
+            },
+            {
+              "content": "k. Tolerance, perseverance and patience (Q.2:153-157; Q.3:200; Q.103:3). Hadīth 16 of an-Nawāwī",
+              "objective": "Interpret and apply the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "l. Unity and brotherhood (Q.3:103; Q.8:46; Q.49:10). Hadīth 35 of an-Nawāwī",
+              "objective": "Demonstrate the teachings of the verses and Hadīth in daily life."
+            },
+            {
+              "content": "m. Enjoining what is good and forbidding what is wrong (Q.3:104, 110; Q.16:90). Hadīth 25 and 34 of an-Nawāwī",
+              "objective": "Apply the teachings of the verses and ahādīth in daily life."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part II: Tawhīd and Fiqh",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Faith",
+          "subtopics": [
+            {
+              "content": "a. Tawhīd: its importance and lessons",
+              "objective": "Analyse the concepts of Tawhīd."
+            },
+            {
+              "content": "b. Kalimatush-Shahādah: its meaning and importance",
+              "objective": "Evaluate the significance of Kalimatush-Shahādah."
+            },
+            {
+              "content": "c. The Oneness of Allah as contained in Q.3:18, Q.2:255 and Q.112:1-4",
+              "objective": "Identify the verses dealing with the Oneness of Allah."
+            },
+            {
+              "content": "d. The servanthood and messengership of Prophet Muhammad (SAW) as contained in Q.3:144, Q.18:110, Q.48:29 and Q.34:28",
+              "objective": "Explain the significance of the servanthood of Prophet Muhammad (SAW)."
+            },
+            {
+              "content": "e. Universality of the message of Prophet Muhammad (SAW) (Q.7:158; Q.34:28)",
+              "objective": "Evaluate the significance of the universality of Prophet Muhammad’s message."
+            },
+            {
+              "content": "f. Finality of the Prophethood of Muhammad (SAW) (Q.33:40)",
+              "objective": "Examine the significance of the finality of the Prophethood of Muhammad (SAW)."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Shirk",
+          "subtopics": [
+            {
+              "content": "a. Beliefs incompatible with Islamic principles of Tawhīd: worship of idols (Q.4:48; Q.22:31)",
+              "objective": "Identify actions and beliefs that constitute shirk, explain their implications and appreciate why they should be avoided."
+            },
+            {
+              "content": "b. Ancestral worship (Q.4:48, 116; Q.21:66-67)",
+              "objective": "Identify actions and beliefs that constitute shirk, explain their implications and appreciate why they should be avoided."
+            },
+            {
+              "content": "c. Trinity (Q.4:171; Q.5:76; Q.112:1-4)",
+              "objective": "Identify actions and beliefs that constitute shirk, explain their implications and appreciate why they should be avoided."
+            },
+            {
+              "content": "d. Atheism (Q.45:24; Q.72:6; Q.79:17-22)",
+              "objective": "Identify actions and beliefs that constitute shirk, explain their implications and appreciate why they should be avoided."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "General Practices Incompatible with Islamic Principles of Tawhīd",
+          "subtopics": [
+            {
+              "content": "a. Superstition (Q.25:43; Q.72:6)",
+              "objective": "Identify practices incompatible with the Islamic principles of Tawhīd, examine them, shun such actions and apply the teachings of the verses and ahādīth in daily life."
+            },
+            {
+              "content": "b. Fortune-telling (Q.15:16-18; Q.37:6-10)",
+              "objective": "Identify practices incompatible with the Islamic principles of Tawhīd, examine them, shun such actions and apply the teachings of the verses and ahādīth in daily life."
+            },
+            {
+              "content": "c. Magic and witchcraft (Q.2:102; Q.20:69, 73; Q.26:46)",
+              "objective": "Identify practices incompatible with the Islamic principles of Tawhīd, examine them, shun such actions and apply the teachings of the verses and ahādīth in daily life."
+            },
+            {
+              "content": "d. Cult worship (Q.17:23; Q.4:48)",
+              "objective": "Identify practices incompatible with the Islamic principles of Tawhīd, examine them, shun such actions and apply the teachings of the verses and ahādīth in daily life."
+            },
+            {
+              "content": "e. Innovation (Bid‘ah) (Q.4:116; Hadīth 5 and 28 of an-Nawāwī)",
+              "objective": "Identify practices incompatible with the Islamic principles of Tawhīd, examine them, shun such actions and apply the teachings of the verses and ahādīth in daily life."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Articles of Faith",
+          "subtopics": [
+            {
+              "content": "a. Belief in Allah: existence of Allah (Q.2:255; Q.52:35-36)",
+              "objective": "Examine the significance of the articles of faith."
+            },
+            {
+              "content": "b. Belief in Allah: attributes of Allah (Q.59:22-24)",
+              "objective": "List the attributes of Allah."
+            },
+            {
+              "content": "c. Belief in Allah: works of Allah (Q.27:59-64)",
+              "objective": "Examine the works of Allah."
+            },
+            {
+              "content": "d. Belief in Allah’s angels (Q.2:177, 285; Q.8:50; Q.16:2)",
+              "objective": "Explain belief in Allah’s angels and its significance."
+            },
+            {
+              "content": "e. Belief in His books (Q.2:253, 285; Q.3:3)",
+              "objective": "Explain belief in Allah’s books and identify the relevant verses."
+            },
+            {
+              "content": "f. Belief in His Prophets: Ulul-azmi (Q.4:163-164)",
+              "objective": "Explain belief in the Prophets of Allah and its significance."
+            },
+            {
+              "content": "g. Belief in the Last Day: Yawm-al-Ba‘th (Q.23:15-16; Q.70:4)",
+              "objective": "Analyse belief in the Last Day and its significance."
+            },
+            {
+              "content": "h. Belief in destiny: distinction between Qada and Qadar (Q.2:117; Q.16:40; Q.36:82)",
+              "objective": "Evaluate belief in destiny and its significance."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Ibadat and Their Types",
+          "subtopics": [
+            {
+              "content": "a. Good deeds (Q.3:134; Q.6:160; Q.2:177; Q.31:8; Q.103:1-3; 26th Hadīth of an-Nawāwī)",
+              "objective": "Identify what constitutes acts of ibadah."
+            },
+            {
+              "content": "b. Taharah: its types and importance (al-istinja’/istijmar, al-wudu’, at-tayammum and al-ghusl) (Q.2:222; Q.5:7; Hadīth 10 and 23 of an-Nawāwī)",
+              "objective": "Distinguish between the different types of taharah."
+            },
+            {
+              "content": "c. Salah: importance (Q.2:45; Q.20:132; Q.29:45; 23rd Hadīth of an-Nawāwī)",
+              "objective": "Assess the importance of salah in a Muslim’s life."
+            },
+            {
+              "content": "d. Salah: description and types",
+              "objective": "Analyse the different types of salah."
+            },
+            {
+              "content": "e. Salah: things that vitiate salah",
+              "objective": "Identify things that vitiate salah."
+            },
+            {
+              "content": "f. Zakah: types and importance (zakatul-fitr, zakatul-mal, al-an‘am and al-harth) (Q.2:267; Q.9:103; 3rd Hadīth of an-Nawāwī)",
+              "objective": "Differentiate between the various types of zakah and identify when they are given."
+            },
+            {
+              "content": "g. Zakah: collection and disbursement (Q.9:60)",
+              "objective": "Explain how to collect and distribute zakah."
+            },
+            {
+              "content": "h. Difference between zakah and sadaqah",
+              "objective": "Distinguish between zakah and sadaqah."
+            },
+            {
+              "content": "i. Sawm: types and importance (fard, sunnah, qada and kaffarah) (Q.2:183-185; 3rd Hadīth of an-Nawāwī)",
+              "objective": "Compare the various types of sawm."
+            },
+            {
+              "content": "j. Sawm: people exempted from fasting",
+              "objective": "List the people who are exempted from fasting."
+            },
+            {
+              "content": "k. Sawm: things that vitiate fasting",
+              "objective": "Explain things that vitiate fasting."
+            },
+            {
+              "content": "l. Hajj: importance (Q.2:158, 197; Q.3:97; Q.22:27-28)",
+              "objective": "Examine the importance of Hajj."
+            },
+            {
+              "content": "m. Hajj: types (Ifrad, Qiran and Tamattu‘)",
+              "objective": "Differentiate between the types of Hajj."
+            },
+            {
+              "content": "n. Hajj: essentials (Arkan al-Hajj)",
+              "objective": "Explain the essentials of Hajj."
+            },
+            {
+              "content": "o. Hajj: conditions for performance",
+              "objective": "Evaluate the conditions for the performance of Hajj."
+            },
+            {
+              "content": "p. Differences between Hajj and Umrah",
+              "objective": "Differentiate between Hajj and Umrah."
+            },
+            {
+              "content": "q. Jihad: concept, kinds, manner and lessons (Q.2:190-193; Q.22:39-40)",
+              "objective": "Examine the concept and types of jihad and evaluate its manner and lessons."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Family Matters: Marriage",
+          "subtopics": [
+            {
+              "content": "a. Importance of marriage (Q.16:72; Q.24:32; Q.30:20-21)",
+              "objective": "Analyse the importance of marriage."
+            },
+            {
+              "content": "b. Prohibited categories (Q.2:221; Q.4:22-24)",
+              "objective": "List the categories of women prohibited for a man to marry."
+            },
+            {
+              "content": "c. Conditions for validity of marriage (Q.4:4; Q.4:24-25)",
+              "objective": "Examine the conditions for the validity of marriage."
+            },
+            {
+              "content": "d. Rights and duties of husbands and wives (Q.4:34-35; Q.20:132; Q.65:6-7)",
+              "objective": "Explain the rights and duties of spouses."
+            },
+            {
+              "content": "e. Polygamy (Q.4:3, 129)",
+              "objective": "Evaluate polygamy and its significance."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Family Matters: Ill-treatment of Wife",
+          "subtopics": [
+            {
+              "content": "Ill-treatment of wife (Q.65:1-3)",
+              "objective": "Examine the ill-treatment of a wife in marriage."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Family Matters: Divorce",
+          "subtopics": [
+            {
+              "content": "a. Attitude of Islam to divorce (Q.2:228; Q.4:34-35). Hadīth: “Of all things lawful… most hateful to Allah” (Abu Daud 15:3)",
+              "objective": "Analyse the attitude of Islam to divorce."
+            },
+            {
+              "content": "b. Kinds of divorce: Talaq, Khul‘, Faskh, Mubara’ah and Li‘an (Q.2:229-230; Q.24:6-9)",
+              "objective": "Examine the different kinds of divorce."
+            },
+            {
+              "content": "c. Iddah: kinds, duration and importance (Q.2:228, 234)",
+              "objective": "Differentiate between the various kinds of iddah and analyse its duration and significance."
+            },
+            {
+              "content": "d. Prohibited forms of dissolution of marriage: Ila and Zihar (Q.2:226-227; Q.58:2-4)",
+              "objective": "Explain the prohibited forms of ending marriage."
+            },
+            {
+              "content": "e. Custody of children (Hadanah)",
+              "objective": "Examine who has the right to custody of children."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Family Matters: Inheritance",
+          "subtopics": [
+            {
+              "content": "a. Importance of inheritance",
+              "objective": "Evaluate the significance of inheritance."
+            },
+            {
+              "content": "b. Heirs and their shares (Q.4:7-8, 11-12, 176)",
+              "objective": "Identify the categories of Qur’ānic heirs and explain the share of each heir."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Sources and Schools of Law",
+          "subtopics": [
+            {
+              "content": "i. The four major sources: the Qur’ān, Sunnah, Ijma‘ and Qiyas",
+              "objective": "Analyse the four major sources of Islamic law."
+            },
+            {
+              "content": "ii. The four Sunni schools of law and their founders",
+              "objective": "Examine the biographies and contributions of the founders of the Sunni schools of law."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Islamic Economic System",
+          "subtopics": [
+            {
+              "content": "i. Islamic attitude to Riba (Q.2:275-280; Q.3:130; Q.4:161; 6th Hadīth of an-Nawāwī)",
+              "objective": "Analyse the Islamic attitude to Riba."
+            },
+            {
+              "content": "ii. At-tatfif (Q.83:1-6)",
+              "objective": "Relate at-tatfif to its negative consequences."
+            },
+            {
+              "content": "iii. Hoarding (Ihtikar) (Q.9:34)",
+              "objective": "Examine ihtikar and its implications for society."
+            },
+            {
+              "content": "iv. Islamic sources of revenue: Zakah, Jizyah, Kharaj and Ghanimah",
+              "objective": "Identify the sources of revenue in Islam and evaluate the disbursement of the revenue."
+            },
+            {
+              "content": "v. Baitul-mal as an institution of socio-economic welfare",
+              "objective": "Explain the uses of Baitul-mal in the Ummah."
+            },
+            {
+              "content": "vi. Difference between the Islamic economic system and the Western economic system",
+              "objective": "Differentiate between the Islamic and Western economic systems."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Islamic Political System",
+          "subtopics": [
+            {
+              "content": "i. Allah as the Sovereign (Q.3:26-27)",
+              "objective": "Analyse the concept of Allah’s sovereignty."
+            },
+            {
+              "content": "ii. The concept of Shurah (consultation) (Q.3:159; Q.42:38)",
+              "objective": "Examine the concept of Shurah in Islam."
+            },
+            {
+              "content": "iii. The concept of Adalah (justice) (Q.5:9; Q.4:58, 135) and Mas’uliyah (accountability) (Q.17:36; Q.102:8)",
+              "objective": "Evaluate the concepts of justice and accountability."
+            },
+            {
+              "content": "iv. Rights of non-Muslims in an Islamic state (Q.2:256; Q.6:108)",
+              "objective": "Examine the rights of non-Muslims in an Islamic state."
+            },
+            {
+              "content": "v. Differences between the Islamic political system and the Western political system",
+              "objective": "Differentiate between the Islamic and Western political systems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part III: Islamic History and Civilization",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Pre-Islamic Arabia (Jahiliyyah)",
+          "subtopics": [
+            {
+              "content": "i. Jahiliyyah practices: idol worship, infanticide, polyandry, gambling, usury, etc.",
+              "objective": "Distinguish between the different types of practices common among the Arabs of al-Jahiliyyah."
+            },
+            {
+              "content": "ii. Islamic reforms",
+              "objective": "Trace the reforms brought about by Islam to Jahiliyyah practices."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "The Life of Prophet Muhammad (SAW)",
+          "subtopics": [
+            {
+              "content": "i. His birth and early life",
+              "objective": "Account for the birth and early life of Prophet Muhammad (SAW)."
+            },
+            {
+              "content": "ii. His call to Prophethood",
+              "objective": "Provide evidence for the call of Muhammad (SAW) to Prophethood."
+            },
+            {
+              "content": "iii. His Da‘wah in Makkah and Madinah",
+              "objective": "Analyse the Da‘wah activities of Prophet Muhammad (SAW) in Makkah and Madinah."
+            },
+            {
+              "content": "iv. The Hijrah",
+              "objective": "Account for the Hijrah of Prophet Muhammad (SAW) from Makkah to Madinah."
+            },
+            {
+              "content": "v. His administration of the Ummah in Madinah",
+              "objective": "Analyse the administration of the Muslim Ummah in Madinah."
+            },
+            {
+              "content": "vi. The battles of Badr, Uhud and Khandaq: causes and effects",
+              "objective": "Account for the causes and effects of the battles of Badr, Uhud and Khandaq."
+            },
+            {
+              "content": "vii. The Treaty of al-Hudaibiyyah and the conquest of Makkah",
+              "objective": "Trace the circumstances leading to the formulation of the Treaty of al-Hudaibiyyah and account for the conquest of Makkah."
+            },
+            {
+              "content": "viii. Hijjatul-wada‘ (the farewell pilgrimage), sermon and lessons",
+              "objective": "Examine the farewell pilgrimage of the Prophet and its lessons."
+            },
+            {
+              "content": "ix. Qualities of Muhammad (SAW) and lessons learnt from them",
+              "objective": "Analyse the qualities of Muhammad (SAW) and their relevance to the life of a Muslim."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "The Rightly Guided Caliphs (al-Khulafa’u Rashidun)",
+          "subtopics": [
+            {
+              "content": "Lives and contributions of the four Rightly Guided Caliphs",
+              "objective": "Trace the biographies of the four Rightly Guided Caliphs and evaluate their contributions to the development of Islam."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Early Contact of Islam with Africa",
+          "subtopics": [
+            {
+              "content": "i. Hijrah to Abyssinia",
+              "objective": "Evaluate the circumstances leading to the Hijrah to Abyssinia."
+            },
+            {
+              "content": "ii. The spread of Islam to Egypt",
+              "objective": "Give reasons for the spread of Islam in Egypt."
+            },
+            {
+              "content": "iii. Roles of traders, teachers, preachers, Murabitun, Sufi orders and Mujaddidun in the spread of Islam in West Africa",
+              "objective": "Account for the roles of traders, teachers, preachers, Murabitun, Sufi orders and Mujaddidun in the spread of Islam in West Africa."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "The Impact of Islam in West Africa",
+          "subtopics": [
+            {
+              "content": "i. Influence of Islam on the socio-political life of West African empires: Ghana, Mali, Songhai and Borno",
+              "objective": "Analyse the influence of Islam on the socio-political systems of selected West African states."
+            },
+            {
+              "content": "ii. Impact of Islam on the economic life of West African states: Timbuktu, Kano and Borno",
+              "objective": "Evaluate the impact of Islam on the economic life of Timbuktu, Kano and Borno."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Contributions of Islam to Education",
+          "subtopics": [
+            {
+              "content": "i. Aims and objectives of Islamic education",
+              "objective": "Explain the aims and objectives of Islamic education."
+            },
+            {
+              "content": "ii. The Glorious Qur’ān and Hadīth on education (Q.96:1-5; Q.39:9)",
+              "objective": "Assess the position of the Glorious Qur’ān and Hadīth in education."
+            },
+            {
+              "content": "iii. Hadīth: “The search for knowledge is obligatory on every Muslim” (Ibn Majah)",
+              "objective": "Examine the importance of seeking knowledge in Islam."
+            },
+            {
+              "content": "iv. Hadīth: “Seek knowledge from the cradle to the grave”",
+              "objective": "Examine the importance of seeking knowledge throughout life in Islam."
+            },
+            {
+              "content": "v. Hadīth: “The words of wisdom are a lost property of the believer… a better right to it…” (Tirmidhi)",
+              "objective": "Examine the importance of wisdom and the pursuit of knowledge in Islam."
+            },
+            {
+              "content": "vi. Intellectual activities of Islam in West Africa: development of written history in Arabic and establishment of Sankore University",
+              "objective": "Analyse the intellectual activities of Islam in West Africa."
+            },
+            {
+              "content": "vii. Intellectual activities of Ahmad Baba of Timbuktu, Sheikh al-Maghili, Sheikh Usman Danfodio, Sultan Muhammad Bello and Ibn Battuta",
+              "objective": "Assess the contributions of Sheikh al-Maghili, Sheikh Uthman Dan Fodio, Sultan Muhammad Bello and Ibn Battuta to education."
+            },
+            {
+              "content": "viii. Islamic educational institutions: House of Wisdom in Baghdad, al-Azhar University in Cairo and Nizamiyyah University in Baghdad",
+              "objective": "Account for the development of intellectual centres in Baghdad and Cairo."
+            },
+            {
+              "content": "ix. Lives and contributions of Ibn Sina, Al-Ghazali, Ibn Rushd, ar-Razi and Ibn Khaldun to education",
+              "objective": "Examine the contributions of Ibn Sina to medicine; assess al-Ghazali’s contribution to Islamic education; analyse Ibn Rushd’s contribution to philosophy and fiqh; assess ar-Razi’s contribution to philosophy; and analyse Ibn Khaldun’s contribution to modern sociology and the method of writing history."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Recommended Texts",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Recommended Books",
+          "subtopics": [
+            {
+              "content": "1. Abdul, M. O. A. (1976) — Studies in Islam Series, Book 3, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge, history, law and civilization."
+            },
+            {
+              "content": "2. Abdul, M. O. A. (1982) — Studies in Islam Series, Book 2, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge, history, law and civilization."
+            },
+            {
+              "content": "3. Abdul, M. O. A. (1988) — The Classical Caliphate, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge, history, law and civilization."
+            },
+            {
+              "content": "4. Abdulrahman and Canham (n.d.) — The Ink of the Scholar, OUP",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge, history, law and civilization."
+            },
+            {
+              "content": "5. Ali, A. Y. (1975) — The Holy Qur’ān Text: Translation and Commentary, Leicester: The Islamic Foundation",
+              "objective": "Use recommended texts to support the study and interpretation of the Glorious Qur’ān."
+            },
+            {
+              "content": "6. Ali, M. M. (n.d.) — The Religion of Islam, Lahore",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "7. Doi, A. R. I. (1997) — Shariah: The Islamic Law, Kuala Lumpur: Noordeen",
+              "objective": "Use recommended texts to support the study of Islamic law."
+            },
+            {
+              "content": "8. Hay Lal, M. (1982) — The Life of Muhammad (SAW), Academic Press",
+              "objective": "Use recommended texts to study the life and teachings of Prophet Muhammad (SAW)."
+            },
+            {
+              "content": "9. Lemu, A. (1992) — Methodology of Primary Islamic Studies, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "10. Lemu, A. (1993) — Islamic Studies for SSS, Book 1, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "11. Lemu, A. (1993) — Islamic Studies for SSS, Books, Minna: IET",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "12. Muhammad, S. Q. (2010) — al-Burhanu fi Tajwīdi'l Qur’ān, Cairo: Shirkatul-Qudus",
+              "objective": "Use recommended texts to study the rules and practice of Qur’ānic recitation and Tajwīd."
+            },
+            {
+              "content": "13. Opeloye, M. O. (1996) — A Dictionary of Peoples and Places in the Qur’ān, Lagos: Academic Press",
+              "objective": "Use recommended texts to identify and understand peoples and places mentioned in the Qur’ān."
+            },
+            {
+              "content": "14. Philips, A. A. B. (1997) — Usool at-Tafseer, Kuala Lumpur: Noordeen",
+              "objective": "Use recommended texts to study the principles and methods of Tafsīr."
+            },
+            {
+              "content": "15. Quadri, Y. A. et al. (1990) — Al-Iziyyah for the English Audience, Ijebu Ode: Shebiotiuom Publication",
+              "objective": "Use recommended texts to support the study of Islamic jurisprudence and religious practice."
+            },
+            {
+              "content": "16. Rahim, A. (1992) — Islamic History, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic history and civilization."
+            },
+            {
+              "content": "17. Sambo, M. B. et al. (1984) — Islamic Religious Knowledge for WASC, Book 1, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "18. Sambo, M. B. et al. (1984) — Islamic Religious Knowledge for WASC, Book 3, Lagos: IPB",
+              "objective": "Use recommended texts to support the study of Islamic religious knowledge."
+            },
+            {
+              "content": "19. Trimingham, J. S. (1993) — A History of Islam in West Africa, Oxford: OUP",
+              "objective": "Use recommended texts to support the study of the spread and historical development of Islam in West Africa."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
