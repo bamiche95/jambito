@@ -3,11 +3,13 @@ import { cn } from "@/lib/utils";
 
 /**
  * The exported lockup. Intrinsic size comes straight from the file in
- * `public/icons/` (copied there by `scripts/generate-icons.mjs`), so the served
- * image is 1:1 with the artwork and no scaling happens before the browser
- * downscales it for a 28px-tall header.
+ * `public/icons/` (written there by `scripts/generate-icons.mjs`, which trims
+ * the artwork's transparent margins first), so no scaling happens before the
+ * browser downscales it for a 32–56px-tall header. If the source artwork is
+ * ever replaced, re-run `npm run icons` and update these two numbers from the
+ * script's report.
  */
-const LOCKUP = { src: "/icons/logo.png", width: 446, height: 149 };
+const LOCKUP = { src: "/icons/logo.png", width: 406, height: 127 };
 
 /**
  * The CBT-Practice lockup used in the site chrome (header + footer).

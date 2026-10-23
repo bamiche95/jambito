@@ -108,10 +108,17 @@ await emit(
  * The lockup rendered by <BrandLogo /> (header + footer)
  * ----------------------------------------------------------------------- */
 
+/*
+ * The export carries uneven transparent margins — 27px on the left, 15px on
+ * the right, 8/14px top and bottom — so an untrimmed render sits slightly
+ * right of the page gutter and looks smaller than the box it is given.
+ * Trimming to the artwork's alpha bounds makes the lockup fill its height and
+ * align flush with everything below it.
+ */
 await emit(
   "logo lockup",
   path.join(ICONS_DIR, "logo.png"),
-  await png(sharp(LOCKUP), path.join(ICONS_DIR, "logo.png")),
+  await png(sharp(LOCKUP).trim({ threshold: 1 }), path.join(ICONS_DIR, "logo.png")),
 );
 
 /* --------------------------------------------------------------------------

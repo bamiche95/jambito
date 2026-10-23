@@ -108,7 +108,7 @@ export default function AuthButton() {
             setMode("signup");
             setOpen(true);
           }}
-          className="rounded-full bg-brand-orange px-3.5 py-2 text-xs font-bold text-white shadow-sm shadow-brand-orange/30 transition hover:bg-[#E64A19] active:scale-[0.98] md:px-5 md:py-2.5 md:text-sm"
+          className="rounded-full bg-brand-orange px-3 py-2 text-xs font-bold text-white shadow-sm shadow-brand-orange/30 transition hover:bg-[#E64A19] active:scale-[0.98] sm:px-3.5 md:px-5 md:py-2.5 md:text-sm"
         >
           Login/Register Free
         </button>

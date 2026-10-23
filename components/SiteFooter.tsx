@@ -178,7 +178,7 @@ export default function SiteFooter() {
                 href="/"
                 className="inline-flex rounded-xl bg-white px-3 py-2 transition hover:bg-slate-50"
               >
-                <BrandLogo className="h-7" />
+                <BrandLogo className="h-10 sm:h-12" />
               </Link>
               <p className="mt-4 max-w-xs text-sm leading-6 text-white/75">
                 Empowering Nigerian students to pass JAMB, WAEC, NECO &amp; POST
