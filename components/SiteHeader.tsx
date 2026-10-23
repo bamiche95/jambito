@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { GraduationCap } from "lucide-react";
 import AuthButton from "@/components/AuthButton";
+import BrandLogo from "@/components/BrandLogo";
 import MobileMenu from "@/components/MobileMenu";
 
 /**
@@ -12,32 +12,22 @@ import MobileMenu from "@/components/MobileMenu";
  * in the phone drawer (components/MobileMenu.tsx) and the fixed tab bar
  * (components/BottomNav.tsx) instead.
  *
- * The wordmark is hidden below `sm` for the same reason: at 360px the account
- * pills and the menu button alone take most of the row, and a truncated
- * "CBT-Prac…" reads worse than the blue graduation-cap tile on its own.
+ * The brand lockup itself is small enough for every width — 84px at `h-7` — so
+ * it is shown on phones too and carries the home link's accessible name.
+ * `AuthButton` drops its outlined "Log In" pill below `sm` to leave the lockup
+ * room; signing in is still one tap away through the Register modal's tab
+ * switch and through the Profile tab in the bottom bar.
  *
- * Restyled for the edtech brand: blue logo tile, navy/orange wordmark, cream
- * sticky bar. The `dark:` overrides were dropped here on purpose so the brand
- * look holds on dark-mode devices too; app screens keep theirs.
+ * Restyled for the edtech brand: navy/green lockup on the cream sticky bar. The
+ * `dark:` overrides were dropped here on purpose so the brand look holds on
+ * dark-mode devices too; app screens keep theirs.
  */
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/70 bg-cream/85 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 md:h-16 md:gap-4">
-        <Link
-          href="/"
-          className="flex min-w-0 items-center gap-2 text-base font-extrabold md:text-lg"
-        >
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-blue shadow-sm md:h-9 md:w-9">
-            <GraduationCap className="h-5 w-5 text-white" aria-hidden />
-          </span>
-          {/* Phones hide the wordmark, so the tile needs its own accessible
-              name there or the home link would have none. */}
-          <span className="sr-only sm:hidden">CBT-Practice</span>
-          <span className="hidden min-w-0 truncate tracking-tight sm:block">
-            <span className="text-navy">CBT-</span>
-            <span className="text-brand-orange-soft">Practice</span>
-          </span>
+        <Link href="/" className="flex min-w-0 shrink-0 items-center">
+          <BrandLogo eager className="h-7 md:h-8" />
         </Link>
 
         <nav className="hidden items-center gap-4 text-[13px] font-semibold text-slate-700 md:flex lg:gap-6 lg:text-sm">

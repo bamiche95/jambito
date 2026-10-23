@@ -54,7 +54,9 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0b1e48",
+  // Matches the manifest and the badge artwork's background, so the browser UI
+  // and the installed app share one tone.
+  themeColor: "#1e2639",
   // Required for `env(safe-area-inset-*)` to resolve on iOS: without
   // `viewport-fit=cover` the safe-area values are always 0 and the fixed tab
   // bar would sit under the home indicator.

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactElement } from "react";
-import { GraduationCap } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 import NewsletterForm from "@/components/NewsletterForm";
 import {
   AppleIcon,
@@ -172,14 +172,13 @@ export default function SiteFooter() {
         <div className="relative mx-auto max-w-6xl px-4 pb-8 pt-10 sm:pt-14">
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-3">
-              <Link href="/" className="flex items-center gap-2 text-lg font-extrabold">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue">
-                  <GraduationCap className="h-5 w-5 text-white" aria-hidden />
-                </span>
-                <span className="tracking-tight">
-                  <span className="text-white">CBT-</span>
-                  <span className="text-brand-orange-soft">Practice</span>
-                </span>
+              {/* The lockup's navy "CBT" disappears on `bg-navy`, so it sits on
+                  its own white plate rather than being recoloured. */}
+              <Link
+                href="/"
+                className="inline-flex rounded-xl bg-white px-3 py-2 transition hover:bg-slate-50"
+              >
+                <BrandLogo className="h-7" />
               </Link>
               <p className="mt-4 max-w-xs text-sm leading-6 text-white/75">
                 Empowering Nigerian students to pass JAMB, WAEC, NECO &amp; POST

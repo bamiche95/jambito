@@ -14,9 +14,11 @@ import AuthModal from "@/components/auth/AuthModal";
  * different tabs; `key={mode}` remounts the card when the choice changes so its
  * internal state is re-seeded rather than inheriting the previous tab.
  *
- * Phones get compact versions of both: the header has no room for full pills
- * next to the logo on a 360px screen, and the fixed bottom bar
- * (components/BottomNav.tsx) already owns phone navigation.
+ * Phones keep only the solid orange pill: at 360px the brand lockup and this
+ * button already fill the header, and the fixed bottom bar
+ * (components/BottomNav.tsx) owns phone navigation. Signing in stays one tap
+ * away — the modal's tab switch flips this same card to "Log In", and the
+ * Profile tab reaches it too — so nothing is unreachable, only unadvertised.
  *
  * Signed in, the behaviour is unchanged: a name button on wide screens and an
  * initials avatar on phones, with a small dot reporting that access is active.
@@ -97,7 +99,7 @@ export default function AuthButton() {
             setMode("signin");
             setOpen(true);
           }}
-          className="rounded-lg border-2 border-brand-orange px-3 py-1.5 text-xs font-bold text-brand-orange transition hover:bg-orange-50 active:scale-[0.98] md:px-4 md:py-2 md:text-sm"
+          className="hidden rounded-lg border-2 border-brand-orange px-3 py-1.5 text-xs font-bold text-brand-orange transition hover:bg-orange-50 active:scale-[0.98] sm:inline-block md:px-4 md:py-2 md:text-sm"
         >
           Log In
         </button>

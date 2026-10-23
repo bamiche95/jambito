@@ -1,91 +1,203 @@
-import zlib from "node:zlib";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import sharp from "sharp";
+
+/**
+ * Derives every icon the site ships from the two brand originals in
+ * `assets/brand/` — the square app badge (`app-icon.jpg`) and the horizontal
+ * lockup (`logo-lockup.png`).
+ *
+ * The sources live *outside* `public/` on purpose: Serwist precaches everything
+ * it finds in `public/`, and the 1.9 MB badge JPEG has no business in an
+ * offline install. Only the optimised outputs below get served.
+ *
+ * Run with `npm run icons`. Re-run it whenever a source is replaced.
+ */
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const outDir = path.join(__dirname, "..", "public", "icons");
+const root = path.join(__dirname, "..");
 
-// ---------------------------------------------------------------------------
-// Minimal PNG encoder (no external deps)
-// ---------------------------------------------------------------------------
+const BADGE = path.join(root, "assets", "brand", "app-icon.jpg");
+const LOCKUP = path.join(root, "assets", "brand", "logo-lockup.png");
 
-const crcTable = (() => {
-  const table = new Array(256);
-  for (let n = 0; n < 256; n++) {
-    let c = n;
-    for (let k = 0; k < 8; k++) {
-      c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
-    }
-    table[n] = c >>> 0;
-  }
-  return table;
-})();
+const ICONS_DIR = path.join(root, "public", "icons");
+/** `app/` files are picked up by Next's metadata file conventions. */
+const APP_DIR = path.join(root, "app");
 
-function crc32(buf) {
-  let crc = 0xffffffff;
-  for (let i = 0; i < buf.length; i++) {
-    crc = crcTable[(crc ^ buf[i]) & 0xff] ^ (crc >>> 8);
-  }
-  return (crc ^ 0xffffffff) >>> 0;
+fs.mkdirSync(ICONS_DIR, { recursive: true });
+
+/**
+ * The badge is opaque, so its own corner colour is the right padding tone for
+ * the maskable variant and for the manifest's splash/theme colours.
+ */
+async function cornerColour(file) {
+  const { data } = await sharp(file)
+    .extract({ left: 2, top: 2, width: 1, height: 1 })
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  return { r: data[0], g: data[1], b: data[2] };
 }
 
-function chunk(type, data) {
-  const len = Buffer.alloc(4);
-  len.writeUInt32BE(data.length, 0);
-  const typeBuf = Buffer.from(type, "ascii");
-  const crc = Buffer.alloc(4);
-  crc.writeUInt32BE(crc32(Buffer.concat([typeBuf, data])), 0);
-  return Buffer.concat([len, typeBuf, data, crc]);
+const badgeBackground = await cornerColour(BADGE);
+const hex = (channel) => channel.toString(16).padStart(2, "0");
+const backgroundHex = `#${hex(badgeBackground.r)}${hex(badgeBackground.g)}${hex(badgeBackground.b)}`;
+
+/**
+ * Writes a PNG and returns its byte length, so the report below states what
+ * actually landed on disk.
+ */
+async function png(pipeline, file, options = {}) {
+  const buffer = await pipeline
+    .png({ compressionLevel: 9, effort: 10, ...options })
+    .toBuffer();
+  fs.writeFileSync(file, buffer);
+  return buffer.length;
 }
 
-function encodePng(size, pixelFn) {
-  const sig = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
-  const ihdr = Buffer.alloc(13);
-  ihdr.writeUInt32BE(size, 0);
-  ihdr.writeUInt32BE(size, 4);
-  ihdr[8] = 8; // bit depth
-  ihdr[9] = 6; // color type RGBA
-
-  const raw = Buffer.alloc((size * 4 + 1) * size);
-  let offset = 0;
-  for (let y = 0; y < size; y++) {
-    raw[offset++] = 0; // filter: none
-    for (let x = 0; x < size; x++) {
-      const [r, g, b, a] = pixelFn(x, y, size);
-      raw[offset++] = r;
-      raw[offset++] = g;
-      raw[offset++] = b;
-      raw[offset++] = a;
-    }
-  }
-  const idat = zlib.deflateSync(raw);
-  return Buffer.concat([
-    sig,
-    chunk("IHDR", ihdr),
-    chunk("IDAT", idat),
-    chunk("IEND", Buffer.alloc(0)),
-  ]);
+const written = [];
+async function emit(label, file, bytes) {
+  const { width, height } = await sharp(file).metadata();
+  written.push({ label, file: path.relative(root, file), width, height, bytes });
 }
 
-// ---------------------------------------------------------------------------
-// Icon design: dark slate background + blue circle
-// ---------------------------------------------------------------------------
+/* --------------------------------------------------------------------------
+ * App icons
+ * ----------------------------------------------------------------------- */
 
-function makeIcon(size, circleRadiusRatio) {
-  const cx = size / 2;
-  const cy = size / 2;
-  const radius = size * circleRadiusRatio;
-  return encodePng(size, (x, y) => {
-    const d = Math.hypot(x - cx, y - cy);
-    if (d < radius) return [59, 130, 246, 255]; // blue-500
-    return [15, 23, 42, 255]; // slate-900
+await emit(
+  "icon 192",
+  path.join(ICONS_DIR, "icon-192.png"),
+  await png(
+    sharp(BADGE).resize(192, 192, { fit: "cover" }),
+    path.join(ICONS_DIR, "icon-192.png"),
+  ),
+);
+
+await emit(
+  "icon 512",
+  path.join(ICONS_DIR, "icon-512.png"),
+  await png(
+    sharp(BADGE).resize(512, 512, { fit: "cover" }),
+    path.join(ICONS_DIR, "icon-512.png"),
+  ),
+);
+
+/*
+ * Maskable: Android crops this to its own shape and only guarantees the centre
+ * 80% circle. The art is drawn at 88% and padded with its own background, which
+ * keeps the whole radar ring inside that circle under every launcher mask.
+ */
+const maskableInner = Math.round(512 * 0.88);
+const maskableArt = await sharp(BADGE)
+  .resize(maskableInner, maskableInner, { fit: "cover" })
+  .png()
+  .toBuffer();
+await emit(
+  "maskable 512",
+  path.join(ICONS_DIR, "maskable-512.png"),
+  await png(
+    sharp({
+      create: { width: 512, height: 512, channels: 3, background: badgeBackground },
+    }).composite([{ input: maskableArt, gravity: "center" }]),
+    path.join(ICONS_DIR, "maskable-512.png"),
+  ),
+);
+
+/* --------------------------------------------------------------------------
+ * The lockup rendered by <BrandLogo /> (header + footer)
+ * ----------------------------------------------------------------------- */
+
+await emit(
+  "logo lockup",
+  path.join(ICONS_DIR, "logo.png"),
+  await png(sharp(LOCKUP), path.join(ICONS_DIR, "logo.png")),
+);
+
+/* --------------------------------------------------------------------------
+ * Next metadata file conventions: browser tab, iOS home screen, /favicon.ico
+ * ----------------------------------------------------------------------- */
+
+await emit(
+  "app/icon",
+  path.join(APP_DIR, "icon.png"),
+  await png(
+    sharp(BADGE).resize(256, 256, { fit: "cover" }),
+    path.join(APP_DIR, "icon.png"),
+  ),
+);
+
+/*
+ * iOS never reads the web app manifest for the home-screen icon — without an
+ * apple-touch-icon it invents a blank tile. 180x180 is the size iOS asks for,
+ * and the file must be opaque: iOS applies its own rounded mask.
+ */
+await emit(
+  "app/apple-icon",
+  path.join(APP_DIR, "apple-icon.png"),
+  await png(
+    sharp(BADGE).resize(180, 180, { fit: "cover" }),
+    path.join(APP_DIR, "apple-icon.png"),
+  ),
+);
+
+/** ICO container around embedded PNGs — the format every browser accepts. */
+function ico(pngs) {
+  const header = Buffer.alloc(6);
+  header.writeUInt16LE(0, 0); // reserved
+  header.writeUInt16LE(1, 2); // type: icon
+  header.writeUInt16LE(pngs.length, 4);
+
+  let offset = 6 + 16 * pngs.length;
+  const entries = pngs.map(({ size, buffer }) => {
+    const entry = Buffer.alloc(16);
+    entry[0] = size >= 256 ? 0 : size; // width (0 means 256)
+    entry[1] = size >= 256 ? 0 : size; // height
+    entry[2] = 0; // palette colours
+    entry[3] = 0; // reserved
+    entry.writeUInt16LE(1, 4); // colour planes
+    entry.writeUInt16LE(32, 6); // bits per pixel
+    entry.writeUInt32LE(buffer.length, 8);
+    entry.writeUInt32LE(offset, 12);
+    offset += buffer.length;
+    return entry;
   });
+
+  return Buffer.concat([header, ...entries, ...pngs.map(({ buffer }) => buffer)]);
 }
 
-fs.mkdirSync(outDir, { recursive: true });
-fs.writeFileSync(path.join(outDir, "icon-192.png"), makeIcon(192, 0.34));
-fs.writeFileSync(path.join(outDir, "icon-512.png"), makeIcon(512, 0.34));
-fs.writeFileSync(path.join(outDir, "maskable-512.png"), makeIcon(512, 0.28));
+const faviconSizes = [32, 48];
+const faviconPngs = await Promise.all(
+  faviconSizes.map(async (size) => ({
+    size,
+    buffer: await sharp(BADGE)
+      .resize(size, size, { fit: "cover" })
+      // RGBA is mandatory: the ICO decoder Next uses to fingerprint
+      // `app/favicon.ico` refuses RGB payloads ("The PNG is not in RGBA
+      // format!") and fails the whole build.
+      .ensureAlpha()
+      .png()
+      .toBuffer(),
+  })),
+);
+const faviconFile = path.join(APP_DIR, "favicon.ico");
+fs.writeFileSync(faviconFile, ico(faviconPngs));
+written.push({
+  label: "app/favicon.ico",
+  file: path.relative(root, faviconFile),
+  width: faviconSizes.join("/"),
+  height: "-",
+  bytes: fs.statSync(faviconFile).size,
+});
 
-console.log("Icons generated in", outDir);
+/* --------------------------------------------------------------------------
+ * Report
+ * ----------------------------------------------------------------------- */
+
+console.log(`Badge background sampled from the artwork: ${backgroundHex}\n`);
+for (const { label, file, width, height, bytes } of written) {
+  const dims = height === "-" ? `${width}px` : `${width}x${height}`;
+  console.log(
+    `${label.padEnd(16)} ${file.padEnd(30)} ${dims.padEnd(9)} ${(bytes / 1024).toFixed(1)} kB`,
+  );
+}

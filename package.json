@@ -17,6 +17,7 @@
     "serwist": "serwist build serwist.config.mjs",
     "start": "next start",
     "lint": "eslint",
+    "icons": "node scripts/generate-icons.mjs",
     "verify:deps": "node --no-experimental-require-module scripts/verify-server-deps.mjs",
     "check:mail": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-mail.mjs",
     "check:emails": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-emails.mjs"
@@ -46,6 +47,7 @@
     "esbuild": "^0.28.2",
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
