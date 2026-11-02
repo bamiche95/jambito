@@ -24,8 +24,10 @@ npm start
 `.env.example` documents every variable. The important groups:
 
 - **Firebase** — `NEXT_PUBLIC_FIREBASE_*` (public, inlined at build time) and a
-  server credential (`FIREBASE_SERVICE_ACCOUNT` or
-  `GOOGLE_APPLICATION_CREDENTIALS`).
+  server credential: `FIREBASE_SERVICE_ACCOUNT` (the JSON itself) wherever the
+  app is deployed, and `GOOGLE_APPLICATION_CREDENTIALS` (a path to the key file)
+  locally. See the Firebase Admin block in `.env.example`: the path form never
+  works on Vercel.
 - **MongoDB** — `MONGODB_URI`.
 - **Paystack** — `PAYSTACK_SECRET_KEY` (server only).
 - **SMTP** — `SMTP_USER` / `SMTP_PASSWORD`. Without them contact and welcome
@@ -136,6 +138,19 @@ npm run check:emails      # campaign state and send log (read-only)
 
 - `NEXT_PUBLIC_*` values are inlined at build time: set them for every Vercel
   environment and redeploy after changing them.
+- Server credentials are read at runtime. Set `FIREBASE_SERVICE_ACCOUNT` (the
+  service-account JSON, on one line) on Vercel and do **not** set
+  `GOOGLE_APPLICATION_CREDENTIALS` there: it is a path to a gitignored key file,
+  so a deployed function can never read it — it is skipped with a warning and the
+  Admin SDK falls back to project-ID-only initialisation. That fallback still
+  verifies ID tokens (sign-in, trial gate, payments) and MongoDB still enforces a
+  block, but the block cannot be mirrored to Firebase: the account stays able to
+  sign in and its refresh tokens are not revoked. Remove the variable from every
+  Vercel environment, Development included, or `vercel env pull` copies it back
+  into `.env.local`.
+- `GET /api/health` reports the credential the Admin SDK actually resolved
+  (`credential.source`, `credential.hasServiceAccount`, `credential.error`), which
+  should be `FIREBASE_SERVICE_ACCOUNT` in production.
 - Run `scripts/ensure-indexes.mjs` against a new database once. The email dedupe
   index is what makes sends idempotent.
 - Keep `/api/cron/emails` uncached (the service worker already treats it as

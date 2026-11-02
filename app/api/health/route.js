@@ -27,8 +27,8 @@ async function check(label, load) {
 /** Pings MongoDB through the shared cached client. */
 async function checkMongo() {
   try {
-    const client = (await import("@/lib/mongodb")).default;
-    await (await client).db().command({ ping: 1 });
+    const { getMongoClient } = await import("@/lib/mongodb");
+    await (await getMongoClient()).db().command({ ping: 1 });
     return "ok";
   } catch (error) {
     return `FAILED: ${error?.message || error}`;
@@ -121,8 +121,15 @@ export async function GET() {
     // CJS-only jose@4 pin below is required (jose@6 is ESM-only).
     requireEsm: process.features?.require_module ?? null,
     hasMongoUri: Boolean(process.env.MONGODB_URI),
-    hasServiceAccount: Boolean(process.env.FIREBASE_SERVICE_ACCOUNT),
-    hasGoogleCredPath: Boolean(process.env.GOOGLE_APPLICATION_CREDENTIALS),
+    // Raw env-var presence. What the Admin SDK actually resolved is reported
+    // separately as `credential` below: a present-but-invalid service account,
+    // or a path that only exists on a workstation, must not look healthy here.
+    envPresence: {
+      FIREBASE_SERVICE_ACCOUNT: Boolean(process.env.FIREBASE_SERVICE_ACCOUNT),
+      GOOGLE_APPLICATION_CREDENTIALS: Boolean(
+        process.env.GOOGLE_APPLICATION_CREDENTIALS
+      ),
+    },
     vercelEnv: process.env.VERCEL_ENV ?? null,
     vercelRegion: process.env.VERCEL_REGION ?? null,
     // Which (public) source supplies the project ID when no service account is
@@ -136,6 +143,23 @@ export async function GET() {
       ),
     },
   };
+
+  // What the Admin SDK actually resolved — a present-but-unusable service
+  // account, or a credential path that only exists on a workstation, is
+  // visible here instead of only in the function logs.
+  let credential;
+  try {
+    const { getCredentialStatus } = await import("@/lib/firebaseAdmin");
+    credential = getCredentialStatus();
+  } catch (error) {
+    credential = {
+      source: "unavailable",
+      hasServiceAccount: false,
+      projectId: null,
+      serverless: Boolean(process.env.VERCEL),
+      error: error?.message || String(error),
+    };
+  }
 
   const imports = Object.fromEntries([
     await check("firebase-admin/app", () => import("firebase-admin/app")),
@@ -175,7 +199,7 @@ export async function GET() {
     credentialsOk;
 
   return NextResponse.json(
-    { ok, imports, adminInit, mongo, tokenVerify, mail, ...info },
+    { ok, imports, adminInit, credential, mongo, tokenVerify, mail, ...info },
     { status: ok ? 200 : 500 }
   );
 }
