@@ -112,6 +112,35 @@ async function checkMail() {
   }
 }
 
+/**
+ * Which transport the campaign runner will actually use, reported without a
+ * network call: a health check stays cheap, and the authoritative answer to
+ * "does Brevo accept this key, sender and domain?" is the dashboard's
+ * `brevo_check` action, which asks the provider.
+ *
+ * This exists because the transport is decided by an environment variable that
+ * only the deployment can see: after a change in Vercel, `/api/health` is the
+ * one place to confirm it from outside without the admin dashboard.
+ */
+async function checkBrevo() {
+  try {
+    const { getBrevoSender, isBrevoConfigured } = await import("@/lib/brevo");
+    const configured = isBrevoConfigured();
+    return {
+      configured,
+      from: getBrevoSender().email,
+      // Without the key the runner falls back to the mailbox above.
+      transport: configured ? "brevo" : "smtp",
+    };
+  } catch (error) {
+    return {
+      configured: false,
+      transport: "smtp",
+      error: error?.message || String(error),
+    };
+  }
+}
+
 export async function GET() {
   const info = {
     node: process.version,
@@ -184,6 +213,7 @@ export async function GET() {
   const mongo = await checkMongo();
   const tokenVerify = await checkTokenVerification();
   const mail = await checkMail();
+  const brevo = await checkBrevo();
 
   // A healthy verifier complains about the probe token itself; only a
   // credential/config problem means the trial gate cannot work at all, so
@@ -199,7 +229,7 @@ export async function GET() {
     credentialsOk;
 
   return NextResponse.json(
-    { ok, imports, adminInit, credential, mongo, tokenVerify, mail, ...info },
+    { ok, imports, adminInit, credential, mongo, tokenVerify, mail, brevo, ...info },
     { status: ok ? 200 : 500 }
   );
 }
