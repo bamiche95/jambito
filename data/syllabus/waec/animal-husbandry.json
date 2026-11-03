@@ -1,0 +1,973 @@
+{
+  "subject": "Animal Husbandry",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Introduction to Animal Husbandry",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning, scope and importance of animal husbandry",
+          "subtopics": [
+            {
+              "content": "a. Meaning, scope and importance of animal husbandry",
+              "objective": "Candidates should know the meaning (rearing of farm animals), scope (nutrition, health, etc.) and importance (source of food, employment, income, etc.) of farm animals"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Problems in animal production",
+          "subtopics": [
+            {
+              "content": "a. Problems in animal production",
+              "objective": "Candidates should know and understand the problems in animal production in West Africa and possible solutions"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Quality and safety standard of animal food products",
+          "subtopics": [
+            {
+              "content": "a. Quality and safety standard of animal food products",
+              "objective": "Candidates should be able to describe quality and safety standards, practices for maintaining standards, effects of consuming poor animal products and roles of agencies involved in animal food product safety and quality"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Classification of farm animals",
+          "subtopics": [
+            {
+              "content": "a. Classification based on digestive system: ruminants e.g. sheep, goat, cattle; non-ruminants (monogastrics) e.g. poultry, pigs; non-ruminant herbivores e.g. rabbits, grasscutter, guinea pigs",
+              "objective": "Candidates should be able to classify farm animals based on digestive system"
+            },
+            {
+              "content": "b. Concept of traditional (cattle, sheep, goat) and non-traditional farm animals (rabbit, grasscutter, snails)",
+              "objective": "Candidates should be able to distinguish traditional from non-traditional farm animals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Anatomy and Physiology of Farm Animals",
+      "topics": [
+        {
+          "id": 5,
+          "title": "Meaning of anatomy, physiology and the external orientation of farm animals",
+          "subtopics": [
+            {
+              "content": "a. Meaning of the terms: anatomy, physiology and the external orientation of farm animals",
+              "objective": "Candidates should understand the terms anatomy and physiology and know the parts and positions of external parts (orientation) of farm animals e.g. the head of the cow is anterior to the hind limb or udder"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Digestive system",
+          "subtopics": [
+            {
+              "content": "a. Comparative anatomy of digestive system of farm animals",
+              "objective": "Candidates should know the main features of the digestive systems of ruminants, non-ruminant herbivores and monogastrics and the differences in structure and functions"
+            },
+            {
+              "content": "b. Digestion and absorption processes in the various classes of farm animals",
+              "objective": "Candidates should understand digestion processes, the role of specific enzymes in digestion of carbohydrates, proteins, fats and oils, and the structures and processes involved in absorption of nutrients"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Central nervous system",
+          "subtopics": [
+            {
+              "content": "a. Parts of the Central Nervous System (CNS) and Autonomic Nervous System (ANS)",
+              "objective": "Candidates should be able to identify the parts of the CNS and ANS and describe their mode of action"
+            },
+            {
+              "content": "b. Functions of the ANS",
+              "objective": "Candidates should know the functions of the ANS, explain how nerve impulses are transmitted and how homeostasis is ensured"
+            },
+            {
+              "content": "c. Endocrine system: (i) endocrine glands and their functions; (ii) hormones and their functions",
+              "objective": "Candidates should know what endocrine glands are, their location and functions; hormones, their functions and mode of action, and the need to administer synthetic hormones"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Integumentary, skeletal and muscular systems",
+          "subtopics": [
+            {
+              "content": "a. Integumentary, skeletal and muscular systems",
+              "objective": "Candidates should know the structure and functions of the integumentary (skin), skeletal and muscular systems"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Reproductive system",
+          "subtopics": [
+            {
+              "content": "a. Anatomy of the reproductive system of poultry and livestock",
+              "objective": "Candidates should understand reproductive terms e.g. puberty, oestrous cycle, oestrus/anoestrus, ovulation, fertilization, libido, and know the main features of the reproductive system of poultry and livestock"
+            },
+            {
+              "content": "b. Functions of organs and parts of the reproductive system",
+              "objective": "Candidates should know the functions of the organs and parts of the reproductive system"
+            },
+            {
+              "content": "c. Reproductive processes",
+              "objective": "Candidates should describe the stages from puberty through mating to parturition, differences between poultry and livestock, and know reproductive hormones and their functions"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Circulatory system",
+          "subtopics": [
+            {
+              "content": "a. Structure and functions",
+              "objective": "Candidates should know the organs (heart, blood vessels), tissues (blood, lymph) and cells (blood cells) and their functions, and differences between pulmonary and systemic circulation"
+            },
+            {
+              "content": "b. Heart and pulse rate",
+              "objective": "Candidates should know the meaning of heart and pulse rate and interpret their values"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Respiratory system",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of respiration",
+              "objective": "Candidates should understand the term respiration and its importance"
+            },
+            {
+              "content": "b. Structure and functions of the respiratory system",
+              "objective": "Candidates should know the structure and functions of the parts of the respiratory system of livestock"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Excretory system",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of excretion",
+              "objective": "Candidates should understand the term excretion and its importance"
+            },
+            {
+              "content": "b. Structure and functions of the excretory system",
+              "objective": "Candidates should know the structure and functions of the parts of the excretory system of livestock"
+            },
+            {
+              "content": "c. Excretory products",
+              "objective": "Candidates should give examples of excretory products and how they are eliminated from the body"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Animal Nutrition",
+      "topics": [
+        {
+          "id": 13,
+          "title": "Introduction to animal nutrition",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance",
+              "objective": "Candidates should understand the term nutrition, its role in animal production (e.g. improves body resistance, production level) and basic terms such as nutrients, diet, ration, roughages, malnutrition, concentrates"
+            },
+            {
+              "content": "b. Modes of feeding",
+              "objective": "Candidates should know the differences in modes of feeding in non-ruminant herbivores, ruminants, carnivores and omnivores, and the influence of dentition on mode of feeding"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Feedstuffs and feed supplements",
+          "subtopics": [
+            {
+              "content": "a. Types, composition and functions of the feed nutrients",
+              "objective": "Candidates should know feedstuffs and supplements, their main composition and the functions of the major nutrients"
+            },
+            {
+              "content": "b. Classification of feedstuffs",
+              "objective": "Candidates should be able to group feedstuffs according to the major nutrients they supply"
+            },
+            {
+              "content": "c. Food tests",
+              "objective": "Candidates should be able to use simple food tests to detect carbohydrates, fats and oils, and proteins in feedstuffs"
+            },
+            {
+              "content": "d. Producers and suppliers of feedstuffs and supplements",
+              "objective": "Candidates should know major producers and suppliers of feedstuffs in the country"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Formulation and preparation of animal feeds",
+          "subtopics": [
+            {
+              "content": "a. Common terms used in feed formulation",
+              "objective": "Candidates should understand terms such as dry matter, diet, metabolizable energy, malnutrition"
+            },
+            {
+              "content": "b. Factors considered in the formulation of ration",
+              "objective": "Candidates should know factors such as age, physiological state of the animal and cost of feed ingredients"
+            },
+            {
+              "content": "c. Steps in the formulation of ration",
+              "objective": "Candidates should be able to use the Pearson Square Method to formulate a balanced ration"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Handling and storage of animal feeds",
+          "subtopics": [
+            {
+              "content": "a. Importance of feed storage and features of storage structures",
+              "objective": "Candidates should know the importance of feed storage and features of storage structures/containers"
+            },
+            {
+              "content": "b. Factors that affect the quality of stored feed",
+              "objective": "Candidates should know factors such as storage/ambient temperature, humidity, water content, pests and rodents, and follow practices in handling stored feed e.g. drying, fumigation"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Record keeping and estimation of cost of prepared feed",
+          "subtopics": [
+            {
+              "content": "a. Record keeping and estimation of cost of prepared feed",
+              "objective": "Candidates should be able to keep feed records and estimate the cost of prepared feed"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Pests of stored feed and their control",
+          "subtopics": [
+            {
+              "content": "a. Pests of stored feed and their control",
+              "objective": "Candidates should be able to identify common pests of stored feeds, their effects (damage, contamination), and preventive and control measures"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Animal Health",
+      "topics": [
+        {
+          "id": 19,
+          "title": "Meaning of terms",
+          "subtopics": [
+            {
+              "content": "a. Meaning of terms",
+              "objective": "Candidates should understand the terms disease, pest and parasite"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Signs of good and ill-health",
+          "subtopics": [
+            {
+              "content": "a. Signs of good and ill-health",
+              "objective": "Candidates should know the characteristics of healthy and sick animals and describe the signs and symptoms of disease in farm animals"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Factors that predispose animals to diseases",
+          "subtopics": [
+            {
+              "content": "a. Factors that predispose animals to diseases",
+              "objective": "Candidates should understand how factors such as overcrowding, poor nutrition and poor housing predispose animals to diseases, and know causes of stress and measures to reduce stress"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Effects of diseases, pests and parasites on animal production",
+          "subtopics": [
+            {
+              "content": "a. Effects of diseases, pests and parasites on animal production",
+              "objective": "Candidates should understand the effects on economic value of animals/products and income e.g. reduced value/output, loss of income, reduced quality of products"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Zoonotic diseases; their importance and prevention",
+          "subtopics": [
+            {
+              "content": "a. Zoonotic diseases; their importance and prevention",
+              "objective": "Candidates should understand the term zoonotic disease and its importance e.g. effect on human health and preventive methods"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Pathogens of farm animal diseases",
+          "subtopics": [
+            {
+              "content": "a. Classification of pathogens",
+              "objective": "Candidates should know the classes of pathogens (viruses, bacteria, fungi and protozoa)"
+            },
+            {
+              "content": "b. Pathogenic diseases and their economic importance",
+              "objective": "Candidates should know common pathogenic diseases and their economic importance in animal production"
+            },
+            {
+              "content": "c. Principles for prevention and control of diseases of farm animals",
+              "objective": "Candidates should know principles (e.g. nutrition, vaccination) with respect to cost, suitability and efficiency, and use prophylactics (coccidiostat, antibiotics, anti-stress drugs, vitamins)"
+            },
+            {
+              "content": "d. Management practices in the prevention and control of diseases of farm animals",
+              "objective": "Candidates should know practices such as deworming, dipping, dusting, treatment of wounds and sores, spraying and fumigation of animal houses, drug administration and precautions in the use of drugs"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Ectoparasites and endoparasites",
+          "subtopics": [
+            {
+              "content": "a. Types and examples of parasites",
+              "objective": "Candidates should know the two main types of parasites (ecto and endoparasites) and examples"
+            },
+            {
+              "content": "b. Structure, life cycle and mode of feeding",
+              "objective": "Candidates should know the structure, life cycle and mode of feeding of common endo- and ectoparasites"
+            },
+            {
+              "content": "c. Conditions that influence parasite population",
+              "objective": "Candidates should know conditions that affect parasite population and how they could be changed to reduce it"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "title": "Prevention and control of parasites",
+          "subtopics": [
+            {
+              "content": "a. Prevention and control of parasites",
+              "objective": "Candidates should know measures such as deworming, drenching, dipping, farm sanitation, and the use of appropriate equipment and chemicals"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "title": "Economic importance of parasites",
+          "subtopics": [
+            {
+              "content": "a. Economic importance of parasites",
+              "objective": "Candidates should know the economic importance of ecto- and endoparasites (i) on the host e.g. ectoparasites damage skin and hides, suck blood; endoparasites damage internal organs; (ii) on animal products e.g. loss of income, increased expenditure due to control measures"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Genetic Principles and Animal Improvement",
+      "topics": [
+        {
+          "id": 28,
+          "title": "Heredity, basic genetic terms and Mendel's first law of inheritance",
+          "subtopics": [
+            {
+              "content": "a. Heredity, basic genetic terms and Mendel's first law of inheritance",
+              "objective": "Candidates should understand heredity and genetic terms (e.g. gene, genotype, phenotype, sex-linkage), cell division (meiosis and mitosis), inheritance of traits and Mendel's first law"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "title": "Meaning, objectives and benefits of animal improvement",
+          "subtopics": [
+            {
+              "content": "a. Meaning, objectives and benefits of animal improvement",
+              "objective": "Candidates should understand animal improvement and know its objectives and benefits e.g. disease resistance, better growth rate"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "title": "Performance traits of improved and unimproved animals",
+          "subtopics": [
+            {
+              "content": "a. Performance traits of improved and unimproved animals",
+              "objective": "Candidates should be able to analyze data to determine superiority of improved animals based on genotype and phenotype"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "title": "Methods of animal improvement; advantages and disadvantages",
+          "subtopics": [
+            {
+              "content": "a. Methods of animal improvement; advantages and disadvantages",
+              "objective": "Candidates should know methods (introduction, selection, breeding), types of breeding (e.g. cross breeding, line breeding) and their advantages and disadvantages"
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Nutritional and environmental factors affecting animal improvement",
+          "subtopics": [
+            {
+              "content": "a. Nutritional and environmental factors affecting animal improvement",
+              "objective": "Candidates should know the nutritional and environmental factors that affect animal improvement"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Artificial insemination",
+          "subtopics": [
+            {
+              "content": "a. Meaning and process of artificial insemination (A.I.)",
+              "objective": "Candidates should understand the term A.I., describe the technique and name tools and equipment used"
+            },
+            {
+              "content": "b. Advantages of A.I.",
+              "objective": "Candidates should know the advantages of A.I."
+            },
+            {
+              "content": "c. Signs of heat (oestrus) and handling procedures in the collection and storage of semen",
+              "objective": "Candidates should be able to detect heat through signs of heat and know proper handling in collection and storage of semen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section F: Introduction to Environmental Physiology",
+      "topics": [
+        {
+          "id": 34,
+          "title": "Internal and external environment of animals",
+          "subtopics": [
+            {
+              "content": "a. Internal and external environment of animals",
+              "objective": "Candidates should know what constitutes the internal environment (e.g. blood glucose level, body temperature) and external environment (e.g. ambient temperature, humidity, wind) and examples of acceptable levels"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "title": "The role of the nervous and endocrine systems in homeostasis and animal's response to stimuli",
+          "subtopics": [
+            {
+              "content": "a. The role of the nervous and endocrine systems in homeostasis and animal's response to stimuli",
+              "objective": "Candidates should know the role of these systems in environmental awareness, responses to stimuli and maintenance of homeostasis e.g. normal levels of body temperature, respiration and heart rate"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "title": "Determination of room temperature, body temperature and respiration rate in farm animals",
+          "subtopics": [
+            {
+              "content": "a. Determination of room temperature, body temperature and respiration rate in farm animals",
+              "objective": "Candidates should know physiological and behavioural responses to heat, cold, exercise, and be able to use equipment for measuring temperature, humidity, respiration rate and heart beat, and interpret the data"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "title": "Effects of climate on farm animals",
+          "subtopics": [
+            {
+              "content": "a. Effects of climate on farm animals",
+              "objective": "Candidates should know indirect and direct effects of climate (e.g. disease prevalence, feed quality and quantity, heat stress, increased abortion) and understand thermo-neutral zone and optimum temperature in relation to productivity"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "title": "Modification of animal environment and management practices to reduce stress on animals",
+          "subtopics": [
+            {
+              "content": "a. Modification of animal environment and management practices to reduce stress on animals",
+              "objective": "Candidates should know ways of modifying the environment (housing, shading, cooling) and management (better feeding, time of grazing), and stress-minimizing strategies e.g. house design and lay-out, cool water, modified feeds, proper timing of drug administration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section G: Monogastric and Domestic Pet Production",
+      "topics": [
+        {
+          "id": 39,
+          "title": "Poultry production",
+          "subtopics": [
+            {
+              "content": "a. Definition and characteristics of poultry",
+              "objective": "Candidates should understand the term poultry and know its characteristics e.g. possession of beaks, wings, feathers"
+            },
+            {
+              "content": "b. Classes of poultry",
+              "objective": "Candidates should know the types of poultry e.g. chicken, turkey, ducks, guinea fowls and ostriches"
+            },
+            {
+              "content": "c. Breeds and types of poultry",
+              "objective": "Candidates should know breeds: chicken e.g. Rhode Island Red, Plymouth Rock; guinea fowl e.g. Grey, Red-wattled (Pearl variety); turkey e.g. Broad Breasted Bronze; ducks e.g. Muscovy, Khaki Campbell; ostriches e.g. Blue Neck, Red Neck"
+            },
+            {
+              "content": "d. Importance/role of poultry production",
+              "objective": "Candidates should know the importance of producing the various types of poultry"
+            },
+            {
+              "content": "e. Systems of poultry production",
+              "objective": "Candidates should know the extensive, intensive and semi-intensive systems and their advantages and disadvantages"
+            },
+            {
+              "content": "f. Incubation and hatchery practices: (i) terminologies; (ii) natural and artificial incubation; (iii) selection of eggs for hatching; (iv) conditions necessary for hatching of eggs; (v) incubation process; (vi) candling of eggs; (vii) marketing of day-old chicks",
+              "objective": "Candidates should understand terms such as fertile egg, hatchability, incubation and broodiness; differentiate natural and artificial incubation; select eggs for hatching; know incubation periods and conditions; describe the incubation process and hatchery practices (fumigation, temperature); understand candling; and know techniques and precautions for marketing day-old chicks"
+            },
+            {
+              "content": "g. Management practices",
+              "objective": "Candidates should know housing, breeding, brooding, feeding, sanitation, pest and disease control, identification and record keeping"
+            },
+            {
+              "content": "h. Processing and marketing of poultry",
+              "objective": "Candidates should know slaughtering and processing, quality control, packaging, preservation and storage, marketing outlets, transportation and advertisement"
+            },
+            {
+              "content": "i. Prospects of producing the various types of poultry",
+              "objective": "Candidates should know prospects, consumer preferences, market availability and cost"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "title": "Pig production",
+          "subtopics": [
+            {
+              "content": "a. Types, breeds and characteristics",
+              "objective": "Candidates should know types of pig (bacon, lard and pork types), breeds (e.g. Yorkshire, Ashanti Black, Large White, Landrace) and their characteristics"
+            },
+            {
+              "content": "b. Importance of pig production",
+              "objective": "Candidates should know the importance to the economy i.e. source of employment, income, insulin used in pharmaceutical industries"
+            },
+            {
+              "content": "c. Systems of keeping pigs",
+              "objective": "Candidates should describe intensive, semi-intensive and extensive systems and their advantages and disadvantages"
+            },
+            {
+              "content": "d. Management practices",
+              "objective": "Candidates should know management practices e.g. breeding, housing and feeding"
+            },
+            {
+              "content": "e. Slaughtering, processing and marketing of pigs",
+              "objective": "Candidates should know techniques of slaughtering, processing and marketing e.g. bacon making, quality control, packaging, storage, marketing outlets and advertisements"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "title": "Domestic pets",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of pets",
+              "objective": "Candidates should know the meaning of 'pet' (e.g. cat, dog, parrot) and the roles pets play e.g. security, income, shepherding, companionship"
+            },
+            {
+              "content": "b. Management of pets",
+              "objective": "Candidates should know housing, feeding, sanitation, breeding, grooming and care, pests and diseases and their control; and the importance of pet licencing and regular vaccination"
+            },
+            {
+              "content": "c. Training of pets",
+              "objective": "Candidates should know animal behaviour and reasons for training of pets"
+            },
+            {
+              "content": "d. Marketing of pets",
+              "objective": "Candidates should know marketing strategies and the value chain process in the marketing of pets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section H: Ruminant Production",
+      "topics": [
+        {
+          "id": 42,
+          "title": "Sheep and goat production",
+          "subtopics": [
+            {
+              "content": "a. Common breeds, distribution and characteristics",
+              "objective": "Candidates should know common breeds, their geographical distribution, distinguishing features between sheep and goats, and characteristics of breeds e.g. body size, hair cover and horn shape"
+            },
+            {
+              "content": "b. Importance of sheep and goats",
+              "objective": "Candidates should know the social (e.g. religious), economic (income, hides and skin for leather) and nutritional (meat) importance, and production requirements using a value chain approach"
+            },
+            {
+              "content": "c. Management practices",
+              "objective": "Candidates should know hoof trimming, housing, feeding, sanitation, disease and pest control, and determine age of sheep and goats by dentition"
+            },
+            {
+              "content": "d. Common parasites and diseases and their control",
+              "objective": "Candidates should know common parasites (ticks and worms) and diseases (e.g. anthrax, mastitis, foot rot), signs/symptoms and control measures"
+            },
+            {
+              "content": "e. Processing and marketing",
+              "objective": "Candidates should know techniques to ensure meat quality, safety and consumer satisfaction including slaughtering and processing, quality control, preservation and storage, packaging, advertising and marketing outlets"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "title": "Beef cattle production",
+          "subtopics": [
+            {
+              "content": "a. Breeds and characteristics",
+              "objective": "Candidates should know common breeds of beef cattle in West Africa and Europe and their characteristics and general structure"
+            },
+            {
+              "content": "b. Importance of beef cattle production",
+              "objective": "Candidates should know the nutritional value of beef, use of hides, horns, bones and manure, and social and economic value of beef and live cattle"
+            },
+            {
+              "content": "c. Common production systems",
+              "objective": "Candidates should know systems e.g. extensive, pastoral, agro-pastoral, semi-intensive, intensive feedlot, pastures, their characteristics, strengths and weaknesses"
+            },
+            {
+              "content": "d. Planning, production and management of cattle for beef and traction",
+              "objective": "Candidates should know the requirements (value chain approach), selection of management system, foundation stock, and qualities of bulls and cows selected for traction"
+            },
+            {
+              "content": "e. General management practices",
+              "objective": "Candidates should have skills in housing, feeding, breeding, fattening etc. and knowledge of training of yoked cattle"
+            },
+            {
+              "content": "f. Processing and marketing",
+              "objective": "Candidates should know techniques of slaughtering and processing of carcass, maintenance of safety standards, packaging and sale of meat products"
+            },
+            {
+              "content": "g. Major problems in beef cattle production",
+              "objective": "Candidates should know negative effects of poor management on the environment, feed and water shortages, cattle theft, pests etc. and their solutions"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "title": "Dairy cattle production",
+          "subtopics": [
+            {
+              "content": "a. Breeds and features of dairy cow",
+              "objective": "Candidates should know examples of pure and cross bred dairy breeds in tropical and temperate regions and distinguishing features of a dairy cow"
+            },
+            {
+              "content": "b. Characteristics, sources and importance of milk",
+              "objective": "Candidates should know composition and nutritional value of fresh milk, sources of milk (goats, sheep, buffaloes, camels and cattle) and importance of milk including food, income, employment, trade"
+            },
+            {
+              "content": "c. Management practices",
+              "objective": "Candidates should know requirements using a value chain approach e.g. market demand, inputs for wholesome milk, and selecting suitable breeds and management systems"
+            },
+            {
+              "content": "d. Diseases and their control",
+              "objective": "Candidates should know symptoms and methods of controlling mastitis, tuberculosis and ketosis"
+            },
+            {
+              "content": "e. Production, processing and marketing of milk and dairy products",
+              "objective": "Candidates should know equipment for milking, milk handling and processing; pasteurization; products e.g. yoghurt, cottage cheese, tinned milk, powdered milk; consequences of consuming contaminated milk; quality and safety standards; packaging, storage and marketing"
+            },
+            {
+              "content": "f. Problems of dairy cattle production in warm climates",
+              "objective": "Candidates should know effects of warm climate on dairy animals and milk production and the solutions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section I: Range and Pasture Management",
+      "topics": [
+        {
+          "id": 45,
+          "title": "Introduction to range and pastures",
+          "subtopics": [
+            {
+              "content": "a. Basic terminologies in pasture and range management",
+              "objective": "Candidates should understand terms e.g. pasture, pasture rotation, stocking rate, range, forage crops"
+            },
+            {
+              "content": "b. Types of pasture and their features",
+              "objective": "Candidates should know natural/range and artificial/cultivated pastures and their features"
+            },
+            {
+              "content": "c. Importance of pastures and forage crops in animal production",
+              "objective": "Candidates should know the role of forage and pasture crops in animal production"
+            },
+            {
+              "content": "d. Factors that affect the productivity of different types of pasture",
+              "objective": "Candidates should know factors e.g. rainfall, soil fertility, temperature, weeds"
+            },
+            {
+              "content": "e. Major forage crops",
+              "objective": "Candidates should know common and scientific names of major forage crops and their classification"
+            },
+            {
+              "content": "f. Poisonous plants in pasture",
+              "objective": "Candidates should know poisonous plants in pasture e.g. Lantana camara, Crotalaria rotundus"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "title": "Pasture establishment and management",
+          "subtopics": [
+            {
+              "content": "a. Qualities of good pasture and forage species",
+              "objective": "Candidates should know qualities e.g. high productivity, palatability and fast growth"
+            },
+            {
+              "content": "b. Establishment of pasture",
+              "objective": "Candidates should know cultural practices e.g. site selection, land preparation, methods of propagation (seeding, vegetative means), their merits and demerits"
+            },
+            {
+              "content": "c. Improving natural pastures",
+              "objective": "Candidates should understand the need and techniques for improving natural pastures"
+            },
+            {
+              "content": "d. Management of cultivated pastures",
+              "objective": "Candidates should have skills in managing cultivated pastures e.g. control of fire, proper stocking rate, disease prevention and control"
+            },
+            {
+              "content": "e. Harvesting of forage crops",
+              "objective": "Candidates should know tools/equipment for harvesting forage crops and yield determination"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "title": "Forage conservation and utilization",
+          "subtopics": [
+            {
+              "content": "a. Forage conservation and its importance",
+              "objective": "Candidates should know forage conservation and its importance, forms of conserved forage (hay and silage), and differences between hay and silage based on physical, chemical and nutritive properties"
+            },
+            {
+              "content": "b. Preparation of hay and silage",
+              "objective": "Candidates should know processes and precautions e.g. cutting herbage at the right time, proper compacting, use of additives"
+            },
+            {
+              "content": "c. Utilization of crop residue in feeding animals",
+              "objective": "Candidates should know types of crop residue and merits and demerits of using residue for feeding ruminants"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section J: Non-Traditional Animal Production",
+      "topics": [
+        {
+          "id": 48,
+          "title": "Rabbit and grasscutter production",
+          "subtopics": [
+            {
+              "content": "a. Common breeds",
+              "objective": "Candidates should know common breeds of rabbits and grasscutter"
+            },
+            {
+              "content": "b. Importance of producing rabbits and grasscutters",
+              "objective": "Candidates should know the importance e.g. source of meat, pelt, income"
+            },
+            {
+              "content": "c. Management practices",
+              "objective": "Candidates should know housing, feeding, sanitation, breeding, disease and pest control and record keeping"
+            },
+            {
+              "content": "d. Processing and marketing",
+              "objective": "Candidates should know activities involved in processing and marketing of rabbits and grasscutter"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "title": "Snail farming",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance",
+              "objective": "Candidates should know the meaning and importance of snail farming"
+            },
+            {
+              "content": "b. External features of snails",
+              "objective": "Candidates should know external features of snails and their functions"
+            },
+            {
+              "content": "c. Types of species",
+              "objective": "Candidates should know types of species used for snail farming"
+            },
+            {
+              "content": "d. Site selection",
+              "objective": "Candidates should know factors to consider in site selection"
+            },
+            {
+              "content": "e. Management practices",
+              "objective": "Candidates should know housing, feeding, sanitation, breeding, pest and disease control, record keeping, processing and marketing"
+            },
+            {
+              "content": "f. Processing and marketing of snails",
+              "objective": "Candidates should know steps involved in processing snails and marketing"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "title": "Establishing enterprises in animal husbandry",
+          "subtopics": [
+            {
+              "content": "a. Establishing enterprises in animal husbandry",
+              "objective": "Candidates should know animal production enterprises, and factors to be considered and procedures in establishing an animal production enterprise"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Practical Animal Husbandry",
+      "topics": [
+        {
+          "id": 51,
+          "title": "Breeds of farm animals",
+          "subtopics": [
+            {
+              "content": "1. Breeds of farm animals",
+              "objective": "Candidates should be able to identify common types and breeds of farm animals"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Classification of farm animals",
+          "subtopics": [
+            {
+              "content": "2. Classification of farm animals",
+              "objective": "Candidates should be able to classify farm animals based on type of digestive system i.e. ruminants, non-ruminant (monogastrics) and non-ruminant herbivores"
+            }
+          ]
+        },
+        {
+          "id": 53,
+          "title": "Anatomy and physiology of farm animals",
+          "subtopics": [
+            {
+              "content": "3. Anatomy and physiology of farm animals",
+              "objective": "Candidates should be able to describe the orientation of external parts, draw and label animals and their parts, and identify and draw major anatomical structures in the various body systems, differences between the structures and their functions"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "title": "Animal nutrition",
+          "subtopics": [
+            {
+              "content": "4. Animal nutrition",
+              "objective": "Candidates should be able to identify common feedstuffs and supplements (e.g. maize, fish meal, oyster shell) and state the major nutrients; perform simple food tests for carbohydrates, fats and oils and protein; formulate feed using the Pearson Square Method, estimate cost of prepared feed and keep feed records; identify pests of stored feed and feedstuffs, their effects and control"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "title": "Main pests and parasites of farm animals",
+          "subtopics": [
+            {
+              "content": "5. Main pests and parasites of farm animals",
+              "objective": "Candidates should be able to identify the main pests and parasites (ectoparasites and endoparasites), their effects and control, and draw and label the life cycles of tapeworm and roundworm"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "title": "Diseases of farm animals; their prevention and control",
+          "subtopics": [
+            {
+              "content": "6. Diseases of farm animals; their prevention and control",
+              "objective": "Candidates should be able to identify main diseases and causal agents, and know simple preventive and control measures (drenching, dipping, spraying, vaccination) and the equipment and tools used"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "title": "Artificial insemination",
+          "subtopics": [
+            {
+              "content": "7. Artificial insemination",
+              "objective": "Candidates should be able to identify the tools and equipment used in artificial insemination and their uses"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "title": "Environmental physiology",
+          "subtopics": [
+            {
+              "content": "8. Environmental physiology",
+              "objective": "Candidates should be able to identify and use equipment to determine parameters such as temperature, relative humidity, respiration rate and heart beat, and interpret the data"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "title": "Management practices",
+          "subtopics": [
+            {
+              "content": "9. Management practices",
+              "objective": "Candidates should be able to identify tools and equipment used for housing, breeding, brooding, feeding, identification, debeaking, castration, dehorning and candling, and their maintenance"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "title": "Animal products and by-products",
+          "subtopics": [
+            {
+              "content": "10. Animal products and by-products",
+              "objective": "Candidates should be able to identify animal products and by-products such as milk, skin, blood meal and feathers, and know their uses"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "title": "Range and pasture management",
+          "subtopics": [
+            {
+              "content": "11. Range and pasture management",
+              "objective": "Candidates should be able to identify forage crops (e.g. Panicum maximum), poisonous plants (e.g. Lantana camara), conserved forage (hay and silage), and tools and equipment used in cultivation and management of pastures and conservation of forage"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "title": "Animal housing and structures",
+          "subtopics": [
+            {
+              "content": "12. Animal housing and structures",
+              "objective": "Candidates should be able to identify suitable materials for constructing animal houses and structures (e.g. cement, bamboo, wire mesh, wood) and appropriate structures for various farm animals (e.g. hutches for rabbits, open-sided houses for pigs)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "subject": "General Mathematics / Mathematics (Core)",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Number and Numeration",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Number Bases, Modular Arithmetic, Fractions, Indices, Logarithms, Sets, Logic, Surds, Matrices, Ratios, Percentages, and Financial Arithmetic",
+          "subtopics": [
+            {
+              "content": "Base conversions, modulo operations, fractions/decimals, standard form, laws of indices, logarithm tables, set operations, Venn diagrams, logical statements, simple surd operations, 2x2 matrices, ratios, proportions, financial calculations, variations",
+              "objective": "Convert between number bases and perform basic base arithmetic; solve modular arithmetic problems; apply approximation and significant figures; evaluate expressions using laws of indices and logarithms; solve set problems using Venn diagrams; evaluate logical statements; simplify and rationalize simple surds; perform $2\\times2$ matrix operations and determinants; calculate ratios, rates, simple/compound interest, depreciation, annuities, and variation problems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Algebraic Processes",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Algebraic Expressions, Linear/Quadratic Equations, Subject of Formula, Inequalities, Fractions, and Functions",
+          "subtopics": [
+            {
+              "content": "Algebraic formulation, expansion, factorization, binary operations, linear equations, simultaneous linear equations, formula subject change, quadratic factorization/formula, graphs of quadratic functions, linear inequalities, algebraic fractions, mapping functions",
+              "objective": "Formulate, expand, and factorize algebraic expressions; execute binary operations; solve linear and simultaneous linear equations; change the subject of a formula; solve quadratic equations by factoring, completing the square, or formula; plot linear and quadratic graphs to obtain roots and gradients; solve linear inequalities in 1 or 2 variables; simplify algebraic fractions; identify mappings and function rules."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Mensuration & Geometry",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Mensuration, Plane Geometry, Geometric Constructions, Loci, and Coordinate Geometry",
+          "subtopics": [
+            {
+              "content": "Perimeters, arc lengths, areas of plane shapes/sectors, surface areas and volumes of 3D solids (cubes, cylinders, cones, spheres), latitude/longitude, angle properties, parallel lines, triangle/polygon properties, circle theorems, geometric constructions, 2D loci, straight line coordinate geometry",
+              "objective": "Calculate arc lengths, perimeters, plane areas, and 3D surface areas/volumes; calculate distances along latitudes and longitudes; apply geometric angle rules, triangle congruence, polygon sum of angles, and circle theorems; construct bisectors, angles, triangles, and quadrilaterals; determine 2D loci intersections; calculate line midpoints, distances, gradients, and straight line equations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Trigonometry, Calculus, Statistics, Probability, Vectors & Transformations",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Trigonometric Ratios, Bearings, Introductory Calculus, Statistics, Probability, Vectors, and Transformations",
+          "subtopics": [
+            {
+              "content": "Sine/Cosine/Tangent ratios, trigonometric graphs, angles of elevation/depression, bearings, basic differentiation/integration, frequency tables, Ogives, mean/median/mode, standard deviation, classical probability, vector operations, Cartesian transformations",
+              "objective": "Apply basic trigonometric ratios ($30^\\circ, 45^\\circ, 60^\\circ$) and solve elevation/depression/bearing problems; differentiate basic algebraic functions and evaluate simple definite integrals; construct frequency tables, histograms, pie charts, and Ogives; calculate measures of central tendency and dispersion (range, mean deviation, standard deviation); calculate simple and compound probabilities; represent vectors and perform vector operations; execute Cartesian reflections, rotations, translations, and enlargements."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

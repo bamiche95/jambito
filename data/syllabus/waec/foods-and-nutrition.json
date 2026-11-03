@@ -1,0 +1,71 @@
+{
+  "subject": "Foods and Nutrition",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Nutrition and Health",
+          "subtopics": [
+            {
+              "content": "Introduction to nutrition, career opportunities, basic food nutrients, dietary deficiencies, metabolism, food composition tables, and nutrient testing",
+              "objective": "Understand basic nutrition terms and factors affecting nutrition; identify career options and requirements in Foods and Nutrition; study nutrient sources, functions, deficiencies, digestion/absorption, and perform physical/chemical food tests."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Food Laboratory and Equipment",
+          "subtopics": [
+            {
+              "content": "Kitchen design, large/small equipment care, safety and first aid, meal management, nutritional needs for special groups, and sanitation",
+              "objective": "Plan different types of kitchens and choose appropriate cleaning agents; select, use, and maintain kitchen equipment; prevent kitchen accidents and apply first aid; apply meal planning principles and plan meals for special nutritional/health conditions; maintain personal, kitchen, and food hygiene."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Food Commodities",
+          "subtopics": [
+            {
+              "content": "Animal products, cereals/grains, fruits and vegetables, legumes/oily seeds, fats/oils, starchy roots, and plantain",
+              "objective": "Classify, select, and store animal products (milk, eggs, meat, fish); understand the role and versatility of cereals and grains; classify fruits/vegetables and state their nutritive value; study legumes, fats/oils, starchy roots, and plantains in the diet."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Food Storage and Preservation",
+          "subtopics": [
+            {
+              "content": "Food spoilage, principles and methods of food preservation, perishable and non-perishable food storage",
+              "objective": "Identify causes and agents of food spoilage; apply principles and methods of preservation; organize storage space and use storage equipment properly."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Food Preparation and Flour Cookery",
+          "subtopics": [
+            {
+              "content": "Cooking methods, heat transfer, cooking terms, food additives/adulteration, flour cookery, batters/doughs, cakes, pastries, yeast mixtures, and cake decoration",
+              "objective": "Apply moist/dry heat cooking methods and principles of heat transfer; define cooking terms and evaluate food additives/adulteration; master flour cookery, raising agents, batters, doughs, cakes, pastries, yeast mixtures, and cake icing/decorations."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Beverages, Convenience Foods, Rechauffé, Festive Dishes, Art of Entertaining, Experimental Cookery, Consumer Education, and Self-Employment",
+          "subtopics": [
+            {
+              "content": "Alcoholic/non-alcoholic beverages, convenience foods, leftover dishes, festive meals, entertainment etiquette, recipe development, consumer rights, food budgeting, and catering entrepreneurship",
+              "objective": "Classify and prepare beverages; evaluate convenience foods; prepare rechauffé (leftover) and festive dishes; master table settings, service styles, and entertainment etiquette; experiment with local ingredients to develop new recipes; apply consumer education, food budgeting, and bulk purchasing; understand catering entrepreneurship, work ethics, and food packaging."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

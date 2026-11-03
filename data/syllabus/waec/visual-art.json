@@ -1,0 +1,56 @@
+{
+  "subject": "Visual Art",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Papers 1 & 2: General Knowledge in Art & Art History",
+      "topics": [
+        {
+          "id": 1,
+          "title": "General Knowledge in Art",
+          "subtopics": [
+            {
+              "content": "Elements and principles of design, perspective types (linear, aerial, foreshortening), care and maintenance of art tools/materials, art terminology, and inter-relationships of the visual and performing arts",
+              "objective": "Identify and apply art elements and principles in visual compositions; differentiate perspective techniques; manage and maintain art equipment; define standard art terms; explain the inter-relationships among visual, performing, and literary arts."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Art of West Africa",
+          "subtopics": [
+            {
+              "content": "Ancient traditional West African art (Nok, Ife, Benin, Igbo-Ukwu, Senufo, Dogon, Ashanti, etc.), modern traditional art/crafts (Kente, Adinkra, Osogbo art, Bida brass, pottery), contemporary art institutions/movements, cultural festivals, and prominent West African artists",
+              "objective": "Analyze ancient West African sculptures, masks, and indigenous art forms; evaluate modern traditional art forms, crafts, and decorative motifs; examine the role of art institutions, festivals, and major West African contemporary artists."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pre-historic, Ancient Egyptian, and Western Art",
+          "subtopics": [
+            {
+              "content": "Pre-historic art (Stone Ages), Ancient Egyptian art (Old, Middle, New Kingdoms), Greek art periods, Medieval art, 19th-century movements (Impressionism, Post-Impressionism), Renaissance art, and 20th-century Cubism (African art influences)",
+              "objective": "Trace historical developments, stylistic features, and cultural contexts of Pre-historic, Egyptian, Greek, Medieval, Renaissance, 19th-century, and 20th-century Western art movements."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 3: Practical Art Execution",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Drawing, 2-Dimensional Creative Design, and 3-Dimensional Creative Design",
+          "subtopics": [
+            {
+              "content": "Part A: Drawing from objects, nature, or life. Part B (2D): Graphic design (lettering, posters, book illustration, printmaking, packaging, computer graphics), textile design (batik, tie-dye, screen printing, appliqué, tapestry), picture-making (painting/mural, photography, mosaic, collage). Part C (3D): Sculpture, product modeling, ceramics, and traditional crafts (basketry, jewelry, calabash decoration)",
+              "objective": "Execute observational drawings from object groups, natural forms, or human models; design two-dimensional projects across graphics, textiles, and picture-making; produce three-dimensional artworks in sculpture, ceramics, product modeling, or traditional crafts accompanied by working drawings."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "subject": "Geography",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Paper 3: Elements of Practical and Physical Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Map Work, Elementary Surveying, GIS, Statistical Diagrams, Earth Systems, Geomorphology, Weather/Climate, Vegetation, Soils, and Environmental Issues",
+          "subtopics": [
+            {
+              "content": "Contour map reading, scale, gradients, profiles, drainage patterns, surveying instruments, GIS components/uses, statistical charts, planetary earth, rocks, tectonic/denudational landforms, weather instruments, Koppen climate classification, climate change, vegetation types, soil profile/conservation, environmental resources and hazards",
+              "objective": "Read and interpret contoured survey maps, calculate scales, gradients, and profiles; understand elementary chain/compass surveying; master GIS concepts, data sources, and applications; construct statistical maps and diagrams; explain earth structure, rotation/revolution, ocean currents, and salinity; classify rocks and tectonic landforms (mountains, karsts, coasts); analyze weathering, mass movement, wind/water erosion; use weather instruments and interpret climatic charts/data; analyze climate change, world vegetation types, soil profile formation, soil erosion, and environmental conservation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 2: Economic, Human, Regional Geography and Field Work",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Economic and Human Geography",
+          "subtopics": [
+            {
+              "content": "World population growth/distribution, rural/urban settlements, migration, transport modes, industrial classification/location, trade, and tourism",
+              "objective": "Analyze world population patterns, growth rates, and migration; distinguish settlement types, functions, and rural-urban interactions; evaluate transport modes and economic development impacts; classify industries and factors affecting location; examine national/international trade and tourism."
+            }
+          ],
+          "regionalGeography": [
+            {
+              "country": "Regional Geography of Home Country (e.g. Nigeria / Ghana / Sierra Leone / Liberia / Senegambia)",
+              "content": "Physical setting, population, primary activities (agriculture, mining, fishing, lumbering), manufacturing, energy, transport, trade, tourism, environmental development issues, and regional integration (ECOWAS)",
+              "objective": "Demonstrate comprehensive knowledge of home country's broad outline, physical relief, climate, population distribution, agricultural systems, mineral/power resources, transport networks, industrial zones, trade, tourism, and development/environmental concerns."
+            },
+            {
+              "country": "Regional Geography of Africa",
+              "content": "African physical features, minerals, irrigation agriculture (Nile/Niger), plantation farming, oil production, lumbering, gold/copper mining, population distribution, and ECOWAS",
+              "objective": "Analyze Africa's broad physical outline, climate, and mineral distribution; detail selected case studies: Nile/Niger irrigation, West/East Africa plantations, Nigeria/Ghana/Libya oil, Equatorial lumbering, South Africa gold mining, Zambia/Zaire copper mining, and ECOWAS objectives."
+            }
+          ],
+          "fieldWork": [
+            {
+              "topic": "Local Fieldwork Investigation",
+              "content": "Practical field studies on land use, market surveys, traffic flow, journey to work, and local erosion rates",
+              "objective": "Execute practical fieldwork observation, data collection, and analysis on local land use, commercial market trends, traffic flow, commuting patterns, or soil erosion."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

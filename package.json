@@ -18,6 +18,7 @@
     "start": "next start",
     "lint": "eslint",
     "icons": "node scripts/generate-icons.mjs",
+    "import:waec": "node scripts/import-waec-syllabus.mjs",
     "verify:deps": "node --no-experimental-require-module scripts/verify-server-deps.mjs",
     "check:mail": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-mail.mjs",
     "check:brevo": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-brevo.mjs",

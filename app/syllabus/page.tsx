@@ -7,6 +7,7 @@ import Breadcrumbs from "@/components/syllabus/Breadcrumbs";
 import JsonLd from "@/components/syllabus/JsonLd";
 import SyllabusBrowser from "@/components/syllabus/SyllabusBrowser";
 import {
+  getSyllabusExamSummaries,
   getSyllabusSummaries,
   getSyllabusTotals,
   SYLLABUS_CATEGORIES,
@@ -14,19 +15,31 @@ import {
 import { SITE_URL } from "@/lib/site";
 
 /**
- * JAMB syllabus index.
+ * Syllabus hub — every exam board the site publishes.
  *
  * Fully static: the data lives in the bundle, so this page is prerendered at
  * build time and served from the CDN/PWA cache. The only JavaScript it ships is
  * the `SyllabusBrowser` search island — every subject link is already in the
  * HTML for crawlers.
+ *
+ * Board cards up top are the fast path ("I write WAEC"); the combined list below
+ * is for anyone comparing subjects across boards or searching by name. Adding a
+ * board needs no change here: it comes from `getSyllabusExamSummaries()`.
  */
 
 const totals = getSyllabusTotals();
 const summaries = getSyllabusSummaries();
+const exams = getSyllabusExamSummaries();
+const examNames = exams.map((exam) => exam.name).join(" and ");
 
-const PAGE_TITLE = "JAMB Syllabus — All Subjects, Topics & Objectives";
-const PAGE_DESCRIPTION = `Browse the official JAMB (UTME) syllabus for all ${totals.subjects} subjects: ${totals.topics} topics and ${totals.objectives.toLocaleString("en-US")} candidate objectives, each with free CBT practice.`;
+/** One line of framing per board; falls back to a generic line. */
+const BOARD_BLURBS: Record<string, string> = {
+  jamb: "The UTME brochure outline — exactly what the computer-based test can ask you.",
+  waec: "The WASSCE outline, including the trade and vocational papers most sites skip.",
+};
+
+const PAGE_TITLE = `${examNames} Syllabus — All Subjects, Topics & Objectives`;
+const PAGE_DESCRIPTION = `Browse the official ${examNames} syllabuses: all ${totals.subjects} subjects, ${totals.topics} topics and ${totals.objectives.toLocaleString("en-US")} candidate objectives, each with free CBT practice.`;
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -46,12 +59,12 @@ const HOW_TO_USE = [
   {
     icon: BookMarked,
     title: "1. Study the outline",
-    body: "Open a subject and every section of the official outline is there — from “Number Bases” to “Federalism” — so you never revise a topic JAMB has dropped.",
+    body: "Open a subject and every section of the official outline is there — from “Number Bases” to “Basketry” — so you never revise a topic the board has dropped.",
   },
   {
     icon: Target,
     title: "2. Read the objectives",
-    body: "Each content item sits beside the candidate objective JAMB expects. That wording tells you the depth required: define, calculate, compare or explain.",
+    body: "Each content item sits beside the candidate objective the board expects. That wording tells you the depth required: define, calculate, compare or explain.",
   },
   {
     icon: Zap,
@@ -68,16 +81,30 @@ export default function SyllabusIndexPage() {
     description: PAGE_DESCRIPTION,
     url: `${SITE_URL}/syllabus`,
     isPartOf: { "@type": "WebSite", name: "CBT-Practice", url: SITE_URL },
-    mainEntity: {
-      "@type": "ItemList",
-      numberOfItems: summaries.length,
-      itemListElement: summaries.map((subject, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: `JAMB ${subject.name} Syllabus`,
-        url: `${SITE_URL}${subject.href}`,
-      })),
-    },
+    mainEntity: [
+      {
+        "@type": "ItemList",
+        name: "Exam boards",
+        numberOfItems: exams.length,
+        itemListElement: exams.map((exam, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: `${exam.label} Syllabus`,
+          url: `${SITE_URL}${exam.href}`,
+        })),
+      },
+      {
+        "@type": "ItemList",
+        name: "Subjects",
+        numberOfItems: summaries.length,
+        itemListElement: summaries.map((subject, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: `${subject.exam} ${subject.name} Syllabus`,
+          url: `${SITE_URL}${subject.href}`,
+        })),
+      },
+    ],
   };
 
   const stats = [
@@ -108,15 +135,16 @@ export default function SyllabusIndexPage() {
             />
 
             <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.18em] text-blue-300">
-              Official UTME outline
+              Official exam-board outlines
             </p>
             <h1 className="mt-2 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-[2.75rem]">
-              JAMB Syllabus — every subject, topic and objective
+              {examNames} syllabus — every subject, topic and objective
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base">
-              The complete JAMB (UTME) syllabus for all {totals.subjects} subjects,
+              The complete {examNames} syllabus across all {totals.subjects} subjects,
               broken into {totals.sections} sections and {totals.topics} topics. Study
-              each content item next to the objective JAMB expects — then practise it.
+              each content item next to the objective the board expects — then practise
+              it.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -154,13 +182,51 @@ export default function SyllabusIndexPage() {
           </div>
         </section>
 
+        <section className="mx-auto w-full max-w-6xl px-4 pt-10 sm:pt-14">
+          <h2 className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
+            Choose your exam board
+          </h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            {exams.map((exam) => (
+              <Link
+                key={exam.slug}
+                href={exam.href}
+                className="group flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <span className="rounded-full bg-brand-blue/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-brand-blue">
+                    {exam.label}
+                  </span>
+                  <ArrowRight
+                    aria-hidden
+                    className="h-4 w-4 text-slate-300 transition group-hover:translate-x-0.5 group-hover:text-brand-blue"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-lg font-extrabold tracking-tight text-slate-900">
+                    {exam.name} syllabus
+                  </h3>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">
+                    {BOARD_BLURBS[exam.slug] ??
+                      "Every subject, topic and candidate objective the board publishes."}
+                  </p>
+                </div>
+                <p className="mt-auto text-xs font-semibold text-slate-500">
+                  {exam.subjects} subjects · {exam.topics} topics ·{" "}
+                  {exam.objectives.toLocaleString("en-US")} objectives
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section
           id="all-subjects"
           className="mx-auto w-full max-w-6xl scroll-mt-20 px-4 py-10 sm:py-14"
         >
           <div className="max-w-2xl">
             <h2 className="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">
-              All {totals.subjects} JAMB subjects
+              All {totals.subjects} subjects across {examNames}
             </h2>
             <p className="mt-1.5 text-sm leading-6 text-slate-600">
               Pick a subject to see every section, topic and candidate objective.
@@ -168,7 +234,12 @@ export default function SyllabusIndexPage() {
             </p>
           </div>
           <div className="mt-6">
-            <SyllabusBrowser subjects={summaries} categories={SYLLABUS_CATEGORIES} />
+            <SyllabusBrowser
+              subjects={summaries}
+              categories={SYLLABUS_CATEGORIES}
+              examName={examNames}
+              exams={exams}
+            />
           </div>
         </section>
 
@@ -192,9 +263,10 @@ export default function SyllabusIndexPage() {
               ))}
             </div>
             <p className="mt-6 max-w-3xl text-sm leading-6 text-slate-600">
-              Every outline is the official JAMB brochure content, reproduced topic by
-              topic — including the general objectives and recommended texts where JAMB
-              publishes them.
+              Every outline is the board&apos;s published syllabus content, reproduced
+              topic by topic. Where {examNames} publish general objectives and
+              recommended texts they are included with the subject; trade subjects are
+              listed with the same detail as the science papers.
             </p>
           </div>
         </section>

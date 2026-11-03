@@ -1,0 +1,21 @@
+{
+  "subject": "Shorthand",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus & Examination Scheme",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Dictation Passages and Typewritten Transcription",
+          "subtopics": [
+            {
+              "content": "Speed dictation at 80 words per minute (1.35-1.40 syllabic intensity), dictation passage 1 (Business matters: letters, memos, reports), dictation passage 2 (Literary matters: non-technical/non-controversial passages), shorthand note taking (pen or pencil), 5-minute reading period, and 60-minute typewritten transcription on standard typewriter using English/Shorthand dictionaries",
+              "objective": "Take down accurate shorthand notes from spoken dictation at 80 wpm for both business and literary passages; read back shorthand notes fluently during the designated reading interval; transcribe shorthand notes into flawless typewritten documents on standard typewriters within 60 minutes, utilizing correct punctuation, spelling, formatting, and dictionary references."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "subject": "Textiles",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Textiles, Fibres, Yarns, and Fabric Construction Processes",
+          "subtopics": [
+            {
+              "content": "Rationale for studying textiles, Ghanaian textile artists, textile history and careers, cultural values, fibre identification/classification, properties and suitability, fibre processing (soaking, ginning), traditional/contemporary yarn preparation, blends/mixtures, point paper designing (plain, twill, satin/sateen), loom types (traditional, broad loom, power looms) and accessories, textile calculations (warp, weft, fabric weight and cost), weaving operational processes (warping, beaming, heddling, reeding), loom motions (primary, secondary, auxiliary), non-woven fabrics, and alternative constructions (knitting, crocheting, tapestry)",
+              "objective": "State rationale for studying textiles, recognize renowned Ghanaian textile artists, and trace career opportunities; classify textile fibres, outline processing steps, and analyze yarn properties/blends; draw point paper weaves (plain, twill, satin); identify loom parts and calculate warp, weft, and fabric costs; master weaving stages (warping, beaming, heddling, reeding), primary/secondary loom motions, and non-woven or knitted construction methods."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Fabric Decoration, Finishing, Sustainable Development, Portfolios, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Preparation and maintenance of textile tools/equipment, design elements/principles, preliminary design/ICT, indigenous colour schemes/cultural motifs, decorative techniques (dyeing, printing, appliqué, embroidery), mechanical and chemical finishing techniques, fabric care/maintenance, resource management challenges, healthy studio practices, hard/soft copy portfolio building, mounting exhibitions, business plans, product costing, pricing, and marketing strategies",
+              "objective": "Apply elements/principles of design and ICT to develop decorative textile patterns; execute decorative techniques including dyeing, printing, appliqué, and embroidery; analyze mechanical and chemical finishing methods and garment care; observe healthy studio practices and resource sustainability; build hard/soft portfolios and organize textile exhibitions; formulate business plans, cost products, set prices, and market textile goods."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "subject": "Catering Craft Practice",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Concept of Catering",
+          "subtopics": [
+            {
+              "content": "Hospitality industry/catering, types of establishments, culinary terms, safety precautions, sanitation and hygiene",
+              "objective": "Understand definitions and components of the hospitality industry; identify types and functions of catering establishments (hotels, restaurants, outdoor, mobile, institutional); apply common culinary terms; manage safety, first aid, and firefighting equipment; execute personal, kitchen, environmental, and water hygiene practices."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Food Commodities and Methods of Food Preparation",
+          "subtopics": [
+            {
+              "content": "Study of food commodities and principles of cooking methods",
+              "objective": "Understand food commodities (poultry, game, meat, fish, vegetables, fruits, dairy, pulses, cereals, herbs, flavourings); master cooking methods (boiling, roasting, grilling, baking); execute dish preparations and apply standard and local measurements."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Service of Foods and Drinks",
+          "subtopics": [
+            {
+              "content": "Food and beverage personnel, types of food service, alcoholic and non-alcoholic drinks, costing and control",
+              "objective": "Identify roles and functions of food/beverage personnel; master table laying, covers, and service types (Gueridon, silver, waiter, buffet, banquet); understand bar operations and beverage classification; apply portion control, sales calculation, and dish costing."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Kitchen Equipment and Their Uses",
+          "subtopics": [
+            {
+              "content": "Types of kitchen equipment, care, and maintenance",
+              "objective": "Identify types and uses of various large and small kitchen equipment; apply proper cleaning, care, and routine maintenance techniques for kitchen equipment."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Menu Planning",
+          "subtopics": [
+            {
+              "content": "Principles of menu planning, menu types, special menus, and accompaniments",
+              "objective": "Understand menu scope and factors affecting menu planning; differentiate menu types (table d'hôte, à la carte, special occasion, breakfast, luncheon, dinner); plan meal plans for vegetarians, vulnerable groups, manual/sedentary workers; select appropriate food and table accompaniments."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

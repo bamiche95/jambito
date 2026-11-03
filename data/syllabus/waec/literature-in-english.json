@@ -1,0 +1,51 @@
+{
+  "subject": "Literature-in-English",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Drama",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Shakespearean, African, and Non-African Drama",
+          "subtopics": [
+            {
+              "content": "Prescribed Shakespearean play, African plays, and Non-African plays",
+              "objective": "Analyze plot, themes, characterization, setting, dramatic techniques, and imagery in Shakespeare's *Antony and Cleopatra*; evaluate prescribed African drama (*Once Upon an Elephant* by Bosede Ademilua-Afolayan, *The Marriage of Anansewa* by Efua Sutherland); study prescribed non-African drama (*An Inspector Calls* by J. B. Priestley, *A Man for All Seasons* by Robert Bolt)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Prose",
+      "topics": [
+        {
+          "id": 2,
+          "title": "African and Non-African Prose Novels",
+          "subtopics": [
+            {
+              "content": "Prescribed African prose novels and Non-African prose novels",
+              "objective": "Analyze narrative structure, thematic concerns, characterization, and point of view in prescribed African prose (*So the Path Does Not Die* by Pede Hollist, *Redemption Road* by Elma Shaw); critique prescribed non-African prose (*To Kill a Mockingbird* by Harper Lee, *Path of Lucas: The Journey He Endured* by Susanne Bellefeuille)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Poetry",
+      "topics": [
+        {
+          "id": 3,
+          "title": "African and Non-African Prescribed Poems",
+          "subtopics": [
+            {
+              "content": "Prescribed African poems and Non-African poems",
+              "objective": "Analyze poetic devices, tone, mood, theme, and stanzaic structure in prescribed African poems (*Once Upon a Time*, *New Tongue*, *Night*, *Not My Business*, *Hearty Garlands*, *The Breast of the Sea*); analyze prescribed non-African poems (*She Walks in Beauty*, *The Nun's Priest's Tale*, *Digging*, *Still I Rise*, *The Telephone Call*, *The Stone*)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

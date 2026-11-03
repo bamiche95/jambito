@@ -1,0 +1,51 @@
+{
+  "subject": "Commerce",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction, Occupation, Production and Business Units",
+          "subtopics": [
+            {
+              "content": "Scope of Commerce/E-Commerce, occupations, factors of production, division of labour, business ownership structures, amalgamations",
+              "objective": "Define and trace the background and scope of Commerce and E-Commerce; classify industrial, commercial, and service occupations; analyze factors/types of production and division of labour; evaluate forms of business units (sole proprietorship, partnership, companies, public enterprises, co-operatives); examine mergers, amalgamations, cartels, trusts, and liquidation processes."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Trade Associations, Capital/Profits, Home and Foreign Trade",
+          "subtopics": [
+            {
+              "content": "Trade associations, business capital/turnover calculation, retail/wholesale trade, channels of distribution, international trade concepts, tariffs",
+              "objective": "Understand roles of Trade Associations and Chambers of Commerce; calculate working capital, profits, and turnover; differentiate retail types, wholesale middleman functions, and channels of distribution; explain foreign trade (imports, exports, entrepôt), balance of trade/payments, tariffs, customs, and port authorities."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Purchase & Sale Documents, Finance, Banking, Insurance, Capital/Stock/Commodity Markets",
+          "subtopics": [
+            {
+              "content": "Commercial documents, price quotations, payment instruments, money/banking, insurance principles, stock/commodity exchange",
+              "objective": "Understand trade documents (invoices, LPO, credit/debit notes, certificate of origin); interpret price terms (CIF, FOB, COD) and payment means (cheques, electronic transfers); trace evolution and functions of money and banking types (Central, Commercial, Microfinance, E-Banking); apply insurance principles (indemnity, insurable interest); analyze capital market fund-raising, stock exchange operations, and commodity trading."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Transport, Tourism, Communication, Warehousing, Advertising, Marketing, Legal Aspects, Government Policies, Business Management & Economic Groupings",
+          "subtopics": [
+            {
+              "content": "Transport modes/documents, tourism, communication networks, warehousing, advertising, 4 Ps marketing mix, sales promotion, business law/regulations, commercialization/privatization, management functions, regional economic blocs",
+              "objective": "Compare transport forms and shipping documents; evaluate tourism and postal/courier/electronic communication services; classify warehousing types; evaluate advertising media and sales promotion techniques; apply 4 Ps of marketing mix and customer services; examine contract law, agency, sales of goods, consumer protection acts, and business registration; compare commercialization, privatization, and deregulation; understand business management functions, organizational charts, and corporate social responsibility; evaluate economic integration bodies (ECOWAS, EU, Niger/Lake Chad Basin Commissions)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

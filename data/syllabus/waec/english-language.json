@@ -1,0 +1,61 @@
+{
+  "subject": "English Language",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Paper 1: Lexis and Structure",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Lexis, Vocabulary, Idioms, Figurative Language, and Grammar Structure",
+          "subtopics": [
+            {
+              "content": "General vocabulary across occupational fields, idiomatic expressions, figurative usage, sentence structure, concord, tenses, prepositions",
+              "objective": "Demonstrate proficiency in general vocabulary associated with building, agriculture, health, law, government, science, stock exchange, and sports; interpret idioms, collocations, and figurative expressions; apply correct grammatical rules including sequence of tenses, pronoun-antecedent agreement, concord, and prepositional usage; respond to lexical sense relations (synonyms, antonyms, homonyms)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 2: Essay Writing, Comprehension, and Summary",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Essay Writing",
+          "subtopics": [
+            {
+              "content": "Letters, speeches, narratives, descriptions, arguments/debates, reports, articles, expository writing, creative writing",
+              "objective": "Write clear, coherent essays of at least 450 words in modern English, assessed on Content, Organization, Expression, and Mechanical Accuracy."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Comprehension and Summary",
+          "subtopics": [
+            {
+              "content": "Reading comprehension passage analysis, vocabulary replacement, grammatical functions, inference, prose summary",
+              "objective": "Extract factual content and make logical inferences from 350-word passages; identify grammatical structures (phrases, clauses) and their Contextual functions; extract specific aspects and synthesize concise summary points from 500-word prose passages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 3: Test of Orals / Listening Comprehension",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Oral English (Phonetics and Phonology)",
+          "subtopics": [
+            {
+              "content": "Pure vowels, diphthongs, single consonants, consonant clusters, rhymes, word stress, sentence stress, emphatic stress, intonation patterns",
+              "objective": "Recognize and produce pure vowel contrasts, diphthongs, single consonants, and initial/final consonant clusters; identify rhyming words; master word stress shift, stress-timed sentence patterns, strong/weak forms, and emphatic stress contrast; apply falling and rising intonation tunes to statements, questions, and commands."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

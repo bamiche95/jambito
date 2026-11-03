@@ -1,0 +1,51 @@
+{
+  "subject": "Edo",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Ọya N'Ọhẹ)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Composition, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading comprehension, essay writing types, phonetics/phonology, word classes/grammatical categories, Edo-English translation",
+              "objective": "Answer comprehension questions on Edo passages; write 300-word narrative, descriptive, argumentative, expository, dialogue, or letter essays in standard orthography; classify Edo vowels, consonants, syllabic nasals, tone marks, assimilation, and elision; identify numerals, word formation, word classes (nouns, verbs, adverbs), phrases, and sentence structures; translate passages between Edo and English."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Ẹbe Otọẹ), Oral & Written Literature",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Appreciation, Oral and Written Literature (Prose, Poetry, Drama)",
+          "subtopics": [
+            {
+              "content": "Literary devices, prescribed oral folktales/poetry/drama, prescribed written Edo novels, poems, and plays",
+              "objective": "Apply basic literary appreciation principles; analyze prescribed oral literature genres (Okha Edo, etc.); critique set written Edo prose texts (such as *Idẹn Nokpokhuo*, *Izelogha*, *Okha Edo*); analyze prescribed written poetry selections (*Asikoko Ekharha Oghe Edo*, *Poems in Bini*); evaluate set drama texts (*Eseikho*, *Meokpaghare*, *Imaguero*)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Ẹdo Ẹwaen vbe Uwa)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Edo Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Makeup/adornments, indoor/outdoor games, pregnancy/naming, home training, traditional foods, non-verbal communication, funerals, inheritance, marriage, occupations, chieftaincy/Obaship, Osanobua/deities beliefs",
+              "objective": "Identify traditional adornments, games, birth/naming rites, foods, and funeral/inheritance customs; examine Edo marriage customs, traditional occupations, Obaship and chieftaincy governance structures, age-grades, traditional religious beliefs (Osanobua, divinities), and modern economic practices."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

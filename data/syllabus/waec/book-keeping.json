@@ -1,0 +1,241 @@
+{
+  "subject": "Book Keeping",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Book Keeping",
+          "subtopics": [
+            {
+              "content": "1.1 - 1.5 Meaning, assets/liabilities, business transactions, accounts, source documents",
+              "objective": "Understand definition, history, importance, career opportunities, values of bookkeepers, assets vs liabilities classification, business transaction parties, personal vs impersonal accounts, and identification/uses of source documents."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Concepts and Conventions",
+          "subtopics": [
+            {
+              "content": "Accounting concepts and conventions",
+              "objective": "Define, identify, and distinguish basic accounting concepts and conventions."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Books of Original Entry",
+          "subtopics": [
+            {
+              "content": "Purpose, types, format, and preparation of prime entry books",
+              "objective": "Define, format, and prepare books of original entry including sales, purchases, returns, and general journals."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Ledger and Principles of Double Entry",
+          "subtopics": [
+            {
+              "content": "4.1 - 4.2 Ledger classification and double entry rules",
+              "objective": "Define, classify, format, and prepare ledgers. Understand the history, rules, and posting mechanisms of double entry bookkeeping."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Cash Book",
+          "subtopics": [
+            {
+              "content": "5.1 Types and preparation of cash books",
+              "objective": "Understand, differentiate, and prepare single column, double column, three column, and petty cash books."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Bank Reconciliation Statement",
+          "subtopics": [
+            {
+              "content": "Bank reconciliation purpose, terminologies, and discrepancies",
+              "objective": "Identify causes of differences between cash book and bank statement balances and prepare bank reconciliation statements."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Trial Balance and Errors",
+          "subtopics": [
+            {
+              "content": "Trial balance rules, error classification, and suspense accounts",
+              "objective": "Understand functions and rules for preparing trial balances; classify errors, correct errors via journals, and open/balance Suspense Accounts."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Financial Statements of Sole Proprietorship",
+          "subtopics": [
+            {
+              "content": "8.1 - 8.3 Trading, Profit and Loss Account, and Balance Sheet",
+              "objective": "Prepare Trading Accounts (with stock valuation methods FIFO/LIFO), Profit and Loss Accounts, and simple Balance Sheets for sole proprietors."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Adjustments to Financial Statements",
+          "subtopics": [
+            {
+              "content": "9.1 - 9.2 Prepayments, accruals, bad debts, and depreciation methods",
+              "objective": "Calculate and account for prepayments, accruals, bad/doubtful debts, and depreciation using straight line and reducing balance methods."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Control Accounts",
+          "subtopics": [
+            {
+              "content": "Sales Ledger and Purchases Ledger Control Accounts",
+              "objective": "Understand the purpose of and prepare Sales Ledger Control Accounts and Purchases Ledger Control Accounts."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Single Entry and Incomplete Records",
+          "subtopics": [
+            {
+              "content": "Conversion of incomplete records to final accounts",
+              "objective": "Understand limitations of single entry systems and prepare complete final accounts from incomplete business records."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Accounts of Not-For-Profit Making Organizations",
+          "subtopics": [
+            {
+              "content": "Receipts/Payments and Income/Expenditure Accounts",
+              "objective": "Understand content and prepare Receipts and Payments Accounts and Income and Expenditure Accounts for non-profits."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Manufacturing Accounts",
+          "subtopics": [
+            {
+              "content": "Production cost calculation and final manufacturing accounts",
+              "objective": "Understand cost concepts (direct/indirect costs, prime cost) and prepare Manufacturing, Trading, and Profit and Loss Accounts."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Partnership Accounts",
+          "subtopics": [
+            {
+              "content": "Deeds, capital/current accounts, appropriation, and partner admission",
+              "objective": "Account for drawings, interest on capital/drawings, prepare Capital/Current Accounts, Profit and Loss Appropriation Accounts, Balance Sheets, partner admissions, and Goodwill Accounts."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Joint Venture Accounts",
+          "subtopics": [
+            {
+              "content": "Joint venture vs partnership, preparation of accounts",
+              "objective": "Understand joint venture concepts, distinguish them from partnerships, and record joint venture transactions."
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Departmental and Branch Accounts",
+          "subtopics": [
+            {
+              "content": "Preparation of departmental and branch records",
+              "objective": "Differentiate departmental and branch structures, and prepare Departmental Accounts and simple Branch Accounts."
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Introduction to Company Accounts",
+          "subtopics": [
+            {
+              "content": "Formation, capital structure terminologies, and financial statements",
+              "objective": "Understand company formation, share capital terminologies, and prepare simple company financial statements."
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Interpretation of Accounts",
+          "subtopics": [
+            {
+              "content": "Financial ratio computations",
+              "objective": "Compute and interpret key ratios: Net Profit Margin, Gross Profit Margin, Stock Turnover, Quick Ratio, Acid Test Ratio, and Return on Capital Employed (ROCE)."
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Purchase of Business",
+          "subtopics": [
+            {
+              "content": "Accounting for business acquisition and sale",
+              "objective": "Understand terminologies and prepare accounting entries related to buying and selling existing businesses."
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Consignment Accounts",
+          "subtopics": [
+            {
+              "content": "Consignor and consignee records",
+              "objective": "Understand consignment terminologies and prepare simple Consignment Accounts."
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Hire Purchase",
+          "subtopics": [
+            {
+              "content": "Seller and hirer book entries",
+              "objective": "Understand hire purchase principles and prepare appropriate ledger accounts in both hirer and seller books."
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Contract Accounts",
+          "subtopics": [
+            {
+              "content": "Contract costing, work-in-progress, and profit recognition",
+              "objective": "Understand contract terminologies (retention money, architect certificates) and prepare Contract Accounts."
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Cooperative Accounts",
+          "subtopics": [
+            {
+              "content": "Cooperative society objectives and financial records",
+              "objective": "Understand the meaning, core objectives, and basic accounting practices of cooperative societies."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

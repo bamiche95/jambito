@@ -1,0 +1,41 @@
+{
+  "subject": "Marketing",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Marketing, Marketing Concepts, Mix, Environment, Products, and Markets",
+          "subtopics": [
+            {
+              "content": "Basic marketing terms, history of marketing in Nigeria, marketing functions, marketing concepts (production, product, selling, societal), marketing mix (4 Ps), political/economic/social environmental factors, product classifications, product design, consumer vs organizational markets",
+              "objective": "Define marketing terms (needs, wants, demands, exchange, market) and trace Nigerian marketing history; evaluate marketing management philosophies; analyze 4 Ps and environmental factors influencing marketing; classify consumer, industrial, service, and mineral products; categorize consumer, industrial, reseller, and government markets."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Consumer Behaviour, Planning & Research, Pricing, Advertising, Sales Promotion, Merchandising, and Distribution",
+          "subtopics": [
+            {
+              "content": "Consumer/organizational decision-making process, marketing research feedback, pricing strategies (cost-plus, haggling, competition), pricing determinants, advertising media, sales promotion forms, merchandising elements (branding, packaging, labeling), distribution channels, and channel member functions",
+              "objective": "Analyze consumer and organizational buyer decision processes; execute marketing planning and research; apply pricing strategies and evaluate price determinants; evaluate advertising media and produce sample adverts; analyze sales promotion methods (coupons, price-off, sampling); execute merchandising elements (branding, packaging, labeling); select distribution channels and evaluate intermediaries' functions."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Transportation, Warehousing, Market Unions, International Marketing, ICT, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Transportation modes/documents, warehousing functions/activities, roles of market unions and facilitators, international marketing entry/regulations, E-Marketing ethics, entrepreneurship funds, market outlet location, and sales/bargaining skills",
+              "objective": "Select transportation modes and process transport documents; manage warehouse activities; evaluate roles of market unions and facilitators; explore international marketing methods and regulations; apply E-Marketing tools and ethical practices; manage market outlets, source funds, select locations, and master selling/bargaining skills."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

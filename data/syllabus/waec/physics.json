@@ -1,0 +1,66 @@
+{
+  "subject": "Physics",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Part I: Interaction of Matter, Space & Time",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Matter, Units, Kinematics, Dynamics, and Statics",
+          "subtopics": [
+            {
+              "content": "States/structure of matter, Kinetic theory, fundamental/derived quantities, measuring instruments, position/distance/displacement, mass vs weight, time measurement, density/relative density, fluid pressure, Pascal's principle, Archimedes' principle, flotation, motion types, friction, viscosity, linear kinematics, vector resolution, moments/equilibrium, simple harmonic motion, and Newton's laws of motion",
+              "objective": "Explain states of matter, Brownian motion, surface tension, and capillarity using kinetic theory; distinguish fundamental from derived quantities and units; measure distance, time, mass, weight, and volume accurately; calculate density, fluid pressure, Pascal's applications, upthrust, and relative density; analyze types of motion, friction coefficients, fluid terminal velocity, and centripetal forces; interpret velocity-time graphs and solve kinematic equations; resolve vectors and determine resultant forces/moments; analyze S.H.M. parameters (period, amplitude) and experimental 'g' values; apply Newton's laws of motion, momentum conservation, and recoil calculations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part II: Energy (Mechanical and Heat)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Work, Energy, Power, Machines, Thermal Properties, and Gas Laws",
+          "subtopics": [
+            {
+              "content": "Forms/sources of energy, work done, P.E. and K.E. derivations, mechanical energy conservation, power calculations, simple machines (levers, pulleys, inclined planes, gears, efficiency), thermometry (Celsius/Kelvin), thermal expansion (linear/area/volume expansivities), heat transfer (conduction, convection, radiation), Gas laws (Boyle's, Charles', Pressure, General), calorimetry, specific heat capacity, latent heat, evaporation, boiling, and humidity",
+              "objective": "Define work, energy, power, and renewable/non-renewable energy resources; derive P.E. and K.E., verify mechanical energy conservation, and compute machine efficiency (M.A., V.R.); construct and calibrate thermometers across scales; calculate linear, superficial, and cubical thermal expansivities; apply kinetic theory to heat transfer modes and explain vacuum flasks/breezes; verify and solve numerical problems on Boyle's, Charles', and general gas laws; determine specific heat capacities and specific latent heats of fusion/vaporization using mixture/electrical methods; measure dew point and relative humidity using hygrometers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part III & IV: Waves and Fields",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Waves, Light, Sound, Gravitational, Electric, Magnetic, and A.C. Circuits",
+          "subtopics": [
+            {
+              "content": "Wave production, transverse/longitudinal wave equations, wave properties (reflection, refraction, diffraction, interference), light reflection (plane/curved mirrors), light refraction (prisms/lenses, optical instruments), dispersion, electromagnetic spectrum, sound propagation/speed, echoes, acoustics, string/pipe vibrations, gravitational fields/laws, electrostatics, Coulomb's law, capacitors, current electricity, Ohm's law, electrical energy/power, magnetic fields, magnetic forces, electromagnetic induction, Faraday's/Lenz's laws, transformers, and simple A.C. circuits (resonance, impedance)",
+              "objective": "Calculate wave velocity, frequency, wavelength, and phase using wave equations; verify laws of reflection/refraction for plane/curved mirrors and lenses, and solve mirror/lens formulae; compare human eye to cameras and correct vision defects; explain e.m. spectrum applications; analyze sound pitch/loudness/quality, sonometer vibrations, resonance tubes, and open/closed pipes; compute gravitational force, field intensity 'g', and escape velocity; apply Coulomb's law, calculate electric field/potential, and determine parallel-plate capacitance; apply Ohm's law, Kirchhoff's laws, wheatstone bridge, potentiometer, and electrical power formulas; plot magnetic fields, determine forces on moving charges/conductors, and analyze Fleming's rules; explain d.c./a.c. generators, transformers, inductance, and eddy currents; solve RLC series circuit problems, reactance, impedance, and resonance."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part V & Harmonised Topics: Atomic, Nuclear, and Advanced Physics",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Atomic Structure, Radiations, Nuclear Reactions, Dimensional Analysis, Projectiles, Lasers, and Electronics",
+          "subtopics": [
+            {
+              "content": "Atomic models (Rutherford, Bohr), energy levels, line spectra, photoelectric effect, Einstein's equation, thermionic emission, X-rays, nuclear composition, isotopes, natural/artificial radioactivity, half-life, nuclear fission/fusion, mass defect ($E=\\Delta m c^2$), wave-particle duality, dimensional analysis, projectile motion calculations, satellites/rockets, Hooke's law/Young's modulus, thermal conductivity/blackbody, fiber optics, LASERs, and semiconductor physics (doping, p-n junction diodes, rectification)",
+              "objective": "Compare atomic models and calculate energy level transitions; explain photoelectric work function, threshold frequency, thermionic emission, and X-ray production; compute radioactive decay, half-life, mass defect, and nuclear binding energy; verify dimensional correctness of equations; solve projectile range, maximum height, and time of flight problems; analyze satellite orbits and elastic properties (Hooke's law, Young's modulus); explain blackbody radiation, fiber optics, and LASER applications; distinguish conductors, intrinsic/extrinsic semiconductors, and p-n junction diode rectification."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

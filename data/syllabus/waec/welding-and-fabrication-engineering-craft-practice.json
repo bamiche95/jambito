@@ -1,0 +1,41 @@
+{
+  "subject": "Welding and Fabrication Engineering Craft Practice",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Workshop Safety, Metal Properties, Tools, and Equipment",
+          "subtopics": [
+            {
+              "content": "Safety precautions, hazard prevention, pollution control, protective gear, first aid, ferrous/non-ferrous metal properties, heat treatment processes (annealing, hardening, tempering), hand tools, measuring instruments, and gas/arc welding equipment setups",
+              "objective": "Apply safety rules, wear protective equipment, and administer first aid; identify metals, test their mechanical properties, and apply heat treatment techniques; set up gas and arc welding apparatus using appropriate measuring, marking out, and cutting tools."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Welding & Fabrication Techniques, Surface Preparation, and Fasteners",
+          "subtopics": [
+            {
+              "content": "Electrode types/coatings, fault detection equipment, gas and arc welding principles, joint designs, edge preparation (single/double V, fillet), leftward/rightward welding techniques, folding methods, permanent/temporary fasteners (rivets, bolts, nuts, screws), surface cleaning, and protective finishing (painting, galvanizing)",
+              "objective": "Select correct electrodes, prepare joint edges, and perform leftward/rightward gas and arc welding operations; execute sheet metal folding, riveting, and bolting; clean welding surfaces and apply corrosion protection finishes."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Forging, Practical Projects, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Forging tools/equipment, forging processes (upsetting, drawing down, twisting, bending), practical metal fabrication projects (funnels, trinket boxes, charcoal stoves, metal rakes), small/medium scale enterprise setups, and workshop site considerations",
+              "objective": "Operate forge equipment to perform upsetting, drawing down, and eye-forming operations; construct functional fabrication items out of ferrous and non-ferrous sheet metals; identify enterprise factors and business opportunities in fabrication craft practice."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "subject": "Igbo",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Asụsụ / Fonetiki na Grama)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Essay Writing, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading passages, essay writing types, Igbo phonemes, syllable structure, sound processes (vowel harmony, elision), tones, spelling rules, word formation, standard Igbo vs dialects, word classes, grammatical categories, sentence types, direct/indirect speech, and translation",
+              "objective": "Answer comprehension questions on written Igbo passages; compose 300-word essays (narrative, argumentative, debate, letters) using standard metalanguage; describe Igbo vowels, consonants, syllabic nasals, vowel harmony, assimilation, and tone notation; apply spelling rules, identify loan words, and master word classes, tenses, phrases, clauses, sentence constituents, and speech forms; translate correctly between English and Igbo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Agụmagụ)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Appreciation, Oral Literature, and Written Literature",
+          "subtopics": [
+            {
+              "content": "Literary appreciation devices, oral literature genres (Ifo, Ukabuilu, Akụkọ Dike, Mbem, Ejije ọnụ), and prescribed written texts (prose, poetry, drama)",
+              "objective": "Apply literary appreciation techniques; examine oral literature genres, definitions, and functions; analyze prescribed oral literature texts (*Mbe Agaba*, *Abụ Agụrụnọnụ Ndị Igbo*); critique prescribed written prose (*Jụọ Obinna*); evaluate set written drama (*Otụ Mkpịsị Aka*); analyze selected written poems from *Akọnụche*."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Omẹnala na Ewumewu)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Igbo Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Igbo identity, greetings, hospitality (Ọjị, Ịgọ Ọfọ), birth rites, reincarnation/Ogbanje, festivals (Ịwa Ji, Ofala, Akwamọzụ), traditional games, taboos (Nsoala/Arụ), governance structures (Eze, Nze na Ọzọ, Umuada), social institutions, titles, traditional occupations, religious worship, and deities",
+              "objective": "Analyze Igbo identity, dress, greetings, and hospitality rites (Ọjị, Ịgọ Ọfọ); examine life-cycle rites (Omụgwo, naming, funerals) and beliefs (Ilo ụwa, Ogbanje); describe festivals (Ịwa Ji, Ofala) and traditional sports (Mgba, Ọkọsọ); detail taboos (Nsoala); evaluate governance bodies (Umụnna, Ụmụada, Nze na Ọzọ), chieftaincy titles, traditional crafts/occupations, divination, and traditional deities (Ala, Amadịoha, Ikenga)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,10 +14,10 @@ import { SITE_URL } from "@/lib/site";
 /**
  * Sitemap.
  *
- * The syllabus tree adds ~756 URLs (index + exam + 25 subjects + 729 topics) on
- * top of the existing routes. Topic entries come last on purpose: they are the
- * long-tail pages, so the index and subject URLs still get crawled first if a
- * consumer truncates a long sitemap.
+ * The syllabus tree adds ~1,260 URLs (index + 2 exam boards + 86 subjects + 1,171
+ * topics) on top of the existing routes. Topic entries come last on purpose: they
+ * are the long-tail pages, so the index and subject URLs still get crawled first
+ * if a consumer truncates a long sitemap.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

@@ -1,0 +1,51 @@
+{
+  "subject": "Financial Accounts",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Financial Accounting and Double Entry System",
+          "subtopics": [
+            {
+              "content": "1.1 - 2.8 History, accounting process, source documents, subsidiary books, ledgers, cash books, trial balance, bank reconciliation, suspense accounts",
+              "objective": "Understand accounting nature, users, and qualitative characteristics; apply accounting equations and double entry principles; post source documents to prime entry books and ledgers; prepare single/double/three-column cash books, petty cash books, and Trial Balances; prepare Bank Reconciliation Statements and correct errors via Suspense Accounts."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Accounting Concepts, Sole Trader Final Accounts, Provisions, Reserves, and Manufacturing Accounts",
+          "subtopics": [
+            {
+              "content": "3.1 - 6.3 Accounting concepts, Trading/P&L/Balance Sheet adjustments, provisions for bad debts, depreciation methods, reserves, manufacturing accounts",
+              "objective": "Identify accounting concepts and limitations; prepare sole proprietor Trading, Profit & Loss Accounts, and Balance Sheets with adjustments (accruals, prepayments); calculate bad debt provisions and depreciation (straight line, reducing balance, sum of digits, revaluation); prepare Manufacturing Accounts classifying prime cost, factory overheads, and work-in-progress."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Control Accounts, Incomplete Records, Not-For-Profit Accounts, Partnership, Company, VAT, and Departmental/Branch Accounts",
+          "subtopics": [
+            {
+              "content": "7.1 - 13.5 Control ledgers, single entry conversion, non-profit accounts, partnership final accounts/goodwill, company share issue/ratios/cash flow, VAT returns, branch accounting",
+              "objective": "Prepare Sales and Purchases Ledger Control Accounts; convert incomplete records using markup/margin to final accounts; prepare Receipts/Payments, Income & Expenditure Accounts, and Accumulated Funds; account for partnership appropriation, capital/current accounts, partner admission, goodwill, and dissolution; prepare company accounts, financial ratios, and Cash Flow Statements; compute Input/Output VAT returns; prepare Departmental and Branch Accounts."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Public Sector Accounting, IT in Accounting, Miscellaneous Accounts, and Financial System",
+          "subtopics": [
+            {
+              "content": "14.1 - 17.6 Public sector revenue/expenditure, computerized accounting systems, Joint Venture, Consignment, Contract, Hire Purchase, money/capital markets",
+              "objective": "Distinguish public and private sector accounting and prepare simple government accounts; compare manual and computerized accounting systems; prepare Joint Venture, Consignment, Contract, and Hire Purchase Accounts; analyze money/capital markets, share offer methods, capital market regulations, and investor benefits."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

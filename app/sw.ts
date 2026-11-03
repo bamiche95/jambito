@@ -13,6 +13,17 @@ declare global {
   interface WorkerGlobalScope extends SerwistGlobalConfig {
     __SW_MANIFEST: (PrecacheEntry | string)[] | undefined;
   }
+
+  /**
+   * `renotify` is part of the Notifications spec and is honoured by Chrome and
+   * Firefox, but TypeScript's `NotificationOptions` is missing it in both
+   * `lib.dom.d.ts` and `lib.webworker.d.ts`, so passing it to
+   * `showNotification` is reported as an excess property. Declaring it here
+   * keeps the behaviour instead of dropping the flag or casting the call site.
+   */
+  interface NotificationOptions {
+    renotify?: boolean;
+  }
 }
 
 declare const self: ServiceWorkerGlobalScope;

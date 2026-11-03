@@ -1,0 +1,51 @@
+{
+  "subject": "Economics",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Scope, Systems, Analysis Tools, Demand and Supply",
+          "subtopics": [
+            {
+              "content": "Scarcity, choice, PPC, factors of production, economic systems, statistical tools, demand/supply laws and elasticities",
+              "objective": "Understand scarcity, choice, scale of preference, opportunity cost, PPC, and primary/secondary/tertiary sectors; analyze land, labour, capital, and entrepreneurship; compare capitalism, socialism, and mixed economies; calculate statistical measures (mean, median, mode) and interpret economic graphs; apply demand and supply laws, schedules, curves, shifts vs movements, and price/income/cross elasticities."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Consumer Behaviour, Price Determination, Production, Cost & Revenue, Market Structures",
+          "subtopics": [
+            {
+              "content": "Utility theories, equilibrium price, maximum/minimum price controls, economies of scale, cost/revenue concepts, market types",
+              "objective": "Calculate total/marginal utility and consumer equilibrium; determine equilibrium price algebraically and analyze price controls, rationing, and black markets; examine division of labour, economies of scale, and law of variable proportions; differentiate fixed, variable, marginal, money, and opportunity costs, as well as total/marginal revenue; compare price and output determination under perfect competition, monopoly, and monopolistic competition."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Business Organizations, Distributive Trade, Population, Labour Market, Agriculture, Industrialization, National Income",
+          "subtopics": [
+            {
+              "content": "Business entities, middleman distribution, population theories/census, wage determination, agricultural policy, industrial localization, national income aggregates",
+              "objective": "Evaluate business forms, funding sources, privatization, commercialization, and indigenization; analyze wholesale/retail distribution channels and government agencies; apply Malthusian population theory, census issues, and labor mobility/wage determination; evaluate agricultural systems, marketing boards, and remedies; analyze firm location, industrialization strategies, and links to agriculture; calculate GDP, GNP, NNP, and identify national income measurement problems."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Money, Inflation, Financial Institutions, Public Finance, Development Planning, International Trade & Economic Blocs",
+          "subtopics": [
+            {
+              "content": "Barter system to money, inflation control, central/commercial banks, money/capital markets, fiscal policy, direct/indirect tax, growth vs development, balance of payments, ECOWAS, OPEC, IMF/World Bank, natural resources",
+              "objective": "Understand functions of money, price levels, and inflation types/controls; examine central/commercial/development banking, money markets, and capital markets; evaluate government budgets, public debt, direct/indirect taxation canons, and incidence; differentiate economic growth and development, planning types, and problems; analyze comparative cost advantage, terms of trade, tariffs, balance of payments adjustments, and exchange rates; evaluate roles of ECOWAS, OPEC, IMF, IBRD, AfDB, and major natural resource impacts."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

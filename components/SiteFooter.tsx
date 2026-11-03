@@ -47,7 +47,8 @@ const QUICK_LINKS = [
   { href: "/", label: "Home" },
   { href: "/cbt", label: "Practice" },
   { href: "/practice", label: "Exam Boards" },
-  { href: "/syllabus", label: "JAMB Syllabus" },
+  { href: "/syllabus/jamb", label: "JAMB Syllabus" },
+  { href: "/syllabus/waec", label: "WAEC Syllabus" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/contact", label: "Contact" },
 ];

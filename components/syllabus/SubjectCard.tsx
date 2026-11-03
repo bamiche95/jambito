@@ -8,8 +8,17 @@ import type { SyllabusSubjectSummary } from "@/lib/syllabus";
  * Deliberately framework-free (no client hooks) so the same component renders
  * server-side on `/syllabus/[exam]` and inside the `SyllabusBrowser` client
  * island on `/syllabus` — one visual definition, two runtimes.
+ *
+ * `showExam` is only set in mixed lists (the `/syllabus` hub), where "Biology"
+ * exists twice and the board is the only thing telling the two cards apart.
  */
-export default function SubjectCard({ subject }: { subject: SyllabusSubjectSummary }) {
+export default function SubjectCard({
+  subject,
+  showExam = false,
+}: {
+  subject: SyllabusSubjectSummary;
+  showExam?: boolean;
+}) {
   return (
     <Link
       href={subject.href}
@@ -19,10 +28,17 @@ export default function SubjectCard({ subject }: { subject: SyllabusSubjectSumma
         <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-blue/10 text-brand-blue">
           <BookOpen className="h-5 w-5" aria-hidden />
         </span>
-        <ArrowUpRight
-          aria-hidden
-          className="h-4 w-4 text-slate-300 transition group-hover:text-brand-blue"
-        />
+        <div className="flex items-center gap-2">
+          {showExam ? (
+            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-600">
+              {subject.exam}
+            </span>
+          ) : null}
+          <ArrowUpRight
+            aria-hidden
+            className="h-4 w-4 text-slate-300 transition group-hover:text-brand-blue"
+          />
+        </div>
       </div>
       <div>
         <h3 className="text-sm font-bold leading-snug text-slate-900 sm:text-base">

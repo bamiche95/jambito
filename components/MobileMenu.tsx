@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import {
   BookMarked,
   ChevronRight,
+  GraduationCap,
   Menu,
   MessageCircle,
   School,
@@ -24,7 +25,8 @@ import { cn } from "@/lib/utils";
  * point: a menu button that slides a panel in from the right edge.
  *
  * It carries only what the fixed tab bar (components/BottomNav.tsx) does not:
- * the syllabus tree, the exam boards and, at the foot of the panel, Contact.
+ * the syllabus tree — one entry per exam board, so WAEC is not a second tap
+ * deeper than JAMB — the exam boards and, at the foot of the panel, Contact.
  * Home, Practice, History, Stats and Profile are already one tap away in that
  * bar, so repeating them here would be noise.
  *
@@ -51,11 +53,18 @@ interface MenuItem {
 
 const ITEMS: MenuItem[] = [
   {
-    href: "/syllabus",
+    href: "/syllabus/jamb",
     label: "JAMB Syllabus",
-    hint: "Every subject outline, topic by topic",
+    hint: "Every UTME subject, topic by topic",
     icon: BookMarked,
-    isActive: (pathname) => pathname.startsWith("/syllabus"),
+    isActive: (pathname) => pathname.startsWith("/syllabus/jamb"),
+  },
+  {
+    href: "/syllabus/waec",
+    label: "WAEC Syllabus",
+    hint: "WASSCE subjects, trade papers included",
+    icon: GraduationCap,
+    isActive: (pathname) => pathname.startsWith("/syllabus/waec"),
   },
   {
     href: "/practice",

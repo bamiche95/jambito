@@ -1,0 +1,41 @@
+{
+  "subject": "Typewriting",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Speed and Accuracy Test",
+          "subtopics": [
+            {
+              "content": "5-minute speed and accuracy test at 40 words per minute (syllabic intensity 1.35–1.40)",
+              "objective": "Demonstrate typing speed and accuracy at a minimum of 40 words per minute with correct technique and minimal errors."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Correspondence, Manuscripts, and Display Work",
+          "subtopics": [
+            {
+              "content": "Pre-printed A4/A5 headed paper, letters and memoranda with insets/continuation sheets/subject headings/enclosures/copy distributions, form/circular letters, envelope addressing, manuscripts with/without inset matter, headings (main, sub, shoulder, paragraph, marginal), paragraphing (blocked, indented, hanging), numbering formats, and display materials (menus, advertisements, itineraries)",
+              "objective": "Format business correspondence including letters, memos, circulars, and envelopes accurately; transcribe handwritten manuscripts with correction signs; apply appropriate paragraphing, numbering styles, and display layouts for menus, advertisements, and itineraries."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Meetings, Business Forms, Tabulation, Literary, and Financial Statements",
+          "subtopics": [
+            {
+              "content": "Notices of meetings, agendas, minutes, reports, completion of pre-printed business forms (applications, invoices, order forms, delivery/advice notes, cards), tabulations with/without ruling or leader dots, literary works (plays, poems, articles, footnotes), and simple financial statements of account",
+              "objective": "Produce documents for meetings including notices, agendas, and minutes; complete pre-printed business forms and cards; construct ruled or unruled numerical and alphabetical tabulations; type literary works with footnotes and simple financial statements."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

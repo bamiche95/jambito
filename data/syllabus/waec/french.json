@@ -1,0 +1,51 @@
+{
+  "subject": "French",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Paper 1: Written Comprehension and Grammar Structure",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Reading Comprehension and Structure",
+          "subtopics": [
+            {
+              "content": "Written passage comprehension, parts of speech, verb tenses/moods, agreement, pronouns, adverbs, sentence patterns, direct/reported speech, figures of speech",
+              "objective": "Read and answer multiple-choice questions on standard written French passages; apply correct grammatical usage including articles, nouns, adjectives, pronouns, regular/irregular verbs, tenses, negation, adverbs, prepositions, conjunctions, active/passive voice, direct/reported speech, and common idiomatic expressions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 2: Written Expression (Essay & Letter Writing)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Free Composition and Letter Writing",
+          "subtopics": [
+            {
+              "content": "Free essay writing on general themes and formal/informal letter writing",
+              "objective": "Write coherent compositions of about 100 words using correct vocabulary, registers, and grammatical structures for general essays and formal/informal correspondence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 3: Oral Test (Listening, Reading Aloud & Conversation)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Listening Comprehension, Reading Aloud, Dialogue, and Exposition",
+          "subtopics": [
+            {
+              "content": "Listening passage comprehension, reading aloud with proper pronunciation/fluency, dialogue interaction, and theme exposition",
+              "objective": "Listen to a spoken passage and answer comprehension, transformation, or substitution questions; read aloud contemporary French passages with appropriate speed, intonation, and pronunciation; engage in conversational dialogue responding to questions (including literature questions where applicable); speak fluently on given contemporary themes in an exposition."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

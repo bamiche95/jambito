@@ -1,0 +1,71 @@
+{
+  "subject": "Computer Studies",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Computer Evolution, Fundamentals, and Security/Ethics",
+          "subtopics": [
+            {
+              "content": "Early computing devices to modern computers, hardware/software constituents, data vs information, security threats and legal issues",
+              "objective": "Trace computing history from Abacus/Babbage to ENIAC/UNIVAC and modern PCs/palmtops; differentiate hardware/software and data/information; identify security threats (viruses, hackers, cybercrimes) and preventive measures (antivirus, firewalls, encryption); examine software copyright and digital privacy."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Computer Hardware, Logic Circuits, and System/Application Software",
+          "subtopics": [
+            {
+              "content": "Input/output devices, CPU/Memory units, storage conversions, logic gates (AND/OR/NOT/NAND/NOR), operating systems, translators, application packages",
+              "objective": "Classify input/output devices; understand CPU (ALU, Control Unit) and memory types (RAM, ROM, auxiliary storage units/conversions); construct truth tables and logic gate equations; differentiate system software (OS, compilers, interpreters, utilities) and application software (GUI vs command line OS)."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Computer Applications (Word Processing, Spreadsheet, Database, Graphics, Presentation)",
+          "subtopics": [
+            {
+              "content": "Operations and features of MS Word, MS Excel, MS Access, CorelDraw, and MS PowerPoint",
+              "objective": "Master editing, formatting, and file operations in MS Word; perform spreadsheet cell calculations, formulas, functions, and charting in MS Excel; build database structures, tables, queries, and reports in Access/DBMS; design graphic cards/logos in CorelDraw; create animated slide shows in PowerPoint."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Managing Computer Files and Basic Computer Operations",
+          "subtopics": [
+            {
+              "content": "File structures, organization/access methods, file security, booting, computer data registers/buses",
+              "objective": "Define data items, records, files, databases, and file organizations (serial, sequential, index, random); identify causes of data loss and security methods (backups, passwords); differentiate cold/warm booting; explain data processing cycle, registers (MDR, CIR), and bus width transfer factors."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "ICT, Internet, Networking, and World Wide Web",
+          "subtopics": [
+            {
+              "content": "ICT applications, internet browsers, e-mail management, network topologies/devices, web protocols (HTTP/HTML)",
+              "objective": "Understand ICT broadcasting, telecommunications, and applications (teleconferencing, ATM, POS); navigate web browsers, search engines, and manage e-mail accounts; classify networks (PAN, LAN, MAN, WAN) and topologies (Star, Bus, Ring); understand web development protocols (HTTP, HTML) and website navigation; identify network cables (twisted pair, fibre optic) and connectors (RJ45, USB)."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Problem-Solving Skills, Programming Languages, BASIC, and Systems/Program Development",
+          "subtopics": [
+            {
+              "content": "Programming levels, algorithms, flowcharts, BASIC statements/arrays, system development life cycle, program compilation",
+              "objective": "Compare Machine, Low Level, and High Level languages; write algorithms and construct flowcharts; execute BASIC statements, arithmetic expressions, built-in functions, and 1D arrays; detail the stages of the Systems Development Cycle; explain steps in the Program Development Cycle (coding, debugging, documentation)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

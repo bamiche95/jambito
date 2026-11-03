@@ -284,7 +284,7 @@ export default async function SyllabusSubjectPage({ params }: PageProps) {
                       <span className="mt-0.5 block text-[11px] font-medium text-slate-500">
                         {subject.recommendedTexts.length}{" "}
                         {subject.recommendedTexts.length === 1 ? "book" : "books"} listed
-                        by JAMB
+                        by {subject.exam}
                       </span>
                     </span>
                     <ChevronDown

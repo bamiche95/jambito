@@ -1,0 +1,46 @@
+{
+  "subject": "Woodwork",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Practical Work",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Practical Woodworking Operations and Joint Construction",
+          "subtopics": [
+            {
+              "content": "Use of hand tools, power tools, and basic woodworking machines to construct widening joints (butt, dowelled, tongued & grooved), angle joints (dovetails, housing, mitre), framing joints (mortise & tenon, bridle, halving), ripping, cross-cutting, surfacing, chamfering, assembly, and surface finishing",
+              "objective": "Construct widening, angle, and framing joints from dimensioned drawings; carry out cutting, planing, shaping, trial assembly, and finishing operations safely."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Theory",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Safety, Tools, Woodworking Machines, and Maintenance",
+          "subtopics": [
+            {
+              "content": "Workshop safety regulations, personal safety, tool safety, machine safety, first aid, identification and use of hand tools (planes, saws, boring bits, shapers), portable power tools (drills, jigsaws, routers, sanders), woodworking machinery (circular saw, planer, mortiser, lathe), and maintenance types (corrective, preventive)",
+              "objective": "Enforce workshop safety rules and first aid practices; identify, select, and maintain hand tools, power tools, and woodworking machinery."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Materials, Technology, Design, and Advanced Processes",
+          "subtopics": [
+            {
+              "content": "West African timber species, tree structure, conversion methods (plain, quarter, tangential), seasoning techniques (air, kiln, moisture content calculation), timber defects, preservatives, manufactured boards (plywood, blockboard), joint classifications, wood finishes, abrasives, adhesives, hardware fittings, fasteners, non-wood materials, veneers/veneering, wood turning, carving, upholstery, orthographic working drawings, design processes, mass production, and entrepreneurship in woodworking",
+              "objective": "Classify timbers, conversion methods, seasoning practices, and defect preventions; select appropriate manufactured boards, adhesives, finishes, and fittings; perform veneering, wood turning, carving, and upholstery tasks; produce working drawings, cutting lists, and cost estimates; apply mass production concepts and prepare woodworking business plans."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

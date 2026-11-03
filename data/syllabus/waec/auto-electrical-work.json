@@ -1,0 +1,71 @@
+{
+  "subject": "Auto Electrical Work",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Battery",
+          "subtopics": [
+            {
+              "content": "1.1 - 1.5 Concept, uses, types, charging, testing, and maintenance",
+              "objective": "Definition and distinction of motor vehicle batteries; lead-acid and nickel-alkaline construction and ratings. Electrolyte preparation, safety rules, charging modes, specific gravity test (hydrometer), cell voltage, polarity, over-charging symptoms, and safe storage."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Starting System",
+          "subtopics": [
+            {
+              "content": "2.1 - 2.4 Purpose, circuit diagram, motor types, repairs",
+              "objective": "Starting system components (battery, flywheel, starter motor, switch, solenoid). Reading/drawing circuit diagrams. Axial vs inertia starter motors and pinion engagements. Dismantling, assembling, brush/bushing replacement, commutator soldering, and troubleshooting."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Ignition System",
+          "subtopics": [
+            {
+              "content": "3.1 - 3.6 Purpose, circuit diagrams, coil operation, timing, fault repairs",
+              "objective": "Components of ignition assembly (switch, coil, distributor, capacitor, HT leads, spark plugs). Construction and operation of ignition coil. Conventional contact breaker vs electronic ignition systems. Retarded/advanced ignition timing faults, hard starting, jerking, and backfiring repair."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Charging System",
+          "subtopics": [
+            {
+              "content": "4.1 - 4.4 Purpose, alternator, circuit diagram, faults and repairs",
+              "objective": "Components (switch, battery, cables, alternator, voltage regulator). Alternator construction, AC to DC rectification, diode testing/replacement, brush/bearing replacement, and fixing charging failure."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Lighting System",
+          "subtopics": [
+            {
+              "content": "5.1 - 5.4 Purpose, head lamps, circuit diagram, maintenance",
+              "objective": "Obligatory vs non-obligatory lights. Headlamp types, setting, alignment, and features. Reading lighting circuit diagrams. Repairing broken lenses, bulb failures, open circuits, and short circuits."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Auxiliary System",
+          "subtopics": [
+            {
+              "content": "6.1 - 6.3 Concepts, construction, operation, repairs",
+              "objective": "Uses and components of auxiliary systems: water temp gauge, oil pressure gauge, fuel gauge, horn relay, wiper switch, screen washer pump, indicator, door switch. Troubleshooting and repair procedures for auxiliary system failures."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

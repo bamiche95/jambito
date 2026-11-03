@@ -1,0 +1,51 @@
+{
+  "subject": "Islamic Religious Studies",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Part 1: Tarikh (Historical Development of Islam)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Pre-Islamic Arabia, Life of Prophet Muhammad (S.A.W.), Rightly Guided Caliphs, and Islam in West Africa",
+          "subtopics": [
+            {
+              "content": "Jahiliyyah practices, Prophet's birth, call to prophethood, Hijrah, Madinan Constitution, key battles (Badr, Uhud, Khandaq), Treaty of Hudaybiyyah, Conquest of Makkah, Farewell Pilgrimage, Khulafa'ur-Rashidin biographies/contributions, and Islam's spread in ancient West African empires",
+              "objective": "Analyze Jahiliyyah social, political, and religious life and Islamic reforms; detail the Prophet's life, leadership, battles, treaties, and sermon; evaluate the biographies and achievements of Abu-Bakr, 'Umar, 'Uthman, and 'Ali; trace the spread and socio-political impacts of Islam in ancient West African empires (Ghana, Mali, Songhai, Kanem-Borno) through traders, scholars, and Sufi orders."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part 2 & Part 3: Qur'an and Hadith",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Qur'anic Revelation, Preservation, Selected Suwar, Moral Lessons, and Hadith Studies",
+          "subtopics": [
+            {
+              "content": "Revelation modes, preservation, compilation, Makki vs Madani Suwar, prescribed Suwar (Q.1, 93, 95, 96:1-5, 97, 109, 110, 112, 113, 114), Qur'anic moral teachings, Hadith/Sunnah concepts, Isnad/Matn/Rawi, Hadith classifications (Sahih, Hasan, Da'if), Six Sound Collections, and prescribed an-Nawawi Ahadith",
+              "objective": "Understand Qur'anic revelation modes, compilation, and preservation roles; translate, interpret, and memorize prescribed Suwar; apply moral lessons regarding parents, honesty, and gambling prohibitions; differentiate Hadith from Sunnah, identify Isnad/Matn/Rawi, classify Hadith authenticity, recognize compilers of Sihahus-Sittah, and interpret selected an-Nawawi Ahadith."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Part 4: Tawhid and Fiqh (Islamic Theology and Jurisprudence)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Iman, Shirk, Taharah, Salat, Sawm, Zakat, Hajj, Shari'ah, Nikah, and Talaq",
+          "subtopics": [
+            {
+              "content": "Articles of faith, Trinity critique, Shirk forms, purification steps (Wudu, Ghusl, Tayammum), obligatory/nawafil/special Salawat, Sawm rules/significance, Zakat calculations/beneficiaries, Hajj/Umrah rites, Shari'ah sources, Islamic marriage (Nikah) conditions, and divorce (Talaq/Iddat) laws",
+              "objective": "Understand Iman articles (Allah, Angels, Books, Prophets, Resurrection, Qada/Qadar) and refute Shirk/ancestor worship; perform ritual purification (Taharah); observe obligatory, congregational, and special Salawat; detail Sawm types, exemptions, and benefits; compute Zakat Nisab for assets/livestock and identify beneficiaries; master Hajj and Umrah procedures; define Shari'ah sources (Qur'an, Sunnah, Ijma, Qiyas); analyze Islamic marriage rights, invalidating conditions, divorce categories (Talaq, Khul, Faskh), and Iddah waiting periods."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

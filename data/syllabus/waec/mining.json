@@ -1,0 +1,31 @@
+{
+  "subject": "Mining",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Mining, Basic Geology, and Stages of Development",
+          "subtopics": [
+            {
+              "content": "Branches of mining, mineral classifications, distribution in Nigeria, mine accounting/financing, Nigerian Minerals & Mining Act 2007, geology fundamentals, earth structure, rock types, mineral properties, prospecting/exploration techniques, feasibility studies, and mineral processing unit operations",
+              "objective": "Explain mining terms, mineral classifications, Nigerian mineral distribution, and legal/financial frameworks (Mining Act 2007, titles acquisition); relate geology to mining, identify rock types (igneous, sedimentary, metamorphic), and interpret geological maps/cross-sections; classify surface vs underground mining methods; outline prospecting/exploration techniques (geophysical, geochemical, remote sensing) and feasibility studies."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Mining Methods, Mineral Processing, Gemology, Lapidary, Health, Safety, and Environment",
+          "subtopics": [
+            {
+              "content": "Surface methods (open pit, open cast, quarrying), underground methods (room-and-pillar, longwall, cut-and-fill, block caving), sea-floor/asteroid mining, materials handling, comminution/concentration operations, gemstone identification/lapidary, PPE equipment, occupational diseases, first aid, accident reporting, and environmental protection laws",
+              "objective": "Detail unit operations for open pit, open cast, and quarrying; explain basic concepts of underground mining methods and material handling equipment; perform mineral comminution, concentration, and tailings disposal operations; identify, measure, process, and market gemstones using lapidary tools; enforce health, safety, and environmental protection laws, use PPE, administer first aid, and report mine accidents."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

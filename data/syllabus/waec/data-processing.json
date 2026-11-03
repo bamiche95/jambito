@@ -1,0 +1,51 @@
+{
+  "subject": "Data Processing",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Information Age and Basic Computing",
+          "subtopics": [
+            {
+              "content": "History of computers, data vs information, number systems, computer generations, classification, hardware components",
+              "objective": "Identify early computing devices, number systems, and characteristics of 1st to 5th computer generations; distinguish data from information and understand digitalization; classify computers by type, size, and usage; analyze ICT societal impacts and describe input, output, system unit, and storage components."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Information Processing and Transmission",
+          "subtopics": [
+            {
+              "content": "Information processing steps, transmission methods, networking, internet, operating systems",
+              "objective": "Detail steps involved in information processing; compare information transmission modes (visual, audio, audiovisual) and media; understand networking types (LAN, MAN, WAN), internet services, browsers, and security; compare text-based and Graphical User Interfaces (GUI) in Operating Systems."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tools for Processing Information (Applications)",
+          "subtopics": [
+            {
+              "content": "Word processing, Spreadsheets, DBMS, Presentation, Web Design, Graphic packages",
+              "objective": "Create and manipulate documents in Word Processors; build worksheets, formulas, and charts in Spreadsheets; structure database files, tables, queries, and reports using DBMS (MS Access); build presentations using slides; identify web design software components; design graphic layouts using CorelDraw."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Computer Maintenance, Ethics, Safety, Viruses, and Data Management",
+          "subtopics": [
+            {
+              "content": "Hardware/software maintenance, data recovery, computer room ethics, ergonomic positioning, DP professions, virus control, relational databases, file organization, parallel/distributed security",
+              "objective": "Execute computer cleaning, drive maintenance, and data recovery after system crash; apply computer room rules, ergonomic seating, and safety lighting; identify DP career paths and professional bodies; detect, prevent, and remove computer viruses; create relational database tables, keys, forms, queries, and reports; compare file organization structures; master data encryption, access control, DBA roles, and parallel/distributed databases."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

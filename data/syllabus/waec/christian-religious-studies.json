@@ -1,0 +1,81 @@
+{
+  "subject": "Christian Religious Studies",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Themes from the Old Testament",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Sovereignty of God, Leadership and Parental Responsibility",
+          "subtopics": [
+            {
+              "content": "God as Creator/Controller, leadership of Joseph, Moses, Joshua, Deborah; Eli and Samuel",
+              "objective": "Understand God's creation and control of the universe (Gen 1-2); analyze leadership qualities and roles of Joseph, Moses, Joshua, and Deborah; evaluate parental responsibilities and consequences of bad parenting through Eli and Samuel."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "King Saul, David, Solomon, Supremacy of God and Reforms",
+          "subtopics": [
+            {
+              "content": "Saul's disobedience, David's submission/sin/repentance, Solomon's wisdom/unwise decisions, Ahab, Elijah, Josiah",
+              "objective": "Examine Saul's disobedience and fall; analyze David's submission to God's will, sin with Bathsheba, repentance, and forgiveness; evaluate Solomon's wisdom, Rehoboam's foolishness, and kingdom division; analyze Elijah's contest at Mount Carmel proving God's supremacy; examine Ahab's and Gehazi's greed; study King Josiah's religious reforms."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Concern for Nation, Faith, Social Justice and Divine Love",
+          "subtopics": [
+            {
+              "content": "Exile and response (Nehemiah, Ezra), faith in adversity (Daniel), social justice (Amos), divine love (Hosea)",
+              "objective": "Understand the exile and Nehemiah's concern/rebuilding of Jerusalem's walls; examine faith and courage in Daniel and his companions; analyze Amos's message on true religion and social justice; evaluate Hosea's message on God's divine love and forgiveness."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Themes from the Synoptic Gospels and the Acts of the Apostles",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Baptism, Temptation, Discipleship, Forgiveness and Passion Narrative",
+          "subtopics": [
+            {
+              "content": "Baptism/Temptation of Jesus, call/demands of discipleship, teaching on forgiveness, Gethsemane, trial, crucifixion, resurrection",
+              "objective": "Understand the significance of Jesus's baptism and temptation; examine the call and stringent demands of discipleship; study Jesus's teachings on forgiveness; evaluate the events of Gethsemane, Peter's denial, trials, crucifixion, burial, and resurrection."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Early Church Fellowship, Holy Spirit, Gentile Mission and Opposition",
+          "subtopics": [
+            {
+              "content": "Communal life in early church, Pentecost, Paul's conversion, Gentile mission, opposition to gospel",
+              "objective": "Analyze fellowship, communal living, and challenges in the early Church (Ananias/Sapphira, selection of deacons); study the Holy Spirit's descent at Pentecost; examine the expansion of the Gospel to Gentiles (Peter, Paul); evaluate reasons for and responses to early gospel opposition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Themes from Selected Epistles",
+      "topics": [
+        {
+          "id": 6,
+          "title": "Epistle of James and First Epistle of Peter",
+          "subtopics": [
+            {
+              "content": "Faith and works, impartiality, effective prayer, good citizenship, Christian living among non-Christians, interpersonal relationships",
+              "objective": "Examine James's teaching on faith versus works, avoiding partiality, and power of prayer; analyze Peter's instructions on good citizenship, maintaining Christian conduct in a non-Christian society, and humble interpersonal relationships among church leaders and members."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

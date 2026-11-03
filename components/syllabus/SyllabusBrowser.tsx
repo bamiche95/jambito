@@ -7,46 +7,65 @@ import { cn } from "@/lib/utils";
 import type { SyllabusCategory, SyllabusSubjectSummary } from "@/lib/syllabus";
 
 /**
- * Client island for the subject index.
+ * Client island for the subject index — shared by `/syllabus` (every board) and
+ * `/syllabus/[exam]` (one board).
  *
- * Only the 25 compact summaries are shipped here — importing the constants from
- * `lib/syllabus.ts` directly would drag all 25 JSON files into the browser
- * bundle, so `categories` arrives as a prop from the server page instead.
+ * Only the compact summaries are shipped here — importing the constants from
+ * `lib/syllabus.ts` directly would drag every syllabus JSON into the browser
+ * bundle, so `categories` and `exams` arrive as props from the server page.
  *
- * All subjects render on first paint; the search box only hides cards, which
- * keeps the page crawlable and usable before hydration.
+ * All subjects render on first paint; the search box and the chips only hide
+ * cards, which keeps the page crawlable and usable before hydration.
  */
 
 const ALL_CATEGORIES = "All subjects" as const;
 type CategoryFilter = SyllabusCategory | typeof ALL_CATEGORIES;
 
+/** Sentinel for "no board filter" — boards are identified by exam slug. */
+const ALL_BOARDS = "all-boards" as const;
+
 function categoryId(category: string): string {
   return category.replace(/[^a-z0-9]+/gi, "-").toLowerCase();
+}
+
+export interface SyllabusBrowserExam {
+  slug: string;
+  /** Short board name shown on the chip (`JAMB`, `WAEC`). */
+  name: string;
 }
 
 export default function SyllabusBrowser({
   subjects,
   categories,
+  examName,
+  exams,
 }: {
   subjects: SyllabusSubjectSummary[];
   categories: readonly SyllabusCategory[];
+  /** Board named in the search label/placeholder (`"JAMB"`, `"WAEC"`). */
+  examName: string;
+  /** Two or more boards turn on the board filter row; omit it for one board. */
+  exams?: readonly SyllabusBrowserExam[];
 }) {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>(ALL_CATEGORIES);
+  const [activeBoard, setActiveBoard] = useState<string>(ALL_BOARDS);
 
   const normalizedQuery = query.trim().toLowerCase();
+  const boardFilters = exams && exams.length > 1 ? exams : undefined;
 
   const visible = useMemo(
     () =>
       subjects.filter((subject) => {
+        const matchesBoard = activeBoard === ALL_BOARDS || subject.examSlug === activeBoard;
         const matchesCategory =
           activeCategory === ALL_CATEGORIES || subject.category === activeCategory;
         const matchesQuery =
           normalizedQuery.length === 0 ||
           subject.name.toLowerCase().includes(normalizedQuery);
-        return matchesCategory && matchesQuery;
+        return matchesBoard && matchesCategory && matchesQuery;
       }),
-    [subjects, activeCategory, normalizedQuery],
+    [subjects, activeBoard, activeCategory, normalizedQuery],
   );
 
   const groups = useMemo(
@@ -61,6 +80,7 @@ export default function SyllabusBrowser({
   );
 
   const filters: CategoryFilter[] = [ALL_CATEGORIES, ...categories];
+  const activeBoardName = boardFilters?.find((board) => board.slug === activeBoard)?.name;
 
   return (
     <div>
@@ -70,7 +90,7 @@ export default function SyllabusBrowser({
           className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
         />
         <label htmlFor="syllabus-search" className="sr-only">
-          Search JAMB subjects
+          Search {examName} subjects
         </label>
         <input
           id="syllabus-search"
@@ -92,6 +112,36 @@ export default function SyllabusBrowser({
           </button>
         ) : null}
       </div>
+
+      {boardFilters ? (
+        <div
+          role="group"
+          aria-label="Filter subjects by exam board"
+          className="mt-3 flex flex-wrap gap-2"
+        >
+          {[{ slug: ALL_BOARDS as string, name: "All boards" }, ...boardFilters].map(
+            (board) => {
+              const active = board.slug === activeBoard;
+              return (
+                <button
+                  key={board.slug}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => setActiveBoard(board.slug)}
+                  className={cn(
+                    "shrink-0 rounded-full border px-3 py-1.5 text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2",
+                    active
+                      ? "border-navy bg-navy text-white shadow-sm"
+                      : "border-slate-200 bg-white text-slate-600 hover:border-blue-300 hover:text-brand-blue",
+                  )}
+                >
+                  {board.name}
+                </button>
+              );
+            },
+          )}
+        </div>
+      ) : null}
 
       <div
         role="group"
@@ -121,6 +171,7 @@ export default function SyllabusBrowser({
 
       <p className="mt-4 text-xs font-medium text-slate-500" aria-live="polite">
         {visible.length} {visible.length === 1 ? "subject" : "subjects"}
+        {activeBoardName ? ` · ${activeBoardName}` : ""}
         {activeCategory === ALL_CATEGORIES ? "" : ` in ${activeCategory}`}
         {normalizedQuery ? ` matching “${query.trim()}”` : ""}
       </p>
@@ -149,6 +200,7 @@ export default function SyllabusBrowser({
                   <SubjectCard
                     key={`${subject.examSlug}-${subject.slug}`}
                     subject={subject}
+                    showExam={Boolean(boardFilters)}
                   />
                 ))}
               </div>

@@ -6,7 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 import Breadcrumbs from "@/components/syllabus/Breadcrumbs";
 import JsonLd from "@/components/syllabus/JsonLd";
-import SubjectCard from "@/components/syllabus/SubjectCard";
+import SyllabusBrowser from "@/components/syllabus/SyllabusBrowser";
 import {
   getSyllabusExamName,
   getSyllabusExamSlugs,
@@ -18,11 +18,11 @@ import {
 import { SITE_URL } from "@/lib/site";
 
 /**
- * Exam-level syllabus index (`/syllabus/jamb`).
+ * Exam-level syllabus index (`/syllabus/jamb`, `/syllabus/waec`).
  *
  * Sits between the site-wide index and the subject pages so the breadcrumb is a
- * real, shareable URL, and so adding a second exam board later only needs its
- * JSON files — no new route.
+ * real, shareable URL. Every board in `lib/syllabus.ts` gets this page from
+ * `generateStaticParams()` — no per-board code.
  */
 
 interface PageProps {
@@ -72,10 +72,6 @@ export default async function SyllabusExamPage({ params }: PageProps) {
   const examName = getSyllabusExamName(examSlug);
   const summaries = subjects.map(toSyllabusSummary);
   const topicCount = subjects.reduce((total, subject) => total + subject.stats.topics, 0);
-  const groups = SYLLABUS_CATEGORIES.map((category) => ({
-    category,
-    items: summaries.filter((subject) => subject.category === category),
-  })).filter((group) => group.items.length > 0);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -119,8 +115,8 @@ export default async function SyllabusExamPage({ params }: PageProps) {
               {examName} Syllabus
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300 sm:text-base">
-              All {subjects.length} {examName} subjects and {topicCount} topics, with the
-              candidate objectives JAMB publishes for each one.
+              All {subjects.length} {examName} subjects and {topicCount} topics, with
+              the candidate objectives {examName} publishes for each one.
             </p>
             <div className="mt-5 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -142,37 +138,11 @@ export default async function SyllabusExamPage({ params }: PageProps) {
         </section>
 
         <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:py-12">
-          <div className="space-y-8">
-            {groups.map((group) => {
-              const headingId = `group-${group.category
-                .replace(/[^a-z0-9]+/gi, "-")
-                .toLowerCase()}`;
-              return (
-                <section key={group.category} aria-labelledby={headingId}>
-                  <div className="flex items-center gap-3">
-                    <h2
-                      id={headingId}
-                      className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500"
-                    >
-                      {group.category}
-                    </h2>
-                    <span aria-hidden className="h-px flex-1 bg-slate-200" />
-                    <span className="text-[11px] font-medium text-slate-400">
-                      {group.items.length}
-                    </span>
-                  </div>
-                  <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {group.items.map((subject) => (
-                      <SubjectCard
-                        key={`${subject.examSlug}-${subject.slug}`}
-                        subject={subject}
-                      />
-                    ))}
-                  </div>
-                </section>
-              );
-            })}
-          </div>
+          <SyllabusBrowser
+            subjects={summaries}
+            categories={SYLLABUS_CATEGORIES}
+            examName={examName}
+          />
 
           <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
             <h2 className="text-base font-bold text-slate-900">

@@ -1,0 +1,51 @@
+{
+  "subject": "Health Education / Health Science",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: History of Health Education & Human Anatomy and Physiology",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Health Education Settings, Human Cells, Tissues, Sense Organs, and Body Systems",
+          "subtopics": [
+            {
+              "content": "Health education settings, health promotion, somatic/sex cells, mitosis/meiosis, sense organs, skeletal, circulatory, digestive, excretory, respiratory, nervous, endocrine systems, homeostasis, posture, and postural defects",
+              "objective": "Understand settings for health education and health promotion concepts; detail cell division, tissue differentiation, and sense organ structures (eye, ear, skin); analyze the human skeleton, muscle types, circulatory system (heart, blood clotting, blood groups, sickle cell); detail digestion, absorption, kidney/skin excretion, respiratory gaseous exchange, brain/nerve functions, endocrine hormones, homeostasis controls, and postural defect corrections."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Personal, Community, Environmental Health, Nutrition, Safety & First Aid",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Personal Hygiene, Health Screening, Dental Health, Community & School Health, Family Health, Environmental Health, Nutrition, Safety, and First Aid",
+          "subtopics": [
+            {
+              "content": "Personal hygiene, eye/auditory defects, dental care, primary health care, school health programs, family health/budgeting, aging, vital statistics, housing, water purification, waste disposal, pollution, occupational hazards, pest control, food nutrients, balanced diet, first aid emergencies, disaster relief, and accident prevention",
+              "objective": "Apply personal hygiene practices, vision/auditory defect screening, and dental hygiene; evaluate primary healthcare, school health initiatives (FRESH, CFS), family health, maternal/child care, and vital statistics; examine criteria for housing, water purification, refuse/sewage disposal, pollution types, occupational health, and pest/vector control; test for food nutrients, calculate caloric needs, plan balanced diets for various age groups, and apply food preservation; execute first aid for emergencies (cuts, fractures, burns, suffocation) and practice accident/disaster prevention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Substance Education, Diseases, Family Life, Mental Health & Consumer Health",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Drug/Alcohol/Tobacco Education, Communicable & Non-Communicable Diseases, Human Reproduction/Sexuality, Mental Health, and Consumer Health",
+          "subtopics": [
+            {
+              "content": "Drug abuse consequences, tobacco/alcohol health effects, air/water/insect/contact communicable diseases, deficiency and cellular non-communicable diseases, reproductive system anatomy, conception/birth, family planning methods, population education, emotional/mental health traits, consumer health laws, quackery, and nostrums",
+              "objective": "Evaluate drug misuse, self-medication, and health effects of tobacco and alcohol; analyze causes, vectors, life cycles, and prevention of communicable diseases (malaria, TB, cholera, worms, STIs/AIDS) and non-communicable diseases (deficiencies, cancer, diabetes, hypertension); detail human reproductive anatomy, menstrual cycle, birth control, safe motherhood, and population education; promote emotional/mental health; evaluate consumer health protection laws, orthodox vs traditional healthcare services, quackery dangers, health insurance, and nostrums."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

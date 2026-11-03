@@ -1,0 +1,51 @@
+{
+  "subject": "Yoruba",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Èdè)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Essay Writing, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading comprehension passages, 300-word essays (narrative, descriptive, argumentative, expository, dialogue, debate, letter writing), sound system (vowels, consonants, syllabic nasals, syllable structure, assimilation, elision, tone notation), grammar (word classes, word formation, basic/derived numerals, grammatical categories, phrases, clauses, sentence types), and English-Yoruba translation",
+              "objective": "Comprehend written Yoruba passages; write structured essays in standard Yoruba orthography; classify speech sounds, syllable structures, tone marks, and sound processes; analyze word classes, sentence structures, and grammatical categories; translate accurately between English and Yoruba."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Lítíréṣọ̀)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Appreciation, Oral Literature, and Written Literature",
+          "subtopics": [
+            {
+              "content": "Principles of literary appreciation, set oral literature texts (oral prose: *Àkójọpọ̀ Àlọ́ Ìjàpá*, oral drama: *Eégún Aláré*, oral poetry: *Ojúlówó Oríki Ifá*), and set written literature texts (written prose: *Ogún Ọmọdé*, written poetry: *Èdè Abínibí àti Àwọn Àròfọ̀ Miíràn*, written drama: *Ọ̀tẹ̀ Ọyẹ̀*)",
+              "objective": "Apply literary appreciation principles; critique prescribed oral literature prose, drama, and poetry texts; analyze themes, plot, characterization, and poetic devices in prescribed written prose, poetry, and drama texts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Àṣà na Ètò Ìlú)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Yoruba customs (adornment, games, pregnancy care, naming, home training/greetings, traditional foods, non-verbal communication, funeral rites, inheritance) and institutions (occupations, marriage, political organization, age grades, chieftaincy/Obaship, child care, religious beliefs regarding Olodumare and Orisa, modern religions, trade/cooperative practices)",
+              "objective": "Explain Yoruba cultural customs, life-cycle ceremonies, moral training, and traditional etiquette; analyze traditional Yoruba political, economic, social, and religious institutions."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

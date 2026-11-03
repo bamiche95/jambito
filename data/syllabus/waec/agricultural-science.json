@@ -1,0 +1,1536 @@
+{
+  "subject": "Agricultural Science",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Basic Concepts",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning and importance of agriculture",
+          "subtopics": [
+            {
+              "content": "a. Definition and branches of agricultural science",
+              "objective": "Candidates should be able to define agricultural science and state its branches"
+            },
+            {
+              "content": "b. Importance of agriculture to the individual, community and nation",
+              "objective": "Candidates should be able to explain the importance of agriculture to the individual, community and nation"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Problems of agricultural development and possible solutions",
+          "subtopics": [
+            {
+              "content": "a. Problems related to: land tenure; basic amenities; finance; transportation; storage and processing facilities; agricultural education and extension; tools and machinery; farm inputs; marketing system; environmental degradation",
+              "objective": "Candidates should be able to identify and describe the problems of agricultural development"
+            },
+            {
+              "content": "b. Possible solutions to identified problems",
+              "objective": "Candidates should be able to suggest possible solutions to the identified problems"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Meaning and differences between subsistence and commercial agriculture",
+          "subtopics": [
+            {
+              "content": "a. Meaning of subsistence and commercial agriculture",
+              "objective": "Candidates should be able to define subsistence and commercial agriculture"
+            },
+            {
+              "content": "b. Differences between subsistence and commercial agriculture based on their characteristics",
+              "objective": "Candidates should be able to differentiate between subsistence and commercial agriculture"
+            },
+            {
+              "content": "c. Advantages and disadvantages of subsistence and commercial agriculture",
+              "objective": "Candidates should be able to state the advantages and disadvantages of both types"
+            },
+            {
+              "content": "d. Problems of subsistence and commercial agriculture",
+              "objective": "Candidates should be able to discuss the problems of both types, including incidence of pests and diseases, vagaries of weather, labour and government policy"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Roles of government in agricultural development",
+          "subtopics": [
+            {
+              "content": "a. Agricultural finance: (i) credit; (ii) subsidy",
+              "objective": "Candidates should be able to explain the role of government in agricultural finance"
+            },
+            {
+              "content": "b. Agricultural education",
+              "objective": "Candidates should be able to describe the role of government in agricultural education"
+            },
+            {
+              "content": "c. Agricultural extension services",
+              "objective": "Candidates should be able to describe government extension services"
+            },
+            {
+              "content": "d. Agricultural policies and programmes",
+              "objective": "Candidates should be able to discuss past and present programmes e.g. OFN, ADP, Farm Settlement, Agricultural Sector Rehabilitation Project (ASRP) and National Aids Coordination Secretariat"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Role of non-governmental organizations in agricultural development",
+          "subtopics": [
+            {
+              "content": "a. Meaning of non-governmental organizations (NGOs)",
+              "objective": "Candidates should be able to define NGOs"
+            },
+            {
+              "content": "b. Roles of NGOs in agricultural development",
+              "objective": "Candidates should be able to state the roles of NGOs e.g. WARDA, IITA, ILCA, ICRISAT"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Agricultural laws and reforms",
+          "subtopics": [
+            {
+              "content": "a. Land tenure systems in West Africa",
+              "objective": "Candidates should be able to describe land tenure systems in West Africa"
+            },
+            {
+              "content": "b. Government laws on land use in West Africa",
+              "objective": "Candidates should be able to explain government laws on land use, including the Land Use Act (Decree)"
+            },
+            {
+              "content": "c. Advantages and disadvantages of the Land Use Act (Decree) and reforms in West Africa",
+              "objective": "Candidates should be able to state the advantages and disadvantages of the Land Use Act and land reforms in West Africa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Agricultural Ecology",
+      "topics": [
+        {
+          "id": 7,
+          "title": "Meaning and importance of agricultural ecology",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agricultural ecology and ecosystem",
+              "objective": "Candidates should be able to define agricultural ecology and ecosystem"
+            },
+            {
+              "content": "b. Components of farm ecosystem e.g. biotic and abiotic",
+              "objective": "Candidates should be able to identify the biotic and abiotic components of the farm ecosystem"
+            },
+            {
+              "content": "c. Interactions of the components in the terrestrial and aquatic agro-ecosystem",
+              "objective": "Candidates should be able to describe interactions of farm crops/animals with other components in mono or sole cropping, mixed cropping, mixed farming, fish ponds and forest (rain or savannah)"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Land and its uses",
+          "subtopics": [
+            {
+              "content": "a. Meaning of land",
+              "objective": "Candidates should be able to define land"
+            },
+            {
+              "content": "b. Characteristics of land – free gift of nature, immobile, limited in supply etc.",
+              "objective": "Candidates should be able to state the characteristics of land"
+            },
+            {
+              "content": "c. Uses of land: (i) agricultural purposes - crop production, wildlife conservation/game reserve, livestock production etc.; (ii) non-agricultural purposes - industry, housing, transport etc.",
+              "objective": "Candidates should be able to state agricultural uses (including aquaculture, forestry and apiculture) and non-agricultural uses (health centres, church/mosque, mining, recreational centres, schools and markets)"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Factors affecting land availability for agricultural purpose",
+          "subtopics": [
+            {
+              "content": "a. Physical factors: soil type; topography; land degradation; soil pollution",
+              "objective": "Candidates should be able to explain the physical factors affecting land availability"
+            },
+            {
+              "content": "b. Economic factors: population pressure; expansion of industries; mining/mineral exploitation; recreation/tourism",
+              "objective": "Candidates should be able to explain the economic factors affecting land availability"
+            },
+            {
+              "content": "c. Socio-cultural factors: land tenure system; religious purpose (church, mosque and shrine) etc.",
+              "objective": "Candidates should be able to explain the socio-cultural factors affecting land availability"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Agro-allied industries and relationship between agriculture and industry",
+          "subtopics": [
+            {
+              "content": "a. Agro-based industries and raw materials: paper industry – pulp wood; beverage industry – cocoa, tea etc; textile industry – cotton; soap industry – oil, seeds etc.",
+              "objective": "Candidates should be able to identify agro-based industries and their raw materials, including others e.g. leather industry – hides and skin, canning industry – meat and fish"
+            },
+            {
+              "content": "b. Relationship between agriculture and industries: agriculture provides market for industrial products e.g. farm machinery, chemicals; agriculture provides food for industrial workers",
+              "objective": "Candidates should be able to explain the relationship between agriculture and industries"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Environmental factors affecting crop and animal distribution and production",
+          "subtopics": [
+            {
+              "content": "a. Climatic factors e.g. rainfall, temperature, light, wind, relative humidity",
+              "objective": "Candidates should be able to explain the effect of climatic factors on crop and animal distribution and production"
+            },
+            {
+              "content": "b. Biotic factors e.g. predators, parasites, soil micro-organisms, pests, pathogens and weeds; interrelationships such as competition, parasitism, mutualism (symbiosis)",
+              "objective": "Candidates should be able to explain the effect of biotic factors and their interrelationships"
+            },
+            {
+              "content": "c. Edaphic factors: soil pH, soil texture, soil structure, soil type etc.",
+              "objective": "Candidates should be able to explain the effect of edaphic factors"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Rock formation",
+          "subtopics": [
+            {
+              "content": "a. Types of rock: igneous; sedimentary; metamorphic",
+              "objective": "Candidates should be able to identify, describe and give examples of rock types"
+            },
+            {
+              "content": "b. Processes of rock formation",
+              "objective": "Candidates should be able to describe how igneous, sedimentary and metamorphic rocks are formed"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Soil formation and profile development",
+          "subtopics": [
+            {
+              "content": "a. Factors of soil formation: the parent rock, organisms, climate, topography and time",
+              "objective": "Candidates should be able to explain the role played by each factor in soil formation"
+            },
+            {
+              "content": "b. Processes of soil formation: physical weathering; chemical weathering",
+              "objective": "Candidates should be able to describe the processes of soil formation"
+            },
+            {
+              "content": "c. Soil profile development",
+              "objective": "Candidates should be able to define soil profile, and identify, describe and state the importance of each horizon"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Types, composition and properties of soil",
+          "subtopics": [
+            {
+              "content": "a. Types of soil",
+              "objective": "Candidates should be able to identify types of soil and separate soil into sand, silt and clay fractions"
+            },
+            {
+              "content": "b. Chemical and biological composition of soil: soil macro and micro nutrients; soil water; soil macro-organisms; soil microbes; soil air",
+              "objective": "Candidates should be able to describe the chemical and biological composition of soil"
+            },
+            {
+              "content": "c. Soil pH",
+              "objective": "Candidates should be able to determine soil pH and explain the causes and correction of soil acidity/alkalinity"
+            },
+            {
+              "content": "d. Physical properties of soil: soil texture; soil structure",
+              "objective": "Candidates should be able to describe physical properties including water holding capacity, porosity, capillarity and consistency"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Plant nutrients and nutrient cycle",
+          "subtopics": [
+            {
+              "content": "a. Macro and micro nutrients; their functions and deficiency symptoms in crops",
+              "objective": "Candidates should be able to state functions and deficiency symptoms of macro-nutrients (N, P, K, Ca, Mg, S) and micro-nutrients (Zn, Fe, Mo, Co, Bo, Cu)"
+            },
+            {
+              "content": "b. Factors affecting availability of nutrients in soil such as pH, excess of other nutrients, leaching, crop removal, oxidation and burning",
+              "objective": "Candidates should be able to explain the factors affecting nutrient availability"
+            },
+            {
+              "content": "c. Methods of replenishing lost nutrients, e.g. crop rotation, organic manuring, fertilizer application, fallowing, liming, cover-cropping",
+              "objective": "Candidates should be able to describe methods of replenishing nutrients, including types of fertilizers and methods of fertilizer application"
+            },
+            {
+              "content": "d. Nitrogen, carbon, water and phosphorus cycles",
+              "objective": "Candidates should be able to describe the nitrogen, carbon and water cycles and their importance"
+            },
+            {
+              "content": "e. Organic agriculture – meaning and importance",
+              "objective": "Candidates should be able to define organic agriculture and state its importance"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Irrigation",
+          "subtopics": [
+            {
+              "content": "a. Meaning of irrigation system",
+              "objective": "Candidates should be able to define irrigation"
+            },
+            {
+              "content": "b. Types of irrigation systems: overhead e.g. sprinkler; surface e.g. flooding, furrow/channel, basin, border; underground e.g. perforated pipes, drips",
+              "objective": "Candidates should be able to describe the types of irrigation systems"
+            },
+            {
+              "content": "c. Advantages and disadvantages of irrigation systems",
+              "objective": "Candidates should be able to state the advantages and disadvantages of each system"
+            },
+            {
+              "content": "d. Importance of irrigation",
+              "objective": "Candidates should be able to state the importance of irrigation"
+            },
+            {
+              "content": "e. Problems associated with irrigation",
+              "objective": "Candidates should be able to identify problems associated with irrigation"
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Drainage",
+          "subtopics": [
+            {
+              "content": "a. Meaning of drainage",
+              "objective": "Candidates should be able to define drainage"
+            },
+            {
+              "content": "b. Importance of drainage",
+              "objective": "Candidates should be able to state the importance of drainage"
+            },
+            {
+              "content": "c. Types of drainage systems: surface drainage e.g. channel, furrow; subsurface/underground drainage",
+              "objective": "Candidates should be able to describe the types of drainage systems"
+            },
+            {
+              "content": "d. Advantages and disadvantages of drainage systems",
+              "objective": "Candidates should be able to state the advantages and disadvantages of drainage systems"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Agricultural pollution",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agricultural pollution",
+              "objective": "Candidates should be able to define agricultural pollution"
+            },
+            {
+              "content": "b. Causes/sources of pollution of agricultural lands and fish ponds: excessive application of agricultural chemicals; marine and oil spillage; livestock waste and dung disposal etc.",
+              "objective": "Candidates should be able to identify causes and sources of land/pond pollution"
+            },
+            {
+              "content": "c. Effects of land/pond pollution on farmers and agricultural productivity",
+              "objective": "Candidates should be able to state the effects of pollution and ways of minimizing land/pond pollution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Agricultural Engineering/Mechanization",
+      "topics": [
+        {
+          "id": 19,
+          "title": "Simple farm tools",
+          "subtopics": [
+            {
+              "content": "a. Meaning of simple farm tools",
+              "objective": "Candidates should be able to define simple farm tools"
+            },
+            {
+              "content": "b. Types of simple farm tools - cutlass, hoe, spade, shovel etc.",
+              "objective": "Candidates should be able to identify, describe and state the uses of each tool"
+            },
+            {
+              "content": "c. General maintenance of simple farm tools",
+              "objective": "Candidates should be able to describe the maintenance of simple farm tools"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Farm machinery and implements",
+          "subtopics": [
+            {
+              "content": "a. Farm machinery: tractor; bulldozer; shellers; dryers; incubators; milking machines; combine harvester etc.",
+              "objective": "Candidates should be able to define, identify and state the uses/functions of farm machinery and identify their different parts (engineering details not required)"
+            },
+            {
+              "content": "b. Tractor-coupled implements: ploughs; harrows; ridgers; planters; harvesters; sprayers etc.",
+              "objective": "Candidates should be able to identify, describe and state the uses of tractor-coupled implements and identify their parts"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Maintenance practices and precautionary measures",
+          "subtopics": [
+            {
+              "content": "a. Reasons for maintaining farm machines",
+              "objective": "Candidates should be able to state reasons for maintaining farm machines"
+            },
+            {
+              "content": "b. Maintenance of farm machinery: check water and oil levels regularly; carry out routine service; keep machines clean etc.",
+              "objective": "Candidates should be able to describe maintenance practices and precautionary measures in the use of farm machinery"
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Agricultural mechanization",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agricultural mechanization",
+              "objective": "Candidates should be able to define agricultural mechanization"
+            },
+            {
+              "content": "b. Mechanized agricultural operations",
+              "objective": "Candidates should be able to describe mechanized operations: ploughing, harrowing, planting, harvesting, milking etc."
+            },
+            {
+              "content": "c. Advantages and disadvantages of agricultural mechanization",
+              "objective": "Candidates should be able to state the advantages and disadvantages of mechanization"
+            },
+            {
+              "content": "d. Limitations of agricultural mechanization",
+              "objective": "Candidates should be able to state the limitations of mechanization"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Prospects of agricultural mechanization",
+          "subtopics": [
+            {
+              "content": "a. Prospects of agricultural mechanization",
+              "objective": "Candidates should be able to suggest ways of improving mechanization such as developing less expensive machines and establishing agricultural engineering schools for personnel"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Farm power",
+          "subtopics": [
+            {
+              "content": "a. Sources of farm power",
+              "objective": "Candidates should be able to identify sources of farm power"
+            },
+            {
+              "content": "b. Advantages and disadvantages of different sources of farm power",
+              "objective": "Candidates should be able to state the advantages and disadvantages of each source"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Farm surveying",
+          "subtopics": [
+            {
+              "content": "a. Meaning of farm surveying",
+              "objective": "Candidates should be able to define farm surveying"
+            },
+            {
+              "content": "b. Common survey equipment",
+              "objective": "Candidates should be able to identify common survey equipment"
+            },
+            {
+              "content": "c. Uses of farm survey equipment",
+              "objective": "Candidates should be able to state the uses of survey equipment"
+            },
+            {
+              "content": "d. Maintenance of farm survey equipment",
+              "objective": "Candidates should be able to describe maintenance of survey equipment"
+            },
+            {
+              "content": "e. Importance of farm surveying",
+              "objective": "Candidates should be able to state the importance of farm surveying"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "title": "Farm planning",
+          "subtopics": [
+            {
+              "content": "a. Meaning of farm planning",
+              "objective": "Candidates should be able to define farm planning"
+            },
+            {
+              "content": "b. Factors to be considered in farm planning",
+              "objective": "Candidates should be able to state the factors to be considered in farm planning"
+            },
+            {
+              "content": "c. Importance of farm planning",
+              "objective": "Candidates should be able to state the importance of farm planning"
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "title": "Principles of farmstead planning",
+          "subtopics": [
+            {
+              "content": "a. Meaning of farmstead",
+              "objective": "Candidates should be able to define farmstead"
+            },
+            {
+              "content": "b. Importance of farmstead planning",
+              "objective": "Candidates should be able to state the importance of farmstead planning"
+            },
+            {
+              "content": "c. Factors to be considered in the design of a farmstead",
+              "objective": "Candidates should be able to explain factors in farmstead design, including site selection and location of structures"
+            },
+            {
+              "content": "d. Farmstead layout",
+              "objective": "Candidates should be able to sketch a farm layout (engineering details not required)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Crop Production",
+      "topics": [
+        {
+          "id": 28,
+          "title": "Classification of crops",
+          "subtopics": [
+            {
+              "content": "a. Classification of crops based on their uses e.g. cereals, pulses, roots and tubers, vegetables",
+              "objective": "Candidates should be able to classify crops based on their uses"
+            },
+            {
+              "content": "b. Classification based on their life cycle e.g. annual, biennial, perennial, ephemeral",
+              "objective": "Candidates should be able to classify crops based on life cycle"
+            },
+            {
+              "content": "c. Classification based on their morphology e.g. monocotyledonous and dicotyledonous crops",
+              "objective": "Candidates should be able to classify crops based on morphology"
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "title": "Husbandry of selected crops",
+          "subtopics": [
+            {
+              "content": "Scope for each crop: botanical and common names, varieties/types, climatic and soil requirements, land preparation, methods of propagation, planting date, seed rate, spacing, sowing depth and nursery requirements, cultural practices (supplying, thinning, manuring and fertilizer requirement and application, weeding, pests and disease control), harvesting, processing and storage of at least one representative crop from each grouping below",
+              "objective": "Candidates should be able to describe the husbandry of selected crops (a general knowledge of the husbandry of all crops listed is presumed)"
+            },
+            {
+              "content": "a. Cereals e.g. maize, rice, guinea corn, millet",
+              "objective": "Candidates should be able to describe the husbandry of cereals"
+            },
+            {
+              "content": "b. Pulses (grain legumes) e.g. cowpea, soya bean, pigeon pea",
+              "objective": "Candidates should be able to describe the husbandry of pulses"
+            },
+            {
+              "content": "c. Roots and tubers e.g. cassava, yam, potatoes",
+              "objective": "Candidates should be able to describe the husbandry of roots and tubers"
+            },
+            {
+              "content": "d. Vegetables e.g. tomatoes, onion, amaranthus, okro, cauliflower, spinach",
+              "objective": "Candidates should be able to describe the husbandry of vegetables"
+            },
+            {
+              "content": "e. Fruits e.g. citrus, banana, pineapple",
+              "objective": "Candidates should be able to describe the husbandry of fruits"
+            },
+            {
+              "content": "f. Beverages e.g. cocoa, tea, coffee",
+              "objective": "Candidates should be able to describe the husbandry of beverage crops"
+            },
+            {
+              "content": "g. Spices e.g. pepper, ginger",
+              "objective": "Candidates should be able to describe the husbandry of spices"
+            },
+            {
+              "content": "h. Oils e.g. groundnut, sheabutter, sunflower, oil palm",
+              "objective": "Candidates should be able to describe the husbandry of oil crops"
+            },
+            {
+              "content": "i. Fibres e.g. cotton, jute, sissal hemp",
+              "objective": "Candidates should be able to describe the husbandry of fibre crops"
+            },
+            {
+              "content": "j. Latex e.g. rubber",
+              "objective": "Candidates should be able to describe the husbandry of latex crops"
+            },
+            {
+              "content": "k. Others – sugar cane etc.",
+              "objective": "Candidates should be able to describe the husbandry of other crops such as sugar cane"
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "title": "Pasture and forage crops",
+          "subtopics": [
+            {
+              "content": "a. Meaning of pasture and forage crops",
+              "objective": "Candidates should be able to define pasture and forage crops"
+            },
+            {
+              "content": "b. Uses of forage crops",
+              "objective": "Candidates should be able to state the uses of forage crops"
+            },
+            {
+              "content": "c. Types of pasture",
+              "objective": "Candidates should be able to identify types of pasture"
+            },
+            {
+              "content": "d. Common grasses and legumes used for grazing livestock",
+              "objective": "Candidates should be able to state the botanical names and characteristics of common grasses and legumes used for grazing"
+            },
+            {
+              "content": "e. Factors affecting the distribution and productivity of pasture",
+              "objective": "Candidates should be able to explain factors affecting distribution and productivity of pasture"
+            },
+            {
+              "content": "f. Establishment of pasture",
+              "objective": "Candidates should be able to describe how pasture is established"
+            },
+            {
+              "content": "g. Management practices of pasture",
+              "objective": "Candidates should be able to describe pasture management practices"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "title": "Crop improvement",
+          "subtopics": [
+            {
+              "content": "a. Aims of crop improvement",
+              "objective": "Candidates should be able to define crop improvement and state its aims"
+            },
+            {
+              "content": "b. Methods/processes of crop improvement e.g. introduction, selection, breeding",
+              "objective": "Candidates should be able to describe methods of crop improvement"
+            },
+            {
+              "content": "c. Mendel's laws of inheritance",
+              "objective": "Candidates should be able to define genetic terms (characters or traits, chromosomes, genes) and state Mendel's 1st and 2nd laws"
+            },
+            {
+              "content": "d. Advantages and disadvantages of crop improvement",
+              "objective": "Candidates should be able to state the advantages and disadvantages of crop improvement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Forestry",
+      "topics": [
+        {
+          "id": 32,
+          "title": "Forest management",
+          "subtopics": [
+            {
+              "content": "a. Meaning of forest and forestry",
+              "objective": "Candidates should be able to define forest and forestry"
+            },
+            {
+              "content": "b. Importance of forestry",
+              "objective": "Candidates should be able to state the importance of forestry"
+            },
+            {
+              "content": "c. Forest regulations",
+              "objective": "Candidates should be able to state forest regulations"
+            },
+            {
+              "content": "d. Forest management practices",
+              "objective": "Candidates should be able to describe forest management practices"
+            },
+            {
+              "content": "e. Implications of deforestation",
+              "objective": "Candidates should be able to explain the implications of deforestation"
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Agro-forestry practices in West Africa",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agro-forestry",
+              "objective": "Candidates should be able to define agro-forestry"
+            },
+            {
+              "content": "b. Agro-forestry practices: taungya system; alley cropping; ley farming etc.",
+              "objective": "Candidates should be able to describe agro-forestry practices and identify common tree species suitable for them"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section F: Ornamental Plants",
+      "topics": [
+        {
+          "id": 34,
+          "title": "Meaning and importance of ornamental plants",
+          "subtopics": [
+            {
+              "content": "a. Meaning of ornamental plants",
+              "objective": "Candidates should be able to define ornamental plants"
+            },
+            {
+              "content": "b. Importance of ornamental plants",
+              "objective": "Candidates should be able to state the importance of ornamental plants"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "title": "Common types of ornamental plants",
+          "subtopics": [
+            {
+              "content": "a. Types of ornamental plants according to their uses: bedding plants (mostly flowering plants); hedging plants; lawn grasses etc.",
+              "objective": "Candidates should be able to identify various types of ornamental plants according to their uses"
+            },
+            {
+              "content": "b. Examples of ornamental plants",
+              "objective": "Candidates should be able to give examples with their common and botanical names"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "title": "Settings and location for planting ornamental plants",
+          "subtopics": [
+            {
+              "content": "a. Settings and location for planting ornamental plants",
+              "objective": "Candidates should be able to describe suitable settings and locations for ornamental plants"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "title": "Methods of cultivating ornamental plants",
+          "subtopics": [
+            {
+              "content": "a. By seed",
+              "objective": "Candidates should be able to state the importance of propagation by seed and give examples of ornamental plants propagated by this method"
+            },
+            {
+              "content": "b. Vegetative propagation",
+              "objective": "Candidates should be able to state the importance of vegetative propagation and give examples of ornamental plants propagated by this method"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "title": "Maintenance of ornamental plants",
+          "subtopics": [
+            {
+              "content": "a. Maintenance of ornamental plants",
+              "objective": "Candidates should be able to state reasons for maintenance operations such as watering, mulching and pruning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section G: Crop Protection",
+      "topics": [
+        {
+          "id": 39,
+          "title": "Diseases of crops",
+          "subtopics": [
+            {
+              "content": "a. Meaning of disease",
+              "objective": "Candidates should be able to define disease"
+            },
+            {
+              "content": "b. General effects of diseases on crop production",
+              "objective": "Candidates should be able to state the general effects of diseases on crop production"
+            },
+            {
+              "content": "c. Disease: causal organism, economic importance, mode of transmission, symptoms, prevention and control measures of the diseases of: (i) cereals – smut, rice blast, leaf rust etc; (ii) legumes – cercospora leaf spot, rosette etc; (iii) beverages – cocoa blackpod, swollen shoot, coffee leaf rust etc; (iv) tubers – cassava mosaic, bacterial leaf blight etc; (v) fruits – citrus gummosis, dieback etc; (vi) fibre – black arm/bacterial blight of cotton etc; (vii) vegetables – root knot of tomato or okro, damping off, onion twister etc; (viii) stored produce – mould etc.",
+              "objective": "Candidates should be able to describe diseases of crops, covering at least two fungal, two viral, two bacterial and one nematode disease of the crops chosen from the list"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "title": "Pests of crops",
+          "subtopics": [
+            {
+              "content": "a. Meaning of pests",
+              "objective": "Candidates should be able to define pests"
+            },
+            {
+              "content": "b. Classification of pests: insect-pests; non-insect pests",
+              "objective": "Candidates should be able to classify pests"
+            },
+            {
+              "content": "c. Classification of insect-pests based on mouth parts with examples: biting and chewing; piercing and sucking; boring",
+              "objective": "Candidates should be able to classify insect-pests by mouth parts and give examples"
+            },
+            {
+              "content": "d. Important insect-pests of major crops (field and storage pests; life cycle, economic importance, nature of damage, preventive and control measures): (i) cereals – stem borer, army worm, ear worm etc; (ii) legumes – pod borer, aphids, sucking bugs and leaf beetle; (iii) beverages – cocoa mirids (capsids); (iv) tubers – yam beetle, cassava mealybugs, green spidermites, variegated grasshopper; (v) fibre – cotton stainer, bollworms; (vi) fruits and vegetables – thrips, grasshopper, leaf roller, leaf beetle, scale insect; (vii) stored produce – grain weevils, bean beetle",
+              "objective": "Candidates should be able to describe the life cycle, nature of damage, economic importance, and preventive and control measures of the insect-pests"
+            },
+            {
+              "content": "e. Non-insect pests e.g. birds, rodents etc.",
+              "objective": "Candidates should be able to describe the nature of damage, economic importance, and preventive and control measures of non-insect pests"
+            },
+            {
+              "content": "f. Side effects of preventive and control methods: chemical – pollution, poisoning; biological – disruption of the ecosystem etc; cultural – harmful effects of burning etc.",
+              "objective": "Candidates should be able to state the side effects of pest preventive and control methods"
+            },
+            {
+              "content": "g. General effects/economic importance of pests",
+              "objective": "Candidates should be able to state the general effects and economic importance of pests"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "title": "Weeds",
+          "subtopics": [
+            {
+              "content": "a. Meaning of weeds",
+              "objective": "Candidates should be able to define weeds"
+            },
+            {
+              "content": "b. Types of weeds",
+              "objective": "Candidates should be able to identify types of weeds, including common and botanical names"
+            },
+            {
+              "content": "c. Effects of weeds on crops and economy",
+              "objective": "Candidates should be able to state the effects of weeds on crops and the economy"
+            },
+            {
+              "content": "d. Characteristic features of weeds",
+              "objective": "Candidates should be able to describe the characteristic features of weeds"
+            },
+            {
+              "content": "e. Methods of controlling weeds: cultural, biological, chemical, physical and mechanical methods",
+              "objective": "Candidates should be able to describe methods of weed control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section H: Animal Production",
+      "topics": [
+        {
+          "id": 42,
+          "title": "Types and classification of farm animals",
+          "subtopics": [
+            {
+              "content": "a. Types of farm animals: cattle, sheep, goat, poultry, pig, rabbit, fish etc.",
+              "objective": "Candidates should be able to identify types of farm animals"
+            },
+            {
+              "content": "b. Classification of farm animals according to: (i) habitat – terrestrial and aquatic; (ii) uses – food, protection, pet etc.",
+              "objective": "Candidates should be able to classify farm animals by habitat and uses"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "title": "Anatomy and physiology of farm animals",
+          "subtopics": [
+            {
+              "content": "a. Parts of farm animals",
+              "objective": "Candidates should be able to draw and label parts of farm animals"
+            },
+            {
+              "content": "b. Organs of farm animals e.g. heart, liver, lungs",
+              "objective": "Candidates should be able to identify important organs and state their functions"
+            },
+            {
+              "content": "c. Systems of farm animals e.g. digestive system, circulatory system, respiratory system",
+              "objective": "Candidates should be able to describe body systems, including the digestive system of poultry and differences between monogastric and ruminant digestive systems"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "title": "Animal reproduction",
+          "subtopics": [
+            {
+              "content": "a. Meaning of reproduction",
+              "objective": "Candidates should be able to define reproduction"
+            },
+            {
+              "content": "b. Roles of hormones in reproduction of farm animals",
+              "objective": "Candidates should be able to state the roles of hormones in reproduction"
+            },
+            {
+              "content": "c. Reproductive systems of farm animals",
+              "objective": "Candidates should be able to describe the reproductive systems of farm animals"
+            },
+            {
+              "content": "d. Processes of reproduction in farm animals",
+              "objective": "Candidates should be able to describe the processes including oestrus cycle, heat period, mating, gestation period, parturition, lactation, colostrum, mammary glands, signs of heat, ovulation etc."
+            },
+            {
+              "content": "e. Egg formation in poultry",
+              "objective": "Candidates should be able to describe egg formation in poultry"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "title": "Environmental physiology",
+          "subtopics": [
+            {
+              "content": "a. Meaning of environmental physiology",
+              "objective": "Candidates should be able to define environmental physiology"
+            },
+            {
+              "content": "b. Effects of changes in climatic factors such as temperature, relative humidity and light on growth, reproduction, milk production, egg production etc.",
+              "objective": "Candidates should be able to explain the effects of climatic factors on animal growth and production"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "title": "Livestock management",
+          "subtopics": [
+            {
+              "content": "a. Meaning of livestock management",
+              "objective": "Candidates should be able to define livestock management"
+            },
+            {
+              "content": "b. Requirements for livestock management: housing; feeding; hygiene and finishing of at least one ruminant and one non-ruminant from birth to market weight",
+              "objective": "Candidates should be able to describe extensive, intensive and semi-intensive systems of management and record keeping"
+            },
+            {
+              "content": "c. Importance of management practices",
+              "objective": "Candidates should be able to state the importance of management practices"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "title": "Animal nutrition",
+          "subtopics": [
+            {
+              "content": "a. Meaning of animal nutrition",
+              "objective": "Candidates should be able to define animal nutrition"
+            },
+            {
+              "content": "b. Classification of feeds",
+              "objective": "Candidates should be able to classify feeds"
+            },
+            {
+              "content": "c. Sources and functions of feed nutrients",
+              "objective": "Candidates should be able to state sources and functions of feed nutrients (biochemical details not required)"
+            },
+            {
+              "content": "d. Types of ration/diet and their uses; components of a balanced diet, production and maintenance rations",
+              "objective": "Candidates should be able to describe diets for various classes of animals, their characteristics and supplementary feeding"
+            },
+            {
+              "content": "e. Causes and symptoms of malnutrition and their correction in farm animals",
+              "objective": "Candidates should be able to describe malnutrition-related conditions such as ketosis and rickets"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "title": "Rangeland and pasture management",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of rangeland/pasture to livestock and the characteristics of rangeland",
+              "objective": "Candidates should be able to define rangeland and pasture, and state their importance and characteristics"
+            },
+            {
+              "content": "b. Common grasses and legumes in rangeland",
+              "objective": "Candidates should be able to identify common grasses and legumes in rangeland"
+            },
+            {
+              "content": "c. Factors affecting the level of production of herbage: rainfall, grass/legume composition, grazing etc.",
+              "objective": "Candidates should be able to explain factors affecting herbage production"
+            },
+            {
+              "content": "d. Methods of rangeland and pasture improvement: controlled stocking, rotational grazing, use of fertilizers, introduction of legumes, reseeding, weed control, burning, pest and disease control",
+              "objective": "Candidates should be able to describe methods of rangeland and pasture improvement"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "title": "Animal improvement",
+          "subtopics": [
+            {
+              "content": "a. Meaning of animal improvement",
+              "objective": "Candidates should be able to define animal improvement"
+            },
+            {
+              "content": "b. Aims of animal improvement",
+              "objective": "Candidates should be able to state the aims of animal improvement"
+            },
+            {
+              "content": "c. Methods of animal improvement: introduction; selection; breeding",
+              "objective": "Candidates should be able to describe methods of improvement, including differences and similarities between breeds (local, exotic and cross/hybrid) and performance of animals"
+            },
+            {
+              "content": "d. Artificial insemination: (i) meaning; (ii) methods of collecting semen; (iii) advantages and disadvantages",
+              "objective": "Candidates should be able to describe artificial insemination, its methods of semen collection, and its advantages and disadvantages"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "title": "Animal health management",
+          "subtopics": [
+            {
+              "content": "a. Meaning of disease",
+              "objective": "Candidates should be able to define disease"
+            },
+            {
+              "content": "b. Causal organisms: viruses, bacteria, fungi and protozoa",
+              "objective": "Candidates should be able to identify causal organisms of animal diseases"
+            },
+            {
+              "content": "c. Factors that could predispose animals to diseases: health status of animals, nutrition, management etc.",
+              "objective": "Candidates should be able to state the predisposing factors"
+            },
+            {
+              "content": "d. Reaction of animals to diseases: susceptibility and resistance to diseases",
+              "objective": "Candidates should be able to explain susceptibility and resistance to diseases"
+            },
+            {
+              "content": "e. Selected livestock diseases (causal organisms, symptoms, mode of transmission, effects, prevention and control): (i) viral – foot and mouth, rinderpest, newcastle; (ii) bacterial – anthrax, brucellosis, tuberculosis; (iii) fungal – aspergillosis, ringworm, scabies; (iv) protozoa – trypanosomiasis, coccidiosis",
+              "objective": "Candidates should be able to describe the selected diseases and state their economic importance"
+            },
+            {
+              "content": "f. Parasites: (i) meaning of parasite; (ii) types of parasites; (iii) mode of transmission, life cycle, economic importance and control of endoparasites – tapeworm, liverfluke and roundworm; ectoparasites – ticks, lice",
+              "objective": "Candidates should be able to describe the selected parasites, their life cycles, economic importance and control"
+            },
+            {
+              "content": "g. General methods of prevention and control of diseases and parasites: quarantine, inoculation/immunization, hygiene, breeding for resistance etc.",
+              "objective": "Candidates should be able to describe general methods of preventing and controlling diseases and parasites"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "title": "Aquaculture",
+          "subtopics": [
+            {
+              "content": "a. Meaning of aquaculture",
+              "objective": "Candidates should be able to define aquaculture"
+            },
+            {
+              "content": "b. Different types of aquaculture: fish farming; shrimp farming; crab farming",
+              "objective": "Candidates should be able to identify types of aquaculture"
+            },
+            {
+              "content": "c. Meaning and importance of fish farming",
+              "objective": "Candidates should be able to define fish farming and state its importance"
+            },
+            {
+              "content": "d. Conditions necessary for siting a fish pond",
+              "objective": "Candidates should be able to state conditions necessary for siting a fish pond"
+            },
+            {
+              "content": "e. Establishment and maintenance of fish pond",
+              "objective": "Candidates should be able to describe establishment and maintenance of a fish pond, including aeration, stocking, feeding, harvesting, processing and preservation of fish"
+            },
+            {
+              "content": "f. Fishery regulations – meaning and regulations",
+              "objective": "Candidates should be able to state fishery regulations"
+            },
+            {
+              "content": "g. Fishing methods and tools",
+              "objective": "Candidates should be able to describe fishing methods and tools"
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Apiculture or bee keeping",
+          "subtopics": [
+            {
+              "content": "a. Meaning of apiculture or bee keeping",
+              "objective": "Candidates should be able to define apiculture"
+            },
+            {
+              "content": "b. Types of bees: indigenous bees; exotic bees",
+              "objective": "Candidates should be able to identify types of bees"
+            },
+            {
+              "content": "c. Importance of bee keeping",
+              "objective": "Candidates should be able to state the importance of bee keeping"
+            },
+            {
+              "content": "d. Methods of bee keeping: traditional method; modern bee keeping",
+              "objective": "Candidates should be able to describe methods of bee keeping"
+            },
+            {
+              "content": "e. Bee keeping equipment: bee hives, hive tools like suits, smokers, jungle boots, brushes etc.",
+              "objective": "Candidates should be able to identify bee keeping equipment and state their uses"
+            },
+            {
+              "content": "f. Precautionary measures in bee keeping: locate apiaries far from human dwellings; put warning symbols near apiary etc.",
+              "objective": "Candidates should be able to state precautionary measures in bee keeping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section I: Agricultural Economics and Extension",
+      "topics": [
+        {
+          "id": 53,
+          "title": "Basic economic principles",
+          "subtopics": [
+            {
+              "content": "a. Scarcity",
+              "objective": "Candidates should be able to explain scarcity"
+            },
+            {
+              "content": "b. Choice",
+              "objective": "Candidates should be able to explain choice"
+            },
+            {
+              "content": "c. Scale of preference",
+              "objective": "Candidates should be able to explain scale of preference"
+            },
+            {
+              "content": "d. Law of diminishing returns",
+              "objective": "Candidates should be able to state and explain the law of diminishing returns"
+            }
+          ]
+        },
+        {
+          "id": 54,
+          "title": "Factors of production",
+          "subtopics": [
+            {
+              "content": "a. Land",
+              "objective": "Candidates should be able to describe land as a factor of production"
+            },
+            {
+              "content": "b. Capital",
+              "objective": "Candidates should be able to describe capital as a factor of production"
+            },
+            {
+              "content": "c. Labour – characteristics and classification",
+              "objective": "Candidates should be able to describe labour, including rural-urban migration and how it affects labour availability in agricultural production"
+            },
+            {
+              "content": "d. Management or entrepreneur",
+              "objective": "Candidates should be able to describe management as a factor of production"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "title": "Principles of demand",
+          "subtopics": [
+            {
+              "content": "a. Definition of demand",
+              "objective": "Candidates should be able to define demand"
+            },
+            {
+              "content": "b. Law of demand",
+              "objective": "Candidates should be able to state the law of demand"
+            },
+            {
+              "content": "c. Factors affecting demand for agricultural produce",
+              "objective": "Candidates should be able to explain factors affecting demand"
+            },
+            {
+              "content": "d. Movements along the demand curve",
+              "objective": "Candidates should be able to explain movements along the demand curve"
+            },
+            {
+              "content": "e. Shifts in the demand curve",
+              "objective": "Candidates should be able to explain shifts in the demand curve"
+            }
+          ]
+        },
+        {
+          "id": 56,
+          "title": "Principles of supply",
+          "subtopics": [
+            {
+              "content": "a. Definition of supply",
+              "objective": "Candidates should be able to define supply"
+            },
+            {
+              "content": "b. Law of supply",
+              "objective": "Candidates should be able to state the law of supply"
+            },
+            {
+              "content": "c. Movements along supply curve",
+              "objective": "Candidates should be able to explain movements along the supply curve"
+            },
+            {
+              "content": "d. Shifts in the supply curve",
+              "objective": "Candidates should be able to explain shifts in the supply curve"
+            },
+            {
+              "content": "e. Factors affecting the supply of agricultural produce",
+              "objective": "Candidates should be able to explain factors affecting supply"
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "title": "Implications of demand and supply for agricultural production",
+          "subtopics": [
+            {
+              "content": "a. Price support",
+              "objective": "Candidates should be able to explain price support"
+            },
+            {
+              "content": "b. Price control",
+              "objective": "Candidates should be able to explain price control"
+            },
+            {
+              "content": "c. Subsidy programme and its effects on agricultural production",
+              "objective": "Candidates should be able to explain subsidy programmes and their effects"
+            }
+          ]
+        },
+        {
+          "id": 58,
+          "title": "Functions of a farm manager",
+          "subtopics": [
+            {
+              "content": "a. Meaning of a farm manager",
+              "objective": "Candidates should be able to define a farm manager and farm management"
+            },
+            {
+              "content": "b. Functions of a farm manager",
+              "objective": "Candidates should be able to state the functions of a farm manager"
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "title": "Problems faced by farm managers",
+          "subtopics": [
+            {
+              "content": "a. Problems faced by farm managers",
+              "objective": "Candidates should be able to identify problems faced by farm managers, including the meaning of agri-business"
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "title": "Agricultural finance",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agricultural finance",
+              "objective": "Candidates should be able to define agricultural finance"
+            },
+            {
+              "content": "b. Importance of agricultural finance",
+              "objective": "Candidates should be able to state its importance"
+            },
+            {
+              "content": "c. Sources of farm finance",
+              "objective": "Candidates should be able to identify sources of farm finance"
+            },
+            {
+              "content": "d. Classes of farm credit: (i) based on length of time – short-term, medium-term, long-term; (ii) based on source – institutional, non-institutional; (iii) based on liquidity – loan in-cash, loan in-kind",
+              "objective": "Candidates should be able to classify farm credit"
+            },
+            {
+              "content": "e. Problems faced by farmers in procuring agricultural credit - high interest rate; lack or inadequate collateral etc.",
+              "objective": "Candidates should be able to state problems farmers face in procuring credit"
+            },
+            {
+              "content": "f. Problems faced by institutions in granting loans to farmers - lack of records and accounts etc.",
+              "objective": "Candidates should be able to state problems institutions face in granting loans"
+            },
+            {
+              "content": "g. Capital market: (i) meaning of capital market and institutions that deal with medium and long term loans for agricultural business; (ii) institutions involved in the capital market; (iii) sources of funds for the capital market – bonds, insurance companies, merchant banks, the stock exchange (sales and purchases of shares); (iv) roles of capital markets in agricultural business – mobilization of long term funds for on-lending, reducing over reliance on money market etc.",
+              "objective": "Candidates should be able to describe the capital market, its institutions, sources of funds and roles in agricultural business"
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "title": "Farm records and accounts",
+          "subtopics": [
+            {
+              "content": "a. Importance of farm records",
+              "objective": "Candidates should be able to state the importance of farm records"
+            },
+            {
+              "content": "b. Types of farm records: inventory records; production records; income and expenditure records; supplementary or special records",
+              "objective": "Candidates should be able to describe types of farm records"
+            },
+            {
+              "content": "c. Designing farm records",
+              "objective": "Candidates should be able to design farm records"
+            },
+            {
+              "content": "d. Farm accounts: expenditure/purchases account; income/sales account; profit and loss account; balance sheet",
+              "objective": "Candidates should be able to prepare farm accounts and use terms such as salvage value, appreciation, farm budget, depreciation and inventory to calculate profit and loss of crops, livestock, machinery and tools"
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "title": "Marketing of agricultural produce",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of marketing of agricultural produce",
+              "objective": "Candidates should be able to define marketing and state its importance"
+            },
+            {
+              "content": "b. Marketing agents and their functions",
+              "objective": "Candidates should be able to state the functions, advantages and disadvantages of marketing agents"
+            },
+            {
+              "content": "c. Marketing functions: assembling; transportation; processing etc.",
+              "objective": "Candidates should be able to describe marketing functions"
+            },
+            {
+              "content": "d. Marketing of export crops",
+              "objective": "Candidates should be able to describe the marketing of export crops"
+            },
+            {
+              "content": "e. Export crops in West Africa",
+              "objective": "Candidates should be able to identify export crops in West Africa"
+            },
+            {
+              "content": "f. Guidelines for exporting crops in West Africa",
+              "objective": "Candidates should be able to state guidelines for exporting crops"
+            },
+            {
+              "content": "g. Corporate bodies, cooperative societies and individuals engaged in exporting agricultural produce e.g. ANCE - Association of Nigerian Cooperative Exporters",
+              "objective": "Candidates should be able to identify bodies engaged in exporting agricultural produce"
+            },
+            {
+              "content": "h. Importance of exporting agricultural produce",
+              "objective": "Candidates should be able to state the importance of exporting agricultural produce"
+            },
+            {
+              "content": "i. Problems of marketing agricultural produce",
+              "objective": "Candidates should be able to identify problems of marketing agricultural produce"
+            }
+          ]
+        },
+        {
+          "id": 63,
+          "title": "Agricultural insurance",
+          "subtopics": [
+            {
+              "content": "a. Meaning of agricultural insurance",
+              "objective": "Candidates should be able to define agricultural insurance"
+            },
+            {
+              "content": "b. Importance of agricultural insurance",
+              "objective": "Candidates should be able to state its importance"
+            },
+            {
+              "content": "c. Types of insurance policies for agricultural production: specific enterprise insurance e.g. crop insurance, livestock insurance; farm vehicle insurance; fire disaster insurance or machines and buildings insurance; life assurance (farmers, farm workers and farmers' household)",
+              "objective": "Candidates should be able to describe types of insurance policies"
+            },
+            {
+              "content": "d. Insurance premium",
+              "objective": "Candidates should be able to explain insurance premium"
+            },
+            {
+              "content": "e. Problems of agricultural insurance: uncertainties of weather; losses due to natural disaster etc.",
+              "objective": "Candidates should be able to identify problems of agricultural insurance"
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "title": "Agricultural extension",
+          "subtopics": [
+            {
+              "content": "a. Meaning and importance of agricultural extension",
+              "objective": "Candidates should be able to define agricultural extension and state its importance, including qualities of a good extension worker"
+            },
+            {
+              "content": "b. Agricultural extension methods: individual contact methods; group contact methods etc.",
+              "objective": "Candidates should be able to describe extension methods"
+            },
+            {
+              "content": "c. Agricultural extension programmes in West Africa e.g. ADP, NDE, Agro-service centres, state ministries of agriculture and natural resources",
+              "objective": "Candidates should be able to describe extension programmes in West Africa"
+            },
+            {
+              "content": "d. Problems of agricultural extension in West Africa e.g. illiteracy among farmers, inadequate transport facilities etc.",
+              "objective": "Candidates should be able to identify problems of agricultural extension"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Practical Agricultural Science",
+      "topics": [
+        {
+          "id": 65,
+          "title": "Agricultural ecology (practical)",
+          "subtopics": [
+            {
+              "content": "1. Soil",
+              "objective": "Candidates should be able to examine soil samples for texture by manual feeling of wet and dry soil, and examine fertile and infertile soils noting colour, texture, structure, presence of organic matter and living things"
+            },
+            {
+              "content": "2. Soil profile",
+              "objective": "Candidates should be able to describe and identify a simple soil profile"
+            },
+            {
+              "content": "3. Rocks",
+              "objective": "Candidates should be able to identify common rock types: igneous, sedimentary and metamorphic"
+            },
+            {
+              "content": "4. Laboratory work on physical properties of soil: (a) mechanical analysis by sedimentation and by hydrometer method or sieves; (b) determination of bulk density and total pore space; (c) determination of moisture content of a moist soil sample; (d) determination of maximum water holding capacity; (e) determination of wilting point; (f) determination of capillary action",
+              "objective": "Candidates should be able to carry out laboratory determinations of the physical properties of soil"
+            },
+            {
+              "content": "5. Laboratory work on chemical properties of soil: (a) determination of soil acidity using pH meter and/or any other gadget or simple equipment; (b) common types of chemical fertilizers; (d) organic manure: green manure, farm yard, compost",
+              "objective": "Candidates should be able to determine soil pH, identify fertilizers (N, P, K and compound) with methods and rates of application, and identify, prepare and apply compost"
+            },
+            {
+              "content": "6. Irrigation and drainage",
+              "objective": "Candidates should be able to identify irrigation and drainage equipment and state their uses e.g. watering can, sprinkler, pump, pipes"
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "title": "Agricultural engineering/mechanization (practical)",
+          "subtopics": [
+            {
+              "content": "1. Farm tools and equipment",
+              "objective": "Candidates should be able to identify, describe, use and maintain garden tools e.g. hoe, cutlass, garden trowel, hand fork, shovel, spade, rake, sickle, secateurs, shears, long handle hoe, pruner, budding knife, emasculator"
+            },
+            {
+              "content": "2. Tractor and animal drawn implement",
+              "objective": "Candidates should be able to identify, describe, use and maintain tractor and animal-drawn implements e.g. ploughs, harrows, ridgers, planters, cultivators, and identify their major parts and functions"
+            },
+            {
+              "content": "3. Harvesting, processing and storage equipment",
+              "objective": "Candidates should be able to identify, describe and state uses of equipment e.g. dehuskers, shellers, winnowers, dryers, processors, graters, refrigerators, cutlasses, scythe, groundnut lifters"
+            },
+            {
+              "content": "4. Farm tractor",
+              "objective": "Candidates should be able to identify the major components of the farm tractor and describe its servicing and maintenance"
+            },
+            {
+              "content": "5. Uses and maintenance of horticultural tools and implements",
+              "objective": "Candidates should be able to identify, use and maintain shears, dibber, pruning knife, secateurs, budding knife, measuring tapes, hand fork, hand trowel, hoe and fork"
+            },
+            {
+              "content": "6. Livestock and fishing equipment",
+              "objective": "Candidates should be able to identify, describe, use and care for equipment e.g. waterers, feeders, milking machines, nets, hook and line, branding machine, egg candler"
+            },
+            {
+              "content": "7. Farm surveying equipment",
+              "objective": "Candidates should be able to identify, use and care for equipment e.g. measuring tape, pins or arrows, ranging poles, plum bob, offset staff, compass, gunter's chains, pegs, theodolite"
+            }
+          ]
+        },
+        {
+          "id": 67,
+          "title": "Crop production (practical)",
+          "subtopics": [
+            {
+              "content": "1. Seeds, seedlings, fruits and storage organs of crops",
+              "objective": "Candidates should be able to identify seeds, seedlings, fruits, storage organs and essential parts of common crop plants, pasture grasses and legumes"
+            },
+            {
+              "content": "2. Main pests and diseases of crops",
+              "objective": "Candidates should be able to identify main field and storage pests (e.g. cotton stainer, yam beetles, weevils) and the damage they cause, and main crop diseases, their causal agents, symptoms, prevention and control"
+            },
+            {
+              "content": "3. Planting dates, seed rates, plant population and seed quality tests of the more common local crop plants",
+              "objective": "Candidates should be able to determine planting dates, seed rates, plant population and carry out seed quality tests"
+            },
+            {
+              "content": "4. Preparation of seedbeds, fertilizer application, mulching, use of pesticides, watering, vegetative propagation, germination tests etc.",
+              "objective": "Candidates should be able to perform these operations, including propagation methods: direct sowing, transplanting, layering, grafting and budding"
+            },
+            {
+              "content": "5. Forest products and by-products",
+              "objective": "Candidates should be able to identify forest products and by-products"
+            },
+            {
+              "content": "6. Methods of propagation of horticultural plants",
+              "objective": "Candidates should be able to describe methods of propagation of horticultural plants"
+            },
+            {
+              "content": "7. Common weeds",
+              "objective": "Candidates should be able to identify common weeds, their external features, mode of dispersal and methods of control on the farm"
+            }
+          ]
+        },
+        {
+          "id": 68,
+          "title": "Animal production (practical)",
+          "subtopics": [
+            {
+              "content": "1. Common breeds of animals and types of animals available in the locality",
+              "objective": "Candidates should be able to identify breeds, and carry out restraint, handling and grooming of farm animals"
+            },
+            {
+              "content": "2. Major internal organs of farm animals, e.g. organs of the digestive system, reproductive and excretory systems",
+              "objective": "Candidates should be able to identify the major internal organs and state their functions"
+            },
+            {
+              "content": "3. Animal by-products",
+              "objective": "Candidates should be able to identify animal by-products e.g. hides and skin, fur, feather, horn"
+            },
+            {
+              "content": "4. Animal feeds and feed stuffs and their local sources",
+              "objective": "Candidates should be able to identify feeds and feed stuffs (e.g. fish meal, groundnut cake, rice bran), state their uses and types of diets/rations"
+            },
+            {
+              "content": "5. Main pests and parasites of farm animals",
+              "objective": "Candidates should be able to identify common ectoparasites (e.g. ticks, lice) and endoparasites (e.g. tapeworms, liver flukes, roundworms), the damage caused, their control and their life cycles"
+            },
+            {
+              "content": "6. Diseases of farm animals",
+              "objective": "Candidates should be able to describe methods of prevention and control e.g. drugging, drenching, dipping, spraying and simple farm sanitation"
+            },
+            {
+              "content": "7. Routine management practices in farm animals, e.g. selection of livestock and poultry for breeding, culling, ear-notching, tattooing, horn or skin branding, debeaking, dehorning, castration",
+              "objective": "Candidates should be able to identify equipment/tools used for routine management practices"
+            },
+            {
+              "content": "8. Fish harvesting and preservation",
+              "objective": "Candidates should be able to describe methods of harvesting, processing and preservation of fish"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "subject": "Chemistry",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A (For all candidates)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Chemistry and Structure of the Atom",
+          "subtopics": [
+            {
+              "content": "Scientific measurements, atomic structure, isotopes, electron configuration, orbitals",
+              "objective": "Master SI units, significant figures, precision, accuracy, and scientific methods; understand Dalton, Thompson, Rutherford, and Bohr atomic models; calculate relative atomic mass based on Carbon-12; write s, p, d electron configurations using Aufbau principle, Hund's rule, and Pauli exclusion principle."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard Separation Techniques and Periodic Chemistry",
+          "subtopics": [
+            {
+              "content": "Mixture separation, periodic law, periodic trends, group/period gradations, transition elements",
+              "objective": "Classify mixtures and apply separation techniques (crystallization, distillation, chromatography); test purity using melting/boiling points; explain periodic trends (atomic radius, ionization energy, electronegativity); analyze period 3 and group 7 (halogens) chemical gradations; understand transition metal properties (variable oxidation states, complex formation, catalysis, color)."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Chemical Bonds and Stoichiometry",
+          "subtopics": [
+            {
+              "content": "Ionic, covalent, coordinate, metallic, intermolecular bonds; mole concept, chemical equations",
+              "objective": "Understand bond formation (ionic, covalent, dative, metallic) and VSEPR molecular shapes; distinguish van der Waals forces and hydrogen bonding; apply laws of chemical combination; perform mole calculations, molar concentration, empirical/molecular formula derivations, and volumetric titration stoichiometry."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "States of Matter, Energy and Energy Changes",
+          "subtopics": [
+            {
+              "content": "Kinetic theory, gas laws, liquids, solids, enthalpy, exothermic/endothermic processes",
+              "objective": "Apply kinetic theory to phase changes, diffusion, Brownian motion; perform calculations using gas laws (Boyle's, Charles', Graham's, Dalton's, Ideal Gas equation PV=nRT); distinguish structures of diamond and graphite; calculate enthalpy changes for combustion, neutralization, and dissolution."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Acids, Bases, Salts and Solubility",
+          "subtopics": [
+            {
+              "content": "Arrhenius theory, pH scale, salt hydrolysis, indicators, volumetric analysis, solubility curves",
+              "objective": "Understand acid-base properties, pH calculations, and conductivity; classify salts and analyze salt hydrolysis; perform acid-base titrations; calculate solubility ($mol\\,dm^{-3}$), plot solubility curves, and apply solubility rules to qualitative analysis."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Chemical Kinetics, Equilibrium Systems and Redox",
+          "subtopics": [
+            {
+              "content": "Reaction rates, collision theory, Le Chatelier's principle, oxidation-reduction, electrochemical cells, electrolysis",
+              "objective": "Analyze factors affecting rates and collision/transition state theories; apply Le Chatelier's principle to dynamic equilibrium; balance redox equations; calculate standard cell e.m.f.; apply Faraday's laws of electrolysis and explain corrosion prevention."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Chemistry of Carbon Compounds, Industry, Biochemistry and Synthetic Polymers",
+          "subtopics": [
+            {
+              "content": "Hydrocarbons, functional groups, isomerism, petroleum, polymers, proteins, carbohydrates, fats",
+              "objective": "Name and categorize organic functional groups (alkanes, alkenes, alkynes, alkanols, alkanoic acids, esters); understand petroleum fractional distillation and cracking; differentiate addition and condensation polymerization; analyze biochemistry of proteins, amino acids, fats/oils (saponification), and carbohydrates."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B (For candidates in Ghana only)",
+      "topics": [
+        {
+          "id": 8,
+          "title": "Advanced Atomic Structure, Bonding, Energetics and Kinetics",
+          "subtopics": [
+            {
+              "content": "Mass spectrometry, nuclear chemistry, complex formation, hybridization, Hess's law, rate laws",
+              "objective": "Understand mass spectrometer operation, quantum numbers, and nuclear decay/half-life calculations; analyze complex ion geometry and bonding; master $sp, sp^2, sp^3$ hybridization and $\\sigma/\\pi$ bonds; apply Hess's Law, Born-Haber cycles, and bond energy calculations; calculate $K_a, K_b, pH, K_{sp}$, equilibrium constants ($K_p, K_c$), and rate law orders."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C (For candidates in Nigeria, Sierra-Leone, Liberia and The Gambia)",
+      "topics": [
+        {
+          "id": 9,
+          "title": "Non-Metals, Metals and Their Compounds",
+          "subtopics": [
+            {
+              "content": "Properties and preparations of C, O, H, N, S, Halogens, noble gases; metal extractions (Al, Fe, Sn)",
+              "objective": "Study allotropes of carbon, coal distillation, synthetic gas, and carbon oxides; examine preparations/properties of $O_2, H_2$, water hardness treatment, $Cl_2, HCl, NH_3, HNO_3, H_2SO_4$; study extraction of Aluminium, Iron, Tin, common alloys, and main compounds of Na, Ca, Cu, Fe, Al."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "subject": "Refrigeration and Air-Conditioning",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Safety, Energy/Matter Fundamentals, Temperature, Pressure, and Gas Laws",
+          "subtopics": [
+            {
+              "content": "Workshop safety rules, PPE equipment, fire extinguishers, first aid, energy forms/conversion, internal energy, enthalpy, pressure-enthalpy (p-h) diagrams, states/changes of matter, compressor power calculations, thermometry, temperature scale conversions, pressure measurement devices (manometers, Bourdon gauges), suction/discharge pressure gauges, and gas laws (Boyle's, Charles', Dalton's, General)",
+              "objective": "Enforce safety regulations, operate fire extinguishers, and administer first aid; demonstrate mechanical to heat energy conversion and phase changes of matter; compute compressor power consumption in watts/kilowatts; convert temperature scales (Celsius, Fahrenheit, Kelvin, Rankine) and identify fixed temperature points; measure pressure using barometers, manometers, and Bourdon gauges; solve numerical calculations using general gas laws."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Refrigeration Cycles, Refrigerants, Air-Conditioning Processes, and Components",
+          "subtopics": [
+            {
+              "content": "Basic refrigeration cycle (evaporation, compression, condensation, expansion), layout diagrams, system components/accessories (relays, thermostats, solenoids, capacitors), refrigerant types/classifications/cylinder colour codes, chemical formulae, flow controls (TEV, AEV, capillary tube), psychrometric properties of air, psychrometers, sensible/latent heat, compressor types/constructions, condenser types/servicing/heat load, liquid receivers, service valves, and evaporator types/construction/servicing",
+              "objective": "Explain the vapor compression refrigeration cycle and system accessories; identify refrigerants by chemical names, formulae, properties, and cylinder color codes; operate expansion devices (TEV, AEV, capillary); measure air psychrometric properties using sling psychrometers and distinguish latent vs sensible heat; evaluate construction and working principles of compressors, condensers, and evaporators; service condensers and evaporators and compute heat load estimates."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Workshop Practices, Installation, Insulation, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Basic RAC hand tools, window unit AC servicing, systematic fault diagnosis, leak detection, electrical continuity/polarity testing, compressor/motor/condenser/evaporator repairs, condenser/evaporator piping, ducting/trunking installation, split unit AC installation, electric motors/generators installation and maintenance, cold room principles/installation, insulating materials (glasswool, polystyrene foam, bitumen) and procedures, business enterprise types, startup funding, marketing protocols, and basic accounting records (ledgers, balance sheets)",
+              "objective": "Use basic RAC tools for cutting, reaming, flaring, and bending tubes; service window and split unit air-conditioners; execute leak testing, insulation continuity, pressure testing, and fault troubleshooting; perform piping, ducting, trunking, and motor/generator maintenance; explain cold room operations and installation procedures; select and apply thermal insulating materials correctly; formulate business plans, conduct market surveys, source capital, and prepare ledgers and balance sheets."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
