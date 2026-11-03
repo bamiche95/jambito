@@ -1,0 +1,81 @@
+{
+  "subject": "Forestry",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Introduction to Forestry & Wildlife",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Forest Concepts, Ecology, Vegetation Zones, Wildlife, and Plant Identification",
+          "subtopics": [
+            {
+              "content": "Forest vs agriculture, forest ecosystem functions, West African vegetation zones, wildlife management/reserves, plant morphology and tree identification",
+              "objective": "Understand basic forest concepts and ecosystem functions[cite: 296, 297]; compare West African vegetation zones (evergreen, semi-deciduous, savannah, mangroves)[cite: 297]; evaluate wildlife resources, endangered species, and game reserve management[cite: 298]; identify plant morphological features, leaf/stem/root anatomy, and tree species[cite: 298, 299]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Forest Estates & Regeneration",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Estate Reservation, Management, Deforestation, Natural and Artificial Regeneration, Agro-Forestry, and Invasive Species",
+          "subtopics": [
+            {
+              "content": "Reservation processes, protection measures, causes/effects/control of deforestation, natural vs artificial regeneration, agro-forestry systems, Taungya, and invasive weeds",
+              "objective": "Detail forest estate reservation and protection against bushfires and illegal felling[cite: 299]; analyze causes, manifestations, and control measures for deforestation[cite: 300]; compare natural and artificial regeneration methods[cite: 300, 301]; examine agro-forestry practices (alley cropping, silvo-pastoral) and Taungya systems[cite: 301]; identify terrestrial and aquatic invasive alien species[cite: 301]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Plantation Establishment & Forest Mensuration",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Plantation Planning, Nursery Management, Planting/Tending, and Forest Mensuration",
+          "subtopics": [
+            {
+              "content": "Plantation design, nursery practices/tools/pests, land preparation, tending operations, operational costing, mensuration tools, enumeration, and surveys",
+              "objective": "Plan and design forest plantations[cite: 302]; manage tree nurseries, cultural practices, tools, and pest/disease control[cite: 302]; execute planting and tending operations (weeding, pruning, thinning)[cite: 303]; perform tree measurements (height, diameter, girth, volume) using instruments like Haga altimeters[cite: 303]; execute stock sampling and land survey techniques[cite: 304]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Harvesting, Marketing, Forest Industries & Income Ventures",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Timber and NTFP Harvesting, Forest Product Marketing, Timber Industries, Mushroom Cultivation, and Beekeeping",
+          "subtopics": [
+            {
+              "content": "Pre-harvesting surveys, log markings, transportation, NTFP gathering, harmful harvesting control, demand/marketing agencies, sawmilling, mushroom cultivation, and apiculture",
+              "objective": "Execute timber harvesting procedures, safety protocols, and log marking interpretations[cite: 304]; harvest non-timber forest products (NTFPs) and wildlife sustainably[cite: 305]; control harmful harvesting practices[cite: 305]; analyze market demand, trade agencies, and timber processing industries[cite: 305, 306]; establish forestry enterprises[cite: 307]; cultivate commercial mushrooms and manage apiaries for honey production[cite: 309, 310]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Forestry Sector Structures",
+      "topics": [
+        {
+          "id": 5,
+          "title": "Institutional Framework, Resource Rights, Stakeholders, Land Tenure, and Forest Laws",
+          "subtopics": [
+            {
+              "content": "Ministry and Forestry Commission structures, TUC/TUP rights acquisition, stakeholder roles, land tenure systems, land registration, and forest policies/laws",
+              "objective": "Understand roles of forestry government divisions, research, and training institutes[cite: 307]; detail procedures for acquiring timber utilization contracts and permits[cite: 307]; identify stakeholder roles[cite: 308]; evaluate land tenure systems, registration, and forest policies and laws[cite: 308]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

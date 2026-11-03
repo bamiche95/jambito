@@ -22,6 +22,7 @@ import { loadAttempts } from "@/lib/practiceRepo";
 import { usePricing } from "@/lib/pricing";
 import { planLabel } from "@/lib/plans";
 import { isSubscriptionActive } from "@/lib/subscription";
+import PushOptInCard from "@/components/PushOptInCard";
 import {
   ACCOUNT_STATUS_LABELS,
   accountStatusMessage,
@@ -389,6 +390,15 @@ export default function ProfileView() {
             </div>
           )}
         </section>
+      </div>
+
+      {/*
+        Reminders. Its own card below the two-column grid rather than a third
+        column: the toggles need the full width on a phone, and this component
+        renders nothing when the deployment has no VAPID keys.
+      */}
+      <div className="mt-4 lg:mt-5">
+        <PushOptInCard />
       </div>
     </main>
   );

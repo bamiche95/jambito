@@ -1,0 +1,34 @@
+{
+  "subject": "Radio, Television and Electronics Works",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Safety, Basic Electricity, Electronic Components, and Hand Tools",
+          "subtopics": [
+            {
+              "content": "Workshop hazard prevention, shock treatment, servicing safety checks (capacitor discharge, CRT handling), atomic structure, conductors/insulators/semiconductors, standard electronic components (resistors, capacitors, inductors, diodes, transistors, ICs), colour codes, Kirchhoff's laws, batteries, Ohm's law, d.c./a.c. waveforms, and electronic hand tools/measuring instruments",
+              "objective": "Enforce workshop safety rules, hazard preventions, and safety checks for radio/TV servicing[cite: 546]; classify materials, identify electronic components by symbols/ratings, and decode resistor/capacitor colour codes[cite: 547]; apply Ohm's law, Kirchhoff's current/voltage laws, and compute a.c. r.m.s./peak values[cite: 547]; test primary/secondary batteries and active/passive components using multimeters[cite: 547, 548]; use hand tools, oscilloscopes, signal generators, logic probes, and signal tracers effectively[cite: 548]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Electronic Devices, Circuits, and Communication Systems",
+          "subtopics": [
+            {
+              "content": "Thermionic/photoelectric emissions, diode rectification, regulated d.c. power supply units, Class A/B/C/AB amplifiers, feedback effects, RLC circuits, oscillators, multivibrators, communication block diagrams, electromagnetic spectrum bands, transducers (microphones, loudspeakers, CRT/LCD), AM/FM modulation/demodulation, radio receivers (TRF, Superheterodyne), selectivity/sensitivity, and resonant circuits",
+              "objective": "Explain electronic emission principles and diode power supply rectification/filtering[cite: 548]; analyze amplifier classes, feedback, RLC resonance, oscillators, and multivibrators (astable, monostable, bistable)[cite: 548, 549]; categorize radio frequency bands across the e.m. spectrum and wave propagation[cite: 549]; detail transducer operations (microphones, speakers, CRT/LCD displays)[cite: 549]; evaluate AM/FM modulation index, carrier waves, and demodulation[cite: 549]; compare TRF and superheterodyne radio receivers, tuning mechanisms, selectivity, and sensitivity[cite: 550]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Television Systems, Workshop Practice, Servicing, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Satellite communication elements, TV transmitters, scanning principles, video signals, monochrome/colour TV receivers (PAL, SECAM, NTSC), primary colours, soldering/desoldering techniques, fault diagnosis/repairs of radio and black-and-white/colour TV receivers, alignment of RF/IF stages, business management, accounting records, customer relations, and electronics entrepreneurship opportunities",
+              "objective": "Explain satellite TV communication, scanning principles, video signals, and TV receiver block diagrams[cite: 550]; differentiate PAL, SECAM, and NTSC colour TV standards and primary colour mixing[cite: 550]; perform soldering, desoldering, and circuit component replacements[cite: 551]; diagnose and repair faults systematically in radio receivers

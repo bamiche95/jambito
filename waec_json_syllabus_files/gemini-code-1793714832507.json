@@ -1,0 +1,41 @@
+{
+  "subject": "Information and Communication Technology (Core)",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Basic ICT Concepts, Computer Hardware, Software, and System Threats",
+          "subtopics": [
+            {
+              "content": "ICT tools, information processing cycle, computer classification, system unit, peripherals, storage media, system vs application software, open source vs proprietary software, natural/human computer threats, user health hazards, and safety remedies",
+              "objective": "Explain ICT terms, tools, and socio-economic/educational impacts[cite: 451]; distinguish data from information and classify computer types[cite: 451, 452]; categorize computer hardware (system unit, peripherals, storage media)[cite: 452]; differentiate system/application software and open source/proprietary software[cite: 452]; identify computer threats (natural, malware, human damage), health hazards, and preventive remedies[cite: 452]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Word Processing, Spreadsheet, and Presentation Packages",
+          "subtopics": [
+            {
+              "content": "Word processing uses/tools, editing, formatting, table/graphic insertion, spreadsheet formulas/functions, workbook management, presentation slide creation, master slides, slide shows, and delivery factors",
+              "objective": "Create, edit, format, and print word processing documents with inserted objects[cite: 452]; master typing speed and accuracy (30-35 wpm)[cite: 452]; construct spreadsheet formulas and functions, manage workbooks, and format/print worksheets[cite: 452]; create presentation slides, use master slides, format objects, and configure slide shows for delivery[cite: 452, 453]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "The Internet and Communication Tools",
+          "subtopics": [
+            {
+              "content": "Internet concepts, web browsers, Netiquette rules, email management, search engines, chatting, file downloading/uploading, and social media tools",
+              "objective": "Understand Internet concepts, navigation, browser features, and Netiquette rules[cite: 453]; send and access emails[cite: 453]; use search engines, chat platforms, social media, downloading, and uploading communication tools[cite: 453]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

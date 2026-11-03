@@ -1,0 +1,31 @@
+{
+  "subject": "Store Management",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Store Management, Retailing, Wholesaling, Stock Control, and Policies",
+          "subtopics": [
+            {
+              "content": "Store management definitions, functions of store managers, pre-sale/after-sale customer services, core management functions (planning, organizing, leading, staffing, controlling), store establishment factors, retailing/wholesaling functions, warehousing types/importance, transportation modes/selection criteria, stock control importance, stock records (bin cards, store cards, requisitions), stock taking methods (manual, periodic, perpetual, annual, computerized), stock control levels (minimum, maximum, reorder), issuing methods (FIFO, LIFO), pricing strategies (skimming, mark-up, mark-down, penetration), organizational policies/standards, and organizational culture",
+              "objective": "Explain store management importance, manager characteristics, customer services, and fundamental management functions[cite: 564, 565]; evaluate establishment factors (market, finance, security, transport)[cite: 565]; detail functions of retailers, wholesalers, and warehouse types[cite: 565]; analyze transportation modes and selection parameters[cite: 565, 566]; maintain stock control records, compute stock levels (reorder, min, max), execute stock taking, and evaluate FIFO/LIFO issuing methods[cite: 566]; apply pricing techniques (skimming, mark-up, penetration)[cite: 566, 567]; explain organizational policies, standards, customer satisfaction metrics, and corporate culture[cite: 567]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Communication, Business Law, Record Keeping, Bookkeeping, Risk Management, and Store Finances",
+          "subtopics": [
+            {
+              "content": "Communication types/media (oral, written, non-verbal, electronic, business documents), basic business law, law of contract, agency creation/types/rights, Sale of Goods Act, government regulations (patents, copyrights, trademarks, Health & Safety at Work Act, consumer protection), regulatory agencies (NAFDAC, NDLEA, SON), filing/indexing methods, source/trade documents (invoices, receipts, bills of lading, letters of credit, waybills), subsidiary books, petty cash imprest system, final accounts (Trading, Profit & Loss, Balance Sheet), rate of stock turnover, risk management techniques (hedging, insurance), capital market vs money market investments (stocks, treasury bills, commercial papers), and taxation types/importance",
+              "objective": "Draft business communications (memos, reports, circulars) and utilize electronic media/word processing[cite: 567, 568]; explain law of contract, agency relationships, Sale of Goods Act, statutory workplace regulations, and functions of NAFDAC/NDLEA/SON[cite: 568, 569]; execute filing/indexing rules and process home/foreign trade documents[cite: 569]; prepare subsidiary books, petty cash book under the imprest system, and simple final accounts[cite: 569]; calculate rate of stock turnover[cite: 570]; apply risk management techniques including insurance and hedging[cite: 570]; evaluate capital/money market investments (shares, treasury bills, bonds) and taxation types (VAT, income tax, import duties)[cite: 570, 571]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

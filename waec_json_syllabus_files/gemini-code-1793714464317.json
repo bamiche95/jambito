@@ -1,0 +1,81 @@
+{
+  "subject": "Further Mathematics / Mathematics (Elective)",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section I: Pure Mathematics",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Sets, Surds, Binary Operations, and Logical Reasoning",
+          "subtopics": [
+            {
+              "content": "Set properties, Venn diagrams, De Morgan's laws, surd operations, rationalization, binary operation properties, logic truth tables",
+              "objective": "Solve set problems involving union, intersection, complements, and Venn diagrams[cite: 320]; simplify, manipulate, and rationalize surd denominators[cite: 320, 321]; apply closure, commutativity, associativity, identity, and inverse to binary operations[cite: 321]; construct truth tables to evaluate compound logical statements and implications[cite: 321]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Functions, Polynomials, Rational Functions, Indices, and Logarithms",
+          "subtopics": [
+            {
+              "content": "Mapping types, composite/inverse functions, linear/quadratic/cubic functions, quadratic inequalities, polynomial remainder/factor theorems, partial fractions, laws of indices and logarithms",
+              "objective": "Determine domains, ranges, inverse, and composite functions[cite: 321]; sketch and solve linear, quadratic, and cubic functions/equations[cite: 321, 322]; apply factor and remainder theorems to polynomials[cite: 322, 323]; resolve rational functions into partial fractions[cite: 323]; solve exponential and logarithmic equations including change of base and linear reduction ($y=ax^b$)[cite: 323, 324]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Permutations, Combinations, Binomial Theorem, Sequences & Series, Matrices, and Linear Transformations",
+          "subtopics": [
+            {
+              "content": "Arrangements and selections ($^nP_r, ^nC_r$), binomial expansions, AP/GP sequences, infinite series, matrix operations, determinants, inverse matrices, linear transformations",
+              "objective": "Solve arrangement and combination problems[cite: 324]; expand binomial expressions for positive integral indices[cite: 324]; calculate terms and sums of AP, GP, recurrence, and infinite series[cite: 324, 325]; perform matrix operations, evaluate $2\\times2$ and $3\\times3$ determinants, find inverses, and apply matrices to linear transformations and geometry[cite: 325, 326]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Trigonometry, Coordinate Geometry, Calculus (Differentiation & Integration)",
+          "subtopics": [
+            {
+              "content": "Trigonometric ratios/identities, compound/multiple angles, graphs, coordinate geometry of lines and conic sections (circles, parabolas), differentiation rules, maxima/minima, indefinite/definite integrals, area/volume applications",
+              "objective": "Prove trigonometric identities and solve equations involving compound/multiple angles[cite: 326, 327]; analyze line gradients, midpoints, acute angles, perpendicular distances, circles, and parabola equations[cite: 327, 328]; differentiate polynomials, trigonometric, and transcendental functions using chain/product/quotient rules[cite: 328, 329]; determine turning points, tangents, normals, and kinematics[cite: 329]; evaluate indefinite/definite integrals to compute plane areas, volumes of revolution, and trapezium rule approximations[cite: 329, 330]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section II: Statistics and Probability",
+      "topics": [
+        {
+          "id": 5,
+          "title": "Statistics and Probability Distributions",
+          "subtopics": [
+            {
+              "content": "Data representation, measures of location and dispersion, scatter diagrams, correlation coefficients, regression lines, sample spaces, probability laws, binomial and Poisson distributions",
+              "objective": "Construct frequency tables, histograms, and cumulative frequency curves (Ogives)[cite: 330]; calculate mean, median, mode, variance, and standard deviation for grouped/ungrouped data[cite: 330, 331]; plot scatter diagrams, calculate Spearman's rank correlation, and find lines of best fit[cite: 331]; compute classical, conditional, mutually exclusive, and independent probabilities[cite: 331]; apply Binomial and Poisson probability distributions[cite: 331]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section III: Vectors and Mechanics",
+      "topics": [
+        {
+          "id": 6,
+          "title": "Vectors, Statics, and Dynamics",
+          "subtopics": [
+            {
+              "content": "Vector algebra, unit/position vectors, scalar (dot) products, coplanar forces, equilibrium, Lami's theorem, moments, friction, kinematics equations, Newton's laws, impulse, momentum, and projectiles",
+              "objective": "Perform vector addition, scalar multiplication, unit vector calculations, and scalar dot products[cite: 331, 332, 333]; resolve coplanar forces, apply Lami's theorem, moments, and friction principles to bodies in equilibrium[cite: 333]; solve rectilinear motion problems using equations of motion, Newton's laws, momentum conservation, and projectile trajectories[cite: 334]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "subject": "Building Construction",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Building and Construction Team",
+          "subtopics": [
+            {
+              "content": "Building definitions, codes, regulations, construction team roles",
+              "objective": "Understand building classifications, National Building Codes, and regulations. Define roles/relationships of the construction team (client, contractor, statutory personnel)."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Safety Practices and Tools",
+          "subtopics": [
+            {
+              "content": "Workshop/site safety, hazard prevention, basic tools, equipment, machines",
+              "objective": "Identify safety rules, site hazards, PPE, first aid procedures, and safe operation of scaffolds/formwork/electricity. Identify, use, and maintain basic hand/power tools and machines."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Site Operations, Layout and Setting Out",
+          "subtopics": [
+            {
+              "content": "Site clearing, levelling, layout, and setting out procedures",
+              "objective": "Perform site clearing and levelling operations. Plan site layout (boundaries, hoarding, access roads). Master setting out methods (3:4:5 method, builder's square) and associated tools."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Building Drawing and Auto-CADD",
+          "subtopics": [
+            {
+              "content": "Drawing tools, symbols, scales, production drawings, details, Auto-CADD",
+              "objective": "Use drawing instruments, interpret standard building symbols/scales, produce/read plans, elevations, sections, door/window schedules, perspective drawings, and introduce Auto-CADD."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Excavation, Foundations and Floors",
+          "subtopics": [
+            {
+              "content": "Earthworks, soil types, foundation types, ground/basement/suspended floors",
+              "objective": "Classify soils, execute excavations, apply earthwork timbering/dewatering, and follow safety rules. Select foundation types. Construct ground, basement, and concrete/timber suspended upper floors."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Concrete and Wall Construction",
+          "subtopics": [
+            {
+              "content": "Concrete mix/tests, cement alternatives, walling materials, mortar, openings",
+              "objective": "Understand concrete production, testing, reinforcement, and alternative binders (Pozzolana, RHA, PFA). Manufacture/use bricks and blocks. Master masonry bonding, mortar mixes, timber walls, lintels, arches, doors, and windows."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Staircases, Services and Roofs",
+          "subtopics": [
+            {
+              "content": "Stairs, plumbing, drainage, electrical, solar systems, roof structures",
+              "objective": "Classify staircases and finishes. Install plumbing fittings, sanitary appliances, drainage lines (septic/soakaway). Master electrical wiring symbols/types, solar energy components, roof framing, and covering/weatherproofing materials."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Finishes, External Works and Business/Contracts",
+          "subtopics": [
+            {
+              "content": "Floor/wall/ceiling finishes, fencing, access roads, business management, bookkeeping, contracts",
+              "objective": "Apply plasters, renderings, floor tiles, and ceiling panels. Construct fences, gates, access roads, and landscaping. Understand building business management, capital sourcing, small business bookkeeping, contract types, and contract documents."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

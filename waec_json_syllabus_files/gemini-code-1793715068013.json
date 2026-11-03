@@ -1,0 +1,31 @@
+{
+  "subject": "Tourism",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Concepts, Scope, Resources, Attractions, Statistics, Benefits, and Cultural Heritages",
+          "subtopics": [
+            {
+              "content": "Definitions of tourism, tourist, visitor, tour, excursion, leisure, hospitality, travel; scope and history of tourism; domestic vs international tourism; inbound/outbound, long/short haul, eco, cultural, religious, and sports tourism; components (attraction, accessibility, amenities); tourist product characteristics; natural, man-made, and socio-cultural tourist attractions in Nigeria; tourism statistics (inflow, outflow, expenditure patterns); economic, social, and developmental benefits; major Nigerian cultural festivals (Argungu, Osun-Osogbo, New Yam) and UNESCO world heritage sites (Sukur site, museums, monuments, palaces)",
+              "objective": "Define tourism concepts and trace historical developments[cite: 576]; categorize forms and types of tourism[cite: 576]; explain the 3 As (Attraction, Accessibility, Amenities) and tourist product characteristics[cite: 576]; locate key natural, man-made, and socio-cultural tourist attractions across Nigeria[cite: 576]; collect and interpret tourism arrival/expenditure statistics[cite: 576]; evaluate economic, social, and infrastructure benefits of tourism[cite: 576, 577]; describe major Nigerian cultural festivals, museums, shrines, and heritage sites[cite: 577]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Travel Business, Operations, Public/Private Agencies, Marketing, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Travel motivators (physiological, economic, social); travel agency functions (reservations, ticketing, visa, forex); tour operator roles (packaging, marketing, execution); support services (banking, insurance, car hire, hotel, health, security); roles of public agencies (Federal Ministry of Tourism, NTDC/NTDA, NIHOTOUR, NCMM) and private bodies (FTAN, NANTA, NATOP, HATMAN); tourism marketing strategies (segmentation, niche marketing, media, e-tourism); cottage industries (leather, pottery, tie-dye, weaving); service delivery jobs; and skill acquisition institutions (SMEDAN, NDE, NIHOTOUR)",
+              "objective": "Analyze physiological, economic, and social reasons for travel[cite: 577, 578]; detail roles, functions, and qualities of travel agents and tour operators[cite: 578]; identify essential support services in tourism[cite: 578]; evaluate functions of public regulatory agencies (NTDC, NIHOTOUR, NCMM) and private trade associations (FTAN, NANTA, NATOP)[cite: 579]; apply marketing tools, e-tourism platforms, and segmentation strategies[cite: 579]; explore cottage industry enterprise opportunities, customer service roles, and national skill acquisition centers[cite: 580]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "subject": "Geography",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Paper 3: Elements of Practical and Physical Geography",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Map Work, Elementary Surveying, GIS, Statistical Diagrams, Earth Systems, Geomorphology, Weather/Climate, Vegetation, Soils, and Environmental Issues",
+          "subtopics": [
+            {
+              "content": "Contour map reading, scale, gradients, profiles, drainage patterns, surveying instruments, GIS components/uses, statistical charts, planetary earth, rocks, tectonic/denudational landforms, weather instruments, Koppen climate classification, climate change, vegetation types, soil profile/conservation, environmental resources and hazards",
+              "objective": "Read and interpret contoured survey maps, calculate scales, gradients, and profiles[cite: 355]; understand elementary chain/compass surveying[cite: 355]; master GIS concepts, data sources, and applications[cite: 355]; construct statistical maps and diagrams[cite: 355]; explain earth structure, rotation/revolution, ocean currents, and salinity[cite: 355]; classify rocks and tectonic landforms (mountains, karsts, coasts)[cite: 355]; analyze weathering, mass movement, wind/water erosion[cite: 355]; use weather instruments and interpret climatic charts/data[cite: 355, 356]; analyze climate change, world vegetation types, soil profile formation, soil erosion, and environmental conservation[cite: 356]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 2: Economic, Human, Regional Geography and Field Work",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Economic and Human Geography",
+          "subtopics": [
+            {
+              "content": "World population growth/distribution, rural/urban settlements, migration, transport modes, industrial classification/location, trade, and tourism",
+              "objective": "Analyze world population patterns, growth rates, and migration[cite: 357]; distinguish settlement types, functions, and rural-urban interactions[cite: 357]; evaluate transport modes and economic development impacts[cite: 357]; classify industries and factors affecting location[cite: 357]; examine national/international trade and tourism[cite: 357]."
+            }
+          ],
+          "regionalGeography": [
+            {
+              "country": "Regional Geography of Home Country (e.g. Nigeria / Ghana / Sierra Leone / Liberia / Senegambia)",
+              "content": "Physical setting, population, primary activities (agriculture, mining, fishing, lumbering), manufacturing, energy, transport, trade, tourism, environmental development issues, and regional integration (ECOWAS)",
+              "objective": "Demonstrate comprehensive knowledge of home country's broad outline, physical relief, climate, population distribution, agricultural systems, mineral/power resources, transport networks, industrial zones, trade, tourism, and development/environmental concerns[cite: 357, 358, 359, 360, 361]."
+            },
+            {
+              "country": "Regional Geography of Africa",
+              "content": "African physical features, minerals, irrigation agriculture (Nile/Niger), plantation farming, oil production, lumbering, gold/copper mining, population distribution, and ECOWAS",
+              "objective": "Analyze Africa's broad physical outline, climate, and mineral distribution[cite: 362]; detail selected case studies: Nile/Niger irrigation, West/East Africa plantations, Nigeria/Ghana/Libya oil, Equatorial lumbering, South Africa gold mining, Zambia/Zaire copper mining, and ECOWAS objectives[cite: 362]."
+            }
+          ],
+          "fieldWork": [
+            {
+              "topic": "Local Fieldwork Investigation",
+              "content": "Practical field studies on land use, market surveys, traffic flow, journey to work, and local erosion rates",
+              "objective": "Execute practical fieldwork observation, data collection, and analysis on local land use, commercial market trends, traffic flow, commuting patterns, or soil erosion[cite: 362]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

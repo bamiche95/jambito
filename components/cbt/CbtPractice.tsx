@@ -15,6 +15,7 @@ import type { PracticeQuestion, PracticeSession } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { usePricing } from "@/lib/pricing";
 import { TRIAL_LIMIT } from "@/lib/plans";
+import PushOptInCard from "@/components/PushOptInCard";
 
 export type { PracticeQuestion };
 
@@ -357,6 +358,14 @@ export default function CbtPractice({
           </div>
         </div>
       )}
+      {/*
+        The value moment: the set is finished and the score is on screen. This
+        is the one point in the flow where a reminder is obviously useful, and
+        the tap is a user gesture, which iOS requires before it will show the
+        permission prompt. It renders nothing once permission is decided or the
+        device is already subscribed (or after "Not now" this session).
+      */}
+      {isSubmitted && <PushOptInCard variant="nudge" />}
       <div className="space-y-6">
         {questions.map((q, index) => {
           const userAnswer = selectedAnswers[q.id as string];

@@ -1,0 +1,41 @@
+{
+  "subject": "Marketing",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Marketing, Marketing Concepts, Mix, Environment, Products, and Markets",
+          "subtopics": [
+            {
+              "content": "Basic marketing terms, history of marketing in Nigeria, marketing functions, marketing concepts (production, product, selling, societal), marketing mix (4 Ps), political/economic/social environmental factors, product classifications, product design, consumer vs organizational markets",
+              "objective": "Define marketing terms (needs, wants, demands, exchange, market) and trace Nigerian marketing history[cite: 485, 486]; evaluate marketing management philosophies[cite: 486]; analyze 4 Ps and environmental factors influencing marketing[cite: 486]; classify consumer, industrial, service, and mineral products[cite: 486]; categorize consumer, industrial, reseller, and government markets[cite: 486]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Consumer Behaviour, Planning & Research, Pricing, Advertising, Sales Promotion, Merchandising, and Distribution",
+          "subtopics": [
+            {
+              "content": "Consumer/organizational decision-making process, marketing research feedback, pricing strategies (cost-plus, haggling, competition), pricing determinants, advertising media, sales promotion forms, merchandising elements (branding, packaging, labeling), distribution channels, and channel member functions",
+              "objective": "Analyze consumer and organizational buyer decision processes[cite: 486, 487]; execute marketing planning and research[cite: 487]; apply pricing strategies and evaluate price determinants[cite: 487]; evaluate advertising media and produce sample adverts[cite: 487]; analyze sales promotion methods (coupons, price-off, sampling)[cite: 487]; execute merchandising elements (branding, packaging, labeling)[cite: 487, 488]; select distribution channels and evaluate intermediaries' functions[cite: 488]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Transportation, Warehousing, Market Unions, International Marketing, ICT, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Transportation modes/documents, warehousing functions/activities, roles of market unions and facilitators, international marketing entry/regulations, E-Marketing ethics, entrepreneurship funds, market outlet location, and sales/bargaining skills",
+              "objective": "Select transportation modes and process transport documents[cite: 488]; manage warehouse activities[cite: 488]; evaluate roles of market unions and facilitators[cite: 488]; explore international marketing methods and regulations[cite: 488]; apply E-Marketing tools and ethical practices[cite: 488]; manage market outlets, source funds, select locations, and master selling/bargaining skills[cite: 488]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

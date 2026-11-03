@@ -1,0 +1,56 @@
+{
+  "subject": "Government",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Elements of Government",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning and Scope, Basic Concepts, Principles, and Constitutions",
+          "subtopics": [
+            {
+              "content": "State definition, government as process/academic field, basic concepts (Sovereignty, Democracy, Capitalism, Socialism), Rule of Law, Separation of Powers, Constitution types",
+              "objective": "Define government as an institution, process, and field of study[cite: 366]; understand basic political concepts (Power, Authority, Legitimacy, Sovereignty, Democracy, Ideologies)[cite: 366]; apply principles of Rule of Law, Separation of Powers, Constitutionalism, and Decentralization[cite: 366]; classify constitution types (written/unwritten, rigid/flexible) and sources[cite: 366]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Organs, State Structures, Citizenship, Parties, Pressure Groups, Electoral Systems, and Public Administration",
+          "subtopics": [
+            {
+              "content": "Executive/Legislature/Judiciary, Unitary/Federal/Confederal/Presidential/Parliamentary structures, citizenship rights/duties, political parties, pressure groups, mass media, electoral systems, civil service, public corporations, and local government",
+              "objective": "Examine the composition and functions of organs of government and judicial independence[cite: 366]; evaluate state structures (Unitary, Federal, Parliamentary, Presidential)[cite: 366]; analyze citizenship acquisition and rights safeguarding[cite: 367]; examine political parties, party systems, pressure groups, public opinion, and mass media[cite: 367]; evaluate electoral systems, franchise, and electoral management bodies[cite: 367]; understand Civil Service administration, public corporations, privatization, and local government functions/problems[cite: 367]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Political & Constitutional Developments in West Africa and International Relations",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Pre-Colonial Systems, Colonial Rule, Nationalism, and Constitutional History",
+          "subtopics": [
+            {
+              "content": "Pre-colonial political systems (Hausa/Fulani, Yoruba, Igbo, Akan, Mende, Wolof, etc.), British Indirect Rule, French Assimilation/Association, nationalism, pre- and post-independence constitutions",
+              "objective": "Compare pre-colonial administration systems in candidate countries[cite: 368]; evaluate British Indirect Rule and French Assimilation/Association policies[cite: 368]; examine nationalist movements and key leaders[cite: 368]; analyze pre-independence constitutions (e.g., Clifford, Richards, Macpherson, Lyttelton in Nigeria; Guggisberg, Burns, Nkrumah in Ghana, etc.) and post-independence republican constitutions[cite: 368, 369]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Political Parties, Military Rule, Federalism, Foreign Policy, and International Organizations",
+          "subtopics": [
+            {
+              "content": "Major political party development, military interventions, federal/unitary West African systems, foreign policy determinants, and international organizations (UN, AU, Commonwealth, ECOWAS)",
+              "objective": "Trace the formation, achievements, and failures of major political parties[cite: 370]; analyze causes and effects of military rule[cite: 370]; examine origin and structure of federal/unitary systems in West Africa[cite: 370]; evaluate national foreign policy objectives[cite: 370]; analyze origin, objectives, achievements, and problems of UNO, AU, Commonwealth, and ECOWAS[cite: 370]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

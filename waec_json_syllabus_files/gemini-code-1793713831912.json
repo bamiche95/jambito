@@ -1,0 +1,121 @@
+{
+  "subject": "Auto Body Repairs and Spray Painting",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Safety Rules and Regulations",
+          "subtopics": [
+            {
+              "content": "1.1 - 1.6 Safety in auto body repairs and spray painting",
+              "objective": "Definition and list of safety rules, safety tools/equipment, personal protective equipment (dress code), sources of accidents and prevention, factory acts (Resource Conservation Recovery Act, EPA regulations, hazardous waste recycling)."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Tools and Equipment",
+          "subtopics": [
+            {
+              "content": "2.1 - 2.8 Basic hand tools, spray painting tools, care and maintenance",
+              "objective": "Types and uses of hand tools (hammers, dollies, body spoons) and power tools (sanders, compressors, jacks). Spray painting tools (spray guns, ovens, spray booths). Types of maintenance (predictive, preventive, corrective), dismantling/assembly/cleaning of spray guns."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Materials for Auto-body Repairs and Spray Painting",
+          "subtopics": [
+            {
+              "content": "3.1 - 3.6 Body fillers, abrasives, sealers, rivets, paints",
+              "objective": "Identification of plastic/fibreglass fillers, body solder (30/70, 40/60), wet/dry sandpapers, sealers, pop/solid rivets. Enamel paints, lacquers, surface primers, putties, base colours, paint mixing formulas, and colour charts."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Type of Metals",
+          "subtopics": [
+            {
+              "content": "4.1 - 4.3 Ferrous and non-ferrous metals, properties, uses",
+              "objective": "Distinguish ferrous (mild steel, cast iron) and non-ferrous metals (aluminium, brass). Properties of metals (fusibility, malleability, ductility, weldability) and their application on vehicle auto bodies."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Heat Treatment of Metals",
+          "subtopics": [
+            {
+              "content": "5.1 - 5.3 Heat treatment definition, processes, importance",
+              "objective": "Definition and processes of heat treatment including hardening, annealing, normalizing, case-hardening, and tempering. Demonstrating heat treatment procedures and understanding their importance."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Oxy-acetylene Welding and Equipment",
+          "subtopics": [
+            {
+              "content": "6.1 - 6.7 Oxy-acetylene welding setup, high/low pressure systems, defects",
+              "objective": "Safety precautions, equipment identification and assembly, high vs low pressure systems, welding nozzles, identification and remedies of weld defects (slag inclusion, porosity, cracking, lack of penetration)."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Auto Body Repair Work",
+          "subtopics": [
+            {
+              "content": "7.1 - 7.8 Minor and major auto body repair",
+              "objective": "Integral vs composite body types. Straightening techniques using power jacks, sledgehammers, pry-bars, pull taps, and heat-shrinking. Major section repair (front, passenger, rear), alignment principles, quarter panel cutting, and lightweight panel repair."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Aluminum Panel Repair",
+          "subtopics": [
+            {
+              "content": "8.1 - 8.3 Steps, alignment, deck lid repair",
+              "objective": "Understanding specific steps involved in repairing, aligning, and restoring damaged aluminium auto panels and aluminium deck lids."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Plastic Repairs",
+          "subtopics": [
+            {
+              "content": "9.1 - 9.4 Working precautions, resin types, repair methods",
+              "objective": "Precautions when working with plastics. Distinguish thermosetting and thermoplastic resins. Repairing plastic parts by melting and introduction to glass fibre panel repair."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Spray Painting",
+          "subtopics": [
+            {
+              "content": "10.1 - 10.10 Guns, surface prep, paint types, metallic spray techniques",
+              "objective": "Pressure feed, siphon, and gravity spray guns and parts. Surface preparation steps. Types of paints (cellulose, synthetic, enamel, acrylic, metallic). Variable agents (flakes/pigments) and wet/dry metallic spray techniques."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Auto Body Workshop Business",
+          "subtopics": [
+            {
+              "content": "11.1 - 11.2 Workshop setup considerations and equipment listing",
+              "objective": "Factors involved in locating an auto body repair shop (capital, accessibility, land) and compiling a complete tool/equipment inventory."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

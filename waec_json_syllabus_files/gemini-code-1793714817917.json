@@ -1,0 +1,46 @@
+{
+  "subject": "History",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Paper 1: West Africa and the Wider World (Earliest Times to 2000)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Historiography, Trade, Religions, and Early Contact",
+          "subtopics": [
+            {
+              "content": "Historiography, sources of history, ICT in historical studies, Trans-Saharan trade, spread of Islam, European contact, and Trans-Atlantic slave trade",
+              "objective": "Understand historical methods, sources, and ICT prospects[cite: 408]; examine Trans-Saharan trade origins and impacts[cite: 408]; analyze the introduction and spread of Islam[cite: 408]; evaluate European arrival, trade, and Trans-Atlantic slave trade origins, organization, and suppression[cite: 408]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Missionary Activities, Partition, Colonialism, and Post-Independence International Relations",
+          "subtopics": [
+            {
+              "content": "Christian missions, Scramble and Partition of Africa, patterns of colonial rule, World Wars, post-independence political/economic issues, military rule, and international organizations (UN, AU, ECOWAS)",
+              "objective": "Assess Christian missionary impact[cite: 408]; analyze the Scramble for Africa, colonial conquest, and African resistance[cite: 409]; evaluate colonial administration systems and economic underdevelopment[cite: 409]; analyze post-independence problems including military coups and boundary disputes[cite: 409]; examine West African participation in UNO, AU, and ECOWAS[cite: 409]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 2: National Histories (Earliest Times to 2000)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Landmarks of Regional & National Histories",
+          "subtopics": [
+            {
+              "content": "Country-specific pre-colonial ethnic origins and centralized/non-centralized states, 19th-century political developments/wars, colonial administration/decolonization, and post-independence political history up to 2000",
+              "objective": "Detail pre-colonial social, political, and economic organizations for candidate's home country (The Gambia, Ghana, Liberia, Nigeria, or Sierra Leone)[cite: 409, 411, 417, 419, 422]; analyze 19th-century transformations (jihadist movements, state expansion, missionary work, resistance)[cite: 410, 415, 418, 420, 423]; evaluate colonial governance (Indirect Rule, Crown Colony), economic developments, decolonization, and post-independence political eras up to 2000[cite: 410, 411, 416, 419, 421, 423, 424]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

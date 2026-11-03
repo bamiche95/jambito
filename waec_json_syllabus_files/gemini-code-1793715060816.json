@@ -1,0 +1,41 @@
+{
+  "subject": "Refrigeration and Air-Conditioning",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Safety, Energy/Matter Fundamentals, Temperature, Pressure, and Gas Laws",
+          "subtopics": [
+            {
+              "content": "Workshop safety rules, PPE equipment, fire extinguishers, first aid, energy forms/conversion, internal energy, enthalpy, pressure-enthalpy (p-h) diagrams, states/changes of matter, compressor power calculations, thermometry, temperature scale conversions, pressure measurement devices (manometers, Bourdon gauges), suction/discharge pressure gauges, and gas laws (Boyle's, Charles', Dalton's, General)",
+              "objective": "Enforce safety regulations, operate fire extinguishers, and administer first aid[cite: 554]; demonstrate mechanical to heat energy conversion and phase changes of matter[cite: 554, 555]; compute compressor power consumption in watts/kilowatts[cite: 555]; convert temperature scales (Celsius, Fahrenheit, Kelvin, Rankine) and identify fixed temperature points[cite: 555, 556]; measure pressure using barometers, manometers, and Bourdon gauges[cite: 556]; solve numerical calculations using general gas laws[cite: 556]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Refrigeration Cycles, Refrigerants, Air-Conditioning Processes, and Components",
+          "subtopics": [
+            {
+              "content": "Basic refrigeration cycle (evaporation, compression, condensation, expansion), layout diagrams, system components/accessories (relays, thermostats, solenoids, capacitors), refrigerant types/classifications/cylinder colour codes, chemical formulae, flow controls (TEV, AEV, capillary tube), psychrometric properties of air, psychrometers, sensible/latent heat, compressor types/constructions, condenser types/servicing/heat load, liquid receivers, service valves, and evaporator types/construction/servicing",
+              "objective": "Explain the vapor compression refrigeration cycle and system accessories[cite: 557]; identify refrigerants by chemical names, formulae, properties, and cylinder color codes[cite: 557]; operate expansion devices (TEV, AEV, capillary)[cite: 557]; measure air psychrometric properties using sling psychrometers and distinguish latent vs sensible heat[cite: 557]; evaluate construction and working principles of compressors, condensers, and evaporators[cite: 557, 558]; service condensers and evaporators and compute heat load estimates[cite: 558]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Workshop Practices, Installation, Insulation, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Basic RAC hand tools, window unit AC servicing, systematic fault diagnosis, leak detection, electrical continuity/polarity testing, compressor/motor/condenser/evaporator repairs, condenser/evaporator piping, ducting/trunking installation, split unit AC installation, electric motors/generators installation and maintenance, cold room principles/installation, insulating materials (glasswool, polystyrene foam, bitumen) and procedures, business enterprise types, startup funding, marketing protocols, and basic accounting records (ledgers, balance sheets)",
+              "objective": "Use basic RAC tools for cutting, reaming, flaring, and bending tubes[cite: 558, 559]; service window and split unit air-conditioners[cite: 558, 559]; execute leak testing, insulation continuity, pressure testing, and fault troubleshooting[cite: 558]; perform piping, ducting, trunking, and motor/generator maintenance[cite: 559]; explain cold room operations and installation procedures[cite: 559]; select and apply thermal insulating materials correctly[cite: 559]; formulate business plans, conduct market surveys, source capital, and prepare ledgers and balance sheets[cite: 559, 560]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

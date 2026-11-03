@@ -1,0 +1,151 @@
+{
+  "subject": "Basketry",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Meaning and Scope of Basketry",
+          "subtopics": [
+            {
+              "content": "Areas covered, production of articles, characteristics of materials and tools, techniques, and combining materials",
+              "objective": "Understand coiled work, woven articles, frame works, and macramé. Learn techniques of weaving, plaiting, coiling, stitching, knotting, and construction to make baskets, hats, mats, nets, footwear, cots, and rattles using materials like cowries, gourds, and beads."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Rationale for Studying Basketry",
+          "subtopics": [
+            {
+              "content": "Creative material use, skill acquisition, and tourism",
+              "objective": "Understand the creative use of new materials for articles of cultural, functional, and aesthetic value, acquiring skills for employment, further study, and tourism promotion."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "History, Social, Cultural and Economic Importance",
+          "subtopics": [
+            {
+              "content": "Origin, social, cultural, and economic roles of basketry",
+              "objective": "Trace the origin of basketry and evaluate its social (entertainment), cultural, and economic importance in agriculture and commerce."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Places, People and Basketry",
+          "subtopics": [
+            {
+              "content": "Contributions of people and places",
+              "objective": "Examine the contributions of various people and places to the development and practice of basketry."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Competencies and Attitudes",
+          "subtopics": [
+            {
+              "content": "Knowledge, creative skills, values, and work attitudes",
+              "objective": "Develop creative thinking, weaving, and designing skills alongside values such as tolerance, diligence, honesty, commitment, time management, and communication skills."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Types and Characteristics of Materials",
+          "subtopics": [
+            {
+              "content": "Natural, synthetic, flexible, and stiff materials",
+              "objective": "Identify and classify natural, synthetic, flexible/pliable, and stiff/rigid materials used in basketry."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Preparation of Materials",
+          "subtopics": [
+            {
+              "content": "Drying, wetting, storage, care, and ecology preservation",
+              "objective": "Master skills for preparing materials (drying, wetting), chemical/non-chemical storage methods, environmental preservation, and discovering material characteristics for article making."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Tools and Their Uses",
+          "subtopics": [
+            {
+              "content": "Tool categories, descriptions, drawing, improvisation, and care",
+              "objective": "Describe and draw basketry tools, understand their functions, practice tool improvisation, safety precautions, and routine maintenance."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Elements and Principles of Design",
+          "subtopics": [
+            {
+              "content": "Design elements, principles, 12-point colour wheel, and Ghanaian symbolism",
+              "objective": "Identify and create design elements (dots, lines, shapes, textures) and principles (unity, balance, proportion, repetition) using weaving, knotting, scorching, and spraying. Apply the 12-point colour wheel and Ghanaian colour concepts/symbolism."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Basic Design and Technology",
+          "subtopics": [
+            {
+              "content": "Definition of design and idea creation",
+              "objective": "Define design and generate creative ideas through memory, imagination, observation, and correct tool/material usage."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Designing Articles to Suit Specific Needs",
+          "subtopics": [
+            {
+              "content": "Manual and computer designing, appreciation, and evaluation criteria",
+              "objective": "Design functional articles by hand or computer using weaving, knotting, plaiting, coiling, stitching, and framing. Evaluate items based on material, colour, technique, and finishing."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Sustainable Development of Basketry",
+          "subtopics": [
+            {
+              "content": "Raw material sustainability, industry challenges, and solutions",
+              "objective": "Explore raw material sustainability strategies (re-afforestation, waste management), address challenges like plastic competition, and promote co-operatives."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Decoration and Finishing",
+          "subtopics": [
+            {
+              "content": "Processes of decoration and finishing",
+              "objective": "Apply decorative processes (coloured weavers, weave variations, scorching, spraying) and finishing techniques (wrapping, binding, singeing, trimming, lashing, sanding, varnishing, borders)."
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Entrepreneurial Skills in Practice",
+          "subtopics": [
+            {
+              "content": "Portfolio, business plan, exhibitions, packaging, and pricing",
+              "objective": "Develop portfolios, structure business plans (registration, capital, location, survey), organize exhibitions, execute promotion, design primary/secondary/tertiary packaging, and calculate variable/fixed costs and pricing."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

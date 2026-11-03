@@ -144,6 +144,100 @@ export interface Profile {
   trialCount?: number;
   /** Aggregate practice figures, when the account has any activity. */
   practice?: PracticeSummary | null;
+  /** Per-campaign notification opt-ins (see NOTIFICATION_PREF_DEFAULTS). */
+  notificationPrefs?: NotificationPrefs;
+}
+
+// ---------------------------------------------------------------------------
+// Web Push
+// ---------------------------------------------------------------------------
+
+/**
+ * Notification opt-ins. They live on the account, not the device, so turning
+ * reminders off on a tablet does not silence the phone.
+ */
+export interface NotificationPrefs {
+  /** The daily practice nudge (Phase 2's cron). */
+  dailyReminder: boolean;
+  /** Free-trial progress: "12 of your 40 free questions are gone". */
+  trialProgress: boolean;
+  /** Announcements. Off by default. */
+  productUpdates: boolean;
+  updatedAt: string | null;
+}
+
+/** One browser that granted permission. The endpoint and keys never leave the server. */
+export interface PushDevice {
+  /** Row id — a hash of the endpoint, safe to show. */
+  id: string;
+  platform: string;
+  deviceId: string | null;
+  lastSeenAt: string | null;
+  lastOkAt: string | null;
+  lastError: string | null;
+  failureCount: number;
+}
+
+/** GET /api/push */
+export interface PushState {
+  success: boolean;
+  /** False when the deployment has no VAPID keys; the UI hides the card. */
+  configured: boolean;
+  /** The public half of the VAPID keypair, base64url. */
+  publicKey: string | null;
+  prefs: NotificationPrefs;
+  devices: PushDevice[];
+}
+
+/** POST /api/push/test */
+export interface PushTestResult {
+  success: boolean;
+  /** How many devices the account has. */
+  devices?: number;
+  sent?: number;
+  /** Devices the push service says no longer exist (404/410), now retired. */
+  gone?: number;
+  failed?: number;
+  code?: string;
+  message?: string;
+  errors?: { platform: string; code: string; message: string | null }[];
+}
+
+/** GET /api/push/stats — the dashboard's Push tab. */
+export interface AdminPushStats {
+  devices: number;
+  revoked: number;
+  accounts: number;
+  byPlatform: { platform: string; total: number }[];
+  lastSendAt: string | null;
+  recentDevices: {
+    uid: string | null;
+    platform: string;
+    lastSeenAt: string | null;
+    lastOkAt: string | null;
+    failureCount: number;
+    lastError: string | null;
+  }[];
+  error?: string;
+}
+
+export interface AdminPushLogRow {
+  uid: string | null;
+  campaignId: string;
+  status: string;
+  code: string | null;
+  message: string | null;
+  platform: string | null;
+  sentAt: string | null;
+}
+
+export interface AdminPushPayload {
+  success: boolean;
+  configured: boolean;
+  subject?: string;
+  problem?: string | null;
+  stats: AdminPushStats;
+  log: AdminPushLogRow[];
 }
 
 // ---------------------------------------------------------------------------

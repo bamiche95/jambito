@@ -1,0 +1,41 @@
+{
+  "subject": "GSM Phones Maintenance and Repairs",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Mobile Phones, Computer & Internet Concepts",
+          "subtopics": [
+            {
+              "content": "Acronyms/terminologies, phone bands, phone types, accessories, menus, service codes, basic computer components, and web browsing platforms",
+              "objective": "Define mobile phone terminologies (GSM, CDMA, SMS, MMS, BSI)[cite: 373]; classify single/quad bands, straight/flip/slide phone types, accessories, and menu structures[cite: 373]; identify computer hardware/software components[cite: 373, 374]; navigate web access platforms (WAP, GPRS, 3G, Wi-Fi) for downloading/uploading[cite: 374]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Essential Components, Maintenance, and Repairs of Mobile Phones",
+          "subtopics": [
+            {
+              "content": "Block diagrams (power, memory, radio), hardware components (CPU, SIM socket, buzzer), electronic components, preventive/corrective maintenance, repair tools, workshop safety, and common hardware/software faults",
+              "objective": "Understand phone structural block diagrams and functions of hardware/software components[cite: 374]; test electronic components (resistors, capacitors, transistors, ICs)[cite: 374]; execute preventive and corrective maintenance (cleaning, soldering, re-balling)[cite: 374]; use hardware tools (precision sets, multimeters, oscilloscopes) and software tools (unlocking, flashing software)[cite: 374, 375]; apply workshop safety rules and first aid[cite: 375]; diagnose hardware faults (damaged screens, charging ports) and software codes/errors[cite: 375]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Trouble-Shooting and Workshop Setup/Management",
+          "subtopics": [
+            {
+              "content": "Disassembling/assembling, PCB circuit reading, voltage testing, signal tracing, SMD/BGA troubleshooting, flashing/unlocking, workshop capital/location, and business management",
+              "objective": "Execute disassembling, assembling, and troubleshooting of displays, speakers, and charging jacks[cite: 375]; read PCB layouts and schematic diagrams[cite: 375]; perform voltage level testing and signal tracing[cite: 376]; troubleshoot SMD and BGA components[cite: 376]; execute phone flashing and security unlocking[cite: 376]; establish a repair workshop considering capital, equipment, location, costing, and return on investment[cite: 376]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

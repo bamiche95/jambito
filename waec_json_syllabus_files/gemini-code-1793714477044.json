@@ -1,0 +1,51 @@
+{
+  "subject": "Hausa",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Harshe / Tsarin Sauti da Nahawu)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Composition, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading comprehension, essay writing types, Hausa phonetics/phonology, syllable structures, word formation, word classes, grammatical categories, sentence types, and translation",
+              "objective": "Answer comprehension questions on Hausa passages[cite: 379]; write 300-word essays (narrative, descriptive, argumentative, letter writing, etc.) in official Hausa orthography[cite: 380]; identify Hausa consonants, vowels, diphthongs, syllable structures (CV, CVV, CVC), open/close syllables, and tones (high, low, falling)[cite: 380, 381]; analyze word roots, affixes, word classes (nouns, verbs, adjectives, ideophones, etc.), tenses/aspects, gender, number, and sentence structures[cite: 381, 382]; translate accurately between Hausa and English[cite: 379]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Adabi), Oral and Written Literature",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Appreciation, Oral and Written Literature (Prose, Poetry, Drama)",
+          "subtopics": [
+            {
+              "content": "Literary devices, prescribed oral folktales/proverbs/riddles/poetry/traditional drama, prescribed written Hausa novels, written poems, and plays",
+              "objective": "Apply literary appreciation principles[cite: 379]; analyze prescribed oral literature texts (*Mu Sha Dariya*, *Wasannin Kwaikwayo Na Hausawa*, *Jagoran Nazarin Wakar Baka*)[cite: 382, 388]; critique prescribed written prose texts (*Maraya*)[cite: 383, 388]; analyze prescribed written poetry selections (*Gadar Zare*)[cite: 383, 388]; evaluate set written drama plays (*Malam Zalimu*)[cite: 383, 388]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Al'ada)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Hausa Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Greetings (Gaisuwa), discipline/upbringing (Tarbiyya), hospitality (Karimci), family life/marriage/birth/death rites, non-Islamic traditional beliefs (Bori, Camfi), traditional occupations, traditional medicine, traditional chieftaincy titles, and traditional sports/recreation",
+              "objective": "Examine Hausa greeting types, child upbringing, hospitality, marriage, naming, and death customs[cite: 383, 384]; understand traditional religious beliefs and practices[cite: 384]; identify traditional occupations (farming, blacksmithing, tanning, dyeing)[cite: 384]; evaluate traditional medicine practitioners[cite: 384]; understand political hierarchy/titles (Sarki, Hakimi, Dagaci)[cite: 384]; identify traditional sports and entertainment (Dambe, Kokawa, Kalankuwa)[cite: 385]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

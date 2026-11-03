@@ -141,6 +141,38 @@ async function checkBrevo() {
   }
 }
 
+/**
+ * Web Push readiness, reported without contacting a push service.
+ *
+ * Same reasoning as `checkBrevo`: the VAPID keypair lives only in the
+ * deployment's environment, so this is the one place to confirm from outside
+ * that notifications will work after a Vercel change. `keyProblem` is the
+ * message from `web-push` when the keys are present but malformed — the failure
+ * that otherwise only shows up as a 401/403 on the first real send.
+ *
+ * Like mail, this does NOT gate `ok`: everything else in the app works with
+ * push switched off.
+ */
+async function checkPush() {
+  try {
+    const { getPushConfig } = await import("@/lib/push");
+    const config = getPushConfig();
+    return {
+      configured: config.configured,
+      subject: config.subject,
+      publicKeyLength: config.publicKey?.length ?? 0,
+      keyProblem: config.problem,
+    };
+  } catch (error) {
+    return {
+      configured: false,
+      subject: null,
+      publicKeyLength: 0,
+      keyProblem: error?.message || String(error),
+    };
+  }
+}
+
 export async function GET() {
   const info = {
     node: process.version,
@@ -214,6 +246,7 @@ export async function GET() {
   const tokenVerify = await checkTokenVerification();
   const mail = await checkMail();
   const brevo = await checkBrevo();
+  const push = await checkPush();
 
   // A healthy verifier complains about the probe token itself; only a
   // credential/config problem means the trial gate cannot work at all, so
@@ -229,7 +262,7 @@ export async function GET() {
     credentialsOk;
 
   return NextResponse.json(
-    { ok, imports, adminInit, credential, mongo, tokenVerify, mail, brevo, ...info },
+    { ok, imports, adminInit, credential, mongo, tokenVerify, mail, brevo, push, ...info },
     { status: ok ? 200 : 500 }
   );
 }

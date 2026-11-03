@@ -1,0 +1,71 @@
+{
+  "subject": "Auto Parts Merchandising",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Technical Section - Automobile Parts",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Safety in Auto Parts Merchandising Shop",
+          "subtopics": [
+            {
+              "content": "Definition, protective clothing, fire extinguishers, accident prevention",
+              "objective": "Understanding safety definitions, proper PPE (helmet, goggles, gloves, nose mask, boots, overalls), fire extinguisher types, and preventing shop accidents."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Engine Parts",
+          "subtopics": [
+            {
+              "content": "Identification, sketching, location, and functions of engine components",
+              "objective": "Identify, sketch, locate, and explain functions of piston, piston rings, connecting rod, camshaft, crankshaft, valves, cylinder head, and oil pump."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Transmission System (Clutch)",
+          "subtopics": [
+            {
+              "content": "Clutch parts identification and functions",
+              "objective": "Identify flywheel, clutch plate, pressure plate assembly, and release bearing, and explain their respective functions."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Transmission System (Gear Box)",
+          "subtopics": [
+            {
+              "content": "Types and functions of gearbox",
+              "objective": "Distinguish manual transmission (3, 4, 5 speeds) and automatic transmission systems; understand gearbox functions."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Transmission System (Propeller Shaft and Rear Axle Assembly)",
+          "subtopics": [
+            {
+              "content": "Propeller shafts, universal/sliding joints, axle assembly",
+              "objective": "Identify types of propeller shafts, universal and sliding joints, and rear axle components; state their functions in power transmission."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Suspension System",
+          "subtopics": [
+            {
+              "content": "Types, parts, and functions of suspension systems",
+              "objective": "Normal beam vs independent suspension. Identify dampers, coil springs, torsion bars, leaf springs, and explain their functions."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Cooling System",
+          "subtopics

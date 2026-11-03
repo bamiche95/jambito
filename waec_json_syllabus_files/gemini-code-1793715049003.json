@@ -1,0 +1,31 @@
+{
+  "subject": "Painting and Decorating",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction, Colour Theory, Techniques, Types, and Functions of Painting",
+          "subtopics": [
+            {
+              "content": "Pictorial vs decorative painting, tools and equipment, elements/principles of design, colour classes/properties/schemes, local colour improvisation, pictorial techniques (dry, wet, glazing, impasto, fresco, tempera), decorative techniques (flat, rag rolling, scumbling, spraying, mural, mosaic), body and wall decoration motifs and materials",
+              "objective": "Distinguish pictorial from decorative painting and select appropriate tools[cite: 517]; apply elements/principles of design[cite: 518]; master colour classes, properties, schemes, and local colour sourcing[cite: 518]; execute pictorial techniques (impasto, fresco, glazing) and decorative techniques (scumbling, rag rolling, mural, mosaic)[cite: 518]; analyze still life, nature, and life compositions[cite: 518]; compare traditional and modern body/wall decorations, motifs, and materials[cite: 518, 519]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Perspective, Career Prospects, Costing, Marketing, and Practical Decorative Execution",
+          "subtopics": [
+            {
+              "content": "Perspective principles and types, socio-economic values, career pathways, job costing factors, exhibition planning/funding, pricing, sales outlets, and practical execution of decorative renderings using poster or acrylic colors",
+              "objective": "Apply perspective types to enhance depth in pictorial compositions[cite: 519]; explore socio-economic opportunities and career pathways in decorative arts[cite: 519]; cost projects based on location, size, materials, and time[cite: 519]; plan exhibitions, negotiate, market, and sell artworks[cite: 519]; execute aesthetic environment designs practically in poster/acrylic media[cite: 519]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

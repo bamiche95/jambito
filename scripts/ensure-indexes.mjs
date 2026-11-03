@@ -155,6 +155,40 @@ const INDEXES = [
     keys: { at: 1 },
     options: { name: "at_ttl", expireAfterSeconds: 24 * 60 * 60 },
   },
+  // Web Push (lib/pushStore.js). No unique index: `_id` is already the hash of
+  // the endpoint, so a re-subscribing browser upserts its own row. These are the
+  // two audience reads — "this account's live devices" and "every live device by
+  // platform" — plus the dashboard's ledger.
+  {
+    collection: "pushSubscriptions",
+    keys: { uid: 1, revokedAt: 1 },
+    options: { name: "uid_revoked" },
+  },
+  {
+    collection: "pushSubscriptions",
+    keys: { revokedAt: 1, platform: 1 },
+    options: { name: "revoked_platform" },
+  },
+  {
+    collection: "pushSubscriptions",
+    keys: { lastSeenAt: -1 },
+    options: { name: "lastSeenAt_desc" },
+  },
+  {
+    collection: "pushLog",
+    keys: { campaignId: 1, sentAt: -1 },
+    options: { name: "campaign_sentAt" },
+  },
+  {
+    collection: "pushLog",
+    keys: { uid: 1, sentAt: -1 },
+    options: { name: "uid_sentAt" },
+  },
+  {
+    collection: "pushLog",
+    keys: { sentAt: -1 },
+    options: { name: "sentAt_desc" },
+  },
 ];
 
 async function main() {
@@ -201,6 +235,8 @@ async function main() {
       "emailCampaigns",
       "emailTemplates",
       "emailBroadcasts",
+      "pushSubscriptions",
+      "pushLog",
     ]) {
       const names = (await db.collection(collection).indexes())
         .map((i) => i.name)

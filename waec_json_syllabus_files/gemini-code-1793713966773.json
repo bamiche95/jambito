@@ -1,0 +1,81 @@
+{
+  "subject": "Business Management",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Nature of Management and Business Organization",
+          "subtopics": [
+            {
+              "content": "1.1 - 1.3 Management process, business structures, environment, ethics, and stakeholders",
+              "objective": "Differentiate management from administration; identify manager levels and roles. Compare sole proprietorships, partnerships, limited liability companies, public corporations, and co-operatives. Analyze internal/external business environments, causes of failure, corporate social responsibility, and primary/secondary stakeholders."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Functions of Management",
+          "subtopics": [
+            {
+              "content": "2.1 - 2.4 Planning, decision making, organizing, directing, and controlling",
+              "objective": "Master planning steps, decision-making processes (programmed vs non-programmed), organizational structures, delegation guidelines, directing elements, motivation theories (Maslow), leadership styles, formal/informal communication channels, and control tools."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Information Technology and Legal Environment",
+          "subtopics": [
+            {
+              "content": "3.1 - 4.3 ICT, computer applications, Law of Contract, Agency, and Negotiable Instruments",
+              "objective": "Differentiate data and information; apply computer systems to business. Understand essential contract elements, vitiating factors, contract discharge, principal-agent relationships, and negotiable instruments (cheques, bills of exchange, promissory notes)."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Finance, Financial Institutions, and Government Role",
+          "subtopics": [
+            {
+              "content": "5.1 - 6.5 Money, banking, inflation, risk/insurance, stock exchange, government revenue/taxation",
+              "objective": "Understand functions of money, inflation, central/commercial bank roles, monetary policy tools, risk management, insurance principles/policies, stock exchange securities, taxation types, and government expenditure items."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "International Trade, Developing Economies, and Globalization",
+          "subtopics": [
+            {
+              "content": "7.1 - 8.2 International trade, BOP, IMF/IBRD, globalization, and economic integration",
+              "objective": "Compare domestic vs international trade; understand trade documents, absolute/comparative advantage theories, balance of payments corrections, roles of IMF/World Bank/UNCTAD, globalization impact, and economic blocs (ECOWAS, AU, EU, ASEAN)."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Functional Management",
+          "subtopics": [
+            {
+              "content": "9.1 - 9.6 HR, labour relations, production, marketing, e-Commerce, and business finance",
+              "objective": "Understand HR processes (recruitment, job analysis, appraisal), trade unions/collective bargaining, production processes (job, batch, flow), 4 Ps of marketing mix, product life cycle, branding/packaging, e-commerce, and short/long-term financing."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Entrepreneurship and Small Business",
+          "subtopics": [
+            {
+              "content": "10.1 - 10.2 Entrepreneur traits, business plans, record keeping, small business setup, and sustainability",
+              "objective": "Identify entrepreneur characteristics, structure business plans, maintain business records, manage time, understand procedures for establishing small businesses, overcome challenges, and utilize government support for business sustainability."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

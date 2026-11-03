@@ -1,0 +1,51 @@
+{
+  "subject": "West African Traditional Religion",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: General Introduction",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Nature, Sources, Structure, and Worship in WATR",
+          "subtopics": [
+            {
+              "content": "Characteristics of WATR, belief in the Supreme Being, divinities, ancestors, mystical powers, common descriptive terminology, oral and non-oral sources, academic study approaches (thematic, comparative, historical), structural components (God, ancestors, divinities, charms), and worship elements (prayer, libation, sacrifice, spirit possession)",
+              "objective": "Analyze the core characteristics, belief structures, and descriptive terminology of WATR[cite: 601]; evaluate oral and non-oral sources[cite: 601]; examine academic approaches to religious study[cite: 601]; detail structural beliefs and essential features of traditional worship[cite: 601, 602]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: The Individual and the Community",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Religious Personalities, Festivals, Medicine, Ethics, and Rites of Passage",
+          "subtopics": [
+            {
+              "content": "Selection and roles of religious leaders, significance of traditional festivals, traditional healing vs orthodox medicine, concepts of time/work/wealth, concept of man and destiny, witchcraft, magic, malevolent spirits, moral values, taboos, covenants, and life-cycle rites of passage (birth, naming, puberty, marriage, death)",
+              "objective": "Explain selection processes and community roles of religious personalities[cite: 602]; state the social/religious significance of traditional festivals[cite: 602]; evaluate traditional medicine and healing practices[cite: 602]; analyze traditional perspectives on time, wealth, destiny, witchcraft, and ethics[cite: 602, 603]; describe the stages and importance of rites of passage[cite: 603]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Contemporary Society",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Institutions, Tourism, Stress, Conflict, Health, Modernity, and NRMs",
+          "subtopics": [
+            {
+              "content": "Chieftaincy and Asafo companies, religious tourism (sacred places, objects, personalities), stress management techniques, traditional conflict resolution methods, reproductive health and circumcision rites, interactions with foreign religions, science, technology, urbanization, environmental conservation, and New Religious Movements (e.g., Afrikania Mission, Godianism)",
+              "objective": "Examine traditional political institutions and Asafo organizations[cite: 603]; analyze the intersection of traditional religion with tourism, stress handling, and conflict management[cite: 603, 604]; address reproductive health beliefs[cite: 604]; evaluate the impact of modernity, foreign religions, urbanization, and technology on WATR[cite: 604]; discuss New Religious Movements and the future of WATR[cite: 604]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "subject": "Ceramics",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Ceramics as a Vocation",
+          "subtopics": [
+            {
+              "content": "Definition, history, career opportunities, products, indigenous pottery, pioneer artists",
+              "objective": "Understand the history and scope of ceramics; identify utilitarian/decorative products (bricks, tiles, vases, bowls)[cite: 108]; study indigenous pottery traditions (Ntonso, Pankrono)[cite: 108]; recognize Ghanaian pioneer contemporary ceramic artists and their contributions[cite: 108]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Raw Materials",
+          "subtopics": [
+            {
+              "content": "Clays, glazes, colouring oxides, stains, and material preparation",
+              "objective": "Define clay formation and types (primary/kaolin, secondary/ball clay, earthenware, stoneware)[cite: 108]; test for plasticity, shrinkage, and firing temperatures[cite: 108]; prepare plastic and rough clay bodies[cite: 108]; study glazes, stains, and colouring oxides[cite: 108]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tools and Equipment",
+          "subtopics": [
+            {
+              "content": "Hand tools, major equipment, design and construction of tools",
+              "objective": "Identify, use, and maintain modeling tools, calipers, kidneys, sponges, and cutting wires[cite: 108]; understand operation/maintenance of kilns, potter's wheels, blungers, pug mills, ball mills, and spray booths[cite: 108]; construct basic ceramic tools and equipment[cite: 108]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Forming Techniques",
+          "subtopics": [
+            {
+              "content": "Drawing/designing, hand building, wheel work, casting, pressing, extrusion",
+              "objective": "Develop ideas through sketching, dimensioning, and CAD[cite: 108]; master hand-building methods (pinching, coiling, slabbing)[cite: 108]; perform wheel work (throwing, turning)[cite: 108]; execute casting, pressing, and extrusion forming processes[cite: 108]."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Decoration, Finishing, Drying and Firing",
+          "subtopics": [
+            {
+              "content": "Decorative processes, drying, firing types, glazing techniques and defects",
+              "objective": "Apply decorative techniques (stamping, inlaying, incision, sgraffito, slip trailing, sprigging)[cite: 108]; execute open firing, bisque firing, and glost firing[cite: 108, 109]; prepare and apply glazes, and identify/correct glazing defects[cite: 109]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Establishment of Small-Scale Ceramic Industry",
+          "subtopics": [
+            {
+              "content": "Site finding, financing, branding, enterprise management, costing, exhibitions",
+              "objective": "Evaluate factors for establishing an enterprise (financing, licensing, quality control)[cite: 109]; manage pricing, packaging, and marketing[cite: 109]; plan and organize exhibitions[cite: 109]; address environmental sustainability (afforestation, energy conservation, land reclamation)[cite: 109]."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Professional Practices, Ethics, Museums and Galleries",
+          "subtopics": [
+            {
+              "content": "Healthy studio practices, portfolio, business plan, museum functions and structure",
+              "objective": "Maintain safe studio habits[cite: 109]; construct portfolios, business cards, and business plans[cite: 109]; define museum history, socio-economic importance, administrative structure, and cultural functions[cite: 109]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

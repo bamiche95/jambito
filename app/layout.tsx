@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import RegisterSW from "@/components/RegisterSW";
+import PushSync from "@/components/PushSync";
 import BottomNav from "@/components/BottomNav";
 import MetaPixel from "@/components/MetaPixel";
 import MetaPixelPageViews from "@/components/MetaPixelPageViews";
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MetaPixelPageViews />
         <RegisterSW />
         <AuthProvider>
+          <PushSync />
           <PricingProvider>
             {/* `pb-nav` reserves room for the fixed tab bar on phones; the
                 wrapper keeps the pages' own `flex-1` layout intact. */}

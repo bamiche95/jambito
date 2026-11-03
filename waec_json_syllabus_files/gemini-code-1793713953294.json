@@ -1,0 +1,131 @@
+{
+  "subject": "Biology",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A (For all candidates)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Concept of Living",
+          "subtopics": [
+            {
+              "content": "Classification of living things, five kingdoms, and organization of life",
+              "objective": "Distinguish living/non-living things and viruses. Classify organisms into Monera, Protoctista, Fungi, Plantae, and Animalia. Explain cell levels of organization (cell, tissue, organ, system) and complexity advantages/disadvantages."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Cell Structure and Functions",
+          "subtopics": [
+            {
+              "content": "Cell organelles, plant vs animal cells, biophysical processes, and nutrition",
+              "objective": "Understand cell wall, membrane, nucleus, cytoplasm, and organelles. Compare plant and animal cells. Master diffusion, osmosis, active transport, autotrophic/heterotrophic nutrition, cellular respiration (glycolysis, Kreb's cycle), excretion, growth (mitosis, tropisms), and reproduction (asexual, sexual, meiosis)."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tissues, Supporting Systems, and Transport",
+          "subtopics": [
+            {
+              "content": "Skeletons, plant supporting tissues, animal circulation, and plant transport",
+              "objective": "Examine skeletal materials (bone, cartilage, chitin), skeleton types, mammalian bones/joints, and plant supporting tissues (xylem, sclerenchyma). Understand heart/blood vessel structure, blood/lymph composition, plant water uptake, translocation, and transpiration."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Respiration, Excretion, and Regulation",
+          "subtopics": [
+            {
+              "content": "Respiratory surfaces, gaseous exchange, excretory organs, homeostasis, and nervous/hormonal coordination",
+              "objective": "Study gills, lungs, and cutaneous surfaces; gaseous exchange in fish, toads, mammals, and stomata. Examine kidney, liver, skin homeostatic structures. Study endocrine glands, plant auxins, central/peripheral nervous systems, reflex arcs, sense organs (eye, ear), and mammalian/plant reproduction."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Plant and Animal Nutrition",
+          "subtopics": [
+            {
+              "content": "Photosynthesis, macro/micro nutrients, balanced diet, enzymes, and alimentary systems",
+              "objective": "Understand light/dark photosynthetic reactions, plant mineral requirements, food classes, food tests, digestive enzyme mechanisms, modes of nutrition, alimentary tracts, and mammalian dental formulae."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Basic Ecological Concepts and Management",
+          "subtopics": [
+            {
+              "content": "Ecosystem components, ecological factors, food webs, pollution, and conservation",
+              "objective": "Study biotic/abiotic components, measure physical/edaphic factors, construct pyramids of energy/numbers, examine biological associations (symbiosis, parasitism), adaptation, air/water/soil pollution, ecological succession, pest control, public health, and natural resource conservation."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Variation, Genetics, and Evolution",
+          "subtopics": [
+            {
+              "content": "Morphological/physiological variations, Mendelian genetics, chromosomes, and evolutionary theories",
+              "objective": "Measure continuous/discontinuous variations (height, fingerprints, ABO blood groups). Define genetic terms, Mendelian laws, chromosome inheritance, sex-linked traits, applications in agriculture/marriage counseling, social insect behavior (termites, bees), and Lamarckian/Darwinian evolution."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B (For candidates in Ghana only)",
+      "topics": [
+        {
+          "id": 8,
+          "title": "Introducing Biology and Cell Biology",
+          "subtopics": [
+            {
+              "content": "Scientific methods, microscopes, endocytosis/exocytosis, nucleic acids, cell cycle, and protein synthesis",
+              "objective": "Apply the scientific method, master microscopy/slide preparation, understand phagocytosis/pinocytosis, DNA replication, RNA transcription, protein synthesis roles (mRNA, tRNA, rRNA), and cell cycle stages (interphase, mitosis, meiosis)."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Diversity, Mammalian Anatomy, and Applied Biology",
+          "subtopics": [
+            {
+              "content": "Insect orders, biological keys, mammal dissection, heart excitation, IWRM, and biotechnology",
+              "objective": "Identify insect orders and construct dichotomous keys. Dissect small mammals, understand cardiac conduction (SAN, AVN), muscle sliding filament model, antenatal care, monocot/dicot morphology, floral formulae, integrated water management, recombinant DNA, fish farming, food additives, and biogas generation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C (For candidates in Nigeria, Sierra Leone, The Gambia and Liberia)",
+      "topics": [
+        {
+          "id": 10,
+          "title": "Cell Theory, Irritability, Excretory/Liver Diseases, and Courtship",
+          "subtopics": [
+            {
+              "content": "Cell theory, taxis/nastism, kidney/liver diseases, sense organs, courtship behavior, and seed germination",
+              "objective": "Outline cell theory historical developments. Differentiate taxis and nastism. Study kidney (nephritis, stones) and liver (hepatitis, gallstones, cancer) diseases. Examine perception of taste/smell, courtship (pairing, display, territoriality, migration), housefly metamorphosis, embryo adaptive features, and epigeal/hypogeal germination."
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Cycles, Habitats, Agriculture, and Crime Detection",
+          "subtopics": [
+            {
+              "content": "Nitrogen/carbon/water cycles, energy thermodynamics, aquatic/terrestrial habitats, agricultural practices, and fingerprinting applications",
+              "objective": "Examine nitrogen, carbon, and water cycles. Apply thermodynamic laws to ecological energy flow. Study marine, estuarine, forest, and arid habitats. Evaluate ecological impacts of bush burning, tillage, fertilizers, and herbicides. Apply fingerprinting and blood grouping to crime detection, transfusions, and paternity determination."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

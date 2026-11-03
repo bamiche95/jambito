@@ -1,0 +1,41 @@
+{
+  "subject": "Insurance",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Insurance, Core Principles, and Contracting Documents",
+          "subtopics": [
+            {
+              "content": "Insurance definitions, history in Nigeria, essential features of contracts, risks classification, hazards, perils, functions of insurance, core principles (Insurable Interest, Utmost Good Faith, Proximate Cause, Indemnity, Subrogation, Contribution), proposal forms, cover notes, certificates of insurance, and policy documents",
+              "objective": "Define insurance history, legal frameworks, contract features, risks, hazards, perils, and primary/secondary functions[cite: 454]; master core principles of Insurable Interest, Utmost Good Faith, Proximate Cause, Indemnity, Subrogation, and Contribution[cite: 455]; evaluate proposal forms, cover notes, insurance certificates, and policy components[cite: 455, 456]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Insurance Practice, Renewals, Claims, Premium, and Market Operators/Regulators",
+          "subtopics": [
+            {
+              "content": "Re-insurance forms/functions, renewal notices, No Claim Discount (NCD), Long Term Agreement (LTA), claims processes, loss assessors/adjusters, premium rating factors, return premiums, market operators (buyers, sellers, intermediaries), and regulatory bodies (NAICOM, CIIN, NIA, NCRIB, ILAN)",
+              "objective": "Understand re-insurance types and functions[cite: 456]; outline renewal procedures, NCD, and LTA[cite: 456]; detail claims notification, documentation, investigation, and loss adjuster roles[cite: 456, 457]; calculate premium rating factors and return premiums[cite: 457]; identify insurance market operators (brokers, agents, buyers, sellers)[cite: 460]; evaluate functions of regulators and professional institutes (NAICOM, CIIN, NIA, NCRIB, ILAN)[cite: 460, 461]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Non-Life Insurance Products",
+          "subtopics": [
+            {
+              "content": "Scope of cover for Motor, Fire, Theft/Burglary, Money, Fidelity Guarantee, Engineering, Marine, Aviation, Employer's Liability, Public Liability, Professional Indemnity, Business Interruption, and Personal Accident insurance",
+              "objective": "Examine motor insurance policies (Comprehensive, Third Party) and Brown Card[cite: 457]; analyze standard fire policies and special perils[cite: 457, 458]; distinguish theft vs burglary insurance[cite: 458]; detail Money, Fidelity Guarantee, Engineering, Marine, and Aviation insurance[cite: 458, 459]; evaluate Employer's Liability, Public Liability, Professional Indemnity, Consequential Loss (Business Interruption), and Personal Accident policies[cite: 459, 460]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

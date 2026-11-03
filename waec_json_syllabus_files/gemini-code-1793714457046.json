@@ -1,0 +1,71 @@
+{
+  "subject": "Foods and Nutrition",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Nutrition and Health",
+          "subtopics": [
+            {
+              "content": "Introduction to nutrition, career opportunities, basic food nutrients, dietary deficiencies, metabolism, food composition tables, and nutrient testing",
+              "objective": "Understand basic nutrition terms and factors affecting nutrition[cite: 284]; identify career options and requirements in Foods and Nutrition[cite: 284]; study nutrient sources, functions, deficiencies, digestion/absorption, and perform physical/chemical food tests[cite: 284]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Food Laboratory and Equipment",
+          "subtopics": [
+            {
+              "content": "Kitchen design, large/small equipment care, safety and first aid, meal management, nutritional needs for special groups, and sanitation",
+              "objective": "Plan different types of kitchens and choose appropriate cleaning agents[cite: 285]; select, use, and maintain kitchen equipment[cite: 285]; prevent kitchen accidents and apply first aid[cite: 285]; apply meal planning principles and plan meals for special nutritional/health conditions[cite: 285]; maintain personal, kitchen, and food hygiene[cite: 286]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Food Commodities",
+          "subtopics": [
+            {
+              "content": "Animal products, cereals/grains, fruits and vegetables, legumes/oily seeds, fats/oils, starchy roots, and plantain",
+              "objective": "Classify, select, and store animal products (milk, eggs, meat, fish)[cite: 286]; understand the role and versatility of cereals and grains[cite: 286]; classify fruits/vegetables and state their nutritive value[cite: 286]; study legumes, fats/oils, starchy roots, and plantains in the diet[cite: 286]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Food Storage and Preservation",
+          "subtopics": [
+            {
+              "content": "Food spoilage, principles and methods of food preservation, perishable and non-perishable food storage",
+              "objective": "Identify causes and agents of food spoilage[cite: 287]; apply principles and methods of preservation[cite: 287]; organize storage space and use storage equipment properly[cite: 287]."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Food Preparation and Flour Cookery",
+          "subtopics": [
+            {
+              "content": "Cooking methods, heat transfer, cooking terms, food additives/adulteration, flour cookery, batters/doughs, cakes, pastries, yeast mixtures, and cake decoration",
+              "objective": "Apply moist/dry heat cooking methods and principles of heat transfer[cite: 287]; define cooking terms and evaluate food additives/adulteration[cite: 288]; master flour cookery, raising agents, batters, doughs, cakes, pastries, yeast mixtures, and cake icing/decorations[cite: 288, 289, 290]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Beverages, Convenience Foods, Rechauffé, Festive Dishes, Art of Entertaining, Experimental Cookery, Consumer Education, and Self-Employment",
+          "subtopics": [
+            {
+              "content": "Alcoholic/non-alcoholic beverages, convenience foods, leftover dishes, festive meals, entertainment etiquette, recipe development, consumer rights, food budgeting, and catering entrepreneurship",
+              "objective": "Classify and prepare beverages[cite: 290]; evaluate convenience foods[cite: 290]; prepare rechauffé (leftover) and festive dishes[cite: 292]; master table settings, service styles, and entertainment etiquette[cite: 292]; experiment with local ingredients to develop new recipes[cite: 292, 294]; apply consumer education, food budgeting, and bulk purchasing[cite: 294]; understand catering entrepreneurship, work ethics, and food packaging[cite: 294]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

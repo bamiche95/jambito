@@ -1,0 +1,41 @@
+{
+  "subject": "Home Management",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Principles of Management, Family Living, Parenthood, and Family Nutrition",
+          "subtopics": [
+            {
+              "content": "Management processes, motivations, family resources, decision making, time/energy management, family types/cycle, courtship/marriage, parenthood/childcare, meal planning, and special nutritional needs",
+              "objective": "Apply management planning, organizing, implementing, and evaluating processes[cite: 426]; analyze values, goals, standards, and family human/material resources[cite: 426]; examine family types, life cycle stages, and conflict resolutions[cite: 426, 427]; understand courtship, marriage preparations, and parental responsibilities[cite: 427, 428]; plan balanced meals for special nutritional needs (infants, pregnant women, aged, invalids)[cite: 429]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Clothing the Family, Housing, Home Maintenance, and Sanitation",
+          "subtopics": [
+            {
+              "content": "Household linen, textile fibers/fabrics, wardrobe planning, laundry agents/processes, house selection/acquisition, equipment/furnishings, interior decoration, home utilities, cleaning agents/surfaces, safety, and sanitation",
+              "objective": "Classify textile fibers, plan wardrobes, use laundry agents, and care for garments[cite: 429]; evaluate methods of house acquisition and selection guidelines[cite: 430]; arrange home furnishings and master interior decoration principles[cite: 430, 431]; manage home utilities (water, light, fuel)[cite: 431]; use cleaning agents on various surfaces, practice accident prevention/first aid, and maintain home sanitation/waste disposal[cite: 431, 432]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Wealth Creation, Money Management, Entrepreneurship, and Consumer Education",
+          "subtopics": [
+            {
+              "content": "Creativity and entrepreneurship, money management, family budgeting, wealth creation methods, capital market investments, consumer rights, legislation, market surveys, and wise buying practices",
+              "objective": "Explore entrepreneurial opportunities (fashion design, fast food, bead making)[cite: 432, 433]; construct family budgets and manage household income[cite: 433]; identify wealth creation methods and capital market investments (stocks, treasury bills)[cite: 433]; apply consumer rights, laws, market survey procedures, and wise purchasing practices[cite: 433, 434]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

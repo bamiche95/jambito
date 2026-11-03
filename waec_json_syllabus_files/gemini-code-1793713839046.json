@@ -1,0 +1,88 @@
+{
+  "subject": "Auto Mechanics",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Examination Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Workshop Regulations and Safety",
+          "subtopics": [
+            {
+              "content": "1.1 - 1.2 Basic safety rules, protective devices, fire extinguishers",
+              "objective": "Basic safety relating to personnel, tools, equipment, environment. Identification of safety devices (aprons, goggles). Types and usage of fire extinguishers (foam, dry powder, sand, water, wet-blanket)."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Basic Tools, Instruments and Equipment",
+          "subtopics": [
+            {
+              "content": "2.1 - 2.3 Hand tools, power tools, measuring instruments, basic equipment",
+              "objective": "Identification and usage of hand tools, power tools, measuring instruments, and shop equipment (jacks, hoists, air-compressors)."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Layout of a Motor Vehicle",
+          "subtopics": [
+            {
+              "content": "3.1 - 3.3 Vehicle layout, main components, drive arrangements",
+              "objective": "Conventional motor vehicle layout inspection and functions of main components. Understanding drive arrangements: Front-Engine Rear-Wheel (FERW), Rear-Engine Rear-Wheel (RERW), Front-Engine Front-Wheel (FEFW), and Four-Wheel Drive (4WD)."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Engine",
+          "subtopics": [
+            {
+              "content": "4.1 - 4.7 Classification, cycles, crank arrangement, valve mechanism",
+              "objective": "Petrol vs diesel classification and main engine parts. Principles of 2-stroke and 4-stroke cycles. Single vs multi-cylinder engines, compression testing, measuring bore/journal wear. Crank arrangements and firing orders (in-line, V-4, V-6, horizontally opposed). Valve timing, calculations, valve adjustments, and decarbonization."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Fuel Supply Systems",
+          "subtopics": [
+            {
+              "content": "5.1 - 5.4 Fuels/combustion, petrol systems, petrol injection, diesel systems",
+              "objective": "Elements of combustion, air-fuel ratios, petrol vs diesel properties. Gravity vs force-feed petrol systems, carburetors, fuel pumps. Electronic Fuel Injection (EFI) merits. Diesel fuel layout, injection pumps, injectors, cold starting devices, and fuel bleeding."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Exhaust System",
+          "subtopics": [
+            {
+              "content": "6.1 Purpose, layout, silencers, manifolds",
+              "objective": "Purpose and layout of exhaust system; identifying inlet and exhaust manifolds, silencer types, and checking for system leakage."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Lubrication",
+          "subtopics": [
+            {
+              "content": "7.1 - 7.3 Engine lubrication, feed types, oil pumps, lubricants",
+              "objective": "Boundary layer vs film lubrication. Splash, forced, and petroil feed (wet/dry sump). Operation of gear/rotor oil pumps and filters. Lubricant applications, viscosity ratings (SAE numbers), changing oil/filters, grease gun usage."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Cooling System",
+          "subtopics": [
+            {
+              "content": "8.1 - 8.3 Water cooling system, thermostats, air cooling system",
+              "objective": "Heat transfer principles. Thermo-syphon, pump-assisted, and pressurized water cooling systems. Thermostat types (bellows, wax pellet) and fault diagnosis. Air cooling layout and comparison with water cooling."
+            }
+          ]
+        },
+        {

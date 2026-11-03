@@ -1,0 +1,81 @@
+{
+  "subject": "Civic Education",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: National Ethics, Discipline, Rights and Obligations",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Values, Citizenship and Nationalism",
+          "subtopics": [
+            {
+              "content": "Definition and types of values; citizenship meaning, education, obligations, nationalism, national consciousness",
+              "objective": "Define and classify values and their societal importance[cite: 157]; understand citizenship, goals of citizenship education, duties of citizens, and nationalism[cite: 158]; identify methods of promoting national consciousness, unity, and civic problem-solving[cite: 158]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Human Rights, UDHR, Law and Order",
+          "subtopics": [
+            {
+              "content": "Categories and characteristics of human rights, UDHR history and core freedoms, law and order, constituted authority",
+              "objective": "Understand human rights categories, characteristics, and limitations[cite: 158]; examine the Universal Declaration of Human Rights (UDHR) historical background, core freedoms, and importance[cite: 158]; define law, order, features, and types/roles of constituted authority[cite: 158]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Responsible Parenthood, Traffic Regulations and Inter-Personal Relationships",
+          "subtopics": [
+            {
+              "content": "Roles of responsible parents, traffic rules and enforcement, inter-personal and inter-communal conflict resolution",
+              "objective": "Understand responsible parenthood and its impact on national development[cite: 158]; study traffic regulations and roles of individuals/government agencies[cite: 158]; cultivate interpersonal skills, promote inter-communal relationships, and master conflict resolution skills[cite: 159]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Emerging Issues in the Society",
+      "topics": [
+        {
+          "id": 4,
+          "title": "Cultism, Drugs, Human Trafficking, HIV/AIDS and Youth Empowerment",
+          "subtopics": [
+            {
+              "content": "Cultism origins/prevention, drug abuse symptoms/agencies, human trafficking, HIV/AIDS prevention/stigma, youth empowerment",
+              "objective": "Identify cult groups, causes, consequences, and prevention strategies[cite: 159]; analyze drug abuse causes, addict behaviors, preventive laws, and NDLEA activities[cite: 159]; examine causes, effects, and anti-human trafficking efforts[cite: 159]; understand HIV/AIDS causes, symptoms, prevention, and anti-stigmatization[cite: 160]; evaluate youth empowerment skills and government initiatives[cite: 160]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Governmental System and Processes",
+      "topics": [
+        {
+          "id": 5,
+          "title": "Structure of Government, Democracy, Rule of Law and National Development",
+          "subtopics": [
+            {
+              "content": "Tiers and functions of government, democratic pillars, rule of law, national development connections",
+              "objective": "Understand tiers and functions of government[cite: 160]; examine democracy features, pillars, and challenges[cite: 160]; evaluate rule of law principles and importance[cite: 160]; demonstrate how democracy and the rule of law foster national development, employment, and good governance[cite: 160]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Political Apathy, Civil Society, Popular Participation and Public Service",
+          "subtopics": [
+            {
+              "content": "Causes/discouragement of political apathy, popular participation, civil society roles, public service challenges/reforms",
+              "objective": "Understand causes and consequences of political apathy and ways to discourage it[cite: 160, 161]; evaluate modes of popular participation[cite: 161]; examine civil society functions, qualities, and operational limitations[cite: 161]; analyze public service functions, shortcomings, and strategies for improvement[cite: 161]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

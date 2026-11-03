@@ -1,0 +1,51 @@
+{
+  "subject": "Ibibio",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Usem / Tsarin Sauti da Nahawu)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Essay Writing, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading passages, essay/letter writing, Ibibio phonetics/phonology, syllable structure, tone marks, word formation, word classes, grammatical categories, phrases/clauses, sentence structures, and translation",
+              "objective": "Comprehend written Ibibio texts[cite: 435]; write 300-word compositions (narrative, descriptive, letter writing) using standard orthography[cite: 437]; describe Ibibio vowels, consonants, syllabic nasals, assimilation, and tones (high, low, falling, rising)[cite: 437]; analyze word roots, affixes, word classes, tenses, negation, phrases, clauses, and sentence types[cite: 437]; translate accurately between English and Ibibio[cite: 435]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Nwed Ikọ / Adabi)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Appreciation, Oral Literature, and Written Literature",
+          "subtopics": [
+            {
+              "content": "Literary appreciation principles, prescribed oral literature (folktales, songs, traditional drama), and prescribed written literature (prose, poetry, drama)",
+              "objective": "Apply basic principles of literary appreciation[cite: 436]; analyze prescribed oral literature texts (*Mbak Anyan-idaha*, *Kap Toiyo: Mme Uto Ibibio*, *Mbre ke Ibibio: Ma Ñkpo Mfo*)[cite: 438, 441]; critique prescribed written prose (*Ufokñwed Idañ*)[cite: 438, 441]; evaluate set written poetry (*Mben Idim Anie Adion*)[cite: 438, 441]; study prescribed written drama (*Uwa*)[cite: 438, 441]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Edu Uwem da Mme Usọrọ)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Customs, Institutions, Rites, and Ibibio Worldview",
+          "subtopics": [
+            {
+              "content": "Traditional occupations, family structure, religious institutions, traditional foods, funeral rites, traditional festivals, taboos (Ibed), traditional education, coronation, maiden fattening (Mboppo), and traditional societies",
+              "objective": "Identify traditional Ibibio occupations (fishing, farming, weaving, carving)[cite: 438]; understand family structures and religious systems[cite: 438, 439]; describe traditional foods and funeral practices[cite: 439]; detail festivals (Usọrọ Idọk, Usio Mboppo) and cultural taboos[cite: 439]; evaluate traditional education, coronation rites, Mboppo maiden fattening, secret societies, and the Ibibio worldview[cite: 439]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

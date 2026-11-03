@@ -1,0 +1,41 @@
+{
+  "subject": "Office Practice",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Office, Organizational Departments, Equipment, Reception, and Documents",
+          "subtopics": [
+            {
+              "content": "Office definitions, functions, layouts, organizational principles (span/unity of control), procedures, departmental structures, manual/electrical office equipment uses and care, reception duties, telephone handling, and business documents (administrative, sales, stores, purchasing)",
+              "objective": "Define office functions, layout types, and organizational principles[cite: 513]; outline functions of departments and read organizational charts[cite: 513]; identify, use, and maintain manual and electrical office equipment[cite: 513, 514]; evaluate reception duties, telephone etiquette, and documents handled[cite: 514]; classify, prepare, and use administrative, sales, store, and purchasing documents[cite: 514]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Correspondence, Mail Management, Filing Systems, and Communication",
+          "subtopics": [
+            {
+              "content": "Office correspondence types (memos, business letters, notices, minutes, reports, circulars), mail classification and handling procedures, filing definitions/systems/classifications/equipment, and communication channels, methods, media, and service providers",
+              "objective": "Prepare office correspondence types including memos, business letters, and reports[cite: 514]; handle incoming, outgoing, urgent, and confidential mails[cite: 514]; apply vertical, lateral, and electronic filing systems across alphabetical, numerical, subject, and geographical classifications[cite: 514, 515]; evaluate verbal, non-verbal, print, electronic, and internet communication media and service providers[cite: 515]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Meetings, Report Writing, and Information Management",
+          "subtopics": [
+            {
+              "content": "Meeting types (statutory, emergency, board, AGM, committee), meeting procedures, agenda, terminologies, roles of chairman/secretary, minute writing, formal report types/parts, and information sources, storage, and quality characteristics",
+              "objective": "Explain meeting types, procedures, terminology, chairman/secretary roles, and write accurate meeting minutes[cite: 515, 516]; draft formal short, long, investigative, and routine reports[cite: 516]; evaluate information types, sources, storage methods, and essential qualities (timeliness, accuracy, usability)[cite: 516]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

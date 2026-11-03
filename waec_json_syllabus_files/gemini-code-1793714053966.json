@@ -1,0 +1,111 @@
+{
+  "subject": "Chemistry",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A (For all candidates)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Chemistry and Structure of the Atom",
+          "subtopics": [
+            {
+              "content": "Scientific measurements, atomic structure, isotopes, electron configuration, orbitals",
+              "objective": "Master SI units, significant figures, precision, accuracy, and scientific methods[cite: 113]; understand Dalton, Thompson, Rutherford, and Bohr atomic models[cite: 113]; calculate relative atomic mass based on Carbon-12[cite: 114]; write s, p, d electron configurations using Aufbau principle, Hund's rule, and Pauli exclusion principle[cite: 114]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Standard Separation Techniques and Periodic Chemistry",
+          "subtopics": [
+            {
+              "content": "Mixture separation, periodic law, periodic trends, group/period gradations, transition elements",
+              "objective": "Classify mixtures and apply separation techniques (crystallization, distillation, chromatography)[cite: 115]; test purity using melting/boiling points[cite: 115]; explain periodic trends (atomic radius, ionization energy, electronegativity)[cite: 115]; analyze period 3 and group 7 (halogens) chemical gradations[cite: 115, 116]; understand transition metal properties (variable oxidation states, complex formation, catalysis, color)[cite: 116, 117]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Chemical Bonds and Stoichiometry",
+          "subtopics": [
+            {
+              "content": "Ionic, covalent, coordinate, metallic, intermolecular bonds; mole concept, chemical equations",
+              "objective": "Understand bond formation (ionic, covalent, dative, metallic) and VSEPR molecular shapes[cite: 117, 118]; distinguish van der Waals forces and hydrogen bonding[cite: 118]; apply laws of chemical combination[cite: 119]; perform mole calculations, molar concentration, empirical/molecular formula derivations, and volumetric titration stoichiometry[cite: 119, 120]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "States of Matter, Energy and Energy Changes",
+          "subtopics": [
+            {
+              "content": "Kinetic theory, gas laws, liquids, solids, enthalpy, exothermic/endothermic processes",
+              "objective": "Apply kinetic theory to phase changes, diffusion, Brownian motion[cite: 121]; perform calculations using gas laws (Boyle's, Charles', Graham's, Dalton's, Ideal Gas equation PV=nRT)[cite: 122]; distinguish structures of diamond and graphite[cite: 123]; calculate enthalpy changes for combustion, neutralization, and dissolution[cite: 123]."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Acids, Bases, Salts and Solubility",
+          "subtopics": [
+            {
+              "content": "Arrhenius theory, pH scale, salt hydrolysis, indicators, volumetric analysis, solubility curves",
+              "objective": "Understand acid-base properties, pH calculations, and conductivity[cite: 124]; classify salts and analyze salt hydrolysis[cite: 125]; perform acid-base titrations[cite: 125, 126]; calculate solubility ($mol\\,dm^{-3}$), plot solubility curves, and apply solubility rules to qualitative analysis[cite: 126]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Chemical Kinetics, Equilibrium Systems and Redox",
+          "subtopics": [
+            {
+              "content": "Reaction rates, collision theory, Le Chatelier's principle, oxidation-reduction, electrochemical cells, electrolysis",
+              "objective": "Analyze factors affecting rates and collision/transition state theories[cite: 127]; apply Le Chatelier's principle to dynamic equilibrium[cite: 127, 128]; balance redox equations[cite: 128]; calculate standard cell e.m.f.[cite: 128, 129]; apply Faraday's laws of electrolysis and explain corrosion prevention[cite: 129, 130]."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Chemistry of Carbon Compounds, Industry, Biochemistry and Synthetic Polymers",
+          "subtopics": [
+            {
+              "content": "Hydrocarbons, functional groups, isomerism, petroleum, polymers, proteins, carbohydrates, fats",
+              "objective": "Name and categorize organic functional groups (alkanes, alkenes, alkynes, alkanols, alkanoic acids, esters)[cite: 130, 131, 132, 133, 134]; understand petroleum fractional distillation and cracking[cite: 130]; differentiate addition and condensation polymerization[cite: 137]; analyze biochemistry of proteins, amino acids, fats/oils (saponification), and carbohydrates[cite: 135, 136, 137]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B (For candidates in Ghana only)",
+      "topics": [
+        {
+          "id": 8,
+          "title": "Advanced Atomic Structure, Bonding, Energetics and Kinetics",
+          "subtopics": [
+            {
+              "content": "Mass spectrometry, nuclear chemistry, complex formation, hybridization, Hess's law, rate laws",
+              "objective": "Understand mass spectrometer operation, quantum numbers, and nuclear decay/half-life calculations[cite: 138]; analyze complex ion geometry and bonding[cite: 139]; master $sp, sp^2, sp^3$ hybridization and $\\sigma/\\pi$ bonds[cite: 140]; apply Hess's Law, Born-Haber cycles, and bond energy calculations[cite: 140, 141]; calculate $K_a, K_b, pH, K_{sp}$, equilibrium constants ($K_p, K_c$), and rate law orders[cite: 141, 142, 143]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C (For candidates in Nigeria, Sierra-Leone, Liberia and The Gambia)",
+      "topics": [
+        {
+          "id": 9,
+          "title": "Non-Metals, Metals and Their Compounds",
+          "subtopics": [
+            {
+              "content": "Properties and preparations of C, O, H, N, S, Halogens, noble gases; metal extractions (Al, Fe, Sn)",
+              "objective": "Study allotropes of carbon, coal distillation, synthetic gas, and carbon oxides[cite: 145]; examine preparations/properties of $O_2, H_2$, water hardness treatment, $Cl_2, HCl, NH_3, HNO_3, H_2SO_4$[cite: 146, 147]; study extraction of Aluminium, Iron, Tin, common alloys, and main compounds of Na, Ca, Cu, Fe, Al[cite: 147, 148]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

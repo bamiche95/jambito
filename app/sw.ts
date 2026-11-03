@@ -38,11 +38,15 @@ declare const self: ServiceWorkerGlobalScope;
 // /api/practice and /api/cron are here for the same "never from a cache" reason:
 // practice holds one account's scores and answers, and a cron trigger replayed
 // from a cache would report a run that never happened.
+//
+// /api/push is the subscription and preference state for one account. A cached
+// "you have 2 devices" answer would make the profile page claim notifications
+// are on after they were revoked on another device.
 const privateApiNetworkOnly: RuntimeCaching[] = [
   {
     matcher: ({ url, sameOrigin }) =>
       sameOrigin &&
-      /^\/api\/(?:trial|profile|payments|pricing|admin|contact|welcome|practice|cron)(?:\/|$)/.test(
+      /^\/api\/(?:trial|profile|payments|pricing|admin|contact|welcome|practice|cron|push)(?:\/|$)/.test(
         url.pathname
       ),
     method: "GET",
@@ -104,3 +108,132 @@ const serwist = new Serwist({
 });
 
 serwist.addEventListeners();
+
+/* --------------------------------------------------------------------------
+ * Web Push
+ *
+ * There is no push library in the worker on purpose: the Fetch API and
+ * `showNotification` are all a notification needs, and anything extra would be
+ * another bundle in a 1 MB offline install.
+ *
+ * The `push` handler below is REQUIRED to call showNotification. Chrome on
+ * Android replaces the notification with a generic "This site has been updated
+ * in the background" notice when a push arrives and no notification is shown,
+ * which looks like a bug and cannot be tapped through to the app.
+ * ----------------------------------------------------------------------- */
+
+/** What POST /api/push/test and the campaign runner send. Flat, and under 4 KB. */
+interface PushPayload {
+  title?: string;
+  body?: string;
+  /** Same-origin path the tap should open. */
+  url?: string;
+  /** Replaces a previous notification with the same tag instead of stacking. */
+  tag?: string;
+}
+
+const DEFAULT_ICON = "/icons/icon-192.png";
+
+function readPushPayload(event: PushEvent): PushPayload {
+  if (!event.data) return {};
+  try {
+    const parsed = event.data.json();
+    return parsed && typeof parsed === "object" ? (parsed as PushPayload) : {};
+  } catch {
+    // A plain-text push (handy from `npx web-push` while setting up) still
+    // deserves a notification rather than a silent drop.
+    return { body: event.data.text().slice(0, 200) };
+  }
+}
+
+self.addEventListener("push", (event: PushEvent) => {
+  const payload = readPushPayload(event);
+  const title = payload.title?.trim() || "CBT-Practice";
+  const body =
+    payload.body?.trim() ||
+    "Time to practise — a 20-question set now beats cramming later.";
+  const tag = payload.tag?.trim() || "cbtpractice";
+
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body,
+      icon: DEFAULT_ICON,
+      badge: DEFAULT_ICON,
+      tag,
+      // `renotify` is only honoured with a tag, and we always set one: two
+      // reminders must not silently collapse into one.
+      renotify: true,
+      data: { url: payload.url || "/" },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event: NotificationEvent) => {
+  event.notification.close();
+  const data = event.notification.data as { url?: string } | undefined;
+  const target = new URL(data?.url || "/", self.location.origin).href;
+
+  event.waitUntil(
+    (async () => {
+      const clients = await self.clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+
+      // Prefer the tab already showing the destination, then any tab of ours.
+      // Opening a second copy of the app is the one thing that feels wrong on
+      // a phone with the PWA installed.
+      const exact = clients.find((client) => client.url === target);
+      if (exact) {
+        await exact.focus();
+        return;
+      }
+
+      const ours = clients.find((client) => {
+        try {
+          return new URL(client.url).origin === self.location.origin;
+        } catch {
+          return false;
+        }
+      });
+      if (ours) {
+        await ours.focus();
+        await ours.navigate(target).catch(() => undefined);
+        return;
+      }
+
+      await self.clients.openWindow(target);
+    })()
+  );
+});
+
+/**
+ * Chrome rotates a push subscription on its own schedule (and after a browser
+ * update). The worker cannot re-subscribe by itself: it has no Firebase token,
+ * and the new subscription must be stored against the right account. So it asks
+ * an open page to do it — see `syncPushSubscription` in lib/pushClient.ts.
+ * With no page open the old endpoint is simply dead, and the next visit
+ * re-registers from scratch.
+ *
+ * `pushsubscriptionchange` is missing from the TypeScript worker event map, so
+ * the listener is registered through a narrow cast rather than a `@ts-expect-error`
+ * that would hide a real mistake later.
+ */
+const subscriptionChangeTarget = self as unknown as {
+  addEventListener: (type: string, listener: (event: ExtendableEvent) => void) => void;
+};
+
+subscriptionChangeTarget.addEventListener("pushsubscriptionchange", (event) => {
+  event.waitUntil(
+    (async () => {
+      const clients = await self.clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+      for (const client of clients) {
+        client.postMessage({ type: "push:subscription-changed" });
+      }
+    })()
+  );
+});
+

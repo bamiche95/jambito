@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { requireProfileUser } from "@/lib/serverAuth";
 import { getRemaining, isSubscribed } from "@/lib/users";
 import { getAccountStatus } from "@/lib/accountStatus";
+import { getNotificationPrefs, saveNotificationPrefs } from "@/lib/pushStore";
 
 export const dynamic = "force-dynamic";
 
@@ -52,6 +53,69 @@ export async function GET(request) {
           : null,
       },
       remaining: getRemaining(user),
+      notificationPrefs: getNotificationPrefs(user),
+    },
+    { headers: { "Cache-Control": "no-store" } }
+  );
+}
+
+/**
+ * PATCH /api/profile — the notification toggles.
+ *
+ * Body: `{ notificationPrefs: { dailyReminder?, trialProgress?, productUpdates? } }`
+ *
+ * Only the keys in `NOTIFICATION_PREF_DEFAULTS` are accepted (lib/pushStore.js
+ * ignores anything else), so a hand-written body cannot write an arbitrary path
+ * into the user document. Turning a campaign off is a preference, not an
+ * unsubscribe: the device stays registered so a per-campaign send can skip it.
+ */
+export async function PATCH(request) {
+  const auth = await requireProfileUser(request);
+  if (!auth.ok) {
+    return NextResponse.json(
+      { success: false, code: auth.code, message: auth.message },
+      { status: auth.status, headers: { "Cache-Control": "no-store" } }
+    );
+  }
+
+  const body = await request.json().catch(() => ({}));
+  const patch = body?.notificationPrefs;
+  if (!patch || typeof patch !== "object") {
+    return NextResponse.json(
+      {
+        success: false,
+        code: "invalid_request",
+        message: "Expected { notificationPrefs: { … } }.",
+      },
+      { status: 400, headers: { "Cache-Control": "no-store" } }
+    );
+  }
+
+  const saved = await saveNotificationPrefs(auth.decoded.uid, patch);
+  if (!saved.ok) {
+    const status = saved.reason === "unavailable" ? 503 : 400;
+    return NextResponse.json(
+      {
+        success: false,
+        code: saved.reason,
+        message:
+          saved.reason === "unavailable"
+            ? "Could not save the preference right now. Please retry."
+            : "None of those notification settings are recognised.",
+      },
+      { status, headers: { "Cache-Control": "no-store" } }
+    );
+  }
+
+  return NextResponse.json(
+    {
+      success: true,
+      notificationPrefs: getNotificationPrefs({
+        ...auth.user,
+        // The doc in memory is the pre-write copy; the response reflects the
+        // values just written rather than a second read.
+        notificationPrefs: { ...auth.user?.notificationPrefs, ...patch, updatedAt: new Date() },
+      }),
     },
     { headers: { "Cache-Control": "no-store" } }
   );

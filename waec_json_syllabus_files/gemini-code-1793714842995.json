@@ -1,0 +1,31 @@
+{
+  "subject": "Mining",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Mining, Basic Geology, and Stages of Development",
+          "subtopics": [
+            {
+              "content": "Branches of mining, mineral classifications, distribution in Nigeria, mine accounting/financing, Nigerian Minerals & Mining Act 2007, geology fundamentals, earth structure, rock types, mineral properties, prospecting/exploration techniques, feasibility studies, and mineral processing unit operations",
+              "objective": "Explain mining terms, mineral classifications, Nigerian mineral distribution, and legal/financial frameworks (Mining Act 2007, titles acquisition)[cite: 490, 491]; relate geology to mining, identify rock types (igneous, sedimentary, metamorphic), and interpret geological maps/cross-sections[cite: 491]; classify surface vs underground mining methods[cite: 491]; outline prospecting/exploration techniques (geophysical, geochemical, remote sensing) and feasibility studies[cite: 491, 492]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Mining Methods, Mineral Processing, Gemology, Lapidary, Health, Safety, and Environment",
+          "subtopics": [
+            {
+              "content": "Surface methods (open pit, open cast, quarrying), underground methods (room-and-pillar, longwall, cut-and-fill, block caving), sea-floor/asteroid mining, materials handling, comminution/concentration operations, gemstone identification/lapidary, PPE equipment, occupational diseases, first aid, accident reporting, and environmental protection laws",
+              "objective": "Detail unit operations for open pit, open cast, and quarrying[cite: 492]; explain basic concepts of underground mining methods and material handling equipment[cite: 492]; perform mineral comminution, concentration, and tailings disposal operations[cite: 492]; identify, measure, process, and market gemstones using lapidary tools[cite: 492]; enforce health, safety, and environmental protection laws, use PPE, administer first aid, and report mine accidents[cite: 493]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

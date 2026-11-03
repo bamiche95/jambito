@@ -1,0 +1,51 @@
+{
+  "subject": "Fisheries",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Introduction to Fisheries & Fishing Activities",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Fisheries Role, Organisms, Habitats, Alien Species, Landing Sites, Gear, and Craft",
+          "subtopics": [
+            {
+              "content": "Types/importance of fisheries, aquatic habitats, invasive alien species, landing site operations, active/passive gear, craft, harmful fishing practices",
+              "objective": "Differentiate capture vs culture fisheries and artisanal vs commercial operations[cite: 267]; identify finfishes, crustaceans, and molluscs across freshwater, brackish, and marine habitats[cite: 267, 268]; analyze impacts and controls of invasive aquatic weeds (water hyacinth)[cite: 268]; examine landing site facilities, sanitation, active/passive gear construction/maintenance[cite: 268, 269]; evaluate fishing craft (canoes, trawlers) and prevent harmful fishing practices[cite: 269, 270]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Fish Biology & Aquaculture",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Taxonomy, Anatomy, Life Processes, Ecology, Genetics, Aquarium Management, Pond Construction, and Health",
+          "subtopics": [
+            {
+              "content": "Fish length/weight measurements, internal/external anatomy, locomotion, digestion, circulation, osmoregulation, life cycles, water parameters, genetic breeding, aquarium construction, pond design/stocking/feeding, fish diseases",
+              "objective": "Classify fishery species and take body measurements[cite: 270]; relate anatomical structures (gills, swim bladder, heart, gonads) to biological functions[cite: 270, 271]; explain locomotion, digestion, blood circulation, gaseous exchange, osmoregulation, and reproduction[cite: 270, 271]; measure water quality parameters (pH, DO, turbidity, salinity)[cite: 271]; apply Mendelian genetics to fish breeding (GIFT tilapia)[cite: 272]; construct and manage aquaria[cite: 273]; execute fish pond site selection, excavation, stocking, water quality maintenance, feed formulation, harvesting, and disease management (gill rot, furunculosis, ich)[cite: 273, 274, 275]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Fish Utilization, Management, Policies, Business, and Communities",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Nutritive Values, Processing, Spoilage, Fisheries Management, EEZ Laws, Marketing, and Cultural Practices",
+          "subtopics": [
+            {
+              "content": "Fish nutrients, traditional/modern preservation, spoilage signs/causes, MSY management, EEZ and international conventions, budgeting, marketing value chains, fishing festivals, career opportunities",
+              "objective": "Identify fish nutrient compositions[cite: 275]; execute processing (gutting, filleting) and preservation methods (smoking, salting, freezing, Chorkor smoker)[cite: 275, 276]; detect signs and causes of fish spoilage[cite: 276]; apply maximum sustainable yield (MSY) and stock conservation practices[cite: 276, 277]; evaluate government fishery regulations, EEZ rights, and international conventions (IUCN, CITES)[cite: 277, 278]; prepare budgets, cash flow projections, and analyze fish marketing supply/value chains[cite: 278, 279]; examine cultural festivals/taboos in fishing communities[cite: 279]; identify fishery research institutions, extension services, and sub-sector job opportunities[cite: 279, 280]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

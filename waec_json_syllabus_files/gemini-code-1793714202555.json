@@ -1,0 +1,71 @@
+{
+  "subject": "Clerical Office Duties",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Office",
+          "subtopics": [
+            {
+              "content": "Definition, functions, sections, departments, office personnel, professional image, layout",
+              "objective": "Understand office functions (receiving, recording, processing, storing information, protecting assets)[cite: 164]; identify roles of reception, stores, mail room[cite: 164]; detail department interrelationships (Accounts, Sales, HR, Legal, Transport)[cite: 164]; differentiate roles of office staff (Manager, Supervisor, Clerks, Secretaries, Typist)[cite: 164, 165]; examine personal/business attributes, time management, and open vs closed office layouts[cite: 165]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Organisation",
+          "subtopics": [
+            {
+              "content": "Principles of organization, structures, organograms",
+              "objective": "Apply organization principles (span of control, unity of command, delegation, authority/responsibility)[cite: 165]; evaluate organizational structures (Line, Line and staff, Functional, Matrix)[cite: 166]; draw and interpret organograms[cite: 166]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Business Transactions and Banking",
+          "subtopics": [
+            {
+              "content": "Transaction documents, payment methods, payroll, tax, petty cash, bank account types, cheques",
+              "objective": "Identify and complete business documents (LPO, Invoice, Debit/Credit Notes, Waybill, Statement of Account)[cite: 166]; explain payment methods[cite: 166]; compute payroll (gross/net pay, PAYE, piece/time rates)[cite: 167]; understand tax regimes (VAT, Income, Customs Duty)[cite: 167]; operate imprest petty cash system[cite: 167]; distinguish commercial/central bank functions, savings/current/fixed accounts, and cheque features/crossings[cite: 167, 168]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Stock Procedure, Office Equipment, and Machines",
+          "subtopics": [
+            {
+              "content": "Stock ordering, storekeeper duties, stock records, valuation, general/computer/mailroom machines",
+              "objective": "Describe stock ordering, storekeeper duties, requisitioning, and stock control levels (minimum, maximum, re-order)[cite: 168]; compare stock valuation methods[cite: 168]; evaluate factors in purchasing office equipment[cite: 168]; operate computers, photocopiers, risographs, calculators, fax machines, franking/shredding machines, and mailroom equipment[cite: 169]."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Communication and Business English",
+          "subtopics": [
+            {
+              "content": "Communication forms/barriers, business correspondence, mail handling, meetings, proofreading, filing",
+              "objective": "Identify oral/written/visual communication forms and barriers[cite: 170]; draft business letters, memos, and report types[cite: 170]; manage incoming/outgoing mail registers[cite: 170]; plan meetings, understand terminologies (quorum, agenda, motion), draft minutes[cite: 171]; apply proofreading, spelling, and punctuation rules[cite: 171]; classify filing systems (alphabetical, numerical, subject) and indexing[cite: 172]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Reference Books, Post Office, Human Relations, Health, Pre-Employment, and Entrepreneurship",
+          "subtopics": [
+            {
+              "content": "Sources of info, postal/courier services, interpersonal skills, office safety/welfare, recruitment, small business",
+              "objective": "Utilize general/specialized reference books and official documents (passports, visas)[cite: 172, 173]; understand postal, express, and courier services[cite: 173, 174]; apply human relations and public relations skills[cite: 174]; identify office health hazards, accident prevention, and staff welfare[cite: 174]; prepare job advertisements, application letters, CVs, and interview skills[cite: 175]; understand characteristics and importance of small-scale business entrepreneurship[cite: 175]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

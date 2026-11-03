@@ -1,0 +1,321 @@
+{
+  "subject": "Animal Husbandry (Alt B)",
+  "exam": "WAEC",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Livestock Production",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Importance of farm animals",
+          "subtopics": [
+            {"content": "a. Source of food (meat, milk, eggs, honey etc.)", "objective": "Candidates should be able to discuss farm animals as a source of food"},
+            {"content": "b. Raw materials e.g. hide and skin, bones, hooves, hair/fur, egg shells", "objective": "Candidates should be able to discuss farm animals as a source of raw materials"},
+            {"content": "c. Source of manure (fertilizer, biogas, bio fuel), growing of maggots and earthworms", "objective": "Candidates should be able to discuss farm animals as a source of manure and related uses"},
+            {"content": "d. Source of feed ingredients - blood meal, bone meal, meat and bone meal, snail shell, egg shell, feathers etc.", "objective": "Candidates should be able to discuss farm animals as a source of feed ingredients"},
+            {"content": "e. Animal power (animal traction, transportation)", "objective": "Candidates should be able to discuss animal power"},
+            {"content": "f. Research (laboratory, field), drugs, vaccines, hormones etc.", "objective": "Candidates should be able to discuss the use of farm animals in research and drug production"},
+            {"content": "g. Source of employment; sales of products and by-products", "objective": "Candidates should be able to discuss employment and income from farm animals"},
+            {"content": "h. Social functions e.g. payment of bride price, cultural displays (weddings)", "objective": "Candidates should be able to discuss the social functions of farm animals"},
+            {"content": "i. Security e.g. ducks, bees, turkeys; pets e.g. rabbits, sheep, chickens", "objective": "Candidates should be able to discuss the use of farm animals for security and as pets"},
+            {"content": "j. Sports and games e.g. horse racing, chicken fighting; religious festivals e.g. turkeys, rams etc.", "objective": "Candidates should be able to discuss the use of farm animals in sports, games and religious festivals"},
+            {"content": "k. Source of foreign exchange through export of animal products and by-products", "objective": "Candidates should be able to discuss foreign exchange earnings from animal products"}
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Classification of farm animals",
+          "subtopics": [
+            {"content": "a. Classification of farm animals: simple stomach (non-ruminant or monogastric) e.g. poultry (avian), pig (swine), rabbits, horses, donkeys, snails, bees, grasscutters; complex stomach (polygastric or ruminants) i.e. cattle, sheep and goat", "objective": "Candidates should be able to classify farm animals based on stomach type"},
+            {"content": "b. Identification of ruminants and non-ruminants", "objective": "Candidates should be able to identify the external features of common ruminants and non-ruminants and differentiate them based on type of stomach and type of feed consumed"}
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Internal organs and their functions in farm animals",
+          "subtopics": [
+            {"content": "a. Internal organs e.g. liver, lungs, heart, kidney, spleen, pancreas, stomach, crop, caecum, gizzard, small intestine, large intestine, tongue etc., and their functions", "objective": "Candidates should be able to identify the internal organs of farm animals and state their functions"}
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Body systems and their functions in farm animals",
+          "subtopics": [
+            {"content": "a. Digestive, respiratory, nervous, circulatory, skeletal and reproductive systems", "objective": "Candidates should understand the functions of each body system"}
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Reproduction in farm animals",
+          "subtopics": [
+            {"content": "a. Definition of terms used in livestock reproduction", "objective": "Candidates should be able to define terms such as ovulation, oestrus cycle, heat period, signs of heat, mating, gestation, parturition, lactation, colostrum, flushing, steaming up, dystocia, vaginal prolapse etc."},
+            {"content": "b. Reproduction in livestock (mammals)", "objective": "Candidates should be able to discuss detection of heat, mating systems, pregnancy detection and signs of parturition"},
+            {"content": "c. Reproduction in poultry", "objective": "Candidates should know the process of egg formation in poultry"},
+            {"content": "d. Reproductive hormones and their functions", "objective": "Candidates should know the sources and roles of female hormones (oestrogen, progesterone, relaxin, oxytocin etc.) and male hormones (testosterone/androgen)"},
+            {"content": "e. Management of pregnant farm animals", "objective": "Candidates should be able to discuss regular and adequate feeding, body exercise, steaming up, separation from male animals, provision of clean and adequate water, administration of drugs where necessary, dipping to eliminate ecto-parasites, and parturition"}
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Livestock management systems",
+          "subtopics": [
+            {"content": "a. Intensive, semi-intensive and extensive systems", "objective": "Candidates should know the livestock management systems and discuss the advantages and disadvantages of each"}
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Management practices of livestock",
+          "subtopics": [
+            {"content": "a. Housing requirements for each of the farm animals, using local materials for construction of animal houses", "objective": "Candidates should be able to discuss housing requirements and use of local materials for construction"},
+            {"content": "b. Other management practices: feeding, sanitation, hygiene, castration, dehorning, deworming, vaccination, inoculation, culling, debeaking, smoking (in bees), docking (detailing), means of identification (tattooing, branding, ear-notching, rings etc.), isolation, weaning, care of the young animal until weaned", "objective": "Candidates should understand these practices and discuss the importance of each"},
+            {"content": "c. Simple record keeping including income and expenditure accounts", "objective": "Candidates should be able to keep simple records and income and expenditure accounts"},
+            {"content": "d. Management from birth to maturity of a named large ruminant, small ruminant, poultry, pigs, grasscutter, bees and snails", "objective": "Candidates should be able to discuss management practices from birth to maturity of the named animals"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Animal Nutrition",
+      "topics": [
+        {
+          "id": 8,
+          "title": "Meaning and classes of animal feeds",
+          "subtopics": [
+            {"content": "a. Meaning of animal nutrition, feed nutrients (carbohydrates, proteins, fats and oil, vitamins, minerals and water), their functions, sources and deficiencies in farm animals", "objective": "Candidates should be able to discuss animal nutrition and feed nutrients, their functions, sources and deficiencies"},
+            {"content": "b. Classification of animal feeds into concentrates, roughages, supplements, feed additives etc.", "objective": "Candidates should be able to classify animal feeds"}
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Animal feeds and feeding",
+          "subtopics": [
+            {"content": "a. Livestock rations: meaning and types (balanced, maintenance, production rations)", "objective": "Candidates should know the meaning and types of livestock rations"},
+            {"content": "b. Malnutrition: meaning, causes, symptoms and practical ways to check it", "objective": "Candidates should be able to discuss practical ways to check malnutrition such as feeding balanced rations, feeding weaker animals separately, deworming, giving supplementary feeds, adding feed additives to stimulate appetite, protecting animals from toxic plants and harmful substances, adjusting stocking rates and providing good quality and adequate water"}
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Formulation of livestock rations",
+          "subtopics": [
+            {"content": "a. Practical diet formulations for the different classes of farm animals (starter, grower and finisher diets)", "objective": "Candidates should be able to carry out practical diet formulations for the different classes of farm animals"},
+            {"content": "b. Feed ingredients e.g. blood meal, fish meal, cotton seed cake, oyster shell, groundnut cake, maize grains, salt, premix, glycine etc.", "objective": "Candidates should be able to identify different feed ingredients used for diet formulation"},
+            {"content": "c. Factors to consider in feed formulation: physiological status of animal, species, age, body weight, production target, acceptability of feed, nutrient composition of the feed, ingredient availability, cost of feed ingredients etc.", "objective": "Candidates should know the factors to consider in feed formulation"}
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Processing and marketing of animal products",
+          "subtopics": [
+            {"content": "a. Processing techniques for different farm animal products", "objective": "Candidates should know pre-slaughtering, slaughtering and post-slaughtering activities, hygienic conditions in processing, slaughtering techniques for different farm animals, and processing of products e.g. egg, milk, meat, skin, wool, honey, snail shell, feathers, fur, hooves, horns, blood, faeces/droppings into other forms (value addition)"},
+            {"content": "b. Marketing of animal products", "objective": "Candidates should understand common marketing channels and agents such as producers, wholesalers, retailers, consumers, and discuss the advantages and disadvantages of each"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Pasture and Range Management",
+      "topics": [
+        {
+          "id": 12,
+          "title": "Pasture management",
+          "subtopics": [
+            {"content": "a. Meaning and importance of pasture and forage crops", "objective": "Candidates should be able to discuss the definition, examples and importance of pasture and forage crops"},
+            {"content": "b. Types of pasture and forage crops", "objective": "Candidates should understand the types and features of pasture and forage crops"},
+            {"content": "c. Terminologies in pasture management", "objective": "Candidates should know basic terminologies in pasture management"}
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Rangeland improvement",
+          "subtopics": [
+            {"content": "a. Meaning and characteristics of rangelands", "objective": "Candidates should understand the meaning and features of rangeland"},
+            {"content": "b. Methods of rangeland improvement", "objective": "Candidates should know methods: reseeding, rotational grazing, controlled stocking, deferred grazing, controlled burning, fertilizer application, pest control, disease control etc."},
+            {"content": "c. Importance of rangeland", "objective": "Candidates should know the role of rangeland in livestock production e.g. provision of vegetation and grasses for animals, exercise, provision of hay and silage"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section D: Animal Improvement",
+      "topics": [
+        {
+          "id": 14,
+          "title": "Animal improvement",
+          "subtopics": [
+            {"content": "a. Meaning of animal improvement", "objective": "Candidates should understand the meaning and terminologies used in animal improvement"},
+            {"content": "b. Aims/importance of farm animal improvement", "objective": "Candidates should know the aims: high reproductive efficiency, potency, mothering ability, cool temperament, high libido, resistance to pests and diseases, tolerance to harsh environment etc."}
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Methods of farm animal improvement",
+          "subtopics": [
+            {"content": "a. Methods used in farm animal improvement", "objective": "Candidates should be able to discuss introduction, selection and breeding"},
+            {"content": "b. Merits and demerits of methods used in farm animal improvement", "objective": "Candidates should understand the merits and demerits of each method"}
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Artificial insemination",
+          "subtopics": [
+            {"content": "a. Meaning of artificial insemination", "objective": "Candidates should be able to explain the term artificial insemination"},
+            {"content": "b. Methods of artificial insemination", "objective": "Candidates should be able to identify materials, methods, steps and precautions in carrying out artificial insemination"},
+            {"content": "c. Advantages of artificial insemination", "objective": "Candidates should know the advantages of artificial insemination"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section E: Animal Health",
+      "topics": [
+        {
+          "id": 17,
+          "title": "Farm animal diseases and pathogens",
+          "subtopics": [
+            {"content": "a. Concept of farm animal disease", "objective": "Candidates should know the meaning and causal agents (bacteria, viruses, fungi, protozoa) of diseases in farm animals"},
+            {"content": "b. General symptoms of diseases in farm animals", "objective": "Candidates should be able to discuss signs of a sick animal e.g. loss of appetite, loss of weight, diarrhoea, high body temperature, blood stained urine, gnashing of teeth, discharges from natural openings, blood stained faeces, ruffled feathers or fur, standing hair, undue noise, excessive salivation, anaemia, staggering gait, difficulty in breathing, coma, sudden death"},
+            {"content": "c. Diseases of farm animals, prevention and control", "objective": "Candidates should be able to identify the main diseases, causal agents, mode of transmission and symptoms, and know simple preventive and control measures including use of antibiotics and ethno-veterinary practices"},
+            {"content": "d. Factors predisposing farm animals to diseases", "objective": "Candidates should know factors e.g. poor nutrition, poor health status, poor sanitation, inadequate bio-security, overcrowding, unfavourable weather conditions, low immunity"}
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Livestock parasites and pests",
+          "subtopics": [
+            {"content": "a. Livestock parasites", "objective": "Candidates should understand the meaning, classes, control/prevention and effects of parasites, including life cycles, and identify ecto-parasites (ticks, lice, mites, fleas etc.) and endo-parasites (tapeworm, roundworm, hookworm, pinworm, liver fluke, trypanosome etc.) and their economic importance"},
+            {"content": "b. Livestock pests", "objective": "Candidates should know livestock pests (rodents, snakes, soldier ants, birds, weevils, termites, flies etc.), prevention/control using dewormers, acaricides, pesticides and ethno-veterinary practices, effects of pests on farm animals, and identify and know the economic importance of storage pests (rodents, weevils, termites, cockroaches) and field pests (soldier ants, birds, snakes, flies)"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Animal Husbandry (Practicals)",
+      "topics": [
+        {
+          "id": 19,
+          "title": "Products and by-products of farm animals",
+          "subtopics": [
+            {"content": "1. Products and by-products of farm animals", "objective": "Candidates should be able to identify and know the uses of products and by-products such as meat, eggs, milk, honey, hides, skin, blood, hair, wool, feathers, horn, hooves, bones, snail shell, animal dung"}
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Identification of farm animals",
+          "subtopics": [
+            {"content": "2. Identification of farm animals", "objective": "Candidates should be able to describe, draw and label the external parts of farm animals"}
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Internal organs and their functions in farm animals",
+          "subtopics": [
+            {"content": "3. Internal organs and their functions in farm animals", "objective": "Candidates should be able to identify and draw the major internal structures in the various body systems of a named ruminant, poultry and pig, and state the differences in structures and functions"}
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Tools and equipment used in management of farm animals",
+          "subtopics": [
+            {"content": "4. Tools and equipment used in management of farm animals", "objective": "Candidates should be able to identify tools and equipment for: housing (head pan, trowel, shovel/spade, hammer, pincers, pliers, spanner, screw driver); brooding (coal pots, kerosene stoves, hurricane lantern, electric bulb, hover, chick feeder, flat trays, chick drinker, brood guard/surround, thermometer, hygrometer); feeding (feeders, drinkers, weighing scale); identification (branding iron, ear clips, neck chains, marker, ear notcher, indelible ink); debeaking (debeaking machine, sharp knife, heater); castration (surgical blade/scalpel, burdizzo, elastrator, elastic ring, cotton wool, suture needle, suture thread); handling (kraal, restraining ropes, wooden rod, nose ring); dehorning (iron saw, knife/cutlass); incubation (incubator, hatcher, chick box, egg tray, humidifier, candler); milking (cheese cloth, milking machine, milking chute, milk testing cup, drenching bottle, milking pails, buckets); slaughtering (cutlass, knife, stunning gun, electric shocker, defeathering machine, eviscerator, conveyor, weighing scale, blast freezer, cold rooms); pasture and forage crops (sickle, knife/cutlass, harvesters, silo); and discuss their maintenance"}
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Feeds and feedstuffs",
+          "subtopics": [
+            {"content": "5. Feeds and feedstuffs", "objective": "Candidates should be able to identify and know the uses of feeds and feedstuffs such as common feed ingredients (maize, groundnut cake, soya bean meal, palm kernel cake, fish meal, bone meal, oyster shell, limestone, salt, salt lick, premix, wheat offal), crop residues, agricultural by-products and non-conventional feeds (jack bean, rumen digesta, cassava peel) and the major nutrients they contain"}
+          ]
+        },
+        {
+          "id": 24,
+          "title": "Pasture and forage crops",
+          "subtopics": [
+            {"content": "6. Pasture and forage crops", "objective": "Candidates should be able to identify common pasture and forage crops and know their uses, and discuss hay and silage making"}
+          ]
+        },
+        {
+          "id": 25,
+          "title": "Artificial insemination",
+          "subtopics": [
+            {"content": "7. Artificial insemination", "objective": "Candidates should be able to identify the tools and equipment and their uses, and discuss simple techniques of semen collection, preservation and insemination"}
+          ]
+        },
+        {
+          "id": 26,
+          "title": "Pests and parasites of farm animals",
+          "subtopics": [
+            {"content": "8a. Pests of farm animals", "objective": "Candidates should be able to identify storage pests (rodents, weevils, termites, cockroaches) and field pests (soldier ants, birds, snakes, flies) and know their economic importance"},
+            {"content": "8b. Parasites of farm animals", "objective": "Candidates should be able to identify ectoparasites (ticks, lice, mites, fleas) and endoparasites (tapeworm, roundworms, hookworm, pinworm, liver fluke, trypanosomes), know their economic importance, and study their life cycles, prevention and control"}
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "List of Facilities and Major Equipment",
+      "topics": [
+        {
+          "id": 27,
+          "title": "Farm building/structure",
+          "subtopics": [
+            {"content": "Poultry/Pig house/Battery cages - quantity: 1", "objective": "School should provide the structure for practical teaching"},
+            {"content": "Cattle/Goat/Sheep pen - quantity: 1", "objective": "School should provide the structure for practical teaching"},
+            {"content": "Rabbit/Grasscutter hutch - quantity: 1", "objective": "School should provide the structure for practical teaching"},
+            {"content": "Snailery/Bee hive - quantity: 1", "objective": "School should provide the structure for practical teaching"}
+          ]
+        },
+        {
+          "id": 28,
+          "title": "Live animals",
+          "subtopics": [
+            {"content": "Poultry/Pig - quantity: 10", "objective": "School should keep the live animals for practical teaching"},
+            {"content": "Rabbits/Grasscutter - quantity: 10", "objective": "School should keep the live animals for practical teaching"},
+            {"content": "Cattle/Sheep/Goat - quantity: 10", "objective": "School should keep the live animals for practical teaching"},
+            {"content": "Snails/Bees - quantity: 50/100", "objective": "School should keep the live animals for practical teaching"}
+          ]
+        },
+        {
+          "id": 29,
+          "title": "Specimen",
+          "subtopics": [
+            {"content": "Tick, Lice, Liver fluke, Tapeworm, Roundworm, Flea, Tsetse fly, Pests", "objective": "School should provide specimens for practical identification"}
+          ]
+        },
+        {
+          "id": 30,
+          "title": "Charts and pictures",
+          "subtopics": [
+            {"content": "Digestive system of ruminants; digestive system of non-ruminants; reproductive organs of male livestock; reproductive organs of female livestock; reproductive tract of poultry; skeletal system of farm animals; circulatory system; muscular system; endocrine system; calendar of ovulation; calendar of oestrus cycle; classes of farm animals; calendar of heat period; calendar of animal diseases - quantity: 5 each", "objective": "School should provide charts and pictures for teaching"}
+          ]
+        },
+        {
+          "id": 31,
+          "title": "Machines and equipment",
+          "subtopics": [
+            {"content": "Burdizzo pliers/castrators (2); elastrators (2); debeakers (2); candlers (2); dehorning saw (4); ear notching knife (2); electro-ejaculator (2); artificial inseminators (2); hand sprayer/knapsack sprayer (2); refrigerators to store materials (2); clinical thermometer (2); films (many); television (2); CD/video player (2); 16mm film projector (2)", "objective": "School should provide machines and equipment for practical teaching"}
+          ]
+        },
+        {
+          "id": 32,
+          "title": "Drugs/vaccines/materials",
+          "subtopics": [
+            {"content": "First aid kits/boxes containing surgical blades, cotton wool, iodine and razor (2); sterilizers e.g. Dettol, Izal (4); syringes and needles (10); vaccines in various forms (5); formalin etc. (2 bottles)", "objective": "School should provide drugs, vaccines and materials for practical teaching"}
+          ]
+        },
+        {
+          "id": 33,
+          "title": "Feed samples",
+          "subtopics": [
+            {"content": "Bone meal, blood meal, fish meal, groundnut cake, maize grains, groundnut meal, coconut meal, egg shell meal, palm kernel meal, periwinkle shell, mineral salt lick etc. - ½ kg each", "objective": "School should provide feed samples for practical identification"}
+          ]
+        },
+        {
+          "id": 34,
+          "title": "Other materials",
+          "subtopics": [
+            {"content": "Feeding trough (metal and plastic) (5); drinkers (metal and plastic) (5); lanterns (source of heat) (5); foot dips (5); notebooks for accounts and records (5); wheelbarrow (5)", "objective": "School should provide other materials for practical teaching"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "subject": "Computer Studies",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Computer Evolution, Fundamentals, and Security/Ethics",
+          "subtopics": [
+            {
+              "content": "Early computing devices to modern computers, hardware/software constituents, data vs information, security threats and legal issues",
+              "objective": "Trace computing history from Abacus/Babbage to ENIAC/UNIVAC and modern PCs/palmtops[cite: 191]; differentiate hardware/software and data/information[cite: 192]; identify security threats (viruses, hackers, cybercrimes) and preventive measures (antivirus, firewalls, encryption)[cite: 193]; examine software copyright and digital privacy[cite: 193, 194]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Computer Hardware, Logic Circuits, and System/Application Software",
+          "subtopics": [
+            {
+              "content": "Input/output devices, CPU/Memory units, storage conversions, logic gates (AND/OR/NOT/NAND/NOR), operating systems, translators, application packages",
+              "objective": "Classify input/output devices[cite: 194]; understand CPU (ALU, Control Unit) and memory types (RAM, ROM, auxiliary storage units/conversions)[cite: 195]; construct truth tables and logic gate equations[cite: 196]; differentiate system software (OS, compilers, interpreters, utilities) and application software (GUI vs command line OS)[cite: 196, 197]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Computer Applications (Word Processing, Spreadsheet, Database, Graphics, Presentation)",
+          "subtopics": [
+            {
+              "content": "Operations and features of MS Word, MS Excel, MS Access, CorelDraw, and MS PowerPoint",
+              "objective": "Master editing, formatting, and file operations in MS Word[cite: 198, 199]; perform spreadsheet cell calculations, formulas, functions, and charting in MS Excel[cite: 199, 200]; build database structures, tables, queries, and reports in Access/DBMS[cite: 200, 201, 202]; design graphic cards/logos in CorelDraw[cite: 202]; create animated slide shows in PowerPoint[cite: 202, 203]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Managing Computer Files and Basic Computer Operations",
+          "subtopics": [
+            {
+              "content": "File structures, organization/access methods, file security, booting, computer data registers/buses",
+              "objective": "Define data items, records, files, databases, and file organizations (serial, sequential, index, random)[cite: 203]; identify causes of data loss and security methods (backups, passwords)[cite: 204]; differentiate cold/warm booting[cite: 205]; explain data processing cycle, registers (MDR, CIR), and bus width transfer factors[cite: 205, 206]."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "ICT, Internet, Networking, and World Wide Web",
+          "subtopics": [
+            {
+              "content": "ICT applications, internet browsers, e-mail management, network topologies/devices, web protocols (HTTP/HTML)",
+              "objective": "Understand ICT broadcasting, telecommunications, and applications (teleconferencing, ATM, POS)[cite: 206, 207, 208]; navigate web browsers, search engines, and manage e-mail accounts[cite: 208, 209, 210]; classify networks (PAN, LAN, MAN, WAN) and topologies (Star, Bus, Ring)[cite: 210]; understand web development protocols (HTTP, HTML) and website navigation[cite: 210, 211]; identify network cables (twisted pair, fibre optic) and connectors (RJ45, USB)[cite: 211]."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Problem-Solving Skills, Programming Languages, BASIC, and Systems/Program Development",
+          "subtopics": [
+            {
+              "content": "Programming levels, algorithms, flowcharts, BASIC statements/arrays, system development life cycle, program compilation",
+              "objective": "Compare Machine, Low Level, and High Level languages[cite: 212]; write algorithms and construct flowcharts[cite: 213]; execute BASIC statements, arithmetic expressions, built-in functions, and 1D arrays[cite: 213, 214, 215, 216]; detail the stages of the Systems Development Cycle[cite: 216]; explain steps in the Program Development Cycle (coding, debugging, documentation)[cite: 217, 218]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

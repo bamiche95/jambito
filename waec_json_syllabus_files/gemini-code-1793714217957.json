@@ -1,0 +1,51 @@
+{
+  "subject": "Efik",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A: Language (Usem Efik)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Comprehension, Essay Writing, Sound System, Grammar, and Translation",
+          "subtopics": [
+            {
+              "content": "Reading comprehension, essay/letter writing, Efik phonetics/phonology, word structures, grammatical categories, translation",
+              "objective": "Answer comprehension passage questions[cite: 240]; write 300-word narrative, descriptive, argumentative, expository, debate, or letter essays in standard orthography[cite: 241, 242]; identify Efik vowels, consonants, environments of occurrence, loanword adaptation, tone, and intonation[cite: 242]; analyze word roots, affixes, reduplication, word classes, grammatical categories (tense, negation), phrases, and sentence structures[cite: 242]; translate expressions accurately[cite: 241]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B: Literature (Mbuk Ye Uto Efik)",
+      "topics": [
+        {
+          "id": 2,
+          "title": "Literary Principles, Prescribed Oral and Written Literature (Prose, Poetry, Drama)",
+          "subtopics": [
+            {
+              "content": "Basic literary devices, prescribed Efik oral folktales/poetry/traditional drama, prescribed written Efik novels, selected poems, and plays",
+              "objective": "Apply literary appreciation principles[cite: 241]; evaluate prescribed oral literature texts (*Inyan Abasi Ndem*, *Mutanda Oyom Namondo*, *Nkpon Udan*)[cite: 247, 249]; critique prescribed written prose texts (*Edikot Ñwed Mbuk 6*, *Obufa Edikot Ñwed 6*)[cite: 247, 249]; analyze designated Efik poem selections (*Ufok-Uto Iko Efik*, *Ñkpasip Ñkpo Kiet*)[cite: 247, 249]; analyze set written plays (*Sidibe*, *Iduo Owo*, *Ansa Udo Enañ*)[cite: 245, 247, 249]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C: Culture (Edu Uwem Ye Mme Nka Ke Efik)",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Efik Customs and Institutions",
+          "subtopics": [
+            {
+              "content": "Occupations, child upbringing, traditional foods/cooking, libation, family setup, worship (Abasi, Ndem), proverbs, kingship (Ubọn), secret societies",
+              "objective": "Examine traditional occupations (fishing, farming, crafts), child discipline, local food preparation (fufu, ekpañ ñkukwo), and libation practices[cite: 243]; analyze family structures (Ubon/Ekpuk), religious worship systems (Abasi, Ndem, Ibok), Efik proverbs (Nke), Kingship institution (Ubọn), and traditional secret societies[cite: 244]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

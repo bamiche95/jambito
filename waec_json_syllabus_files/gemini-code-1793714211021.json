@@ -1,0 +1,51 @@
+{
+  "subject": "Data Processing",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Detailed Syllabus",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Information Age and Basic Computing",
+          "subtopics": [
+            {
+              "content": "History of computers, data vs information, number systems, computer generations, classification, hardware components",
+              "objective": "Identify early computing devices, number systems, and characteristics of 1st to 5th computer generations[cite: 220]; distinguish data from information and understand digitalization[cite: 220]; classify computers by type, size, and usage[cite: 220]; analyze ICT societal impacts and describe input, output, system unit, and storage components[cite: 220]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Information Processing and Transmission",
+          "subtopics": [
+            {
+              "content": "Information processing steps, transmission methods, networking, internet, operating systems",
+              "objective": "Detail steps involved in information processing[cite: 221]; compare information transmission modes (visual, audio, audiovisual) and media[cite: 221]; understand networking types (LAN, MAN, WAN), internet services, browsers, and security[cite: 221]; compare text-based and Graphical User Interfaces (GUI) in Operating Systems[cite: 221]."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Tools for Processing Information (Applications)",
+          "subtopics": [
+            {
+              "content": "Word processing, Spreadsheets, DBMS, Presentation, Web Design, Graphic packages",
+              "objective": "Create and manipulate documents in Word Processors[cite: 222]; build worksheets, formulas, and charts in Spreadsheets[cite: 222]; structure database files, tables, queries, and reports using DBMS (MS Access)[cite: 222]; build presentations using slides[cite: 222]; identify web design software components[cite: 222]; design graphic layouts using CorelDraw[cite: 222]."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Computer Maintenance, Ethics, Safety, Viruses, and Data Management",
+          "subtopics": [
+            {
+              "content": "Hardware/software maintenance, data recovery, computer room ethics, ergonomic positioning, DP professions, virus control, relational databases, file organization, parallel/distributed security",
+              "objective": "Execute computer cleaning, drive maintenance, and data recovery after system crash[cite: 223]; apply computer room rules, ergonomic seating, and safety lighting[cite: 223]; identify DP career paths and professional bodies[cite: 223]; detect, prevent, and remove computer viruses[cite: 223]; create relational database tables, keys, forms, queries, and reports[cite: 224]; compare file organization structures[cite: 224]; master data encryption, access control, DBA roles, and parallel/distributed databases[cite: 224]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

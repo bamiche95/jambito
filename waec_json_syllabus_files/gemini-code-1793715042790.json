@@ -1,0 +1,46 @@
+{
+  "subject": "Music",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Paper 1 & Paper 2: Theory and Composition & History/Literature",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Rudiments, Elementary Harmony, Composition, and Form/Analysis",
+          "subtopics": [
+            {
+              "content": "Notation, Western scales, African modes, keys, time signatures, intervals, transcription, transposition, musical terms/signs/ornaments, primary/secondary triads, cadences, non-harmonic tones, modulations, SATB harmony, two-part counterpoint, melodic continuation, text setting, simple/extended/African forms, and analysis of prescribed set-works",
+              "objective": "Master staff/clef notation, Western diatonic/chromatic scales, African 5/6/7-tone modes, key signatures, intervals, transcription, and transposition[cite: 497]; harmonize melodies using primary/secondary triads, inversions, cadences, non-harmonic tones, modulations, and 4-part SATB / 2-part counterpoint[cite: 497, 498]; compose 12-16 bar melodies and set English text to music[cite: 498]; analyze musical forms (binary, ternary, rondo, sonata, call and response) and set-works by Haydn, Pappoe-Thompson, Dvorak, Akin Euba, J.S. Bach, Laz Ekwueme, Verdi, Mereku, Schubert, and Ayo Bankole[cite: 498, 499]."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "History and Literature of Music (Western, African, Popular, and Black Diaspora)",
+          "subtopics": [
+            {
+              "content": "Biographies and achievements of Traditional African musicians, Popular African musicians (Highlife, Afrobeat, Juju, Fuji, Waka, Afro-Pop, Afro-Reggae, Hip-Hop), Contemporary African Art musicians, Western music historical periods (Medieval, Renaissance, Baroque, Classical, Romantic, 20th Century), Black Music in the Diaspora (Jazz, Blues, Reggae, Calypso), and traditional African music roles/instruments/dances",
+              "objective": "Examine contributions of traditional African musicians (Dan Maraya, Hubert Ogunde, Mamman Shata, Kakraba Lobi)[cite: 502]; evaluate popular African genres and artists (Fela Kuti, King Sunny Ade, E.T. Mensah, Tuface Idibia)[cite: 502, 503]; trace African art music pioneers (Fela Sowande, Ephraim Amu, J.H.K. Nketia)[cite: 503]; survey Western eras and major composers (Palestrina, Bach, Handel, Mozart, Beethoven, Chopin, Stravinsky)[cite: 503, 504]; study Black Diaspora genres (Spirituals, Jazz, Blues, Reggae)[cite: 504]; analyze traditional African instruments, structural characteristics, song categories, and traditional dances (Adowa, Fontomfrom, Bata, Atilogwu)[cite: 504, 505]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Paper 3: Aural and Performance Tests",
+      "topics": [
+        {
+          "id": 3,
+          "title": "Aural Recognition and Practical Performance",
+          "subtopics": [
+            {
+              "content": "Rhythmic dictation, melody writing, two-part ear training, chord identification, cadence recognition, key modulation identification, theme description, sight-reading, technical exercises, scales/arpeggios, and solo performance on voice or chosen instrument (Pianoforte, Violin, Wind instruments)",
+              "objective": "Transcribe rhythms, melodies, and two-part phrases from sound dictation[cite: 499, 500]; identify chords, cadences, modulations, and musical themes aurally[cite: 500]; perform technical exercises, scales, arpeggios, sight-reading, and prescribed solo works on voice, keyboard, violin, or wind instruments (recorder, atenteben, flute, trumpet, alto-saxophone)[cite: 496, 501, 506, 508, 509, 510, 511, 512]."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

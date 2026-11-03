@@ -1,0 +1,171 @@
+{
+  "subject": "Applied Electricity or Basic Electricity",
+  "exam": "WAEC/JAMB",
+  "sections": [
+    {
+      "sectionTitle": "Section A (For all candidates)",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Direct Current Circuit Theory",
+          "subtopics": [
+            {
+              "content": "Structure of matter, Resistors, Conductors and insulators, Ohm's law and Kirchhoff's laws, Power and energy",
+              "objective": "Qualitative treatment of the structure of atoms in relation to electric current. Types of resistors, resistor colour code, resistors in series and parallel, power rating of resistors. Definition, examples and characteristics of conductors/insulators. Qualitative treatments and calculations for Ohm's and Kirchhoff's laws, power and energy."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Magnetic Field and Electromagnetism",
+          "subtopics": [
+            {
+              "content": "Fundamentals of magnetism, Concept of Electric field, Capacitors, Electromagnetic field, Self and Mutual Induction",
+              "objective": "Types of magnet; magnetic flux, flux density, permeability, mmf and reluctance. Electric field properties (flux, flux density, field strength, permittivity, dielectric constant, potential gradient). Comparison between magnetic and electric circuits. Capacitor types, capacitance, dielectric, charge, series/parallel connections, voltage rating, and stored energy calculations ($E=\\frac{1}{2}QV=\\frac{1}{2}CV^2$). Magnetic field around current-carrying conductor, Fleming's Right Hand Rule, force ($F=BIL\\sin\\theta$), Lenz's/Faraday's laws, induced emf ($E=BLV\\sin\\theta$). Qualitative treatment of self/mutual induction, stored coil energy ($E=\\frac{1}{2}LI^2$), and applications (electric bell, security alarm, solenoid, loudspeaker, buzzer, moving-coil instruments)."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Measuring Instruments",
+          "subtopics": [
+            {
+              "content": "Moving-coil instrument, Moving-iron instrument, Digital instrument",
+              "objective": "Construction, advantages and disadvantages of moving-coil instruments; conversion to ammeter and voltmeter with shunt and multiplier calculations. Construction, working principles, pros and cons of moving-iron instruments. Multimeter, voltmeter, ammeter usage and features for digital instruments."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Digital Electronics",
+          "subtopics": [
+            {
+              "content": "Binary number, Logic gates",
+              "objective": "Conversion of decimal numbers to binary numbers and vice versa. Series connection of switches (AND gate), parallel connection (OR gate), inverter (NOT gate). Truth tables, general symbols for AND, OR, NOT, NAND, NOR gates, and Boolean expressions."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Alternating Current Circuit Theory",
+          "subtopics": [
+            {
+              "content": "Generation of e.m.f. in a single turn coil, A.C. quantities, RLC circuits",
+              "objective": "Plotting labelled sinusoidal waveform for a complete cycle. Understanding A.C. quantities (r.m.s., peak, average values, form factor, cycle, period, frequency). Solving problems involving RL, RC, and RLC series circuits, resonance conditions, and phasor diagrams."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Transformers",
+          "subtopics": [
+            {
+              "content": "Transformer construction, Types, Principles of operation, Losses, Efficiency and Cooling",
+              "objective": "Construction and types based on shell/core and current/voltage functions. Operation, transformation ratio, copper and iron losses, temperature rise effects. Qualitative treatment of efficiency, need for cooling, and methods of cooling."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Power Supply",
+          "subtopics": [
+            {
+              "content": "Power supply units, Rectification",
+              "objective": "Dry cell, solar cell, cadmium cell, accumulator. Block diagram and block functions of D.C. power supply. Half-wave/full-wave rectification, filtration, and stabilization."
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Electrical Machines",
+          "subtopics": [
+            {
+              "content": "A.C. motors (Single phase), Alternators, A.C. motors (Three phase), D.C. generators, D.C. motors",
+              "objective": "Types (split-phase, capacitor-start, capacitor-run) and applications of single-phase motors. Alternator principles, parts, types, speed/poles/frequency relationship ($f=\\frac{Np}{60}$). Three-phase motor principles, starting methods (direct-on-line, star-delta, auto transformer). D.C. generator/motor operation, parts, field winding connections, types (shunt, compound, series), and applications."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Electrical Energy Supply",
+          "subtopics": [
+            {
+              "content": "Generating station",
+              "objective": "Methods of generating electrical power: diesel engine, steam engine, hydro-electric, nuclear, gas turbine."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Electrical Wiring",
+          "subtopics": [
+            {
+              "content": "Electrical installation, Wiring, Protection, Earthing, Maintenance, Testing, Safety",
+              "objective": "Surface, conduit, trunking, ducting wiring types. Selection of materials, tools, accessories, cable current capacity, socket/lighting wiring, IEE regulations. Fuses, circuit breakers, protective device discrimination. Earthing methods and earth loop impedance. Diagnosing/repairing short circuits, open circuits, earth leakages in domestic appliances. Continuity, insulation resistance, earth leakage, and polarity tests. Electrical safety regulations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section B (For candidates in Ghana only)",
+      "topics": [
+        {
+          "id": 11,
+          "title": "Electron Emission",
+          "subtopics": [
+            {
+              "content": "Electron emission, Thermionic emission, Cathode Ray Tube (CRT)",
+              "objective": "Methods of emitting electrons (thermionic, photo, secondary, field emission). Functions of electrodes, parameters, and applications. Functions of electrodes in CRT."
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Semiconductor",
+          "subtopics": [
+            {
+              "content": "Theory, Diode, Transistor",
+              "objective": "Properties of semiconductor materials; differences between N-type and P-type. PN junction diode, barrier potential, forward/reverse bias, characteristics, and applications. Bipolar transistors (NPN/PNP; CC, CB, CE configurations; operation, characteristics). Unipolar transistors (JFET P-channel/N-channel operation). Semiconductor devices (diac, triac, SCR, LED, Zener diode, phototransistor). Simple integrated circuits and their uses."
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Communication",
+          "subtopics": [
+            {
+              "content": "Electromagnetic waves, Modulation, Amplifiers, Operational amplifiers",
+              "objective": "Characteristics of radio waves. Amplitude and frequency modulation (AM vs FM) and waveforms; advantages of FM. Amplifier classification (Class A, B, AB, C), efficiency, and applications. Ideal op-amp properties, construction, inverting and non-inverting configurations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Section C (For candidates in Nigeria, Sierra Leone and The Gambia)",
+      "topics": [
+        {
+          "id": 14,
+          "title": "Electricity Transmission and Distribution",
+          "subtopics": [
+            {
+              "content": "Transmission, Distribution of Electricity",
+              "objective": "Layout diagram of high-voltage overhead transmission system. Functions of main components (towers, insulators, conductors). Operating voltages (132 kV and 330 kV) and necessity of high voltage. Distribution layout diagram, substation components (transformers, feeders)."
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Maintenance and Repair of Various Electrical Appliances",
+          "subtopics": [
+            {
+              "content": "Maintenance types and repair of electrical appliances",
+              "objective": "Predictive, preventive, and corrective maintenance. Diagnosing common faults (short circuit, open circuit, earth fault) in blender, electric iron, kettle, toaster, fluorescent lamps, etc."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

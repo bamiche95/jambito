@@ -21,7 +21,8 @@
     "verify:deps": "node --no-experimental-require-module scripts/verify-server-deps.mjs",
     "check:mail": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-mail.mjs",
     "check:brevo": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-brevo.mjs",
-    "check:emails": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-emails.mjs"
+    "check:emails": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-emails.mjs",
+    "check:push": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-push.mjs"
   },
   "dependencies": {
     "@serwist/next": "^9.5.13",
@@ -36,7 +37,8 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "serwist": "^9.5.13",
-    "tailwind-merge": "^3.7.0"
+    "tailwind-merge": "^3.7.0",
+    "web-push": "^3.6.7"
   },
   "devDependencies": {
     "@serwist/cli": "^9.5.13",
