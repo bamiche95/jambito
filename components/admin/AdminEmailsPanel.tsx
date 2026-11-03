@@ -10,6 +10,8 @@ import {
   PauseCircle,
   PlayCircle,
   Send,
+  ShieldCheck,
+  Upload,
   X,
 } from "lucide-react";
 import { adminGet, adminPost, formatDateTime } from "@/lib/adminClient";
@@ -18,6 +20,7 @@ import type {
   AdminEmailTemplate,
   AdminEmailsPayload,
   EmailActionPayload,
+  EmailBrevoStatus,
   EmailPreview,
 } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -69,6 +72,10 @@ export default function AdminEmailsPanel({
     nonce: number;
   } | null>(null);
   const [deletingTemplate, setDeletingTemplate] = useState<string | null>(null);
+  // What Brevo says about the key, sender and domain — null until asked. The
+  // environment cannot answer it on its own: a key can be present while every
+  // request is refused from an IP the account does not allowlist.
+  const [brevoStatus, setBrevoStatus] = useState<EmailBrevoStatus | null>(null);
 
   const load = useCallback(async () => {
     if (!token) return;
@@ -170,6 +177,18 @@ export default function AdminEmailsPanel({
     await post({ action: "test", id: campaign.id }, `test:${campaign.id}`);
   }
 
+  async function checkBrevo() {
+    const result = await post({ action: "brevo_check" }, "brevo-check");
+    if (result?.brevo) setBrevoStatus(result.brevo);
+  }
+
+  async function pushTemplates() {
+    const result = await post({ action: "templates_push" }, "templates-push");
+    // The GET payload carries each campaign's template id, so reloading is how
+    // the ids reach the cards below.
+    if (result) await load();
+  }
+
   async function run(campaign: AdminEmailCampaign | null, dryRun: boolean) {
     const key = `${dryRun ? "dry" : "run"}:${campaign?.id ?? "all"}`;
     const result = await post(
@@ -213,9 +232,37 @@ export default function AdminEmailsPanel({
   }
 
   const lastRun = data?.settings.lastRunSummary ?? null;
-  const ready = Boolean(data?.mailConfigured && data?.unsubscribeConfigured);
+  const ready = Boolean(
+    (data?.mailConfigured || data?.brevoConfigured) && data?.unsubscribeConfigured
+  );
   const smallButton =
     "flex items-center gap-1.5 rounded-lg border border-slate-200 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 disabled:opacity-50";
+  // A configured key is not a working one, so the pill reports what Brevo
+  // answered once it has been asked — and stays "unchecked" until then.
+  const brevoTone: "missing" | "unchecked" | "ready" | "sender-only" | "rejected" =
+    !data?.brevoConfigured
+      ? "missing"
+      : !brevoStatus
+        ? "unchecked"
+        : !brevoStatus.ready
+          ? "rejected"
+          : brevoStatus.deliverable
+            ? "ready"
+            : "sender-only";
+  const brevoLabel =
+    brevoTone === "missing"
+      ? "Brevo missing — mailbox fallback"
+      : brevoTone === "rejected"
+        ? "Brevo will reject sends"
+        : brevoTone === "sender-only"
+          ? "Brevo · sender only, no SPF/DKIM"
+          : `Brevo · ${brevoStatus?.sender.email ?? data?.brevoSender ?? ""}`;
+  const brevoTitle =
+    brevoTone === "missing"
+      ? "Set BREVO_API_KEY to send through Brevo. Without it the Go54 mailbox is used, and a burst of messages trips its throttle."
+      : brevoStatus
+        ? brevoStatus.message
+        : `Student email goes through Brevo from ${data?.brevoSender ?? ""}. Press "Check Brevo" to confirm the key, sender address and domain.`;
 
   if (error) {
     return (
@@ -293,6 +340,19 @@ export default function AdminEmailsPanel({
           <span
             className={cn(
               "rounded-full px-2.5 py-1 font-semibold",
+              brevoTone === "ready"
+                ? "bg-emerald-50 text-emerald-700"
+                : brevoTone === "rejected"
+                  ? "bg-red-50 text-red-700"
+                  : "bg-amber-50 text-amber-700"
+            )}
+            title={brevoTitle}
+          >
+            {brevoLabel}
+          </span>
+          <span
+            className={cn(
+              "rounded-full px-2.5 py-1 font-semibold",
               data.unsubscribeConfigured
                 ? "bg-emerald-50 text-emerald-700"
                 : "bg-red-50 text-red-700"
@@ -319,10 +379,10 @@ export default function AdminEmailsPanel({
           <p className="mt-4 flex items-start gap-2 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-800">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" />
             <span>
-              Nothing will be sent until this deployment has SMTP credentials and
-              an unsubscribe secret. Set <code>SMTP_PASSWORD</code> and{" "}
-              <code>CRON_SECRET</code> (or <code>EMAIL_UNSUBSCRIBE_SECRET</code>)
-              in the environment.
+              Nothing will be sent until this deployment has a transport and an
+              unsubscribe secret. Set <code>BREVO_API_KEY</code> (or{" "}
+              <code>SMTP_PASSWORD</code>) and <code>CRON_SECRET</code> (or{" "}
+              <code>EMAIL_UNSUBSCRIBE_SECRET</code>) in the environment.
             </span>
           </p>
         )}
@@ -330,10 +390,13 @@ export default function AdminEmailsPanel({
         <div className="mt-4 flex flex-wrap items-end gap-2">
           <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
             Daily cap
+            {/* Mirrors EMAIL_MAX_DAILY_CAP in lib/emailStore.js — a server
+                module, so it cannot be imported here. Brevo's plan allows 300
+                messages a day. */}
             <input
               type="number"
               min={1}
-              max={1000}
+              max={300}
               value={capInput}
               onChange={(event) => setCapInput(event.target.value)}
               className="mt-1 block w-28 rounded-lg border border-slate-200 px-3 py-2 text-sm font-normal normal-case tracking-normal text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -350,6 +413,38 @@ export default function AdminEmailsPanel({
             ) : null}
             Save cap
           </button>
+          {data.brevoConfigured && (
+            <button
+              type="button"
+              onClick={checkBrevo}
+              disabled={busy === "brevo-check"}
+              className={smallButton}
+              title="Ask Brevo whether the API key, the sender address and the domain's SPF/DKIM are all good."
+            >
+              {busy === "brevo-check" ? (
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+              ) : (
+                <ShieldCheck className="h-3.5 w-3.5" />
+              )}
+              Check Brevo
+            </button>
+          )}
+          {data.brevoConfigured && (
+            <button
+              type="button"
+              onClick={pushTemplates}
+              disabled={busy === "templates-push"}
+              className={smallButton}
+              title="Copy the four campaigns' current subject and body into Brevo templates. Copy that is already there is skipped, so this is safe to press twice."
+            >
+              {busy === "templates-push" ? (
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+              ) : (
+                <Upload className="h-3.5 w-3.5" />
+              )}
+              Push templates
+            </button>
+          )}
           <button
             type="button"
             onClick={() => run(null, true)}
@@ -554,7 +649,7 @@ export default function AdminEmailsPanel({
           variables={data.variables}
           templates={data.templates}
           campaigns={data.campaigns}
-          mailConfigured={data.mailConfigured}
+          mailConfigured={data.mailConfigured || data.brevoConfigured}
           unsubscribeConfigured={data.unsubscribeConfigured}
           paused={data.settings.paused}
           maxRecipients={data.broadcastLimits.maxRecipients}

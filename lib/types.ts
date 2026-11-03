@@ -169,13 +169,25 @@ export interface AdminUser {
 
 export interface AdminStats {
   total: number;
+  /** Accounts that are neither soft-deleted nor staff — the funnel denominator. */
+  live: number;
   active: number;
   deactivated: number;
   blocked: number;
   deleted: number;
   admins: number;
   subscribed: number;
+  /** Used every free question, whether or not they later subscribed. */
   trialExhausted: number;
+  /** Signed up but never answered a question. */
+  neverStarted: number;
+  /** Started the free questions but has some left. */
+  inProgress: number;
+  /** Exhausted the trial and has no active subscription — the win-back list. */
+  exhaustedUnsubscribed: number;
+  /** Accounts created in the last 7 / 30 days. */
+  joined7Days: number;
+  joined30Days: number;
 }
 
 export interface AdminUsersPayload {
@@ -358,6 +370,10 @@ export interface AdminEmailCampaign extends EmailCampaignContent {
   /** Minimum days between two campaign emails to the same student. */
   cooldownDays: number;
   defaults: EmailCampaignContent;
+  /** The Brevo template mirroring this copy; null until it is pushed once. */
+  brevoTemplateId: number | null;
+  brevoTemplateHash: string | null;
+  brevoTemplatePushedAt: string | null;
   updatedAt: string | null;
   updatedBy: { uid: string | null; email: string | null } | null;
   stats: {
@@ -404,6 +420,8 @@ export interface EmailRunSummary {
   startedAt: string;
   finishedAt: string | null;
   dryRun: boolean;
+  /** Which transport carried the batch: Brevo, or the Go54 mailbox fallback. */
+  transport?: "brevo" | "smtp";
   sent: number;
   failed: number;
   skipped: number;
@@ -418,6 +436,10 @@ export interface AdminEmailsPayload {
   recent: AdminEmailSend[];
   counts: { unsubscribed: number; sentToday: number };
   mailConfigured: boolean;
+  /** True when BREVO_API_KEY is set: the transport campaigns actually use. */
+  brevoConfigured: boolean;
+  /** The address Brevo sends from (it must be a verified sender). */
+  brevoSender: string;
   unsubscribeConfigured: boolean;
   variables: { token: string; description: string }[];
   siteUrl: string;
@@ -437,6 +459,27 @@ export interface EmailPreview {
   html: string;
 }
 
+/**
+ * The result of asking Brevo itself whether this deployment can send.
+ *
+ * `ready` means Brevo will accept the message; `deliverable` means the sending
+ * domain has SPF/DKIM, which is what keeps it out of a spam folder. The two
+ * differ exactly when the From address is a verified sender but its domain was
+ * never authenticated.
+ */
+export interface EmailBrevoStatus {
+  ready: boolean;
+  deliverable: boolean;
+  sender: { email: string; name: string; verified: boolean; active: boolean };
+  domain: { name: string; authenticated: boolean } | null;
+  account: {
+    email: string | null;
+    plan: string | null;
+    credits: number | null;
+  };
+  message: string;
+}
+
 export interface EmailActionPayload {
   success: boolean;
   message?: string;
@@ -445,6 +488,8 @@ export interface EmailActionPayload {
   preview?: EmailPreview;
   summary?: EmailRunSummary;
   dryRun?: boolean;
+  /** `brevo_check` only: what the provider says about key, sender and domain. */
+  brevo?: EmailBrevoStatus;
 }
 
 // ---------------------------------------------------------------------------

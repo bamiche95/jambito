@@ -3,8 +3,9 @@
 import { useCallback, useState } from "react";
 import { Loader2, X } from "lucide-react";
 import { adminPost, formatDateOnly, formatRelativeDays } from "@/lib/adminClient";
+import { TRIAL_LIMIT } from "@/lib/plans";
 import type { AdminActionPayload, AdminUser } from "@/lib/types";
-import { RoleBadge, StatusBadge, SubscriptionBadge } from "./AdminUi";
+import { RoleBadge, StatusBadge, SubscriptionBadge, TrialBadge } from "./AdminUi";
 import {
   AccountActions,
   ReconcileBox,
@@ -67,6 +68,7 @@ export default function AdminUserDetail({
           <div className="flex flex-wrap gap-2 mt-2">
             <StatusBadge status={user.status} />
             <RoleBadge role={user.role} />
+            <TrialBadge user={user} />
             <SubscriptionBadge user={user} />
           </div>
         </div>
@@ -90,8 +92,8 @@ export default function AdminUserDetail({
             user.subscriptionExpiry
           )})`}
         />
-        <Fact label="Trial" value={`${user.trialCount} of 40 used`} />
-        <Fact label="Registered" value={formatDateOnly(user.createdAt)} />
+        <Fact label="Trial" value={`${user.trialCount} of ${TRIAL_LIMIT} used`} />
+        <Fact label="Joined" value={formatDateOnly(user.createdAt)} />
       </div>
 
       <div className="px-5 py-5 space-y-6">

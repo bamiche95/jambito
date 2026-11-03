@@ -5,6 +5,15 @@ import { SITE_URL } from "@/lib/site";
 import { getUserByUid } from "@/lib/users";
 import { getContactInbox, isMailConfigured, sendMail } from "@/lib/mailer";
 import {
+  getBrevoAccount,
+  getBrevoDomain,
+  getBrevoSender,
+  isBrevoConfigured,
+  listBrevoSenders,
+  sendBrevoEmail,
+} from "@/lib/brevo";
+import { ensureCampaignTemplates } from "@/lib/brevoTemplates";
+import {
   EMAIL_CAMPAIGN_DEFINITIONS,
   EMAIL_TEMPLATE_NAME_LIMIT,
   EMAIL_VARIABLES,
@@ -58,6 +67,10 @@ export const maxDuration = 60;
  *                                                send (or continue) a broadcast
  *   { action: "template_save",     id?, name, content }
  *   { action: "template_delete",   id }
+ *   { action: "templates_push",    id?, force? }  mirror the campaign copy into
+ *                                                Brevo transactional templates
+ *   { action: "brevo_check" }                    ask Brevo directly whether the
+ *                                                key, sender and domain are good
  *
  * A test can only go to the signed-in admin. Accepting an arbitrary recipient
  * would turn the dashboard into an open relay for any compromised admin token.
@@ -95,6 +108,102 @@ function broadcastContent(value) {
     body: value.body,
     ctaLabel: value.ctaLabel,
     ctaPath: value.ctaPath,
+  };
+}
+
+/**
+ * Some transport must be configured before anything is sent: Brevo is the
+ * student-facing one, the Go54 mailbox is the fallback.
+ */
+function canSendEmail() {
+  return isBrevoConfigured() || isMailConfigured();
+}
+
+const NOT_CONFIGURED_MESSAGE =
+  "Email is not configured on this deployment (set BREVO_API_KEY, or SMTP_USER and SMTP_PASSWORD).";
+
+/**
+ * Sends a dashboard test to the signed-in admin.
+ *
+ * A test uses rendered HTML rather than a Brevo template on purpose: it proves
+ * the transport and the API key work without depending on a template having
+ * been pushed, and it shows exactly the markup a recipient would get.
+ */
+async function sendTestEmail({ to, subject, text, html }) {
+  if (isBrevoConfigured()) {
+    const info = await sendBrevoEmail({
+      to,
+      subject,
+      text,
+      html,
+      tag: "admin-test",
+    });
+    return { transport: "brevo", messageId: info.messageId };
+  }
+  const info = await sendMail({ to, subject, text, html });
+  return { transport: "smtp", messageId: info?.messageId ?? null };
+}
+
+/** "Brevo" or "the mailbox" — the transport, named in admin messages. */
+function transportLabel(transport) {
+  return transport === "brevo" ? "Brevo" : "the mailbox";
+}
+
+/**
+ * Asks Brevo whether this deployment can actually send: the key is accepted,
+ * the From address is a verified sender or sits on an authenticated domain, and
+ * the domain has SPF/DKIM.
+ *
+ * `BREVO_API_KEY` being present proves none of that on its own — the live
+ * account once refused every request from an unlisted IP with a 401 that read
+ * like a bad key — so the dashboard asks the provider instead of trusting its
+ * own environment. Senders and domains are optional facts: a failure to list
+ * them must not hide a working key.
+ */
+async function brevoStatus() {
+  const sender = getBrevoSender();
+  const [account, senders, domain] = await Promise.all([
+    getBrevoAccount(),
+    listBrevoSenders().catch(() => null),
+    getBrevoDomain(sender.email).catch(() => null),
+  ]);
+
+  const verified = (senders ?? []).find(
+    (entry) =>
+      String(entry?.email ?? "").toLowerCase() === sender.email.toLowerCase()
+  );
+  const senderActive = Boolean(verified) && verified.active !== false;
+  const domainAuthenticated = Boolean(domain?.authenticated);
+  // Brevo accepts either a verified sender or any address on an authenticated
+  // domain; only the second also keeps the mail out of the spam folder.
+  const ready = senderActive || domainAuthenticated;
+
+  const message = !ready
+    ? `${sender.email} is neither a verified sender nor on an authenticated domain, so Brevo will reject every send.`
+    : domainAuthenticated && !senderActive
+      ? `${sender.email} is not a listed sender, but ${domain.domain_name} is authenticated, so Brevo accepts it.`
+      : domainAuthenticated
+        ? `${sender.email} is verified and ${domain.domain_name} is authenticated.`
+        : `${sender.email} is a verified sender, but its domain has no SPF/DKIM in Brevo — expect spam filtering.`;
+
+  return {
+    ready,
+    deliverable: domainAuthenticated,
+    sender: {
+      email: sender.email,
+      name: sender.name,
+      verified: Boolean(verified),
+      active: senderActive,
+    },
+    domain: domain
+      ? { name: domain.domain_name, authenticated: domainAuthenticated }
+      : null,
+    account: {
+      email: account?.email ?? null,
+      plan: account?.plan?.[0]?.type ?? null,
+      credits: account?.plan?.[0]?.credits ?? null,
+    },
+    message,
   };
 }
 
@@ -153,6 +262,8 @@ export async function GET(request) {
         recent,
         counts: { unsubscribed, sentToday },
         mailConfigured: isMailConfigured(),
+        brevoConfigured: isBrevoConfigured(),
+        brevoSender: getBrevoSender().email,
         unsubscribeConfigured: isUnsubscribeConfigured(),
         variables: EMAIL_VARIABLES,
         siteUrl: SITE_URL,
@@ -238,12 +349,8 @@ export async function POST(request) {
 
     if (action === "test") {
       if (!id) return fail(400, "missing_campaign", "Choose a campaign to test.");
-      if (!isMailConfigured()) {
-        return fail(
-          503,
-          "not_configured",
-          "Mail is not configured on this deployment (set SMTP_USER and SMTP_PASSWORD)."
-        );
+      if (!canSendEmail()) {
+        return fail(503, "not_configured", NOT_CONFIGURED_MESSAGE);
       }
       const to = String(auth.decoded.email ?? auth.user?.email ?? "").trim();
       if (!to) return fail(400, "no_email", "Your admin account has no email address.");
@@ -260,7 +367,7 @@ export async function POST(request) {
         // A sample id, so clicking Unsubscribe in a test cannot opt the admin out.
         unsubscribeUrl: unsubscribeUrl(SITE_URL, "sample-uid"),
       });
-      await sendMail({
+      const sent = await sendTestEmail({
         to,
         subject: `[Test] ${template.subject}`,
         text: template.text,
@@ -269,10 +376,13 @@ export async function POST(request) {
       await writeAudit({
         actor,
         action: "testEmailCampaign",
-        details: { campaignId: id, to },
+        details: { campaignId: id, to, transport: sent.transport },
       });
       return NextResponse.json(
-        { success: true, message: `Test email sent to ${to}.` },
+        {
+          success: true,
+          message: `Test email sent to ${to} via ${transportLabel(sent.transport)}.`,
+        },
         { headers: NO_STORE }
       );
     }
@@ -343,6 +453,77 @@ export async function POST(request) {
       );
     }
 
+    if (action === "brevo_check") {
+      if (!isBrevoConfigured()) {
+        return fail(
+          409,
+          "brevo_unconfigured",
+          "Set BREVO_API_KEY before asking Brevo about this account."
+        );
+      }
+      try {
+        const status = await brevoStatus();
+        return NextResponse.json(
+          { success: true, brevo: status, message: status.message },
+          { headers: NO_STORE }
+        );
+      } catch (error) {
+        // The code matters: `brevo_ip_blocked` and `brevo_unauthorized` need
+        // different fixes, and the dashboard shows whichever came back.
+        return NextResponse.json(
+          {
+            success: false,
+            code: error?.code ?? "brevo_error",
+            message: error?.message ?? "Brevo did not answer.",
+          },
+          { status: 502, headers: NO_STORE }
+        );
+      }
+    }
+
+    if (action === "templates_push") {
+      if (!isBrevoConfigured()) {
+        return fail(
+          409,
+          "brevo_unconfigured",
+          "Set BREVO_API_KEY before pushing the campaign templates to Brevo."
+        );
+      }
+      if (id && !getCampaignDefinition(id)) {
+        return fail(400, "unknown_campaign", "Unknown campaign.");
+      }
+
+      // The runner pushes on demand too; this is the button that shows all four
+      // succeed now, instead of discovering a problem on the next cron run.
+      const result = await ensureCampaignTemplates({
+        ids: id ? [id] : null,
+        force: body.force === true,
+      });
+
+      await writeAudit({
+        actor,
+        action: "pushBrevoTemplates",
+        details: {
+          ids: id ? [id] : null,
+          pushed: result.pushed,
+          unchanged: result.unchanged,
+          failed: result.failed,
+        },
+      });
+
+      const failure = result.templates.find((template) => !template.ok);
+      return NextResponse.json(
+        {
+          success: result.failed === 0,
+          result,
+          message: failure
+            ? `Could not push ${failure.name}: ${failure.message ?? "unknown error"}`
+            : `${result.pushed} template(s) pushed to Brevo, ${result.unchanged} already up to date.`,
+        },
+        { headers: NO_STORE }
+      );
+    }
+
     if (action === "broadcast_preview") {
       const validated = validateCampaignContent(body.content);
       if (!validated.ok) return fail(400, "invalid_content", validated.message);
@@ -370,12 +551,8 @@ export async function POST(request) {
     }
 
     if (action === "broadcast_test") {
-      if (!isMailConfigured()) {
-        return fail(
-          503,
-          "not_configured",
-          "Mail is not configured on this deployment (set SMTP_USER and SMTP_PASSWORD)."
-        );
+      if (!canSendEmail()) {
+        return fail(503, "not_configured", NOT_CONFIGURED_MESSAGE);
       }
       const to = String(auth.decoded.email ?? auth.user?.email ?? "").trim();
       if (!to) return fail(400, "no_email", "Your admin account has no email address.");
@@ -391,7 +568,7 @@ export async function POST(request) {
         // A sample id, so clicking Unsubscribe in a test cannot opt the admin out.
         unsubscribeUrl: unsubscribeUrl(SITE_URL, "sample-uid"),
       });
-      await sendMail({
+      const sent = await sendTestEmail({
         to,
         subject: `[Test] ${template.subject}`,
         text: template.text,
@@ -400,10 +577,13 @@ export async function POST(request) {
       await writeAudit({
         actor,
         action: "testEmailBroadcast",
-        details: { to, subject: template.subject },
+        details: { to, subject: template.subject, transport: sent.transport },
       });
       return NextResponse.json(
-        { success: true, message: `Test email sent to ${to}.` },
+        {
+          success: true,
+          message: `Test email sent to ${to} via ${transportLabel(sent.transport)}.`,
+        },
         { headers: NO_STORE }
       );
     }
@@ -412,12 +592,8 @@ export async function POST(request) {
       if (body.confirm !== true) {
         return fail(400, "confirm_required", "Confirm the recipient list before sending.");
       }
-      if (!isMailConfigured()) {
-        return fail(
-          503,
-          "not_configured",
-          "Mail is not configured on this deployment (set SMTP_USER and SMTP_PASSWORD)."
-        );
+      if (!canSendEmail()) {
+        return fail(503, "not_configured", NOT_CONFIGURED_MESSAGE);
       }
       if (!isUnsubscribeConfigured()) {
         return fail(

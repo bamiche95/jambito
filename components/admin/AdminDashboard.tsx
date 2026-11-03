@@ -15,12 +15,29 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useAuth } from "@/lib/auth";
-import { adminGet, adminQuery } from "@/lib/adminClient";
+import {
+  adminGet,
+  adminQuery,
+  formatDateOnly,
+  formatRelativeDays,
+} from "@/lib/adminClient";
 import { ACCOUNT_STATUSES, ACCOUNT_STATUS_LABELS } from "@/lib/accountStatus";
 import type { AccountStatus } from "@/lib/accountStatus";
+import { TRIAL_LIMIT } from "@/lib/plans";
+import {
+  USER_SEGMENT_HINTS,
+  USER_SEGMENT_LABELS,
+  type UserSegment,
+} from "@/lib/userSegments";
 import type { AdminStats, AdminUsersPayload } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { NoticeBar, RoleBadge, StatusBadge, SubscriptionBadge } from "./AdminUi";
+import {
+  NoticeBar,
+  RoleBadge,
+  StatusBadge,
+  SubscriptionBadge,
+  TrialBadge,
+} from "./AdminUi";
 import AdminUserDetail from "./AdminUserDetail";
 import AdminPaymentsPanel from "./AdminPaymentsPanel";
 import AdminPricingPanel from "./AdminPricingPanel";
@@ -54,6 +71,9 @@ export default function AdminDashboard() {
   const [searchInput, setSearchInput] = useState("");
   const [search, setSearch] = useState("");
   const [statusFilter, setStatusFilter] = useState<"all" | AccountStatus>("all");
+  // The trial-funnel segment. Lives beside the status filter and composes with
+  // it server-side, so "blocked + completed, not subscribed" is one request.
+  const [segment, setSegment] = useState<UserSegment>("all");
   const [page, setPage] = useState(1);
   const [selectedUid, setSelectedUid] = useState<string | null>(null);
   const [reloadKey, setReloadKey] = useState(0);
@@ -91,6 +111,7 @@ export default function AdminDashboard() {
         `/api/admin${adminQuery({
           search,
           status: statusFilter,
+          segment,
           page,
           limit: PAGE_LIMIT,
         })}`,
@@ -112,9 +133,15 @@ export default function AdminDashboard() {
     return () => {
       cancelled = true;
     };
-  }, [token, search, statusFilter, page, reloadKey]);
+  }, [token, search, statusFilter, segment, page, reloadKey]);
 
   const selectedUser = data?.users.find((u) => u.uid === selectedUid) ?? null;
+
+  // Share of live accounts (not tombstones, not staff) that are paid right now —
+  // the one number that says whether the funnel is actually converting.
+  const conversionPct = stats?.live
+    ? Math.round((stats.subscribed / stats.live) * 100)
+    : null;
 
   function announce(message: string, kind: Notice["kind"] = "ok") {
     setNotice({ kind, text: message });
@@ -151,6 +178,7 @@ export default function AdminDashboard() {
           <h1 className="text-3xl font-bold text-slate-900">Admin</h1>
           <p className="text-slate-500 mt-1">
             {stats ? `${stats.total} account${stats.total === 1 ? "" : "s"}` : ""}
+            {conversionPct !== null ? ` · ${conversionPct}% converted` : ""}
             {stats?.subscribed ? ` · ${stats.subscribed} subscribed` : ""}
             {stats?.blocked ? ` · ${stats.blocked} blocked` : ""}
             {stats?.deactivated ? ` · ${stats.deactivated} deactivated` : ""}
@@ -199,6 +227,17 @@ export default function AdminDashboard() {
 
       {tab === "users" && (
         <>
+          {stats && (
+            <SegmentCards
+              stats={stats}
+              segment={segment}
+              onSelect={(next) => {
+                setSegment(next);
+                setPage(1);
+              }}
+            />
+          )}
+
           <div className="flex flex-wrap gap-3 mt-6">
             <div className="relative flex-1 min-w-[240px]">
               <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
@@ -308,12 +347,13 @@ function UserTable({
 }) {
   return (
     <div className="mt-4 overflow-hidden rounded-xl border border-slate-200">
-      <div className="hidden md:grid grid-cols-[1.6fr_0.8fr_0.6fr_1fr_1.4fr] gap-4 px-5 py-3 bg-slate-50 text-xs font-semibold uppercase tracking-wide text-slate-500">
+      <div className="hidden md:grid grid-cols-[1.4fr_0.7fr_0.5fr_1fr_1fr_0.9fr] gap-4 px-5 py-3 bg-slate-50 text-xs font-semibold uppercase tracking-wide text-slate-500">
         <span>User</span>
         <span>Status</span>
         <span>Role</span>
         <span>Subscription</span>
-        <span>Trial used</span>
+        <span>Trial</span>
+        <span>Joined</span>
       </div>
 
       {users.length === 0 ? (
@@ -326,7 +366,7 @@ function UserTable({
             key={u.uid}
             onClick={() => onSelect(u.uid)}
             className={cn(
-              "w-full text-left grid grid-cols-1 md:grid-cols-[1.6fr_0.8fr_0.6fr_1fr_1.4fr] gap-2 md:gap-4 px-5 py-4 text-sm transition hover:bg-blue-50/60",
+              "w-full text-left grid grid-cols-1 md:grid-cols-[1.4fr_0.7fr_0.5fr_1fr_1fr_0.9fr] gap-2 md:gap-4 px-5 py-4 text-sm transition hover:bg-blue-50/60",
               i % 2 === 0 ? "bg-white" : "bg-slate-50",
               selectedUid === u.uid && "ring-2 ring-inset ring-blue-500"
             )}
@@ -348,8 +388,17 @@ function UserTable({
             <span>
               <SubscriptionBadge user={u} />
             </span>
+            <span className="flex flex-col items-start gap-1">
+              <TrialBadge user={u} />
+              <span className="text-xs text-slate-500">
+                {u.trialCount} of {TRIAL_LIMIT} used · {u.trialRemaining} left
+              </span>
+            </span>
             <span className="text-xs text-slate-500">
-              {u.trialCount} of 40 used ({u.trialRemaining} left)
+              <span className="block text-slate-700">{formatDateOnly(u.createdAt)}</span>
+              <span className="block text-slate-400">
+                {formatRelativeDays(u.createdAt)}
+              </span>
             </span>
           </button>
         ))
@@ -357,3 +406,76 @@ function UserTable({
     </div>
   );
 }
+
+/**
+ * The trial funnel at a glance. Each card doubles as the filter: clicking one
+ * narrows the list below, clicking the active one clears it.
+ *
+ * Percentages are shares of `live` accounts (no tombstones, no staff), which is
+ * why "All accounts" shows the raw total but reports the live count underneath —
+ * the denominator and the visible row count are different numbers by design.
+ */
+function SegmentCards({
+  stats,
+  segment,
+  onSelect,
+}: {
+  stats: AdminStats;
+  segment: UserSegment;
+  onSelect: (segment: UserSegment) => void;
+}) {
+  const share = (part: number) =>
+    stats.live > 0 ? `${Math.round((part / stats.live) * 100)}% of live` : "—";
+
+  const cards: { id: UserSegment; value: number; note: string }[] = [
+    { id: "all", value: stats.total, note: `${stats.live} live` },
+    {
+      id: "never_started",
+      value: stats.neverStarted,
+      note: share(stats.neverStarted),
+    },
+    { id: "in_progress", value: stats.inProgress, note: share(stats.inProgress) },
+    {
+      id: "trial_exhausted",
+      value: stats.trialExhausted,
+      note: share(stats.trialExhausted),
+    },
+    {
+      id: "exhausted_unsubscribed",
+      value: stats.exhaustedUnsubscribed,
+      note: share(stats.exhaustedUnsubscribed),
+    },
+    { id: "subscribed", value: stats.subscribed, note: share(stats.subscribed) },
+    { id: "joined_7d", value: stats.joined7Days, note: "new sign-ups" },
+    { id: "joined_30d", value: stats.joined30Days, note: "new sign-ups" },
+  ];
+
+  return (
+    <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+      {cards.map(({ id, value, note }) => (
+        <button
+          key={id}
+          type="button"
+          onClick={() => onSelect(segment === id ? "all" : id)}
+          aria-pressed={segment === id}
+          title={USER_SEGMENT_HINTS[id]}
+          className={cn(
+            "text-left rounded-xl border px-4 py-3 transition",
+            segment === id
+              ? "border-blue-500 bg-blue-50 ring-1 ring-blue-500"
+              : "border-slate-200 bg-white hover:bg-slate-50"
+          )}
+        >
+          <span className="block text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+            {USER_SEGMENT_LABELS[id]}
+          </span>
+          <span className="block mt-1 text-xl font-bold text-slate-900">
+            {value.toLocaleString()}
+          </span>
+          <span className="block text-xs text-slate-400">{note}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+

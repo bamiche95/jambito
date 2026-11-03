@@ -20,6 +20,7 @@
     "icons": "node scripts/generate-icons.mjs",
     "verify:deps": "node --no-experimental-require-module scripts/verify-server-deps.mjs",
     "check:mail": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-mail.mjs",
+    "check:brevo": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-brevo.mjs",
     "check:emails": "node --env-file=.env.local --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-emails.mjs"
   },
   "dependencies": {

@@ -8,7 +8,14 @@ import {
   accountStatusMessage,
 } from "@/lib/accountStatus";
 import type { AccountStatus } from "@/lib/accountStatus";
-import { PLANS, PLAN_ID, planDurationDays, planLabel, resolvePlanId } from "@/lib/plans";
+import {
+  PLANS,
+  PLAN_ID,
+  TRIAL_LIMIT,
+  planDurationDays,
+  planLabel,
+  resolvePlanId,
+} from "@/lib/plans";
 import { usePricing } from "@/lib/pricing";
 import {
   adminGet,
@@ -250,7 +257,7 @@ export function SubscriptionActions({
           onClick={() => onAction("resetTrial")}
           className={cn(BTN, "border-slate-200 text-slate-700 hover:bg-slate-50")}
         >
-          Reset free trial ({user.trialCount} of 40 used)
+          Reset free trial ({user.trialCount} of {TRIAL_LIMIT} used)
         </button>
       </div>
     </Section>

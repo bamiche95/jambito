@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { requireAdmin } from "@/lib/serverAuth";
+import { isValidUserSegment } from "@/lib/userSegments";
 import {
   getAdminUser,
   getUserStats,
@@ -26,8 +27,11 @@ const NO_STORE = { "Cache-Control": "no-store" };
  * Deliberately ignores account status (see `requireAdmin`), so an admin can
  * always reach the dashboard and undo a mistake — including their own.
  *
- * GET  /api/admin?search=&status=&page=&limit=
+ * GET  /api/admin?search=&status=&segment=&page=&limit=
  *      -> { users, total, page, limit, hasMore, stats }
+ *      `segment` is one of USER_SEGMENTS (lib/userSegments.ts): the trial funnel
+ *      — never started / in progress / completed / completed-and-unpaid / paid —
+ *      plus 7- and 30-day sign-up windows. It composes with `status` and `search`.
  * POST /api/admin
  *      { action: "setStatus", uid, status, note? }
  *      { action: "deleteUser", uid }
@@ -46,12 +50,17 @@ export async function GET(request) {
   if (status !== "all" && !isValidStatus(status)) {
     return badRequest(`Unknown status filter: ${status}`);
   }
+  const segment = searchParams.get("segment") ?? "all";
+  if (segment !== "all" && !isValidUserSegment(segment)) {
+    return badRequest(`Unknown segment filter: ${segment}`);
+  }
 
   try {
     const [list, stats] = await Promise.all([
       listUsers({
         search: searchParams.get("search"),
         status,
+        segment,
         page: searchParams.get("page"),
         limit: searchParams.get("limit"),
       }),

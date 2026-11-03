@@ -2,6 +2,11 @@
 
 import { cn } from "@/lib/utils";
 import { ACCOUNT_STATUS_LABELS, type AccountStatus } from "@/lib/accountStatus";
+import {
+  TRIAL_STATE_LABELS,
+  getTrialState,
+  type TrialState,
+} from "@/lib/userSegments";
 import type { AdminUser } from "@/lib/types";
 
 /**
@@ -32,6 +37,38 @@ export function StatusBadge({
       )}
     >
       {ACCOUNT_STATUS_LABELS[status]}
+    </span>
+  );
+}
+
+const TRIAL_STYLES: Record<TrialState, string> = {
+  never_started: "bg-slate-100 text-slate-600",
+  in_progress: "bg-amber-100 text-amber-800",
+  exhausted: "bg-orange-100 text-orange-700",
+};
+
+/**
+ * Where one account sits in the free trial: never started, mid-trial, or out of
+ * questions. Status colours stay reserved for StatusBadge, so the two columns
+ * never read as the same signal.
+ */
+export function TrialBadge({
+  user,
+  className,
+}: {
+  user: Pick<AdminUser, "trialCount">;
+  className?: string;
+}) {
+  const state = getTrialState(user);
+  return (
+    <span
+      className={cn(
+        "inline-block px-2 py-0.5 rounded-full text-xs font-semibold",
+        TRIAL_STYLES[state],
+        className
+      )}
+    >
+      {TRIAL_STATE_LABELS[state]}
     </span>
   );
 }

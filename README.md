@@ -30,8 +30,14 @@ npm start
   works on Vercel.
 - **MongoDB** — `MONGODB_URI`.
 - **Paystack** — `PAYSTACK_SECRET_KEY` (server only).
-- **SMTP** — `SMTP_USER` / `SMTP_PASSWORD`. Without them contact and welcome
-  email answer 503 and campaign email is never sent.
+- **Brevo** — `BREVO_API_KEY` (server only) is the transport for every
+  student-facing email, with `BREVO_SENDER_EMAIL` / `BREVO_SENDER_NAME` for the
+  From line. The sender must be verified in Brevo and the domain authenticated
+  (SPF/DKIM) or mail is rejected or filed as spam.
+- **SMTP** — `SMTP_USER` / `SMTP_PASSWORD` for the Go54 mailbox: the contact
+  form's inbox and the welcome mail. Without them those two answer 503. Without
+  `BREVO_API_KEY`, campaign email falls back to this mailbox (and hits its
+  burst throttle).
 - **Cron / unsubscribe** — `CRON_SECRET` and `EMAIL_UNSUBSCRIBE_SECRET`. Campaign
   email refuses to send without an unsubscribe signing key.
 
@@ -82,13 +88,52 @@ How it stays safe:
   `{campaignId, dedupeKey}` index **before** it is sent, so a retried or
   overlapping run cannot double-send.
 - A global pause switch, a per-campaign enable flag, a daily cap (default 200),
-  a 3-day per-recipient cooldown, one message per second, and a 45-second time
-  budget.
+  a 3-day per-recipient cooldown, and a 45-second time budget.
 - Each email includes a stateless, HMAC-signed unsubscribe link
   (`/unsubscribe`). Unsubscribing only stops progress email — access is
   unaffected.
 - The admin panel can preview (rendered with sample values), send a test to the
   admin's own address, dry-run an audience, or send a batch immediately.
+
+Delivery goes through Brevo (`lib/brevo.js`), not the mailbox:
+
+- Each campaign is rendered once into a Brevo transactional template
+  (`lib/brevoTemplates.js`) where every `{{placeholder}}` becomes
+  `{{ params.placeholder }}`. The template is only re-pushed when the rendered
+  copy changes (a hash on `emailCampaigns` remembers the last push), so a run
+  normally costs zero template calls.
+- A run claims its whole batch first, then sends it in **one** API call:
+  `POST /v3/smtp/email` with one `messageVersions` entry per student, each with
+  its own `params` (name, progress, unsubscribe link). No SMTP session, so
+  nothing throttles the fourth message.
+- The `emailLog` claim stays the ledger: it is still taken before the send, and
+  every claim is marked `sent` or `failed` afterwards. `failed` rows now carry
+  the provider's own reason.
+- Every error carries a code (`brevo_unauthorized`, `brevo_ip_blocked`,
+  `brevo_credits`, `brevo_rate_limited`, `brevo_rejected`, ...). 429s and 5xx are
+  retried twice with Brevo's own `retry-after` hint. `brevo_ip_blocked` means the
+  account allowlists IPs and the request came from an address that is not on the
+  list — the fix is the address, not the key.
+- Without `BREVO_API_KEY` the runner falls back to the Go54 mailbox exactly as
+  before, one message per second, so a deployment can be switched over without
+  a code change.
+
+Two checks that answer "will this deployment actually send?":
+
+- **Admin -> Emails -> Check Brevo** (`POST {"action":"brevo_check"}`) asks the
+  provider: is the key accepted, is the From address a verified sender or on an
+  authenticated domain, does the domain have SPF/DKIM, and how many credits are
+  left. A present `BREVO_API_KEY` proves none of that on its own — this account
+  once answered every request with a 401 about an unlisted IP, which reads like a
+  bad key.
+- `npm run check:brevo -- --templates` lists the pushed templates. When Brevo
+  answers that endpoint with `{}` (as this account does) the script says it could
+  not read the list rather than claiming there are none; use **Push templates**
+  in the dashboard, which reports what it pushed.
+
+The daily cap (default 200) is a deliberate brake, and it is also the only thing
+keeping a run under the free plan's 300 emails/day. Raise it only as high as the
+plan allows.
 
 Scheduling: `vercel.json` runs `GET /api/cron/emails` daily at 07:00. Vercel
 sends `Authorization: Bearer $CRON_SECRET` automatically when the variable is
@@ -109,9 +154,11 @@ How it stays safe:
 
 - The composer only ever sends **uids**. The API looks every address up itself,
   so a compromised admin token cannot turn the dashboard into an open relay.
-- At most 100 recipients per broadcast, one message every half second, and the
-  same 45-second budget as a campaign run. A batch that stops early leaves the
-  rest pending; **Send remaining** continues it.
+- At most 100 recipients per broadcast, and the same 45-second budget as a
+  campaign run. A batch that stops early leaves the rest pending; **Send
+  remaining** continues it. Broadcasts are rendered per recipient and sent over
+  Brevo (one call each, no throttle); the mailbox fallback still pauses between
+  messages.
 - The global pause switch blocks broadcasts, and the daily cap is shared with the
   campaigns. Preview and "Send test to me" still work while paused.
 - Each delivery is claimed in `emailLog` under `broadcast:<broadcastId>` before
@@ -130,7 +177,8 @@ How it stays safe:
 npm run lint
 npx tsc --noEmit
 npm run verify:deps
-npm run check:mail        # SMTP credentials, without sending
+npm run check:mail        # Go54 mailbox credentials, without sending
+npm run check:brevo       # Brevo key, sender, domain and campaign templates
 npm run check:emails      # campaign state and send log (read-only)
 ```
 

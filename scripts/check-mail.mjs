@@ -15,6 +15,7 @@
  * Usage:
  *   npm run check:mail
  *   npm run check:mail -- --send you@example.com
+ *   npm run check:mail -- --burst you@example.com 6
  *
  * Exit codes: 0 = ready to send, 1 = not configured or rejected.
  */
@@ -83,5 +84,56 @@ if (sendIndex !== -1) {
   } catch (error) {
     console.error(`\nFAIL  ${error.code ?? "error"}: ${error.message}`);
     process.exit(1);
+  }
+}
+
+/**
+ * `--burst <address> <count>` sends several messages back to back.
+ *
+ * That is the exact shape the campaign runner used to have, and it is how the
+ * mailbox's per-connection throttle shows itself: the first two or three are
+ * accepted and the next one is refused. Running this tells you where it starts,
+ * instead of inferring it from `emailLog`.
+ */
+const burstIndex = process.argv.indexOf("--burst");
+if (burstIndex !== -1) {
+  const to = process.argv[burstIndex + 1];
+  const count = Math.min(Math.max(Number(process.argv[burstIndex + 2]) || 5, 2), 20);
+  if (!to || !/^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(to)) {
+    console.error(
+      "\nFAIL  --burst needs an address and a count, e.g. --burst you@example.com 6"
+    );
+    process.exit(1);
+  }
+
+  console.log(`\nBurst: ${count} messages to ${to}`);
+  let delivered = 0;
+  for (let index = 1; index <= count; index += 1) {
+    try {
+      await sendMail({
+        to,
+        subject: `CBT-Practice burst ${index}/${count}`,
+        text: `Message ${index} of ${count} — a back-to-back send test.`,
+        html: `<p>Message ${index} of ${count} — a back-to-back send test.</p>`,
+      });
+      delivered += 1;
+      console.log(`  ${index}/${count}  accepted`);
+    } catch (error) {
+      console.error(
+        `  ${index}/${count}  FAILED  ${error.detail ?? error.message}`
+      );
+      break;
+    }
+  }
+
+  console.log(
+    `\n${delivered === count ? "PASS" : "NOTE"}  ${delivered}/${count} accepted back to back`
+  );
+  if (delivered < count) {
+    console.error(
+      "      The mailbox stopped accepting messages part way through a burst.\n" +
+        "      That is the Go54 throttle, not a bug in the app: this is why\n" +
+        "      campaigns send through Brevo (npm run check:brevo)."
+    );
   }
 }

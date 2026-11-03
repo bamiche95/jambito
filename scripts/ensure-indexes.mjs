@@ -36,6 +36,14 @@ const INDEXES = [
     keys: { status: 1, createdAt: -1 },
     options: { name: "status_createdAt_desc" },
   },
+  // The dashboard's trial funnel (lib/adminUsers.js#segmentQuery): "trial
+  // completed", "in progress" and the join-date windows all filter on
+  // trialCount / createdAt together, and the list is always newest first.
+  {
+    collection: "users",
+    keys: { trialCount: 1, createdAt: -1 },
+    options: { name: "trialCount_createdAt_desc" },
+  },
   {
     collection: "users",
     keys: { email: 1 },
